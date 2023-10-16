@@ -1,0 +1,23 @@
+.Searchbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  gap: 5px;
+}
+.Searchbar input {
+  border: 0;
+  outline: none;
+  background-color: transparent; /* Change this property */
+  opacity: 30%;
+  width: 100%;
+}
+.Searchbar img {
+  opacity: 30%;
+}
+.Searchbar input:focus {
+  border: 0px;
+  outline: none;
+}

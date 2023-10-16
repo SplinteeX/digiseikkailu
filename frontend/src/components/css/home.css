@@ -1,0 +1,47 @@
+/* Existing CSS */
+.video-text p {
+  font-size: 22px;
+  opacity: 0.7; /* Corrected opacity value to a decimal between 0 and 1 */
+  font-family: "Tahoma", sans-serif;
+  font-style: normal;
+}
+
+.Home-wrapper {
+  margin: 2.5% 12.5%;
+}
+
+.First-video .video-text {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.Second-video {
+  margin: 2.5% auto 0; /* 20px top margin, center horizontally, no margin at the bottom */
+  text-align: center;
+  width: 97.5%;
+  text-align: left;
+}
+.Second-video button {
+  margin: 0 auto;
+}
+.home-page-classes {
+  display: flex;
+  margin: 2.5% auto 0;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1500px) {
+  .Home-wrapper {
+    margin: 2.5% 2%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .First-video .video-text {
+    flex-direction: column;
+  }
+  .First-video .video-text iframe {
+    width: 100%;
+  }
+}
