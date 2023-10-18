@@ -1,9 +1,11 @@
 .Login-wrapper {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", Sans-serif;
+  width: 100vw;
+  height: 84vh;
+  background: url("/images/taivas.jpg");
 }
 .Login-wrapper h3 {
   border: 3px solid black;
