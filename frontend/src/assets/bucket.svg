@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="6246a619-0fbf-4f63-a881-5bcf58f81adb"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="524f1f91-f3eb-456b-b4ad-e44946baaee1"  >
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="8f06e638-5157-4e04-82f2-3457deed1056"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-500, -500)" d="M 104 365 L 208 365 L 279 168 C 288 137 320 115 355 115 L 646 115 C 681 115 713 137 723 170 L 793 365 L 958 365 C 975 365 990 379 990 396 C 990 413 975 427 958 427 L 923 427 L 862 801 C 848 851 803 885 752 885 L 249 885 C 198 885 152 851 138 798 L 78 427 L 42 427 C 25 427 10 413 10 396 C 10 379 25 365 42 365 L 104 365 Z M 141 427 L 199 785 C 205 807 225 823 249 823 L 752 823 C 775 823 796 807 801 788 L 860 427 L 141 427 Z M 726 365 L 663 189 C 660 182 654 177 645 177 L 355 177 C 346 177 340 182 338 187 L 274 365 L 726 365 Z M 469 521 C 469 504 483 490 500 490 C 517 490 531 504 531 521 L 531 729 C 531 746 517 760 500 760 C 483 760 469 746 469 729 L 469 521 Z M 677 734 C 674 751 658 762 641 760 C 624 758 613 742 615 725 L 644 519 C 647 502 663 490 680 492 C 697 494 708 510 706 527 L 677 734 Z M 385 725 C 388 742 375 757 358 760 C 341 762 325 750 323 733 L 293 527 C 291 510 303 494 320 492 C 337 489 353 501 355 518 L 385 725 Z" stroke-linecap="round" />
+</g>
+</svg>

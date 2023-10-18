@@ -2,11 +2,11 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import "./css/navbar.css";
 import logo from "../assets/digiseikkailu.webp";
-import basket from "../assets/bag.png";
 import user from "../assets/user.svg";
 import SearchBar from "./elements/searchBar";
 import openMenu from "../../src/assets/menu.svg";
 import closeMenu from "../../src/assets/close-menu.svg";
+import bucket from "../../src/assets/bucket.svg";
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
   const navbarItems = [
     {
       title: "Tietoa opettajalle",
-      path: "/",
+      path: "/tietoa-opettajalle",
       cName: "nav-text",
     },
     {
@@ -66,11 +66,11 @@ const Navbar = () => {
         <div className="Icons">
           <div className="Basket">
             <Link to="/">
-              <img src={basket} width="40px" height="40px" alt="" />
+              <img src={bucket} width="40px" height="40px" alt="" />
             </Link>
           </div>
           <div className="UserIcon">
-            <Link to="/">
+            <Link to="/Kirjaudu">
               <img src={user} width="40px" height="40px" alt="" />
             </Link>
           </div>

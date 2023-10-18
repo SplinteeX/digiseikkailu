@@ -97,6 +97,9 @@ body {
   .Hamburger-menu button {
     display: block;
   }
+  .Icons {
+    right: 10px;
+  }
 }
 @media (min-width: 1100px) {
   .nav-menu-content.active {

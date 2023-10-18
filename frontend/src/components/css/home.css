@@ -1,11 +1,13 @@
-/* Existing CSS */
+body {
+  overflow-x: hidden;
+}
+
 .video-text p {
-  font-size: 22px;
-  opacity: 0.7; /* Corrected opacity value to a decimal between 0 and 1 */
+  font-size: 1.375em;
+  opacity: 0.7;
   font-family: "Tahoma", sans-serif;
   font-style: normal;
 }
-
 .Home-wrapper {
   margin: 2.5% 12.5%;
 }
@@ -13,13 +15,13 @@
 .First-video .video-text {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 2.5em;
 }
 
 .Second-video {
-  margin: 2.5% auto 0; /* 20px top margin, center horizontally, no margin at the bottom */
+  margin: 2.5% auto 0;
   text-align: center;
-  width: 97.5%;
+  width: 95%;
   text-align: left;
 }
 .Second-video button {
@@ -29,7 +31,58 @@
   display: flex;
   margin: 2.5% auto 0;
   justify-content: center;
-  gap: 40px;
+  gap: 2.5em;
+}
+.home-read-more {
+  display: flex;
+  margin-top: 2.5%;
+  gap: 2.5%;
+  justify-content: center;
+}
+.home-read-more > .mediaText {
+  width: 47.5%;
+}
+.home-read-more > .mediaText > p,
+h3 {
+  font-size: 1.375em;
+  opacity: 0.7;
+  font-family: "Tahoma", sans-serif;
+  font-style: normal;
+}
+.home-read-more > .mediaText img {
+  height: 300px;
+  width: 95%;
+  object-fit: cover;
+  scale: 1;
+}
+.home-read-more > .mediaText > .image-container {
+  position: relative;
+}
+.home-read-more > .mediaText > .image-container button {
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+  border: 0px;
+  background-color: #58c9e9;
+  width: 100px;
+  height: 40px;
+  color: white;
+  font-family: "Tahoma", sans-serif;
+  font-size: 1.125em;
+}
+.home-read-more > .mediaText > .image-container button:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+.home-empatia-polku {
+  margin-top: 2.5%;
+}
+.home-empatia-polku img {
+  width: 100%;
+  box-shadow: 7px 7px 6px 0 rgba(0, 0, 0, 0.5);
+}
+.home-empatia-polku h3 {
+  width: 90%;
 }
 
 @media screen and (max-width: 1500px) {
@@ -43,5 +96,36 @@
   }
   .First-video .video-text iframe {
     width: 100%;
+  }
+  .home-empatia-polku h3 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home-page-classes {
+    flex-wrap: wrap;
+  }
+  .home-read-more {
+    flex-direction: column;
+  }
+  .home-read-more > .mediaText {
+    width: 100%;
+  }
+  .home-read-more > .mediaText > .image-container button {
+    right: 42px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .video-text p {
+    font-size: 1.125em;
+  }
+}
+@media screen and (max-width: 475px) {
+  .home-page-classes {
+    gap: 1.25em;
+    margin-top: 1.25em;
+  }
+  .home-read-more > .mediaText > .image-container button {
+    right: 22px;
   }
 }
