@@ -1,0 +1,13 @@
+.Student-login-wrapper .Login-wrapper .Login-content {
+  gap: 40px;
+  display: flex;
+}
+.Student-login-wrapper p {
+  text-align: center;
+  font-weight: 600;
+  font-family: "Comfortaa", Sans-serif;
+  opacity: 80%;
+}
+.Student-login-wrapper input {
+  height: 30px;
+}

@@ -1,0 +1,21 @@
+.Register .Login-content {
+  gap: 30px;
+  height: 100%;
+  padding-bottom: 10%;
+  width: 400px;
+}
+.Register .Login h3 {
+  padding: 20px 150px;
+}
+.Register .Register-login {
+  display: flex;
+  width: 90%;
+  gap: 10px;
+  justify-content: space-around;
+}
+.Register-login .CommonButton {
+  width: 175px;
+}
+.Register-login button:hover {
+  scale: none;
+}

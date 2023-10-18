@@ -20,7 +20,7 @@ body {
   align-items: center;
   background-color: #8ccbf3;
   position: relative;
-  width: 99.11vw;
+  width: 100vw;
 }
 .Navbar-links {
   display: flex;
@@ -32,7 +32,7 @@ body {
 .Icons {
   display: flex;
   position: absolute;
-  right: -5px;
+  right: 0px;
   gap: 20px;
 }
 .Basket:hover {
@@ -44,7 +44,7 @@ body {
 .Navbar > .Search {
   position: relative;
   top: -50px;
-  right: 10px;
+  right: 30px;
 }
 .Hamburger-menu button {
   background-color: transparent;

@@ -1,0 +1,9 @@
+.Login-content input {
+  width: 200px;
+  height: 25px;
+  border: none;
+  outline: none;
+}
+.Teacher-login-wrapper .Login-content {
+  gap: 35px;
+}
