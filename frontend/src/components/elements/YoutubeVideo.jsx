@@ -1,4 +1,4 @@
-import CommonButton from "./commonButton";
+import CommonButton from "./CommonButton";
 import PropTypes from "prop-types";
 
 const YoutubeVideo = ({

@@ -3,6 +3,8 @@ import CommonButton from "../elements/CommonButton";
 import FloatInput from "../elements/FloatInput";
 import { Link } from "react-router-dom";
 import "../css/register.css";
+import PulseLoader from "react-spinners/PulseLoader";
+import { useSignup } from "../hooks/useSignup";
 
 export const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -12,6 +14,10 @@ export const Register = () => {
   const [passwordCheck, setPasswordCheck] = useState("");
   const [username, setUsername] = useState("");
 
+  const { signup, error, isLoading } = useSignup();
+  const handleSubmit = () => {
+    signup(firstName, lastName, email, password, passwordCheck, username);
+  };
   return (
     <div className="Register">
       <div className="Login-wrapper">
@@ -43,7 +49,7 @@ export const Register = () => {
               Type={"password"}
             ></FloatInput>
             <FloatInput
-              text={"Vahvista salasana"}
+              text={"Vahvista-salasana"}
               value={passwordCheck}
               setValue={setPasswordCheck}
               Type={"password"}
@@ -55,14 +61,22 @@ export const Register = () => {
               Type={"text"}
             ></FloatInput>
             <div className="Register-login">
-              <CommonButton text={"Rekisteröidy"}></CommonButton>
+              {!isLoading ? (
+                <CommonButton
+                  text={"Rekisteröidy"}
+                  onClick={handleSubmit}
+                ></CommonButton>
+              ) : (
+                <PulseLoader color={"#8CCBF3"} loading={isLoading} size={10} />
+              )}
+              {error && <div className="error">{error}</div>}
               <Link to={"/kirjaudu"}>
                 <CommonButton text={"Kirjaudu"}></CommonButton>
               </Link>
+              <Link to={"/kirjaudu"}>
+                <CommonButton text={"Palaa"}></CommonButton>
+              </Link>
             </div>
-            <Link to={"/kirjaudu"}>
-              <CommonButton text={"Palaa"}></CommonButton>
-            </Link>
           </div>
         </div>
       </div>

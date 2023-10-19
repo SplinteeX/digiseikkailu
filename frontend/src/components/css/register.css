@@ -1,21 +1,29 @@
 .Register .Login-content {
   gap: 30px;
-  height: 500px;
+  height: 600px;
   padding-bottom: 10%;
-  width: 400px;
+  width: 350px;
+}
+.Register .Login-content h3 {
+  max-width: 380px;
 }
 .Register .Login h3 {
-  padding: 20px 150px;
+  padding: 20px 0px;
 }
 .Register .Register-login {
   display: flex;
-  width: 90%;
-  gap: 10px;
-  justify-content: space-around;
-}
-.Register-login .CommonButton {
-  width: 175px;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
 }
 .Register-login button:hover {
   scale: none;
+}
+.Register-login span {
+  display: flex;
+  justify-content: center;
+}
+.Register .CommonButton {
+  width: 100%;
+  min-width: 175px;
 }

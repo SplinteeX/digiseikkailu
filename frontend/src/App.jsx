@@ -6,8 +6,12 @@ import { Login } from "./components/pages/login";
 import { TeacherLogin } from "./components/pages/teacher-login";
 import { StudentLogin } from "./components/pages/student-login";
 import { Register } from "./components/pages/register";
+import { useAuthContext } from "./components/hooks/useAuthContext";
+import { Navigate } from "react-router-dom";
+import "./App.css";
 
 function App() {
+  const { user } = useAuthContext();
   return (
     <div className="App">
       <BrowserRouter>
@@ -16,7 +20,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tietoa-opettajalle" element={<Teacherinfo />} />
-            <Route path="/kirjaudu" element={<Login />}></Route>
+            <Route
+              path="/kirjaudu"
+              element={!user ? <Login /> : <Navigate to="/" />}
+            ></Route>
             <Route path="/rekisteröidy" element={<Register />} />
             <Route path="/kirjaudu/opettaja" element={<TeacherLogin />} />
             <Route path="/kirjaudu/oppilas" element={<StudentLogin />} />{" "}

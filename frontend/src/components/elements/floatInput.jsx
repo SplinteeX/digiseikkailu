@@ -3,14 +3,16 @@ import "../css/floatInput.css";
 const floatInput = ({ value, setValue, Type, text }) => {
   return (
     <div className="field-holder">
-      <input
-        type={Type}
-        id={Type}
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        placeholder={text}
-      />
-      <label htmlFor={Type}>{text}</label>
+      <form method="post">
+        <input
+          type={Type}
+          id={text}
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          placeholder={text}
+        />
+        <label htmlFor={Type}>{text}</label>
+      </form>
     </div>
   );
 };
