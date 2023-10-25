@@ -25,13 +25,27 @@ export const useLogin = () => {
       }
 
       if (response.ok) {
-        const token = json.token;
+        const user = json.user;
+        const token = user.token;
         const twelveHoursFromNow = new Date();
         twelveHoursFromNow.setHours(twelveHoursFromNow.getHours() + 12);
-
+        console.log(user);
         cookie.set("Authorization", `Bearer ${token}`, {
           expires: twelveHoursFromNow,
         });
+        cookie.set(
+          "User",
+          JSON.stringify({
+            firstname: user.firstname,
+            lastname: user.lastname,
+            role: user.role,
+            email: user.email,
+          }),
+          {
+            expires: twelveHoursFromNow,
+          }
+        );
+
         console.log(token, "Login successful");
         dispatch({ type: "LOGIN", payload: json });
       }

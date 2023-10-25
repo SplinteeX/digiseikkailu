@@ -67,6 +67,7 @@ body {
   gap: 10px;
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 .nav-menu-content a {
   color: black;

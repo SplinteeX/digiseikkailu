@@ -61,7 +61,7 @@ const Home = () => {
         {mediaTextData.map((data, index) => (
           <>
             <MediaText
-              key={index}
+              key={data.id}
               title={data.title}
               image={data.Image}
               text={data.text}

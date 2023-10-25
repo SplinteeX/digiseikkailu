@@ -1,9 +1,9 @@
 import "../css/teacherinfo.css";
-import CommonButton from "../elements/CommonButton";
+import CommonButton from "../elements/commonButton";
 import ButtonText from "../elements/buttonText";
 import GameInfoWImg from "../data/GameInfoWImg";
 import info from "../data/info";
-const Teacherinfo = () => {
+export const Teacherinfo = () => {
   const infoTexts = [
     {
       text: "Digiseikkailu on pelillinen ja tarinallinen oppimisympäristö tieto- ja viestintätekniikan (TVT), medialukutaitojen sekä empatiataitojen opettamiseen esi- sekä alakouluikäisille. Klikkaa haluamaasi ikäryhmää ja tutustu ikäryhmälle suunnattuihin tehtäviin. Iloista seikkailua!",
@@ -101,4 +101,3 @@ const Teacherinfo = () => {
     </div>
   );
 };
-export default Teacherinfo;

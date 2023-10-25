@@ -1,13 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Home from "./components/pages/home";
-import Teacherinfo from "./components/pages/teacher-info";
+import { Teacherinfo } from "./components/pages/teacher-info";
 import { Login } from "./components/pages/login";
 import { TeacherLogin } from "./components/pages/teacher-login";
 import { StudentLogin } from "./components/pages/student-login";
 import { Register } from "./components/pages/register";
+import { Profile } from "./components/pages/profile";
 import { useAuthContext } from "./components/hooks/useAuthContext";
 import { Navigate } from "react-router-dom";
+import ProtectedRouter from "./ProtectedRouter";
 import "./App.css";
 
 function App() {
@@ -22,11 +24,15 @@ function App() {
             <Route path="/tietoa-opettajalle" element={<Teacherinfo />} />
             <Route
               path="/kirjaudu"
-              element={!user ? <Login /> : <Navigate to="/" />}
+              element={!user ? <Login /> : <Navigate to="/profile" />}
             ></Route>
             <Route path="/rekisteröidy" element={<Register />} />
             <Route path="/kirjaudu/opettaja" element={<TeacherLogin />} />
-            <Route path="/kirjaudu/oppilas" element={<StudentLogin />} />{" "}
+            <Route path="/kirjaudu/oppilas" element={<StudentLogin />} />
+            <Route
+              path="/profile"
+              element={<ProtectedRouter element={<Profile />} />}
+            />
           </Routes>
         </div>
       </BrowserRouter>
