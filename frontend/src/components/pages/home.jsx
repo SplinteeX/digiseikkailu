@@ -1,4 +1,4 @@
-import CommonButton from "../elements/commonButton";
+import CommonButton from "../elements/CommonButton";
 import YoutubeVideo from "../elements/YoutubeVideo";
 import MediaText from "../elements/mediaText";
 import "../css/home.css";

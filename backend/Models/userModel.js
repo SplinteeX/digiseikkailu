@@ -31,7 +31,7 @@ const userSchema = new Schema({
   },
   role: {
     type: String,
-    default: "teacher",
+    default: "Teacher",
   },
 });
 userSchema.pre("save", function (next) {

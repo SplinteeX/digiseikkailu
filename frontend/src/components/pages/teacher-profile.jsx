@@ -1,16 +1,32 @@
+import React, { useState, useEffect } from "react";
 import SearchBar from "../elements/searchBar";
 import { InfoBox } from "../elements/infoBox";
 import FloatInput from "../elements/FloatInput";
 import "../css/profile.css";
-import { useState } from "react";
 import { useCreateStudent } from "../hooks/useCreateStudent";
+import { useGetStudents } from "../hooks/useGetStudents";
+import PulseLoader from "react-spinners/PulseLoader";
+import Cookies from "js-cookie";
 
 export const Profile = () => {
   const [create, setCreate] = useState(false);
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
+  const User = JSON.parse(Cookies.get("User"));
+  const [dataFetched, setDataFetched] = useState(false);
+  const [studentsData, setStudentsData] = useState([]);
 
-  const { createStudent } = useCreateStudent();
+  const {
+    createStudent,
+    isLoading: createStudentLoading,
+    error: createStudentError,
+  } = useCreateStudent();
+  const {
+    getStudents,
+    isLoading: getStudentsLoading,
+    error: getStudentsError,
+  } = useGetStudents();
+
   const data = [
     {
       title: "Students",
@@ -42,46 +58,16 @@ export const Profile = () => {
     {
       title: "Online",
     },
-    {
-      title: "Lorem ipsu",
-    },
-    {
-      title: "Action",
-    },
   ];
-  const students = [
-    {
-      name: "Pekka",
-      teacher: "1A3216D",
-      username: "PakkaAho",
-      lastonline: "1d ago",
-      lorem: "Lorem",
-    },
-    {
-      name: "Pekka",
-      teacher: "1A3216D",
-      username: "PakkaAho",
-      lastonline: "1d ago",
-      lorem: "Lorem",
-    },
-    {
-      name: "Pekka",
-      teacher: "1A3216D",
-      username: "PakkaAho",
-      lastonline: "1d ago",
-      lorem: "Lorem",
-    },
-    {
-      name: "Pekka",
-      teacher: "1A3216D",
-      username: "PakkaAho",
-      lastonline: "1d ago",
-      lorem: "Lorem",
-    },
-  ];
-  const darkStyle = {
-    backgroundColor: "#1E1E1E",
-  };
+  useEffect(() => {
+    getStudents(User.teacherid)
+      .then((data) => {
+        setStudentsData(data.students);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, [User.teacherid]);
 
   const handleclick = (data) => {
     console.log(data.name);
@@ -92,23 +78,26 @@ export const Profile = () => {
   };
   const handleCreateStudent = () => {
     createStudent(name, username);
-    setName("");
-    setUsername("");
-    setCreate(!create);
+    if (!error === false && !isLoading === true) {
+      setName("");
+      setUsername("");
+      setCreate(!create);
+    }
   };
-
   return (
     <div className={`Teacher-profile-wrapper`}>
       <div className="Profile-header">
         <div className="Profile-greeting">
-          <h3>Hello, Pekka</h3>
+          <h3>Hello, {User.firstname}</h3>
           <p>Have a nice day</p>
         </div>
         <div className="Right-header">
           <div className="Notifications"></div>
           <div className="User">
-            <h3>Pekka savo</h3>
-            <p>Role: Teacher</p>
+            <h3>
+              {User.firstname}, {User.lastname}
+            </h3>
+            <p>Role: {User.role}</p>
           </div>
         </div>
       </div>
@@ -135,6 +124,12 @@ export const Profile = () => {
               setValue={setUsername}
               Type={"text"}
             ></FloatInput>
+            {createStudentError && <div className="error">{error}</div>}
+            <PulseLoader
+              color={"#8CCBF3"}
+              loading={createStudentLoading}
+              size={10}
+            />
             <button onClick={handleCreateStudent}>Luo oppilas</button>
           </div>
         )}
@@ -154,18 +149,26 @@ export const Profile = () => {
         ))}
       </div>
       <div className="Student-list">
-        {students.map((data, index) => (
-          <div className="Student" key={index}>
-            <div className="Student-info" onClick={() => handleclick(data)}>
-              <h3>{data.name}</h3>
-              <h3>{data.teacher}</h3>
-              <h3>{data.username}</h3>
-              <h3>{data.lastonline}</h3>
-              <h3>{data.lorem}</h3>
-              <h3>{data.lorem}</h3>
+        {getStudentsLoading ? (
+          <PulseLoader
+            color={"#8CCBF3"}
+            loading={getStudentsLoading}
+            size={10}
+          />
+        ) : getStudentsError ? (
+          <div className="error">{error}</div>
+        ) : (
+          studentsData.map((data, index) => (
+            <div className="Student" key={index}>
+              <div className="Student-info" onClick={() => handleclick(data)}>
+                <h3>{data.name}</h3>
+                <h3>{data.teacherid}</h3>
+                <h3>{data.username}</h3>
+                <h3>{data.lastonline}</h3>
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );
