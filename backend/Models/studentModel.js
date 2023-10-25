@@ -20,5 +20,17 @@ const studentSchema = new Schema({
     default: Date.now(),
   },
 });
+studentSchema.statics.login = async function (studentData) {
+  const { username, teacherid } = studentData;
+  if (!username || !teacherid) {
+    throw Error("All fields must be filled");
+  }
 
+  const student = await this.findOne({ username, teacherid });
+  if (!student) {
+    throw Error("Incorrect username");
+  }
+
+  return student;
+};
 module.exports = mongoose.model("Student", studentSchema);
