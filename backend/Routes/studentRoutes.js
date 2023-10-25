@@ -7,7 +7,7 @@ const {
 } = require("../Controllers/studentController");
 const requireAuth = require("../middleware/requireAuth");
 
-router.post("/create", createStudent);
+router.post("/create", requireAuth, createStudent);
 router.get("/students", requireAuth, getStudents);
 
 module.exports = router;

@@ -4,11 +4,12 @@
   font-size: 0.9em;
 }
 .field-holder input::placeholder {
-  color: #79efe9;
+  color: transparent;
 }
 .field-holder input {
   font-weight: 600;
   background-color: transparent;
+  border: 0px;
 }
 .field-holder {
   opacity: 80%;
@@ -17,6 +18,7 @@
 }
 .field-holder :focus {
   opacity: 100%;
+  outline: none;
 }
 
 .field-holder {

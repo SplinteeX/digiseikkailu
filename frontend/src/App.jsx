@@ -6,7 +6,7 @@ import { Login } from "./components/pages/login";
 import { TeacherLogin } from "./components/pages/teacher-login";
 import { StudentLogin } from "./components/pages/student-login";
 import { Register } from "./components/pages/register";
-import { Profile } from "./components/pages/profile";
+import { Profile } from "./components/pages/teacher-profile";
 import { useAuthContext } from "./components/hooks/useAuthContext";
 import { Navigate } from "react-router-dom";
 import ProtectedRouter from "./ProtectedRouter";

@@ -1,13 +1,16 @@
 import SearchBar from "../elements/searchBar";
-import plus from "../../assets/plus.png";
 import { InfoBox } from "../elements/infoBox";
-import floatInput from "../elements/FloatInput";
+import FloatInput from "../elements/FloatInput";
 import "../css/profile.css";
 import { useState } from "react";
+import { useCreateStudent } from "../hooks/useCreateStudent";
+
 export const Profile = () => {
-  const [setCreate, create] = useState(false);
+  const [create, setCreate] = useState(false);
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
+
+  const { createStudent } = useCreateStudent();
   const data = [
     {
       title: "Students",
@@ -76,11 +79,26 @@ export const Profile = () => {
       lorem: "Lorem",
     },
   ];
+  const darkStyle = {
+    backgroundColor: "#1E1E1E",
+  };
+
   const handleclick = (data) => {
     console.log(data.name);
   };
+
+  const handleCreate = () => {
+    setCreate(!create);
+  };
+  const handleCreateStudent = () => {
+    createStudent(name, username);
+    setName("");
+    setUsername("");
+    setCreate(!create);
+  };
+
   return (
-    <div className="Teacher-profile-wrapper">
+    <div className={`Teacher-profile-wrapper`}>
       <div className="Profile-header">
         <div className="Profile-greeting">
           <h3>Hello, Pekka</h3>
@@ -98,11 +116,28 @@ export const Profile = () => {
         <h3>Students</h3>
         <div className="Content">
           <SearchBar query="Search"></SearchBar>
-          <button className="Add-student">
+          <button className="Add-student" onClick={handleCreate}>
             <h4>Add student</h4>
             <h3>+</h3>
           </button>
         </div>
+        {create && (
+          <div className="Create-student">
+            <FloatInput
+              text={"Nimi"}
+              value={name}
+              setValue={setName}
+              Type={"text"}
+            ></FloatInput>
+            <FloatInput
+              text={"Käyttäjätunnus"}
+              value={username}
+              setValue={setUsername}
+              Type={"text"}
+            ></FloatInput>
+            <button onClick={handleCreateStudent}>Luo oppilas</button>
+          </div>
+        )}
       </div>
       <div className="Info-section">
         {data.map((data, index) => (
@@ -132,22 +167,6 @@ export const Profile = () => {
           </div>
         ))}
       </div>
-      {create && (
-        <div className="Create-student">
-          <FloatInput
-            text={"Nimi"}
-            value={name}
-            setValue={setName}
-            Type={"text"}
-          ></FloatInput>
-          <FloatInput
-            text={"Käyttäjätunnus"}
-            value={username}
-            setValue={setUsername}
-            Type={"text"}
-          ></FloatInput>
-        </div>
-      )}
     </div>
   );
 };
