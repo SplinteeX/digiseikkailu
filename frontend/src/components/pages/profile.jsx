@@ -1,8 +1,13 @@
 import SearchBar from "../elements/searchBar";
 import plus from "../../assets/plus.png";
 import { InfoBox } from "../elements/infoBox";
+import floatInput from "../elements/FloatInput";
 import "../css/profile.css";
+import { useState } from "react";
 export const Profile = () => {
+  const [setCreate, create] = useState(false);
+  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
   const data = [
     {
       title: "Students",
@@ -127,6 +132,22 @@ export const Profile = () => {
           </div>
         ))}
       </div>
+      {create && (
+        <div className="Create-student">
+          <FloatInput
+            text={"Nimi"}
+            value={name}
+            setValue={setName}
+            Type={"text"}
+          ></FloatInput>
+          <FloatInput
+            text={"Käyttäjätunnus"}
+            value={username}
+            setValue={setUsername}
+            Type={"text"}
+          ></FloatInput>
+        </div>
+      )}
     </div>
   );
 };
