@@ -1,31 +1,43 @@
+/* Input Field Placeholder Label Animation */
 .field-holder :focus + label {
   top: -15px;
   left: 0;
   font-size: 0.9em;
 }
+
+/* Hide Placeholder Text in Input Field */
 .field-holder input::placeholder {
   color: transparent;
 }
+
+/* Input Field Styling */
 .field-holder input {
   font-weight: 600;
   background-color: transparent;
   border: 0px;
 }
+
+/* Field Holder Styles */
 .field-holder {
   opacity: 80%;
   font-weight: 600;
   border-bottom: 3px solid black;
 }
+
+/* Highlight Field on Focus */
 .field-holder :focus {
   opacity: 100%;
   outline: none;
 }
 
+/* Field Holder Layout */
 .field-holder {
   display: flex;
   align-items: center;
   position: relative;
 }
+
+/* Label Styles */
 .field-holder label {
   position: absolute;
   left: 0;
@@ -33,6 +45,8 @@
     font-size 0.3s ease-in-out;
   margin-left: 1px;
 }
+
+/* Move Label Up When Input Field Is Not Empty */
 .field-holder :not(:placeholder-shown) + label {
   top: -15px;
   font-size: 0.9em;

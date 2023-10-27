@@ -26,7 +26,7 @@ const createStudent = async (req, res) => {
 const loginStudent = async (req, res) => {
   const { username, teacherid } = req.body;
   try {
-    const student = await Student.login({ username, teacherid }); // Call the static method correctly
+    const student = await Student.login({ username, teacherid });
     const role = student.role;
     const token = createToken(student._id);
     res.status(200).json({
@@ -49,8 +49,22 @@ const getStudents = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
+const deleteStudent = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const deletedStudent = await Student.findByIdAndDelete(id);
+    if (deletedStudent) {
+      res.status(200).json({ message: "Student deleted", deletedStudent });
+    } else {
+      res.status(400).json({ message: "Student not found" });
+    }
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
 module.exports = {
   createStudent,
   getStudents,
   loginStudent,
+  deleteStudent,
 };

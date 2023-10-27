@@ -16,11 +16,9 @@ const loginUser = async (req, res) => {
     const teacherid = user.teacherId;
     const token = createToken(user._id);
     const { firstname, lastname, userName } = user;
-    res
-      .status(200)
-      .json({
-        user: { firstname, lastname, email, userName, token, role, teacherid },
-      });
+    res.status(200).json({
+      user: { firstname, lastname, email, userName, token, role, teacherid },
+    });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -39,11 +37,9 @@ const signupUser = async (req, res) => {
     const role = user.role;
     const teacherid = user.teacherId;
     const token = createToken(user._id);
-    res
-      .status(200)
-      .json({
-        user: { firstname, lastname, email, userName, token, role, teacherid },
-      });
+    res.status(200).json({
+      user: { firstname, lastname, email, userName, token, role, teacherid },
+    });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -57,7 +53,7 @@ const getUsers = async (req, res) => {
   }
 };
 const getUserById = async (req, res) => {
-  const { id } = req.headers;
+  const { id } = req.body;
   try {
     const user = await User.findById(id);
     res.status(200).json({ user });

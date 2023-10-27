@@ -1,5 +1,5 @@
 import arrow from "../../assets/arrow.svg";
-import "../elements/commonButton.css";
+import "../css/commonButton.css";
 
 const CommonButton = ({ text, onClick, color }) => {
   const buttonStyle = {

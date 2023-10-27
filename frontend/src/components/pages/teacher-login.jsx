@@ -1,18 +1,23 @@
 import React, { useState } from "react";
-import CommonButton from "../elements/CommonButton";
+import CommonButton from "../elements/commonButton";
 import FloatInput from "../elements/FloatInput";
 import { Link } from "react-router-dom";
 import "../css/teacherLogin.css";
 import PulseLoader from "react-spinners/PulseLoader";
+import { useNavigate } from "react-router-dom";
 
 import { useLogin } from "../hooks/useLogin";
 export const TeacherLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { login, isLoading, error } = useLogin();
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
-    await login(email, password);
+    const loginSuccess = await login(email, password);
+    if (loginSuccess) {
+      navigate("/");
+    }
   };
 
   return (

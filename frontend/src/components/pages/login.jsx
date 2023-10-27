@@ -1,6 +1,7 @@
 import CommonButton from "../elements/commonButton";
 import "../css/login.css";
 import { Link } from "react-router-dom";
+
 export const Login = () => {
   return (
     <div className="Login-wrapper">

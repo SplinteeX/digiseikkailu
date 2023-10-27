@@ -1,28 +1,41 @@
+/* Register Login Content */
 .Register .Login-content {
   gap: 30px;
   height: 600px;
   padding-bottom: 10%;
   width: 350px;
 }
+
+/* Register Login Content Heading */
 .Register .Login-content h3 {
   max-width: 380px;
 }
+
+/* Register Login Heading */
 .Register .Login h3 {
   padding: 20px 0px;
 }
+
+/* Register Login Section */
 .Register .Register-login {
   display: flex;
   flex-direction: column;
   gap: 30px;
   justify-content: center;
 }
-.Register-login button:hover {
-  scale: none;
+
+/* Button Hover Effect */
+.Register .Register-login button:hover {
+  transform: none;
 }
-.Register-login span {
+
+/* Center Text within Register Section */
+.Register .Register-login span {
   display: flex;
   justify-content: center;
 }
+
+/* Adjust Common Button Width for Registration */
 .Register .CommonButton {
   width: 100%;
   min-width: 175px;

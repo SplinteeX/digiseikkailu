@@ -1,63 +1,85 @@
+/* Body Overflow */
 body {
   overflow-x: hidden;
 }
 
+/* Video Text */
 .video-text p {
   font-size: 1.375em;
   opacity: 0.7;
   font-family: "Tahoma", sans-serif;
   font-style: normal;
 }
+
+/* Home Wrapper */
 .Home-wrapper {
   margin: 2.5% 12.5%;
 }
 
+/* First Video Text */
 .First-video .video-text {
   display: flex;
   flex-direction: row;
   gap: 2.5em;
 }
 
+/* Second Video */
 .Second-video {
   margin: 2.5% auto 0;
   text-align: center;
   width: 95%;
   text-align: left;
 }
+
+/* Button in Second Video */
 .Second-video button {
   margin: 0 auto;
 }
+
+/* Home Page Classes */
 .home-page-classes {
   display: flex;
   margin: 2.5% auto 0;
   justify-content: center;
   gap: 2.5em;
 }
+
+/* Home Read More */
 .home-read-more {
   display: flex;
   margin-top: 2.5%;
   gap: 2.5%;
   justify-content: center;
 }
+
+/* Media Text in Home Read More */
 .home-read-more > .mediaText {
   width: 47.5%;
 }
+
+/* Media Text Paragraph and Heading */
 .home-read-more > .mediaText > p,
-h3 {
+.home-read-more > .mediaText h3 {
   font-size: 1.375em;
   opacity: 0.7;
   font-family: "Tahoma", sans-serif;
   font-style: normal;
 }
+
+/* Image in Media Text */
 .home-read-more > .mediaText img {
   height: 300px;
   width: 95%;
   object-fit: cover;
   scale: 1;
 }
+
+/* Image Container in Media Text */
 .home-read-more > .mediaText > .image-container {
   position: relative;
 }
+
+/* Button in Image Container */
 .home-read-more > .mediaText > .image-container button {
   position: absolute;
   bottom: 5px;
@@ -70,26 +92,39 @@ h3 {
   font-family: "Tahoma", sans-serif;
   font-size: 1.125em;
 }
+
+/* Button Hover Effect */
 .home-read-more > .mediaText > .image-container button:hover {
   cursor: pointer;
   opacity: 90%;
 }
+
+/* Empatia Polku Section */
 .home-empatia-polku {
   margin-top: 2.5%;
 }
+
+/* Image in Empatia Polku Section */
 .home-empatia-polku img {
   width: 100%;
   box-shadow: 7px 7px 6px 0 rgba(0, 0, 0, 0.5);
 }
+
+/* Heading in Empatia Polku Section */
 .home-empatia-polku h3 {
   width: 90%;
 }
 
+/* Media Queries */
+
+/* Adjust Home Wrapper Margin for Smaller Screens */
 @media screen and (max-width: 1500px) {
   .Home-wrapper {
     margin: 2.5% 2%;
   }
 }
+
+/* Adjust Video Text Layout for Smaller Screens */
 @media screen and (max-width: 1100px) {
   .First-video .video-text {
     flex-direction: column;
@@ -101,6 +136,8 @@ h3 {
     width: 100%;
   }
 }
+
+/* Adjust Layout for Smaller Screens */
 @media screen and (max-width: 900px) {
   .home-page-classes {
     flex-wrap: wrap;
@@ -115,11 +152,15 @@ h3 {
     right: 42px;
   }
 }
+
+/* Adjust Font Size for Smaller Screens */
 @media screen and (max-width: 700px) {
   .video-text p {
     font-size: 1.125em;
   }
 }
+
+/* Further Adjustments for Smaller Screens */
 @media screen and (max-width: 475px) {
   .home-page-classes {
     gap: 1.25em;

@@ -1,21 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import search from "../../assets/greySearch.png";
 import "../css/search.css";
-function SearchBar({ onSearch }) {
-  const [query, setQuery] = useState("");
 
-  const handleSearch = () => {
-    onSearch(query);
-  };
-
+function SearchBar({ value, onChange }) {
   return (
     <div className="Searchbar">
       <img src={search} width="20px" height="20px" alt="" />
       <input
         type="text"
-        placeholder="Hae"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search by name"
+        value={value}
+        onChange={onChange}
       />
     </div>
   );

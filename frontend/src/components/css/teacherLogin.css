@@ -1,9 +1,12 @@
+/* Input Styles */
 .Login-content input {
   width: 200px;
   height: 25px;
   border: none;
   outline: none;
 }
+
+/* Adjusted Styles for Teacher Login Wrapper */
 .Teacher-login-wrapper .Login-content {
   gap: 35px;
   width: 350px;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import CommonButton from "../elements/CommonButton";
+import CommonButton from "../elements/commonButton";
+import { useNavigate } from "react-router-dom";
 import FloatInput from "../elements/FloatInput";
 import { Link } from "react-router-dom";
 import "../css/register.css";
@@ -15,8 +16,20 @@ export const Register = () => {
   const [username, setUsername] = useState("");
 
   const { signup, error, isLoading } = useSignup();
-  const handleSubmit = () => {
-    signup(firstName, lastName, email, password, passwordCheck, username);
+  const navigate = useNavigate();
+
+  const handleSubmit = async () => {
+    const signupSucess = await signup(
+      firstName,
+      lastName,
+      email,
+      password,
+      passwordCheck,
+      username
+    );
+    if (signupSucess) {
+      navigate("/");
+    }
   };
   return (
     <div className="Register">

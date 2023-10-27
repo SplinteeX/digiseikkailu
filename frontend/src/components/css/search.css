@@ -1,3 +1,4 @@
+/* Searchbar Container */
 .Searchbar {
   background-color: white;
   display: flex;
@@ -7,17 +8,23 @@
   padding: 5px;
   gap: 5px;
 }
+
+/* Search Input Field */
 .Searchbar input {
   border: 0;
   outline: none;
-  background-color: transparent; /* Change this property */
+  background-color: transparent;
   opacity: 30%;
   width: 100%;
 }
+
+/* Search Icon */
 .Searchbar img {
   opacity: 30%;
 }
+
+/* Focus Styles for Input */
 .Searchbar input:focus {
-  border: 0px;
+  border: 0;
   outline: none;
 }

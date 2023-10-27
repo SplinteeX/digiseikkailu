@@ -1,3 +1,4 @@
+/* Login Wrapper */
 .Login-wrapper {
   display: flex;
   flex-direction: column;
@@ -7,6 +8,8 @@
   background: url("/images/taivas.jpg");
   height: 84vh;
 }
+
+/* Login Wrapper Heading */
 .Login-wrapper h3 {
   border: 5px solid #17c3bb;
   border-radius: 15px 15px 0px 0px;
@@ -17,6 +20,8 @@
   text-align: center;
   padding: 10px 0px;
 }
+
+/* Login Content */
 .Login-content {
   border: 5px solid #17c3bb;
   border-top: 0px;
@@ -30,9 +35,13 @@
   max-width: 350px;
   background-color: #79efe9;
 }
+
+/* Hide Image Inside Button */
 .Login-content button img {
   display: none;
 }
+
+/* Login Button */
 .Login-content button {
   height: 50px;
   background-color: transparent;
@@ -41,6 +50,8 @@
   border-radius: 1px;
   opacity: 60%;
 }
+
+/* No Account Section */
 .Login-content .No-account {
   border: 3px solid black;
   padding: 5px;
@@ -54,6 +65,8 @@
   opacity: 60%;
   text-align: center;
 }
+
+/* Remove Text Decoration from Links */
 .Login-content a {
   text-decoration: none;
 }

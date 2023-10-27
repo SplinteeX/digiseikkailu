@@ -1,6 +1,9 @@
+/* Teacher Info Wrapper */
 .Teacherinfo-wrapper {
   margin: 0% 10%;
 }
+
+/* Text Styles for Paragraphs and Lists */
 .Teacherinfo-wrapper p,
 li {
   font-size: 1em;
@@ -8,10 +11,14 @@ li {
   font-family: "Tahoma", sans-serif;
   font-style: normal;
 }
+
+/* Video Styles in Teacher Info */
 .Teacherinfo-video video {
   margin-bottom: 5%;
   max-height: 350px;
 }
+
+/* Teacher Info Video Container */
 .Teacherinfo-video {
   display: flex;
   justify-content: center;
@@ -19,6 +26,8 @@ li {
   margin-top: 1%;
   flex-direction: column;
 }
+
+/* Level Buttons in Teacher Info */
 .Teacherinfo-wrapper > .Level-buttons {
   display: flex;
   justify-content: center;
@@ -26,17 +35,21 @@ li {
   gap: 20px;
   margin-top: 5%;
 }
+
+/* Level Button Styling */
 .Teacherinfo-wrapper > .Level-buttons button {
   height: 65px;
   width: 20%;
   font-size: 1em;
   min-width: 150px;
 }
+
+/* Hide Images Inside Level Buttons */
 .Teacherinfo-wrapper > .Level-buttons img {
   display: none;
 }
 
-/* Need later ? */
+/* Teacher Material Container (Maybe need later?) */
 .Teacher-material {
   height: 65px;
   display: flex;
@@ -46,11 +59,13 @@ li {
   padding-left: 5%;
 }
 
+/* Teacher Material Text */
 .Teacher-material h3 {
   margin: 0;
   height: auto;
 }
 
+/* Button with Paragraph Container */
 .teacher-buttons > .Button-with-paragraph {
   width: 47.5%;
   display: flex;
@@ -59,6 +74,7 @@ li {
   text-align: left;
 }
 
+/* Button with Paragraph Image Styling */
 .teacher-buttons > .Button-with-paragraph img {
   object-fit: contain;
   margin: 0 auto;
@@ -66,21 +82,25 @@ li {
   height: 350px;
 }
 
+/* Image Hover Effect */
 .teacher-buttons > .Button-with-paragraph img:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
   cursor: pointer;
 }
 
+/* Button within Button with Paragraph */
 .teacher-buttons > .Button-with-paragraph button {
   width: 100%;
   margin-bottom: 1em;
 }
 
+/* Hide Images Inside Buttons */
 .teacher-buttons > .Button-with-paragraph button img {
   display: none;
 }
 
+/* Paragraph Styling in Button with Paragraph */
 .teacher-buttons > .Button-with-paragraph p {
   width: 100%;
   font-size: 1.2em;
@@ -90,6 +110,7 @@ li {
   font-weight: 300;
 }
 
+/* Teacher Buttons Container */
 .teacher-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -97,12 +118,15 @@ li {
   margin-top: 2.5%;
   justify-content: space-between;
 }
+
+/* Responsive Styles for Screen Widths */
 @media screen and (max-width: 1100px) {
   .teacher-buttons > .Button-with-paragraph img {
     object-fit: contain;
-    scale: 1.5;
+    transform: scale(1.5);
   }
 }
+
 @media screen and (max-width: 1100px) {
   .teacher-buttons > .Button-with-paragraph {
     width: 100%;
@@ -110,48 +134,59 @@ li {
     align-items: center;
     text-align: left;
   }
+
   .teacher-buttons > .Button-with-paragraph img {
     object-fit: contain;
-    scale: 1;
+    transform: scale(1);
   }
 }
+
 @media screen and (max-width: 850px) {
   .Teacherinfo-wrapper > .Level-buttons button {
     width: 45%;
   }
+
   .Teacherinfo-wrapper {
     margin: 0% 5%;
   }
 }
+
 @media screen and (max-width: 650px) {
   .Teacherinfo-video video {
     width: 100%;
     height: 300px;
   }
 }
+
 @media screen and (max-width: 500px) {
   .teacher-buttons > .Button-with-paragraph img {
     object-fit: contain;
-    scale: 1.3;
+    transform: scale(1.3);
   }
+
   .Teacherinfo-wrapper > .Level-buttons {
     flex-wrap: wrap;
     gap: 10px;
   }
+
   .Teacherinfo-wrapper > .Level-buttons button {
     width: 100%;
   }
+
   .Teacherinfo-wrapper {
     margin: 0% 2.5%;
   }
+
   .Teacherinfo-wrapper p,
   li {
     font-size: 0.9em;
   }
+
   .teacher-buttons > .Button-with-paragraph p {
     font-size: 1.2em;
     margin: 10% 0%;
   }
+
   .Teacher-material {
     margin-top: 3em;
     height: 75px;

@@ -1,58 +1,58 @@
+/* Teacher Profile Wrapper */
 .Teacher-profile-wrapper {
   margin: 0% 15%;
-  background-color: white; /* Set the background color to white */
+  background-color: white;
   padding: 30px;
   margin-top: 50px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a box-shadow for the floating effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Header and Text Styles */
 .Teacher-profile-wrapper h3,
-h4,
-p {
+.Teacher-profile-wrapper h4,
+.Teacher-profile-wrapper p {
   font-weight: 600;
   opacity: 80%;
   font-family: "Roboto", sans-serif;
 }
-.Teacher-profile-wrapper .Profile-header h3 {
-  margin-bottom: 10px;
-  margin-top: 0px;
-}
-.Profile-header {
-  display: flex; /* Use flexbox to arrange the child elements horizontally */
-  justify-content: space-between; /* Space between children for left and right alignment */
-  align-items: center; /* Vertically center the content */
+
+/* Profile Header */
+.Teacher-profile-wrapper .Profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.Profile-greeting {
-  text-align: left; /* Align text to the left */
+/* Greeting and Right Header Styles */
+.Profile-greeting,
+.Right-header {
+  text-align: left;
 }
 
 .Right-header {
-  text-align: left;
   border-left: 3px solid #c2c2c2;
   padding-left: 20px;
 }
 
-/* Optionally, you can add some styling to create space between the elements */
+/* Notifications */
 .Notifications {
-  margin-right: 10px; /* Add right margin to Notifications for spacing */
+  margin-right: 10px;
 }
+
+/* Upper Mid Section */
 .Teacher-profile-wrapper .upper-mid {
   margin-top: 4%;
 }
+
+/* Upper Mid Content */
 .Teacher-profile-wrapper .upper-mid .Content {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-.Teacher-profile-wrapper .upper-mid h3 {
-  color: #4a85f6;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+
+/* Button Styles */
 .Teacher-profile-wrapper .upper-mid .Content button {
   height: 40px;
   background-color: #4a85f6;
@@ -61,30 +61,42 @@ p {
   opacity: 100%;
   border-radius: 8px;
 }
+
+/* Text Styles for Upper Mid Content */
 .Teacher-profile-wrapper .upper-mid .Content h3,
-h4 {
+.Teacher-profile-wrapper .upper-mid .Content h4 {
   color: white;
   opacity: 100%;
 }
+
+/* Button Hover Effect */
 .Teacher-profile-wrapper .upper-mid .Content button:hover {
   cursor: pointer;
   opacity: 80%;
 }
+
+/* Searchbar */
 .Teacher-profile-wrapper .upper-mid .Content .Searchbar {
   width: 500px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
+
+/* Add Student Section */
 .Add-student {
   display: flex;
   align-items: center;
   gap: 10px;
   border-radius: 10px;
 }
+
+/* Info Section */
 .Teacher-profile-wrapper .Info-section {
   display: flex;
   justify-content: space-between;
   margin-top: 4%;
 }
+
+/* Info Box Styles */
 .Teacher-profile-wrapper .Info-section .Info-box {
   background-color: white;
   width: 250px;
@@ -94,15 +106,16 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-radius: 8px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-
   background: #fff;
 }
+
+/* Text Styles for Info Box */
 .Teacher-profile-wrapper .Info-section .Info-box h3,
-p {
+.Teacher-profile-wrapper .Info-section .Info-box p {
   margin: 0px;
 }
+
 .Teacher-profile-wrapper .Info-section .Info-box h3 {
   opacity: 60%;
   color: #4a85f6;
@@ -110,6 +123,8 @@ p {
   font-weight: 700;
   line-height: normal;
 }
+
+/* Student Titles Section */
 .Teacher-profile-wrapper .Student-titles {
   display: flex;
   gap: 5%;
@@ -119,9 +134,13 @@ p {
   padding: 0px 10px;
   border-radius: 8px 8px 0px 0px;
 }
+
+/* Student Title */
 .Teacher-profile-wrapper .Student-title {
   width: 10vw;
 }
+
+/* Student Info Section */
 .Student-info {
   display: flex;
   gap: 5%;
@@ -129,17 +148,32 @@ p {
   padding: 0px 10px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
+
+/* Student Info Title */
+.Student-info h3:hover {
+  cursor: pointer;
+}
 .Student-info h3 {
   width: 10vw;
   font-size: 16px;
 }
-.Student-info {
-  margin: 10px 0px;
+.Student-info div {
+  width: 10vw;
+  display: flex;
+  align-items: center;
 }
-.Student-info:hover {
-  cursor: pointer;
+.Student-info div img {
+  margin-left: 25px;
 }
 
+/* Hover Effect for Student remove*/
+.Student-info .Remove-button img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  animation: transform 1s ease-in-out;
+}
+
+/* Create Student Section */
 .Create-student {
   margin-top: 2.5%;
   border-radius: 10px;
@@ -152,21 +186,12 @@ p {
   animation: slideIn 0.5s ease-in-out;
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Field Holder Styles */
 .Create-student .field-holder {
   width: 100%;
 }
 
+/* Button Styles for Create Student */
 .Create-student button {
   width: 100%;
   background-color: transparent;
@@ -179,10 +204,13 @@ p {
   border-bottom: 2px solid #4a85f6;
 }
 
+/* Button Hover Effect for Create Student */
 .Create-student button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
+
+/* Field Holder Border */
 .Create-student .field-holder {
   border-bottom: 3px solid #4a85f6;
 }

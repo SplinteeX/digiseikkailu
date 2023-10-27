@@ -63,6 +63,7 @@ export const useSignup = () => {
       setIsLoading(false);
       dispatch({ type: "LOGIN", payload: json });
       console.log("Signup successful", token);
+      return true;
     }
   };
   return { signup, error, isLoading };

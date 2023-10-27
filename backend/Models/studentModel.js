@@ -19,6 +19,10 @@ const studentSchema = new Schema({
     type: Date,
     default: Date.now(),
   },
+  role: {
+    type: String,
+    default: "Student",
+  },
 });
 studentSchema.statics.login = async function (studentData) {
   const { username, teacherid } = studentData;
