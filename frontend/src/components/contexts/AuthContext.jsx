@@ -21,15 +21,13 @@ export const AuthContextProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    const user = cookie.get("User");
+    const user = cookie.get("User") || cookie.get("Student");
 
     if (user) {
       const role = JSON.parse(user).role;
       dispatch({ type: "LOGIN", payload: { user, role } });
     }
   }, []);
-
-  console.log("AuthContext state:", state);
 
   return (
     <AuthContext.Provider value={{ ...state, dispatch }}>

@@ -16,6 +16,7 @@ const createStudent = async (req, res) => {
       name,
       username,
       teacherid,
+      lastonline: Date.now(),
     });
 
     res.status(201).json({ newStudent });

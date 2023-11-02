@@ -50,6 +50,7 @@ export const useLogin = () => {
 
         console.log(token, "Login successful");
         dispatch({ type: "LOGIN", payload: json });
+        return true;
       }
     } catch (error) {
       throw error;

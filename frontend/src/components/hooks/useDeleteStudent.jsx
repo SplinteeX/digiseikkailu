@@ -4,7 +4,7 @@ export const useDeleteStudent = () => {
   const deleteStudent = async (id) => {
     console.log(id);
     try {
-      const Auth = Cookies.get("Authorization"); // Get the token from Cookies
+      const Auth = Cookies.get("Authorization");
 
       const response = await fetch(
         `http://localhost:8080/api/student/delete/${id}`,
