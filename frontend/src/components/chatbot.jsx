@@ -26,7 +26,7 @@ export const ChatBot = () => {
         <div className="Chatbot">
           <header>
             <div className="left-side">
-              <h1>Hi there</h1>
+              <h1>Hi there!</h1>
               <p>Welcome to our website!</p>
               <p>Ask us anything 🎉</p>
             </div>
