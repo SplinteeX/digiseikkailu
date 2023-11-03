@@ -29,6 +29,16 @@
 .Right-header {
   text-align: left;
 }
+.Profile-greeting .Logout {
+  color: red;
+  opacity: 50%;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+.Profile-greeting .Logout:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
 
 .Right-header {
   border-left: 3px solid #c2c2c2;
