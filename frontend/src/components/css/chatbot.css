@@ -1,0 +1,194 @@
+.Chatbot {
+  width: 20%;
+  min-width: 300px;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0px 4px 12px 0px rgba(104, 88, 46, 0.2);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 300px;
+}
+
+.Chatbot header {
+  display: flex;
+  background-color: #0099ff;
+  padding: 15px;
+  border-radius: 15px 15px 0px 0px;
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
+}
+
+.Chatbot .left-side {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  opacity: 1;
+}
+
+.Chatbot p,
+h1 {
+  margin: 5px;
+}
+
+.Chatbot h1 {
+  font-size: 2.5em;
+}
+
+.Chatbot p {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.Chatbot .circle {
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+}
+
+.Chatbot .circle img {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 8px;
+}
+
+.Chatbot .waves {
+  position: absolute;
+  bottom: 66px;
+  left: 0px;
+  width: 100%;
+}
+
+.Chatbot .Chat {
+  height: 100px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #fff;
+}
+
+.Chatbot .Chat input {
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Chatbot .footer {
+  height: 50px;
+  background-color: #fff;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.Chatbot .Text {
+  width: 97.5%;
+  height: 50px;
+  background-color: #0099ff;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 2.5%;
+  border-top: 2px solid #fff;
+}
+
+.Chatbot .Text p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+
+.Chatbot .ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #58b743;
+}
+
+.Chatbot .Arrow img {
+  position: absolute;
+  right: 23px;
+  top: 10px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(90deg); /* Initial rotation angle */
+  transition: transform 0.3s ease-in-out; /* Add a transition for smooth animation */
+}
+
+.Chatbot .Arrow img:hover {
+  cursor: pointer;
+  transform: rotate(270deg); /* Adjust the rotation angle on hover */
+}
+.Open-chat {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  background-color: #4b7dbe;
+  writing-mode: vertical-rl;
+  width: 50px;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.Open-chat p {
+  color: #fff;
+  font-family: Mulish, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.Open-ball {
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Open-ball div {
+  position: absolute;
+}
+.Open-chat:hover {
+  cursor: pointer;
+}
+
+.Open-ball .Open-square {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.Open-ball img {
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.Open-chat:hover img {
+  opacity: 1;
+  visibility: visible;
+}
+.Open-chat:hover .Open-square {
+  transform: scale(2.5);
+  border-radius: 50%;
+}
