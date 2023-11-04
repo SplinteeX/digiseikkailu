@@ -3,12 +3,15 @@ import doge from "../assets/doge.png";
 import waves from "../assets/waves.svg";
 import arrow from "../assets/arrowsvg.svg";
 import pen from "../assets/pen.svg";
+import zoomout from "../assets/zoom-out.svg";
 import { useState } from "react";
+import EmojiPicker from "emoji-picker-react";
 export const ChatBot = () => {
   const [toggle, setToggle] = useState(false);
   const handleChatClick = () => {
     setToggle(!toggle);
   };
+  const handleScaleClick = () => {};
   return (
     <div className="Chatbot-wrapper">
       {!toggle && (
@@ -32,6 +35,14 @@ export const ChatBot = () => {
             </div>
             <div className="Arrow">
               <img
+                className="ScaleImg"
+                src={zoomout}
+                width={"20px"}
+                height={"20px"}
+                onClick={handleScaleClick}
+                alt=""
+              />
+              <img
                 className="ArrowImg"
                 src={arrow}
                 width={"20px"}
@@ -49,6 +60,7 @@ export const ChatBot = () => {
             <p>We reply immediately!</p>
           </div>
           <img className="waves" src={waves} alt="" />
+          <div className="Extended-chat"></div>
           <div className="Chat">
             <input
               type="text"
@@ -57,7 +69,6 @@ export const ChatBot = () => {
               placeholder="Enter your message..."
             />
           </div>
-          <div className="footer"></div>
         </div>
       )}
     </div>

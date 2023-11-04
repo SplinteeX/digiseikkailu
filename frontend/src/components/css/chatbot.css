@@ -10,7 +10,6 @@
   right: 10px;
   bottom: 10px;
   transform: translateY(-50%);
-  height: 300px;
   animation: Slidein 1s ease 0s 1 normal forwards;
   opacity: 0;
 }
@@ -23,6 +22,7 @@
   position: relative;
   z-index: 1;
   font-size: 15px;
+  background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
 }
 
 .Chatbot .left-side {
@@ -70,18 +70,18 @@ h1 {
 }
 
 .Chatbot .waves {
-  position: absolute;
-  bottom: 66px;
   left: 0px;
   width: 100%;
+  background-color: #fff;
 }
 
 .Chatbot .Chat {
-  height: 100px;
+  height: 25px;
   padding: 15px;
   display: flex;
   align-items: flex-end;
   background-color: #fff;
+  border-radius: 0px 0px 15px 15px;
 }
 
 .Chatbot .Chat input {
@@ -89,12 +89,6 @@ h1 {
   border: none;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-}
-
-.Chatbot .footer {
-  height: 50px;
-  background-color: #fff;
-  border-radius: 0px 0px 15px 15px;
 }
 
 .Chatbot .Text {
@@ -121,20 +115,31 @@ h1 {
   background-color: #58b743;
 }
 
-.Chatbot .Arrow img {
+.Chatbot .Arrow {
+  display: flex;
   position: absolute;
-  right: 23px;
+  right: 10px;
   top: 10px;
+  gap: 10px;
+}
+
+.Chatbot .ArrowImg {
   height: 20px;
   width: 20px;
   transform: rotate(90deg); /* Initial rotation angle */
   transition: transform 0.3s ease-in-out; /* Add a transition for smooth animation */
 }
 
-.Chatbot .Arrow img:hover {
+.Chatbot .ArrowImg:hover {
   cursor: pointer;
   transform: rotate(270deg); /* Adjust the rotation angle on hover */
 }
+
+.Chatbot .ScaleImg:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 .Open-chat {
   position: fixed;
   z-index: 1;
@@ -148,6 +153,7 @@ h1 {
   align-items: center;
   border-radius: 5px;
 }
+
 .Open-chat p {
   color: #fff;
   font-family: Mulish, sans-serif;
@@ -156,6 +162,7 @@ h1 {
   letter-spacing: 0.5px;
   transform: rotate(180deg);
 }
+
 .Open-ball {
   height: 30px;
   width: 30px;
@@ -168,9 +175,11 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .Open-ball div {
   position: absolute;
 }
+
 .Open-chat:hover {
   cursor: pointer;
 }
@@ -181,6 +190,7 @@ h1 {
   background-color: white;
   transition: all 0.3s ease;
 }
+
 .Open-ball img {
   z-index: 1;
   opacity: 0;
@@ -192,10 +202,12 @@ h1 {
   opacity: 1;
   visibility: visible;
 }
+
 .Open-chat:hover .Open-square {
   transform: scale(2.5);
   border-radius: 50%;
 }
+
 @keyframes Slidein {
   0% {
     opacity: 0;
@@ -206,4 +218,10 @@ h1 {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+div.Extended-chat {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
 }
