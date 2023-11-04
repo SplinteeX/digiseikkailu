@@ -7,10 +7,12 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  left: 10px;
-  top: 50%;
+  right: 10px;
+  bottom: 10px;
   transform: translateY(-50%);
   height: 300px;
+  animation: Slidein 1s ease 0s 1 normal forwards;
+  opacity: 0;
 }
 
 .Chatbot header {
@@ -136,7 +138,8 @@ h1 {
 .Open-chat {
   position: fixed;
   z-index: 1;
-  top: 50%;
+  right: 10px;
+  bottom: 30px;
   background-color: #4b7dbe;
   writing-mode: vertical-rl;
   width: 50px;
@@ -151,6 +154,7 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.5px;
+  transform: rotate(180deg);
 }
 .Open-ball {
   height: 30px;
@@ -191,4 +195,15 @@ h1 {
 .Open-chat:hover .Open-square {
   transform: scale(2.5);
   border-radius: 50%;
+}
+@keyframes Slidein {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

@@ -10,7 +10,7 @@ export const ChatBot = () => {
     setToggle(!toggle);
   };
   return (
-    <>
+    <div className="Chatbot-wrapper">
       {!toggle && (
         <div className="Open-chat" onClick={handleChatClick}>
           <div className="Vertical-text">
@@ -23,7 +23,7 @@ export const ChatBot = () => {
         </div>
       )}
       {toggle && (
-        <div className="Chatbot">
+        <div className={`Chatbot`}>
           <header>
             <div className="left-side">
               <h1>Hi there!</h1>
@@ -60,6 +60,6 @@ export const ChatBot = () => {
           <div className="footer"></div>
         </div>
       )}
-    </>
+    </div>
   );
 };
