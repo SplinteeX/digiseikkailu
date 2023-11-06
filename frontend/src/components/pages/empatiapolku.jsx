@@ -1,23 +1,22 @@
 import "../css/empatiapolku.css";
-import Oikeinmerkki from "../elements/Listatekstit"
-import suuntamerkki from "../../assets/suuntamerkki.webp"
-import maisema from "../../assets/maisemakuva.webp"
+import Oikeinmerkki from "../elements/Listatekstit";
+import suuntamerkki from "../../assets/suuntamerkki.webp";
+import maisema from "../../assets/maisemakuva.webp";
+import empatiadata from "../data/empatiaData";
 const empatiapolku = () => {
     return (
       <div className="empatiapolku">
         <h1>Oppimistavoitteet</h1>
           <div className="container">
             <div className="oikeinmerkit">
-              <Oikeinmerkki width="32px" height="32px" teksti="tunnistaa nettikiusaaminen ja vihapuhe"></Oikeinmerkki>
-              <Oikeinmerkki width="32px" height="32px" teksti="pysäyttää kiusaaminen ja vihapuhe omalta kohdalta"></Oikeinmerkki>
-              <Oikeinmerkki width="32px" height="32px" teksti="oppia sananvapauden vastuusta" />
-              <Oikeinmerkki width="32px" height="32px" teksti="ymmärtää mielipiteen perustelun merkitys" />
-              <Oikeinmerkki width="32px" height="32px" teksti="harjoitella viestien kirjoittamista" />
-              <Oikeinmerkki width="32px" height="32px" teksti="pohtia, miten voidaan rakentaa yhteisöllistä ja toiset huomioon ottavaa viestintäkulttuuria netissä" />
-              <Oikeinmerkki width="32px" height="32px" teksti="kehittää lapsen laajaa tekstikäsitystä kuvan, videon ja tekstien kautta" />
-              <Oikeinmerkki width="32px" height="32px" teksti="oppia käyttämään, tulkitsemaan ja tuottamaan monimediaisia tekstejä" />
-              <Oikeinmerkki width="32px" height="32px" teksti="käyttää tieto- ja viestintäteknologiaa vastuullisesti ja turvallisesti" />
-              <Oikeinmerkki width="32px" height="32px" teksti="harjoitella tunnetaitoja ja tutustua empatian käsitteeseen" />
+            {texts.map((empatiadata, index) => (
+            <Oikeinmerkki
+              key={index}
+              width="32px"
+              height="32px"
+              teksti={empatiadata}
+            ></Oikeinmerkki>
+          ))}
             </div>
 
             <div className="right-div">
