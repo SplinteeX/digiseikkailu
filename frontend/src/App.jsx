@@ -11,6 +11,7 @@ import { useAuthContext } from "./components/hooks/useAuthContext";
 import { Navigate } from "react-router-dom";
 import ProtectedRouter from "./ProtectedRouter";
 import "./App.css";
+import Empatiapolku from "./components/pages/empatiapolku";
 
 function App() {
   const { user } = useAuthContext();
@@ -33,6 +34,7 @@ function App() {
               path="/profile"
               element={<ProtectedRouter element={<Profile />} />}
             />
+            <Route path="/empatiapolku" element={<Empatiapolku />} />
           </Routes>
         </div>
       </BrowserRouter>

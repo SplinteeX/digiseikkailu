@@ -1,0 +1,70 @@
+
+.empatiapolku h1{
+    color: #404040;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-family: 'Your Preferred Font', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    margin-top: 50px;
+    
+}
+.oikeinmerkit{
+    flex: 1;
+    
+}
+.right-div{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.oikeinmerkit, .suunta{
+    flex: 1;
+}
+
+.suunta{
+    float: right;
+    margin-left: 200px;
+    flex: 1;
+    
+
+}
+.vihapuhe{
+    flex: 1;
+    text-align: center;
+    max-width: fit-content;
+    margin-left: 250px;
+    margin-top: 130px;
+    
+    
+}
+.maisema{
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 450px;
+  
+    
+}
+
+.oikeinmerkki{
+    display: flex;
+    align-items: center;
+    margin-left: 240px;
+    margin-top: 30px;
+    
+    
+}
+
+.oikeinmerkkiteksti h3{
+   margin-left: 10px;
+   font-weight: 100;
+   text-decoration-color: gray;
+
+}
