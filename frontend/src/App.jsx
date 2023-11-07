@@ -7,6 +7,7 @@ import { TeacherLogin } from "./components/pages/teacher-login";
 import { StudentLogin } from "./components/pages/student-login";
 import { Register } from "./components/pages/register";
 import { Profile } from "./components/pages/teacher-profile";
+import { aboutUs } from "./components/pages/aboutUs";
 import { useAuthContext } from "./components/hooks/useAuthContext";
 import { Navigate } from "react-router-dom";
 import ProtectedRouter from "./ProtectedRouter";
@@ -30,9 +31,10 @@ function App() {
             <Route path="/kirjaudu/opettaja" element={<TeacherLogin />} />
             <Route path="/kirjaudu/oppilas" element={<StudentLogin />} />
             <Route
-              path="/profile"
+             path="/profile"
               element={<ProtectedRouter element={<Profile />} />}
             />
+            <Route path="/tietoa-meista" element={<aboutUs />} />
           </Routes>
         </div>
       </BrowserRouter>
