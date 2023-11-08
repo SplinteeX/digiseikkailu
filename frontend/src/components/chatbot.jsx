@@ -1,4 +1,5 @@
 import "../components/css/chatbot.css";
+import "../components/css/extendedChat.css";
 import doge from "../assets/doge.png";
 import waves from "../assets/waves.svg";
 import arrow from "../assets/arrowsvg.svg";
@@ -7,17 +8,37 @@ import zoomout from "../assets/zoom-out.svg";
 import { useState } from "react";
 import EmojiPicker from "emoji-picker-react";
 import emojiAdd from "../assets/emoji-add.svg";
+import { useOpenAi } from "./hooks/useOpenAi";
 export const ChatBot = () => {
+  const openAi = useOpenAi();
   const [toggle, setToggle] = useState(false);
   const [toggleEmoji, setToggleEmoji] = useState(false);
+  const [toggleExtended, setToggleExtended] = useState(true);
+  const [message, setMessage] = useState("");
+  const [messages, setMessages] = useState([]);
   const handleChatClick = () => {
     setToggle(!toggle);
   };
-
-  const handleScaleClick = () => {};
+  const handleScaleClick = () => {
+    setToggleExtended(!toggleExtended);
+  };
   const HandleEmojiPicker = () => {
     setToggleEmoji(!toggleEmoji);
   };
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const sentMessage = { text: message, type: "sent" };
+    setMessages([...messages, sentMessage]);
+    const response = await openAi(message);
+    const responseMessage = { text: response, type: "response" };
+    setMessages([...messages, sentMessage, responseMessage]);
+    setMessage("");
+  };
+
   return (
     <div className="Chatbot-wrapper">
       {!toggle && (
@@ -68,14 +89,28 @@ export const ChatBot = () => {
             <p>We reply immediately!</p>
           </div>
           <img className="waves" src={waves} alt="" />
-          <div className="Extended-chat"></div>
+          {!toggleExtended ||
+            (messages.length > 1 && (
+              <div className="Extended-chat">
+                {messages.map((msg, index) => (
+                  <div key={index} className={msg.type}>
+                    {msg.text}
+                  </div>
+                ))}
+              </div>
+            ))}
           <div className="Chat">
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="Enter your message..."
-            />
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="message"
+                id="message"
+                placeholder="Enter your message..."
+                value={message}
+                onChange={handleChange}
+              />
+              <button type="submit">send</button>
+            </form>
             <img
               className="Image-add"
               src={emojiAdd}

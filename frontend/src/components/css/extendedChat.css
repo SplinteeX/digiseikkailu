@@ -1,0 +1,43 @@
+.Extended-chat {
+  background-color: #fff;
+  height: 350px;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.Extended-chat div {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  box-shadow: 0px 4px 12px 0px rgba(104, 88, 46, 0.2);
+}
+.Extended-chat .sent {
+  color: white;
+  text-align: right;
+  margin-left: 20%;
+  position: relative;
+  margin-right: 10px;
+  background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
+}
+.Extended-chat .response {
+  color: black;
+  background-color: #f0f2f7;
+  text-align: left;
+  margin-right: 20%;
+  margin-left: 10px;
+}
+.Extended-chat::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.Extended-chat::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.Extended-chat::-webkit-scrollbar-track {
+  background: transparent;
+}
