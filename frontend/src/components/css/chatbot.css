@@ -1,5 +1,5 @@
 .Chatbot {
-  width: 25%;
+  width: 20%;
   min-width: 300px;
   position: fixed;
   z-index: 1;
@@ -145,13 +145,13 @@ h1 {
 .Chatbot .ArrowImg {
   height: 20px;
   width: 20px;
-  transform: rotate(90deg); /* Initial rotation angle */
-  transition: transform 0.3s ease-in-out; /* Add a transition for smooth animation */
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
 }
 
 .Chatbot .ArrowImg:hover {
   cursor: pointer;
-  transform: rotate(270deg); /* Adjust the rotation angle on hover */
+  transform: rotate(270deg);
 }
 
 .Chatbot .ScaleImg:hover {

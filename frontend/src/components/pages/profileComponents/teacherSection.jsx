@@ -58,10 +58,8 @@ const TeacherSection = ({ User }) => {
       .catch((error) => console.error(error));
   };
 
-  // Handle toggling the create student form
   const handleCreate = () => setCreate(!create);
 
-  // Handle creating a new student
   const handleCreateStudent = () => {
     createStudent(name, username);
     if (!createStudentError && !createStudentLoading) {
@@ -76,7 +74,6 @@ const TeacherSection = ({ User }) => {
   };
   const handleStudentDetails = (data) => setSelectedUser(data);
 
-  // Filter students based on the search query
   const filteredStudents = studentsData.filter((student) =>
     student.name.toLowerCase().includes(searchQuery.toLowerCase())
   );

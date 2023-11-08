@@ -30,13 +30,13 @@ export const ChatBot = () => {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
-
-    const sentMessage = { text: message, type: "sent" };
+    const saveMessage = message;
+    setMessage("");
+    const sentMessage = { text: saveMessage, type: "sent" };
     setMessages([...messages, sentMessage]);
     const response = await openAi(message);
     const responseMessage = { text: response, type: "response" };
     setMessages([...messages, sentMessage, responseMessage]);
-    setMessage("");
   };
 
   return (
