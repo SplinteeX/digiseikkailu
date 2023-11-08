@@ -13,7 +13,18 @@
   animation: Slidein 1s ease 0s 1 normal forwards;
   opacity: 0;
 }
-
+.Chatbot-wrapper .EmojiPickerReact {
+  position: fixed;
+  translate: translateY(-50%);
+  z-index: 999;
+  right: 30px;
+}
+.Chatbot-wrapper .epr-main {
+  position: fixed;
+  translate: translateY(-50%);
+  z-index: 999;
+  right: 50px;
+}
 .Chatbot header {
   display: flex;
   background-color: #0099ff;
@@ -82,6 +93,14 @@ h1 {
   align-items: flex-end;
   background-color: #fff;
   border-radius: 0px 0px 15px 15px;
+}
+.Chatbot .Chat img {
+  position: absolute;
+  right: 10px;
+}
+.Chatbot .Chat img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .Chatbot .Chat input {
