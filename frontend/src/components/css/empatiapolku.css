@@ -1,70 +1,107 @@
-
-.empatiapolku h1{
+.empatiapolku h1 {
     color: #404040;
     padding: 0;
     margin: 0;
     line-height: 1;
     font-family: 'Your Preferred Font', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center; 
 }
-.container{
+
+.container {
     display: flex;
+    flex-wrap: wrap; 
     margin-top: 50px;
-    
 }
-.oikeinmerkit{
+
+.oikeinmerkit {
     flex: 1;
-    
+    max-width: 50%; 
+    text-align: center; 
 }
-.right-div{
+
+.right-div {
     flex: 2;
     display: flex;
     flex-direction: column;
-}
-.oikeinmerkit, .suunta{
-    flex: 1;
+    max-width: 100%;
 }
 
-.suunta{
-    float: right;
-    margin-left: 200px;
+.oikeinmerkit,
+.suunta {
     flex: 1;
-    
-
+    max-width: 50%; 
+    text-align: center; 
 }
-.vihapuhe{
+
+.suunta {
+    float: none; 
+    margin-left: 0;
+    margin-top: 20px; 
+}
+
+.vihapuhe {
     flex: 1;
     text-align: center;
-    max-width: fit-content;
-    margin-left: 250px;
-    margin-top: 130px;
-    
-    
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 30px; 
 }
-.maisema{
-    margin-top: 75px;
-    width: 100%;
+
+.maisema {
+    margin-top: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.oikeinmerkki {
     display: flex;
     align-items: center;
-    margin-left: 450px;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.oikeinmerkkiteksti h3 {
+    margin-left: 10px;
+    font-weight: 100;
+    text-decoration-color: gray;
+}
+
+.vuorot {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
   
-    
-}
+  .vuoropuhelu {
+    display: flex; /* Display image and text side by side */
+    align-items: center; /* Vertically center the content within each component */
+    margin: 10px; /* Add spacing between components if needed */
+  }
+  
+  .kuva {
+    max-width: 50%; /* Adjust image size as needed */
+    height: auto; /* Maintain image aspect ratio */
+  }
+  
+  .teksti {
+    padding: 10px; /* Adjust spacing around the text as needed */
+    font-size: 16px; /* Adjust text size as needed */
+  }
+  
 
-.oikeinmerkki{
-    display: flex;
-    align-items: center;
-    margin-left: 240px;
-    margin-top: 30px;
-    
-    
-}
 
-.oikeinmerkkiteksti h3{
-   margin-left: 10px;
-   font-weight: 100;
-   text-decoration-color: gray;
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
 
+    .oikeinmerkit, .suunta {
+        max-width: 100%; 
+    }
+
+    .suunta {
+        text-align: center;
+    }
 }

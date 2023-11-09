@@ -3,6 +3,11 @@ import Oikeinmerkki from "../elements/Listatekstit";
 import suuntamerkki from "../../assets/suuntamerkki.webp";
 import maisema from "../../assets/maisemakuva.webp";
 import empatiadata from "../data/empatiaData";
+import { vuoropuhujat, vuorosanat } from "../data/vuorosanat";
+import Vuoropuhelu from "../elements/vuoropuhelut";
+import puhuja1 from "../../assets/puhuja1.webp";
+import puhuja2 from "../../assets/puhuja2.webp";
+import puhuja3 from "../../assets/puhuja3.webp";
 const empatiapolku = () => {
   return (
     <div className="empatiapolku">
@@ -37,6 +42,19 @@ const empatiapolku = () => {
       </div>
       <div className="maisema">
         <img src={maisema} height={550} width={1000}></img>
+      </div>
+      <div className="vuorot">
+        {vuorosanat.map((vuorosana, index) => (
+          <Vuoropuhelu
+            key={index}
+            width="32px"
+            height="32px"
+            teksti={vuorosana}
+            kuva={vuoropuhujat[index]}
+            ></Vuoropuhelu>
+            
+
+        ))}
       </div>
     </div>
   );
