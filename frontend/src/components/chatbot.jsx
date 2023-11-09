@@ -6,13 +6,11 @@ import arrow from "../assets/arrowsvg.svg";
 import pen from "../assets/pen.svg";
 import zoomout from "../assets/zoom-out.svg";
 import { useState } from "react";
-import EmojiPicker from "emoji-picker-react";
-import emojiAdd from "../assets/emoji-add.svg";
 import { useOpenAi } from "./hooks/useOpenAi";
+import send from "../assets/send.svg";
 export const ChatBot = () => {
-  const openAi = useOpenAi();
+  const { openAi } = useOpenAi();
   const [toggle, setToggle] = useState(false);
-  const [toggleEmoji, setToggleEmoji] = useState(false);
   const [toggleExtended, setToggleExtended] = useState(true);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
@@ -21,9 +19,6 @@ export const ChatBot = () => {
   };
   const handleScaleClick = () => {
     setToggleExtended(!toggleExtended);
-  };
-  const HandleEmojiPicker = () => {
-    setToggleEmoji(!toggleEmoji);
   };
   const handleChange = (event) => {
     setMessage(event.target.value);
@@ -54,7 +49,6 @@ export const ChatBot = () => {
       )}
       {toggle && (
         <div className={`Chatbot`}>
-          {toggleEmoji && <EmojiPicker onEmojiClick={HandleEmojiPicker} />}
           <header>
             <div className="left-side">
               <h1>Hi there!</h1>
@@ -90,7 +84,7 @@ export const ChatBot = () => {
           </div>
           <img className="waves" src={waves} alt="" />
           {!toggleExtended ||
-            (messages.length > 1 && (
+            (messages.length > 0 && (
               <div className="Extended-chat">
                 {messages.map((msg, index) => (
                   <div key={index} className={msg.type}>
@@ -109,16 +103,12 @@ export const ChatBot = () => {
                 value={message}
                 onChange={handleChange}
               />
-              <button type="submit">send</button>
+              <button type="submit">
+                <div className="Open-ball Submit-ball">
+                  <img src={send} alt="" />
+                </div>
+              </button>
             </form>
-            <img
-              className="Image-add"
-              src={emojiAdd}
-              width={"25px"}
-              height={"25px"}
-              alt=""
-              onClick={HandleEmojiPicker}
-            />
           </div>
         </div>
       )}

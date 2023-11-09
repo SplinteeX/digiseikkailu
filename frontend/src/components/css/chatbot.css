@@ -194,6 +194,23 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+.Submit-ball {
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+}
+.Submit-ball:hover {
+  cursor: pointer;
+}
+.Submit-ball:hover .Open-square {
+  scale: 2;
+  border-radius: 50%;
+}
+.Chat button {
+  background-color: #fff;
+  border: none;
+}
 
 .Open-ball div {
   position: absolute;
@@ -215,6 +232,12 @@ h1 {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.Submit-ball img {
+  opacity: 100;
+  visibility: visible;
+  position: absolute;
+  left: 10px;
 }
 
 .Open-chat:hover img {

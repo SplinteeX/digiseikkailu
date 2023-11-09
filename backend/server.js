@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const userRoutes = require("./Routes/userRoutes");
 const studentRoutes = require("./Routes/studentRoutes");
 const openaiController = require("./Controllers/openAiController");
+const requireAuth = require("./middleware/requireAuth");
 const cors = require("cors");
 require("dotenv").config();
 
@@ -22,7 +23,7 @@ app.use("/api/user", userRoutes);
 app.use("/api/student", studentRoutes);
 
 // Add a route for OpenAI
-app.post("/api/openai", openaiController.handleOpenAIRequest);
+app.post("/api/openai", requireAuth, openaiController.handleOpenAIRequest);
 
 mongoose
   .connect(process.env.MONGO_URI)

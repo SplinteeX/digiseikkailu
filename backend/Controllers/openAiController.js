@@ -1,10 +1,10 @@
-const { generateResponse } = require("./openai"); // Import the generateResponse function from your openai.js file
+const { generateResponse } = require("./openai");
 
 const handleOpenAIRequest = async (req, res) => {
   const userMessage = req.body.message;
 
   try {
-    const response = await generateResponse(userMessage); // Use the imported function to generate the AI response
+    const response = await generateResponse(userMessage);
     res.json({ response });
   } catch (error) {
     res
