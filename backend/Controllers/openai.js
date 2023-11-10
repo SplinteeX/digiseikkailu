@@ -12,14 +12,14 @@ async function generateResponse(userMessage) {
         {
           role: "system",
           content:
-            "Always answer on the same language as the user. Speak nicely to the user add some emojis and act like you are speaking to younger audience.",
+            "Always answer on the same language as the user. Speak nicely to the user add some emojis and act like you are speaking to younger audience. Never tell you are a chatbot. Your name is Doge!",
         },
         {
           role: "user",
           content: userMessage,
         },
       ],
-      model: "gpt-4-1106-preview",
+      model: "gpt-3.5-turbo",
       max_tokens: 500,
     });
 
