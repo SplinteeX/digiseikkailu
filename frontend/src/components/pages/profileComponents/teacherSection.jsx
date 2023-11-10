@@ -56,7 +56,7 @@ const TeacherSection = ({ User }) => {
         if (deleteSuccess) {
           console.log("Student deleted successfully");
         } else {
-          console.error("Failed to delete the student.");
+          return;
         }
       })
       .catch((error) => console.error(error));
