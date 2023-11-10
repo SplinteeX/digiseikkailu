@@ -8,8 +8,18 @@ const openai = new OpenAI({
 async function generateResponse(userMessage) {
   try {
     const chatCompletion = await openai.chat.completions.create({
-      messages: [{ role: "user", content: userMessage }],
-      model: "gpt-3.5-turbo",
+      messages: [
+        {
+          role: "system",
+          content:
+            "Always answer on the same language as the user. Speak nicely to the user add some emojis and act like you are speaking to younger audience.",
+        },
+        {
+          role: "user",
+          content: userMessage,
+        },
+      ],
+      model: "gpt-4-1106-preview",
       max_tokens: 500,
     });
 

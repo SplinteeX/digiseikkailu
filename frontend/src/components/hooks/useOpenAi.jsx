@@ -24,6 +24,7 @@ export const useOpenAi = () => {
         body: JSON.stringify({ message }),
       });
       if (response.status === 401) {
+        setIsLoading(false);
         return "You need to login first!";
       }
 
