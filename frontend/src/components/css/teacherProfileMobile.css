@@ -1,0 +1,179 @@
+.Teacher-mobile {
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 10px;
+}
+.Teacher-mobile .Profile-header {
+  border-bottom: 3px solid #c2c2c2;
+}
+.Teacher-mobile .Main-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.Teacher-mobile .Main-nav div {
+  background-color: #4a85f6;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 54px;
+  letter-spacing: 0.44px;
+  border-radius: 50%;
+}
+.Teacher-mobile .Main-nav h3 {
+  color: #4a85f6;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.Teacher-mobile .Main-nav div:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.Teacher-mobile .Main-nav img:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.Teacher-mobile .Student-list {
+  max-height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: grey; /* For Firefox */
+
+  /* For Webkit browsers (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: grey;
+  }
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: grey;
+}
+.Teacher-mobile .Student {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  margin: 20px 0px;
+}
+.Teacher-mobile .Student:hover {
+  cursor: pointer;
+}
+
+.Teacher-mobile .Search input {
+  outline: none;
+  width: 90%;
+  height: 25px;
+  margin: 5% 5%;
+  border: none;
+  border-bottom: 2px solid #c2c2c2;
+}
+.Teacher-mobile .Create {
+  width: 100%;
+  background-color: white;
+  height: 300px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.Teacher-mobile .Create input {
+  outline: none;
+  width: 90%;
+  height: 25px;
+  margin: 5% 5%;
+  border: none;
+  border-bottom: 2px solid #c2c2c2;
+}
+.Teacher-mobile .Create button {
+  width: 90%;
+  height: 25px;
+  margin: 5% 5%;
+  border: none;
+  border-radius: 12px;
+  background-color: #4a85f6;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.Teacher-mobile .Create button:hover {
+  cursor: pointer;
+}
+.Teacher-mobile .Create img {
+  position: absolute;
+  right: 0px;
+}
+.Teacher-mobile .Create img:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.Teacher-mobile .Selected-user div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 10px 0px;
+}
+.Teacher-mobile .Selected-user img {
+  display: flex;
+  float: right;
+}
+.Teacher-mobile .Selected-user img:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.Teacher-mobile .Selected-user button {
+  width: 90%;
+  height: 25px;
+  margin: 5% 5%;
+  border: none;
+  border-radius: 12px;
+  background-color: #4a85f6;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.Teacher-mobile .Selected-user button:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .Teacher-mobile {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Teacher-mobile {
+    width: 100%;
+  }
+  .Teacher-profile-wrapper {
+    margin: 0px;
+  }
+}

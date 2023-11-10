@@ -10,6 +10,7 @@ import { studentTitles } from "../../data/StudentTitles";
 import { InfoBox } from "../../elements/infoBox";
 import remove from "../../../assets/remove-icon.png";
 import { InfoBoard } from "../../elements/infoBoard";
+import ProfileHeader from "./Profile-header";
 
 const TeacherSection = ({ User }) => {
   // State variables
@@ -38,7 +39,10 @@ const TeacherSection = ({ User }) => {
   // Retrieve and set student data on component mount
   useEffect(() => {
     getStudents(User.teacherid)
-      .then((data) => setStudentsData(data.students))
+      .then((data) => {
+        setStudentsData(data.students);
+        console.log(data);
+      })
       .catch((error) => console.error(error));
   }, [User.teacherid]);
 
@@ -80,103 +84,109 @@ const TeacherSection = ({ User }) => {
 
   return (
     <div className="Teacher-section">
-      {selectedUser && (
+      {selectedUser ? (
         <InfoBoard onClose={() => setSelectedUser(null)} data={selectedUser} />
-      )}
-      <div className="upper-mid">
-        <h3>Students</h3>
-        <div className="Content">
-          <SearchBar
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <button className="Add-student" onClick={handleCreate}>
-            <h4>Add student</h4>
-            <h3>+</h3>
-          </button>
-        </div>
-
-        {create && (
-          <div className="Create-student">
-            <FloatInput
-              text={"Nimi"}
-              value={name}
-              setValue={setName}
-              Type={"text"}
-            ></FloatInput>
-            <FloatInput
-              text={"Käyttäjätunnus"}
-              value={username}
-              setValue={setUsername}
-              Type={"text"}
-            ></FloatInput>
-            {createStudentError && (
-              <div className="error">{createStudentError}</div>
-            )}
-            <PulseLoader
-              color={"#8CCBF3"}
-              loading={createStudentLoading}
-              size={10}
-            />
-            <button onClick={handleCreateStudent}>Luo oppilas</button>
-          </div>
-        )}
-      </div>
-
-      <div className="Info-section">
-        {studentData.map((data, index) => (
-          <div className="Info-box" key={index}>
-            {InfoBox(data.title, data.content)}
-          </div>
-        ))}
-      </div>
-
-      <div className="Student-titles">
-        {studentTitles.map((data, index) => (
-          <div className="Student-title" key={index}>
-            <h3>{data.title}</h3>
-          </div>
-        ))}
-      </div>
-
-      <div className="Student-list">
-        {getStudentsLoading ? (
-          <PulseLoader
-            color={"#8CCBF3"}
-            loading={getStudentsLoading}
-            size={10}
-          />
-        ) : getStudentsError ? (
-          <div className="error">{getStudentsError}</div>
-        ) : (
-          filteredStudents.map((data, index) => (
-            <div className={`Student ${data.active}`} key={index}>
-              <div className="Student-info">
-                <h3 onClick={() => handleStudentDetails(data)}>{data.name}</h3>
-                <h3 onClick={() => handleStudentDetails(data)}>
-                  {data.teacherid}
-                </h3>
-                <h3 onClick={() => handleStudentDetails(data)}>
-                  {data.username}
-                </h3>
-                <h3 onClick={() => handleStudentDetails(data)}>
-                  {new Date(data.lastonline).toLocaleString()}
-                </h3>
-                <div className="Remove-button">
-                  <img
-                    src={remove}
-                    width={"25px"}
-                    height={"25px"}
-                    alt=""
-                    onClick={() => handleRemove(data)}
-                  />
-                </div>
-              </div>
+      ) : (
+        <>
+          <ProfileHeader user={User} role={User.role} />
+          <div className="upper-mid">
+            <h3>Students</h3>
+            <div className="Content">
+              <SearchBar
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              <button className="Add-student" onClick={handleCreate}>
+                <h4>Add student</h4>
+                <h3>+</h3>
+              </button>
             </div>
-          ))
-        )}
-        ;
-      </div>
+
+            {create && (
+              <div className="Create-student">
+                <FloatInput
+                  text={"Nimi"}
+                  value={name}
+                  setValue={setName}
+                  Type={"text"}
+                ></FloatInput>
+                <FloatInput
+                  text={"Käyttäjätunnus"}
+                  value={username}
+                  setValue={setUsername}
+                  Type={"text"}
+                ></FloatInput>
+                {createStudentError && (
+                  <div className="error">{createStudentError}</div>
+                )}
+                <PulseLoader
+                  color={"#8CCBF3"}
+                  loading={createStudentLoading}
+                  size={10}
+                />
+                <button onClick={handleCreateStudent}>Luo oppilas</button>
+              </div>
+            )}
+          </div>
+
+          <div className="Info-section">
+            {studentData.map((data, index) => (
+              <div className="Info-box" key={index}>
+                {InfoBox(data.title, data.content)}
+              </div>
+            ))}
+          </div>
+
+          <div className="Student-titles">
+            {studentTitles.map((data, index) => (
+              <div className="Student-title" key={index}>
+                <h3>{data.title}</h3>
+              </div>
+            ))}
+          </div>
+
+          <div className="Student-list">
+            {getStudentsLoading ? (
+              <PulseLoader
+                color={"#8CCBF3"}
+                loading={getStudentsLoading}
+                size={10}
+              />
+            ) : getStudentsError ? (
+              <div className="error">{getStudentsError}</div>
+            ) : (
+              filteredStudents.map((data, index) => (
+                <div className={`Student ${data.active}`} key={index}>
+                  <div className="Student-info">
+                    <h3 onClick={() => handleStudentDetails(data)}>
+                      {data.name}
+                    </h3>
+                    <h3 onClick={() => handleStudentDetails(data)}>
+                      {data.teacherid}
+                    </h3>
+                    <h3 onClick={() => handleStudentDetails(data)}>
+                      {data.username}
+                    </h3>
+                    <h3 onClick={() => handleStudentDetails(data)}>
+                      {new Date(data.lastonline).toLocaleString()}
+                    </h3>
+                    <div className="Remove-button">
+                      <img
+                        src={remove}
+                        width={"25px"}
+                        height={"25px"}
+                        alt=""
+                        onClick={() => handleRemove(data)}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))
+            )}
+            ;
+          </div>
+        </>
+      )}
     </div>
   );
 };

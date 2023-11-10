@@ -6,6 +6,7 @@ import { useAuthContext } from "../hooks/useAuthContext";
 import ProfileHeader from "./profileComponents/Profile-header";
 import TeacherSection from "./profileComponents/teacherSection";
 import StudentSection from "./profileComponents/studentSection";
+import { TeacherSectionMobile } from "./profileComponents/teacherSectionMobile";
 
 export const Profile = () => {
   // Get user data from cookies
@@ -17,8 +18,8 @@ export const Profile = () => {
     <div className="Profile-wrapper">
       {role.toLowerCase() === "teacher" && (
         <div className={`Teacher-profile-wrapper`}>
-          <ProfileHeader user={User} role={User.role} />
           <TeacherSection User={User} />
+          <TeacherSectionMobile user={User} />
         </div>
       )}
       {role.toLowerCase() === "student" && (

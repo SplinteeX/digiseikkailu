@@ -224,3 +224,14 @@
 .Create-student .field-holder {
   border-bottom: 3px solid #4a85f6;
 }
+.Teacher-mobile {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .Teacher-mobile {
+    display: block;
+  }
+  .Teacher-section {
+    display: none;
+  }
+}
