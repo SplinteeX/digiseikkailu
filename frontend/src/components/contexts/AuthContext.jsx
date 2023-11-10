@@ -26,6 +26,8 @@ export const AuthContextProvider = ({ children }) => {
     if (user) {
       const role = JSON.parse(user).role;
       dispatch({ type: "LOGIN", payload: { user, role } });
+      console.log(state);
+      console.log(user);
     }
   }, []);
 

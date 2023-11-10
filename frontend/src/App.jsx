@@ -10,6 +10,7 @@ import { Profile } from "./components/pages/teacher-profile";
 import { useAuthContext } from "./components/hooks/useAuthContext";
 import { Navigate } from "react-router-dom";
 import ProtectedRouter from "./ProtectedRouter";
+import { ChatBot } from "./components/chatbot";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <div className="pages">
+          <ChatBot />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tietoa-opettajalle" element={<Teacherinfo />} />
