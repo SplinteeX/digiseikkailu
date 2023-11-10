@@ -5,9 +5,9 @@ import maisema from "../../assets/maisemakuva.webp";
 import empatiadata from "../data/empatiaData";
 import { vuoropuhujat, vuorosanat } from "../data/vuorosanat";
 import Vuoropuhelu from "../elements/vuoropuhelut";
-import puhuja1 from "../../assets/puhuja1.webp";
-import puhuja2 from "../../assets/puhuja2.webp";
-import puhuja3 from "../../assets/puhuja3.webp";
+import hamis from "../../assets/hämis.webp";
+import peukut from "../../assets/peukut.webp"
+import peukkuohje from "../../assets/peukkuohjeet.webp"
 const empatiapolku = () => {
   return (
     <div className="empatiapolku">
@@ -55,6 +55,18 @@ const empatiapolku = () => {
             
 
         ))}
+      </div>
+      <div className="hämis">
+        <img src={hamis}></img>
+      </div>
+      <div className="peukut">
+        <img src={peukut}></img>
+      </div>
+      <div className="peukkutehtävä">
+        <h1>PEUKKUTEHTÄVÄ 1</h1>
+      </div>
+      <div className="peukkuohjeet">
+          <img src={peukkuohje}></img>
       </div>
     </div>
   );

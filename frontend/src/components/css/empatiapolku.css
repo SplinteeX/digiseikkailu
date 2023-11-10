@@ -11,6 +11,7 @@
     display: flex;
     flex-wrap: wrap; 
     margin-top: 50px;
+    margin-left: 15%;
 }
 
 .oikeinmerkit {
@@ -34,10 +35,18 @@
 }
 
 .suunta {
-    float: none; 
-    margin-left: 0;
-    margin-top: 20px; 
+    float: none;
+    margin-left: 25%;
+    margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .suunta {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
 
 .vihapuhe {
     flex: 1;
@@ -58,8 +67,9 @@
 .oikeinmerkki {
     display: flex;
     align-items: center;
-    margin-left: 0;
+    margin-left: 50px;
     margin-top: 20px;
+    text-align: left;
 }
 
 .oikeinmerkkiteksti h3 {
@@ -71,23 +81,24 @@
 .vuorot {
     display: flex;
     flex-direction: column; 
-    align-items: flex-start; 
+    align-items: flex-start;
+    margin-left: 20%; 
   }
   
   .vuoropuhelu {
-    display: flex; /* Display image and text side by side */
-    align-items: center; /* Vertically center the content within each component */
-    margin: 10px; /* Add spacing between components if needed */
+    display: flex;
+    align-items: center;
+    margin: 10px;
   }
   
   .kuva {
-    max-width: 50%; /* Adjust image size as needed */
-    height: auto; /* Maintain image aspect ratio */
+    max-width: 50%;
+    height: auto;
   }
   
   .teksti {
-    padding: 10px; /* Adjust spacing around the text as needed */
-    font-size: 16px; /* Adjust text size as needed */
+    padding: 10px;
+    font-size: 16px;
   }
   
 
@@ -104,4 +115,44 @@
     .suunta {
         text-align: center;
     }
+}
+
+.hämis{
+    margin-top: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hämis img{
+    width: 150px;
+    height: auto;
+}
+
+.peukut{
+    margin-top: 130px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.peukut img{
+    width: 540px;
+    height: auto;
+}
+
+.peukkutehtävä{
+    margin-top: 50px;
+}
+
+.peukkuohjeet{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.peukkuohjeet img{
+    width: 500px;
+    height: auto;
 }
