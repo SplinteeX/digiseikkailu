@@ -227,6 +227,16 @@
 .Teacher-mobile {
   display: none;
 }
+@media screen and (max-width: 1000px) {
+  .Teacher-section .Info-section {
+    display: flex;
+  }
+  .Teacher-section .Info-section .Info-box {
+    width: 30%;
+    margin: 0px;
+    margin: 2.5px;
+  }
+}
 @media screen and (max-width: 800px) {
   .Teacher-mobile {
     display: block;
