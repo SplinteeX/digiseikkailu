@@ -1,0 +1,27 @@
+.Shopping-cart {
+  height: 100%;
+  width: 300px;
+  position: absolute;
+  background-color: white;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Shopping-cart h1 {
+  border-bottom: 3px solid black;
+  width: 100%;
+  text-align: center;
+  padding: 12.5px 0px;
+}
+.Shopping-cart img {
+  position: absolute;
+  right: 5px;
+  top: 25px;
+}
+.Shopping-cart img:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
