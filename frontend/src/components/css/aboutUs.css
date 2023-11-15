@@ -1,69 +1,127 @@
-.Kokonaisuus {
+.About-us {
   box-sizing: border-box;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-strong {
+
+.About-us .About-us-video {
+  width: 100%;
+  height: 50vh;
+}
+
+.About-us .Lower-section {
+  width: 60%;
+}
+
+.About-us .Lower-text-section div {
+  margin: 30px 0px;
+}
+
+.About-us .Mouse-image {
+  height: auto;
+  max-width: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.About-us strong {
   font-weight: 700;
 }
-.Yhteystiedot-teksti1 a {
+
+.About-us .Yhteystiedot-teksti1 a {
   text-decoration: none;
   color: #585858;
 }
-.Digi-linkki a {
+
+.About-us .Digi-linkki a {
   text-decoration: none;
   color: #17c3bb;
 }
-.Tieto-teksti {
-    color:#585858;
-    font-family: "abadi-mt",Sans-serif;
-    font-size: 39px;
-    font-weight: 400;
-    line-height: 40px;
-    margin-top: 0;
-  }
-.Tietoteksti {
-  color:#585858;
-  font-family: "abadi-mt",Sans-serif;
+
+.About-us .Tieto-teksti {
+  color: #585858;
+  font-family: "abadi-mt", Sans-serif;
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.About-us .Tietoteksti {
+  color: #585858;
+  font-family: "abadi-mt", Sans-serif;
   font-size: 22px;
   font-weight: 600;
 }
-.Yhteystiedot-otsikko {
+
+.About-us .Yhteystiedot-otsikko {
   color: #17c3bb;
-  font-family: "abadi-mt",Sans-serif;
+  font-family: "abadi-mt", Sans-serif;
   font-size: 41px;
   font-weight: 600;
 }
-.Yhteystiedot-teksti1 {
+
+.About-us .Yhteystiedot-teksti1 {
   color: #585858;
-  font-family: "abadi-mt",Sans-serif;
+  font-family: "abadi-mt", Sans-serif;
   font-size: 20px;
 }
-.Yhteystiedot-teksti2 {
+
+.About-us .Yhteystiedot-teksti2 {
   text-align: justify;
-  font-family: "abadi-mt",Sans-serif;
+  font-family: "abadi-mt", Sans-serif;
   font-size: 22px;
 }
-.Yhteystiedot-teksti3 {
+
+.About-us .Yhteystiedot-teksti3 {
   text-align: justify;
-  font-family: "abadi-mt",Sans-serif;
+  font-family: "abadi-mt", Sans-serif;
   font-size: 23px;
 }
-.Digi-linkki {
-  color: #17c3bb;
-  font-family: "abadi-mt",Sans-serif;
+
+.About-us .Digi-linkki {
+  color: red;
+  font-family: "abadi-mt", Sans-serif;
   font-size: 41px;
   font-weight: 600;
 }
-button {
-  font-family: "Roboto",Sans-serif;
+
+.About-us .About-us-button {
+  font-family: "Roboto", Sans-serif;
   font-size: 25px;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  fill: #010101;
-  color: #010101;
-  display:inline-block;
+  background-color: #8ad4ee;
+  border: 0px;
+  display: inline-block;
   padding: 12px 24px;
   border-radius: 3px;
   margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.About-us .About-us-button p {
+  margin: 0px;
+  color: black;
+  text-decoration: none;
+}
+
+.About-us .About-us-button p:hover {
+  cursor: pointer;
+}
+
+.About-us .About-us-button-image {
+  position: absolute;
+  left: 10px;
 }
