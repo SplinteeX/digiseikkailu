@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
 .empatiapolku h1 {
     color: #404040;
     padding: 0;
@@ -63,6 +69,10 @@
     align-items: center;
 
 }
+.maisema img{
+    width: 70%;
+    height: auto;
+}
 
 .oikeinmerkki {
     display: flex;
@@ -99,6 +109,7 @@
   .teksti {
     padding: 10px;
     font-size: 16px;
+    
   }
   
 
@@ -156,3 +167,140 @@
     width: 500px;
     height: auto;
 }
+
+.tweety{
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #cae0e9;
+    border: 2px solid #cae0e9;
+    
+}
+.tweety h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.viestiteksti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.viestiteksti h5{
+    font-size: x-large;
+    font-weight: normal;
+}
+.bold{
+    font-weight: bold;
+}
+
+.papukaija{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laatikko {
+    margin-top: 70px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .laatikko .leftkissa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .laatikko .tehtäväteksti {
+    width: fit-content;
+    padding: 10px;
+    margin-right: auto;
+  }
+  .tehtäväteksti{
+    font-size: x-large;
+  }
+  
+  .laatikko img {
+    max-width: 45%;
+    margin-top: 10px;
+  }
+  
+  .laatikko .tekstia {
+    padding: 10px;
+    text-align: center;
+  }
+  .tekstia{
+    font-size: x-large;
+  }
+  
+  .laatikko .youtubevidi {
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .laatikko {
+      flex-direction: column;
+    }
+  }
+
+  .vuoro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50%;
+  }
+
+  
+  .teht3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .teht3 h2{
+    font-size: xx-large;
+  }
+  
+  .teht3 img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .teht3h3 h3{
+    text-align: center;
+    margin-top: 40px;
+    font-size: x-large;
+  }
+
+  .hämähäkki{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .hämähäkki img{
+    width: 100px;
+    height: auto;
+  }
+  
+  .viestis{
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  

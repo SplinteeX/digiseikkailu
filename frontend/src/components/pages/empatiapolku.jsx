@@ -4,10 +4,17 @@ import suuntamerkki from "../../assets/suuntamerkki.webp";
 import maisema from "../../assets/maisemakuva.webp";
 import empatiadata from "../data/empatiaData";
 import { vuoropuhujat, vuorosanat } from "../data/vuorosanat";
+import {vuorosanas, vuoropuhuja} from "../data/vuorojutut"
+import viestit from "../data/viestit"
 import Vuoropuhelu from "../elements/vuoropuhelut";
 import hamis from "../../assets/hämis.webp";
+import hämis from "../../assets/hämis2.webp";
 import peukut from "../../assets/peukut.webp"
 import peukkuohje from "../../assets/peukkuohjeet.webp"
+import papu from "../../assets/papukaija.webp"
+import kissa from "../../assets/kissakuva.webp"
+import YoutubeVideo from "../elements/YoutubeVideo"
+import Postit from "../elements/postitit";
 const empatiapolku = () => {
   return (
     <div className="empatiapolku">
@@ -67,6 +74,62 @@ const empatiapolku = () => {
       </div>
       <div className="peukkuohjeet">
           <img src={peukkuohje}></img>
+      </div>
+      <div className="viestiseinä">
+          <div className="tweety">
+              <h3>Tweetyn viestiseinä</h3>
+          </div>
+          <div className="viestiteksti">
+              <h5>Tässä on <span className="bold">Tweety.</span> Se hallinnoi kaupungin viestiseinää ja on laajan lintuverkoston ylläpitäjä.
+                 Ylläpitäjän tehtäviin kuuluu viestien tarkkaileminen ja sääntöjen vastaisten viestien poistaminen.</h5>
+          </div>
+      </div>
+      <div className="papukaija">
+        <img src={papu}></img>
+      </div>
+      <div className="laatikko">
+        <div className="leftkissa">
+          <div className="tehtäväteksti">
+            <h4>TEHTÄVÄ 2</h4>
+          </div>
+          <img src={kissa} alt="Kuva" />
+          <div className="tekstia">
+            <h5>Ota selvää mistä asiasta Tweety oli huolissaan?</h5>
+          </div>
+        </div>
+        <div className="youtubevidi">
+          <video controls width="700" src="https://digiadventurers.com/wp-content/uploads/2019/10/720p-kopio.mov"></video>
+        </div>
+      </div>
+
+      <div className="Vuoro">
+        {vuorosanas.map((vuorosan, index) => (
+        <Vuoropuhelu
+          key={index}
+          width="32px"
+          height="32px"
+          teksti={vuorosan}
+          kuva={vuoropuhuja[index]}
+          />
+          ))}
+      </div>
+
+      <div className="teht3">
+        <h2>TEHTÄVÄ 3</h2>
+        <img src={kissa}></img>
+      </div>
+      <div className="teht3h3">
+        <h3>Mitkä viestit sinä poistaisit seinältä?</h3>
+      </div>
+      <div className="hämähäkki">
+        <img src={hämis}></img>
+      </div>
+      <div className="post-it">
+        {viestit.map((viest, index) => (
+        <Postit 
+          key={index}
+          kuva={viest}
+        ></Postit>))}
       </div>
     </div>
   );

@@ -6,6 +6,6 @@ const vuorosanat = [
     "Tule, näytämme sinulle vähän paikkoja ja asukkaita. Tapaat Tweetyn, Dogen, Laaman, Miuku-Maukun ja Kursorin.",
   ];
 const vuoropuhujat = [
-    puhuja1, puhuja2, puhuja3, puhuja1, puhuja2, puhuja3,
+    puhuja1, puhuja2,
 ];
   export {vuorosanat, vuoropuhujat};
