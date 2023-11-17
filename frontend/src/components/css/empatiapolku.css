@@ -13,7 +13,7 @@
     text-align: center; 
 }
 
-.container {
+.empatiapolku-container {
     display: flex;
     flex-wrap: wrap; 
     margin-top: 50px;
@@ -302,5 +302,95 @@
     text-align: center;
     margin-top: 60px;
   }
+
+  .empatiapolku-teht4A5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .empatiapolku-teht4A5 img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .empatiapolku-teht4A5 h2{
+    font-size: xx-large;
+  }
+
+  .empatiapolku-videocontainer{
+    width: 100%;
+    
+  }
+  .empatiapolku-somekaveri {
+    float: right;
+    width: 20%;
+    margin-top: -250px;
+    margin-right: 200px;
+  }
+
+  .empatiapolku-youtubevidi1{
+    display: block;
+    float: left;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 25%;
+    
+  }
+  .empatiapolku-youtubevidi2{
+      margin-right: 50px;
+      
+  }
+
+  .empatiapolku-buttoncontainer {
+    
+    padding: 20px;
+    border: 2px solid #8ad4ee;
+    background-color: #8ad4ee;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for anchor element */
+    margin-left: auto;
+    float: right;
+    margin-right: 15%;
+  }
+
+  /* Style for the button text */
+  .empatiapolku-buttoncontainer span {
+    
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white
+  }
+
+  .empatiapolku-buttoncontainerwrapper{
+    text-align: right;
+    
+  }
+
+
+  .empatiapolku-tekstiholder{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .empatiapolku-teksti2, .empatiapolku-hämis{
+    margin-left: 10%;
+  }
+
+  .empatiapolku-hämis img{
+    width: 100px;
+    height: auto;
+  }
+
+
+
+  
+  
+  
+  
+  
+  
   
   

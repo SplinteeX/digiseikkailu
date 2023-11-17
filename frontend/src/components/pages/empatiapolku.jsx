@@ -13,13 +13,14 @@ import peukut from "../../assets/peukut.webp"
 import peukkuohje from "../../assets/peukkuohjeet.webp"
 import papu from "../../assets/papukaija.webp"
 import kissa from "../../assets/kissakuva.webp"
+import somekaveri from "../../assets/somekaveri.webp"
 import YoutubeVideo from "../elements/YoutubeVideo"
 import Postit from "../elements/postitit";
 const empatiapolku = () => {
   return (
     <div className="empatiapolku">
       <h1>Oppimistavoitteet</h1>
-      <div className="container">
+      <div className="empatiapolku-container">
         <div className="oikeinmerkit">
           {empatiadata.map((empatiadata, index) => (
             <Oikeinmerkki
@@ -131,6 +132,51 @@ const empatiapolku = () => {
           kuva={viest}
         ></Postit>))}
       </div>
+      <div className="empatiapolku-teht4A5">
+        <h2>TEHTÄVÄ 4 JA 5</h2>
+        <img src={kissa}></img>
+      </div>
+      <div className="empatiapolku-videocontainer">
+        <div className="empatiapolku-youtubevidi1">
+          <YoutubeVideo
+            videoId="VCqX0G-hQDo"
+            width={"100%"}
+            height={"250px"}
+            color={"#79b7e2"}
+            
+          />
+        </div>
+        <div className="empatiapolku-youtubevidi2">
+          <YoutubeVideo
+              videoId="lekkpIfJ-Ec"
+              width={"25%"}
+              height={"250px"}
+              color={"#79b7e2"}
+              
+          />
+        </div>
+        <div className="empatiapolku-somekaveri">
+          <img src={somekaveri}></img>
+        </div>
+      </div>
+      <div className="empatiapolku-buttoncontainerwrapper">
+        <a href="" class="empatiapolku-buttoncontainer">
+          <span>Kiva somekaveri -tehtävä 6</span>
+        </a>
+      </div>
+      <div className="empatiapolku-tekstiholder">
+        <div className="empatiapolku-teksti1">
+          <h2>Mikä on netiketti?</h2>
+        </div>
+        <div className="empatiapolku-teksti2">
+          <h2>Somekaveruus</h2>
+        </div>
+        <div className="empatiapolku-hämis">
+          <img src={hämis}/>
+        </div>
+      </div>
+      
+
     </div>
   );
 };
