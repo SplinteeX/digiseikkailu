@@ -16,6 +16,7 @@ import kissa from "../../assets/kissakuva.webp"
 import somekaveri from "../../assets/somekaveri.webp"
 import YoutubeVideo from "../elements/YoutubeVideo"
 import Postit from "../elements/postitit";
+import doge from "../../assets/dogekuva.webp";
 const empatiapolku = () => {
   return (
     <div className="empatiapolku">
@@ -174,6 +175,23 @@ const empatiapolku = () => {
         <div className="empatiapolku-hämis">
           <img src={hämis}/>
         </div>
+      </div>
+
+      <div className="empatiapolku-dogenpolku">
+        <h3>Dogen boxi – Tehtävä 7</h3>
+      </div>
+      <div className="empatiapolku-dogeteksti">
+          <h3>Doge on Somen kaupungin tarkin uutistentutkija. Se etsii kuvia sukulaisistaan,
+             joita on esiintynyt paljon meemeissä lähivuosina.
+             Samalla se on oppinut erottamaan valeuutiset oikeista, ammattilaisten tekemistä uutisista.
+              Se tietää myös miten erilaisiin viesteihin tulisi suhtautua.</h3>
+      </div>
+
+      <div className="empatiapolku-dogekuva">
+        <img src={doge}></img>
+      </div>
+      <div className="empatiapolku-hämis2">
+        <img src={hamis}></img>
       </div>
       
 
