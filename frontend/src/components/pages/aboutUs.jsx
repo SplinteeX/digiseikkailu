@@ -4,6 +4,11 @@ import "../css/aboutUs.css";
 import mouseImage from "/images/About-us-mouse-image.webp";
 import svg from "../../assets/About-us-button-image.svg";
 import videoSrc from "/teacher-info/Tietoa-opettajalle-video.mp4";
+import breikkeri from "/images/yhteistyo-kuvat/breikkeri.png.webp";
+import empatia from "/images/yhteistyo-kuvat/Empatia.jpg.webp";
+import nitomani from "/images/yhteistyo-kuvat/Nitomani.png.webp";
+import helsinki from "/images/yhteistyo-kuvat/HELSINKI.png.webp";
+import loput from "/images/yhteistyo-kuvat/loput.png.webp";
 
 export const AboutUs = () => {
   const infoTexts = {
@@ -49,6 +54,7 @@ export const AboutUs = () => {
           <div className="Tietoteksti">
             <p>{infoTexts.text}</p>
           </div>
+          
           <img src={mouseImage} className="Mouse-image" alt="" />
           <div className="Yhteystiedot-otsikko">
             <h1>Yhteystiedot</h1>
@@ -97,6 +103,35 @@ export const AboutUs = () => {
             <p>BLOGI</p>
           </Link>
         </button>
+
+        <div className="Yhteistyossa">
+            <a href="https://digiadventures.com">Yhteistyössä</a>
+        </div>
+
+        <div className="img-wrapper">
+          <div>
+          <a href="" target="_blank" rel="noreferrer">
+          <img src={empatia} width={146} height={76} aspectRatio: alt="Digi"></img>
+          </a>
+          </div>
+          <div>
+          <a href="https://breikkeri.fi" target="_blank" rel="noreferrer">
+          <img src={breikkeri} width={111} height={36} alt="Digi"></img>
+          </a>
+          </div>
+          <div>
+          <a href="https://nitomanischool.com" target="_blank" rel="noreferrer">
+          <img src={nitomani} width={136} height={136} alt="Digi"></img>
+          </a>
+          </div>
+          <div>
+          <a href="https://oppimisenuusiaika.fi/helsinki/eac/" target="_blank" rel="noreferrer">
+          <img src={helsinki} width={158} height={73} alt="Digi"></img>
+          </a>
+          </div>
+          <div><img src={loput} width={930} height={362}  /></div>
+        </div>
+
       </div>
     </div>
   );

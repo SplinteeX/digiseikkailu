@@ -17,7 +17,7 @@
 }
 
 .About-us .Lower-text-section div {
-  margin: 30px 0px;
+  margin: 80px 0px;
 }
 
 .About-us .Mouse-image {
@@ -26,6 +26,7 @@
   border: 0;
   border-radius: 0;
   box-shadow: none;
+  margin-bottom:150px;
 }
 
 .About-us strong {
@@ -62,7 +63,7 @@
 .About-us .Yhteystiedot-otsikko {
   color: #17c3bb;
   font-family: "abadi-mt", Sans-serif;
-  font-size: 41px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -73,6 +74,7 @@
 }
 
 .About-us .Yhteystiedot-teksti2 {
+  margin-top:200px;
   text-align: justify;
   font-family: "abadi-mt", Sans-serif;
   font-size: 22px;
@@ -87,7 +89,7 @@
 .About-us .Digi-linkki {
   color: red;
   font-family: "abadi-mt", Sans-serif;
-  font-size: 41px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -125,3 +127,26 @@
   position: absolute;
   left: 10px;
 }
+
+.About-us .Yhteistyossa a {
+  text-decoration: none;
+  color: #585858;
+}
+
+.About-us .Yhteistyossa {
+  font-family: "abadi-mt", Sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.About-us .img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+ }
+ 
+ .About-us .img-wrapper > div {
+  flex: 0 1 25%;
+  vertical-align: middle;
+  display: inline-block;
+  align-content: center;
+ }
