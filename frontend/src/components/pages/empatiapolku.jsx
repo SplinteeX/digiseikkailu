@@ -5,6 +5,7 @@ import maisema from "../../assets/maisemakuva.webp";
 import empatiadata from "../data/empatiaData";
 import { vuoropuhujat, vuorosanat } from "../data/vuorosanat";
 import {vuorosanas, vuoropuhuja} from "../data/vuorojutut"
+import {vuorosanax, vuoropuhujax} from "../data/vuoropuhuminen"
 import viestit from "../data/viestit"
 import Vuoropuhelu from "../elements/vuoropuhelut";
 import hamis from "../../assets/hämis.webp";
@@ -191,6 +192,22 @@ const empatiapolku = () => {
         <img src={doge}></img>
       </div>
       <div className="empatiapolku-hämis2">
+        <img src={hamis}></img>
+      </div>
+
+      <div className="empatiapolku-vuoro">
+        {vuorosanax.map((vuorosans, index) => (
+          <Vuoropuhelu
+            key={index}
+            width="32px"
+            height="32px"
+            teksti={vuorosans}
+            kuva={vuoropuhujax[index]}
+          />
+          ))}
+      </div>
+
+      <div className="empatiapolku-hämis3">
         <img src={hamis}></img>
       </div>
       
