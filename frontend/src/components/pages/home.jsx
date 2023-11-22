@@ -1,4 +1,4 @@
-import CommonButton from "../elements/commonButton";
+import CommonButton from "../elements/CommonButton";
 import YoutubeVideo from "../elements/YoutubeVideo";
 import MediaText from "../elements/mediaText";
 import "../css/home.css";
@@ -45,9 +45,7 @@ const Home = () => {
       </div>
       <div className="Second-video">
         <YoutubeVideo
-          videoId="bI6OmpFErgw"
-          light={videoData[1].light}
-          buttontext={"Kokeile"}
+          videoId="lekkpIfJ-Ec"
           width={"100%"}
           height={"450px"}
           color={"#79b7e2"}

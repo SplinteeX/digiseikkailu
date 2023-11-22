@@ -1,4 +1,4 @@
-import CommonButton from "../elements/commonButton";
+import CommonButton from "../elements/CommonButton";
 import "../css/login.css";
 import { Link } from "react-router-dom";
 
