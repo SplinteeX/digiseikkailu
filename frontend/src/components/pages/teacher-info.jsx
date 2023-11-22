@@ -1,5 +1,5 @@
 import "../css/teacherinfo.css";
-import CommonButton from "../elements/commonButton";
+import CommonButton from "../elements/CommonButton";
 import ButtonText from "../elements/buttonText";
 import GameInfoWImg from "../data/GameInfoWImg";
 import info from "../data/info";

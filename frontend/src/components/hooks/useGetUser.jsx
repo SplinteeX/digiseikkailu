@@ -2,7 +2,7 @@ import cookie from "js-cookie";
 export const useGetUser = () => {
   const GetUser = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/user/getUser", {
+      const response = await fetch("http://localhost:8080/api/getUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
