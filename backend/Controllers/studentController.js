@@ -28,6 +28,7 @@ const loginStudent = async (req, res) => {
   const { username, teacherid } = req.body;
   try {
     const student = await Student.login({ username, teacherid });
+    await Student.findByIdAndUpdate(student._id, { lastonline: Date.now() });
     const role = student.role;
     const token = createToken(student._id);
     res.status(200).json({
