@@ -26,15 +26,11 @@ export const AuthContextProvider = ({ children }) => {
     const testUser = GetUser();
     testUser.then((user) => {
       const data = user.user;
-      console.log("This is data: ", user);
       if (data) {
         const role = data.role;
         const user = JSON.stringify(data);
-        console.log(role);
 
         dispatch({ type: "LOGIN", payload: { user, role } });
-        console.log(state);
-        console.log(user);
       }
     });
   }, []);
