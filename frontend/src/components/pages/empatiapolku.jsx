@@ -18,6 +18,8 @@ import somekaveri from "../../assets/somekaveri.webp"
 import YoutubeVideo from "../elements/YoutubeVideo"
 import Postit from "../elements/postitit";
 import doge from "../../assets/dogekuva.webp";
+import juhlakuva from "../../assets/juhlakuva.webp";
+
 const empatiapolku = () => {
   return (
     <div className="empatiapolku">
@@ -210,6 +212,17 @@ const empatiapolku = () => {
       <div className="empatiapolku-hämis3">
         <img src={hamis}></img>
       </div>
+
+      <div className="empatiapolku-TARINA">
+        <h1>TARINA</h1>
+      </div>
+      <div className="empatiapolku-juhlat">
+        <h2>Juhlat voivat alkaa</h2>
+      </div>
+      <div className="empatiapolku-juhlakuva">
+        <img src={juhlakuva}/>
+      </div>
+
       
 
     </div>

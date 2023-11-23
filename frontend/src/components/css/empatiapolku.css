@@ -468,3 +468,30 @@
     width: 100px;
     height: auto;
   }
+
+  .empatiapolku-TARINA{
+    text-align: center;
+    background-color: #fcff55;
+    width: fit-content;
+    margin-top: 40px;
+    margin-left: 16%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .empatiapolku-juhlat{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .empatiapolku-juhlat h2{
+    color: rgb(181, 5, 5);
+  }
+
+  .empatiapolku-juhlakuva{
+    text-align: center;
+    margin-top: 40px;
+  }
+
