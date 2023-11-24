@@ -3,14 +3,48 @@ import { SimpleButton } from "../elements/SimpleButton";
 import "../css/Products.css";
 import { ProductsData } from "../data/ProductsData";
 import checkmark from "../../assets/check-mark.png";
+import x from "../../assets/x.png";
 
 export const Products = () => {
   const { Oppilaitos, Yksityishenkilö, Kokeile } = ProductsData();
   const [activeButton, setActiveButton] = useState("Oppilaitos");
 
-  const handleClick = (text) => {
-    setActiveButton(text);
-  };
+  const handleClick = (text) => setActiveButton(text);
+
+  const renderFeatures = (features, icon) => (
+    <div className="Properties">
+      {features.split(",").map((feature, i) => (
+        <div className="Properties-child" key={i}>
+          <img src={icon} alt="" />
+          <p className="Properties">{feature.trim()}</p>
+        </div>
+      ))}
+    </div>
+  );
+
+  const renderProducts = (products, title) => (
+    <>
+      <h1>{title}</h1>
+      <div className="Product-boxes">
+        {products.map((product, index) => (
+          <div key={index} className="Products-box">
+            <h3>{product.title}</h3>
+            {product.img && <img src={product.img} alt={product.title} />}
+            <p>{product.description}</p>
+            {product.ominaisuudet &&
+              renderFeatures(product.ominaisuudet, checkmark)}
+            {product.notIncluded && renderFeatures(product.notIncluded, x)}
+          </div>
+        ))}
+      </div>
+    </>
+  );
+
+  const buttons = [
+    { text: "Oppilaitos", data: Oppilaitos },
+    { text: "Yksityishenkilö", data: Yksityishenkilö },
+    { text: "Kokeile", data: Kokeile },
+  ];
 
   return (
     <div className="Products">
@@ -19,132 +53,42 @@ export const Products = () => {
           <SimpleButton
             text={"9,90€ / kk. per oppilas"}
             active={activeButton}
-          ></SimpleButton>
+          />
         )}
         {activeButton === "Yksityishenkilö" && (
           <SimpleButton
-            style={"Normal"}
             text={"9,90€ / kk"}
             active={activeButton}
-          ></SimpleButton>
+            style={"Normal"}
+          />
         )}
         {activeButton === "Kokeile" && (
-          <SimpleButton
-            text={"Kokeile nyt!"}
-            active={activeButton}
-          ></SimpleButton>
+          <SimpleButton text={"Kokeile nyt!"} active={activeButton} />
         )}
       </div>
       <header>
-        <SimpleButton
-          text={"Oppilaitos"}
-          onClick={() => handleClick("Oppilaitos")}
-          active={activeButton === "Oppilaitos"}
-        ></SimpleButton>
-        <SimpleButton
-          text={"Yksityishenkilö"}
-          onClick={() => handleClick("Yksityishenkilö")}
-          active={activeButton === "Yksityishenkilö"}
-        ></SimpleButton>
-        <SimpleButton
-          text={"Kokeile"}
-          onClick={() => handleClick("Kokeile")}
-          active={activeButton === "Kokeile"}
-        ></SimpleButton>
+        {buttons.map((button, index) => (
+          <SimpleButton
+            key={index}
+            text={button.text}
+            onClick={() => handleClick(button.text)}
+            active={activeButton === button.text}
+          />
+        ))}
       </header>
       <div className="Products-content">
-        {(activeButton === "Yksityishenkilö" ||
-          activeButton === "Kokeile" ||
-          activeButton === "Oppilaitos") && (
-          <div>
-            {activeButton === "Yksityishenkilö" && (
-              <>
-                <h1>Sisältää yhden tilin jolla oikeudet seuraaviin asioihin</h1>
-                <div className="Product-boxes">
-                  {Yksityishenkilö.map((product, index) => (
-                    <div key={index} className="Products-box">
-                      <h3>{product.title}</h3>
-                      {product.img && (
-                        <img src={product.img} alt={product.title} />
-                      )}
-                      <p>{product.description}</p>
-                      {product.ominaisuudet && (
-                        <div className="Properties">
-                          {product.ominaisuudet.split(",").map((feature, i) => (
-                            <div className="Properties-child">
-                              <img src={checkmark} alt="" />
-                              <p className="Properties" key={i}>
-                                {feature.trim()}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
-
-            {activeButton === "Kokeile" && (
-              <>
-                <h1>Kokeilujakso sisältää mainoksia.</h1>
-                <div className="Product-boxes">
-                  {Kokeile.map((product, index) => (
-                    <div key={index} className="Products-box">
-                      <h3>{product.title}</h3>
-                      {product.img && (
-                        <img src={product.img} alt={product.title} />
-                      )}
-                      <p>{product.description}</p>
-                      {product.ominaisuudet && (
-                        <div className="Properties">
-                          {product.ominaisuudet.split(",").map((feature, i) => (
-                            <div className="Properties-child">
-                              <img src={checkmark} alt="" />
-                              <p className="Properties" key={i}>
-                                {feature.trim()}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
-
-            {activeButton === "Oppilaitos" && (
-              <>
-                <h1>Sisältää materiaalit koko oppilaitokselle</h1>
-                <div className="Product-boxes">
-                  {Oppilaitos.map((product, index) => (
-                    <div key={index} className="Products-box">
-                      <h3>{product.title}</h3>
-                      {product.img && (
-                        <img src={product.img} alt={product.title} />
-                      )}
-                      <p>{product.description}</p>
-                      {product.ominaisuudet && (
-                        <div className="Properties">
-                          {product.ominaisuudet.split(",").map((feature, i) => (
-                            <div className="Properties-child">
-                              <img src={checkmark} alt="" />
-                              <p className="Properties" key={i}>
-                                {feature.trim()}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-        )}
+        {activeButton === "Oppilaitos" &&
+          renderProducts(
+            Oppilaitos,
+            "Sisältää materiaalit koko oppilaitokselle"
+          )}
+        {activeButton === "Yksityishenkilö" &&
+          renderProducts(
+            Yksityishenkilö,
+            "Sisältää yhden tilin jolla oikeudet seuraaviin asioihin"
+          )}
+        {activeButton === "Kokeile" &&
+          renderProducts(Kokeile, "Kokeilujakso sisältää mainoksia.")}
       </div>
     </div>
   );

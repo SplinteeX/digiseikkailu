@@ -37,9 +37,15 @@ export const ProductsData = () => {
       title: "Yksityishenkilön ominaisudet",
       description: "Yksityishenkilönä saat täydet oikeudet digiseikkailuun.",
       ominaisuudet: "Seuranta, Diplomi, Tuki, Tehtävien suoritusmerkki, Chat",
+      notIncluded: "Opettajan paneeli, Oppilaan lisääminen",
     },
   ];
   const Kokeile = [
+    {
+      title: "Mainokset",
+      img: "images/mainokset.png",
+      description: "Mainokset kuuluvat ilmaiseen digiseikkailu kokeiluun.",
+    },
     {
       title: "Digiseikkailu tarinat ja tehtävä vihko",
       img: "images/tarinat-ja-tehtävät-työkirja-home.png",
@@ -57,6 +63,8 @@ export const ProductsData = () => {
       description:
         "Kokeilujakson ominaisuudet ovat niukemmat kuin ostetun version.",
       ominaisuudet: "Chat",
+      notIncluded:
+        "Seuranta, Diplomi, Tuki, Tehtävien suoritusmerkki, Opettajan paneeli, Oppilaan lisääminen",
     },
   ];
   return { Oppilaitos, Yksityishenkilö, Kokeile };

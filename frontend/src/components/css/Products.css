@@ -9,11 +9,10 @@
   margin-bottom: 1rem;
   padding: 1rem;
   gap: 20px;
-  border-bottom: 1px solid #e0e0e0;
 }
 .Products .Add-to-cart {
   position: absolute;
-  top: 15px;
+  top: 35px;
   left: 15px;
 }
 .Products .Add-to-cart button {
@@ -26,6 +25,7 @@
   gap: 50px;
   min-height: 350px;
   margin: 0px 20px;
+  flex-wrap: wrap;
 }
 .Products-box {
   width: 33%;
@@ -92,9 +92,6 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .Product-boxes {
-    flex-wrap: wrap;
-  }
   .Products .Add-to-cart {
     position: static;
     display: flex;
