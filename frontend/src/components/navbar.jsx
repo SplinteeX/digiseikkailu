@@ -35,7 +35,7 @@ const Navbar = () => {
     },
     {
       title: "Tietoa meistä",
-      path: "/",
+      path: "/tietoa-meista",
       cName: "nav-text",
     },
     {
