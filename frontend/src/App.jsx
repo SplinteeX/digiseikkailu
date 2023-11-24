@@ -11,6 +11,7 @@ import { useAuthContext } from "./components/hooks/useAuthContext";
 import { Navigate } from "react-router-dom";
 import ProtectedRouter from "./ProtectedRouter";
 import { ChatBot } from "./components/chatbot";
+import { Products } from "./components/pages/Products";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tietoa-opettajalle" element={<Teacherinfo />} />
+            <Route path="/tuotteet" element={<Products />} />
             <Route
               path="/kirjaudu"
               element={!user ? <Login /> : <Navigate to="/profile" />}

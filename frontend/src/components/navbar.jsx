@@ -30,7 +30,7 @@ const Navbar = () => {
     },
     {
       title: "Tuotteet",
-      path: "/",
+      path: "/Tuotteet",
       cName: "nav-text",
     },
     {
