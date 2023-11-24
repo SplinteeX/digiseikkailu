@@ -23,7 +23,7 @@ export const AboutUs = () => {
     "Digiseikkailun Empatiapolku on osa koko Suomen laajuista Empatiapakkausta, joka tuo työvälineitä perheille ja opettajille empaattisempaan viestimiseen netissä.",
     <p>
       Digiseikkailu on suunniteltu tukemaan lapsen kasvua kohti{" "}
-      <strong>tiedostavaa mediankäyttöä.</strong> Sen tehtävätyypit kannustavat
+      <strong>tiedostavaa mediankäyttöä.</strong>Sen tehtävätyypit kannustavat
       lasta pohtimaan <strong>empatiaa,</strong> viestittelytaitoja ja{" "}
       <strong>yhteisöllisyyden merkitystä</strong> mediankäytössään.
     </p>,
@@ -38,8 +38,7 @@ export const AboutUs = () => {
     </p>,
     <p>
       Digiseikkailun avulla on hauskaa opettaa media- ja monilukutaitoa sekä
-      teknologiataitoja <strong>laadukkaasti,</strong> opettajan kokemuksesta
-      riippumatta.
+      teknologiataitojalaadukkaasti, opettajan kokemuksesta riippumatta.
     </p>,
   ];
 
@@ -54,7 +53,7 @@ export const AboutUs = () => {
           <div className="Tietoteksti">
             <p>{infoTexts.text}</p>
           </div>
-          
+
           <img src={mouseImage} className="Mouse-image" alt="" />
           <div className="Yhteystiedot-otsikko">
             <h1>Yhteystiedot</h1>
@@ -105,33 +104,36 @@ export const AboutUs = () => {
         </button>
 
         <div className="Yhteistyossa">
-            <a href="https://digiadventures.com">Yhteistyössä</a>
+          <a href="https://digiadventures.com">Yhteistyössä</a>
         </div>
 
         <div className="img-wrapper">
-          <div>
           <a href="" target="_blank" rel="noreferrer">
-          <img src={empatia} width={146} height={76} aspectRatio: alt="Digi"></img>
+            <img
+              src={empatia}
+              width={146}
+              height={76}
+              aspectRatio:alt="Digi"
+              alt="Digi"
+            ></img>
           </a>
-          </div>
-          <div>
           <a href="https://breikkeri.fi" target="_blank" rel="noreferrer">
-          <img src={breikkeri} width={111} height={36} alt="Digi"></img>
+            <img src={breikkeri} width={111} height={36} alt="Digi"></img>
           </a>
-          </div>
-          <div>
           <a href="https://nitomanischool.com" target="_blank" rel="noreferrer">
-          <img src={nitomani} width={136} height={136} alt="Digi"></img>
+            <img src={nitomani} width={136} height={136} alt="Digi"></img>
           </a>
-          </div>
-          <div>
-          <a href="https://oppimisenuusiaika.fi/helsinki/eac/" target="_blank" rel="noreferrer">
-          <img src={helsinki} width={158} height={73} alt="Digi"></img>
+          <a
+            href="https://oppimisenuusiaika.fi/helsinki/eac/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={helsinki} width={158} height={73} alt="Digi"></img>
           </a>
-          </div>
-          <div><img src={loput} width={930} height={362}  /></div>
         </div>
-
+        <div>
+          <img className="Loput-kuva" src={loput} />
+        </div>
       </div>
     </div>
   );
