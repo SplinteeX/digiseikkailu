@@ -19,7 +19,11 @@ import YoutubeVideo from "../elements/YoutubeVideo"
 import Postit from "../elements/postitit";
 import doge from "../../assets/dogekuva.webp";
 import juhlakuva from "../../assets/juhlakuva.webp";
-
+import TehtäväKissa from "../elements/Tehtavakissa";
+import ilkeaKissa from "../../assets/Ilkeekissa.webp";
+import Zombie from "../../assets/zombi.webp";
+import frendit from "../../assets/frendit.webp";
+import SininenNappi from "../elements/sininennappi";
 const empatiapolku = () => {
   return (
     <div className="empatiapolku">
@@ -94,10 +98,9 @@ const empatiapolku = () => {
       </div>
       <div className="laatikko">
         <div className="leftkissa">
-          <div className="tehtäväteksti">
-            <h4>TEHTÄVÄ 2</h4>
-          </div>
-          <img src={kissa} alt="Kuva" />
+          <TehtäväKissa
+          teksti="TEHTÄVÄ 2"
+          ></TehtäväKissa>
           <div className="tekstia">
             <h5>Ota selvää mistä asiasta Tweety oli huolissaan?</h5>
           </div>
@@ -120,8 +123,9 @@ const empatiapolku = () => {
       </div>
 
       <div className="teht3">
-        <h2>TEHTÄVÄ 3</h2>
-        <img src={kissa}></img>
+        <TehtäväKissa
+        teksti="TEHTÄVÄ 3"
+        ></TehtäväKissa>
       </div>
       <div className="teht3h3">
         <h3>Mitkä viestit sinä poistaisit seinältä?</h3>
@@ -137,8 +141,9 @@ const empatiapolku = () => {
         ></Postit>))}
       </div>
       <div className="empatiapolku-teht4A5">
-        <h2>TEHTÄVÄ 4 JA 5</h2>
-        <img src={kissa}></img>
+        <TehtäväKissa
+        teksti="TEHTÄVÄ 4 JA 5"
+        ></TehtäväKissa>
       </div>
       <div className="empatiapolku-videocontainer">
         <div className="empatiapolku-youtubevidi1">
@@ -222,8 +227,55 @@ const empatiapolku = () => {
       <div className="empatiapolku-juhlakuva">
         <img src={juhlakuva}/>
       </div>
-
       
+      <div className="empatiapolku-teht8-9-10">
+        <TehtäväKissa
+        teksti="TEHTÄVÄT 8, 9 JA 10"
+        ></TehtäväKissa>
+      </div>
+
+      <div className="empatiapolku-youtube-vid">
+        <YoutubeVideo
+          videoId="PuzagnhDiek"
+          width={"75%"}
+          height={"200px"}
+          color={"#79b7e2"}
+        ></YoutubeVideo>
+      </div>
+
+      <div className="empatiapolku-sananvapaus">
+        <h3>Sananvapaus tuo vastuuta!</h3>
+      </div>
+
+      <div className="empatiapolku-kuvat">
+        <div className="empatiapolku-ilkeakissa">
+          <img src={ilkeaKissa}></img>
+        </div>
+        <div className="empatiapolku-zombi">
+          <img src={Zombie}></img>
+        </div>
+        <div className="empatiapolku-frendit">
+          <img src={frendit}></img>
+        </div>
+      </div>
+      
+      <div className="empatiapolku-sinisetnapit">
+        <div className="empatiapolku-Nappi1">
+          <SininenNappi
+           teksti="Mitä on vihapuhe?"
+           ></SininenNappi>
+          </div>
+        <div className="empatiapolku-Nappi2">
+          <SininenNappi
+           teksti="Tunnista ja pysäytä vihapuhe"
+           ></SininenNappi>
+        </div>
+        <div className="empatiapolku-Nappi3">
+          <SininenNappi
+           teksti="Kehupuhe"
+           ></SininenNappi>
+        </div>
+      </div>
 
     </div>
   );

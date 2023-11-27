@@ -3,13 +3,43 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .empatiapolku-tehtKissa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .empatiapolku-tekstit{
+    font-size: x-large;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    color: #585858;
+  }
+  
+  .empatiapolku-sininennappi {
+    background-color: #8ad4ee;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.empatiapolku-sininennappi:hover {
+    transform: scale(1.1);
+}
+
+  .empatiapolku-sininenbutton{
+    text-decoration: none;
+  }
+  .empatiapolku-sininenbutton span{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+  }
   
 .empatiapolku h1 {
     color: #404040;
     padding: 0;
     margin: 0;
     line-height: 1;
-    font-family: 'Your Preferred Font', sans-serif;
+    font-family: sans-serif;
     text-align: center; 
 }
 
@@ -494,4 +524,81 @@
     text-align: center;
     margin-top: 40px;
   }
+
+  .empatiapolku-youtube-vid{
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .empatiapolku-sananvapaus{
+    text-align: center;
+    font-size: larger;
+    margin-top: 60px;
+  }
+
+  .empatiapolku-kuvat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+  }
+
+  .empatiapolku-sinisetnapit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    
+  }
+
+  .empatiapolku-Nappi1{
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ad4ee;
+    padding: 20px 80px 20px 80px;
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  }
+
+  .empatiapolku-Nappi2{  
+    margin-left: 2%;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ad4ee;
+    padding: 20px 80px 20px 80px;
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  }
+
+  .empatiapolku-Nappi3{
+    margin-left: 2%;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ad4ee;
+    padding: 20px 80px 20px 80px;
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  }
+
+  .empatiapolku-Nappi1:hover {
+    transform: scale(1.1);
+}
+.empatiapolku-Nappi2:hover {
+  transform: scale(1.1);
+}
+.empatiapolku-Nappi3:hover {
+  transform: scale(1.1);
+}
+  
+  
 
