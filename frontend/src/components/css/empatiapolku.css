@@ -122,13 +122,14 @@
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
-    margin-left: 20%; 
+
   }
   
   .vuoropuhelu {
     display: flex;
     align-items: center;
     margin: 10px;
+    margin-left: 15%;
   }
   
   .kuva {
@@ -599,6 +600,40 @@
 .empatiapolku-Nappi3:hover {
   transform: scale(1.1);
 }
+
+
+.empatiapolku-laamanaitaus{
+  text-align: center;
+  width: fit-content;
+  padding-left: 24%;
+  padding-right: 24%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #cae0e9;
+  margin-top: 50px;
+  margin-left: 20%;
+
+}
+
+.empatiapolku-laamanaitaus h3{
+    font-weight: normal;
+}
+
+.empatiapolku-hasanpiha{
+  margin-top: 40px;
+  text-align: center;
+  width: 62%;
+  margin-left: 18%;
+}
+
+.empatiapolku-hasanpiha h2{
+  font-weight: normal;
+}
   
+
+.empatiapolku-empatialaama{
+  text-align: center;
+  margin-top: 60px;
+}
   
 

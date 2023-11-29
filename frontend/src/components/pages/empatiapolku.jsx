@@ -6,6 +6,7 @@ import empatiadata from "../data/empatiaData";
 import { vuoropuhujat, vuorosanat } from "../data/vuorosanat";
 import {vuorosanas, vuoropuhuja} from "../data/vuorojutut"
 import {vuorosanax, vuoropuhujax} from "../data/vuoropuhuminen"
+import {vuorosanasi, vuoropuhujasi} from "../data/laamavuoropuhelu"
 import viestit from "../data/viestit"
 import Vuoropuhelu from "../elements/vuoropuhelut";
 import hamis from "../../assets/hämis.webp";
@@ -24,6 +25,7 @@ import ilkeaKissa from "../../assets/Ilkeekissa.webp";
 import Zombie from "../../assets/zombi.webp";
 import frendit from "../../assets/frendit.webp";
 import SininenNappi from "../elements/sininennappi";
+import EmpatiaLaama from "../../assets/empatialaama.webp"
 const empatiapolku = () => {
   return (
     <div className="empatiapolku">
@@ -276,6 +278,32 @@ const empatiapolku = () => {
            ></SininenNappi>
         </div>
       </div>
+
+      <div className="empatiapolku-laamanaitaus">
+        <h3>Laaman aitaus – Tehtävä 11</h3>
+      </div>
+
+      <div className="empatiapolku-hasanpiha">
+        <h2>Seuraavaksi kaverukset lähtivät Häsän pihalle. Siellä odotti Häsän lemmikki, Laama. Se on tunteikas ja herkkä otus ja erittäin innostunut uudesta puhelimestaan.</h2>
+      </div>
+
+      <div className="empatiapolku-empatialaama">
+        <img src={EmpatiaLaama}  />
+      </div>
+
+      <div className="empatiapolku-laamavuoro">
+        {vuorosanasi.map((vuorosanassi, index) => (
+          <Vuoropuhelu
+            key={index}
+            width="32px"
+            height="32px"
+            teksti={vuorosanassi}
+            kuva={vuoropuhujasi[index]}
+          />
+          ))}
+      </div>
+
+
 
     </div>
   );
