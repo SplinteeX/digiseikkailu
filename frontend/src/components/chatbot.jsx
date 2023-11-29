@@ -39,7 +39,7 @@ export const ChatBot = () => {
       {!toggle && (
         <div className="Open-chat" onClick={handleChatClick}>
           <div className="Vertical-text">
-            <p>Open chat</p>
+            <p>Avaa chätti</p>
           </div>
           <div className="Open-ball">
             <img src={pen} alt="" />
@@ -51,9 +51,9 @@ export const ChatBot = () => {
         <div className={`Chatbot`}>
           <header>
             <div className="left-side">
-              <h1>Hi there!</h1>
-              <p>Welcome to our website!</p>
-              <p>Ask us anything 🎉</p>
+              <h1>Hei!</h1>
+              <p>Tervetuloa chättiin!</p>
+              <p>Kysy Dogelta mitä tahansa 🎉</p>
             </div>
 
             <div className="Arrow">
@@ -80,7 +80,7 @@ export const ChatBot = () => {
           </header>
           <div className="Text">
             <div className="ball"></div>
-            <p>We reply immediately!</p>
+            <p>Doge vastaa heti!</p>
           </div>
           <img className="waves" src={waves} alt="" />
           {!toggleExtended ||
