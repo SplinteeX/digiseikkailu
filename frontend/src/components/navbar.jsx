@@ -9,6 +9,11 @@ import closeMenu from "../../src/assets/close-menu.svg";
 import bucket from "../../src/assets/bucket.svg";
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
+  const location = useLocation();
+  const is404Page = location.pathname === "/404";
+  if (is404Page) {
+    return null;
+  }
   const showSidebar = () => {
     setSidebar(!sidebar);
   };

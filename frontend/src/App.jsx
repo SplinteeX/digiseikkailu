@@ -13,10 +13,12 @@ import { Navigate } from "react-router-dom";
 import ProtectedRouter from "./ProtectedRouter";
 import { ChatBot } from "./components/chatbot";
 import { Products } from "./components/pages/Products";
+import { Page404 } from "./components/pages/404Page";
 import "./App.css";
 
 function App() {
   const { user } = useAuthContext();
+  const showNavbar = window.location.pathname !== "/404";
   return (
     <div className="App">
       <BrowserRouter>
@@ -39,6 +41,8 @@ function App() {
               element={<ProtectedRouter element={<Profile />} />}
             />
             <Route path="/tietoa-meista" element={<AboutUs />} />
+            <Route path="/404" element={<Page404 />} />
+            <Route path="*" element={<Navigate to="/404" />} />
           </Routes>
         </div>
       </BrowserRouter>

@@ -8,7 +8,13 @@ import zoomout from "../assets/zoom-out.svg";
 import { useState } from "react";
 import { useOpenAi } from "./hooks/useOpenAi";
 import send from "../assets/send.svg";
+import { useLocation } from "react-router-dom";
 export const ChatBot = () => {
+  const location = useLocation();
+  const is404Page = location.pathname === "/404";
+  if (is404Page) {
+    return null;
+  }
   const { openAi } = useOpenAi();
   const [toggle, setToggle] = useState(false);
   const [toggleExtended, setToggleExtended] = useState(true);
