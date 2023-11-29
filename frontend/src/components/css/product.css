@@ -57,3 +57,39 @@
   line-height: normal;
   padding: 10px;
 }
+@media screen and (max-width: 1000px) {
+  .Product .Header {
+    flex-wrap: wrap;
+  }
+  .Product .Header img {
+    width: 50%;
+  }
+  .Product .Header .Left-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Product .Header .Right-side p {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .Product .Body p {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Product {
+    margin: 0;
+  }
+  .Product .Header img {
+    width: 100%;
+  }
+  .Product h2 {
+    font-size: 25px;
+  }
+}
