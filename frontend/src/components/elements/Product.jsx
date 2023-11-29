@@ -1,4 +1,5 @@
 import "../css/product.css";
+import { Dropdown } from "./dropdown";
 export const Product = ({ Data }) => {
   return (
     <div className="Product">
@@ -14,6 +15,7 @@ export const Product = ({ Data }) => {
       <div className="Body">
         <p>{Data.description}</p>
       </div>
+      <Dropdown Text="Valitse kieli" Data={Data.language} />
     </div>
   );
 };

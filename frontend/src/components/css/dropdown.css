@@ -1,0 +1,11 @@
+.Dropdown {
+  box-shadow: 0px 4px 12px 0px rgba(104, 88, 46, 0.2);
+  padding: 10px;
+  margin: 1% 1%;
+}
+.Dropdown .Parent-dropdown {
+  display: flex;
+}
+.Dropdown .Parent-dropdown:hover {
+  cursor: pointer;
+}

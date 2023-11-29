@@ -36,29 +36,65 @@ export const ProductsData2 = () => {
           Apin majassa ja Tweetyn viestiseinässä.",
         </>
       ),
+      language: "Suomi, English, Swedish",
     },
   ];
   const TvtOpetuksenTaitoPaketti = [
     {
       title: "TVT-opetuksen taitopaketti",
-      img: "images/tvt-opetuksen-taitopaketti-home.png",
+      img: "../../../public/images/tvt-opetuksen-taitopaketti-home.png",
       smallDescription:
         "Paras konkreettinen tuki TVT-opetuksen perustaitojen vahvistamiseen! Paketti sisältää kuvakortit eri näppäimistä tekstinkäsittelytehtäviin sekä taitokortit tekstinkäsittelyn olennaisimpiin taitoihin. Materiaalipaketti on suunniteltu tukemaan opettajia ja oppilaita TVT-taitojen kehittämisessä.",
-      description: `Materiaalipaketti on suunniteltu tukemaan opettajia ja oppilaita TVT-taitojen kehittämisessä. Paketista on apua muun muassa OPS:n mukaisten näppäintaitojen harjoitteluun.
-  
-        Usein lapset osaavat kirjoittaa viestejä älypuhelimella, mutta heillä voi olla haasteita tietokoneen näppäimistön käytössä ja eri näppäinten merkitysten ymmärtämisessä tekstinkäsittelyohjelmassa. Esimerkiksi on huomattu, että oppilailla voi olla puutteita taidoissa, kuten pienellä kirjaimella aloittaminen (shift-up), sanavälien tekeminen (space) ja erikoismerkkien käyttö (esim. @-merkki sähköpostissa tai kenoviiva nettiosoitteessa).
-  
-        On tärkeää käydä läpi näppäintaitoja oppilaiden kanssa, ja Digiseikkailun näppäintaitokortit tarjoavat opettajille tukea tässä tehtävässä.
-  
-        TVT-taitokortit voidaan käydä yhdessä läpi ja sijoittaa taululle muistuttamaan oppilaita. Kortit voivat olla myös näkyvillä, ja niissä keskitytään perusnäppäin- ja hiiritaitoihin. Nämä kortit toimivat hyvin perustana näppäintaitojen harjoittelussa.
-  
-        Lisäksi Digiseikkailun ympäristössä, kuten Apin majassa ja Tweetyn viestiseinällä, on tehtäviä, jotka tukevat edellä mainittuja taitoja.
-  
-        Paketti sisältää näppäimistöjulisteita luokkaan, tekstinkäsittelytehtäviin suunnattuja kuvakortteja eri näppäimistä sekä taitokortteja tekstinkäsittelyn olennaisimpiin taitoihin.
-  
-        Hiiritaitoihin soveltuvat kortit esittelevät erilaisia tekniikoita, kuten maalausta, raahausta, klikkausta ja kaksoisklikkausta. Näitä kortteja käytettäessä oppilaiden on mahdollista oppia tekniikat käytännössä.
-  
-        Materiaalipaketissa on kuvat tärkeimmistä TVT-opetuksen käsitteistä, joiden avulla opettaja voi opettaa oikeat käsitteet tietokonetyöskentelyssä. Paketti sisältää 25 näppäinkorttia, 17 taitokorttia ja 3 infotaulua. Materiaali on PDF-tiedostomuodossa ja tulostettavissa itse paperille.`,
+      description: (
+        <>
+          Materiaalipaketti on suunniteltu tukemaan opettajia ja oppilaita
+          TVT-taitojen kehittämisessä. Paketista on apua muun muassa OPS:n
+          mukaisten näppäintaitojen harjoitteluun.
+          <br />
+          <br />
+          Usein lapset osaavat kirjoittaa viestejä älypuhelimella, mutta heillä
+          voi olla haasteita tietokoneen näppäimistön käytössä ja eri näppäinten
+          merkitysten ymmärtämisessä tekstinkäsittelyohjelmassa. Esimerkiksi on
+          huomattu, että oppilailla voi olla puutteita taidoissa, kuten pienellä
+          kirjaimella aloittaminen (shift-up), sanavälien tekeminen (space) ja
+          erikoismerkkien käyttö (esim. @-merkki sähköpostissa tai kenoviiva
+          nettiosoitteessa).
+          <br />
+          <br />
+          On tärkeää käydä läpi näppäintaitoja oppilaiden kanssa, ja
+          Digiseikkailun näppäintaitokortit tarjoavat opettajille tukea tässä
+          tehtävässä.
+          <br />
+          <br />
+          TVT-taitokortit voidaan käydä yhdessä läpi ja sijoittaa taululle
+          muistuttamaan oppilaita. Kortit voivat olla myös näkyvillä, ja niissä
+          keskitytään perusnäppäin- ja hiiritaitoihin. Nämä kortit toimivat
+          hyvin perustana näppäintaitojen harjoittelussa.
+          <br />
+          <br />
+          Lisäksi Digiseikkailun ympäristössä, kuten Apin majassa ja Tweetyn
+          viestiseinällä, on tehtäviä, jotka tukevat edellä mainittuja taitoja.
+          <br />
+          <br />
+          Paketti sisältää näppäimistöjulisteita luokkaan,
+          tekstinkäsittelytehtäviin suunnattuja kuvakortteja eri näppäimistä
+          sekä taitokortteja tekstinkäsittelyn olennaisimpiin taitoihin.
+          <br />
+          <br />
+          Hiiritaitoihin soveltuvat kortit esittelevät erilaisia tekniikoita,
+          kuten maalausta, raahausta, klikkausta ja kaksoisklikkausta. Näitä
+          kortteja käytettäessä oppilaiden on mahdollista oppia tekniikat
+          käytännössä.
+          <br />
+          <br />
+          Materiaalipaketissa on kuvat tärkeimmistä TVT-opetuksen käsitteistä,
+          joiden avulla opettaja voi opettaa oikeat käsitteet
+          tietokonetyöskentelyssä. Paketti sisältää 25 näppäinkorttia, 17
+          taitokorttia ja 3 infotaulua. Materiaali on PDF-tiedostomuodossa ja
+          tulostettavissa itse paperille.`,
+        </>
+      ),
+      language: "Suomi, English, Swedish",
     },
   ];
   return { TarinatJaTehtavat, TvtOpetuksenTaitoPaketti };
