@@ -99,7 +99,7 @@ export const ChatBot = () => {
                 type="text"
                 name="message"
                 id="message"
-                placeholder="Enter your message..."
+                placeholder="Kirjoita viesti..."
                 value={message}
                 onChange={handleChange}
               />

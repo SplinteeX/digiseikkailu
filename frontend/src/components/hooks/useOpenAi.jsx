@@ -25,7 +25,7 @@ export const useOpenAi = () => {
       });
       if (response.status === 401) {
         setIsLoading(false);
-        return "You need to login first!";
+        return "Chatbotin käyttäminen edellyttää kirjautumista. Kirjaudu sisään sivun oikeasta yläkulmasta.";
       }
 
       const json = await response.json();
