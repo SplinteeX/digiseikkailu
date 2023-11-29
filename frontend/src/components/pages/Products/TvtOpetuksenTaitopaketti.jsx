@@ -5,7 +5,7 @@ export const TvtOpetuksenTaitoPaketti = () => {
   const { TvtOpetuksenTaitoPaketti } = ProductsData2();
   return (
     <div className="TarinatTyokirja">
-      <Product Data={TvtOpetuksenTaitoPaketti[0]} />
+      <Product Data={TvtOpetuksenTaitoPaketti[0]} Text={"Kieli"} />
     </div>
   );
 };

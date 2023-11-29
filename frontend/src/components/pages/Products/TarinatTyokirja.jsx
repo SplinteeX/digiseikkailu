@@ -4,7 +4,7 @@ export const TarinatTyokirja = () => {
   const { TarinatJaTehtavat } = ProductsData2();
   return (
     <div className="TarinatTyokirja">
-      <Product Data={TarinatJaTehtavat[0]} />
+      <Product Data={TarinatJaTehtavat[0]} Text={"Kieli"} />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import "../css/product.css";
 import { Dropdown } from "./dropdown";
-export const Product = ({ Data }) => {
+export const Product = ({ Data, Text }) => {
   return (
     <div className="Product">
       <h2>{Data.title}</h2>
@@ -16,7 +16,7 @@ export const Product = ({ Data }) => {
         <p>{Data.description}</p>
       </div>
       <div className="Dropdown-bottom">
-        <Dropdown Text="Valitse kieli" Data={Data.language} />
+        <Dropdown Text={Text} Data={Data.language} />
         <button>Lisää ostoskoriin</button>
       </div>
     </div>
