@@ -15,7 +15,7 @@ export const Dropdown = ({ Text, Data }) => {
     <div className="Dropdown">
       <div className="Parent-dropdown" onClick={toggleDropdown}>
         <p>{Text}</p>
-        <img fill="#000000" src={arrow} width={"20px"} height={"20px"} alt="" />
+        <img src={arrow} width={"20px"} height={"20px"} alt="" />
       </div>
       {isOpen && (
         <div className="Child-dropdown">

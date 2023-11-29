@@ -15,7 +15,10 @@ export const Product = ({ Data }) => {
       <div className="Body">
         <p>{Data.description}</p>
       </div>
-      <Dropdown Text="Valitse kieli" Data={Data.language} />
+      <div className="Dropdown-bottom">
+        <Dropdown Text="Valitse kieli" Data={Data.language} />
+        <button>Lisää ostoskoriin</button>
+      </div>
     </div>
   );
 };
