@@ -1,27 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/dropdown.css";
 import arrow from "../../assets/black_arrow.svg";
 
 export const Dropdown = ({ Text, Data }) => {
-  const languages = Data.split(",").map((lang) => lang.trim());
+  const DropdownData = Data.split(",").map((lang) => lang.trim());
 
   const [isOpen, setIsOpen] = useState(false);
+  const [lastClicked, setLastClicked] = useState(Text);
+
+  useEffect(() => {
+    setLastClicked(Text);
+  }, [Text]);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
+  };
+  const handleOptionClick = (DropDownData) => {
+    setLastClicked(DropDownData);
+    toggleDropdown();
   };
 
   return (
     <div className="Dropdown">
       <div className="Parent-dropdown" onClick={toggleDropdown}>
-        <p>{Text}</p>
+        <p>{lastClicked}</p>
         <img src={arrow} width={"20px"} height={"20px"} alt="" />
       </div>
       {isOpen && (
         <div className="Child-dropdown">
-          {languages.map((language, index) => (
-            <div key={index} className="Dropdown-option">
-              <p>{language}</p>
+          {DropdownData.map((Data, index) => (
+            <div
+              key={index}
+              className="Dropdown-option"
+              onClick={() => handleOptionClick(Data)}
+            >
+              <p>{Data}</p>
             </div>
           ))}
         </div>
