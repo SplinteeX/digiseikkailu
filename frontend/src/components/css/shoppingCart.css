@@ -1,7 +1,7 @@
 .Shopping-cart {
   height: 100%;
-  width: 300px;
-  position: absolute;
+  width: 350px;
+  position: fixed;
   background-color: white;
   top: 0px;
   right: 0px;
@@ -18,8 +18,8 @@
 }
 .Shopping-cart img {
   position: absolute;
-  right: 5px;
-  top: 25px;
+  right: 10px;
+  top: 10px;
 }
 .Shopping-cart img:hover {
   cursor: pointer;
