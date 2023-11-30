@@ -33,6 +33,18 @@
     text-decoration: none;
     font-size: x-large;
   }
+
+  .hamisteksti-hamiscontainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    margin-left: 35%;
+    margin-top: 50px;
+  }
+  .hamisteksti-tekstit p{
+    font-size: larger;
+  }
   
 .empatiapolku h1 {
     color: #404040;
@@ -197,25 +209,6 @@
 .peukkuohjeet img{
     width: 500px;
     height: auto;
-}
-
-.tweety{
-    margin: 100px auto 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: fit-content;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #cae0e9;
-    border: 2px solid #cae0e9;
-    
-}
-.tweety h3{
-    font-size: 20px;
-    font-weight: 500;
 }
 
 .viestiteksti{
@@ -443,23 +436,6 @@
     height: auto;
   }
 
-  .empatiapolku-dogenpolku{
-    width: fit-content;
-    background-color: #cae0e9;
-    text-align: center;
-    margin-left: 20%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-top: 100px;
-
-    
-    
-  }
-  .empatiapolku-dogenpolku h3{
-    font-weight: normal;
-  }
 
   .empatiapolku-dogeteksti{
     text-align: center;
@@ -602,7 +578,7 @@
 }
 
 
-.empatiapolku-laamanaitaus{
+.empatiapolku-tehtäväboxi{
   text-align: center;
   width: fit-content;
   padding-left: 24%;
@@ -615,9 +591,11 @@
 
 }
 
-.empatiapolku-laamanaitaus h3{
-    font-weight: normal;
+.empatiapolku-tehtäväboxi h3{
+  font-weight: normal;
 }
+
+
 
 .empatiapolku-hasanpiha{
   margin-top: 40px;
@@ -635,5 +613,117 @@
   text-align: center;
   margin-top: 60px;
 }
+
+.empatiapolku-peukkutehtävä{
+  text-align: center;
+  margin-top: 100px;
+
+}
+
+.empatiapolku-peukkukuva{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.empatiapolku-peukkukuva img{
+  width: 500px;
+  height: auto;
+}
+
+.empatiapolku-peukkuohjeet2{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.empatiapolku-peukkuohjeet2 img{
+  width: 600px;
+  height: auto;
+}
+
+.empatiapolku-tehtävä12{
+  margin-top: 150px;
+}
+
+.empatiapolku-puhelimet{
+  display: flex;
+  width: fit-content;
+  margin-left: 18%;
+  margin-top: 70px;
+}
+
+.empatiapolku-puhelimet img{
+  width: 300px;
+  height: auto;
+}
+
+.empatiapolku-häsänstudio{
+  margin-top: 200px;
+}
+
+.empatiapolku-häsäntekstejä{
+  width: 1100px;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 40px;
+}
+.empatiapolku-häsäntekstejä p{
+  font-size: x-large;
+}
+
+.empatiapolku-nettisurffaus{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.empatiapolku-tehtävä14 {
+  margin-top: 70px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+.empatiapolku-tehtävä14 .empatiapolku-leftkissa2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empatiapolku-tehtävä14 .tehtäväteksti {
+  width: fit-content;
+  padding: 10px;
+  margin-right: auto;
+}
+.empatiapolku-tekstia2{
+  font-size: x-large;
+}
+
+.empatiapolku-tehtävä14 .empatiapolku-tekstia2 {
+  padding: 10px;
+  text-align: center;
+}
+.empatiapolku-tekstia2{
+  font-size: x-large;
+}
+
+.empatiapolku-tehtävä14 .empatiapolku-youtubevidi2 {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .empatiapolku-tehtävä14 {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+}
+
+
+
+
+
+
   
 

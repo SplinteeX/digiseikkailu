@@ -7,12 +7,14 @@ import { vuoropuhujat, vuorosanat } from "../data/vuorosanat";
 import {vuorosanas, vuoropuhuja} from "../data/vuorojutut"
 import {vuorosanax, vuoropuhujax} from "../data/vuoropuhuminen"
 import {vuorosanasi, vuoropuhujasi} from "../data/laamavuoropuhelu"
+import puhelimet from "../data/puhelinData"
 import viestit from "../data/viestit"
 import Vuoropuhelu from "../elements/vuoropuhelut";
 import hamis from "../../assets/hämis.webp";
 import hämis from "../../assets/hämis2.webp";
 import peukut from "../../assets/peukut.webp"
 import peukkuohje from "../../assets/peukkuohjeet.webp"
+import peukkuohje2 from "../../assets/peukkuohjeet2.webp"
 import papu from "../../assets/papukaija.webp"
 import kissa from "../../assets/kissakuva.webp"
 import somekaveri from "../../assets/somekaveri.webp"
@@ -26,6 +28,17 @@ import Zombie from "../../assets/zombi.webp";
 import frendit from "../../assets/frendit.webp";
 import SininenNappi from "../elements/sininennappi";
 import EmpatiaLaama from "../../assets/empatialaama.webp"
+import HamisTeksti from "../elements/hamisteksti";
+import Puhelimet from "../elements/puhelimet";
+import puhelin1 from "../../assets/puhelin1.webp";
+import puhelin2 from "../../assets/puhelin2.webp";
+import puhelin3 from "../../assets/puhelin3.webp";
+import puhelin4 from "../../assets/puhelin4.webp";
+import TehtäväBoxi from "../elements/tehtäväboxi";
+import nettisurffaus from "../../assets/nettisurffaus.webp"
+
+
+
 const empatiapolku = () => {
   return (
     <div className="empatiapolku">
@@ -88,7 +101,9 @@ const empatiapolku = () => {
       </div>
       <div className="viestiseinä">
           <div className="tweety">
-              <h3>Tweetyn viestiseinä</h3>
+              <TehtäväBoxi
+              teksti="Tweetyn viestiseinä"
+              ></TehtäväBoxi>
           </div>
           <div className="viestiteksti">
               <h5>Tässä on <span className="bold">Tweety.</span> Se hallinnoi kaupungin viestiseinää ja on laajan lintuverkoston ylläpitäjä.
@@ -188,7 +203,9 @@ const empatiapolku = () => {
       </div>
 
       <div className="empatiapolku-dogenpolku">
-        <h3>Dogen boxi – Tehtävä 7</h3>
+        <TehtäväBoxi
+        teksti="Dogen boxi – Tehtävä 7"
+        ></TehtäväBoxi>
       </div>
       <div className="empatiapolku-dogeteksti">
           <h3>Doge on Somen kaupungin tarkin uutistentutkija. Se etsii kuvia sukulaisistaan,
@@ -280,7 +297,9 @@ const empatiapolku = () => {
       </div>
 
       <div className="empatiapolku-laamanaitaus">
-        <h3>Laaman aitaus – Tehtävä 11</h3>
+        <TehtäväBoxi
+          teksti="Laaman aitaus – Tehtävä 11"
+        ></TehtäväBoxi>
       </div>
 
       <div className="empatiapolku-hasanpiha">
@@ -303,7 +322,64 @@ const empatiapolku = () => {
           ))}
       </div>
 
+      <div className="empatiapolku-peukkutehtävä">
+        <h1>PEUKKUTEHTÄVÄ</h1>
+      </div>
 
+      <div className="empatiapolku-peukkukuva">
+        <img src={peukut}/>
+      </div>
+      <div className="empatiapolku-peukkuohjeet2">
+        <img src={peukkuohje2}/>
+      </div>
+
+      <div className="empatiapolku-tehtävä12">
+        <TehtäväKissa
+          teksti="TEHTÄVÄ 12"
+        ></TehtäväKissa>
+      </div>
+      
+      <div className="empatiapolku-hämisteksti">
+        <HamisTeksti
+          teksti="Miten viestin tunnelma muuttuu kun vaihdat emojia?"
+        ></HamisTeksti>
+      </div>
+
+      <div className="empatiapolku-puhelimet">
+        <img src={puhelin1}></img><img src={puhelin2}></img>
+        <img src={puhelin3}></img><img src={puhelin4}></img>
+      </div>
+
+      <div className="empatiapolku-häsänstudio">
+        <TehtäväBoxi
+          teksti="Häsän studio – Tehtävä 13"
+        ></TehtäväBoxi>
+      </div>
+
+      <div className="empatiapolku-häsäntekstejä">
+        <p>Häsän huoneessa on erilaisia videokuvaamiseen liittyviä tavaroita, kuten vakain, kolmijalka ja kuvausvalo.
+           Häsän äiti on alkanut kutsua sitä leikillään Häsän Studioksi.<br></br><br></br>
+           Viimein <strong>Häsä</strong> ja <strong>Appi</strong> pääsivät Häsän kotiin tekemään läksyjä.
+            Tehtävien jälkeen Häsä selaili <strong>YouTube-kanavansa</strong> kommentteja.</p>
+      </div>
+
+      <div className="empatiapolku-nettisurffaus">
+        <img src={nettisurffaus}></img>
+      </div>
+
+      <div className="empatiapolku-tehtävä14">
+        <div className="empatiapolku-leftkissa2">
+          <TehtäväKissa
+          teksti="TEHTÄVÄ 2"
+          ></TehtäväKissa>
+          <div className="empatiapolku-tekstia2">
+            <h5>Millaisia tunteita eri kommentit aiheuttivat Häsässä?</h5>
+          </div>
+        </div>
+        <div className="empatiapolku-youtubevidi2">
+          <video controls width="700" src="https://digiadventurers.com/wp-content/uploads/2019/10/1080p.mov"></video>
+        </div>
+      </div>
 
     </div>
   );
