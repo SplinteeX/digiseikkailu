@@ -154,6 +154,9 @@
     font-size: 16px;
     
   }
+  .tekstit h3{
+    font-weight: normal;
+  }
   
 
 
@@ -720,7 +723,59 @@
   }
 }
 
+.empatiapolku-TARINA2{
+  text-align: center;
+  background-color: #fcff55;
+  width: fit-content;
+  margin-top: 150px;
+  margin-left: 16%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*
+.empatiapolku-videotähti{
+  display: flex;
+  margin-left: 22%;
+  margin-top: 80px;
+  
+}
 
+.empatiapolku-vihainenpappa img{
+  width: 500px;
+  height: auto;
+}
+
+.empatiapolku-ovelakissa img{
+  width: 500px;
+  height: auto;
+  margin-left: 5%;
+}
+*/
+
+.empatiapolku-trollipostia{
+  width: fit-content;
+  background-color: #8ad4ee;
+  padding: 20px 40px 20px 40px;
+  margin-left: 39%;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+.empatiapolku-trollipostikuva{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.empatiapolku-trollipostikuva img{
+  width: 700px;
+  height: auto;
+}
+
+.empatiapolku-tehtkissa18{
+  margin-top: 50px;
+}
 
 
 

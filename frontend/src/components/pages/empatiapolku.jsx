@@ -7,6 +7,7 @@ import { vuoropuhujat, vuorosanat } from "../data/vuorosanat";
 import {vuorosanas, vuoropuhuja} from "../data/vuorojutut"
 import {vuorosanax, vuoropuhujax} from "../data/vuoropuhuminen"
 import {vuorosanasi, vuoropuhujasi} from "../data/laamavuoropuhelu"
+import {lauseet, puhuja} from "../data/teht14vuorot";
 import puhelimet from "../data/puhelinData"
 import viestit from "../data/viestit"
 import Vuoropuhelu from "../elements/vuoropuhelut";
@@ -36,7 +37,9 @@ import puhelin3 from "../../assets/puhelin3.webp";
 import puhelin4 from "../../assets/puhelin4.webp";
 import TehtäväBoxi from "../elements/tehtäväboxi";
 import nettisurffaus from "../../assets/nettisurffaus.webp"
-
+import vihainenpappa from "../../assets/vihainenpappa.webp"
+import ovelakissa from "../../assets/ovelakissa.webp"
+import trolliposti from "../../assets/trolliposti.webp"
 
 
 const empatiapolku = () => {
@@ -381,6 +384,44 @@ const empatiapolku = () => {
         </div>
       </div>
 
+      <div className="empatiapolku-teht14vuoro">
+        {lauseet.map((lauseet1, index) => (
+          <Vuoropuhelu
+            key={index}
+            width="32px"
+            height="32px"
+            teksti={lauseet1}
+            kuva={puhuja[index]}
+          />
+          ))}
+      </div>
+      <div className="empatiapolku-TARINA2">
+        <h1>TARINA</h1>
+      </div>
+      {/*
+      <div className="empatiapolku-videotähti">
+        <div className="empatiapolku-vihainenpappa">
+          <img src={vihainenpappa}></img>
+        </div>
+        <div className="empatiapolku-ovelakissa">
+          <img src={ovelakissa}></img>
+        </div>
+      </div>
+        */}
+      <div className="empatiapolku-trollipostia">
+        <SininenNappi
+        teksti="Trollipostia SuperSovellukselle"
+        ></SininenNappi>
+      </div>
+
+      <div className="empatiapolku-trollipostikuva">
+        <img src={trolliposti}></img>
+      </div>
+      <div className="empatiapolku-tehtkissa18">
+        <TehtäväKissa
+        teksti="TEHTÄVÄT 15, 16, 17 JA 18"
+        ></TehtäväKissa>
+      </div>
     </div>
   );
 };
