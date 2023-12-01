@@ -8,7 +8,13 @@ import zoomout from "../assets/zoom-out.svg";
 import { useState } from "react";
 import { useOpenAi } from "./hooks/useOpenAi";
 import send from "../assets/send.svg";
+import { useLocation } from "react-router-dom";
 export const ChatBot = () => {
+  const location = useLocation();
+  const is404Page = location.pathname === "/404";
+  if (is404Page) {
+    return null;
+  }
   const { openAi } = useOpenAi();
   const [toggle, setToggle] = useState(false);
   const [toggleExtended, setToggleExtended] = useState(true);
@@ -39,7 +45,7 @@ export const ChatBot = () => {
       {!toggle && (
         <div className="Open-chat" onClick={handleChatClick}>
           <div className="Vertical-text">
-            <p>Open chat</p>
+            <p>Avaa chätti</p>
           </div>
           <div className="Open-ball">
             <img src={pen} alt="" />
@@ -51,9 +57,9 @@ export const ChatBot = () => {
         <div className={`Chatbot`}>
           <header>
             <div className="left-side">
-              <h1>Hi there!</h1>
-              <p>Welcome to our website!</p>
-              <p>Ask us anything 🎉</p>
+              <h1>Hei!</h1>
+              <p>Tervetuloa chättiin!</p>
+              <p>Kysy Dogelta mitä tahansa 🎉</p>
             </div>
 
             <div className="Arrow">
@@ -80,7 +86,7 @@ export const ChatBot = () => {
           </header>
           <div className="Text">
             <div className="ball"></div>
-            <p>We reply immediately!</p>
+            <p>Doge vastaa heti!</p>
           </div>
           <img className="waves" src={waves} alt="" />
           {!toggleExtended ||
@@ -99,7 +105,7 @@ export const ChatBot = () => {
                 type="text"
                 name="message"
                 id="message"
-                placeholder="Enter your message..."
+                placeholder="Kirjoita viesti..."
                 value={message}
                 onChange={handleChange}
               />

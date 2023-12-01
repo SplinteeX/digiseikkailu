@@ -8,6 +8,7 @@ import { useDeleteStudent } from "../../hooks/useDeleteStudent";
 import remove from "../../../assets/remove-icon.png";
 
 export const TeacherSectionMobile = ({ user }) => {
+  const User = JSON.parse(user);
   const [create, setCreate] = useState(false);
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
@@ -29,10 +30,10 @@ export const TeacherSectionMobile = ({ user }) => {
   } = useGetStudents();
 
   useEffect(() => {
-    getStudents(user.teacherid)
+    getStudents(User.teacherId)
       .then((data) => setStudentsData(data.students))
       .catch((error) => console.error(error));
-  }, [user.teacherid]);
+  }, [User.teacherId]);
 
   const handleRemove = (data) => {
     setStudentsData((prevStudentsData) =>
@@ -57,7 +58,7 @@ export const TeacherSectionMobile = ({ user }) => {
     if (!createStudentError && !createStudentLoading) {
       setStudentsData([
         ...studentsData,
-        { name, teacherid: user.teacherid, username },
+        { name, teacherid: User.teacherId, username },
       ]);
       setName("");
       setUsername("");
@@ -113,7 +114,7 @@ export const TeacherSectionMobile = ({ user }) => {
         </div>
       ) : (
         <>
-          <ProfileHeader user={user} role={user.role} />
+          <ProfileHeader user={User} role={User.role} />
           <div className="Main-nav">
             <div className="Add-student" onClick={handleCreate}>
               +

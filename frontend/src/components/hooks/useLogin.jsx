@@ -26,11 +26,9 @@ export const useLogin = () => {
 
       if (response.ok) {
         const user = json.user;
-        console.log(user);
         const token = user.token;
         const twelveHoursFromNow = new Date();
         twelveHoursFromNow.setHours(twelveHoursFromNow.getHours() + 12);
-        console.log(user);
         cookie.set("Authorization", `Bearer ${token}`, {
           expires: twelveHoursFromNow,
         });

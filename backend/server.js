@@ -6,6 +6,7 @@ const openaiController = require("./Controllers/openAiController");
 const requireAuth = require("./middleware/requireAuth");
 const cors = require("cors");
 require("dotenv").config();
+const { getUser } = require("../backend/Controllers/globalUser");
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use((req, res, next) => {
 // Routes
 app.use("/api/user", userRoutes);
 app.use("/api/student", studentRoutes);
+app.use("/api/getUser", getUser);
 
 // Add a route for OpenAI
 app.post("/api/openai", requireAuth, openaiController.handleOpenAIRequest);

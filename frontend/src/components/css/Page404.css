@@ -1,0 +1,78 @@
+.Page404 {
+  background-color: #8ccbf3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Page404 h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 92.5px;
+  letter-spacing: 14.5px;
+  margin: 0px;
+}
+
+.Page404 h2 {
+  color: #fff;
+
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 92.5px;
+  letter-spacing: 2.5px;
+  margin: 0px;
+}
+.Page404 h3 {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0px;
+}
+.Page404 .btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91c9ff;
+  outline: none;
+  transition: 1s ease-in-out;
+  position: relative;
+}
+
+.Page404 svg {
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 200 480;
+  stroke-dashoffset: 200;
+  transition: 1s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Page404 .btn:hover {
+  transition: 1s ease-in-out;
+  opacity: 70%;
+}
+
+.Page404 .btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.Page404 .btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}

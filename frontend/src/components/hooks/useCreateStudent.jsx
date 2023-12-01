@@ -1,12 +1,16 @@
 import Cookies from "js-cookie";
 import { useState } from "react";
+import { useAuthContext } from "../hooks/useAuthContext";
 export const useCreateStudent = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const { user, role } = useAuthContext();
   const createStudent = async (name, username) => {
+    const User = JSON.parse(user);
     const Auth = Cookies.get("Authorization");
-    const User = JSON.parse(Cookies.get("User"));
-    const teacherid = User.teacherid;
+    const teacherid = User.teacherId;
+    console.log(teacherid);
+    console.log(User);
     setIsLoading(true);
     setError(null);
 

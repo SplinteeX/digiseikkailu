@@ -13,6 +13,7 @@ import { InfoBoard } from "../../elements/infoBoard";
 import ProfileHeader from "./Profile-header";
 
 const TeacherSection = ({ User }) => {
+  const user = JSON.parse(User);
   // State variables
   const [create, setCreate] = useState(false);
   const [name, setName] = useState("");
@@ -38,13 +39,12 @@ const TeacherSection = ({ User }) => {
 
   // Retrieve and set student data on component mount
   useEffect(() => {
-    getStudents(User.teacherid)
+    getStudents(user.teacherId)
       .then((data) => {
         setStudentsData(data.students);
-        console.log(data);
       })
       .catch((error) => console.error(error));
-  }, [User.teacherid]);
+  }, [user.teacherId]);
 
   // Handle removal of a student
   const handleRemove = (data) => {
@@ -69,7 +69,7 @@ const TeacherSection = ({ User }) => {
     if (!createStudentError && !createStudentLoading) {
       setStudentsData([
         ...studentsData,
-        { name, teacherid: User.teacherid, username },
+        { name, teacherid: user.teacherId, username },
       ]);
       setName("");
       setUsername("");
@@ -88,7 +88,7 @@ const TeacherSection = ({ User }) => {
         <InfoBoard onClose={() => setSelectedUser(null)} data={selectedUser} />
       ) : (
         <>
-          <ProfileHeader user={User} role={User.role} />
+          <ProfileHeader user={user} role={user.role} />
           <div className="upper-mid">
             <h3>Students</h3>
             <div className="Content">

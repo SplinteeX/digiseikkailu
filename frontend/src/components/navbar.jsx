@@ -10,6 +10,11 @@ import bucket from "../../src/assets/bucket.svg";
 import { ShoppingCart } from "./elements/shoppingCart";
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
+  const location = useLocation();
+  const is404Page = location.pathname === "/404";
+  if (is404Page) {
+    return null;
+  }
   const showSidebar = () => {
     setSidebar(!sidebar);
   };
@@ -34,12 +39,12 @@ const Navbar = () => {
     },
     {
       title: "Tuotteet",
-      path: "/",
+      path: "/Tuotteet",
       cName: "nav-text",
     },
     {
       title: "Tietoa meistä",
-      path: "/",
+      path: "/tietoa-meista",
       cName: "nav-text",
     },
     {

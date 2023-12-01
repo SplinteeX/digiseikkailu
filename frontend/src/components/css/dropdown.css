@@ -1,0 +1,25 @@
+.Dropdown .Parent-dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: montserrat;
+}
+.Dropdown {
+  box-shadow: 0px 4px 12px 0px rgba(104, 88, 46, 0.2);
+  padding: 10px;
+}
+.Dropdown .Dropdown-option {
+  font-family: montserrat;
+}
+.Dropdown .Parent-dropdown p {
+  padding: 0px;
+  margin: 0px;
+}
+.Dropdown .Dropdown-option:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Dropdown .Parent-dropdown :hover {
+  cursor: pointer;
+  opacity: 80%;
+}
