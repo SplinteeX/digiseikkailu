@@ -734,25 +734,9 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/*
-.empatiapolku-videotähti{
-  display: flex;
-  margin-left: 22%;
-  margin-top: 80px;
-  
-}
 
-.empatiapolku-vihainenpappa img{
-  width: 500px;
-  height: auto;
-}
 
-.empatiapolku-ovelakissa img{
-  width: 500px;
-  height: auto;
-  margin-left: 5%;
-}
-*/
+
 
 .empatiapolku-trollipostia{
   width: fit-content;
@@ -777,6 +761,269 @@
   margin-top: 50px;
 }
 
+.empatiapolku-kuvat2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.empatiapolku-sinisetnapit2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  
+}
+
+.empatiapolku-SNappi1{
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ad4ee;
+  padding: 20px 80px 20px 80px;
+  border-radius: 10px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.empatiapolku-SNappi2{  
+  margin-left: 2%;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ad4ee;
+  padding: 20px 80px 20px 80px;
+  border-radius: 10px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.empatiapolku-SNappi3{
+  margin-left: 2%;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ad4ee;
+  padding: 20px 80px 20px 80px;
+  border-radius: 10px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+.empatiapolku-SNappi4{
+  margin-left: 2%;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ad4ee;
+  padding: 20px 80px 20px 80px;
+  border-radius: 10px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+.empatiapolku-SNappi1:hover {
+  transform: scale(1.1);
+}
+.empatiapolku-SNappi2:hover {
+transform: scale(1.1);
+}
+.empatiapolku-SNappi3:hover {
+transform: scale(1.1);
+}
+.empatiapolku-SNappi4:hover {
+  transform: scale(1.1);
+  }
+
+
+  .empatiapolku-peukut3{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .empatiapolku-peukut3 img{
+    width: 500px;
+    height: auto;
+  }
+
+  .empatiapolku-peukkuteksti3{
+    margin-top: 50px;
+  }
+
+
+  .empatiapolku-peukkuohje3{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .empatiapolku-peukkuohje3 img{
+    width: 600px;
+    height: auto;
+  }
+
+  .empatiapolku-kursoritekstejä{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .empatiapolku-kursoritekstejä h2{
+    font-weight: normal;
+    margin-bottom: 40px;
+  }
+
+  .empatiapolku-kursorikuva{
+    text-align: center;
+  }
+
+  .empatiapolku-laatikko3 {
+    margin-top: 70px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .empatiapolku-laatikko3 .empatiapolku-leftkissa3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .empatiapolku-laatikko3{
+    width: fit-content;
+    padding: 10px;
+    margin-right: auto;
+  }
+
+  .empatiapolku-laatikko3 img {
+    max-width: 45%;
+    margin-top: 10px;
+  }
+  
+  .empatiapolku-tekstia3 h5{
+    font-weight: normal;
+  }
+  .empatiapolku-laatikko3 .empatiapolku-tekstia3 {
+    padding: 10px;
+    text-align: center;
+  }
+  .empatiapolku-tekstia3{
+    font-size: x-large;
+  }
+  
+  .empatiapolku-laatikko3 .youtubevidi3 {
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .empatiapolku-laatikko3 {
+      flex-direction: column;
+    }
+  }
+
+  .empatiapolku-TARINA3{
+    text-align: center;
+    background-color: #fcff55;
+    width: fit-content;
+    margin-top: 150px;
+    margin-left: 16%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .empatiapolku-videotähti{
+    display: flex;
+    margin-left: 22%;
+    margin-top: 80px;
+    
+  }
+  
+  .empatiapolku-vihainenpappa img{
+    width: 500px;
+    height: auto;
+  }
+  
+  .empatiapolku-ovelakissa img{
+    width: 500px;
+    height: auto;
+    margin-left: 5%;
+  }
+
+  .empatiapolku-osat{
+    display: flex;
+  }
+  .empatiapolku-osa1{
+    margin-left: 30%;
+    margin-top: 40px;
+  }
+  .empatiapolku-osa2{
+    margin-left: 17%;
+    margin-top: 40px;
+  }
+
+  .empatiapolku-osa1 h3{
+    font-weight: normal;
+  }
+  .empatiapolku-osa2 h3{
+    font-weight: normal;
+  }
+
+  .empatiapolku-laamapeli{
+    text-align: center;
+  }
+
+  .empatiapolku-laamapeli img{
+    width: 400px;
+    height: auto;
+  }
+
+
+  .empatiapolku-tutustu{
+    text-align: center;
+  }
+
+  .empatiapolku-tutustu h2{
+    font-weight: normal;
+    font-size: xx-large;
+  }
+
+  .empatiapolku-tutustu a{
+    color: #c1331b;
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+  .empatiapolku-laamasetti{
+    margin-top: 30px;
+    margin-left: 17%;
+  }
+
+  .empatiapolku-hämishiiri{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .empatiapolku-hämishiiri img{
+    width: 250px;
+    height: auto;
+
+  }
+
+  .empatiapolku-digiseikkailu2{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .empatiapolku-digiseikkailu2 img{
+    width: 350px;
+    height: auto;
+  }
 
 
 

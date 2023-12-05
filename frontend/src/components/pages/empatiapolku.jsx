@@ -7,6 +7,8 @@ import { vuoropuhujat, vuorosanat } from "../data/vuorosanat";
 import {vuorosanas, vuoropuhuja} from "../data/vuorojutut"
 import {vuorosanax, vuoropuhujax} from "../data/vuoropuhuminen"
 import {vuorosanasi, vuoropuhujasi} from "../data/laamavuoropuhelu"
+import { vuorosanatkurs, vuoropuhujatkurs } from "../data/kursorinvuorot";
+import { vuorosanatkurs2, vuoropuhujatkurs2 } from "../data/kursorinvuorot2";
 import {lauseet, puhuja} from "../data/teht14vuorot";
 import puhelimet from "../data/puhelinData"
 import viestit from "../data/viestit"
@@ -35,11 +37,21 @@ import puhelin1 from "../../assets/puhelin1.webp";
 import puhelin2 from "../../assets/puhelin2.webp";
 import puhelin3 from "../../assets/puhelin3.webp";
 import puhelin4 from "../../assets/puhelin4.webp";
+import noita from "../../assets/noita.webp";
+import zombi2 from "../../assets/zombi2.webp";
+import ilmoitustaulu from "../../assets/ilmoitustaulu.webp";
+import muistio from "../../assets/muistio.webp";
 import TehtäväBoxi from "../elements/tehtäväboxi";
 import nettisurffaus from "../../assets/nettisurffaus.webp"
 import vihainenpappa from "../../assets/vihainenpappa.webp"
 import ovelakissa from "../../assets/ovelakissa.webp"
 import trolliposti from "../../assets/trolliposti.webp"
+import peukkuohje3 from "../../assets/peukkuohjeet3.webp"
+import kursorikuva from "../../assets/kursorikuva.webp"
+import laamapeli from "../../assets/laamapelit.webp"
+import laamasetti from "../../assets/laamasetti.webp"
+import hämishiiri from "../../assets/hämishiiri.webp"
+import digiseikkailu2 from "../../assets/digiseikkailu2.webp"
 
 
 const empatiapolku = () => {
@@ -398,16 +410,7 @@ const empatiapolku = () => {
       <div className="empatiapolku-TARINA2">
         <h1>TARINA</h1>
       </div>
-      {/*
-      <div className="empatiapolku-videotähti">
-        <div className="empatiapolku-vihainenpappa">
-          <img src={vihainenpappa}></img>
-        </div>
-        <div className="empatiapolku-ovelakissa">
-          <img src={ovelakissa}></img>
-        </div>
-      </div>
-        */}
+
       <div className="empatiapolku-trollipostia">
         <SininenNappi
         teksti="Trollipostia SuperSovellukselle"
@@ -422,6 +425,159 @@ const empatiapolku = () => {
         teksti="TEHTÄVÄT 15, 16, 17 JA 18"
         ></TehtäväKissa>
       </div>
+
+      <div className="empatiapolku-kuvat2">
+        <div className="empatiapolku-noita">
+          <img src={noita}></img>
+        </div>
+        <div className="empatiapolku-zombi2">
+          <img src={zombi2}></img>
+        </div>
+        <div className="empatiapolku-ilmoitustaulu">
+          <img src={ilmoitustaulu}></img>
+        </div>
+        <div className="empatiapolku-muistio">
+          <img src={muistio}></img>
+        </div>
+      </div>
+      
+      <div className="empatiapolku-sinisetnapit2">
+        <div className="empatiapolku-SNappi1">
+          <SininenNappi
+           teksti="Trolli, provo ja fleimaus!"
+           ></SininenNappi>
+          </div>
+        <div className="empatiapolku-SNappi2">
+          <SininenNappi
+           teksti="Trolli kommentoimassa"
+           ></SininenNappi>
+        </div>
+        <div className="empatiapolku-SNappi3">
+          <SininenNappi
+           teksti="Mielipidekirjoitus"
+           ></SininenNappi>
+        </div>
+        <div className="empatiapolku-SNappi4">
+          <SininenNappi
+           teksti="Parannusehdotus"
+           ></SininenNappi>
+        </div>
+      </div>
+
+      <div className="empatiapolku-peukut3">
+        <img src={peukut}></img>
+      </div>
+      <div className="empatiapolku-peukkuteksti3">
+        <h1>PEUKKUTEHTÄVÄ</h1>
+      </div>
+      <div className="empatiapolku-peukkuohje3">
+        <img src={peukkuohje3}></img>
+      </div>
+      <div className="empatiapolku-kursorinullakko">
+        <TehtäväBoxi
+        teksti="Kursorin ullakko - Tehtävä 19"
+        ></TehtäväBoxi>
+      </div>
+      <div className="empatiapolku-kursoritekstejä">
+        <h2>Taitava <strong>Kursori-pappa</strong> Häsän naapurista oli korjannut Apin rikkimenneen puhelimenlasin.</h2>
+        <h2>Häsä ja Appi kävivät hakemassa puhelimen takaisin ja vaihtoivat kuulumisia Kursorin kanssa.</h2>
+      </div>
+      <div className="empatiapolku-kursorikuva">
+        <img src={kursorikuva}></img>
+      </div>
+
+      <div className="empatiapolku-laatikko3">
+        <div className="empatiapolku-leftkissa3">
+          <TehtäväKissa
+          teksti="TEHTÄVÄ 20"
+          ></TehtäväKissa>
+          <div className="empatiapolku-tekstia3">
+            <h5>Tutki viestittelyä.<br></br><br></br>
+                Mistä asiasta Kursori on huolissaan?</h5>
+          </div>
+        </div>
+        <div className="empatiapolku-youtubevidi3">
+          <video controls width="700" src="https://digiadventurers.com/wp-content/uploads/2019/10/720p.mov"></video>
+        </div>
+      </div>
+      <div className="empatiapolku-kursorinhuolet">
+        {vuorosanatkurs.map((vuorosana, index) => (
+          <Vuoropuhelu
+            key={index}
+            width="32px"
+            height="32px"
+            teksti={vuorosana}
+            kuva={vuoropuhujatkurs[index]}
+            ></Vuoropuhelu>
+            
+
+        ))}
+      </div>
+      <div className="empatiapolku-TARINA3">
+        <h1>TARINA</h1>
+      </div>
+      
+      <div className="empatiapolku-videotähti">
+        <div className="empatiapolku-vihainenpappa">
+          <img src={vihainenpappa}></img>
+        </div>
+        <div className="empatiapolku-ovelakissa">
+          <img src={ovelakissa}></img>
+        </div>
+      </div>
+
+      <div className="empatiapolku-osat">
+        <div className="empatiapolku-osa1">
+            <h2>Osa 1</h2>
+            <br></br><br></br>
+            <h3>Huono-onninen videotähti</h3>
+        </div>
+        <div className="empatiapolku-osa2">
+            <h2>Osa 2</h2>
+            <br></br><br></br>
+            <h3>Huono-onninen videotähti</h3>
+        </div>
+      </div>
+
+      <div className="empatiapolku-kursorinhuolet2">
+        {vuorosanatkurs2.map((vuorosana, index) => (
+          <Vuoropuhelu
+            key={index}
+            width="32px"
+            height="32px"
+            teksti={vuorosana}
+            kuva={vuoropuhujatkurs2[index]}
+            ></Vuoropuhelu>
+        ))}
+      </div>
+
+      <div className="empatiapolku-laamapeli">
+        <img src={laamapeli} alt="" />
+      </div>
+
+      <div className="empatiapolku-tutustu">
+        <h2>Tutustu lisää Digiseikkailun tarinoihin, tehtäviin ja peleihin <a href="">Tietoa opettajalle</a> osiossa</h2>
+      </div>
+
+      <div className="empatiapolku-laamasetti">
+        <img src={laamasetti} alt="" />
+      </div>
+
+      <div className="empatiapolku-hämishiiri">
+          <img src={hämishiiri} alt="" />
+      </div>
+
+      <div className="empatiapolku-digiseikkailu2">
+          <img src={digiseikkailu2} alt="" />
+      </div>
+
+      <div className="empatiapolku-loppupalkki">
+        
+      </div>
+
+
+
+        
     </div>
   );
 };
