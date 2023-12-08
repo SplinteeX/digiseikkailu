@@ -177,45 +177,46 @@ const empatiapolku = () => {
         teksti="TEHTÄVÄ 4 JA 5"
         ></TehtäväKissa>
       </div>
-      <div className="empatiapolku-videocontainer">
-        <div className="empatiapolku-youtubevidi1">
-          <YoutubeVideo
-            videoId="VCqX0G-hQDo"
-            width={"100%"}
-            height={"250px"}
-            color={"#79b7e2"}
-            
-          />
+      
+      <section class="empatiapolku-content-container">
+    <div class="empatiapolku-item">
+        <div class="empatiapolku-video-item">
+            <YoutubeVideo
+                videoId="VCqX0G-hQDo"
+                width={"100%"}
+                height={"250px"}
+                color={"#79b7e2"}
+            />
         </div>
-        <div className="empatiapolku-youtubevidi2">
-          <YoutubeVideo
-              videoId="lekkpIfJ-Ec"
-              width={"25%"}
-              height={"250px"}
-              color={"#79b7e2"}
-              
-          />
+        <p class="empatiapolku-text">Mitä on netiketti?</p>
+    </div>
+    
+    <div class="empatiapolku-item">
+        <div class="empatiapolku-video-item">
+            <YoutubeVideo
+                videoId="lekkpIfJ-Ec"
+                width={"100%"}
+                height={"250px"}
+                color={"#79b7e2"}
+            />
         </div>
-        <div className="empatiapolku-somekaveri">
-          <img src={somekaveri}></img>
+        <p class="empatiapolku-text">Somekaveruus</p>
+    </div>
+    
+    <div class="empatiapolku-item">
+        <div class="empatiapolku-image-item">
+            <img src={somekaveri} alt="Description for the image"></img>
         </div>
-      </div>
-      <div className="empatiapolku-buttoncontainerwrapper">
-        <a href="" class="empatiapolku-buttoncontainer">
-          <span>Kiva somekaveri -tehtävä 6</span>
-        </a>
-      </div>
-      <div className="empatiapolku-tekstiholder">
-        <div className="empatiapolku-teksti1">
-          <h2>Mikä on netiketti?</h2>
+        <div class="empatiapolku-button-hamahakki-container">
+            <div className="empatiapolku-buttoncontainerwrapper">
+                <a href="" class="empatiapolku-buttoncontainer">
+                    <span>Kiva somekaveri -tehtävä 6</span>
+                </a>
+            </div>
+            <img className="empatiapolku-hämähäkki" src={hämis} alt="Hämähäkki image"></img>
         </div>
-        <div className="empatiapolku-teksti2">
-          <h2>Somekaveruus</h2>
-        </div>
-        <div className="empatiapolku-hämis">
-          <img src={hämis}/>
-        </div>
-      </div>
+    </div>
+</section>
 
       <div className="empatiapolku-dogenpolku">
         <TehtäväBoxi
@@ -385,7 +386,7 @@ const empatiapolku = () => {
       <div className="empatiapolku-tehtävä14">
         <div className="empatiapolku-leftkissa2">
           <TehtäväKissa
-          teksti="TEHTÄVÄ 2"
+          teksti="TEHTÄVÄ 14"
           ></TehtäväKissa>
           <div className="empatiapolku-tekstia2">
             <h5>Millaisia tunteita eri kommentit aiheuttivat Häsässä?</h5>
@@ -427,42 +428,44 @@ const empatiapolku = () => {
       </div>
 
       <div className="empatiapolku-kuvat2">
-        <div className="empatiapolku-noita">
-          <img src={noita}></img>
-        </div>
-        <div className="empatiapolku-zombi2">
-          <img src={zombi2}></img>
-        </div>
-        <div className="empatiapolku-ilmoitustaulu">
-          <img src={ilmoitustaulu}></img>
-        </div>
-        <div className="empatiapolku-muistio">
-          <img src={muistio}></img>
-        </div>
-      </div>
-      
-      <div className="empatiapolku-sinisetnapit2">
-        <div className="empatiapolku-SNappi1">
-          <SininenNappi
-           teksti="Trolli, provo ja fleimaus!"
-           ></SininenNappi>
-          </div>
-        <div className="empatiapolku-SNappi2">
-          <SininenNappi
-           teksti="Trolli kommentoimassa"
-           ></SininenNappi>
-        </div>
-        <div className="empatiapolku-SNappi3">
-          <SininenNappi
-           teksti="Mielipidekirjoitus"
-           ></SininenNappi>
-        </div>
-        <div className="empatiapolku-SNappi4">
-          <SininenNappi
-           teksti="Parannusehdotus"
-           ></SininenNappi>
-        </div>
-      </div>
+  <div className="empatiapolku-item">
+    <div className="empatiapolku-noita">
+      <img src={noita} alt="Noita" />
+    </div>
+    <div className="empatiapolku-SNappi1">
+      <SininenNappi teksti="Trolli, provo ja fleimaus!" />
+    </div>
+  </div>
+  
+  <div className="empatiapolku-item">
+    <div className="empatiapolku-zombi2">
+      <img src={zombi2} alt="Zombi2" />
+    </div>
+    <div className="empatiapolku-SNappi2">
+      <SininenNappi teksti="Trolli kommentoimassa" />
+    </div>
+  </div>
+  
+  <div className="empatiapolku-item">
+    <div className="empatiapolku-ilmoitustaulu">
+      <img src={ilmoitustaulu} alt="Ilmoitustaulu" />
+    </div>
+    <div className="empatiapolku-SNappi3">
+      <SininenNappi teksti="Mielipidekirjoitus" />
+    </div>
+  </div>
+  
+  <div className="empatiapolku-item">
+    <div className="empatiapolku-muistio">
+      <img src={muistio} alt="Muistio" />
+    </div>
+    <div className="empatiapolku-SNappi4">
+      <SininenNappi teksti="Parannusehdotus" />
+    </div>
+  </div>
+</div>
+
+
 
       <div className="empatiapolku-peukut3">
         <img src={peukut}></img>
@@ -570,14 +573,6 @@ const empatiapolku = () => {
       <div className="empatiapolku-digiseikkailu2">
           <img src={digiseikkailu2} alt="" />
       </div>
-
-      <div className="empatiapolku-loppupalkki">
-        
-      </div>
-
-
-
-        
     </div>
   );
 };
