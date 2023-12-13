@@ -1,5 +1,4 @@
 export const ApinmajaData = () => {
-
   const Tehtävät = [
     {
       tehtNum: "1",
@@ -12,8 +11,12 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       puolTeksti:
         "Miuku-Mauku jahtaa jälleen Pointteri-hiirtä. Hiiri on kuitenkin nopeampi ja vie kissan mitä ihmeellisimpiin seikkailuihin matkallaan.",
+<<<<<<< HEAD
       puolKuva: "src/assets/kissahiiri.webp",
       Unity: "https://digiadventurers.com/unity-games/prod/hiiripiiri/index.html",
+=======
+      puolKuva: "src/assets/Apinmajaimages/kissahiiri.webp",
+>>>>>>> 13eeab5c4c9d42037684e1f9cce96312913d2447
       SoundCloud: "soundcloud.com/digiseikkailu-oy/apinmaja-2",
     },
     {
@@ -52,11 +55,20 @@ export const ApinmajaData = () => {
       tehtName: "Hiiritehtävä 4",
       puolTitle: "Maalaa ja lihavoi riimiparit",
       Kategoria: "Apinmaja",
+<<<<<<< HEAD
       puolTeksti: "Etsi tekstistä riimiparit. Maalaa riimin kirjaimet hiirellä. Riimin tausta muuttuu siniseksi. Nyt tee taas lihavointi painamalla Ctrl + B pikakomentoa.",
       Kuva: "",
       puolKuvat: ["DogenluuMaalattu", "DogenluuLihavoitu"],
       Unity: "https://digiadventurers.com/unity-games/prod/peli4/index.html",
       SoundCloud: "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-4"
+=======
+      puolTeksti:
+        "Harjoitellaan maalaamaan, eli valitsemaan hiirellä. Tehdään tekstin lihavointi pikakomennolla ( Ctrl + B )",
+      Kuva: "",
+      puolKuvat: ["DogenluuMaalattu", "DogenluuLihavoitu"],
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-4",
+>>>>>>> 13eeab5c4c9d42037684e1f9cce96312913d2447
     },
     {
       tehtNum: "7",
@@ -114,4 +126,3 @@ export const ApinmajaData = () => {
 
   return Tehtävät;
 };
-
