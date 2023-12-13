@@ -1,5 +1,4 @@
 export const ApinmajaData = () => {
-
   const Tehtävät = [
     {
       tehtNum: "1",
@@ -12,7 +11,7 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       puolTeksti:
         "Miuku-Mauku jahtaa jälleen Pointteri-hiirtä. Hiiri on kuitenkin nopeampi ja vie kissan mitä ihmeellisimpiin seikkailuihin matkallaan.",
-      puolKuva: "src/assets/kissahiiri.webp",
+      puolKuva: "src/assets/Apinmajaimages/kissahiiri.webp",
       SoundCloud: "soundcloud.com/digiseikkailu-oy/apinmaja-2",
     },
     {
@@ -53,10 +52,12 @@ export const ApinmajaData = () => {
       tehtName: "Hiiritehtävä 4",
       puolTitle: "Maalaa ja lihavoi riimiparit",
       Kategoria: "Apinmaja",
-      puolTeksti: "Harjoitellaan maalaamaan, eli valitsemaan hiirellä. Tehdään tekstin lihavointi pikakomennolla ( Ctrl + B )",
+      puolTeksti:
+        "Harjoitellaan maalaamaan, eli valitsemaan hiirellä. Tehdään tekstin lihavointi pikakomennolla ( Ctrl + B )",
       Kuva: "",
       puolKuvat: ["DogenluuMaalattu", "DogenluuLihavoitu"],
-      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-4"
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-4",
     },
     {
       tehtNum: "23",
@@ -76,4 +77,3 @@ export const ApinmajaData = () => {
 
   return Tehtävät;
 };
-

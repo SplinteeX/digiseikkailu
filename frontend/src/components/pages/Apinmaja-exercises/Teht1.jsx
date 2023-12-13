@@ -5,7 +5,7 @@ console.log(Tehtävät[1]);
 export const Teht1 = () => {
   return (
     <>
-      <ExerciseComponent Data={Tehtävät[5]} />
+      <ExerciseComponent Data={Tehtävät[1]} />
     </>
   );
 };
