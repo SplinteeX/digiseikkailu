@@ -16,6 +16,7 @@ import { Products } from "./components/pages/Products";
 import { Page404 } from "./components/pages/404Page";
 import { TarinatTyokirja } from "./components/pages/Products/TarinatTyokirja";
 import { TvtOpetuksenTaitoPaketti } from "./components/pages/Products/TvtOpetuksenTaitopaketti";
+import { Teht1 } from "./components/pages/Apinmaja-exercises/Teht1";
 import "./App.css";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
               path="/tuotteet/TarinatTyokirja"
               element={<TarinatTyokirja />}
             />
+            <Route path="/t1" element={<Teht1 />} />
             <Route
               path="/tuotteet/TVT-opetuksen-taitopaketti"
               element={<TvtOpetuksenTaitoPaketti />}
