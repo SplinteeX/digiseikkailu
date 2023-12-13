@@ -13,6 +13,8 @@ export const ApinmajaData = () => {
         "Miuku-Mauku jahtaa jälleen Pointteri-hiirtä. Hiiri on kuitenkin nopeampi ja vie kissan mitä ihmeellisimpiin seikkailuihin matkallaan.",
       puolKuva: "src/assets/Apinmajaimages/kissahiiri.webp",
       SoundCloud: "soundcloud.com/digiseikkailu-oy/apinmaja-2",
+      Unity:
+        "https://digiadventurers.com/unity-games/prod/hiiripiiri/index.html",
     },
     {
       tehtNum: "3",
