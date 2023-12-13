@@ -47,6 +47,20 @@ export const ApinmajaData = () => {
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-3",
     },
+    {
+      tehtNum: "23",
+      tehtName: "Tiedostomuodot",
+      youtube: "FXrM_YErETs",
+      Kategoria: "Apinmaja",
+      puolTekstit: [
+        "Tiedostoja tallennetaan eri muodoissa. On esim. videotiedostoja, musiikkitiedostoja, tekstitiedostoja ja kuvatiedostoja. Saman aihepiirin tiedostot kannattaa tallentaa omaan kansioonsa.",
+        "Kannattaa tehdä oma kansio, jossa säilyttää itselle tärkeitä tiedostoja. Tiedostot löytyvät parhaiten kun ne on järjestetty ja nimetty.",
+      ],
+      puolKuvat: [
+        "src/assets/tiedostomuodot3.webp",
+        "src/assets/tiedostomuodot4.png.webp",
+      ],
+    },
   ];
 
   return Tehtävät;

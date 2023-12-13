@@ -48,28 +48,37 @@ export const ExerciseComponent = ({ Data }) => {
           Kysely
         </button>
       </div>
-
-      {/* Conditional rendering based on activeTab */}
       {activeTab === "Tehtävä" && (
         <>
-          {/* Display exercise details */}
-          <h3>
+          <h3 className="White-text">
             {Data.tehtNum}. {Data.tehtName}
           </h3>
-          {Data.puolTeksti ? (
+          {Data.puolTeksti && !Array.isArray(Data.puolTeksti) ? (
             <div className="TextImage">
               <p className="text50">{Data.puolTeksti}</p>
-              <img
-                className="image50"
-                src={Data.puolKuva}
-                alt={Data.puolTitle}
-              />
+              {Data.puolKuva && (
+                <img className="image50" src={Data.puolKuva} alt="Image" />
+              )}
             </div>
           ) : null}
+          {Data.puolTekstit && Array.isArray(Data.puolTekstit)
+            ? Data.puolTekstit.map((text, index) => (
+                <div key={`text_${index}`} className="TextImages">
+                  <p className="text50s">{text}</p>
+                  {Data.puolKuvat && Data.puolKuvat.length > index && (
+                    <img
+                      className="image50s"
+                      src={Data.puolKuvat[index]}
+                      alt={`Image ${index}`}
+                    />
+                  )}
+                </div>
+              ))
+            : null}
           {Data.Kuva ? (
             <img className="Full-image" src={Data.Kuva} alt="" />
           ) : null}
-          <p>Pelaa täällä!</p>
+          <p className="White-text">Pelaa täällä!</p>
         </>
       )}
 

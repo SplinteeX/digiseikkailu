@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
-  height: 83vh;
+  min-height: 83vh;
   color: #000;
   text-align: center;
   font-family: Montserrat;
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 20px 25% 0px 25%;
+  padding: 20px 20% 0px 20%;
 }
 .Section-buttons {
   display: flex;
@@ -34,6 +34,12 @@
 .Section-buttons button:hover {
   opacity: 80%;
   cursor: pointer;
+}
+.White-text {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
 }
 .TextImage {
   display: flex;
@@ -60,6 +66,32 @@
   object-fit: cover;
   border-radius: 20px;
   height: 100%;
+}
+
+/* Multiple 50s images / texts : */
+.TextImages {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.text50s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 50%;
+  border-radius: 20px;
+  height: 100%;
+  margin: 0px;
+}
+.image50s {
+  width: 50%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 .Active-button {
   background: #507cd7;
