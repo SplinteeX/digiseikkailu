@@ -9,17 +9,10 @@ export const ApinmajaData = () => {
       tehtNum: "2",
       tehtName: "Hiiripiiri -peli",
       Kategoria: "Apinmaja",
-      puolTeksti:
-        "Miuku-Mauku jahtaa jälleen Pointteri-hiirtä. Hiiri on kuitenkin nopeampi ja vie kissan mitä ihmeellisimpiin seikkailuihin matkallaan.",
-<<<<<<< HEAD
-      puolKuva: "src/assets/kissahiiri.webp",
-      Unity: "https://digiadventurers.com/unity-games/prod/hiiripiiri/index.html",
-=======
+      puolTeksti: "Miuku-Mauku jahtaa jälleen Pointteri-hiirtä. Hiiri on kuitenkin nopeampi ja vie kissan mitä ihmeellisimpiin seikkailuihin matkallaan.",
       puolKuva: "src/assets/Apinmajaimages/kissahiiri.webp",
->>>>>>> 13eeab5c4c9d42037684e1f9cce96312913d2447
+      Unity: "https://digiadventurers.com/unity-games/prod/hiiripiiri/index.html",
       SoundCloud: "soundcloud.com/digiseikkailu-oy/apinmaja-2",
-      Unity:
-        "https://digiadventurers.com/unity-games/prod/hiiripiiri/index.html",
     },
     {
       tehtNum: "3",
@@ -57,20 +50,11 @@ export const ApinmajaData = () => {
       tehtName: "Hiiritehtävä 4",
       puolTitle: "Maalaa ja lihavoi riimiparit",
       Kategoria: "Apinmaja",
-<<<<<<< HEAD
       puolTeksti: "Etsi tekstistä riimiparit. Maalaa riimin kirjaimet hiirellä. Riimin tausta muuttuu siniseksi. Nyt tee taas lihavointi painamalla Ctrl + B pikakomentoa.",
       Kuva: "",
       puolKuvat: ["DogenluuMaalattu", "DogenluuLihavoitu"],
       Unity: "https://digiadventurers.com/unity-games/prod/peli4/index.html",
       SoundCloud: "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-4"
-=======
-      puolTeksti:
-        "Harjoitellaan maalaamaan, eli valitsemaan hiirellä. Tehdään tekstin lihavointi pikakomennolla ( Ctrl + B )",
-      Kuva: "",
-      puolKuvat: ["DogenluuMaalattu", "DogenluuLihavoitu"],
-      SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-4",
->>>>>>> 13eeab5c4c9d42037684e1f9cce96312913d2447
     },
     {
       tehtNum: "7",
@@ -109,6 +93,39 @@ export const ApinmajaData = () => {
       vaihtoehdot: "A) Äänien tunnistamista B) Kuvien piirtämistä C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa sekä kaksoisnapsautusta D) Tekstin kirjoittamista",
       vastaus: "Oikea vastaus: C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa sekä kaksoisnapsautusta",
       SoundCloud: "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-7"
+    },
+    {
+      tehtNum: "10",
+      tehtName: "Hiiritehtävä 8",
+      pieniTitle: "Hiiren ja kissan piiloleikki",
+      Kategoria: "Apinmaja",
+      puolTeksti: "Miuku-Mauku jahtaa Pointteria pihalla. Auta Pointteri seuraavaan piilopaikkaan ennen kuin Miuku-Mauku saa sen kiinni.  Hiiri liikkuu sinne, minne kohtaan teet kaksoisnapsautuksen hiirellä.",
+      isoKuva: "src/assets/Apinmajaimages/isoKissaHiiri.webp",
+      pieniKuva: "",
+      Unity: "https://digiadventurers.com/unity-games/prod/peli8/index.html",
+      peliteksti: "Vaikka oikeassa elämässä kissat jahtaavat pieniä eläimiä, tässä tarinassa Miuku-Mauku päästää Pointteri-hiiren aina vapaaksi, sillä molemmat tykkäävät kuntoilla pihalla juoksentelemalla. ",
+      kysymys: "Mitä “Auta hiirtä piiloutumaan Miuku-Maukulta” -tehtävässä harjoitellaan?",
+      vaihtoehdot: "A) Kuvien piirtämistä B) Tekstin kirjoittamista C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa ja kaksoisnapsautusta D) Äänien tunnistamista",
+      vastaus: "Oikea vastaus: C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa ja kaksoisnapsautusta",
+      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-8"
+    },
+    {
+      tehtNum: "11",
+      tehtName: "Hiiritehtävä 10",
+      title: "Suunnittele oma tietokonehiiri",
+      Kategoria: "Apinmaja",
+      puolTeksti: "Tutustu Erilaisia hiiriä -osuuteen. Tutustutaan tietokonehiirien muotoiluun ja pohditaan niiden käytettävyyteen liittyviä seikkoja kuten nappien paikkoja, muotoja, värejä ja toiminnallisuuksia. Suunnittele ja piirrä tietokonehiiri omiin tarpeisiin. Minkälainen design olisi sinua miellyttävä? Kerro mitä toimintoja löytyy hiirestäsi oikean painikkeen ja vasemman painikkeen alta.",
+      isoKuva: ["src/assets/Apinmajaimages/värihiiri.webp", "src/assets/Apinmajaimages/pelikuva.webp"],
+      muistelu: "Muistele millaisia tietokonehiiriä olet käyttänyt. Kerro hiiristä, joita olet käyttänyt.",
+      pieniKuva: "",
+      puolKuva: "",
+      häsäApi: "Häsän ja Apin suunnittelema hiiri",
+      Unity: "https://digiadventurers.com/unity-games/prod/peli10/index.html",
+      peliteksti: "Vaikka oikeassa elämässä kissat jahtaavat pieniä eläimiä, tässä tarinassa Miuku-Mauku päästää Pointteri-hiiren aina vapaaksi, sillä molemmat tykkäävät kuntoilla pihalla juoksentelemalla. ",
+      kysymys: "Mitä “Suunnittele oma tietokonehiiri” -tehtävässä harjoitellaan?",
+      vaihtoehdot: "A) Tietokonehiirien korjaamista B) Tietokonehiirten käyttöä C) Tietokonehiirten muotoilua ja toiminnallisuutta D) Tietokoneohjelmien suunnittelua",
+      vastaus: "Oikea vastaus: C) Tietokonehiirten muotoilua ja toiminnallisuutta",
+      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10"
     },
     {
       tehtNum: "23",
