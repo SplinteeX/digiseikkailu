@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/ExerciseComponent.css";
 import { useNavigate } from "react-router-dom";
 import { ApinmajaData } from "../data/ApinmajaData";
@@ -10,9 +10,12 @@ export const ExerciseComponent = ({ Data }) => {
   const [RightTask, setRightTask] = useState(Data.vastaus);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [loading, setLoading] = useState(true);
-
   const navigate = useNavigate();
   const Tehtävät = ApinmajaData();
+
+  useEffect(() => {
+    setRightTask(Data.vastaus);
+  }, [Data]);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -30,12 +33,14 @@ export const ExerciseComponent = ({ Data }) => {
     if (direction === "next") {
       newIndex = currentIndex + 1;
       if (newIndex <= maxIndex) {
+        setSelectedAnswer(null);
         navigate(`/apinmaja/${newIndex}`);
         window.scrollTo(0, 0);
       }
     } else if (direction === "previous") {
       newIndex = currentIndex - 1;
       if (newIndex >= 0) {
+        setSelectedAnswer(null);
         navigate(`/apinmaja/${newIndex}`);
         window.scrollTo(0, 0);
       }

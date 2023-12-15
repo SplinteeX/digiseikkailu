@@ -346,6 +346,27 @@ export const ApinmajaData = () => {
       Unity: "https://digiadventurers.com/unity-games/prod/sandbox/index.html",
     },
     {
+      tehtNum: "17",
+      tehtName: "Näppäinkomennot haltuun",
+      Kategoria: "Apinmaja",
+      Kuva: "/src/assets/ApinmajaImages/TietokoneKuva.webp",
+      puolTeksti:
+        "Harjoitellaan pikakomentoja. Tee raahaustehtävä, jossa harjoitellaan perus pikakomentoja tietokoneella työskennellessä. Pikakomennot näppäimistöllä kannattaa harjoitella, sillä ne nopeuttavat työtäsi. Pohdi ja kirjoita, miten voit käyttää oppimiasi pikatoimintoja kun kirjoitat esim. tarinaa tietokoneella.",
+      puolKuva: "/src/assets/ApinmajaImages/TaitokorttiPikanäppäimet.webp",
+      kysymys: "Mitä “Näppäinmuistipeli” -tehtävässä harjoitellaan?",
+      peliTitle: "Tee tehtävä täällä!",
+
+      vaihtoehdot: [
+        "A) Näppäimistön puhdistamista",
+        "B) Kirjainten ja numeroiden kirjoittamista",
+        "C) Pikakomentojen käyttöä tietokoneella",
+        "D) Tekstinkäsittelyohjelmien käyttöä",
+      ],
+      vastaus: "C) Pikakomentojen käyttöä tietokoneella",
+      Unity:
+        "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=3",
+    },
+    {
       tehtNum: "23",
       tehtName: "Tiedostomuodot",
       youtube: "FXrM_YErETs",
