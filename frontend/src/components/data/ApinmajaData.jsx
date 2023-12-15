@@ -298,6 +298,54 @@ export const ApinmajaData = () => {
         "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=17",
     },
     {
+      tehtNum: "15",
+      tehtName: "Raahaa näppäimet paikoilleen",
+      Kategoria: "Apinmaja",
+      Kuva: "/src/assets/ApinmajaImages/LäppäriNäppäimistö.webp",
+      puolTeksti:
+        "Raahaa näppäimet paikoilleen! Tee tehtävä monta kertaa. Harjoittele samalla näppäinten nimiä. Opiskele näppäimistä Tutustu näppäimistöön -osiossa.",
+      puolKuva: "/src/assets/ApinmajaImages/Taitokortti.webp",
+      kysymys: "Mitä “Näppäinmuistipeli” -tehtävässä harjoitellaan?",
+      peliTitle: "Tee tehtävä täällä!",
+      vaihtoehdot: [
+        "A) Näppäinten kirjoittamista",
+        "B) Näppäinten piirtämistä",
+        "C) Näppäinten nimiä ja sijainteja näppäimistöllä",
+        "D) Näppäinten nopeaa painamista",
+      ],
+      vastaus: "C) Näppäinten nimiä ja sijainteja näppäimistöllä",
+      Unity:
+        "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=13",
+    },
+    {
+      tehtNum: "16",
+      tehtName: "Perustaitoja näppiksellä",
+      Kategoria: "Apinmaja",
+      Kuva: "/src/assets/ApinmajaImages/Näppäintaidot.webp",
+
+      kysymys: "Mitä “Näppäinmuistipeli” -tehtävässä harjoitellaan?",
+      peliTitle: "Tee tehtävä täällä!",
+      Teksti:
+        "Esimerkki vastaus tehtävään:\n1. Häsä\n2. Mitä sinulle kuuluu?\n3. Katso, olen täällä!\n4. miuku-mauku@gmail.com\n5. TÄMÄ ON HUUTAMISTA!!!!\n6. Katso tänne nopeasti.\n7. Näin lisätään sulkumerkit (). Näin lisätään kauttaviiva /.\n8. Näin lisätään ristikkomerkki #.",
+      numeroLista: [
+        "Kirjoita jokin nimi, jossa on iso alkukirjain.",
+        "Kirjoita kysymys, joka päättyy kysymysmerkkiin.",
+        "Kirjoita isolla kirjaimella alkava virke johon voi laittaa huutomerkin.",
+        "Kirjoita sähköpostiosoitteesi ja käytä @ -merkkiä.",
+        "Kirjoita virke, jossa kaikki kirjaimet ovat ISOJA!",
+        "Kirjoita virke joka alkaa isolla kirjaimella ja päättyy pisteeseen.",
+        "Kirjoita sulkumerkit ( ) , kauttaviiva / , sekä ristikkomerkki # .",
+      ],
+      vaihtoehdot: [
+        "A) Näppäimistön puhdistamista",
+        "B) Kirjaimien ja erikoismerkkien kirjoittamista",
+        "C) Tietokoneen käynnistämistä",
+        "D) Tekstinkäsittelyohjelmien käyttöä",
+      ],
+      vastaus: "B) Kirjaimien ja erikoismerkkien kirjoittamista",
+      Unity: "https://digiadventurers.com/unity-games/prod/sandbox/index.html",
+    },
+    {
       tehtNum: "23",
       tehtName: "Tiedostomuodot",
       youtube: "FXrM_YErETs",

@@ -141,6 +141,15 @@ export const ExerciseComponent = ({ Data }) => {
               </div>
             ))}
           {Data.Teksti && <p className="Text">{Data.Teksti}</p>}
+          {Data.numeroLista && (
+            <div className="Numerolista">
+              <ol>
+                {Data.numeroLista.map((numero, index) => (
+                  <li key={`numero_${index}`}>{numero}</li>
+                ))}
+              </ol>
+            </div>
+          )}
           {Data.peliTitle ? (
             <p className="White-text">{Data.peliTitle}</p>
           ) : null}
