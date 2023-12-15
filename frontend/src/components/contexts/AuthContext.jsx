@@ -2,7 +2,6 @@ import { createContext, useReducer, useEffect } from "react";
 import cookie from "js-cookie";
 import { useGetUser } from "../hooks/useGetUser";
 
-const { GetUser } = useGetUser();
 export const AuthContext = createContext();
 
 export const authReducer = (state, action) => {
@@ -23,14 +22,15 @@ export const AuthContextProvider = ({ children }) => {
   });
 
   useEffect(() => {
+    const { GetUser } = useGetUser();
     const testUser = GetUser();
     testUser.then((user) => {
-      const data = user.user;
-      if (data) {
+      if (user && user.user) {
+        const data = user.user;
         const role = data.role;
-        const user = JSON.stringify(data);
+        const stringifiedUser = JSON.stringify(data);
 
-        dispatch({ type: "LOGIN", payload: { user, role } });
+        dispatch({ type: "LOGIN", payload: { user: stringifiedUser, role } });
       }
     });
   }, []);
