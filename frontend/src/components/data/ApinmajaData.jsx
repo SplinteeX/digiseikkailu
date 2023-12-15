@@ -31,7 +31,7 @@ export const ApinmajaData = () => {
       tehtName: "Hiiritehtävä 1",
       smallTitle: "Napsauttele numerot",
       Kategoria: "Apinmaja",
-      puolTeksti:
+      Teksti:
         "Harjoittele klikkaamaan kaksoisnapsautuksella numeroita järjestyksessä. Mikä kuva ilmestyy ruudulle? Mitä tietoturvaan liittyviä huomioita voit tehdä kuvasta?",
       Kuva: "/src/assets/ApinmajaImages/tietokonevärikäs.webp",
       peliTitle: "Aloita tehtävä!",
@@ -47,7 +47,7 @@ export const ApinmajaData = () => {
       tehtNum: "4",
       tehtName: "Hiiritehtävä 2",
       smallTitle: "Seuraa viivaa",
-      puolTeksti:
+      Teksti:
         "Seuraa viivaa hiiren osoittimella. Paina hiiren ykköspainiketta kun maalaat viivaa. Pyri tekemään mahdollisimman tarkasti.",
       Kategoria: "Apinmaja",
       Kuva: "/src/assets/ApinmajaImages/tietokoneJaPeli.webp",
@@ -123,7 +123,7 @@ export const ApinmajaData = () => {
       tehtName: "Hiiritehtävä 6",
       puolTitle: "Leikkaa ja liimaa salainen viesti",
       Kategoria: "Apinmaja",
-      puolTeksti:
+      Teksti:
         "Harjoitellaan kopioi – leikkaa – liitä -toimintoja. Osaatko päätellä, mitkä sanat pitää poistaa ja minkä salaisen viestin Miuku-Mauku lähettää Dogelle. Maalaa ylimääräinen sana hiirellä. Leikkaa tai kopioi sana pikakomennolla. Liitä sanat yksi kerrallaan viestilappuun.",
       Kuva: "/src/assets/ApinmajaImages/tietokoneCtrl+c.webp",
       smallTitle: "Pikakomennot",
@@ -173,7 +173,7 @@ export const ApinmajaData = () => {
       tehtName: "Hiiritehtävä 8",
       smallTitle: "Hiiren ja kissan piiloleikki",
       Kategoria: "Apinmaja",
-      puolTeksti:
+      Teksti:
         "Miuku-Mauku jahtaa Pointteria pihalla. Auta Pointteri seuraavaan piilopaikkaan ennen kuin Miuku-Mauku saa sen kiinni.  Hiiri liikkuu sinne, minne kohtaan teet kaksoisnapsautuksen hiirellä.",
       Kuva: "/src/assets/ApinmajaImages/isoKissaHiiri.webp",
       peliTitle: "Pelaa täällä!",
