@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../css/ExerciseComponent.css";
 import { useNavigate } from "react-router-dom";
 import { ApinmajaData } from "../data/ApinmajaData";
+import TinyMCE from "./tinyMce";
 
 export const ExerciseComponent = ({ Data }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
@@ -141,6 +142,7 @@ export const ExerciseComponent = ({ Data }) => {
               scrolling="no"
             ></iframe>
           ) : null}
+          {Data.TinyMCE && <TinyMCE text={Data.TinyMCE} />}
           <button onClick={handleNextClick} className="NextButton">
             Next
           </button>

@@ -118,6 +118,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 20px 0px;
 }
 .Vaihtoehto {
   background-color: white;
@@ -146,8 +147,11 @@ p {
   background-color: #ff0000;
   color: white;
 }
-/* All different syles */
+.tox-tinymce {
+  width: 100%;
+}
 
+/* All different syles */
 .Apinmaja-style {
   background: linear-gradient(
       180deg,

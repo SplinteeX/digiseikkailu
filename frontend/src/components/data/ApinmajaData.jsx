@@ -197,7 +197,7 @@ export const ApinmajaData = () => {
       tehtName: "Hiiritehtävä 10",
       title: "Suunnittele oma tietokonehiiri",
       Kategoria: "Apinmaja",
-      puolTeksti:
+      Teksti:
         "Tutustu Erilaisia hiiriä -osuuteen. Tutustutaan tietokonehiirien muotoiluun ja pohditaan niiden käytettävyyteen liittyviä seikkoja kuten nappien paikkoja, muotoja, värejä ja toiminnallisuuksia. Suunnittele ja piirrä tietokonehiiri omiin tarpeisiin. Minkälainen design olisi sinua miellyttävä? Kerro mitä toimintoja löytyy hiirestäsi oikean painikkeen ja vasemman painikkeen alta.",
       Kuvat: [
         "/src/assets/ApinmajaImages/värihiiri.webp",
@@ -219,6 +219,31 @@ export const ApinmajaData = () => {
         "D) Tietokoneohjelmien suunnittelua",
       ],
       vastaus: "C) Tietokonehiirten muotoilua ja toiminnallisuutta",
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
+    },
+    {
+      tehtNum: "12",
+      tehtName: "Tutustu tietokoneen näppäimistöön",
+      title: "Tutustu tietokoneen näppäimistöön",
+      Kategoria: "Apinmaja",
+      Kuvat: [
+        "/src/assets/ApinmajaImages/Näppäimistö2.webp",
+        "/src/assets/ApinmajaImages/NäppäimistöKuva.webp",
+      ],
+      smallTitle: "Kokeile näppäimistöä",
+      TinyMCE: "Aloita tästä!",
+      peliteksti:
+        "Vaikka oikeassa elämässä kissat jahtaavat pieniä eläimiä, tässä tarinassa Miuku-Mauku päästää Pointteri-hiiren aina vapaaksi, sillä molemmat tykkäävät kuntoilla pihalla juoksentelemalla.",
+      kysymys: "Mikä on QWERTY-näppäimistön nimen alkuperä?",
+      vaihtoehdot: [
+        "A) Se on keksijän sukunimen mukaan",
+        "B) Se tulee näppäimistön ensimmäisen rivin kuuden ensimmäisen kirjaimen mukaan",
+        "C) Se on lyhenne sanasta ‘Quick’",
+        "D) Se viittaa erityiseen koodausstandaardii",
+      ],
+      vastaus:
+        "B) Se tulee näppäimistön ensimmäisen rivin kuuden ensimmäisen kirjaimen mukaan",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
     },
