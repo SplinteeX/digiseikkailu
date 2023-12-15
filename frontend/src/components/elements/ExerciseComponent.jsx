@@ -96,12 +96,33 @@ export const ExerciseComponent = ({ Data }) => {
           {Data.Kuva ? (
             <img className="Full-image" src={Data.Kuva} alt="" />
           ) : null}
-          <p className="White-text">Pelaa täällä!</p>
+          {Data.Kuvat &&
+            Array.isArray(Data.Kuvat) &&
+            Data.Kuvat.map((image, index) => (
+              <img
+                key={`image_${index}`}
+                className="Full-image"
+                src={image}
+                alt={`Image ${index}`}
+              />
+            ))}
+          <p className="White-text">{Data.smallTitle}</p>
+          {Data.Tekstit &&
+            Array.isArray(Data.Tekstit) &&
+            Data.Tekstit.map((text, index) => (
+              <div key={`text_${index}`} className="Text-div">
+                <p className="Text">{text}</p>
+              </div>
+            ))}
+          {Data.Teksti && <p className="Text">{Data.Teksti}</p>}
+          {Data.peliTitle ? (
+            <p className="White-text">{Data.peliTitle}</p>
+          ) : null}
           {Data.Unity ? (
             <iframe
+              className="Unity"
               src={Data.Unity}
               width="100%"
-              height="500px"
               frameborder="0"
               scrolling="no"
             ></iframe>

@@ -96,6 +96,28 @@ p {
   object-fit: cover;
   border-radius: 20px;
 }
+.Full-image {
+  margin: 20px 0px;
+  width: 75%;
+  height: 75%;
+}
+.Text-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.Text {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .Active-button {
   background: #507cd7;
   color: white;
@@ -103,6 +125,9 @@ p {
 .not-active {
   background: #d9d9d9;
   color: #000;
+}
+.Unity {
+  min-height: 600px;
 }
 /* All different syles */
 
