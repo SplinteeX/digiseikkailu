@@ -67,7 +67,7 @@ export const ApinmajaData = () => {
         "Seuraa viivaa hiiren osoittimella. Paina hiiren ykköspainiketta kun maalaat viivaa. Pyri tekemään mahdollisimman tarkasti.",
         "Etsi tekstistä nimet. Maalaa nimen kirjaimet hiirellä. Nimen tausta muuttuu siniseksi. Paina nyt pikakomentoa Ctrl + B Komennolla saat lihavoitua sanan. Siirry seuraavaan nimeen. Kuinka monta nimeä tarinasta löysit?",
       ],
-      näppisKuva: "src/assets/Apinamajaimages/näppäimistö.webp",
+      Kuva: "src/assets/Apinamajaimages/näppäimistö.webp",
       peliTitle: "Harjoittele täällä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli3/index.html",
       SoundCloud:
@@ -80,12 +80,15 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       puolTeksti:
         "Etsi tekstistä riimiparit. Maalaa riimin kirjaimet hiirellä. Riimin tausta muuttuu siniseksi. Nyt tee taas lihavointi painamalla Ctrl + B pikakomentoa.",
-      isoKuva: "src/assets/Apinamajaimages/tietokoneVärikäs2.webp",
+      Kuva: "src/assets/Apinamajaimages/tietokoneVärikäs2.webp",
       puolKuvat: ["DogenluuMaalattu", "DogenluuLihavoitu"],
       Unity: "https://digiadventurers.com/unity-games/prod/peli4/index.html",
       kysymys: "Mitä tulee tehdä “Maalaa ja lihavoi riimiparit” -tehtävässä?",
-      vaihtoehdot:
-        "A) Etsi ja kirjoita uusia riimejä B) Etsi tekstistä riimiparit, maalaa ne hiirellä ja lihavoi Ctrl + B -pikakomennolla C) Etsi ja poista riimiparit tekstistä D) Vain lihavoi tekstissä olevia riimejä",
+      vaihtoehdot: [
+        "A) Etsi ja kirjoita uusia riimejä",
+        "B) Etsi tekstistä riimiparit, maalaa ne hiirellä ja lihavoi Ctrl + B -pikakomennolla C) Etsi ja poista riimiparit tekstistä",
+        "D) Vain lihavoi tekstissä olevia riimejä",
+      ],
       vastaus:
         "Oikea vastaus: B) Etsi tekstistä riimiparit, maalaa ne hiirellä ja lihavoi Ctrl + B -pikakomennolla",
       SoundCloud:
@@ -126,8 +129,12 @@ export const ApinmajaData = () => {
       Unity: "https://digiadventurers.com/unity-games/prod/peli6/index.html",
       kysymys:
         "Mitä tehtävässä “Leikkaa ja liimaa salainen viesti” harjoitellaan?",
-      vaihtoehdot:
-        "A) Tekstin kirjoittamista B) Kopioi, leikkaa ja liitä -toimintoja pikakomentojen avulla C) Tekstin maalaamista hiirellä D) Sanojen poistamista tekstistä",
+      vaihtoehdot: [
+        "A) Tekstin kirjoittamista",
+        "B) Kopioi, leikkaa ja liitä -toimintoja pikakomentojen avulla",
+        "C) Tekstin maalaamista hiirellä",
+        "D) Sanojen poistamista tekstistä",
+      ],
       vastaus:
         "Oikea vastaus: B) Kopioi, leikkaa ja liitä -toimintoja pikakomentojen avulla",
       SoundCloud:
@@ -141,9 +148,8 @@ export const ApinmajaData = () => {
       isoKuva: "src/assets/Apinamajaimages/hiiriIkkuna.webp",
       peliTitle: "Pelaa täällä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli7/index.html",
-      hilloHämppisTeksti:
-        "Hillo-hämppis vipeltää nopeasti karkuun ja innostuu hippaleikeistä, varsinkin Kursorin vanhoissa ja pölyisissä pitsiverhoissa! Yritä saada Hillo kiinni! Siitä on hauskaa testata nopeuttasi!",
-      keskitetytTekstit: [
+      Text: "Hillo-hämppis vipeltää nopeasti karkuun ja innostuu hippaleikeistä, varsinkin Kursorin vanhoissa ja pölyisissä pitsiverhoissa! Yritä saada Hillo kiinni! Siitä on hauskaa testata nopeuttasi!",
+      Text: [
         "Kun Kursori saa Hillon kiinni, hän vie sen varovasti purkissa ulos.",
         "Hillo jatkaa matkaa kohti uusia seikkailuja!",
       ],
@@ -170,8 +176,11 @@ export const ApinmajaData = () => {
         "Vaikka oikeassa elämässä kissat jahtaavat pieniä eläimiä, tässä tarinassa Miuku-Mauku päästää Pointteri-hiiren aina vapaaksi, sillä molemmat tykkäävät kuntoilla pihalla juoksentelemalla. ",
       kysymys:
         "Mitä “Auta hiirtä piiloutumaan Miuku-Maukulta” -tehtävässä harjoitellaan?",
-      vaihtoehdot:
-        "A) Kuvien piirtämistä B) Tekstin kirjoittamista C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa ja kaksoisnapsautusta D) Äänien tunnistamista",
+      vaihtoehdot: [
+        "A) Kuvien piirtämistä B) Tekstin kirjoittamista",
+        "C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa ja kaksoisnapsautusta",
+        "D) Äänien tunnistamista",
+      ],
       vastaus:
         "Oikea vastaus: C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa ja kaksoisnapsautusta",
       SoundCloud:
@@ -188,24 +197,25 @@ export const ApinmajaData = () => {
         "src/assets/Apinmajaimages/värihiiri.webp",
         "src/assets/Apinmajaimages/pelikuva.webp",
       ],
-      muistelu:
-        "Muistele millaisia tietokonehiiriä olet käyttänyt. Kerro hiiristä, joita olet käyttänyt.",
+      Text: "Muistele millaisia tietokonehiiriä olet käyttänyt. Kerro hiiristä, joita olet käyttänyt.",
       pieniKuva: "",
       puolKuva: "",
-      häsäApi: "Häsän ja Apin suunnittelema hiiri",
+      smallTitle: "Häsän ja Apin suunnittelema hiiri",
       Unity: "https://digiadventurers.com/unity-games/prod/peli10/index.html",
       peliteksti:
         "Vaikka oikeassa elämässä kissat jahtaavat pieniä eläimiä, tässä tarinassa Miuku-Mauku päästää Pointteri-hiiren aina vapaaksi, sillä molemmat tykkäävät kuntoilla pihalla juoksentelemalla. ",
       kysymys:
         "Mitä “Suunnittele oma tietokonehiiri” -tehtävässä harjoitellaan?",
-      vaihtoehdot:
-        "A) Tietokonehiirien korjaamista B) Tietokonehiirten käyttöä C) Tietokonehiirten muotoilua ja toiminnallisuutta D) Tietokoneohjelmien suunnittelua",
+      vaihtoehdot: [
+        "A) Tietokonehiirien korjaamista B) Tietokonehiirten käyttöä",
+        "C) Tietokonehiirten muotoilua ja toiminnallisuutta",
+        "D) Tietokoneohjelmien suunnittelua",
+      ],
       vastaus:
         "Oikea vastaus: C) Tietokonehiirten muotoilua ja toiminnallisuutta",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
     },
-
     {
       tehtNum: "23",
       tehtName: "Tiedostomuodot",
