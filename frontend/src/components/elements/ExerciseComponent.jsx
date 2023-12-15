@@ -1,13 +1,31 @@
 import React, { useState } from "react";
 import "../css/ExerciseComponent.css";
+import { useNavigate } from "react-router-dom";
+import { ApinmajaData } from "../data/ApinmajaData";
 
 export const ExerciseComponent = ({ Data }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
+  const navigate = useNavigate();
+  const Tehtävät = ApinmajaData();
 
   // Function to handle tab click
   const handleTabClick = (tab) => {
     setActiveTab(tab);
     console.log(tab);
+  };
+  const handleNextClick = () => {
+    const currentIndex =
+      parseInt(window.location.pathname.split("/").pop(), 10) || 0;
+    const maxIndex = Tehtävät.length - 1;
+    console.log();
+    const nextIndex = currentIndex + 1;
+    if (nextIndex <= maxIndex) {
+      console.log(nextIndex);
+      console.log(currentIndex);
+      navigate(`/apinmaja/${nextIndex}`);
+    } else {
+      console.log("You've reached the end.");
+    }
   };
 
   const getKategoriaClass = () => {
@@ -88,6 +106,9 @@ export const ExerciseComponent = ({ Data }) => {
               scrolling="no"
             ></iframe>
           ) : null}
+          <button onClick={handleNextClick} className="NextButton">
+            Next
+          </button>
         </>
       )}
 
