@@ -46,29 +46,21 @@ p {
 }
 .TextImage {
   display: flex;
-  gap: 10px;
-  align-items: center;
-  min-height: 275px;
+  gap: 20px;
+  justify-content: center;
 }
 .text50 {
   width: 50%;
-  padding: 20px;
-  background-color: white;
-  border-radius: 20px;
-  background: #fbfbfb;
-  box-shadow: 0px 2px 11.3px 0px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  height: 87.5%;
   display: flex;
   align-items: center;
-  margin: 0;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  margin: 0px;
+  border-radius: 20px;
 }
 .image50 {
-  width: 50%;
-  height: 250px;
-  object-fit: cover;
   border-radius: 20px;
-  height: 100%;
 }
 
 /* Multiple 50s images / texts : */

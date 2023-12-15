@@ -248,6 +248,31 @@ export const ApinmajaData = () => {
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
     },
     {
+      tehtNum: "13",
+      tehtName: "Yhdistä ja kirjoita tavut",
+      Kategoria: "Apinmaja",
+      puolKuva: "/src/assets/ApinmajaImages/Taitokortti.webp",
+      puolTeksti:
+        "Harjoitellaan kirjoittamista kahdella kädellä. Lue tavut. Mitä metsän eläimiä saat tavuja yhdistämällä?Kirjoita näppäimistöllä eläimet ja keksi lisää metsän eläimiä niin monta kuin pystyt. Kirjoita sanasi kirjoituspohjalle.",
+      Kuvat: [
+        "/src/assets/ApinmajaImages/NäppäimistöKirjoitus.webp",
+        "/src/assets/ApinmajaImages/yhdistatavut.webp",
+      ],
+      smallTitle: "Kokeile näppäimistöä",
+      peliteksti: "Kirjoita täällä!",
+      Unity: "https://digiadventurers.com/unity-games/prod/sandbox/index.html",
+      kysymys: "Mitä “Yhdistä ja kirjoita tavut” -tehtävässä harjoitellaan?",
+      vaihtoehdot: [
+        "A) Kirjainten ja sanojen piirtämistä",
+        "B) Kirjainten painamista ja sanojen muodostamista tavuista",
+        "C) Numeroiden kirjoittamista",
+        "D) Kuvien yhdistämistä sanoiksi",
+      ],
+      vastaus: "B) Kirjainten painamista ja sanojen muodostamista tavuista",
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
+    },
+    {
       tehtNum: "23",
       tehtName: "Tiedostomuodot",
       youtube: "FXrM_YErETs",
