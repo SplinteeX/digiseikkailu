@@ -17,8 +17,12 @@ export const ApinmajaData = () => {
       Unity:
         "https://digiadventurers.com/unity-games/prod/hiiripiiri/index.html",
       kysymys: "Mitä “Hiiripiiri” -tehtävässä opitaan?",
-      vaihtoehdot:
-        "A) Tekstin kirjoittamista B) Havannointia ja hiiren käyttöä C) Kuvien piirtämistä D) Matemaattisia taitoja",
+      vaihtoehdot: [
+        "A) Tekstin kirjoittamista",
+        "B) Havannointia ja hiiren käyttöä",
+        "C) Kuvien piirtämistä",
+        "D) Matemaattisia taitoja",
+      ],
       vastaus: "Oikea vastaus: B) Havannointia ja hiiren käyttöä",
       SoundCloud: "soundcloud.com/digiseikkailu-oy/apinmaja-2",
     },
@@ -35,8 +39,7 @@ export const ApinmajaData = () => {
       kysymys: "Mitä “Napsuttele numerot” -tehtävässä harjoitellaan?",
       vaihtoehdot:
         "A) Numeroiden kirjoittamista B) Kuvien piirtämistä C) Hiiren kaksoisnapsautuksen käyttöä numeroiden valitsemiseen D) Tekstin muokkaamista",
-      vastaus:
-        "Oikea vastaus: C) Hiiren kaksoisnapsautuksen käyttöä numeroiden valitsemiseen",
+      vastaus: "C) Hiiren kaksoisnapsautuksen käyttöä numeroiden valitsemiseen",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-1",
     },
@@ -54,7 +57,7 @@ export const ApinmajaData = () => {
       vaihtoehdot:
         "A) Seuraa viivaa näppäimistön nuolinäppäimillä B) Seuraa viivaa hiiren osoittimella ja paina hiiren ykköspainiketta viivaa maalatessa C) Seuraa viivaa kosketusnäytöllä D) Seuraa viivaa ja kirjoita numerot järjestyksessä",
       vastaus:
-        "Oikea vastaus: B) Seuraa viivaa hiiren osoittimella ja paina hiiren ykköspainiketta viivaa maalatessa",
+        "B) Seuraa viivaa hiiren osoittimella ja paina hiiren ykköspainiketta viivaa maalatessa",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-2",
     },
@@ -90,7 +93,7 @@ export const ApinmajaData = () => {
         "D) Vain lihavoi tekstissä olevia riimejä",
       ],
       vastaus:
-        "Oikea vastaus: B) Etsi tekstistä riimiparit, maalaa ne hiirellä ja lihavoi Ctrl + B -pikakomennolla",
+        "B) Etsi tekstistä riimiparit, maalaa ne hiirellä ja lihavoi Ctrl + B -pikakomennolla",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-4",
     },
@@ -135,8 +138,7 @@ export const ApinmajaData = () => {
         "C) Tekstin maalaamista hiirellä",
         "D) Sanojen poistamista tekstistä",
       ],
-      vastaus:
-        "Oikea vastaus: B) Kopioi, leikkaa ja liitä -toimintoja pikakomentojen avulla",
+      vastaus: "B) Kopioi, leikkaa ja liitä -toimintoja pikakomentojen avulla",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-6",
     },
@@ -155,10 +157,14 @@ export const ApinmajaData = () => {
       ],
       kysymys:
         "Mitä “Hillo-hämppiksen kaksoisnapautushippa” -tehtävässä harjoitellaan?",
-      vaihtoehdot:
-        "A) Äänien tunnistamista B) Kuvien piirtämistä C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa sekä kaksoisnapsautusta D) Tekstin kirjoittamista",
+      vaihtoehdot: [
+        "A) Äänien tunnistamista",
+        "B) Kuvien piirtämistä",
+        "C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa sekä kaksoisnapsautusta",
+        "D) Tekstin kirjoittamista",
+      ],
       vastaus:
-        "Oikea vastaus: C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa sekä kaksoisnapsautusta",
+        "C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa sekä kaksoisnapsautusta",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-7",
     },
@@ -182,7 +188,7 @@ export const ApinmajaData = () => {
         "D) Äänien tunnistamista",
       ],
       vastaus:
-        "Oikea vastaus: C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa ja kaksoisnapsautusta",
+        "C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa ja kaksoisnapsautusta",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-8",
     },
@@ -207,12 +213,12 @@ export const ApinmajaData = () => {
       kysymys:
         "Mitä “Suunnittele oma tietokonehiiri” -tehtävässä harjoitellaan?",
       vaihtoehdot: [
-        "A) Tietokonehiirien korjaamista B) Tietokonehiirten käyttöä",
+        "A) Tietokonehiirien korjaamista",
+        "B) Tietokonehiirten käyttöä",
         "C) Tietokonehiirten muotoilua ja toiminnallisuutta",
         "D) Tietokoneohjelmien suunnittelua",
       ],
-      vastaus:
-        "Oikea vastaus: C) Tietokonehiirten muotoilua ja toiminnallisuutta",
+      vastaus: "C) Tietokonehiirten muotoilua ja toiminnallisuutta",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
     },

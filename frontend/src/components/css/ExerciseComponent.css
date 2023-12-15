@@ -48,7 +48,7 @@ p {
   display: flex;
   gap: 10px;
   align-items: center;
-  height: 275px;
+  min-height: 275px;
 }
 .text50 {
   width: 50%;
@@ -118,6 +118,15 @@ p {
   align-items: center;
   width: 100%;
 }
+.Vaihtoehto {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.Vaihtoehto:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
 .Active-button {
   background: #507cd7;
   color: white;
@@ -128,6 +137,13 @@ p {
 }
 .Unity {
   min-height: 600px;
+}
+.Correct-answer {
+  background-color: #00d7a3;
+}
+.Wrong-answer {
+  background-color: #ff0000;
+  color: white;
 }
 /* All different syles */
 

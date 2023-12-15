@@ -5,6 +5,8 @@ import { ApinmajaData } from "../data/ApinmajaData";
 
 export const ExerciseComponent = ({ Data }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
+  const [RightTask, setRightTask] = useState(Data.vastaus);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
   const navigate = useNavigate();
   const Tehtävät = ApinmajaData();
 
@@ -25,6 +27,18 @@ export const ExerciseComponent = ({ Data }) => {
       navigate(`/apinmaja/${nextIndex}`);
     } else {
       console.log("You've reached the end.");
+    }
+  };
+  const handleAnswerClick = (clickedAnswer) => {
+    if (!selectedAnswer) {
+      if (clickedAnswer === RightTask) {
+        setSelectedAnswer("correct");
+      } else {
+        setSelectedAnswer("wrong");
+        setTimeout(() => {
+          setSelectedAnswer(null);
+        }, 1500);
+      }
     }
   };
 
@@ -132,9 +146,38 @@ export const ExerciseComponent = ({ Data }) => {
           </button>
         </>
       )}
-
-      {/* Placeholder for Kysely tab */}
-      {activeTab === "Kysely" && <></>}
+      {activeTab === "Kysely" && (
+        <>
+          <div className="Kysymys-title">
+            <h3 className="White-text">
+              {Data.tehtNum}. {Data.tehtName}
+            </h3>
+            <h3 className="White-text">{Data.kysymys}</h3>
+          </div>
+          {selectedAnswer === "correct" && (
+            <p className="White-text">Oikein!</p>
+          )}
+          {selectedAnswer === "wrong" && <p className="White-text">Väärin!</p>}
+          <div className="Kysymys-vaihtoehdot">
+            {Data.vaihtoehdot.map((vaihtoehto, index) => (
+              <div key={`vaihtoehto_${index}`} className={`Kysymys-vaihtoehto`}>
+                <p
+                  className={`Vaihtoehto ${
+                    selectedAnswer === "correct"
+                      ? "Correct-answer"
+                      : selectedAnswer === "wrong"
+                      ? "Wrong-answer"
+                      : ""
+                  }`}
+                  onClick={() => handleAnswerClick(vaihtoehto)}
+                >
+                  {vaihtoehto}
+                </p>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };
