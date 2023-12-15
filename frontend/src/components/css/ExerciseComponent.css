@@ -48,7 +48,7 @@ p {
   display: flex;
   gap: 10px;
   align-items: center;
-  height: 275px;
+  min-height: 275px;
 }
 .text50 {
   width: 50%;
@@ -96,6 +96,39 @@ p {
   object-fit: cover;
   border-radius: 20px;
 }
+.Full-image {
+  margin: 20px 0px;
+  width: 75%;
+  height: 75%;
+  border-radius: 20px;
+}
+.Text-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.Text {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
+}
+.Vaihtoehto {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.Vaihtoehto:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
 .Active-button {
   background: #507cd7;
   color: white;
@@ -104,8 +137,21 @@ p {
   background: #d9d9d9;
   color: #000;
 }
-/* All different syles */
+.Unity {
+  min-height: 600px;
+}
+.Correct-answer {
+  background-color: #00d7a3;
+}
+.Wrong-answer {
+  background-color: #ff0000;
+  color: white;
+}
+.tox-tinymce {
+  width: 100%;
+}
 
+/* All different syles */
 .Apinmaja-style {
   background: linear-gradient(
       180deg,

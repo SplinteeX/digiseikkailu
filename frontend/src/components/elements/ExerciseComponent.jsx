@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "../css/ExerciseComponent.css";
 import { useNavigate } from "react-router-dom";
 import { ApinmajaData } from "../data/ApinmajaData";
+import TinyMCE from "./tinyMce";
 
 export const ExerciseComponent = ({ Data }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
+  const [RightTask, setRightTask] = useState(Data.vastaus);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
   const navigate = useNavigate();
   const Tehtävät = ApinmajaData();
 
@@ -25,6 +28,18 @@ export const ExerciseComponent = ({ Data }) => {
       navigate(`/apinmaja/${nextIndex}`);
     } else {
       console.log("You've reached the end.");
+    }
+  };
+  const handleAnswerClick = (clickedAnswer) => {
+    if (!selectedAnswer) {
+      if (clickedAnswer === RightTask) {
+        setSelectedAnswer("correct");
+      } else {
+        setSelectedAnswer("wrong");
+        setTimeout(() => {
+          setSelectedAnswer(null);
+        }, 1500);
+      }
     }
   };
 
@@ -96,24 +111,75 @@ export const ExerciseComponent = ({ Data }) => {
           {Data.Kuva ? (
             <img className="Full-image" src={Data.Kuva} alt="" />
           ) : null}
-          <p className="White-text">Pelaa täällä!</p>
+          {Data.Kuvat &&
+            Array.isArray(Data.Kuvat) &&
+            Data.Kuvat.map((image, index) => (
+              <img
+                key={`image_${index}`}
+                className="Full-image"
+                src={image}
+                alt={`Image ${index}`}
+              />
+            ))}
+          <p className="White-text">{Data.smallTitle}</p>
+          {Data.Tekstit &&
+            Array.isArray(Data.Tekstit) &&
+            Data.Tekstit.map((text, index) => (
+              <div key={`text_${index}`} className="Text-div">
+                <p className="Text">{text}</p>
+              </div>
+            ))}
+          {Data.Teksti && <p className="Text">{Data.Teksti}</p>}
+          {Data.peliTitle ? (
+            <p className="White-text">{Data.peliTitle}</p>
+          ) : null}
           {Data.Unity ? (
             <iframe
+              className="Unity"
               src={Data.Unity}
               width="100%"
-              height="500px"
               frameborder="0"
               scrolling="no"
             ></iframe>
           ) : null}
+          {Data.TinyMCE && <TinyMCE text={Data.TinyMCE} />}
           <button onClick={handleNextClick} className="NextButton">
             Next
           </button>
         </>
       )}
-
-      {/* Placeholder for Kysely tab */}
-      {activeTab === "Kysely" && <></>}
+      {activeTab === "Kysely" && (
+        <>
+          <div className="Kysymys-title">
+            <h3 className="White-text">
+              {Data.tehtNum}. {Data.tehtName}
+            </h3>
+            <h3 className="White-text">{Data.kysymys}</h3>
+          </div>
+          {selectedAnswer === "correct" && (
+            <p className="White-text">Oikein!</p>
+          )}
+          {selectedAnswer === "wrong" && <p className="White-text">Väärin!</p>}
+          <div className="Kysymys-vaihtoehdot">
+            {Data.vaihtoehdot.map((vaihtoehto, index) => (
+              <div key={`vaihtoehto_${index}`} className={`Kysymys-vaihtoehto`}>
+                <p
+                  className={`Vaihtoehto ${
+                    selectedAnswer === "correct"
+                      ? "Correct-answer"
+                      : selectedAnswer === "wrong"
+                      ? "Wrong-answer"
+                      : ""
+                  }`}
+                  onClick={() => handleAnswerClick(vaihtoehto)}
+                >
+                  {vaihtoehto}
+                </p>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };
