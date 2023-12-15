@@ -129,7 +129,11 @@ p {
   background: #d9d9d9;
   color: #000;
 }
+.Unity-loader-div {
+  width: 100%;
+}
 .Unity {
+  height: 100%;
   min-height: 600px;
 }
 .Correct-answer {
@@ -141,6 +145,25 @@ p {
 }
 .tox-tinymce {
   width: 100%;
+}
+.Control-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.Control-button {
+  background-color: #507cd7;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px 0px;
+  border: 0px;
+  width: 100px;
+}
+.Control-button:hover {
+  opacity: 80%;
+  cursor: pointer;
 }
 
 /* All different syles */

@@ -3,31 +3,42 @@ import "../css/ExerciseComponent.css";
 import { useNavigate } from "react-router-dom";
 import { ApinmajaData } from "../data/ApinmajaData";
 import TinyMCE from "./tinyMce";
+import { PulseLoader } from "react-spinners";
 
 export const ExerciseComponent = ({ Data }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
   const [RightTask, setRightTask] = useState(Data.vastaus);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [loading, setLoading] = useState(true);
+
   const navigate = useNavigate();
   const Tehtävät = ApinmajaData();
 
-  // Function to handle tab click
   const handleTabClick = (tab) => {
     setActiveTab(tab);
     console.log(tab);
   };
-  const handleNextClick = () => {
+  const handleUnityLoad = () => {
+    setLoading(false);
+  };
+  const handleNavigation = (direction) => {
     const currentIndex =
       parseInt(window.location.pathname.split("/").pop(), 10) || 0;
     const maxIndex = Tehtävät.length - 1;
-    console.log();
-    const nextIndex = currentIndex + 1;
-    if (nextIndex <= maxIndex) {
-      console.log(nextIndex);
-      console.log(currentIndex);
-      navigate(`/apinmaja/${nextIndex}`);
-    } else {
-      console.log("You've reached the end.");
+    let newIndex;
+
+    if (direction === "next") {
+      newIndex = currentIndex + 1;
+      if (newIndex <= maxIndex) {
+        navigate(`/apinmaja/${newIndex}`);
+        window.scrollTo(0, 0);
+      }
+    } else if (direction === "previous") {
+      newIndex = currentIndex - 1;
+      if (newIndex >= 0) {
+        navigate(`/apinmaja/${newIndex}`);
+        window.scrollTo(0, 0);
+      }
     }
   };
   const handleAnswerClick = (clickedAnswer) => {
@@ -133,19 +144,24 @@ export const ExerciseComponent = ({ Data }) => {
           {Data.peliTitle ? (
             <p className="White-text">{Data.peliTitle}</p>
           ) : null}
-          {Data.Unity ? (
-            <iframe
-              className="Unity"
-              src={Data.Unity}
-              width="100%"
-              frameborder="0"
-              scrolling="no"
-            ></iframe>
-          ) : null}
+          <div className="Unity-loader-div">
+            {loading ? (
+              <div className="loader">
+                <PulseLoader color="#123abc" loading={loading} size={15} />
+              </div>
+            ) : null}
+            {Data.Unity ? (
+              <iframe
+                className="Unity"
+                src={Data.Unity}
+                width="100%"
+                frameBorder="0"
+                scrolling="yes"
+                onLoad={handleUnityLoad}
+              ></iframe>
+            ) : null}
+          </div>
           {Data.TinyMCE && <TinyMCE text={Data.TinyMCE} />}
-          <button onClick={handleNextClick} className="NextButton">
-            Next
-          </button>
         </>
       )}
       {activeTab === "Kysely" && (
@@ -180,6 +196,20 @@ export const ExerciseComponent = ({ Data }) => {
           </div>
         </>
       )}
+      <div className="Control-buttons">
+        <button
+          onClick={() => handleNavigation("previous")}
+          className="Control-button"
+        >
+          Edellinen
+        </button>
+        <button
+          className="Control-button"
+          onClick={() => handleNavigation("next")}
+        >
+          Seuraava
+        </button>
+      </div>
     </div>
   );
 };

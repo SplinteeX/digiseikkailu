@@ -4,6 +4,7 @@ export const ApinmajaData = () => {
       tehtNum: "1",
       tehtName: "Esimerkki",
       Kategoria: "Apinmaja",
+      kysyms: "Mitä “Hiiripiiri” -tehtävässä opitaan?",
     },
     {
       tehtNum: "2",
@@ -23,7 +24,7 @@ export const ApinmajaData = () => {
         "C) Kuvien piirtämistä",
         "D) Matemaattisia taitoja",
       ],
-      vastaus: "Oikea vastaus: B) Havannointia ja hiiren käyttöä",
+      vastaus: "B) Havannointia ja hiiren käyttöä",
       SoundCloud: "soundcloud.com/digiseikkailu-oy/apinmaja-2",
     },
     {
@@ -37,8 +38,12 @@ export const ApinmajaData = () => {
       peliTitle: "Aloita tehtävä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli1/index.html",
       kysymys: "Mitä “Napsuttele numerot” -tehtävässä harjoitellaan?",
-      vaihtoehdot:
-        "A) Numeroiden kirjoittamista B) Kuvien piirtämistä C) Hiiren kaksoisnapsautuksen käyttöä numeroiden valitsemiseen D) Tekstin muokkaamista",
+      vaihtoehdot: [
+        "A) Numeroiden kirjoittamista",
+        "B) Kuvien piirtämistä",
+        "C) Hiiren kaksoisnapsautuksen käyttöä numeroiden valitsemiseen",
+        "D) Tekstin muokkaamista",
+      ],
       vastaus: "C) Hiiren kaksoisnapsautuksen käyttöä numeroiden valitsemiseen",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-1",
@@ -54,8 +59,12 @@ export const ApinmajaData = () => {
       peliTitle: "Aloita tehtävä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli2/index.html",
       kysymys: "Mitä tulee tehdä “Seuraa viivaa” -tehtävässä?",
-      vaihtoehdot:
-        "A) Seuraa viivaa näppäimistön nuolinäppäimillä B) Seuraa viivaa hiiren osoittimella ja paina hiiren ykköspainiketta viivaa maalatessa C) Seuraa viivaa kosketusnäytöllä D) Seuraa viivaa ja kirjoita numerot järjestyksessä",
+      vaihtoehdot: [
+        "A) Seuraa viivaa näppäimistön nuolinäppäimillä",
+        "B) Seuraa viivaa hiiren osoittimella ja paina hiiren ykköspainiketta viivaa maalatessa",
+        "C) Seuraa viivaa kosketusnäytöllä",
+        "D) Seuraa viivaa ja kirjoita numerot järjestyksessä",
+      ],
       vastaus:
         "B) Seuraa viivaa hiiren osoittimella ja paina hiiren ykköspainiketta viivaa maalatessa",
       SoundCloud:
@@ -271,6 +280,22 @@ export const ApinmajaData = () => {
       vastaus: "B) Kirjainten painamista ja sanojen muodostamista tavuista",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
+    },
+    {
+      tehtNum: "14",
+      tehtName: "Näppäinmuistipeli",
+      Kategoria: "Apinmaja",
+      smallTitle: "Kertaile näppäimiä muistipelillä.",
+      kysymys: "Mitä “Näppäinmuistipeli” -tehtävässä harjoitellaan?",
+      vaihtoehdot: [
+        "A) Matemaattisia taitoja",
+        "B) Kuvien muistamista",
+        "C) Näppäimistön näppäinten tunnistamista ja muistamista",
+        "D) Sanojen kirjoittamista",
+      ],
+      vastaus: "C) Näppäimistön näppäinten tunnistamista ja muistamista",
+      Unity:
+        "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=17",
     },
     {
       tehtNum: "23",
