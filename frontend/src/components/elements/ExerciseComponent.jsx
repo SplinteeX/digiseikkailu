@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ApinmajaData } from "../data/ApinmajaData";
 import TinyMCE from "./tinyMce";
 import { PulseLoader } from "react-spinners";
+import YoutubeVideo from "../elements/YoutubeVideo";
 
 export const ExerciseComponent = ({ Data }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
@@ -155,6 +156,7 @@ export const ExerciseComponent = ({ Data }) => {
               </ol>
             </div>
           )}
+          {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
           {Data.peliTitle ? (
             <p className="White-text">{Data.peliTitle}</p>
           ) : null}
@@ -164,16 +166,18 @@ export const ExerciseComponent = ({ Data }) => {
                 <PulseLoader color="#123abc" loading={loading} size={15} />
               </div>
             ) : null}
-            {Data.Unity ? (
-              <iframe
-                className="Unity"
-                src={Data.Unity}
-                width="100%"
-                frameBorder="0"
-                scrolling="yes"
-                onLoad={handleUnityLoad}
-              ></iframe>
-            ) : null}
+            <div className="iframe-container">
+              {Data.Unity ? (
+                <iframe
+                  className={`Unity custom-scrollbar`}
+                  src={Data.Unity}
+                  width="100%"
+                  frameBorder="0"
+                  scrolling="yes"
+                  onLoad={handleUnityLoad}
+                ></iframe>
+              ) : null}
+            </div>
           </div>
           {Data.TinyMCE && <TinyMCE text={Data.TinyMCE} />}
         </>

@@ -367,6 +367,37 @@ export const ApinmajaData = () => {
         "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=3",
     },
     {
+      tehtNum: "18",
+      tehtName: "Laamapeli",
+      Kategoria: "Apinmaja",
+      Kuva: "/src/assets/ApinmajaImages/laamaescape.webp",
+      Teksti:
+        "Miuku-Mauku leikki Kursorin purkamien näppäimistöjen näppäimillä ja hävitti ne puutarhaan. Auta Laamaa etsimään Kursori-papan kadottamat näppäimet. Saat näppäimen kerättyä sitä koskemalla ja painamalla kyseistä näppäintä samaan aikaan näppäimistöltä. Varo kiukkuista Kurttu-tätiä ja hänen kastelukannuaan.",
+      puolKuva: "/src/assets/ApinmajaImages/TaitokorttiPikanäppäimet.webp",
+      kysymys: "Mitä “Näppäinmuistipeli” -tehtävässä harjoitellaan?",
+      youtube: "l1pSm1zw23g",
+      peliTitle: "Tee tehtävä täällä!",
+
+      vaihtoehdot: [
+        "A) Näppäimistön puhdistamista",
+        "B) Näppäinten keräämistä ja näppäimistön käyttöä",
+        "C) Kuvien piirtämistä",
+        "D) Tekstin kirjoittamista",
+      ],
+      vastaus: "B) Näppäinten keräämistä ja näppäimistön käyttöä",
+      Unity:
+        "https://i.simmer.io/@Digiseikkailu/~b7b732f3-9ece-e52f-f69e-3e6337179b52",
+    },
+    {
+      tehtNum: "19",
+    },
+    {
+      tehtNum: "20",
+    },
+    {
+      tehtNum: "21",
+    },
+    {
       tehtNum: "23",
       tehtName: "Tiedostomuodot",
       youtube: "FXrM_YErETs",
