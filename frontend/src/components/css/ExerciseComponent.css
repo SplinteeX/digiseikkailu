@@ -13,12 +13,12 @@
   line-height: normal;
   padding: 20px 20% 0px 20%;
 }
-.Section-buttons {
+.Exercise .Section-buttons {
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
-.Section-buttons button {
+.Exercise .Section-buttons button {
   border-radius: 39px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border: 0px;
@@ -31,25 +31,25 @@
   width: 150px;
   padding: 5px;
 }
-.Section-buttons button:hover {
+.Exercise .Section-buttons button:hover {
   opacity: 80%;
   cursor: pointer;
 }
-.White-text {
+.Exercise .White-text {
   color: white;
   width: 100%;
   padding: 10px;
   border-radius: 20px;
 }
-p {
+.Exercise p {
   margin-bottom: 0px;
 }
-.TextImage {
+.Exercise .TextImage {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-.text50 {
+.Exercise .text50 {
   width: 50%;
   display: flex;
   align-items: center;
@@ -59,12 +59,12 @@ p {
   margin: 0px;
   border-radius: 20px;
 }
-.image50 {
+.Exercise .image50 {
   border-radius: 20px;
 }
 
 /* Multiple 50s images / texts : */
-.TextImages {
+.Exercise .TextImages {
   width: 100%;
   height: 250px;
   display: flex;
@@ -72,7 +72,7 @@ p {
   margin-bottom: 20px;
   gap: 20px;
 }
-.text50s {
+.Exercise .text50s {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,26 +82,26 @@ p {
   height: 100%;
   margin: 0px;
 }
-.image50s {
+.Exercise .image50s {
   width: 50%;
   height: 250px;
   object-fit: cover;
   border-radius: 20px;
 }
-.Full-image {
+.Exercise .Full-image {
   margin: 20px 0px;
   width: 75%;
   height: 75%;
   border-radius: 20px;
 }
-.Text-div {
+.Exercise .Text-div {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.Text {
+.Exercise .Text {
   background-color: white;
   border-radius: 20px;
   padding: 10px;
@@ -112,53 +112,57 @@ p {
   width: 100%;
   margin: 20px 0px;
 }
-.Vaihtoehto {
+.Exercise .Kysymys-vaihtoehdot {
+  width: 100%;
+}
+.Exercise .Vaihtoehto {
   background-color: white;
   border-radius: 20px;
   padding: 20px;
+  width: 100%;
 }
-.Vaihtoehto:hover {
+.Exercise .Vaihtoehto:hover {
   opacity: 80%;
   cursor: pointer;
 }
-.Active-button {
+.Exercise .Active-button {
   background: #507cd7;
   color: white;
 }
-.not-active {
+.Exercise .not-active {
   background: #d9d9d9;
   color: #000;
 }
-.Unity-loader-div {
+.Exercise .Unity-loader-div {
   width: 100%;
 }
-.Numerolista {
+.Exercise .Numerolista {
   background-color: white;
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
 }
-.Unity {
+.Exercise .Unity {
   height: 100%;
   min-height: 600px;
 }
-.Correct-answer {
+.Exercise .Correct-answer {
   background-color: #00d7a3;
 }
-.Wrong-answer {
+.Exercise .Wrong-answer {
   background-color: #ff0000;
   color: white;
 }
-.tox-tinymce {
+.Exercise .tox-tinymce {
   width: 100%;
 }
-.Control-buttons {
+.Exercise .Control-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
-.Control-button {
+.Exercise .Control-button {
   background-color: #507cd7;
   color: white;
   border-radius: 20px;
@@ -167,7 +171,7 @@ p {
   border: 0px;
   width: 100px;
 }
-.Control-button:hover {
+.Exercise .Control-button:hover {
   opacity: 80%;
   cursor: pointer;
 }
@@ -183,4 +187,72 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .Exercise {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  .Exercise .Unity-loader-div {
+    display: none;
+  }
+  .small-title {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Exercise {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  .Exercise .Full-image {
+    width: 90%;
+  }
+  .Exercise .TextImage {
+    flex-direction: column;
+  }
+  .Exercise .TextImages {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .Exercise .text50s {
+    width: 100%;
+  }
+  .Exercise .image50s {
+    width: 100%;
+  }
+  .Exercise .text50 {
+    width: 100%;
+  }
+  .Exercise .Text {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Exercise .White-text,
+  .Text {
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+
+  .Exercise iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Exercise {
+    margin: 0;
+    padding: 2%;
+  }
+  .Exercise .Vaihtoehto {
+    font-size: 16px;
+    padding: 10px 5%;
+    width: 90%;
+  }
+  @media screen and (max-width: 500px) {
+    .Exercise .Full-image {
+      width: 100%;
+    }
+  }
 }

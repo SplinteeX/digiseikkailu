@@ -138,7 +138,7 @@ export const ExerciseComponent = ({ Data }) => {
                 alt={`Image ${index}`}
               />
             ))}
-          <p className="White-text">{Data.smallTitle}</p>
+          {Data.smallTitle && <p className="White-text">{Data.smallTitle}</p>}
           {Data.Tekstit &&
             Array.isArray(Data.Tekstit) &&
             Data.Tekstit.map((text, index) => (
@@ -158,7 +158,7 @@ export const ExerciseComponent = ({ Data }) => {
           )}
           {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
           {Data.peliTitle ? (
-            <p className="White-text">{Data.peliTitle}</p>
+            <p className="White-text small-title">{Data.peliTitle}</p>
           ) : null}
           <div className="Unity-loader-div">
             {loading && Data.unity ? (

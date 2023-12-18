@@ -121,9 +121,13 @@ export const ApinmajaData = () => {
         "Kumpi sai lopuksi enemmän herkkuja ?",
       ],
       vaihtoehdot: [
-        "A) Siirrä herkut oikeisiin ruokakuppeihin pitämällä hiiren painiketta pohjassa B) Siirrä herkut vain hiirtä liikuttamalla C) Valitse herkut napsauttamalla niitä D) Kirjoita herkkujen nimet",
-        "A) Doge B) Miuku",
+        "A) Siirrä herkut oikeisiin ruokakuppeihin pitämällä hiiren painiketta pohjassa",
+        "B) Siirrä herkut vain hiirtä liikuttamalla",
+        "C) Valitse herkut napsauttamalla niitä",
+        "D) Kirjoita herkkujen nimet",
       ],
+      vastaus:
+        "A) Siirrä herkut oikeisiin ruokakuppeihin pitämällä hiiren painiketta pohjassa",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-5",
     },
