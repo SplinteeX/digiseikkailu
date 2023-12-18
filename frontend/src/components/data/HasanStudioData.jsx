@@ -155,7 +155,7 @@ export const HäsänStudioData = () => {
         "B) Tubettajien henkilötietojen, aiheiden ja suosion analysointia.",
     },
     {
-      tehtNum: "9",
+      tehtNum: "8",
       tehtName: "Tubettajan tekstilajit",
       Kategoria: "HäsänStudio",
       Kuva: "/src/assets/HäsäImages/Erivideot.webp",
@@ -177,7 +177,7 @@ export const HäsänStudioData = () => {
       vastaus: "B) Huolellisesti suunnitellen",
     },
     {
-      tehtNum: "10",
+      tehtNum: "9",
       tehtName: "Tutustutaan vaikuttajamarkkinointiin",
       Kategoria: "HäsänStudio",
       Title: "Tunnista vaikuttajamarkkinointi",
@@ -199,21 +199,21 @@ export const HäsänStudioData = () => {
       vastaus: "B) Myydä yrityksen tuotteita tai kasvattaa bränditietoisuutta",
     },
     {
-      tehtNum: "11",
+      tehtNum: "10",
       tehtName: "",
       Kategoria: "HäsänStudio",
     },
     {
-      tehtNum: "12",
+      tehtNum: "11",
       tehtName: "Koulun ammattilaisten TVT:n käyttö",
       Kategoria: "HäsänStudio",
       Kuva: "/src/assets/HäsäImages/KoulunAmmattilaiset.webp",
       Tekstit: [
         "Haastattele koulun väkeä, opettajia, kouluisäntää, rehtoria (yhdessä koko ryhmän kanssa). Ota selvää millaisia tvt- ja sometaitoja kukin ammattiryhmä tarvitsee.",
         "Raportoi mitä sait selville haastatteluissa!",
-        "Esimerkkikysymyksiä",
       ],
       numeroLista: [
+        "Esimerkkikysymyksiä",
         "Kuka päivittää koulun nettisivuja?",
         "Kuka päättää mitä koulun FaceBookkiin julkaistaan?",
         "Millaista sisältöä eri opettajat osaavat tuottaa koulusta ja erilaisista juhlista ja tapahtumista?",

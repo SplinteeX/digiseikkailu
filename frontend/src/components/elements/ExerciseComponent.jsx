@@ -37,6 +37,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
         setSelectedAnswer(null);
         navigate(`/${url}/${newIndex}`);
         window.scrollTo(0, 0);
+        setActiveTab("Tehtävä");
       }
     } else if (direction === "previous") {
       newIndex = currentIndex - 1;
@@ -44,6 +45,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
         setSelectedAnswer(null);
         navigate(`/${url}/${newIndex}`);
         window.scrollTo(0, 0);
+        setActiveTab("Tehtävä");
       }
     }
   };
@@ -91,12 +93,14 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
         >
           Tehtävä
         </button>
-        <button
-          onClick={() => handleTabClick("Kysely")}
-          className={activeTab === "Kysely" ? "Active-button" : "not-active"}
-        >
-          Kysely
-        </button>
+        {Data.kysymys && (
+          <button
+            onClick={() => handleTabClick("Kysely")}
+            className={activeTab === "Kysely" ? "Active-button" : "not-active"}
+          >
+            Kysely
+          </button>
+        )}
       </div>
       {activeTab === "Tehtävä" && (
         <>
@@ -183,7 +187,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
           {Data.TinyMCE && <TinyMCE text={Data.TinyMCE} />}
         </>
       )}
-      {activeTab === "Kysely" && (
+      {activeTab === "Kysely" && Data.kysymys && (
         <>
           <div className="Kysymys-title">
             <h3 className="White-text">
