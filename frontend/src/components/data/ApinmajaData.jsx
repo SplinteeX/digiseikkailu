@@ -82,8 +82,6 @@ export const ApinmajaData = () => {
       Kuva: "/src/assets/ApinmajaImages/näppäimistö.webp",
       peliTitle: "Harjoittele täällä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli3/index.html",
-      SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-3",
       kysyms: "Miten teksti lihavoidaan tässä tehtävässä?",
       vaihtoehdot: [
         "A) Käyttämällä Ctrl + C",
@@ -473,6 +471,8 @@ export const ApinmajaData = () => {
         "D) Ohjelmoidaan tietokoneohjelmia",
       ],
       vastaus: "C) Kirjoitetaan siistiä ja helppolukuista tekstiä",
+      SoundCloud:
+        "https://soundcloud.com/marjopihlis/tehtava-2-tekstinkasittely/s-k1zcX",
     },
     {
       tehtNum: "22",
