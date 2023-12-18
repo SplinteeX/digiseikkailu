@@ -28,7 +28,7 @@ export const ExerciseComponent = ({ Data }) => {
   const handleNavigation = (direction) => {
     const currentIndex =
       parseInt(window.location.pathname.split("/").pop(), 10) || 0;
-    const maxIndex = Tehtävät.length - 1;
+    const maxIndex = Tehtävät.length;
     let newIndex;
 
     if (direction === "next") {
@@ -161,7 +161,7 @@ export const ExerciseComponent = ({ Data }) => {
             <p className="White-text">{Data.peliTitle}</p>
           ) : null}
           <div className="Unity-loader-div">
-            {loading ? (
+            {loading && Data.unity ? (
               <div className="loader">
                 <PulseLoader color="#123abc" loading={loading} size={15} />
               </div>

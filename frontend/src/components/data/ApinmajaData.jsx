@@ -390,26 +390,146 @@ export const ApinmajaData = () => {
     },
     {
       tehtNum: "19",
+      tehtName: "Tekstin muokkaaminen",
+      Kategoria: "Apinmaja",
+      Kuva: "/src/assets/ApinmajaImages/TekstinKäsittely.webp",
+      Tekstit: [
+        "Mitä mahtaa tarkoittaa tekstin maalaaminen, lihavointi, kursivointi ja alleviivaus? Ota selvää.",
+        "Tekstin valitseminen (=maalaaminen) Ennen tekstin muotoilua, siirtoa tai kopiointia täytyy valita tekstialue. Valitun tekstin tausta muuttuu siniseksi tai harmaaksi. Sen takia puhutaan usein alueen “maalaamisesta”.",
+        "Tehtävä: Tee tehtävä suoraan alla olevaan tehtävä pohjaan. Alleviivaa päivät, Kursivoi kuukaudet ja Lihavoi vuodenajat.",
+      ],
+      numeroLista: [
+        "Vie hiiren osoitin valitsemasi alueen alkuun.",
+        "Paina hiiren ykköspainike alas ja pidä sitä alhaalla samalla, kun vedät hiiren osoittimen maalattavan alueen loppuun.",
+        "Vapauta hiiren painike, kun siirrettävä alue näkyy maalattuna.",
+      ],
+      TinyMCE:
+        "Taas oli maanantai ja uusi kouluviikko. Appi heräsi aikaisin. Talvella Apin luokka kävi liikuntatunnilla aina luistelemassa tai hiihtämässä. Tammikuu oli luistelukuukausi, helmikuussa hiihdettäisiin. Hiihtäminen oli ehdottomasti Apin suosikkilaji. Lauantaina ja sunnuntaina hän oli hiihtänyt pitkän lenkin Häsän kanssa. Mutta tänään pitäisi muistaa ottaa luistimet mukaan kouluun! <br><br> Doge ei välittänyt talviurheilusta. Talvella se pisti nenänsä ulos ovesta vain nopeasti – kesän lämpimät säät olivat enemmän sen mieleen. Keskiviikkona se oli tosin luvannut lähteä Laaman kanssa lenkille. “Pitää muistaa lämmin toppatakki!”, se ajatteli. <br><br> Appi lähti kouluun reppu selässään ja luistimet kainalossa. Pihalla oli hiljaista. Tweety oli lentänyt syksyllä lokakuussa etelään ja palaisi vasta keväällä takaisin. Kaikilla oli sitä jo kova ikävä. Maaliskuuhun oli vielä pitkä aika. Toisaalta aika kului nopeasti, pian olisi taas pitkä loma. Koko kesäkuu ja heinäkuu ihanaa vapaa-aikaa! Silloin olisi koko porukka taas koolla.",
+      kysymys:
+        "Miten tekstin maalaaminen (valitseminen) tehdään tietokoneella?",
+      vaihtoehdot: [
+        "A) Painamalla näppäimistön jokaista kirjainta",
+        "B) Liikuttamalla hiiren osoitinta tekstin yli ja pitämällä hiiren ykköspainiketta alhaalla",
+        "C) Kirjoittamalla teksti uudelleen",
+        "D) Käyttämällä erityistä maalausohjelmaa",
+      ],
+      vastaus:
+        "B) Liikuttamalla hiiren osoitinta tekstin yli ja pitämällä hiiren ykköspainiketta alhaalla",
     },
     {
       tehtNum: "20",
+      tehtName: "Kirjoita tarina kuulemasi mukaan",
+      Kategoria: "Apinmaja",
+      Kuva: "/src/assets/ApinmajaImages/TarinanKirjoitus.webp",
+      Teksti:
+        "Kuuntele Jenni-open lukema tarina ja kirjoita alle teksti ohjeen mukaan.",
+      TinyMCE: "Poista tämä teksti ja kirjoita vastauksesi tähän.",
+      kysyms:
+        "Mikä seuraavista kuvaa parhaiten tehtävää “Kirjoita tarina kuulemasi mukaan?,",
+      vaihtoehdot: [
+        "A) Kirjoita oma tarinasi.",
+        "B) Kuuntele ja kirjoita kuulemasi tarina.",
+        "C) Kirjoita tarina lukemasi kirjan pohjalta.",
+        "D) Keksi ja kirjoita tarina ilman apuja.",
+      ],
+      vastaus: "B) Kuuntele ja kirjoita kuulemasi tarina.",
+      SoundCloud: "",
     },
     {
       tehtNum: "21",
+      tehtName: "Tiedostot",
+      Kategoria: "Apinmaja",
+      Kuvat: [
+        "/src/assets/ApinmajaImages/DataKuva.webp",
+        "/src/assets/ApinmajaImages/Käsitteet.webp",
+        "/src/assets/ApinmajaImages/TekstinMuokkaamisenPerustoiminnot.webp",
+      ],
+      Tekstit: [
+        "Tekstinkäsittelyohjelman avulla voit tehdä omia kirjoituksia, jotka ovat jo valmiiksi siistejä ja helposti luettavia. Kun harjoittelet eri näppäinten toiminnot, kirjoittamisesta tulee helppoa ja opit näppäilemään nopeasti.",
+        "Kun käytät tekstinkäsittelyssä yleisesti Microsoftin Word-ohjelmaa tai Googlen Google Docsia, voit hyödyntää monia tehokkaita työkaluja tekstisi muotoiluun, kuvien lisäämiseen ja asiakirjojen jakamiseen. Molemmat ohjelmat tarjoavat helppokäyttöisiä toimintoja, joiden avulla voit luoda ammattimaisen näköisiä dokumentteja.",
+      ],
+      smallTitle: "Raahaa nimet paikoilleen!",
+      Unity: "https://h5p.org/h5p/embed/571979",
+      kysyms: "Mitä tekstinkäsittelyohjelmissa yleisesti tehdään?",
+      vaihtoehdot: [
+        "A) Piirretään ja muokataan kuvia",
+        "B) Tehtäviä ja laskelmia",
+        "C) Kirjoitetaan siistiä ja helppolukuista tekstiä",
+        "D) Ohjelmoidaan tietokoneohjelmia",
+      ],
+      vastaus: "C) Kirjoitetaan siistiä ja helppolukuista tekstiä",
+    },
+    {
+      tehtNum: "22",
+      tehtName: "Tiedostomuodot",
+      Kategoria: "Apinmaja",
+      youtube: "FXrM_YErETs",
+      puolTekstit: [
+        "Kannattaa tehdä oma kansio, jossa säilyttää itselle tärkeitä tiedostoja. Tiedostot löytyvät parhaiten kun ne on järjestetty ja nimetty.",
+      ],
+      Teksti:
+        "Tiedostoja tallennetaan eri muodoissa. On esim. videotiedostoja, musiikkitiedostoja, tekstitiedostoja ja kuvatiedostoja. Saman aihepiirin tiedostot kannattaa tallentaa omaan kansioonsa.",
+      puolKuvat: ["/src/assets/tiedostomuodot4.png.webp"],
+      smallTitle: "Erilaisia tiedostomuotoja",
+      kysyms: "Minkä tyyppisiä tiedostomuotoja voi olla?",
+      vaihtoehdot: [
+        "a) Vähentääkseen tietokoneen tallennustilaa",
+        "b) Parantaakseen tiedostojen löydettävyyttä",
+        "c) Estääkseen tiedostojen lataamisen",
+        "d) Tehdäkseen tiedostoista näkymättömiä",
+      ],
+      vastaus: "b) Parantaakseen tiedostojen löydettävyyttä",
     },
     {
       tehtNum: "23",
-      tehtName: "Tiedostomuodot",
-      youtube: "FXrM_YErETs",
+      tehtName: "Tiedoston luominen ja talletus haluttuun sijaintiin",
       Kategoria: "Apinmaja",
-      puolTekstit: [
-        "Tiedostoja tallennetaan eri muodoissa. On esim. videotiedostoja, musiikkitiedostoja, tekstitiedostoja ja kuvatiedostoja. Saman aihepiirin tiedostot kannattaa tallentaa omaan kansioonsa.",
-        "Kannattaa tehdä oma kansio, jossa säilyttää itselle tärkeitä tiedostoja. Tiedostot löytyvät parhaiten kun ne on järjestetty ja nimetty.",
+      Tekstit: [
+        "Tallentaminen on tärkeä taito!",
+        "Kun tallennat, on tärkeää seurata, mihin olet tallentamassa.",
+        "Tallentaa voi pilvipalveluun tai tietokoneen eri kohteisiin, kuten työpöydälle tai C- tai D-aseman kansioon.",
       ],
-      puolKuvat: [
-        "src/assets/tiedostomuodot3.webp",
-        "src/assets/tiedostomuodot4.png.webp",
+      numeroLista: [
+        "Luo tiedosto ja etsi Tallenna -toiminto.",
+        "Paina Tallenna nimellä -painiketta.",
+        "Katso tarkasti, mihin sijaintiin työsi on mahdollista tallentaa.",
+        "Nimeä työsi. Mieti sellainen nimi, että muistat seuraavalla kerralla työsi sen perusteella.",
+        "Tallenna haluamaasi sijaintiin (kansioon, työpöydälle, pilvipalveluun).",
       ],
+      Kuvat: [
+        "/src/assets/ApinmajaImages/TallennaNimellä.webp",
+        "/src/assets/ApinmajaImages/TallennusSijainti.webp",
+        "/src/assets/ApinmajaImages/Työpöytä.webp",
+      ],
+      kysyms: "Miten tiedoston tallennusprosessi tyypillisesti etenee?",
+      vaihtoehdot: [
+        "A) Tallenna tiedosto ja nimeä se myöhemmin",
+        "B) Luo tiedosto, etsi Tallenna-toiminto, paina Tallenna nimellä -painiketta, valitse sijainti ja nimeä tiedosto",
+        "C) Kirjoita tiedosto ensin paperille ja skannaa se tietokoneelle",
+        "D) Lähetä tiedosto sähköpostitse itsellesi",
+      ],
+      vastaus:
+        "B) Luo tiedosto, etsi Tallenna-toiminto, paina Tallenna nimellä -painiketta, valitse sijainti ja nimeä tiedosto",
+    },
+    {
+      tehtNum: "24",
+      tehtName: "Mikä on internet",
+      Kuva: "/src/assets/ApinmajaImages/pappa.webp",
+      Kategoria: "Apinmaja",
+      Tekstit: [
+        "Nykyisin on vaikea kuvitella elämää ilman Internettiä.",
+        "Tiedonhaku, musiikin kuunteleminen, elokuvien katselu ja ihmisten välinen viestiminen tapahtuu yhä suuremmaksi osaksi verkon kautta. Maailmassa ei ole yhtäkään maata, joka ei olisi liitettynä Internettiin ja verkkoon liitettyjä tietokoneita arvioidaan olevan reilusti yli 500 miljoonaa. Mutta mikä Internet siis on?",
+        "Internet ei ole mikään yksi yhtenäinen verkko eikä yksi lukuisista erillisistä tiedonsiirtoverkoista vaan kaikkien yhteen liittyneiden palvelinten, verkkojen ja yksityisten käyttäjien muodostama maailmanlaajuinen tietoverkko.",
+        "Kaikkia erillisiä verkkoja ja palvelimia yhdistävät samankaltaiset tekniset ominaisuudet, jotka mahdollistavat kaikkien verkkojen yhteiskäytön. Käyttäjän muodostaessa yhteyden Internettiin esimerkiksi selaimen avulla, ottaa käyttäjän tietokone yhteyden palvelimeen, jonka kautta voidaan taas muodostaa yhteys lukemattomiin muihin palvelimiin ja sivustoihin.",
+        "Käytännössä tämä tarkoittaa samoja tiedonsiirtokäytäntöjä kuten HTTP (Hyper Text Transfer Protocol) tai erityisesti tiedostojen siirtämiseen käytettyä FTP:tä (File Transfer Protocol). Nämä sekä yleisesti käytössä oleva WWWprotokolla mahdollistavat koko Internetin sisällön käytön kaikille käyttäjille.",
+        "HTTP-protokolla mahdollistaa esimerkiksi kuvan, tekstin, äänen ja animaation käytön eri sivustoilla, joiden avaamiseen taas käytetään ohjelmistoja, joita nimitetään selaimiksi. FTP-protokolla taas mahdollistaa tiedostojen siirtämisen palvelimen kautta toiselle ja edelleen yksittäiselle tietokoneelle.",
+        "Internetin rungon muodostavat palvelimet eli serverit. Käytännössä palvelimet ovat samankaltaisia kuin PC-tietokoneet käyttömuisteineen ja kiintolevyineen, jotka mahdollistavat eri ohjelmistojen käytön tavalliselle Internetin käyttäjälle. Näitä ohjelmistoja ovat esimerkiksi sähköposti- tai selainohjelmisto, joiden kautta käyttäjä ottaa yhteyden palvelintietokoneeseen ja tätä kautta Internettiin. Palvelimen kautta käyttäjä ottaa yhteyden palvelintietokoneen ohjelmistoon, joka hakee käyttäjän tarkasteltavaksi esimerkiksi tietyn verkkosivuston. Kaikki nettisivustot ovat palvelimilla sijaitsevia HTML-muodossa olevia dokumentteja, jotka avataan esimerkiksi selaimen tai sähköpostiohjelman avulla.",
+        "Lyhykäisyydessään yhteyden muodostaminen Internettiin tarkoittaa siis yhteyden ottamista palvelintietokoneeseen, jonka kautta käyttäjä voi taas ottaa yhteyden muihin palvelimiin tai sivustoihin. Jatkuvaa yhteyttä tiettyyn palvelimeen ei ole, vaan yhteys muodostetaan ainoastaan siksi aikaa, kun käyttäjä on aktiivinen kyseisellä palvelimella. Tätä kutsutaan asiakas/palvelin-periaatteeksi, joka osaltaan on varmistamassa erästä Internetin keskeistä periaatetta eli käyttäjien yhdenvertaista liikennöintiä verkossa.",
+      ],
+      kysymys:
+        "Mikä tekninen protokolla mahdollistaa tiedostojen siirtämisen palvelimelta toiselle?",
+      vaihtoehdot: ["a) HTTP", "b) FTP", "c) WWW", "d) HTML"],
+      vastaus: "b) FTP",
     },
   ];
 
