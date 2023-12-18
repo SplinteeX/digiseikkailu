@@ -17,6 +17,7 @@ import { Page404 } from "./components/pages/404Page";
 import { TarinatTyokirja } from "./components/pages/Products/TarinatTyokirja";
 import { TvtOpetuksenTaitoPaketti } from "./components/pages/Products/TvtOpetuksenTaitopaketti";
 import { ApinmajaExercises } from "./components/pages/Exercises/ApinmajaExercises";
+import { HasanStudioExercises } from "./components/pages/Exercises/HasanStudioExercises";
 import "./App.css";
 
 function App() {
@@ -37,6 +38,10 @@ function App() {
               element={<TarinatTyokirja />}
             />
             <Route path="/apinmaja/:index" element={<ApinmajaExercises />} />
+            <Route
+              path="/häsänstudio/:index"
+              element={<HasanStudioExercises />}
+            />
             <Route
               path="/tuotteet/TVT-opetuksen-taitopaketti"
               element={<TvtOpetuksenTaitoPaketti />}

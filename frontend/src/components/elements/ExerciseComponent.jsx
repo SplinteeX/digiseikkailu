@@ -5,6 +5,7 @@ import TinyMCE from "./tinyMce";
 import { PulseLoader } from "react-spinners";
 import YoutubeVideo from "../elements/YoutubeVideo";
 import { SoundCloud } from "./soundCloud";
+import { PDFViewer } from "./PDFViewer";
 
 export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");

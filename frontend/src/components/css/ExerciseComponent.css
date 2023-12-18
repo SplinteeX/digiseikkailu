@@ -192,6 +192,13 @@
   background-repeat: no-repeat;
   background-position: 50%;
 }
+.hasan-studio-style {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 107, 0, 0.5) 0%,
+    rgba(255, 0, 199, 0.25) 100%
+  );
+}
 @media screen and (max-width: 1000px) {
   .Exercise {
     padding: 0px;
