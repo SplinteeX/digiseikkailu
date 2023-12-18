@@ -84,6 +84,16 @@ export const ApinmajaData = () => {
       Unity: "https://digiadventurers.com/unity-games/prod/peli3/index.html",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-3",
+      kysyms: "Miten teksti lihavoidaan tässä tehtävässä?",
+      vaihtoehdot: [
+        "A) Käyttämällä Ctrl + C",
+        "B) Käyttämällä Ctrl + V",
+        "C) Käyttämällä Ctrl + B",
+        "D) Käyttämällä Ctrl + X",
+      ],
+      vastaus: "C) Käyttämällä Ctrl + B",
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-3",
     },
     {
       tehtNum: "6",
@@ -391,6 +401,7 @@ export const ApinmajaData = () => {
       vastaus: "B) Näppäinten keräämistä ja näppäimistön käyttöä",
       Unity:
         "https://i.simmer.io/@Digiseikkailu/~b7b732f3-9ece-e52f-f69e-3e6337179b52",
+      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/apinmaja-7",
     },
     {
       tehtNum: "19",
@@ -534,6 +545,37 @@ export const ApinmajaData = () => {
         "Mikä tekninen protokolla mahdollistaa tiedostojen siirtämisen palvelimelta toiselle?",
       vaihtoehdot: ["a) HTTP", "b) FTP", "c) WWW", "d) HTML"],
       vastaus: "b) FTP",
+    },
+    {
+      tehtNum: "25",
+      tehtName: "Tietokoneen laitteisto ja ohjelmisto",
+      Kategoria: "Apinmaja",
+      puolKuvat: [
+        "/src/assets/ApinmajaImages/TietokoneenTyöpöytä.webp",
+        "/src/assets/ApinmajaImages/Osoiterivi.webp",
+        "/src/assets/ApinmajaImages/GoogleOsoiterivi.webp",
+      ],
+      puolTekstit: [
+        "Tietokoneen työpöytä, Osoitinnuoli, Kansio, Selain, Roskakori, Windows “käynnistä”-nappi, Keskusyksikkö, Hiiri, Näppäimistö & Tietokoneen näyttö",
+        "Osoiterivi, Verkkosivun osoite www.digiseikkailu.com, Avattu verkkosivu & Digiseikkailun etusivu",
+        "Osoiterivi, Verkkosivun osoite www.google.com, Avattu verkkosivu – Googlen etusivu & Googlen hakukenttä",
+      ],
+      Tekstit: [
+        "Laitteisto (hardware) Laitteisto tarkoittaa ulkoisia osia, jotka näkyvät käyttäjälle. Laitteistoja voi olla esim. tietokonelaitteisto, stereolaitteisto, auton ohjauslaitteisto.",
+        "Ohjelmisto (software) Ohjelmisto on useista tietokoneohjelmista esim. peleistä, niiden käyttämistä tiedostoista muodostuva kokonaisuus joka toimii tietokoneen laitteiston sisällä.",
+      ],
+      kysymys: "Mikä seuraavista on esimerkki tietokoneen laitteistosta?",
+      vaihtoehdot: [
+        "A) Tietokoneohjelma",
+        "B) Tiedosto",
+        "C) Näppäimistö",
+        "D) Käyttöjärjestelmä",
+      ],
+      vastaus: "C) Näppäimistö",
+      Kuvat: [
+        "/src/assets/ApinmajaImages/Hardware.webp",
+        "/src/assets/ApinmajaImages/Hakukenttä.webp",
+      ],
     },
   ];
 

@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "../css/ExerciseComponent.css";
 import { useNavigate } from "react-router-dom";
-import { ApinmajaData } from "../data/ApinmajaData";
 import TinyMCE from "./tinyMce";
 import { PulseLoader } from "react-spinners";
 import YoutubeVideo from "../elements/YoutubeVideo";
+import { SoundCloud } from "./soundCloud";
 
-export const ExerciseComponent = ({ Data }) => {
+export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
   const [RightTask, setRightTask] = useState(Data.vastaus);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  const Tehtävät = ApinmajaData();
 
   useEffect(() => {
     setRightTask(Data.vastaus);
@@ -35,14 +34,14 @@ export const ExerciseComponent = ({ Data }) => {
       newIndex = currentIndex + 1;
       if (newIndex <= maxIndex) {
         setSelectedAnswer(null);
-        navigate(`/apinmaja/${newIndex}`);
+        navigate(`/${url}/${newIndex}`);
         window.scrollTo(0, 0);
       }
     } else if (direction === "previous") {
       newIndex = currentIndex - 1;
       if (newIndex >= 0) {
         setSelectedAnswer(null);
-        navigate(`/apinmaja/${newIndex}`);
+        navigate(`/${url}/${newIndex}`);
         window.scrollTo(0, 0);
       }
     }
@@ -100,6 +99,7 @@ export const ExerciseComponent = ({ Data }) => {
       </div>
       {activeTab === "Tehtävä" && (
         <>
+          {Data.SoundCloud && <SoundCloud url={Data.SoundCloud} />}
           <h3 className="White-text">
             {Data.tehtNum}. {Data.tehtName}
           </h3>

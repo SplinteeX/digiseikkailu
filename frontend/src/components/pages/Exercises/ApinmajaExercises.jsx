@@ -24,12 +24,16 @@ export const ApinmajaExercises = () => {
     exerciseIndex < 0 ||
     exerciseIndex >= Tehtävät.length
   ) {
-    return null; // or a loading spinner, message, etc.
+    return null;
   }
 
   return (
     <>
-      <ExerciseComponent Data={Tehtävät[exerciseIndex]} />
+      <ExerciseComponent
+        Data={Tehtävät[exerciseIndex]}
+        Tehtävät={Tehtävät}
+        url="apinmaja"
+      />
     </>
   );
 };
