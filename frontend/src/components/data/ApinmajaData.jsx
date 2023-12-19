@@ -2,9 +2,38 @@ export const ApinmajaData = () => {
   const Tehtävät = [
     {
       tehtNum: "1",
-      tehtName: "Esimerkki",
+      tehtName: "Tutustu tietokonehiireen",
       Kategoria: "Apinmaja",
       kysyms: "Mitä “Hiiripiiri” -tehtävässä opitaan?",
+      Kuvat: ["/src/assets/ApinmajaImages/HiirenTaitokortti.webp"],
+      puolKuvat: [
+        "/src/assets/ApinmajaImages/Ykköspainike.webp",
+        "/src/assets/ApinmajaImages/Kakkospainike.webp",
+        "/src/assets/ApinmajaImages/Keskipainike.webp",
+        "/src/assets/ApinmajaImages/Alempikeskipainike.webp",
+        "/src/assets/ApinmajaImages/Ykkösklikkaus.webp",
+        "/src/assets/ApinmajaImages/Kakkosklikkaus.webp",
+        "/src/assets/ApinmajaImages/Maalaaminen.webp",
+      ],
+      puolTekstit: [
+        "Ykköspainike, vasen painike.",
+        "Kakkospainike, oikea painike.",
+        "Keskipainike, rullaa ylös.",
+        "Keskipainike, rullaa alas.",
+        "Yksöisklikkaus.",
+        "Kaksoisklikkaus",
+        "Maalaaminen ja raahaaminen",
+      ],
+      Teksti:
+        "Käden asento: Käsi lepää suorana ja rentona hiiren päällä. Etusormi ja keskisormi asettuvat näppäinten päälle. Peukalo tukee hiirtä sivulla. Olkapäät ovat rennot.",
+      kysymys: "Mitkä ovat hiiren kolme yleisintä painiketta? ",
+      vaihtoehdot: [
+        "A) Ykköspainike, kakkospainike, keskipainike",
+        "B) Ykköspainike, kaksoispainike, vierityspainike",
+        "C) Vasen painike, oikea painike, kaksoisklikkauspainike",
+        "D) Vasen painike, oikea painike, keskirulla",
+      ],
+      vastaus: "A) Ykköspainike, kakkospainike, keskipainike",
     },
     {
       tehtNum: "2",
@@ -355,7 +384,7 @@ export const ApinmajaData = () => {
         "D) Tekstinkäsittelyohjelmien käyttöä",
       ],
       vastaus: "B) Kirjaimien ja erikoismerkkien kirjoittamista",
-      Unity: "https://digiadventurers.com/unity-games/prod/sandbox/index.html",
+      TinyMCE: "Kirjoita tähän!",
     },
     {
       tehtNum: "17",

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../css/ExerciseComponent.css";
 import { useNavigate } from "react-router-dom";
 import TinyMCE from "./tinyMce";
@@ -6,6 +7,7 @@ import { PulseLoader } from "react-spinners";
 import YoutubeVideo from "../elements/YoutubeVideo";
 import { SoundCloud } from "./soundCloud";
 import { PDFViewer } from "./PDFViewer";
+import CommonButton from "./CommonButton";
 
 export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
@@ -41,7 +43,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
       }
     } else if (direction === "previous") {
       newIndex = currentIndex - 1;
-      if (newIndex >= 0) {
+      if (newIndex > 0) {
         setSelectedAnswer(null);
         navigate(`/${url}/${newIndex}`);
         window.scrollTo(0, 0);
@@ -112,7 +114,9 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
             <div className="TextImage">
               <p className="text50">{Data.puolTeksti}</p>
               {Data.puolKuva && (
-                <img className="image50" src={Data.puolKuva} alt="Image" />
+                <div className="Image-container">
+                  <img className="image50" src={Data.puolKuva} alt="Image" />
+                </div>
               )}
             </div>
           ) : null}
@@ -122,11 +126,13 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               <div key={`text_${index}`} className="TextImages">
                 <p className="text50s">{text}</p>
                 {Data.puolKuvat && Data.puolKuvat.length > index && (
-                  <img
-                    className="image50s"
-                    src={Data.puolKuvat[index]}
-                    alt={`Image ${index}`}
-                  />
+                  <div className="Image-container">
+                    <img
+                      className="image50s"
+                      src={Data.puolKuvat[index]}
+                      alt={`Image ${index}`}
+                    />
+                  </div>
                 )}
               </div>
             ))}
@@ -165,6 +171,9 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
           {Data.peliTitle ? (
             <p className="White-text small-title">{Data.peliTitle}</p>
           ) : null}
+          <Link to={Data.buttonLink}>
+            {Data.buttonText && <CommonButton text={Data.buttonText} />}
+          </Link>
           <div className="Unity-loader-div">
             {loading && Data.unity ? (
               <div className="loader">

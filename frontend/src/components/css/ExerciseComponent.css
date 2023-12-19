@@ -65,6 +65,7 @@
 }
 .Exercise .image50 {
   border-radius: 20px;
+  width: 100%;
 }
 
 /* Multiple 50s images / texts : */
@@ -87,16 +88,20 @@
   margin: 0px;
 }
 .Exercise .image50s {
+  border-radius: 20px;
   width: 50%;
-  height: 250px;
-  object-fit: cover;
+  height: 100%;
+}
+.Exercise .Image-container {
+  width: 50%;
+  background-color: white;
   border-radius: 20px;
 }
 .Exercise .Full-image {
   margin: 20px 0px;
-  width: 75%;
-  height: 75%;
   border-radius: 20px;
+  max-height: 75%;
+  max-width: 75%;
 }
 .Exercise .Text-div {
   width: 100%;
@@ -179,6 +184,9 @@
   opacity: 80%;
   cursor: pointer;
 }
+.Exercise .CommonButton img {
+  display: none;
+}
 
 /* All different syles */
 .Apinmaja-style {
@@ -197,6 +205,13 @@
     180deg,
     rgba(255, 107, 0, 0.5) 0%,
     rgba(255, 0, 199, 0.25) 100%
+  );
+}
+.tweetyn-viestiseina-style {
+  background: linear-gradient(
+    180deg,
+    rgba(13, 151, 159, 0.5) -1.49%,
+    rgba(108, 3, 214, 0.27) 101.07%
   );
 }
 @media screen and (max-width: 1000px) {
@@ -221,17 +236,24 @@
   }
   .Exercise .TextImage {
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .Exercise .TextImages {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .Exercise .text50s {
-    width: 100%;
+    width: 90%;
+    padding: 10px 0px;
   }
-  .Exercise .image50s {
-    width: 100%;
+  .Exercise .Image-container {
+    width: 90%;
   }
   .Exercise .text50 {
     width: 100%;
@@ -264,6 +286,15 @@
   @media screen and (max-width: 500px) {
     .Exercise .Full-image {
       width: 100%;
+    }
+    .Exercise .Image-container {
+      width: 95%;
+    }
+    .Exercise .text50 {
+      width: 95%;
+    }
+    .Exercise .text50s {
+      width: 95%;
     }
   }
 }

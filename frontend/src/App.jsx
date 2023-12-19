@@ -18,6 +18,7 @@ import { TarinatTyokirja } from "./components/pages/Products/TarinatTyokirja";
 import { TvtOpetuksenTaitoPaketti } from "./components/pages/Products/TvtOpetuksenTaitopaketti";
 import { ApinmajaExercises } from "./components/pages/Exercises/ApinmajaExercises";
 import { HasanStudioExercises } from "./components/pages/Exercises/HasanStudioExercises";
+import { TweetyExercises } from "./components/pages/Exercises/TweetyExercises";
 import "./App.css";
 
 function App() {
@@ -41,6 +42,10 @@ function App() {
             <Route
               path="/häsänstudio/:index"
               element={<HasanStudioExercises />}
+            />
+            <Route
+              path="/TweetynViestiseinä/:index"
+              element={<TweetyExercises />}
             />
             <Route
               path="/tuotteet/TVT-opetuksen-taitopaketti"
