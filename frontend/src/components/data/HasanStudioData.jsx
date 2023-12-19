@@ -5,19 +5,38 @@ export const HäsänStudioData = () => {
       tehtName: "Some Julkaisijan tietonurkka",
       Kategoria: "HäsänStudio",
       Title: "Tubettajan tietonurkka",
-      Teksti:
-        "Tubetus, TikTokkaus, Snäppäys, hyödyt ja haitat – mitä kaikkea somejulkaisijan tulisi tietää?",
-      Kuva: "",
-      pieniTitle:
-        "#sisällöntuottaminen #kuluttaja #seuraaja #tilaaja #koukuttavuus",
-      Tekstit: [
-        "Tubettaja on YouTubeen ja usein myös muihin sosiaalisen median kanaviin sisältöä tekevä henkilö. Tubettajat ovat nousseet viime vuosina nuorten suurimmiksi idoleiksi joiden videoita katsotaan päivittäin satoja tunteja pelkästään Suomessa. Tubettajien sisältö vaihtelee omasta elämästä kertovista videoista erilaisiin aihepiireihin, kuten pelit, tekniikka, kauneus, meikit ja matkustaminen.",
-        "Tubettajien seuraan ovat liittyneet myös TikTokkaajat, Snäppääjät sekä podcastaajat, joista ensimmäiset tekevät sisältöä sovellukseen ja jälkimmäiset tekevät radio-ohjelmien kaltaisia kokonaisuuksia nettiin.",
-        "Podcast-lähetysten suosio on kasvanut viime vuosina. Podcastin idea on, että keskustelua itseään kiinnostavista aiheista voi kuunnella siellä missä haluaa ja milloin haluaa. Podcastien avulla voi pysyä tietoisena mistä kulloinkin puhutaan. Sisällöntuottajat kuuntelevat kuulijoitaan ja tekevät heidän toivomistaan aiheista podeja, eli podcast-jaksoja.",
-        "Sosiaalisessa mediassa vaihdetaan kuulumisia, iloitaan ja hullutellaan yhdessä, osallistutaan ja vaikutetaan, mutta siellä voidaan myös kohdata vastoinkäymisiä, pahoittaa mielensä ja tulla kiusatuksi.",
-        "Tutkijat ovat kartoittaneet sekä sosiaalisen median välineiden tuomia hyötyjä että myös haittavaikutuksia. Nykyään yhä enemmän keskitytään myös siihen, kuinka sosiaalinen media vaikuttaa erityisesti kehittyviin nuorten aivoihin ja teini-ikäisten mielenterveyteen. Tutkimustulokset osoittavat, että teinien nähdessä kuviensa tai postaustensa saaneen paljon tykkäyksiä ja kommentteja, heidän aivojensa nucleus accumbens -osa aktivoituu. Tämä suomeksi aivon palkitsemisjärjestelmänä paremmin tunnettu osa-alue on sama kuin mikä aktivoituu silloin, kun ihminen esimerkiksi syö suklaata tai voittaa pelissä. Kyse on siis varsin koukuttavasta tunteesta.",
+      Kuva: "/src/assets/HäsäImages/TubettajanTietonurkka.webp",
+      puolTekstit: [
+        "Tubettajat: Luo sisältöä YouTubeen ja muihin sosiaalisen median alustoihin. Aihealueet vaihtelevat peleistä, teknologiasta, kauneuteen ja matkustamiseen. Kehittää taitoja, jotka ovat tärkeitä digitalisoituvassa maailmassa.",
+        "Tiktok: Sosiaalisen median sovellus, jolla voi luoda ja jakaa lyhytvideoita ja tehdä suoria lähetyksiä. Videoita voi selata palvelussa pyyhkäisemällä ylöspäin. Kirjautuneena palveluun voit seurata mielenkiintoisia tiktokkaajia ja tykätä videoista sekä lähettää viestejä. Tiktokkaaja Tekee lyhyitä, viihdyttäviä videoita ja suoria lähetyksiä TikTokissa.",
+        "Tilaajat: ovat eri sosiaalisen median kanavien seuraajia, eli kuluttajia. Tubettajat tai Tiktokkaajat ovat videoiden tuottajia. Suurin osa seuraajista katsoo videoita, mutta vähemmistö tekee niitä itse.",
+        "Vlogaaminen: Videobloggaaminen tarkoittaa videoiden kuvaamista esimerkiksi omasta arjesta, ja niiden lataamista nettiin muiden katsottavaksi. Vloggaaminen on  yksi tubettamisen alalajeista.",
+        "Podcastaajat: Luovat äänisisältöä, jota voi tilata ja kuunnella milloin ja missä tahansa. Käyttävät RSS- tai Atom-syötteitä sisällön julkaisemiseen ja jakamiseen.",
+        "Snapchat: Snapchat on ikaviestipalvelu, jota käytetään erityisesti kuvien ja lyhyiden videoiden nopeaan ja helppoon jakamiseen. Kuvia ja videoita eli snäppejä (snap) voi palvelussa muokata reaaliaikaisesti erilaisilla hauskoilla efekteillä ja filttereillä, kuten kasvokuvien päälle lisätävillä animoinneilla, sekä teksteillä ja piirroksilla.",
       ],
-      Kuva: "",
+      puolKuvat: [
+        "/src/assets/HäsäImages/Tubettaja.webp",
+        "/src/assets/HäsäImages/Tiktok.webp",
+        "/src/assets/HäsäImages/Tilaaja.webp",
+        "/src/assets/HäsäImages/Vloggari.webp",
+        "/src/assets/HäsäImages/Podcastaaja.webp",
+        "/src/assets/HäsäImages/Snapchat.webp",
+      ],
+      Tekstit: [
+        "Riskit ja vastuut:",
+        "1. Viraalileviäminen ja nettikiusaaminen: Mikä tahansa julkinen video voi levitä laajalle, tuoden erilaisia kommentteja. Nettikiusaamiseen tulee puuttua keskustelemalla ja hakemalla apua.",
+        "2. Sosiaalisen median riippuvuus: Merkkejä ovat esimerkiksi kyvyttömyys laittaa puhelinta pois ja vaikeudet keskittyä muihin toimintoihin. Voi johtaa väsymykseen, levottomuuteen, keskittymiskyvyn puutteeseen ja ärtyisyyteen.",
+        "3. Yksityisyys ja turvallisuus: Harkitse, mitä julkaiset; yksityiset kuvat voivat pysyä netissä pitkään. Epäasiallisiin viesteihin vastataan estämällä, ottamalla kuvakaappauksia ja keskustelemalla luotettavan aikuisen kanssa.",
+        "Vastuullisen käytön ohjeet",
+        "Tietoisuus sisällön vaikutuksesta: Mieti ennen julkaisua, miten sisältö voi vaikuttaa muihin. Vältä loukkaavaa tai sopimatonta materiaalia.",
+        "Yksityisyyden suojaaminen: Ole varovainen henkilökohtaisten tietojen jakamisessa. Käytä yksityisyysasetuksia hallitaksesi, kuka näkee julkaisusi.",
+        "Ajanhallinta: Rajoita sosiaalisen median käyttöä ja pidä taukoja. Tasapainota digitaalista elämääsi muiden aktiviteettien kanssa.",
+        "Kriittinen suhtautuminen sisältöön: Älä usko kaikkea näkemääsi verkossa. Opettele erottamaan tosiasiat mielipiteistä ja väärästä tiedosta.",
+        "Turvallinen vuorovaikutus: Vältä kiusaamista ja negatiivista käyttäytymistä. Raportoi sopimattomasta sisällöstä ja käyttäytymisestä.",
+        "Vastuullinen sisällöntuotanto: Julkaise vain sisältöä, joka kuvastaa sinua positiivisessa valossa. Ota huomioon muut ihmiset kuvissa ja videoissa.",
+        "Lain ja sääntöjen noudattaminen: Kunnioita tekijänoikeuksia ja muuta lainsäädäntöä",
+        "Lainmukainen ikäraja: Muista, että useimpien sosiaalisen median palveluiden lainmukainen ikäraja on 13 vuotta ja käytöstä tulee aina keskustella vanhempien kanssa.",
+      ],
     },
     /* 2 puuttuu kuva */
     {
@@ -159,6 +178,7 @@ export const HäsänStudioData = () => {
       tehtName: "Tubettajan tekstilajit",
       Kategoria: "HäsänStudio",
       Kuva: "/src/assets/HäsäImages/Erivideot.webp",
+
       Tekstit: [
         "Tutkitaan tubettajan tekstilajeja Tutustu ensin tubettajan tekstilajeihin. Mitä näistä tekstilajeista olet nähnyt nettiä selaillessasi?",
         "Youtube-videot eivät synny itsestään, vaan tubettajat miettivät niiden sisällön huolellisesti. Videot ovat omanlaisiaan tekstejä. Niissä yhdistyy kuva, ääni ja kirjoitettu teksti. Videot voidaan jakaa erilaisiin lajeihin.",

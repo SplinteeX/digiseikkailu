@@ -184,6 +184,19 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ))}
             </>
           )}
+          {Data.palloListat && (
+            <>
+              {Data.palloListat.map((lista, listaIndex) => (
+                <div className="Pallolista" key={`lista_${listaIndex}`}>
+                  <ul>
+                    {lista.map((item, index) => (
+                      <li key={`item_${index}`}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </>
+          )}
           {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
           {Data.peliTitle ? (
             <p className="White-text small-title">{Data.peliTitle}</p>

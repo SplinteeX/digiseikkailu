@@ -159,6 +159,15 @@
   margin-bottom: 20px;
   width: 100%;
 }
+.Exercise .Pallolista {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.Exercise .Pallolista li {
+}
 .Exercise .Unity {
   height: 100%;
   min-height: 600px;
