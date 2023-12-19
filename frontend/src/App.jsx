@@ -19,6 +19,7 @@ import { TvtOpetuksenTaitoPaketti } from "./components/pages/Products/TvtOpetuks
 import { ApinmajaExercises } from "./components/pages/Exercises/ApinmajaExercises";
 import { HasanStudioExercises } from "./components/pages/Exercises/HasanStudioExercises";
 import { TweetyExercises } from "./components/pages/Exercises/TweetyExercises";
+import { DogenBoxiExercises } from "./components/pages/Exercises/DogenBoxiExercises";
 import "./App.css";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
               path="/TweetynViestiseinä/:index"
               element={<TweetyExercises />}
             />
+            <Route path="/dogenboxi/:index" element={<DogenBoxiExercises />} />
             <Route
               path="/tuotteet/TVT-opetuksen-taitopaketti"
               element={<TvtOpetuksenTaitoPaketti />}

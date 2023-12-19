@@ -207,121 +207,83 @@ export const TweetynData = () => {
       title: "Millainen on hyvä viesti?",
       Kategoria: "TweetynViestiseinä",
       Kuva: "/src/assets/TweetyImages/tipu.webp",
-      ListText: [
-        [
-          "a) mitä tuli läksyks",
-          "b) böö! moi! lol!",
-          "c) Moi! Haluatko tulla meille illalla? Paistetaan lettuja!",
-          "d) oonmyöhästuunihankohta",
-          "e) onnea synttärisankarille milloin juhlat missä ne pidetään",
-        ],
+      Tekstit: [
+        "Hyvä viesti on kirjoitettu oikein ja se on ystävällinen, helppo lukea ja ytimekäs.",
+        "Alla on erilaisia viestejä. Laita viestit järjestykseen sen mukaan, mikä niistä on helpoin ymmärtää. Miksi joitakin viestejä on vaikeampi ymmärtää?",
+      ],
+      numeroLista: [
+        "mitä tuli läksyks",
+        "böö! moi! lol!",
+        "Moi! Haluatko tulla meille illalla? Paistetaan lettuja!",
+        "oonmyöhästuunihankohta",
+        "onnea synttärisankarille milloin juhlat missä ne pidetään",
       ],
 
-      text: [
-        "Hyvä viesti on kirjoitettu oikein ja se on ystävällinen, helppo lukea ja ytimekäs. Alla on erilaisia viestejä. Laita viestit järjestykseen sen mukaan, mikä niistä on helpoin ymmärtää. Miksi joitakin viestejä on vaikeampi ymmärtää?",
-        "Oikeat vastaukset:",
-      ],
-      kysymys: [
-        "Mikä tekee viestistä hyvän?",
-        "Miksi jotkut viestit ovat vaikeampia ymmärtää kuin toiset?",
-      ],
+      kysymys: ["Mikä tekee viestistä hyvän?"],
       vaihtoehdot: [
-        [
-          "a) Se on pitkä ja monimutkainen",
-          "b) Se on kirjoitettu oikein ja on ystävällinen ",
-          "c) Se sisältää paljon lyhenteitä ja hymiöitä ",
-          "d) Se on kirjoitettu nopeasti ilman tarkastusta",
-        ],
-        [
-          "a) Ne ovat liian lyhyitä ",
-          "b) Ne ovat kirjoitettu epäselvästi ja ilman huolellisuutta ",
-          "c) Ne ovat aina liian pitkiä ",
-          "d) Ne sisältävät tärkeää tietoa",
-        ],
-      ],
-      vastaus: [
+        "a) Se on pitkä ja monimutkainen",
         "b) Se on kirjoitettu oikein ja on ystävällinen",
-        "b) Ne ovat kirjoitettu epäselvästi ja ilman huolellisuutta",
+        "c) Se sisältää paljon lyhenteitä ja hymiöitä",
+        "d) Se on kirjoitettu nopeasti ilman tarkastusta",
       ],
+      vastaus: "b) Se on kirjoitettu oikein ja on ystävällinen",
     },
     {
       tehtNum: "5",
       tehtName: "Netiketti",
       title: "Netiketti",
-      videoId: "VCqX0G-hQDo&t",
+      youtube: "VCqX0G-hQDo",
       Kategoria: "TweetynViestiseinä",
-      text: [
-        "Netiketti tarkoittaa hyvää käyttäytymistapaa netissä, netin etikettiä. Sadat miljoonat ihmiset käyttävät nettiä, joten saatat törmätä siellä myös myös huonoon käytökseen. Meistä jokainen voi tehdä netin käytöstä mukavaa ja joustavaa noudattamalla yhteisiä sääntöjä. Hyvien käytöstapojen ei tulisi poiketa normaalista kasvokkaisesta kanssakäymisestä, vaikka ympäristönä onkin netti. Ole kohtelias ja ystävällinen lähettäessäsi sähköpostiviestejä tai osallistuessasi keskustelupalstalle. Jos väittelet netissä, pitäydy asiassa äläkä sorru arvostelemaan muita keskustelijoita. Nettiin kirjoitetut asiat saattavat säilyä siellä pysyvästi, joten on tärkeää miettiä mitä kirjoittaa tai millaisia kuvia jakaa nettiin. Netissä julkaistut teokset ovat tekijänoikeudella suojattuja ja niiden käyttämiseen tarvitaan tekijän lupa. Netikettiin kuuluu siis käyttöoikeuksien selvittäminen. Selvitä ennen käyttöä, ovatko materiaalin käyttöoikeudet vapaat vai rajoitetut. Keskusteluissa netissä on mukana eri ikäisiä ihmisiä, joilla on erilaiset taustat ja kokemukset. Tämä voi vaikeuttaa keskustelua, kun tavat toimia ja puhua voivat poiketa toisistaan suuresti, eikä keskustelussa ole mahdollista nähdä toisen ilmeitä ja eleitä. Etenkin huumorin voi välillä tulkita väärin. Mieti aina kirjoittamistasi netissä. Kysy itseltäsi: Onko tekstini totta? Onko tekstini asiallista? Onko tekstini välttämätöntä? Mikäli vastaus on kyllä, on todennäköistä, että ihmiset ymmärtävät viestin oikein. Jos vastaus on ei, voidaan tekstisi tulkita trollauksena eli nettihäirintänä. Ole reilusti oma itsesi. Verkossa on monenlaisia ihmisiä, eikä kaikki ole sitä miltä näyttää. Älä valehtele omasta iästä tai ulkonäöstä, se ei ole netiketin mukaista. Mieti aina tarkasti, ennen kuin kerrot kenellekään nettitutulle henkilökohtaisia tietojasi, kuten nimeäsi, puhelinnumeroasi tai kotiosoitettasi. Kun toimit netissä fiksusti ja turvallisesti, on ajan viettäminen siellä rentouttavaa ja mukavaa. Käyttäjät nimimerkkien ja sähköpostiosoitteiden takana ovat oikeita ihmisiä. Ystävällisyys ja suvaitsevaisuus ovat hyviä ominaisuuksia, jotka huomataan nettiympäristössäkin. Jos netissä tulee vastaan epäasiallista käytöstä tai jotakin sinua epäilyttävää, keskustele asiasta esimerkiksi vanhempasi, opettajan tai nuorisotyöntekijän kanssa. He osaavat kertoa, tuleeko asiaan puuttua.",
-        "Oikeat vastaukset:",
+      Tekstit: [
+        "Netiketti tarkoittaa hyvää käyttäytymistapaa netissä, netin etikettiä.",
+        "Hyvien käytöstapojen ei tulisi poiketa normaalista kasvokkaisesta kanssakäymisestä, vaikka ympäristönä onkin netti.Ole kohtelias ja ystävällinen lähettäessäsi sähköpostiviestejä tai osallistuessasi keskustelupalstalle. Jos väittelet netissä, pitäydy asiassa äläkä sorru arvostelemaan muita keskustelijoita.",
+        "Nettiin kirjoitetut asiat saattavat säilyä siellä pysyvästi, joten on tärkeää miettiä mitä kirjoittaa tai millaisia kuvia jakaa nettiin.",
+        "Netissä julkaistut teokset ovat tekijänoikeudella suojattuja ja niiden käyttämiseen tarvitaan tekijän lupa. Netikettiin kuuluu siis käyttöoikeuksien selvittäminen. Selvitä ennen käyttöä, ovatko materiaalin käyttöoikeudet vapaat vai rajoitetut.",
+        "Keskusteluissa netissä on mukana eri ikäisiä ihmisiä, joilla on erilaiset taustat ja kokemukset. Tämä voi vaikeuttaa keskustelua, kun tavat toimia ja puhua voivat poiketa toisistaan suuresti, eikä keskustelussa ole mahdollista nähdä toisen ilmeitä ja eleitä. Etenkin huumorin voi välillä tulkita väärin.",
+        "Mieti aina kirjoittamistasi netissä. Kysy itseltäsi: Onko tekstini totta? Onko tekstini asiallista? Onko tekstini välttämätöntä? Mikäli vastaus on kyllä, on todennäköistä, että ihmiset ymmärtävät viestin oikein. Jos vastaus on ei, voidaan tekstisi tulkita trollauksena eli nettihäirintänä.",
+        "Ole reilusti oma itsesi. Verkossa on monenlaisia ihmisiä, eikä kaikki ole sitä miltä näyttää. Älä valehtele omasta iästä tai ulkonäöstä, se ei ole netiketin mukaista. Mieti aina tarkasti, ennen kuin kerrot kenellekään nettitutulle henkilökohtaisia tietojasi, kuten nimeäsi, puhelinnumeroasi tai kotiosoitettasi.",
+        "Kun toimit netissä fiksusti ja turvallisesti, on ajan viettäminen siellä rentouttavaa ja mukavaa. Käyttäjät nimimerkkien ja sähköpostiosoitteiden takana ovat oikeita ihmisiä. Ystävällisyys ja suvaitsevaisuus ovat hyviä ominaisuuksia, jotka huomataan nettiympäristössäkin.",
+        "Jos netissä tulee vastaan epäasiallista käytöstä tai jotakin sinua epäilyttävää, keskustele asiasta esimerkiksi vanhempasi, opettajan tai nuorisotyöntekijän kanssa. He osaavat kertoa, tuleeko asiaan puuttua.",
       ],
-      kysymys: [
-        "Mikä seuraavista kuuluu nettiketin periaatteisiin?",
-        "Mitä tulisi tehdä, jos netissä tulee vastaan epäasiallista käytöstä?",
-      ],
+      kysymys: ["Mikä seuraavista kuuluu nettiketin periaatteisiin?"],
       vaihtoehdot: [
-        [
-          "a) Jakaa tietoa ilman tarkistusta",
-          "b) Olla kohtelias ja ystävällinen viestitettäessä",
-          "c) Valehdella omasta iästä tai ulkonäöstä",
-          "d) Jättää huomioimatta tekijänoikeudet",
-        ],
-        [
-          "a) Ignoroida se",
-          "b) Kostaa samalla tavalla",
-          "c) Keskustella asiasta aikuisen kanssa",
-          "d) Levittää sitä edelleen",
-        ],
-      ],
-      vastaus: [
+        "a) Jakaa tietoa ilman tarkistusta",
         "b) Olla kohtelias ja ystävällinen viestitettäessä",
-        "c) Keskustella asiasta aikuisen kanssa]",
+        "c) Valehdella omasta iästä tai ulkonäöstä",
+        "d) Jättää huomioimatta tekijänoikeudet",
       ],
+      vastaus: "b) Olla kohtelias ja ystävällinen viestitettäessä",
     },
     {
       tehtNum: "6",
       tehtName: "Sometekstien tulkitseminen",
       title: ["Sometekstien tulkitseminen", "Tehtävä – tulkitse someteksti"],
       Kategoria: "TweetynViestiseinä",
-      kuva: [
+      Kuvat: [
         "/src/assets/TweetyImages/selfie.webp",
         "/src/assets/TweetyImages/yoga.webp",
         "/src/assets/TweetyImages/joulupukki.webp",
       ],
-      text: [
+      Tekstit: [
         "Sosiaalisen median teksteillä on aina julkaisija, ne eivät ilmesty internetiin tyhjästä. Mieti ja selvitä, kuka on tuottanut sisällön. Miksi se on julkaistu? Voivatko eri ihmiset tulkita julkaisua eri tavoilla? Minkälaisia reaktioita – tykkäyksiä, kommentteja – julkaisija toivoo saavansa? Millaisia tunteita julkaisu sinussa saa aikaan? Kaikkea ei mahdu kuvaan tai tekstiin. Onko jotain jätetty pois tai rajattu kuvan ulkopuolelle? Mieti, miten rajaus vaikuttaa sisältöön.",
-        "Voit selata jotain somen kanavaa kirjautuen tai kirjautumatta tai valita jonkun viereisistä kuvista. Valitse jokin kuvan ja tekstin sisältävä julkaisu.",
-        "Tee tulkinnat julkaisusta.",
         "Ihanaa rauhoittua ja rentoutua. Venyttely heti aamulla näiden #bffgirlsien kanssa tuo upean fiiliksen loppupäiväksi!",
         "Eeppinen joulumeininki #kauppakeskusSimpukka ssa! Rockin´around! #joulujokapäivä #christmaseveryday #Ilovesanta <3 <3",
-        "Oikeat vastaukset:",
+        "Voit selata jotain somen kanavaa kirjautuen tai kirjautumatta tai valita jonkun ylläolevista kuvista. Valitse jokin kuvan ja tekstin sisältävä julkaisu. Tee tulkinnat julkaisusta.",
       ],
-      ListText: [
+      numeroLista: [
         "1. Kuka on tuottanut sisällön?",
         "2. Millaisia reaktioita ja kommentteja julkaisija toivoo saavansa?",
         "3. Mitä on jätetty kuvan ulkopuolelle? Miksi?]",
       ],
-      kysymys: [
+      kysymys:
         "Miksi on tärkeää tietää, kuka on tuottanut sosiaalisen median sisällön?",
-        "Miksi on hyödyllistä pohtia, mitä on jätetty kuvan tai tekstin ulkopuolelle?",
-      ],
       vaihtoehdot: [
-        [
-          "a) Jotta voidaan arvostella sisällön laatua ",
-          "b) Jotta ymmärretään sisällön tarkoitus ja tausta",
-          "c) Jotta voidaan jäljittää kirjoittaja ",
-          "d) Jotta voidaan tehdä sisällöstä suositumpaa",
-        ],
-        [
-          "a) Se on hauskaa ajanvietettä ",
-          "b) Se auttaa ymmärtämään sisällön koko kontekstin ",
-          "c) Se on välttämätöntä sisällön jakamiseksi ",
-          "d) Se on tarpeetonta, koska tärkeä on vain julkaistu sisältö",
-        ],
-      ],
-      vastaus: [
+        "a) Jotta voidaan arvostella sisällön laatua ",
         "b) Jotta ymmärretään sisällön tarkoitus ja tausta",
-        "b) Se auttaa ymmärtämään sisällön koko kontekstin",
+        "c) Jotta voidaan jäljittää kirjoittaja ",
+        "d) Jotta voidaan tehdä sisällöstä suositumpaa",
       ],
+      vastaus: "b) Jotta ymmärretään sisällön tarkoitus ja tausta",
     },
     {
       tehtNum: "7",
@@ -503,6 +465,11 @@ export const TweetynData = () => {
         "vieraan ihmisen viestiin suhtautumista",
         "turvataitoja sosiaalisessa mediassa",
       ],
+    },
+    {
+      tehtName: "testi",
+      tehtNum: "11",
+      Kategoria: "TweetynViestiseinä",
     },
   ];
   return Tehtävät;
