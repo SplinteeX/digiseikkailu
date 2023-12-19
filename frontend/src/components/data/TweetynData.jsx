@@ -37,6 +37,7 @@ export const TweetynData = () => {
       ],
       vastaus: "b) Noudattaa netikettiä",
     },
+    // Katso myöhemmin
     {
       tehtNum: "2",
       tehtName: "Nettikiusaamisen vastainen posteri",
@@ -164,22 +165,22 @@ export const TweetynData = () => {
       ],
       pieniTitle: "Katsokaa yhdessä Kiva somekaveri-video.",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/moottorisahakissa.webp",
-      puolKuva: "/src/assets/TweetyImages/whatsapp.webp",
-      pieniKuva: "/src/assets/TweetyImages/pöllö.webp",
-      text: [
-        "Tweety on törmännyt pihan ilmoitustaululla ja someverkostossa väittelijään. Väittelijä on pihan Miuku-Mauku -kissa. Miukulla on suuri tarve kaataa pihan vanhin puu. Se on kuitenkin Tweetylle ja muille linnuille tärkeä kokoontumispaikka. Tweetyä häiritsee, että Miuku-Mauku unohtaa kunnollisen väittelyn säännöt ja saattaa sihautella solvauksia lintuverkoston toiminnasta. Nyt Tweety on pyytänyt pöllöä kasaamaan somekanavalleen väittelyohjeet",
-        "Harjoitellaan väittelyä. Arpokaa kuka on puolesta ja kuka on vastaan. Joskus väittelyharjoituksissa harjoitellaan perustelemaan sellaista näkemystä, mikä ei välttämättä ole oma. Silloin haastat itsesi pohtimaan asiaa toisen ihmisen kannalta.",
-        "Oikeat vastaukset:",
-        "Nämä vastaukset korostavat väittelyn sääntöjä ja tavoitteita, jotka opetetaan tässä tehtävässä.",
+      Kuvat: [
+        "/src/assets/TweetyImages/moottorisahakissa.webp",
+        "/src/assets/TweetyImages/whatsapp.webp",
+        "/src/assets/TweetyImages/pöllö.webp",
       ],
-      ListText: [
+      Tekstit: [
+        "Keskustelupalstalla väitellään: Tweety on törmännyt pihan ilmoitustaululla ja someverkostossa väittelijään. Väittelijä on pihan Miuku-Mauku -kissa. Miukulla on suuri tarve kaataa pihan vanhin puu. Se on kuitenkin Tweetylle ja muille linnuille tärkeä kokoontumispaikka. Tweetyä häiritsee, että Miuku-Mauku unohtaa kunnollisen väittelyn säännöt ja saattaa sihautella solvauksia lintuverkoston toiminnasta. Nyt Tweety on pyytänyt pöllöä kasaamaan somekanavalleen väittelyohjeet",
+        "Harjoitellaan väittelyä. Arpokaa kuka on puolesta ja kuka on vastaan. Joskus väittelyharjoituksissa harjoitellaan perustelemaan sellaista näkemystä, mikä ei välttämättä ole oma. Silloin haastat itsesi pohtimaan asiaa toisen ihmisen kannalta.",
+      ],
+      numeroListat: [
         [
-          "1. Kännykän käyttö välitunnilla",
-          "2. Kasvisruokapäivä koulussa",
-          "3. Kotiintuloajat",
-          "4. Koska pitää tehdä läksyt",
-          "5. Pitäisikö Suomessakin olla koulupuvut",
+          "Kännykän käyttö välitunnilla",
+          "Kasvisruokapäivä koulussa",
+          "Kotiintuloajat",
+          "Koska pitää tehdä läksyt",
+          "Pitäisikö Suomessakin olla koulupuvut",
         ],
         [
           "Väittelyssä voi olla useita eri mielipiteitä.",
@@ -191,25 +192,14 @@ export const TweetynData = () => {
           "Puheenjohtaja tai keskustelun ylläpitäjä kontrolloi väittelyn hyviä tapoja ja vuoroja.",
         ],
       ],
-
+      kysymys: "Mikä seuraavista on tärkeää väittelyssä?",
       vaihtoehdot: [
-        [
-          "a) Voittaminen",
-          "b) Toisen mielipiteen kunnioittaminen",
-          "c) Vain oma mielipide on oikea",
-          "d) Välttää perusteluita",
-        ],
-        [
-          "a) Henkilö, joka esittää eniten mielipiteitä",
-          "b) Henkilö, joka kontrolloi keskustelun hyviä tapoja ja vuoroja",
-          "c) Henkilö, joka päättää, kuka voittaa väittelyn",
-          "d) Henkilö, joka ei osallistu väittelyyn",
-        ],
-      ],
-      vastaus: [
+        "a) Voittaminen",
         "b) Toisen mielipiteen kunnioittaminen",
-        "b) Henkilö, joka kontrolloi keskustelun hyviä tapoja ja vuoroja",
+        "c) Vain oma mielipide on oikea",
+        "d) Välttää perusteluita",
       ],
+      vastaus: "b) Toisen mielipiteen kunnioittaminen",
     },
     {
       tehtNum: "4",

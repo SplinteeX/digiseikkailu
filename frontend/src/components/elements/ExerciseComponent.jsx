@@ -137,17 +137,21 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </div>
             ))}
           {Data.Kuva ? (
-            <img className="Full-image" src={Data.Kuva} alt="" />
+            <div className="Full-image-container">
+              <img className="Full-image" src={Data.Kuva} alt="" />
+            </div>
           ) : null}
           {Data.Kuvat &&
             Array.isArray(Data.Kuvat) &&
             Data.Kuvat.map((image, index) => (
-              <img
-                key={`image_${index}`}
-                className="Full-image"
-                src={image}
-                alt={`Image ${index}`}
-              />
+              <div className="Full-image-container">
+                <img
+                  key={`image_${index}`}
+                  className="Full-image"
+                  src={image}
+                  alt={`Image ${index}`}
+                />
+              </div>
             ))}
           {Data.smallTitle && <p className="White-text">{Data.smallTitle}</p>}
           {Data.Tekstit &&
@@ -166,6 +170,19 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 ))}
               </ol>
             </div>
+          )}
+          {Data.numeroListat && (
+            <>
+              {Data.numeroListat.map((lista, listaIndex) => (
+                <div className="Numerolista">
+                  <ol key={`lista_${listaIndex}`}>
+                    {lista.map((item, index) => (
+                      <li key={`item_${index}`}>{item}</li>
+                    ))}
+                  </ol>
+                </div>
+              ))}
+            </>
           )}
           {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
           {Data.peliTitle ? (
