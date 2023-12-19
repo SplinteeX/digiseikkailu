@@ -222,6 +222,13 @@
     rgba(108, 3, 214, 0.27) 101.07%
   );
 }
+.Dogen-boxi-style {
+  background: linear-gradient(
+    181deg,
+    rgba(0, 117, 255, 0.27) 0.61%,
+    rgba(250, 156, 15, 0.21) 56.45%
+  );
+}
 @media screen and (max-width: 1000px) {
   .Exercise {
     padding: 0px;
