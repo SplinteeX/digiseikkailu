@@ -37,7 +37,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
       newIndex = currentIndex + 1;
       if (newIndex <= maxIndex) {
         setSelectedAnswer(null);
-        navigate(`/${url}/${newIndex}`);
+        navigate(`/tehtävät/${url}/${newIndex}`);
         window.scrollTo(0, 0);
         setActiveTab("Tehtävä");
       }
@@ -45,7 +45,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
       newIndex = currentIndex - 1;
       if (newIndex > 0) {
         setSelectedAnswer(null);
-        navigate(`/${url}/${newIndex}`);
+        navigate(`/tehtävät/${url}/${newIndex}`);
         window.scrollTo(0, 0);
         setActiveTab("Tehtävä");
       }

@@ -43,26 +43,32 @@ function App() {
               element={<TarinatTyokirja />}
             />
             <Route path="/tehtävät" element={<Exercises />} />
-            <Route path="/apinmaja/:index" element={<ApinmajaExercises />} />
             <Route
-              path="/häsänstudio/:index"
+              path="/tehtävät/apinmaja/:index"
+              element={<ApinmajaExercises />}
+            />
+            <Route
+              path="/tehtävät/häsänstudio/:index"
               element={<HasanStudioExercises />}
             />
             <Route
-              path="/TweetynViestiseinä/:index"
+              path="/tehtävät/TweetynViestiseinä/:index"
               element={<TweetyExercises />}
             />
-            <Route path="/dogenboxi/:index" element={<DogenBoxiExercises />} />
             <Route
-              path="/kursorinullakko/:index"
+              path="/tehtävät/dogenboxi/:index"
+              element={<DogenBoxiExercises />}
+            />
+            <Route
+              path="/tehtävät/kursorinullakko/:index"
               element={<KursorinUllakkoExercises />}
             />
             <Route
-              path="/sirynalytalo/:index"
+              path="/tehtävät/sirynalytalo/:index"
               element={<SirynÄlytaloExercise />}
             />
             <Route
-              path="/tuotteet/TVT-opetuksen-taitopaketti"
+              path="/tehtävät/tuotteet/TVT-opetuksen-taitopaketti"
               element={<TvtOpetuksenTaitoPaketti />}
             />
             <Route
