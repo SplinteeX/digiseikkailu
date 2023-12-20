@@ -107,6 +107,13 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
       {activeTab === "Tehtävä" && (
         <>
           {Data.SoundCloud && <SoundCloud url={Data.SoundCloud} />}
+          {Data.SoundClouds && Array.isArray(Data.SoundClouds) && (
+            <>
+              {Data.SoundClouds.map((url, index) => (
+                <SoundCloud key={`soundcloud_${index}`} url={url} />
+              ))}
+            </>
+          )}
           <h3 className="White-text">
             {Data.tehtNum}. {Data.tehtName}
           </h3>
