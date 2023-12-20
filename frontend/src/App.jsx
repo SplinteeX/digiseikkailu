@@ -20,7 +20,6 @@ import { ApinmajaExercises } from "./components/pages/Exercises/ApinmajaExercise
 import { HasanStudioExercises } from "./components/pages/Exercises/HasanStudioExercises";
 import { TweetyExercises } from "./components/pages/Exercises/TweetyExercises";
 import { DogenBoxiExercises } from "./components/pages/Exercises/DogenBoxiExercises";
-import { KursorinUllakkoExercises } from "./components/pages/Exercises/KursorinUllakkoExercises";
 import "./App.css";
 
 function App() {
@@ -50,10 +49,6 @@ function App() {
               element={<TweetyExercises />}
             />
             <Route path="/dogenboxi/:index" element={<DogenBoxiExercises />} />
-            <Route
-              path="/kursorinullakko/:index"
-              element={<KursorinUllakkoExercises />}
-            />
             <Route
               path="/tuotteet/TVT-opetuksen-taitopaketti"
               element={<TvtOpetuksenTaitoPaketti />}

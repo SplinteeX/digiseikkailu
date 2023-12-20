@@ -35,7 +35,7 @@ export const HäsänStudioData = () => {
         "Turvallinen vuorovaikutus: Vältä kiusaamista ja negatiivista käyttäytymistä. Raportoi sopimattomasta sisällöstä ja käyttäytymisestä.",
         "Vastuullinen sisällöntuotanto: Julkaise vain sisältöä, joka kuvastaa sinua positiivisessa valossa. Ota huomioon muut ihmiset kuvissa ja videoissa.",
         "Lain ja sääntöjen noudattaminen: Kunnioita tekijänoikeuksia ja muuta lainsäädäntöä",
-        "Lainmukainen ikäraja: Muista, että useimpien sosiaalisen median palveluiden lainmukainen ikäraja on 13 vuotta ja käytöstäz§ tulee aina keskustella vanhempien kanssa.",
+        "Lainmukainen ikäraja: Muista, että useimpien sosiaalisen median palveluiden lainmukainen ikäraja on 13 vuotta ja käytöstä tulee aina keskustella vanhempien kanssa.",
       ],
     },
     /* 2 puuttuu kuva */

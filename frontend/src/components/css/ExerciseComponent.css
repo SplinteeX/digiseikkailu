@@ -166,6 +166,8 @@
   margin-bottom: 20px;
   width: 100%;
 }
+.Exercise .Pallolista li {
+}
 .Exercise .Unity {
   height: 100%;
   min-height: 600px;
@@ -234,14 +236,6 @@
     181deg,
     rgba(0, 117, 255, 0.27) 0.61%,
     rgba(250, 156, 15, 0.21) 56.45%
-  );
-}
-.kursorin-ullakko-style {
-  background: linear-gradient(
-    180deg,
-    rgba(182, 94, 22, 0.5) 0%,
-    rgba(177, 76, 56, 0.23) 57.91%,
-    rgba(175, 87, 67, 0) 117.03%
   );
 }
 @media screen and (max-width: 1000px) {
