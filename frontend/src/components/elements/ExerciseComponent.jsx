@@ -186,7 +186,13 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
           {Data.numeroListat && (
             <>
               {Data.numeroListat.map((lista, listaIndex) => (
-                <div className="Numerolista">
+                <div className="Numerolista" key={`numerolista_${listaIndex}`}>
+                  {Data.numeroListaTitlet &&
+                    listaIndex < Data.numeroListaTitlet.length && (
+                      <p key={`title_${listaIndex}`} className="title">
+                        {Data.numeroListaTitlet[listaIndex]}
+                      </p>
+                    )}
                   <ol key={`lista_${listaIndex}`}>
                     {lista.map((item, index) => (
                       <li key={`item_${index}`}>{item}</li>
@@ -196,6 +202,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ))}
             </>
           )}
+
           {Data.palloListat && (
             <>
               {Data.palloListat.map((lista, listaIndex) => (

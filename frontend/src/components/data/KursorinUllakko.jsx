@@ -3,6 +3,7 @@ export const KursorinUllakkoData = () => {
     {
       tehtNum: 1,
       tehtName: "Kursorin Ullakko",
+      Kategoria: "KursorinUllakko",
     },
     {
       tehtNum: 2,
