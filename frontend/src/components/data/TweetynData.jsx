@@ -29,6 +29,7 @@ export const TweetynData = () => {
       kysymys: [
         "Mikä on tärkeää muistaa kirjoittaessasi kommentteja sosiaaliseen mediaan?",
       ],
+      youtube: "lekkpIfJ-Ec",
       vaihtoehdot: [
         "a) Kirjoittaa mahdollisimman nopeasti",
         "b) Noudattaa netikettiä",
