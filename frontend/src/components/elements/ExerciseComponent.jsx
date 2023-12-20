@@ -178,7 +178,12 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
             Array.isArray(Data.Tekstit) &&
             Data.Tekstit.map((text, index) => (
               <div key={`text_${index}`} className="Text-div">
-                <p className="Text">{text}</p>
+                <p
+                  className="Text"
+                  dangerouslySetInnerHTML={{
+                    __html: text.replace(/\n/g, "<br>"),
+                  }}
+                />
               </div>
             ))}
           {Data.Teksti && <p className="Text">{Data.Teksti}</p>}

@@ -62,7 +62,7 @@ export const KursorinUllakkoData = () => {
       mp4Teksti:
         "Pysähdytään videon avulla pohtimaan yhdessä, milloin olisi hyvä laittaa puhelin pois ja keskittyä muihin asioihin.",
       Tekstit: [
-        "Tehtävä, jossa seurataan, miten paljon aikaa käytetään puhelimella tai tietokoneella viikon ajan. Tämä auttaa sinua ymmärtämään, mihin kaikkeen käytät digitaalisia laitteita ja kuinka kauan.",
+        "Tehtävä <br> <br> seurataan, miten paljon aikaa käytetään puhelimella tai tietokoneella viikon ajan. Tämä auttaa sinua ymmärtämään, mihin kaikkeen käytät digitaalisia laitteita ja kuinka kauan.",
         "Ruutuaika-tracker: Näin Seuraat Digitaalisen Median Käyttöäsi",
         "1. Kirjaa ylös sovellusten käyttö: Joka päivä, kirjoita ylös, kuinka monta kertaa käytät eri sovelluksia. Sovelluksia ovat esimerkiksi pelit, viestisovellukset tai YouTube.",
         "2. Kuinka kauan käytät sovellusta: Merkitse, kuinka kauan vietät aikaa kullakin sovelluksella. Voit katsoa kellosta, kun aloitat ja kun lopetat.",
@@ -79,6 +79,13 @@ export const KursorinUllakkoData = () => {
         "d) Koska aikuiset haluavat tietää",
       ],
       vastaus: "b) Koska se auttaa sinua hallitsemaan aikaasi paremmin",
+      textWithTitle: [
+        {
+          title:
+            "Ruutuaika-tracker: Näin Seuraat Digitaalisen Median Käyttöäsi",
+          text: "1. Kirjaa ylös sovellusten käyttö: Joka päivä, kirjoita ylös, kuinka monta kertaa käytät eri sovelluksia. Sovelluksia ovat esimerkiksi pelit, viestisovellukset tai YouTube.",
+        },
+      ],
     },
     {
       tehtNum: 5,
