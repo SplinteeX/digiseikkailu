@@ -199,12 +199,14 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </div>
             ))}
           {Data.Teksti && (
-            <p
-              className="Text"
-              dangerouslySetInnerHTML={{
-                __html: Data.Teksti.replace(/\n/g, "<br>"),
-              }}
-            />
+            <div className="Text-div">
+              <p
+                className="Text"
+                dangerouslySetInnerHTML={{
+                  __html: Data.Teksti.replace(/\n/g, "<br>"),
+                }}
+              />
+            </div>
           )}
           {Data.numeroLista && (
             <div className="Numerolista">

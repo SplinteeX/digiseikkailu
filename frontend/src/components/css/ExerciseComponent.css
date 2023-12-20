@@ -124,6 +124,15 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
 }
 .Exercise .Text {
   background-color: white;
@@ -262,8 +271,7 @@
 }
 @media screen and (max-width: 1000px) {
   .Exercise {
-    padding: 0px;
-    padding-top: 20px;
+    padding: 20px;
   }
   .Exercise .Unity-loader-div {
     display: none;
@@ -271,17 +279,25 @@
   .small-title {
     display: none;
   }
+  .Exercise .Text-div {
+    width: 95%;
+    padding: 2.5%;
+  }
+  .Exercise .Numerolista {
+    width: 95%;
+    padding: 2.5%;
+  }
 }
 @media screen and (max-width: 700px) {
   .Exercise {
-    padding: 0px;
-    padding-top: 20px;
+    padding: 20px;
   }
   .Exercise .Full-image {
     width: 90%;
   }
   .Exercise .Full-image-container {
-    width: 90%;
+    width: 95%;
+    padding: 2.5%;
   }
   .Exercise .TextImage {
     flex-direction: column;
@@ -298,29 +314,28 @@
     align-items: center;
   }
   .Exercise .text50s {
-    width: 90%;
     padding: 10px 0px;
-  }
-  .Exercise .Image-container {
-    width: 90%;
   }
   .Exercise .text50 {
     width: 100%;
   }
-  .Exercise .Text {
-    width: 90%;
-  }
   .Exercise .Text-50-container {
-    width: 90%;
+    width: 95%;
+    padding: 2.5%;
+  }
+  .Exercise .Image-container {
+    width: 95%;
+    padding: 2.5%;
+  }
+  .Exercise .Text {
+    padding: 0px;
   }
 }
 @media screen and (max-width: 600px) {
   .Exercise .White-text,
   .Text {
     font-size: 20px;
-    padding: 10px 0px;
   }
-
   .Exercise iframe {
     width: 100%;
     height: 100%;
@@ -335,21 +350,8 @@
     padding: 10px 5%;
     width: 90%;
   }
-  @media screen and (max-width: 500px) {
-    .Exercise .Full-image {
-      width: 100%;
-    }
-    .Exercise .Full-image-container {
-      width: 100%;
-    }
-    .Exercise .Image-container {
-      width: 95%;
-    }
-    .Exercise .text50 {
-      width: 95%;
-    }
-    .Exercise .text50s {
-      width: 95%;
-    }
+  .Exercise .Text-div {
+    width: 95%;
+    padding: 2.5%;
   }
 }
