@@ -24,7 +24,7 @@ export const ExerciseCard = ({ Data, Flipped, handleCardFlip }) => {
       )}
       {Flipped && (
         <div className="Card-back">
-          <p>Back of the card content</p>
+          <p>{Data.Back}</p>
         </div>
       )}
     </div>

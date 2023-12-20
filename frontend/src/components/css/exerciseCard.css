@@ -15,6 +15,22 @@
 .Exercise-card.is-flipped {
   transform: rotateY(180deg);
 }
+.Exercise-card .Card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.Exercise-card .Card-back p {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 .Exercise-card .Inner-section {
   height: 100%;
   background-color: white;
