@@ -132,7 +132,12 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
           </h3>
           {Data.puolTeksti && !Array.isArray(Data.puolTeksti) ? (
             <div className="TextImage">
-              <p className="text50">{Data.puolTeksti}</p>
+              <p
+                className="text50"
+                dangerouslySetInnerHTML={{
+                  __html: Data.puolTeksti.replace(/\n/g, "<br>"),
+                }}
+              />
               {Data.puolKuva && (
                 <div className="Image-container">
                   <img className="image50" src={Data.puolKuva} alt="Image" />
@@ -144,7 +149,14 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
             Array.isArray(Data.puolTekstit) &&
             Data.puolTekstit.map((text, index) => (
               <div key={`text_${index}`} className="TextImages">
-                <p className="text50s">{text}</p>
+                <div className="Text-50-container">
+                  <p
+                    className="text50s"
+                    dangerouslySetInnerHTML={{
+                      __html: text.replace(/\n/g, "<br>"),
+                    }}
+                  />
+                </div>
                 {Data.puolKuvat && Data.puolKuvat.length > index && (
                   <div className="Image-container">
                     <img
