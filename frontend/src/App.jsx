@@ -22,6 +22,7 @@ import { TweetyExercises } from "./components/pages/Exercises/TweetyExercises";
 import { DogenBoxiExercises } from "./components/pages/Exercises/DogenBoxiExercises";
 import { KursorinUllakkoExercises } from "./components/pages/Exercises/KursorinUllakkoExercises";
 import { SirynÄlytaloExercise } from "./components/pages/Exercises/SirynÄlytaloExercises";
+import { Exercises } from "./components/pages/Exercises";
 import "./App.css";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
               path="/tuotteet/TarinatTyokirja"
               element={<TarinatTyokirja />}
             />
+            <Route path="/tehtävät" element={<Exercises />} />
             <Route path="/apinmaja/:index" element={<ApinmajaExercises />} />
             <Route
               path="/häsänstudio/:index"

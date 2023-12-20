@@ -1,0 +1,65 @@
+.Exercise-cards {
+  padding: 0% 15%;
+}
+.Exercise-cards .Title {
+  color: #000;
+  font-family: Mulish;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 5px;
+}
+.Exercise-cards .Title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 3px;
+  background-color: grey;
+  border-radius: 10px;
+}
+.Exercise-cards .Tehtävä-Paketit {
+  display: flex;
+}
+.Exercise-cards .Tehtävä-Paketit .Kortit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.Exercise-cards .Tehtävä-Paketit .Kortit .Exercise-card {
+  width: calc(33.33% - 20px);
+}
+@media screen and (max-width: 1200px) {
+  .Exercise-cards {
+    padding: 0% 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Exercise-cards .Tehtävä-Paketit .Kortit .Exercise-card {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 750px) {
+  .Exercise-cards {
+    padding: 0% 7.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Exercise-cards .Tehtävä-Paketit .Kortit .Exercise-card {
+    width: 100%;
+  }
+  .Exercise-cards .Title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Exercise-cards {
+    padding: 0% 5%;
+  }
+}
