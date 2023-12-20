@@ -403,7 +403,6 @@ export const TweetynData = () => {
         "Kuinka hyvin tunnet somekaverisi? Tunteeko huoltajasi heidät? Keskustele ryhmäsi kanssa. Tehkää posteri, johon kokoatte ohjeet nettiahdistelun varalta. Viekää posterit koulun käytäville.",
         "Miltä ahdistelija voi näyttää? Keskustele/piirrä/kirjoita opettajan ja ryhmäsi kanssa. Huom! Ahdistelija voi olla tavallisen näköinen ihminen.",
       ],
-
       youtube: "4eLFiXYqq2c",
       numeroListat: [
         [

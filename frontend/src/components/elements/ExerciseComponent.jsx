@@ -107,29 +107,9 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
       {activeTab === "Tehtävä" && (
         <>
           {Data.SoundCloud && <SoundCloud url={Data.SoundCloud} />}
-          {Data.SoundClouds && Array.isArray(Data.SoundClouds) && (
-            <>
-              {Data.SoundClouds.map((url, index) => (
-                <SoundCloud key={`soundcloud_${index}`} url={url} />
-              ))}
-            </>
-          )}
           <h3 className="White-text">
             {Data.tehtNum}. {Data.tehtName}
           </h3>
-          {Data.mp4 && (
-            <div className="Video-container">
-              <p className="White-text">{Data.mp4Teksti}</p>
-              <video
-                className="Video"
-                src={Data.mp4}
-                width={"100%"}
-                controls
-                autoPlay
-                muted
-              ></video>
-            </div>
-          )}
           {Data.puolTeksti && !Array.isArray(Data.puolTeksti) ? (
             <div className="TextImage">
               <p className="text50">{Data.puolTeksti}</p>
@@ -206,7 +186,13 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
           {Data.numeroListat && (
             <>
               {Data.numeroListat.map((lista, listaIndex) => (
-                <div className="Numerolista">
+                <div className="Numerolista" key={`numerolista_${listaIndex}`}>
+                  {Data.numeroListaTitlet &&
+                    listaIndex < Data.numeroListaTitlet.length && (
+                      <p key={`title_${listaIndex}`} className="title">
+                        {Data.numeroListaTitlet[listaIndex]}
+                      </p>
+                    )}
                   <ol key={`lista_${listaIndex}`}>
                     {lista.map((item, index) => (
                       <li key={`item_${index}`}>{item}</li>
@@ -216,6 +202,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ))}
             </>
           )}
+
           {Data.palloListat && (
             <>
               {Data.palloListat.map((lista, listaIndex) => (
