@@ -367,7 +367,6 @@ export const TweetynData = () => {
     {
       tehtNum: "10",
       tehtName: "Epäilyttävä ehdotus",
-      title: ["Tarinassa käsitellään", "13. Epäilyttävä ehdotus"],
       Kategoria: "TweetynViestiseinä",
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/13-epaeilyttaevae-ehdotus",
@@ -405,16 +404,10 @@ export const TweetynData = () => {
         "Miltä ahdistelija voi näyttää? Keskustele/piirrä/kirjoita opettajan ja ryhmäsi kanssa. Huom! Ahdistelija voi olla tavallisen näköinen ihminen.",
       ],
 
-      smallTitle: [
-        "Nettituttu - tarkka juttu",
-        "Ketään ei saa ahdistella netissä!",
-        "Ahdistelu on valitettavan yleistä",
-        "Muista",
-        "Pohdittavaa",
-      ],
       youtube: "4eLFiXYqq2c",
       numeroListat: [
         [
+          "Ketään ei saa ahdistella netissä!",
           "Minkälaisia tunteita viestit herättävät, kun ne tulevat tutulta henkilöltä? Nimetkää kolme tunnetta.",
           "Entä jos viestit tulevat vieraalta henkilöltä? Nimetkää kolme tunnetta.",
           "Miten toimisit, jos sinulle tuntematon henkilö pyytäisi kuvia sinusta?",
@@ -431,6 +424,7 @@ export const TweetynData = () => {
           "Muista, että aikuinen syyllistyy rikokseen, jos hän pyytää lapselta tai nuorelta esim. vähäpukeisia kuvia, kirjoittaa tai puhuu sopimattomia.",
         ],
       ],
+      Kuva: "/src/assets/TweetyImages/tietokoneVärikäs2.webp",
     },
   ];
   return Tehtävät;
