@@ -64,10 +64,10 @@ export const KursorinUllakkoData = () => {
       Tekstit: [
         "Tehtävä <br> <br> seurataan, miten paljon aikaa käytetään puhelimella tai tietokoneella viikon ajan. Tämä auttaa sinua ymmärtämään, mihin kaikkeen käytät digitaalisia laitteita ja kuinka kauan.",
         "Ruutuaika-tracker: Näin Seuraat Digitaalisen Median Käyttöäsi",
-        "1. Kirjaa ylös sovellusten käyttö: Joka päivä, kirjoita ylös, kuinka monta kertaa käytät eri sovelluksia. Sovelluksia ovat esimerkiksi pelit, viestisovellukset tai YouTube.",
-        "2. Kuinka kauan käytät sovellusta: Merkitse, kuinka kauan vietät aikaa kullakin sovelluksella. Voit katsoa kellosta, kun aloitat ja kun lopetat.",
-        "3. Mihin tarkoitukseen käytät sovelluksia: Kirjoita ylös, mihin käytät eri sovelluksia. Esimerkiksi: pelaatko pelejä, etsitkö tietoa, jutteletko kavereiden kanssa tai katsotko videoita.",
-        "4. Kirjoita tiedot johonkin: oit kirjoittaa nämä tiedot vihkoon, tietokoneelle tai käyttää erityistä sovellusta, joka auttaa seuraamaan ruutuaikaa.",
+        "1. Kirjaa ylös sovellusten käyttö <br> <br> Joka päivä, kirjoita ylös, kuinka monta kertaa käytät eri sovelluksia. Sovelluksia ovat esimerkiksi pelit, viestisovellukset tai YouTube.",
+        "2. Kuinka kauan käytät sovellusta <br> <br> Merkitse kuinka kauan vietät aikaa kullakin sovelluksella. Voit katsoa kellosta, kun aloitat ja kun lopetat.",
+        "3. Mihin tarkoitukseen käytät sovelluksia <br> <br> Kirjoita ylös, mihin käytät eri sovelluksia. Esimerkiksi: pelaatko pelejä, etsitkö tietoa, jutteletko kavereiden kanssa tai katsotko videoita.",
+        "4. Kirjoita tiedot johonkin <br> <br> oit kirjoittaa nämä tiedot vihkoon, tietokoneelle tai käyttää erityistä sovellusta, joka auttaa seuraamaan ruutuaikaa.",
         "Tämä tehtävä auttaa sinua näkemään, paljonko aikaa käytät digitaalisiin laitteisiin ja mitä kaikkea teet niillä. Se auttaa sinua päättämään, haluatko käyttää niitä vähemmän tai eri tavalla. Muista, että on tärkeää pitää aikaa myös muille hauskoille jutuille, kuten ulkoilulle, lukemiselle tai leikkimiselle!",
       ],
       kysymys:
