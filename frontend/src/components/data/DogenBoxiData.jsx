@@ -135,6 +135,157 @@ export const DogenBoxiData = () => {
       vastaus: "B) Tarkoituksellisesti harhaanjohtavaa tietoa"
 
     },
+    {
+      tehtNum: "6",
+      tehtName: "Trollipostia Supersovellukselle",
+      Kategoria: "DogenBoxi",
+      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/16-trollipostia?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/16-troill-mail-for-the-super?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      puolTeksti: "Tarinassa käsitellään: tutustutaan trollaamisen käsitteeseen, saadaan ohjeita, kuinka trollauksen voi pysäyttää omalta kohdaltaan, vahvistetaan nettikiusaamisen tunnistamisen taitoja sekä muistutetaan yhteisöllisestä ja rakentavasta viestinnästä mediassa.",
+      puolKuva: "/src/assets/DogeImages/trollipostia.png",
+      /* tarina homma */
+    },
+    {
+      tehtNum: "7",
+      tehtName: "Trolli, provo ja fleimaus",
+      Kategoria: "DogenBoxi",
+      Kuvat: [
+        "/src/assets/DogeImages/trollinpoyta.webp",
+        "/src/assets/DogeImages/noitapata.webp",
+      ],
+      Tekstit: [
+        "Trolli on internet-slangisana, jolla tarkoitetaan viestiä tai henkilöä, jonka tarkoitus on ärsyttää ihmisiä, aiheuttaa ristiriitoja, lisätä turhien viestien kirjoittamista ja saada vastaukseksi fleimejä.",
+        "Fleimit taas ovat kiihkeitä tai muuten tunteellisia vastauksia tai ennalta-arvattavia viestejä.",
+        "Trollaaja voi myös haluta tuoda esiin kirjoittajan puutteet käsiteltävänä olevan asian tuntemuksessa.",
+        "Samaa tarkoittava suomenkielisillä palstoilla syntynyt sana on provo, sanasta provokaatio, jolloin halutaan kyseenalaistavalla tai ilkeilevällä kommentilla suututtaa muut kirjoittajat.",
+        "Trollin myrkkypadassa kuplii…",
+        "Ärsytys",
+        "Riidat",
+        "Turhat kommentit",
+        "“Provot”",
+        "“Fleimit”",
+      ],
+      kysymys: "Mitä tarkoittaa “trollaaminen” internetissä?",
+      vaihtoehdot: [
+        "A) Auttamaan muita ihmisiä",
+        "B) Jakamaan hyödyllistä tietoa",
+        "C) Aiheuttamaan ärsytystä ja ristiriitoja",
+        "D) Keskustelemaan asiallisesti",
+      ],
+      vastaus: "C) Aiheuttamaan ärsytystä ja ristiriitoja"
+    },
+    {
+      tehtNum: "8",
+      tehtName: "Rakennetaan oma uutisstudio",
+      Kategoria: "DogenBoxi",
+      Kuvat: [
+        "/src/assets/DogeImages/uutis.webp",
+        "/src/assets/DogeImages/uutislähetys.webp",
+      ],
+      numeroListat: [[
+        "Ryhmä kokoaa yhdessä kaksi oikeaa uutista ajankohtaisista asioista, omaa koulua tai kaupunkia koskevista aiheista sekä yhden uutisen ajankohtaisista urheiluun liittyvistä aiheista.",
+        "Uutiset kirjoitetaan paperille tai tablettilaitteelle.",
+        "Urheilutoimittaja kertoo urheilu-uutisen.",
+        "Meteorologin kanssa sovitaan millaista säätä hän ennustaa. Meteorologille tehdään A2 kokoinen Suomen kartta taustalle.",
+        "Kuvataan ja editoidaan yhdessä uutispätkät.",],
+        ["Uutistenlukija 1",
+        "Uutistenlukija 2",
+        "Urheilutoimittaja",
+        "Meteorologi",]
+      ],
+      smallTitle: "Omat uutiset",
+      palloLista: [
+        "Studion voi toteuttaa myös Green Screen -tekniikalla.",
+        "Valkoinen lakana uutistenlukijoiden takana toimii hyvin.",
+        "Miettikää mistä saatte riittävän kuvausvalaistuksen.",
+        "Meteorologille ripustetaan sääkartta kiinni lakanaan esim. nuppineuloilla.",
+        "Tablettilaite kiinnitetään tasaiselle pinnalle tai telineeseen.",
+        "Kuvataan uutispätkät.",
+        "Editoidaan yhdessä.",
+      ],
+      kysymys: "Mitä tarkoituksia varten oma uutisstudio rakennetaan?",
+      vaihtoehdot: [
+        "A) Pelkästään viihteen tuottamiseksi",
+        "B) Uutisten lukemisen ja videoiden tekemisen harjoittelemiseksi",
+        "C) Ainoastaan kuvaustekniikan opetteluun",
+        "D) Musiikkivideoiden tekemiseen",
+      ],
+      vastaus: "B) Uutisten lukemisen ja videoiden tekemisen harjoittelemiseksi"
+    },
+    {
+      tehtNum: "9",
+      tehtName: "Päivä oikeassa uutistoimituksessa",
+      Kategoria: "DogenBoxi",
+      /* lista listan sisällä */
+    },
+    {
+      tehtNum: "10",
+      tehtName: "Herätetään uutiskuva henkiin",
+      Kategoria: "DogenBoxi",
+    },
+    {
+      tehtNum: "14",
+      tehtName: "Harjoitellaan kuvanlukua",
+      Kategoria: "DogenBoxi",
+      Kuva: "/src/assets/DogeImages/Luokkahuone.webp",
+      Tekstit: [
+        "Tämä kuva esittää eloisaa ja opettavaista tilannetta, jossa lapset aktiivisesti osallistuvat kuvien analysointiin. Lapset istuvat pöydän ympärillä ja keskustelevat monenlaisista valokuvista ja maalauksista, jotka on levitetty heidän eteensä. He osoittavat kuvia, keskustelevat niiden merkityksistä ja symboleista, ja jotkut lapset kirjoittavat muistiinpanoja. Toiset taas näyttävät tarkkailevan kuvia mietteliäästi. Luokkahuone on kirkas ja eläväinen, seinillä on julisteita visuaalisesta lukutaidosta ja kuvien ymmärtämisestä. Kuva on tyyliltään sarjakuvamainen, mukaansatempaava ja sopii nuorelle yleisölle.",
+        "Tämä kuva korostaa lasten keskinäistä yhteistyötä ja kommunikaatiota, heidän osallistumistaan ja aktiivista oppimista. Se myös heijastaa kouluympäristön tärkeää roolia visuaalisen lukutaidon ja kriittisen ajattelun kehittämisessä.",
+        "Valitse toinen kuva jota tutkit tarkasti.",
+        "Vastaa kysymyksiin kuvastasi.",
+      ],
+      numeroLista: [
+        "Mitä näet kuvassa?",
+        "Mitä asioita on laitettu lähelle kuvassa, mitä kauas?",
+        "Mikä näyttää kirkkaalta ja mikä haalealta?",
+        "Mitä värit viestittävät?",
+        "Onko kuvassa numeroita?",
+        "Onko kuvassa symboleita?",
+        "Onko kuva taidekuva, mainos, opaste…?",
+        "Kenelle kuva on tarkoitettu?",
+        "Kuka kuvan on tehnyt?",
+        "Miksi kuva on tehty?",
+      ],
+      kysymys: "Miksi kuvien tulkinta on tärkeää?",
+      vaihtoehdot: [
+        "A) Kehittää valokuvaustaitoja",
+        "B) Auttaa ymmärtämään kuvien viestintää",
+        "C) Parantaa piirtämisen taitoja",
+        "D) Vain taiteellisista syistä",
+      ],
+      vastaus: "B) Auttaa ymmärtämään kuvien viestintää"
+    },
+    {
+      tehtNum: "19",
+      tehtName: "Mitä ihmettä tekee valkohattuhakkeri",
+      Kategoria: "DogenBoxi",
+      Kuva: "/src/assets/DogeImages/valkohattuhakkeri.webp",
+      Tekstit: [
+        "Valkohattuhakkerit ovat todellakin kyberturvallisuuden ammattilaisia, joiden työ on ehdottoman tärkeää nykypäivän digitaalisessa maailmassa. Heidän tehtävänsä on auttaa suojelemaan tietoja ja järjestelmiä mahdollisilta kyberuhkilta. Katsotaanpa tarkemmin, mitä he tekevät:",
+        "Valkohattuhakkerit",
+      ],
+      palloLista: [
+        "Työnkuva: Valkohattuhakkerit, joita joskus kutsutaan eettisiksi hakkeriksi, työskentelevät löytääkseen ja korjatakseen heikkouksia tietokonejärjestelmissä ja verkoissa. He tekevät tämän ennen kuin rikolliset hakkerit (mustahattuhakkerit) ehtivät käyttää näitä heikkouksia hyväkseen.",
+        "Työpaikat: Monet heistä työskentelevät suurissa yrityksissä, tietoturvayrityksissä tai hallituksen organisaatioissa. Heidän tehtävänsä on varmistaa, että näiden organisaatioiden tietojärjestelmät ovat turvallisia ja suojattuja.",
+        "Tärkeät tehtävät: Heidän työhönsä kuuluu haavoittuvuuksien etsiminen, testaaminen ja niiden korjaaminen. He saattavat tehdä tietoturvatestauksia, kuten tunkeutumistestejä, joiden avulla he selvittävät, kuinka hyvin järjestelmä kestää ulkopuolisia hyökkäyksiä.",
+        "Tietoturvatuotteiden kehitys: Valkohattuhakkerit myös kehittävät uusia tietoturvatuotteita ja -menetelmiä, jotka auttavat yrityksiä ja yksityishenkilöitä suojelemaan tärkeitä tietojaan.",
+        "Eettinen toiminta: Toisin kuin mustahattuhakkerit, valkohattuhakkerit toimivat eettisesti ja laillisesti. Heillä on lupa etsiä ja korjata järjestelmien haavoittuvuuksia, ja he tekevät työtään suojellakseen ihmisiä ja organisaatioita kyberuhkilta.",
+      ],
+      Teksti: "Valkohattuhakkerit ovat siis kuin digitaalisen maailman “hyviä ritareita”, jotka käyttävät tietotaitoaan meidän kaikkien turvallisuuden parantamiseen. Heidän työnsä on jatkuvaa ja vaatii paljon tietoa ja taitoa, mutta se on erittäin tärkeää kaikkien verkkoympäristössä toimivien turvallisuuden kannalta.",
+      kysymys: "Mikä on valkohattuhakkerin päätehtävä?",
+      vaihtoehdot: [
+        "A) Luoda viruksia ja haittaohjelmia",
+        "B) Varkaissa tietokonejärjestelmissä",
+        "C) Etsiä ja korjata tietoturva-aukkoja",
+        "D) Mainostaa tietoturvatuotteita",
+      ],
+      vastaus: "C) Etsiä ja korjata tietoturva-aukkoja"
+    },
+    {
+      tehtNum: "20",
+      tehtName: "Kuvahaun käyttö huijauksen selvityksessä",
+      Kategoria: "DogenBoxi",
+    },
   ];
 
   return Tehtävät;
