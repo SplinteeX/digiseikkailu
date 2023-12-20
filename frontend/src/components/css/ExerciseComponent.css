@@ -253,6 +253,13 @@
     rgba(175, 87, 67, 0) 117.03%
   );
 }
+.siryn-alytalo-style {
+  background: linear-gradient(
+    180deg,
+    rgba(87, 58, 100, 0.5) 0%,
+    rgba(87, 58, 100, 0.25) 100%
+  );
+}
 @media screen and (max-width: 1000px) {
   .Exercise {
     padding: 0px;
