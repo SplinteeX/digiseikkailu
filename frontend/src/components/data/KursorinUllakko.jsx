@@ -96,12 +96,12 @@ export const KursorinUllakkoData = () => {
       Tekstit: [
         "Someriippuvuudella voidaan tarkoittaa sitä, että ihminen viettää aikaa somessa niin paljon, että toiminta muuttuu yksilölle ja ympäristölle haitalliseksi, esim. aiheuttaa kolareita liikenteessä tai saa ihmisen ahdistumaan median sisällöistä Some tulee sanasta sosiaalinen media ja usein sosiaalisesta mediasta puhuttaessa keskitytään yhteisöpalveluihin kuten Facebookiin, Instagramiin, Snapchattiin tai muihin paljon käytettyihin sovelluksiin Someriippuvuudeksi voidaan lukea, että yksilö tekee päivityksiä jatkuvasti eikä pysty olemaan päivittämättä. Toinen someriippuvuuden muoto on se, että selailee somea kykenemättä lopettamaan. Somessa voi tehdä monenlaisia asioita, jotka voivat olla aktivoivia kuten juuri päivitysten tekeminen, tai passiivisempia kuten toisten toiminnan seuraaminen.”",
         "Miten lievittää someriippuvuutta?",
-        "1. Säädä piippaavat hälytykset ja bannerit pois: Säädä puhelimesi niin, ettei siihen tule piippaavia ilmoituksia vaikkapa iltakahdeksan jälkeen. Sinun on saatava lepohetkiä sosiaalisesta mediasta. On normaalia olla välillä myös offline.",
-        "2. Kirjaa ylös viettämäsi tunnit somessa: Kirjaa ylös siellä viettämäsi tunnit. Siitä näet, kuinka isosta ongelmasta on kyse. Neljä tuntia somea päivässä on jo paljon, kaksi tuntia päivässä ei ehkä ihan niin paha.",
-        "3. Pidä taukoa – siirrä esim. aplikaatiot pois puhelimen etusivulta: Kokeile “somepaastoa” siirtämällä eniten aikaavievät aplikaatiot pois puhelimen aloitussivulta.",
-        "4. Tiedosta harha “paitsijäämisen pelko” jonka some monelle aiheuttaa: Jo kahdenkymmenen somessa vietetyn minuutin jälkeen ihmisille tulee tunne, etteivät he ole tehneet riittävästi, että he ovat jääneet paitsi jostain tai että he ovat huonompia kuin muut. Keskeisenä tunteena on se, että jää jostain paitsi. Tulee paniikki, että mitä minulta jää kuulematta, näkemättä tai lukematta. Näin ei kuitenkaan ole, sillä some saa ihmisen luulemaan, että hänen pitäisi tehdä yhtä paljon ja hauskoja asioita kuin kaikki seurattavat yhteensä.",
-        "5. Sovi itsesi kanssa ajat jolloin saat käyttää somea: Vähentämisen voi aloittaa vaikka niin, että määrittelee itselleen tiettyjä aikoja tai tilanteita, joissa ei käytä somea ollenkaan. Tietyn kellonajan jälkeen ei anneta itsensä avata enää sosiaalista mediaa.",
-        "6. Suhtaudu kriittisesti ja pohdi toiminnan vaikutuksia itseesi: Some on yhä niin uusi ja jännittävä osa elämäämme, ettei sen ongelmallisuuteen ole vielä herätty. Siksi someriippuvuudet ja -ongelmatkin ovat meillä vielä uusia. Myös tupakointia hehkutettiin aikanaan ja pidettiin hienona juttuna. Kukaan ei ajatellut sen vaaroja.",
+        "1. Säädä piippaavat hälytykset ja bannerit pois.<br><br> Säädä puhelimesi niin, ettei siihen tule piippaavia ilmoituksia vaikkapa iltakahdeksan jälkeen. Sinun on saatava lepohetkiä sosiaalisesta mediasta. On normaalia olla välillä myös offline.",
+        "2. Kirjaa ylös viettämäsi tunnit somessa.<br><br> Kirjaa ylös siellä viettämäsi tunnit. Siitä näet, kuinka isosta ongelmasta on kyse. Neljä tuntia somea päivässä on jo paljon, kaksi tuntia päivässä ei ehkä ihan niin paha.",
+        "3. Pidä taukoa.<br><br> Siirrä esim. aplikaatiot pois puhelimen etusivulta: Kokeile “somepaastoa” siirtämällä eniten aikaavievät aplikaatiot pois puhelimen aloitussivulta.",
+        "4. Tiedosta harha “paitsijäämisen pelko” jonka some monelle aiheuttaa.<br><br> Jo kahdenkymmenen somessa vietetyn minuutin jälkeen ihmisille tulee tunne, etteivät he ole tehneet riittävästi, että he ovat jääneet paitsi jostain tai että he ovat huonompia kuin muut. Keskeisenä tunteena on se, että jää jostain paitsi. Tulee paniikki, että mitä minulta jää kuulematta, näkemättä tai lukematta. Näin ei kuitenkaan ole, sillä some saa ihmisen luulemaan, että hänen pitäisi tehdä yhtä paljon ja hauskoja asioita kuin kaikki seurattavat yhteensä.",
+        "5. Sovi itsesi kanssa ajat jolloin saat käyttää somea.<br><br> Vähentämisen voi aloittaa vaikka niin, että määrittelee itselleen tiettyjä aikoja tai tilanteita, joissa ei käytä somea ollenkaan. Tietyn kellonajan jälkeen ei anneta itsensä avata enää sosiaalista mediaa.",
+        "6. Suhtaudu kriittisesti ja pohdi toiminnan vaikutuksia itseesi.<br><br> Some on yhä niin uusi ja jännittävä osa elämäämme, ettei sen ongelmallisuuteen ole vielä herätty. Siksi someriippuvuudet ja -ongelmatkin ovat meillä vielä uusia. Myös tupakointia hehkutettiin aikanaan ja pidettiin hienona juttuna. Kukaan ei ajatellut sen vaaroja.",
       ],
       kysymys: "Miksi on tärkeää rajoittaa sosiaalisen median käyttöä?",
       vaihtoehdot: [
@@ -114,7 +114,9 @@ export const KursorinUllakkoData = () => {
     },
     {
       tehtNum: 6,
-      tehtName: "Kursorin Ullakko",
+      tehtName: "Kahden päivän haaste",
+      Kategoria: "KursorinUllakko",
+      puolKuva: "/src/assets/KursorinImages/KahdenPäivänHaaste.webp",
     },
     {
       tehtNum: 7,
