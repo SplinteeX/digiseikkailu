@@ -25,6 +25,7 @@ import { SirynÄlytaloExercise } from "./components/pages/Exercises/SirynÄlytal
 import { Exercises } from "./components/pages/Exercises";
 import { ApinmajaMap } from "./components/pages/Maps/ApinmajaMap";
 import { DogenboxiMap } from "./components/pages/Maps/DogenboxiMap";
+import { LaamanExercises } from "./components/pages/Exercises/LaamanExercises";
 import "./App.css";
 
 function App() {
@@ -68,6 +69,10 @@ function App() {
             <Route
               path="/tehtävät/sirynalytalo/:index"
               element={<SirynÄlytaloExercise />}
+            />
+            <Route
+              path="/tehtävät/laamanaitaus/:index"
+              element={<LaamanExercises />}
             />
             <Route
               path="/tehtävät/tuotteet/TVT-opetuksen-taitopaketti"
