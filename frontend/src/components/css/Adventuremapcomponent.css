@@ -1,11 +1,11 @@
 .Adventure-map .Map-section {
   position: relative;
-  max-width: 100%; /* Ensure the map doesn't overflow its container */
+  max-width: 100%;
 }
 
 .Adventure-map .Map-section .map-image {
-  width: 100%; /* Ensure the map image fills its container */
-  height: 100vh; /* Maintain aspect ratio */
+  width: 100%;
+  height: 100vh;
 }
 .Adventure-map .Map-section h3 {
   position: absolute;
@@ -13,13 +13,13 @@
   font-weight: 800;
   text-align: center;
   font-size: 40px;
-  color: white; /* Set the text color */
+  color: white;
   font-family: mulish;
 }
 
 .Adventure-map .Map-section .ball {
   position: absolute;
-  width: 40px; /* Set a responsive width based on the viewport width */
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   display: flex;
@@ -37,9 +37,9 @@
 }
 .Adventure-map .Map-section .ball img {
   position: absolute;
-  left: -18px;
-  width: 85px;
-  height: 85px;
+  left: -9px;
+  width: 65px;
+  height: 65px;
 }
 .Adventure-map .Map-section .ball:hover {
   cursor: pointer;
