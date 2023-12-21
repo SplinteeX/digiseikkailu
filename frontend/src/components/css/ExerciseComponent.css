@@ -145,6 +145,9 @@
   width: 100%;
   margin: 20px 0px;
 }
+.Exercise a {
+  text-decoration: none;
+}
 .Exercise .Kysymys-vaihtoehdot {
   width: 100%;
 }
