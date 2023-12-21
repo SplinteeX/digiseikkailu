@@ -24,6 +24,7 @@ import { KursorinUllakkoExercises } from "./components/pages/Exercises/KursorinU
 import { SirynÄlytaloExercise } from "./components/pages/Exercises/SirynÄlytaloExercises";
 import { Exercises } from "./components/pages/Exercises";
 import { ApinmajaMap } from "./components/pages/Maps/ApinmajaMap";
+import { DogenboxiMap } from "./components/pages/Maps/DogenboxiMap";
 import "./App.css";
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
               element={<TvtOpetuksenTaitoPaketti />}
             />
             <Route path="/kartat/apinmaja" element={<ApinmajaMap />} />
+            <Route path="/kartat/dogenboxi" element={<DogenboxiMap />} />
             <Route
               path="/kirjaudu"
               element={!user ? <Login /> : <Navigate to="/profile" />}

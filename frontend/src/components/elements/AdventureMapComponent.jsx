@@ -24,7 +24,7 @@ export const AdventureMapComponent = ({ Data, url }) => {
   return (
     <div className="Adventure-map">
       <div className="Map-section">
-        <h3>Apinmaja</h3>
+        <h3>{Data.Title}</h3>
         <img src={Data.Image} alt="" className="map-image" />
         <div className="balls">
           {Data.Balls.map((ball, index) => (
@@ -36,10 +36,30 @@ export const AdventureMapComponent = ({ Data, url }) => {
                 }}
                 className="ball"
               >
-                <img
-                  src={"/src/assets/Napit/peli.png"}
-                  alt={`Ball ${ball.number}`}
-                />
+                {ball.Kategoria === "Peli" && (
+                  <img
+                    src={"/src/assets/Napit/peli.png"}
+                    alt={`Ball ${ball.number}`}
+                  />
+                )}
+                {ball.Kategoria === "Tehtävä" && (
+                  <img
+                    src={"/src/assets/Napit/Tehtävä.png"}
+                    alt={`Ball ${ball.number}`}
+                  />
+                )}
+                {ball.Kategoria === "Tietoteksti" && (
+                  <img
+                    src={"/src/assets/Napit/Lukea.png"}
+                    alt={`Ball ${ball.number}`}
+                  />
+                )}
+                {ball.Kategoria === "Video" && (
+                  <img
+                    src={"/src/assets/Napit/Video.png"}
+                    alt={`Ball ${ball.number}`}
+                  />
+                )}
                 <p>{ball.number}.</p>
               </div>
             </Link>
