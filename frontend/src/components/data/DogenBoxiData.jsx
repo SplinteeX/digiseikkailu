@@ -216,12 +216,88 @@ export const DogenBoxiData = () => {
       tehtNum: "9",
       tehtName: "Päivä oikeassa uutistoimituksessa",
       Kategoria: "DogenBoxi",
-      /* lista listan sisällä */
     },
     {
       tehtNum: "10",
       tehtName: "Herätetään uutiskuva henkiin",
       Kategoria: "DogenBoxi",
+      Kuvat: [
+        "/src/assets/DogeImages/uutiskuvaeloon.webp",
+        "/src/assets/DogeImages/sarjakuvakuva.webp",
+      ],
+      Tekstit: [
+        "Etsikää luokkaanne kiinnostavia uutisia jostakin verkkolehdestä (esimerkiksi Lasten uutiset). Aloittakaa tutkimalla uutisen kuvaa.",
+        "Käyttäkää ennakoivaa lukutapaa:<br><br> - mitä uutisesta voi päätellä kuvan perusteella?",
+        "Kuvaa käsitellään seuraavaksi kolmella tavalla:<br><br> - äänimaailmana,<br><br> - sarjakuvana ja<br><br>- digitarinana.",
+        "Palauttakaa mielestänne onnistunein versio opettajalle",
+        "Äänimaailma<br><br>- Luokaa kuvalle äänimaailma. Millaisia ääniä kuuluu kuvasta? Tuottakaa ja nauhoittakaa äänimaailma puhelimella tai tabletilla.",
+        "Sarjakuva<br><br>- Tehkää sarjakuva uutiskuvan tilanteesta. Mitä tapahtui juuri ennen kuvan ottohetkeä? Mitä tapahtuu seuraavaksi?",
+        "Digitarina<br><br>- Tehkää digitarina kuvan tilanteesta. Voitte toteuttaa tarinan joko näyttelemällä tai piirtämällä ja äänittämällä. Hyviä sovelluksia digitarinan tekemiseen ovat mm. iMovie, Quik tai Spark video.",
+        "Lopuksi voitte lukea alkuperäisen uutisen ja keskustella sen ja oman tulkintanne suhteesta.",
+      ],
+      Teksti: "Tee sarjakuva digitaalisena esimerkiksi osoitteessa.",
+      buttonLink: "https://sarjiskone.fi/",
+      buttonText: "www.sarjiskone.fi",
+      kysymys: "Mitä “ennakoiva lukutapa” tarkoittaa tässä tehtävässä?",
+      vaihtoehdot: [
+        "A) Lukemista ilman kuvien huomioimista",
+        "B) Arvaamista, mitä uutisessa kerrotaan vain kuvan perusteella",
+        "C) Kuvan ohittamista ja suoraan tekstin lukemista",
+        "D) Kuvan tarkkaa analysointia teknisestä näkökulmasta",
+      ],
+      vastaus: "B) Arvaamista, mitä uutisessa kerrotaan vain kuvan perusteella",
+    },
+    {
+      tehtNum: "11",
+      tehtName: "Meemi",
+      Kategoria: "DogenBoxi",
+      Kuvat: [
+        "/src/assets/DogeImages/meemi1.webp",
+        "/src/assets/DogeImages/meemi2.webp",
+        "/src/assets/DogeImages/meemi3.webp",
+      ],
+      Tekstit: [
+        "Meemi on internetilmiö<br><br>- Meemi voi olla joko kuva jossa on siihen sopivia hauskoja tekstejä, kotivideo, pieni animaationpätkä (GIF)..<br><br>- Meemi viittaa johonkin internetissä leviävään asiaan, joka saavuttaa suuren suosion ja leviää nopeasti verkossa<br><br>- Jotkut ilmiöistä ovat lyhytikäisiä, toiset pysyvät suosiossa vuosikausia<br><br>- Vähäpätöisiltä vaikuttavat asiat, kuten kotitekoiset videoleikkeet, ovat voineet nousta internetissä hyvin suosituiksi<br><br>- Internetilmiöt ovat usein ihmisiä, kuvankäsittelyohjelmilla tehtyjä kuvia, flash-animaatioita tai musiikkivideoita<br><br>- Periaatteessa kuitenkin mikä tahansa asia voi nousta suosituksi internetilmiöksi",
+        "Muista tekijänoikeudet!<br><br>Meemikuvien levittäjä voi syyllistyä tekijänoikeusrikkomukseen, jos alkuperäisen kuvan tekijä ei ole antanut lupaa kuvan levittämiseen.",
+        "Tee parin kanssa omia koulumeemejä tabletilla tai puhelimella ottamalla kuvia ja lisäämällä niihin tekstiä esim. sivustolla www.kapwing.com/studio/editor",
+        "Meemin aiheena voi olla esim.<br><br>- kouluaineet (“kun ope sanoi että piirrä suorakulmio”)<br><br>- välituntialueen kiipeilytelineet (“kun jäät päästä kiinni apinaverkkoon”)<br><br>- pukeutuminen (“kun nilkkasukat meni muodista”)<br><br>- erilaisuus (“kun kaikilla muilla on lippis”)<br><br>- koulun säännöt (“kun yrität syödä purkkaa huomaamattomasti”)<br><br>- ihmissuhteet (“kun oisit halunnu eri ryhmään”)<br><br>- koulutyö (“kun ope kysyy ootko tehny läksyt”)<br><br>- loman odotus (“kun toivot että loma alkaisi jo”)<br><br>- kouluruoka (“kun luulin sitä perunaksi koulun ruokalasta”)",
+        "Meemissä yhdistyy yleensä jollain tavalla huvittava kuva ja siihen liittyvä teksti.<br><br>Usein teksti on syntynyt siten, että jokin kuvassa oleva asia on saanut katsojan hoksaamaan vitsin aiheen."
+      ],
+      kysymys: "Mikä on meemi?",
+      vaihtoehdot: [
+        "A) Virallinen dokumentti",
+        "B) Huumoripitoinen kuva tai video, joka leviää nopeasti netissä",
+        "C) Henkilökohtainen viesti",
+        "D) Virallinen uutisartikkeli",
+      ],
+      vastaus: "B) Huumoripitoinen kuva tai video, joka leviää nopeasti netissä",
+
+    },
+    {
+      tehtNum: "12",
+      tehtName: "Varjot Trollitehtaassa",
+      Kategoria: "DogenBoxi",
+      Kuva: "/src/assets/DogeImages/trollitehdas.webp",
+      Tekstit: [
+        "Kaukana digitaalisen maailman syrjäisessä kolkassa sijaitsi paikka nimeltään Trollitehdas. Tämä paikka ei ollut iloinen tai värikäs; se oli täynnä varjoja ja salaisuuksia.<br><br>Tehdasta johti Päätrolli, vakava hahmo, jolla oli suuret silmälasit ja joka piti aina tiukasti kiinni säännöistä. “Meidän työmme on tärkeää,” hän sanoi. “Meidän on luotava tarinoita, jotka saavat ihmiset miettimään ja kyseenalaistama<br><br>Trollitehtaassa oli erilaisia osastoja. Yhdessä osastossa kirjoitettiin valeuutisia. Nämä eivät olleet hassuja tai kevyitä tarinoita; ne olivat vakavia ja usein harhaanjohtavia. “On tärkeää, että ihmiset uskovat meitä,” sanoi yksi kirjoittaja. “Se antaa meille valtaa ja vaikutusvaltaa.”<br><br>Toisessa osastossa oli kommenttien kirjoittajia, jotka levittivät epävarmuutta ja pelkoa. Heidän tarkoituksensa oli saada ihmiset riitelemään ja epäilemään toisiaan. “Kun ihmiset eivät luota toisiinsa, he ovat heikompia,” he sanoivat.<br><br>Kolmannessa osastossa oli kuvahuijausten tekijöitä. Heidän työnsä oli luoda kuvia, jotka näyttivät todellisilta, mutta jotka olivat täysin keksittyjä. “Meidän kuvamme saavat ihmiset kyseenalaistamaan, mikä on totta ja mikä ei,” he selittivät.<br><br>Eräänä päivänä yksi nuori trolli, nimeltään Miina, alkoi kyseenalaistaa tehtaan toimintaa. “Miksi meidän täytyy levittää näitä valheita?” hän kysyi Päätrollilta. “Eikö totuus ole tärkeämpää?”<br><br>Päätrolli katsoi Miinaa pitkään ja vakavasti. “Meidän työmme on vaikuttaa ihmisten ajatteluun,” hän sanoi. “Mutta sinun kysymyksesi on tärkeä. Meidän on aina muistettava vastuumme ja seuraukset siitä, mitä levitämme maailmaan.”<br><br>Miinan kysymykset saivat muutkin trollit miettimään. He alkoivat ymmärtää, että heidän tekonsa vaikuttivat ihmisten elämään, ja että valheilla oli seurauksensa. Vähitellen Trollitehdas muuttui: se ei enää keskittynyt valeuutisiin, vaan alkoi tuottaa tarinoita, jotka auttoivat ihmisiä ymmärtämään maailmaa paremmin.<br><br>Ja niin Trollitehdas muuttui paikasta, joka levitti varjoja ja epävarmuutta, paikaksi, joka kertoi totuutta ja iloa.",
+        "Etsi syyt trollitehtaan toimintaan<br><br>Tutustu allaolevaan tekstiin trollien toiminnasta.<br><br>Raahaa trollien syyt tehdä valeuutisia roskakoriin.<br><br>Raahaa oikeiden uutisten syyt Dogen suurennuslasiin.",
+      ],
+      Unity: "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=6",
+      kysymys: "Miksi trollit tuottavat valeuutisia?",
+      vaihtoehdot: [
+        "A) Informoidakseen ihmisiä",
+        "B) Luodakseen hauskaa sisältöä",
+        "C) Harhauttaakseen ja saadakseen rahaa",
+        "D) Parantaakseen journalistisia taitojaan",
+      ],
+      vastaus: "C) Harhauttaakseen ja saadakseen rahaa",
+    },
+    {
+      tehtNum: "13",
+      tehtName: "Lallu Lihaskimppu ja kuvahuijaus",
+      Kategoria: "DogenBoxi",
+      /* tarina homma */
+
     },
     {
       tehtNum: "14",
@@ -253,7 +329,37 @@ export const DogenBoxiData = () => {
         "C) Parantaa piirtämisen taitoja",
         "D) Vain taiteellisista syistä",
       ],
-      vastaus: "B) Auttaa ymmärtämään kuvien viestintää"
+      vastaus: "B) Auttaa ymmärtämään kuvien viestintää",
+    },
+    {
+      tehtNum: "15",
+      tehtName: "Tunnistanko mainoksen",
+      Kategoria: "DogenBoxi",
+      Kuvat: [
+        "/src/assets/DogeImages/dogekokis.webp",
+        "/src/assets/DogeImages/mainostaulu.webp",
+      ],
+      Tekstit: [
+        "Mikä on mainos?",
+        "Mainos kertoo tavaroista tai palveluista, joita halutaan myydä. Mainoksen tarkoitus on saada ihmiset ostamaan mainostettavaa asiaa, esimerkiksi puhelimia, vaatteita tai hampurilaisia.<br><br>Mainos pyrkii kiinnittämään kuluttajan huomion. Mainostajat miettivät tarkasti, minkälaisia värejä, kuvia ja ihmisiä mainoksissa käytetään. Mainostajat suunnittelevat mainokset juuri tietylle kohderyhmälle ja valitsevat heitä kiinnostavia asioita mainokseen.<br><br>Joskus mainosta voi olla vaikea erottaa mainokseksi. Kannattaa muistaa, että mainos ei ole faktatietoa, vaan sen tarkoitus on vaikuttaa kuluttajien ajatteluun ja saada ihmiset ostamaan tuotteita. Siksi on oltava tarkkana, kun seuraa mediaa. Mainosta ei pidä sekoittaa tietoon.",
+        "Miten tunnistaa mainoksia ympärillämme. Mainokset ovat joka puolella – televisiossa, netissä, lehdissä, ja jopa kaduilla. Ne ovat kuin viestejä, jotka yrittävät saada meidät kiinnostumaan erilaisista asioista, kuten leluista, vaatteista tai peleistä. Mutta tiedätkö, miten voit tunnistaa erilaisia mainoksia? Tässä tulee pieni oppitunti siitä!",
+        "1. Logo<br><br>- Ajattele logoa kuin yrityksen tai tuotteen kasvoina. Se on erityinen kuva tai nimi, joka auttaa sinua tunnistamaan, mistä yrityksestä on kyse. Esimerkiksi kun näet omenan kuvan tietokoneessa, tiedät heti, että se on Apple-yrityksen logo.<br><br>2. Mainosbanneri<br><br>- Nämä ovat kuin julisteita netissä tai kaduilla. Ne voivat olla värikkäitä ja niissä on usein isolla tekstiä tai kuvia, jotka yrittävät saada sinun huomiosi.<br><br>3. Kaupallinen Yhteistyö<br><br>- Joskus suosikki bloggaajasi tai Youtube-tähtesi näyttää tai puhuu tuotteesta videollaan. Se on kuin he suosittelevat sitä sinulle, mutta oikeasti he saattavat saada siitä rahaa tai ilmaisia tuotteita.<br><br>4. Piilomainos<br><br>- Tämä on kuin salainen mainos. Se on tehty näyttämään siltä, ettei se ole mainos, vaikka oikeasti on. Tämä voi olla vähän harhaanjohtavaa, eikä se ole kovin reilua.<br><br>5. Tuotesijoittelu<br><br>- Kun katsot tv-ohjelmaa ja huomaat, että siinä näkyy selvästi jokin tuotemerkki, se on tuotesijoittelu. Se on kuin yritykset laittavat tuotteensa esille ohjelmassa.<br><br>6. Advertoriaali<br><br>- Tämä on mainos, joka näyttää ihan lehtijutulta. Se on kirjoitettu niin, että se näyttää samanlaiselta kuin muut lehden jutut, mutta oikeasti se on mainos.",
+        "Muista<br><br>Mainokset eivät kerro totuutta, vaan ne on tehty houkuttelemaan sinua ostamaan jotain. On tärkeää oppia tunnistamaan ne, jotta ymmärrät, milloin sinulle yritetään myydä jotakin.<br><br>Nyt kun tiedät nämä asiat, voit olla kuin salapoliisi, joka tunnistaa erilaisia mainoksia ympärillään. Pitäkää hauskaa mainosten bongaamisessa!",
+        "Mainoskokoelma-tehtävä<br><br>Harjoitellaan tunnistamaan meitä ympäröivät mainostyypit.<br><br>Tehdään oma mainoskokoelma.<br><br>Piirrä, kuvaa ja etsi lehdistä tai käyttämiltäsi nettisivuilta mainoksia, jotka voit sijoittaa oppimiisi ryhmiin:<br><br>- LOGO<br><br>- MAINOSBANNERI<br><br>- KAUPALLINEN YHTEISTYÖ<br><br>- PIILOMAINOS<br><br>- TUOTESIJOITTELU<br><br>- ADVERTORIAALI (vapaaehtoinen)<br><br>Esitelkää teoksenne ryhmissä toisillenne.",
+      ],
+      kysymys: "Mikä seuraavista EI ole mainostyyppi?",
+      vaihtoehdot: [
+        "A) Logo",
+        "B) Advertoriaali",
+        "C) Uutisartikkeli",
+        "D) Kaupallinen yhteistyö",
+      ],
+      vastaus: "C) Uutisartikkeli",
+    },
+    {
+      tehtNum: "16",
+      tehtName: "Tehokasta tiedonhakua",
+      Kategoria: "DogenBoxi",
     },
     {
       tehtNum: "19",
@@ -285,7 +391,39 @@ export const DogenBoxiData = () => {
       tehtNum: "20",
       tehtName: "Kuvahaun käyttö huijauksen selvityksessä",
       Kategoria: "DogenBoxi",
+      Kuva: "/src/assets/DogeImages/suurennuslasi.webp",
+      /* lista listan sisällä */
+
+      kysymys: "Mikä on ensimmäinen askel kuvahuijauksen selvittämisessä?",
+      vaihtoehdot: [
+        "A) Kirjoita kuvan nimi Googleen",
+        "B) Kopioi kuvan URL-osoite",
+        "C) Kysy kaverilta mielipidettä kuvasta",
+        "D) Käytä kuvaa piirrustuksessa",
+      ],
+      vastaus: "B) Kopioi kuvan URL-osoite",
     },
+    {
+      tehtNum: "21",
+      tehtName: "Millainen mainos sopii sinulle",
+      Kategoria: "DogenBoxi",
+      Kuva: "/src/assets/DogeImages/mainonta.webp",
+      /* lista listan sisällä */
+
+      kysymys: "Miksi mainokset ovat erilaisia eri ihmisille?",
+      vaihtoehdot: [
+        "A) Koska kaikilla on samanlainen maku",
+        "B) Koska ihmiset ovat kiinnostuneita eri asioista",
+        "C) Koska mainokset tehdään aina samalla tavalla",
+        "D) Koska kaikki ihmiset asuvat samanlaisissa paikoissa",
+      ],
+      vastaus: "B) Koska ihmiset ovat kiinnostuneita eri asioista",
+    },
+    {
+      tehtNum: "22",
+      tehtName: "Opitaan tekijänoikeudet",
+      Kategoria: "DogenBoxi",
+    }
   ];
 
   return Tehtävät;
