@@ -269,6 +269,13 @@
     rgba(87, 58, 100, 0.25) 100%
   );
 }
+.laaman-aitaus-style {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 10, 0.5) 0%,
+    rgba(36, 51, 37, 0.25) 100%
+  );
+}
 @media screen and (max-width: 1000px) {
   .Exercise {
     padding: 20px;

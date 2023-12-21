@@ -636,6 +636,102 @@ export const TweetynData = () => {
       ],
       vastaus: "c) Tehdä rakentavia ehdotuksia parannuksiksi",
     },
+    {
+      tehtNum: "21",
+      tehtName: "Mielipidekirjoitus",
+      Kategoria: "TweetynViestiseinä",
+      puolKuva: "/src/assets/TweetyImages/mielipide.webp",
+      puolTeksti:
+        "Perjantait vapaaksi koulusta! Enemmän läksyä matematiikasta! Kaikille ilmainen harrastus!",
+      Teksti:
+        "Onko sinulla jostakin asiasta vahva mielipide? Lue ensin Häsän mielipidekirjoitus koulun lehdestä. Löydätkö Häsän tekstistä mielipiteen, perustelun ja parannusehdotuksen? Kirjoita oma mielipidekirjoitus jostakin sinulle tärkeästä asiasta Häsän mallin mukaan. Jos et keksi aihetta, pyöräytä hyrrää ja arvo itsellesi aihe. Kirjoita mielipideteksti, jonka voisi julkaista internetin keskustelupalstalla tai sosiaalisessa mediassa. Tekstilläsi toteutat sananvapautta, mutta se on myös sananvapauden sääntöjen mukainen, eli kunnioittaa muita ihmisiä, heidän mielipiteitään ja katsomuksiaan.",
+      Unity:
+        "https://wordwall.net/embed/2a153bc124294a82aad706aa33f081ac?themeId=57&templateId=8",
+      kysymys: "Mitä elementtejä mielipidekirjoituksessa tulisi olla?",
+      vaihtoehdot: [
+        "a) Vain oma mielipide",
+        "b) Mielipide, perustelu ja parannusehdotus",
+        "c) Toisten mielipiteiden kritisoiminen",
+        "d) Mahdollisimman monimutkaiset sanat",
+      ],
+      vastaus: "b) Mielipide, perustelu ja parannusehdotus",
+    },
+    {
+      tehtNum: "22",
+      tehtName: "Markku-rehtorin sähköposti",
+      Kategoria: "TweetynViestiseinä",
+      Kuva: "/src/assets/TweetyImages/Markku.webp",
+      Tekstit: [
+        "Sähköpostia tarvitset esimerkiksi koulutehtävien palauttamiseen. Sähköpostia käytetään myös usein myös silloin, jos haluat ilmoittautua harrastuksiin tai leireille. Hyvässä sähköpostiviestissä on kerrottu aihekentässä, miksi viesti on lähetetty. Viesti alkaa aina tervehdyksellä ja päättyy lähettäjän nimeen. Teksti on kirjoitettu oikein. Muista isot alkukirjaimet ja pisteet tai muut lopetusmerkit. Lue alla oleva sähköposti ja vastaa kysymyksiin.",
+        "Lähettäjä: Markku-ope<br><br> Vastaanottaja: 2A-luokka<br></br> Aihe: Urheilupäivä<br><br> Hei kaikki!<br><br> Koulussamme järjestetään ensi tiistaina urheilupäivä. Meidän luokkamme tehtävä on keksiä hauskoja pieniä kilpailuja koulun pihalle. Mieti kotona, minkälaisen kilpailun sinä voisit järjestää parin kanssa. Kilpailut voivat olla esimerkiksi hyppynaruviesti tai pallon heittäminen ämpäriin. Odotan jokaiselta oppilaalta omaa ehdotusta. Sovitaan kilpailupisteistä ja niiden järjestäjistä perjantaina.<br><br> Terveisin Markku-ope",
+      ],
+      kysymys: "Mikä elementti kuuluu hyvään sähköpostiviestiin?",
+      vaihtoehdot: [
+        "a) Pitkät tarinat",
+        "b) Tervehdys ja lähettäjän nimi",
+        "c) Monimutkaiset sanat",
+        "d) Vain vastaanottajan nimi",
+      ],
+      vastaus: "b) Tervehdys ja lähettäjän nimi",
+    },
+    {
+      tehtNum: "23",
+      tehtName: "Sähköposti-ilmoitus",
+      Kategoria: "TweetynViestiseinä",
+      Kuva: "/src/assets/TweetyImages/sähköposti.webp",
+      Tekstit: [
+        "Leirille ilmoittautuminen sähköpostilla<br><br> Sähköpostia tarvitset esimerkiksi koulutehtävien palauttamiseen. Sähköpostia käytetään myös usein myös silloin, jos haluat ilmoittautua harrastuksiin tai leireille. Hyvässä sähköpostiviestissä on kerrottu aihekentässä, miksi viesti on lähetetty. Viesti alkaa aina tervehdyksellä ja päättyy lähettäjän nimeen. Teksti on kirjoitettu oikein. Muista isot alkukirjaimet ja pisteet tai muut lopetusmerkit. Näet alla olevan kiinnostavan leirimainoksen koulun ilmoitustaululla. Kirjoita sähköposti, jossa ilmoittaudut mukaan leirille.",
+        "Videoleiri 9-13-vuotiaille<br><br> Tule mukaan harjoittelemaan videoiden kuvaamista ja julkaisemista! Aiheita ovat mm. eläimet, urheilu, skeittaus, luonto tai jokin muu sinua kiinnostava aihe. Leiri pidetään Kuvapajan kurssikeskuksessa 3.-7.6. Leirillä yövytään kurssikeskuksen mökeissä. Majoitus ja ruokailu kuuluvat hintaan. Ilmoittautumiset sähköpostilla osoitteeseen videoleiri@kuvapaja.fi. Kerro viestissä nimesi ja ikäsi. Kerro myös, kuinka paljon sinulla on kokemusta videoiden tekemisestä ja mistä aiheesta olisit kiinnostunut. Muista kertoa myös yhteystietosi (puhelinnumero ja sähköpostiosoite). Ruokailua varten tarvitsemme tiedon mahdollisista allergioista tai erikoisruokavaliosta. Tervetuloa leirille!",
+      ],
+      kysymys:
+        "Mitä tietoja tulee sisällyttää sähköposti-ilmoitukseen leirille ilmoittautuessa?",
+      vaihtoehdot: [
+        "a) Vain nimi ja ikä",
+        "b) Harrastukset ja lempiväri",
+        "c) Nimi, ikä, kokemus videoiden tekemisestä, kiinnostuksen kohteet, yhteystiedot, erityisruokavalio",
+        "d) Koulun nimi ja opettajan yhteystiedot",
+      ],
+      vastaus:
+        "c) Nimi, ikä, kokemus videoiden tekemisestä, kiinnostuksen kohteet, yhteystiedot, erityisruokavalio",
+    },
+    {
+      tehtNum: "24",
+      tehtName: "Myynti-ilmoituksen teko",
+      Kategoria: "TweetynViestiseinä",
+      Kuva: "/src/assets/TweetyImages/Laama.webp",
+      palloLista: [
+        "Kuvaus:",
+        "Ikä: 5-vuotias",
+        "Luonne: Lempeä ja seurallinen",
+        "Hoito: Tarvitsee säännöllistä harjausta ja tilaa liikkua",
+        "Ruokavalio: Syö pääasiassa heinää ja erityisiä laamaruokia",
+        "Liikunta: Pitää kävelyistä ja tilasta temmeltää",
+        "Kunto:",
+        "Erittäin hyvässä kunnossa",
+        "Rokotukset ajantasalla",
+        "Lisätiedot:",
+        "Myydään vain hyvään ja rakastavaan kotiin",
+        "Sopii hyvin perheisiin",
+        "Hinta:",
+        "Tarjousten perusteella",
+        "Yhteystiedot:",
+        "Appi",
+        "777000777",
+        "Apinmaja@apinmaja",
+      ],
+      Teksti:
+        "Tehtävä<br><br> Nyt on sinun vuorosi! Käytä äskeistä mallia apunasi ja tee oma myynti-ilmoituksesi. Voit myydä jotakin tavaraa, kuten lelun, kirjan tai vaikkapa polkupyörän. Tai voit myydä palvelun, kuten lemmikin hoitoa tai piha-alueen siivousta. Ole luova, ja muista seuraavat vinkit ilmoituksen tekemiseen: -Selkeä Otsikko: Kerro lyhyesti, mitä olet myymässä.<br>-Kuvaile Tuotetta tai Palvelua: Kerro tarkemmin, mitä tuote tai palvelu pitää sisällään. Jos myyt tavaraa, mainitse sen kunto ja mahdolliset erityispiirteet.<br>-Hinta: Ilmoita hinta tai mainitse, jos hinta on neuvoteltavissa.<br>-Yhteystiedot: Lisää tapa, jolla sinuun voi ottaa yhteyttä, kuten puhelinnumero tai sähköpostiosoite.<br>-Kuvat: Jos myyt tavaraa, lisää pari valokuvaa tuotteesta.<br>Kokeile nyt itse tehdä myynti-ilmoitus ja näe, miten se sujuu!",
+      kysymys:
+        "Mikä seuraavista on tärkeää muistaa ottaessasi kuvia myynti-ilmoitusta varten?",
+      vaihtoehdot: [
+        "A) Kuvien tulee olla sumuisia ja epäselviä.",
+        "B) Kuvien ei tarvitse näyttää tuotetta kokonaan.",
+        "C) Kuvien tulee olla selkeitä ja kattavia, näyttäen tuotteen eri kulmista.",
+        "D) Vain yksi kuva riittää, riippumatta sen laadusta.",
+      ],
+      vastaus:
+        "C) Kuvien tulee olla selkeitä ja kattavia, näyttäen tuotteen eri kulmista.",
+    },
   ];
   return Tehtävät;
 };
