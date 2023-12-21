@@ -236,6 +236,15 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ))}
             </>
           )}
+          {Data.palloLista && (
+            <div className="Pallolista">
+              <ul>
+                {Data.palloLista.map((pallo, index) => (
+                  <li key={`pallo_${index}`}>{pallo}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {Data.palloListat && (
             <>

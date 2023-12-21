@@ -27,7 +27,7 @@ export const DogenboxiMap = () => {
             { Kategoria: "Tehtävä", number: "17", x: 930, y: 278 },
             { Kategoria: "Peli", number: "18", x: 1050, y: 245 },
             { Kategoria: "Peli", number: "19", x: 850, y: 218 },
-            { number: "20", x: 500, y: 195 },
+            { Kategoria: "Tehtävä", number: "20", x: 500, y: 195 },
             { number: "21", x: 490, y: 120 },
           ],
         }}
