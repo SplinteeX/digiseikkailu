@@ -23,6 +23,7 @@ import { DogenBoxiExercises } from "./components/pages/Exercises/DogenBoxiExerci
 import { KursorinUllakkoExercises } from "./components/pages/Exercises/KursorinUllakkoExercises";
 import { SirynÄlytaloExercise } from "./components/pages/Exercises/SirynÄlytaloExercises";
 import { Exercises } from "./components/pages/Exercises";
+import { ApinmajaMap } from "./components/pages/Maps/ApinmajaMap";
 import "./App.css";
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
               path="/tehtävät/tuotteet/TVT-opetuksen-taitopaketti"
               element={<TvtOpetuksenTaitoPaketti />}
             />
+            <Route path="/kartat/apinmaja" element={<ApinmajaMap />} />
             <Route
               path="/kirjaudu"
               element={!user ? <Login /> : <Navigate to="/profile" />}
