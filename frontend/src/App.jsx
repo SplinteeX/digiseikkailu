@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Home from "./components/pages/home";
+import "./App.css";
 import { Teacherinfo } from "./components/pages/teacher-info";
 import { Login } from "./components/pages/login";
 import { TeacherLogin } from "./components/pages/teacher-login";
@@ -26,7 +27,8 @@ import { Exercises } from "./components/pages/Exercises";
 import { ApinmajaMap } from "./components/pages/Maps/ApinmajaMap";
 import { DogenboxiMap } from "./components/pages/Maps/DogenboxiMap";
 import { LaamanExercises } from "./components/pages/Exercises/LaamanExercises";
-import "./App.css";
+import { MiukuMaukuExercises } from "./components/pages/Exercises/MiukuMaukuExercises";
+import { OhjelmointiExercises } from "./components/pages/Exercises/OhjelmointiExercises";
 
 function App() {
   const { user } = useAuthContext();
@@ -73,6 +75,14 @@ function App() {
             <Route
               path="/tehtävät/laamanaitaus/:index"
               element={<LaamanExercises />}
+            />
+            <Route
+              path="/tehtävät/miukumauku/:index"
+              element={<MiukuMaukuExercises />}
+            />
+            <Route
+              path="/tehtävät/ohjelmointi/:index"
+              element={<OhjelmointiExercises />}
             />
             <Route
               path="/tehtävät/tuotteet/TVT-opetuksen-taitopaketti"
