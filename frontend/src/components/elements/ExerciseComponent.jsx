@@ -133,6 +133,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
             {Data.tehtNum}. {Data.tehtName}
           </h3>
           {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
+
           {Data.puolTeksti && !Array.isArray(Data.puolTeksti) ? (
             <div className="TextImage">
               <p

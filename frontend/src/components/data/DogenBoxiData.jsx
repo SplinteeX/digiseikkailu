@@ -4,8 +4,7 @@ export const DogenBoxiData = () => {
       tehtNum: "1",
       tehtName: "Harjoitellaan uutisten rakennetta",
       Kategoria: "DogenBoxi",
-      smallTitle:
-        "Kirjoita oma uutinen!",
+      smallTitle: "Kirjoita oma uutinen!",
       Kuvat: [
         "/src/assets/DogeImages/uutisankkuri.webp",
         "/src/assets/DogeImages/lokki.webp",
@@ -42,18 +41,39 @@ export const DogenBoxiData = () => {
         "C) Koristellut ja monimutkaiset kielikuvat",
         "D) Mainostekstejä",
       ],
-      vastaus: "B) Taustatietoja ja yksityiskohtia tapahtumasta"
+      vastaus: "B) Taustatietoja ja yksityiskohtia tapahtumasta",
     },
     {
       tehtNum: "2",
       tehtName: "Liian hyvää ollaakseen totta",
       Kategoria: "DogenBoxi",
-      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/8-liian-hyvaeae-ollakseen?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/8-too-good-to-be-true?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/8-liian-hyvaeae-ollakseen?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/8-too-good-to-be-true?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       puolTeksti:
         "Tarinassa käsitellään tiedon luotettavuuden arviointia sekä tutustutaan oikeisiin uutisiin ja valeuutisiin",
-      puolKuva: "/src/assets/DogeImages/jalkapallo.webp"
-      /* Tarina keskustelu eli kesken */
+      puolKuva: "/src/assets/DogeImages/jalkapallo.webp",
+      Tekstit: [
+        "Viikko oli ollut pitkä ja raskas. Apilla oli ollut paljon koulutöitä ja Häsän kanssa oli kuvattu uusia videoita Häsän Youtube-kanavalle. Esitelmäkin oli tullut valmiiksi, vielä piti harjoitella se esityskuntoon.",
+        "Viikonloppuna olisi kiva nukkua myöhään, mutta Doge heräsi aina aikaisin ja herätti Apin. Sen oli päästävä aamulenkille.",
+        "Appi puki vaatteet ylleen ja vilkaisi samalla puhelintaan. Hänelle oli tullut WhatsApp-viesti kaverilta.",
+        "Appi — Ei voi olla totta! Appi huudahti.",
+        "Syysloma on pidennetty kuukauden mittaiseksi! Neljä viikkoa lomaa, mahtavaa, Appi iloitsi.",
+        "Appi — Netissä lukee niin!",
+        "Doge katsoi Appia kummissaan. Sen mielestä ei kuulostanut uskottavalta, että syysloma yhtäkkiä olisi kuukauden pituinen. Ainahan syysloma oli kestänyt korkeintaan viikon, joskus jopa vähemmän.",
+        "Doge — Mistä sinä sen luit? Doge kysyi.",
+        "Appi — Yksi kaveri lähetti minulle linkin, jossa tämä ilouutinen lukee. Se on jokin uutissivusto, Nonsense.com. En ole koskaan aiemmin käynyt tällä sivulla.",
+        "Doge rapsutti tassulla korvansa takaa ja mietti vimmatusti.",
+        "Doge — Pitäisiköhän sinun tarkistaa tuo uutinen jostain luotettavasta lähteestä? Doge kysyi. Esimerkiksi koulun omilta nettisivuilta.",
+        "Appi — Tuo saattaa olla hyvä idea, Appi myöntyi ja naputteli koulun kotisivujen osoitteen nettiselaimeensa.",
+        "Appi — Mitä ihmettä, täällä sanotaan, että syysloma on vain yhden viikon, viikolla 45.",
+        "Appi — Taisit olla oikeassa, Doge. Uutinen olikin liian hyvä ollakseen totta, Appi mutisi harmissaan.",
+        "Appi — Kuka kumma kirjoittaa hölynpölyä ja väittää sitä uutiseksi?",
+        "Doge — En tiedä, joku yritti juksata sinua ja kavereitasi. Kaikkea ei kannata uskoa, vaikka netissä lukisi niin.",
+        "Apin oli myönnettävä, että Doge oli oikeassa. Hänen olisi oltava tarkkana, mitä uskoo. Tästä lähtien hän tarkistaisi aina tiedon luotettavuuden.",
+        "Doge — Nautitaan nyt vielä kauniista säästä ja lähdetään lenkille, Doge haukahti ja lähti juoksemaan kohti puistoa.",
+      ],
     },
     {
       tehtNum: "3",
@@ -71,9 +91,8 @@ export const DogenBoxiData = () => {
         "Kaupungin asukkaat ovat kuitenkin innoissaan tästä ihmeestä, ja monet uskovat sen olevan hyvä enne. Kaupunginjohtaja on jo ilmoittanut, että lentävä elefantti tullaan ottamaan vastaan juhlallisesti kaupungintalolla, ja päivä on julistettu viralliseksi juhlapäiväksi.",
         "Tämä ainutlaatuinen tapahtuma jää historiankirjoihin Helsingin suurimpana ihmeenä, ja se muistuttaa meitä siitä, että maailma on täynnä yllätyksiä.",
       ],
-      smallTitle: 
-        "Valeuutisen paljastus!",
-      Teksti: 
+      smallTitle: "Valeuutisen paljastus!",
+      Teksti:
         "Taitava median lukija on varuillaan lukiessaan uutisia ja etsiessään tietoa internetistä. Joskus voi nimittäin olla, että totena esitetty tieto ei pidäkään paikkaansa. Tällaisia uutishuijauksia kutsutaan valeuutisiksi.",
       numeroLista: [
         "Selvitä, kuka jutun on kirjoittanut. Oikeilla uutissivustoilla on yhteystiedot toimitukseen ja ainakin julkaisun päätoimittajan nimi. Jos uutisen yhteydessä ei mainita toimittajan nimeä tai toimituksen yhteystietoja, uutista voi epäillä valeuutiseksi.",
@@ -87,16 +106,14 @@ export const DogenBoxiData = () => {
         "C) Valita uutinen sen perusteella, kuinka mielenkiintoinen se on",
         "D) Uskoa uutinen, jos se on ystävän jakama",
       ],
-      vastaus: "B) Tarkistaa uutisen lähde ja kirjoittaja"
-
+      vastaus: "B) Tarkistaa uutisen lähde ja kirjoittaja",
     },
     {
       tehtNum: "4",
       tehtName: "Mediakupla",
       Kategoria: "DogenBoxi",
       /* Joku yle areena video puuttuu */
-      smallTitle: 
-        "Mikä on mediakupla?",
+      smallTitle: "Mikä on mediakupla?",
       Tekstit: [
         "Mediakupla tarkoittaa sitä, että kaikki toimintamme internetissä vaikuttaa siihen, millaista sisältöä saamme luettavaksi ja katsottavaksi. Monet mediasovellukset oppivat tulkitsemaan mediankäyttöämme ja tarjoavat nähtäväksemme aiheita, joista luulevat meidän pitävän. Siihen vaikuttavat sosiaalisen median käyttömme – tykkäykset, jaot jne. – sekä esimerkiksi hakukoneilla tekemämme haut.",
         "Me kaikki elämme erilaisten mediakuplien sisällä. Hyvä esimerkki tästä on se, että jos kaksi henkilöä etsii samaa asiaa samalla hakusanalla Googlesta, he todennäköisesti saavat erilaisia hakutuloksia. Tämä johtuu heidän erilaisista mediakuplistaan – erilaisista hakuhistorioista ja erilaisesta toiminnasta sosiaalisessa mediassa",
@@ -113,7 +130,7 @@ export const DogenBoxiData = () => {
         "C) Vain negatiivisia uutisia sisältävä media",
         "D) Kaikki internetissä julkaistu sisältö",
       ],
-      vastaus: "B) Sosiaalisen median ja hakukoneiden personoima sisältö"
+      vastaus: "B) Sosiaalisen median ja hakukoneiden personoima sisältö",
     },
     {
       tehtNum: "5",
@@ -124,7 +141,8 @@ export const DogenBoxiData = () => {
         "Disinformaatio (engl. disinformation) tarkoittaa tarkoituksellista harhaanjohtavaa tietoa tai tiedotusta. Alapuolelle on kerätty erilaisia disinformaatioon johtavia käsitteitä.",
         "Raahaa sanat oikeisiin selityksiin.",
       ],
-      /* pelilinkki */
+      Unity:
+        "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=2",
       kysymys: "Mitä disinformaatio tarkoittaa?",
       vaihtoehdot: [
         "A) Virheellistä tietoa vahingossa",
@@ -132,18 +150,41 @@ export const DogenBoxiData = () => {
         "C) Kaikki internetissä oleva tieto",
         "D) Tieteellisiä faktoja",
       ],
-      vastaus: "B) Tarkoituksellisesti harhaanjohtavaa tietoa"
-
+      vastaus: "B) Tarkoituksellisesti harhaanjohtavaa tietoa",
     },
     {
       tehtNum: "6",
       tehtName: "Trollipostia Supersovellukselle",
       Kategoria: "DogenBoxi",
-      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/16-trollipostia?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/16-troill-mail-for-the-super?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-      puolTeksti: "Tarinassa käsitellään: tutustutaan trollaamisen käsitteeseen, saadaan ohjeita, kuinka trollauksen voi pysäyttää omalta kohdaltaan, vahvistetaan nettikiusaamisen tunnistamisen taitoja sekä muistutetaan yhteisöllisestä ja rakentavasta viestinnästä mediassa.",
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/16-trollipostia?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/16-troill-mail-for-the-super?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      puolTeksti:
+        "Tarinassa käsitellään: tutustutaan trollaamisen käsitteeseen, saadaan ohjeita, kuinka trollauksen voi pysäyttää omalta kohdaltaan, vahvistetaan nettikiusaamisen tunnistamisen taitoja sekä muistutetaan yhteisöllisestä ja rakentavasta viestinnästä mediassa.",
       puolKuva: "/src/assets/DogeImages/trollipostia.png",
-      /* tarina homma */
+      Tekstit: [
+        "Appi — Voi himpuran himpura. Taas täällä on näitä, Appi päivitteli Häsälle katsoessaan Supersovelluksen palautteita.",
+        "Appi — Kuuntele nyt tätäkin: ”Tosi omaperäistä! Ette sitten mitään kiinnostavampaa osanneet tehdä?! Tällaista sovellusta ei tarvita missään.”",
+        "Häsä kurkisti ruutua Apin olan yli.",
+        "Häsä — Pöh! Kai huomaat, että se on trollin kirjoittama. Haluaa vain aiheuttaa sinulle pahan mielen. Älä välitä, Supersovellus on hyvä juuri sellaisena kuin se on.",
+        "Appi kuitenkin jatkoi:",
+        "Appi — Katso miten tämä sama kommentoija jatkaa: “Käsi ylös kuka unfollaa (eli lopettaa seuraamisen) tän fiaskon jälkeen?”",
+        "Kaiken kukkuraksi sama nimimerkki oli kirjoittanut muillekin keskustelupalstoille ikäviä kommentteja Supersovelluksesta. Nyt Apin silmät kiilsivät jo kyynelistä.",
+        "Häsä — Näytetään tämä Dogelle. Se tietää, miten tähän pitäisi suhtautua, Häsä lohdutti.",
+        "Appi — Hyvä idea! Doge on päiväunilla, mutta se herää aina kun teen eväät futistreeneihin! Tule, mennään! Appi innostui.",
+        "Appi oli oikeassa. Doge säpsähti hereille heti kun jääkaapin ovi aukesi. Se tuli kiireellä keittiöön haistelemaan eväitä.",
+        "Häsä — Doge, kerrotko, mitä ne trollit ovat? Siis nettitrollit, ei mitkään saunatontut. Appi on saanut ikäviä kommentteja ja luulen, että trollit ovat asialla, Häsä pyysi.",
+        "Doge innostui esitelmöinnistä lähes yhtä paljon kuin eväiden syömisestä.",
+        "Doge — Trollit eivät ole mitään mukavia peikkoja vaan ikäviä vihulaisia, jotka nauttivat siitä, kun saavat ilkeillä muille ilman syytä. He haluavat aiheuttaa häiriötä netissä. He nauttivat siitä, kun saavat tehdä muille kiusaa ja sekoittaa keskustelua.",
+        "Häsä — Luulen, että Supersovellusta kommentoinut ilkimys on juuri tuollainen trolli, Häsä puuskahti.",
+        "Appi — Mitä minä sitten voin tehdä? Ilkeistä kommenteista tulee paha mieli, Appi kysyi surullisena.",
+        "Appi — Pitäisikö trolleille kertoa, miten paljon olen tehnyt töitä Supersovelluksen eteen?",
+        "Doge — Tärkein sääntö on, että trolleille ei kannata vastata mitään. Ne saavat vain lisää voimaa, jos ruokit niitä omilla kommenteillasi, Doge vastasi ja vilkuili pöydällä olevia juustopaloja.",
+        "Doge — Vedä henkeä ja laske kymmeneen, ennen kuin vastaat kenenkään kommentteihin.",
+        "Appi — Se on hyvä neuvo, kiitos Doge, Appi vastasi jo hieman rauhoittuneena.",
+        "Doge — Muista: ei ruokaa trolleille eli älä lähde mukaan väittelyyn. Mutta minä voisin kyllä ottaa tuon herkullisen juustosiivun, Doge sanoi tuijottaen tiukasti Apin eväslaatikkoa.",
+      ],
     },
     {
       tehtNum: "7",
@@ -172,7 +213,7 @@ export const DogenBoxiData = () => {
         "C) Aiheuttamaan ärsytystä ja ristiriitoja",
         "D) Keskustelemaan asiallisesti",
       ],
-      vastaus: "C) Aiheuttamaan ärsytystä ja ristiriitoja"
+      vastaus: "C) Aiheuttamaan ärsytystä ja ristiriitoja",
     },
     {
       tehtNum: "8",
@@ -182,16 +223,20 @@ export const DogenBoxiData = () => {
         "/src/assets/DogeImages/uutis.webp",
         "/src/assets/DogeImages/uutislähetys.webp",
       ],
-      numeroListat: [[
-        "Ryhmä kokoaa yhdessä kaksi oikeaa uutista ajankohtaisista asioista, omaa koulua tai kaupunkia koskevista aiheista sekä yhden uutisen ajankohtaisista urheiluun liittyvistä aiheista.",
-        "Uutiset kirjoitetaan paperille tai tablettilaitteelle.",
-        "Urheilutoimittaja kertoo urheilu-uutisen.",
-        "Meteorologin kanssa sovitaan millaista säätä hän ennustaa. Meteorologille tehdään A2 kokoinen Suomen kartta taustalle.",
-        "Kuvataan ja editoidaan yhdessä uutispätkät.",],
-        ["Uutistenlukija 1",
-        "Uutistenlukija 2",
-        "Urheilutoimittaja",
-        "Meteorologi",]
+      numeroListat: [
+        [
+          "Ryhmä kokoaa yhdessä kaksi oikeaa uutista ajankohtaisista asioista, omaa koulua tai kaupunkia koskevista aiheista sekä yhden uutisen ajankohtaisista urheiluun liittyvistä aiheista.",
+          "Uutiset kirjoitetaan paperille tai tablettilaitteelle.",
+          "Urheilutoimittaja kertoo urheilu-uutisen.",
+          "Meteorologin kanssa sovitaan millaista säätä hän ennustaa. Meteorologille tehdään A2 kokoinen Suomen kartta taustalle.",
+          "Kuvataan ja editoidaan yhdessä uutispätkät.",
+        ],
+        [
+          "Uutistenlukija 1",
+          "Uutistenlukija 2",
+          "Urheilutoimittaja",
+          "Meteorologi",
+        ],
       ],
       smallTitle: "Omat uutiset",
       palloLista: [
@@ -210,7 +255,8 @@ export const DogenBoxiData = () => {
         "C) Ainoastaan kuvaustekniikan opetteluun",
         "D) Musiikkivideoiden tekemiseen",
       ],
-      vastaus: "B) Uutisten lukemisen ja videoiden tekemisen harjoittelemiseksi"
+      vastaus:
+        "B) Uutisten lukemisen ja videoiden tekemisen harjoittelemiseksi",
     },
     {
       tehtNum: "9",
@@ -261,7 +307,7 @@ export const DogenBoxiData = () => {
         "Muista tekijänoikeudet!<br><br>Meemikuvien levittäjä voi syyllistyä tekijänoikeusrikkomukseen, jos alkuperäisen kuvan tekijä ei ole antanut lupaa kuvan levittämiseen.",
         "Tee parin kanssa omia koulumeemejä tabletilla tai puhelimella ottamalla kuvia ja lisäämällä niihin tekstiä esim. sivustolla www.kapwing.com/studio/editor",
         "Meemin aiheena voi olla esim.<br><br>- kouluaineet (“kun ope sanoi että piirrä suorakulmio”)<br><br>- välituntialueen kiipeilytelineet (“kun jäät päästä kiinni apinaverkkoon”)<br><br>- pukeutuminen (“kun nilkkasukat meni muodista”)<br><br>- erilaisuus (“kun kaikilla muilla on lippis”)<br><br>- koulun säännöt (“kun yrität syödä purkkaa huomaamattomasti”)<br><br>- ihmissuhteet (“kun oisit halunnu eri ryhmään”)<br><br>- koulutyö (“kun ope kysyy ootko tehny läksyt”)<br><br>- loman odotus (“kun toivot että loma alkaisi jo”)<br><br>- kouluruoka (“kun luulin sitä perunaksi koulun ruokalasta”)",
-        "Meemissä yhdistyy yleensä jollain tavalla huvittava kuva ja siihen liittyvä teksti.<br><br>Usein teksti on syntynyt siten, että jokin kuvassa oleva asia on saanut katsojan hoksaamaan vitsin aiheen."
+        "Meemissä yhdistyy yleensä jollain tavalla huvittava kuva ja siihen liittyvä teksti.<br><br>Usein teksti on syntynyt siten, että jokin kuvassa oleva asia on saanut katsojan hoksaamaan vitsin aiheen.",
       ],
       kysymys: "Mikä on meemi?",
       vaihtoehdot: [
@@ -270,8 +316,8 @@ export const DogenBoxiData = () => {
         "C) Henkilökohtainen viesti",
         "D) Virallinen uutisartikkeli",
       ],
-      vastaus: "B) Huumoripitoinen kuva tai video, joka leviää nopeasti netissä",
-
+      vastaus:
+        "B) Huumoripitoinen kuva tai video, joka leviää nopeasti netissä",
     },
     {
       tehtNum: "12",
@@ -282,7 +328,8 @@ export const DogenBoxiData = () => {
         "Kaukana digitaalisen maailman syrjäisessä kolkassa sijaitsi paikka nimeltään Trollitehdas. Tämä paikka ei ollut iloinen tai värikäs; se oli täynnä varjoja ja salaisuuksia.<br><br>Tehdasta johti Päätrolli, vakava hahmo, jolla oli suuret silmälasit ja joka piti aina tiukasti kiinni säännöistä. “Meidän työmme on tärkeää,” hän sanoi. “Meidän on luotava tarinoita, jotka saavat ihmiset miettimään ja kyseenalaistama<br><br>Trollitehtaassa oli erilaisia osastoja. Yhdessä osastossa kirjoitettiin valeuutisia. Nämä eivät olleet hassuja tai kevyitä tarinoita; ne olivat vakavia ja usein harhaanjohtavia. “On tärkeää, että ihmiset uskovat meitä,” sanoi yksi kirjoittaja. “Se antaa meille valtaa ja vaikutusvaltaa.”<br><br>Toisessa osastossa oli kommenttien kirjoittajia, jotka levittivät epävarmuutta ja pelkoa. Heidän tarkoituksensa oli saada ihmiset riitelemään ja epäilemään toisiaan. “Kun ihmiset eivät luota toisiinsa, he ovat heikompia,” he sanoivat.<br><br>Kolmannessa osastossa oli kuvahuijausten tekijöitä. Heidän työnsä oli luoda kuvia, jotka näyttivät todellisilta, mutta jotka olivat täysin keksittyjä. “Meidän kuvamme saavat ihmiset kyseenalaistamaan, mikä on totta ja mikä ei,” he selittivät.<br><br>Eräänä päivänä yksi nuori trolli, nimeltään Miina, alkoi kyseenalaistaa tehtaan toimintaa. “Miksi meidän täytyy levittää näitä valheita?” hän kysyi Päätrollilta. “Eikö totuus ole tärkeämpää?”<br><br>Päätrolli katsoi Miinaa pitkään ja vakavasti. “Meidän työmme on vaikuttaa ihmisten ajatteluun,” hän sanoi. “Mutta sinun kysymyksesi on tärkeä. Meidän on aina muistettava vastuumme ja seuraukset siitä, mitä levitämme maailmaan.”<br><br>Miinan kysymykset saivat muutkin trollit miettimään. He alkoivat ymmärtää, että heidän tekonsa vaikuttivat ihmisten elämään, ja että valheilla oli seurauksensa. Vähitellen Trollitehdas muuttui: se ei enää keskittynyt valeuutisiin, vaan alkoi tuottaa tarinoita, jotka auttoivat ihmisiä ymmärtämään maailmaa paremmin.<br><br>Ja niin Trollitehdas muuttui paikasta, joka levitti varjoja ja epävarmuutta, paikaksi, joka kertoi totuutta ja iloa.",
         "Etsi syyt trollitehtaan toimintaan<br><br>Tutustu allaolevaan tekstiin trollien toiminnasta.<br><br>Raahaa trollien syyt tehdä valeuutisia roskakoriin.<br><br>Raahaa oikeiden uutisten syyt Dogen suurennuslasiin.",
       ],
-      Unity: "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=6",
+      Unity:
+        "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=6",
       kysymys: "Miksi trollit tuottavat valeuutisia?",
       vaihtoehdot: [
         "A) Informoidakseen ihmisiä",
@@ -296,8 +343,33 @@ export const DogenBoxiData = () => {
       tehtNum: "13",
       tehtName: "Lallu Lihaskimppu ja kuvahuijaus",
       Kategoria: "DogenBoxi",
-      /* tarina homma */
-
+      Kuva: "/src/assets/DogeImages/HäsäJaAppi.webp",
+      Tekstit: [
+        "Häsä ja Appi ihastelevat Zulk-elokuvaa televisiosta.",
+        "Häsä & Appi — Miten joku voi olla noin lihaksikas? Ja miten tuokin näyttelijä voi olla noin kaunis? lapset pohtivat. — Tekiköhän Lallu Lihaskimppu kaikki stuntit itse?",
+        "Olipa kerran suosittu voimailija nimeltä Lallu Lihaskimppu. Lallu oli tunnettu paitsi vahvoista lihaksistaan, myös leppoisasta luonteestaan ja avuliaasta asenteestaan. Häntä ihailtiin laajalti hänen hauskojen tarinoidensa ja kekseliäiden treeniohjelmiensa ansiosta. Lallun hymyilevät kasvot näkyivät usein mainoksissa, ja kaikki tunsivat hänet hyväntuulisena ja voimakkaana urheilijana.",
+        "Sitten tapahtui jotain, mikä muutti Lallun elämän. Hän sai pääroolin suositussa elokuvassa, jossa hän esitti Zulk-nimistä vihreää voimamiestä. Elokuvassa Lallun lihaksia oli digitaalisesti suurennettu, ja hänet oli muokattu näyttämään entistäkin isommalta ja rotevammalta. Lallu katsoi elokuvan valmistuttuaan ylpeänä, mutta mitä enemmän hän sitä katseli, sitä enemmän hän alkoi uskoa, että hänen pitäisi näyttää samalta myös todellisessa elämässä.",
+        "Kun ilkeämieliset fanit alkoivat kutsua Lallun lihaksia “rusinoiksi”, hän tunsi suurta painetta. Lallu alkoi treenata entistä kovemmin, toivoen saavuttavansa Zulk-hahmon ulkonäön. Hän treenasi päivät ja yöt, mutta ei silti ollut tyytyväinen. Hän tuijotti peilistä itseään ja mietti, miksi ei ollut onnellinen, vaikka lihakset kasvoivatkin.",
+        "Eräänä päivänä, kun Lallu taas tuijotti itseään peilistä, hänelle valkeni jotain tärkeää. Hän muisti, ettei Zulk ollut todellinen – se oli vain elokuvahahmo, jonka ulkonäköä oli muokattu tietokoneella. Lallu ymmärsi, että todellinen voima ei tule lihaksista tai ulkonäöstä, vaan sisältä. Hän päätti, että ei enää vertaisi itseään kuvitteelliseen hahmoon tai muiden ihmisten odotuksiin.",
+        "Pohtikaa ensin ryhmässä mistä ja miten tilanne alkoi.",
+        "Kerro Lallulle ohjeet kuinka hänen kannattaisi ajatella, mitä kannattaisi muistaa ja miten hänen kannattaisi alkaa nyt toimimaan tässä tilanteessa, jotta hän voisi taas olla tyytyväinen itseensä.",
+        "Lallu alkoi keskittyä omaan hyvinvointiinsa ja terveyteensä, treenaamaan tasapainoisesti ja pitämään huolta siitä, että hänellä oli aikaa myös rentoutumiseen ja ystäviensä kanssa olemiseen. Hän oppi arvostamaan itseään sellaisena kuin oli, eikä sellaisena, miltä hänen “pitäisi” näyttää.",
+        "Lopulta Lallu palasi jälleen mediassa hymyilevänä ja onnellisena voimailijana, joka jakoi positiivista energiaa ja inspiraatiota faneilleen. Hänestä tuli esimerkki siitä, että tärkeintä ei ole ulkonäkö, vaan se, miten kohtelee itseään ja muita – todellinen voima on sisäistä ja henkistä.",
+        "Kuvahuijaukset ovat arkipäivää",
+        "Internetissä olevat kuvat voivat myös valehdella tai johtaa harhaan, aivan kuten valeuutiset.",
+        "Kuvanmuokkaus on yleensä normaalia median toimintaa, jossa kuvaa muokataan näyttämään paremmalta julkaisussa.",
+        "Joskus kuvanmuokkaus menee kuitenkin liian pitkälle ja kuva ei vastaa enää todellisuutta. Ihmisiä saatetaan photoshopata tai filtteröidä eli heidän kuviaan muokataan niin, että he näyttävät lopulta aivan erilaisilta kuin todellisuudessa. Tätä keinoa käytetään paljon mainoksissa.",
+        "Kuva voi valehdella myös niin, että uuteen esim. luonnonkatastrofista kertovaan uutiseen liitetään kuva, joka ei todellisuudessa liity uutisen tapahtumiin ollenkaan. Uutisen yhteydessä oleva kuva on voitu oikeasti ottaa jossain aivan muussa paikassa tai aivan eri aikana.",
+        "Jotkut ihmiset saattavat tuntea olonsa jopa epävarmaksi, kun näkevät kaunisteltuja kuvia, joissa ihminen näyttää “virheettömältä”. Silloin on hyvä muistaa, että itseä ei kannata koskaan verrata toisten valokuviin. Kuvien käsittelyyn on lukuisia eri tekniikoita eikä toisten kuvista voi tietää kuinka paljon niitä on käsitelty ennen julkaisua. Arvosta itseäsi persoonallisena olentona ja koita luopua vertailusta, johon visuaalinen media saattaa joissain tapauksissa kannustaa.",
+      ],
+      kysymys: "Mitä Lallu Lihaskimppu -tarina opettaa?",
+      vaihtoehdot: [
+        "A) Ulkonäkö on tärkeämpää kuin sisäinen voima",
+        "B) Todellinen voima tulee sisältä",
+        "C) On tärkeää näyttää samalta kuin elokuvissa",
+        "D) Elokuvat ovat aina totta",
+      ],
+      vastaus: "B) Todellinen voima tulee sisältä",
     },
     {
       tehtNum: "14",
@@ -373,13 +445,15 @@ export const DogenBoxiData = () => {
       buttonLink: "https://support.google.com/websearch/answer/2466433",
       buttonText: "Välimerkit ja symbolit haussa",
       /* Ei voi laitaa montaa nappia vielä */
-      kysymys: "Mikä seuraavista on tehokas tapa käyttää hakukoneita tiedon etsimiseen?",
+      kysymys:
+        "Mikä seuraavista on tehokas tapa käyttää hakukoneita tiedon etsimiseen?",
       vaihtoehdot: [
         "A) Kirjoita pitkiä ja monimutkaisia lauseita.",
         "B) Käytä avainsanoja, jotka todennäköisesti esiintyvät etsimilläsi sivustoilla.",
         "C) Kirjoita kysymyksiä kokonaisina lauseina.",
       ],
-      vastaus: "B) Käytä avainsanoja, jotka todennäköisesti esiintyvät etsimilläsi sivustoilla.",
+      vastaus:
+        "B) Käytä avainsanoja, jotka todennäköisesti esiintyvät etsimilläsi sivustoilla.",
     },
     {
       tehtNum: "17",
@@ -391,8 +465,10 @@ export const DogenBoxiData = () => {
         "1. Onko sisältö totta vai tarua?<br><br>- Mieti, onko tieto järkeenkäypää. Joskus juttuja kirjoitetaan vain hauskuuttamaan tai säikyttämään ihmisiä.<br><br>2. Onko sisältö faktaa vai uskomusta?<br><br>- Faktoja ovat asiat, jotka voidaan todistaa todeksi. Uskomukset ovat sellaisia juttuja, joita jotkut ihmiset uskovat, mutta joita ei voi todistaa.<br><br>3. Kuka on sisällön takana?<br><br>- Jos tieto on asiantuntijalta tai luotettavalta organisaatiolta, se on todennäköisemmin luotettavaa. Asiantuntijat usein myös kertovat, mistä he ovat saaneet tietonsa.<br><br>4. Miksi sisältö on tehty?<br><br>- Onko se tehty opettamaan sinua, vai yrittääkö se myydä sinulle jotain? Jos tarkoituksena on myynti tai mainostus, tieto ei ehkä ole niin luotettavaa.<br><br>5. Milloin tieto on julkaistu?<br><br>- Jos tieto on tosi vanhaa, se ei ehkä enää pidä paikkaansa. Maailma muuttuu koko ajan!<br><br>Internet-lähteet<br><br>- Netissä kuka tahansa voi tehdä sivuja, joten on tärkeää katsoa, kuka sivun on tehnyt. Luotettavilla sivuilla kerrotaan, kuka on sivun takana ja milloin se on viimeksi päivitetty. Jos sivu näyttää olevan vain myyntiin tai mainostukseen, kannattaa olla varovainen sen tiedon kanssa.<br><br>Tekijänoikeudet<br><br>- Jos teet esitelmää tai jotain muuta, varmista, että saat käyttää siihen löytämääsi tietoa. Tekijänoikeudet suojelevat ihmisten luomaa materiaalia.<br><br>Nyt tiedät, miten voit selvittää, onko löytämäsi tieto luotettavaa. Muista, että on aina hyvä kysyä aikuisilta tai opettajilta apua, jos et ole varma jostakin asiasta. Onnea tiedonetsintään!",
         "Tunnista luotettava tieto<br><br>Etsi ja yhdistä toisiinsa vastakohtaparit joihin luotettavan tiedon tutkija törmää.",
       ],
-      Unity: "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=5",
-      kysymys: "Kun arvioit lähteen luotettavuutta, mikä seuraavista on tärkeää tarkistaa?",
+      Unity:
+        "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=5",
+      kysymys:
+        "Kun arvioit lähteen luotettavuutta, mikä seuraavista on tärkeää tarkistaa?",
       vaihtoehdot: [
         "A) Lähteen julkaisupäivä.",
         "B) Lähteen värikkäät kuvat.",
@@ -405,9 +481,32 @@ export const DogenBoxiData = () => {
       tehtNum: "18",
       tehtName: "Kummallinen kalastelija",
       Kategoria: "DogenBoxi",
-      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/14-kummallinen-kalastelija?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/14-strange-fisherman?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-      /* Tarina homma */
+      SoundClouds: [
+        "https://soundcloud.com/digiseikkailu-oy/14-kummallinen-kalastelija?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/14-strange-fisherman?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      ],
+      Tekstit: [
+        "Kesäsunnuntaisin Kursori-pappaa oli turha etsiä kotoa tai pihapiiristä. Hän oli silloin rakkaimman harrastuksensa parissa. Kursorin ovessa oli iso kyltti, jossa luki englanniksi “Gone fishing” eli “Kalastamassa”.",
+        "Vaikka kello oli vasta seitsemän aamulla, Kursori oli jo merenrannassa. Hän oli kerännyt vapansa ja uistimensa mukaan ja työnsi nyt venettä vesille.",
+        "Kursori — Ah tätä luonnon rauhaa, mikään ei voita kesäaamua merellä! Linnut laulavat ja meri liplattaa, Kursori ihasteli.",
+        "Hän souti veneensä kauemmas rannasta, heitti ongen veteen ja sulki silmänsä. Tässä vierähtäisi helposti monta tuntia.",
+        "Pian Kursori havahtui siihen, että laineiden liplatuksen lisäksi läheltä kuului selviä soutamisen ääniä. Kun hän avasi silmänsä, hän huomasi viereensä ilmestyneen veneen. Veneessä istui tummaan pukuun pukeutunut herrasmies, joka näytti siltä kuin olisi tullut suoraan tärkeästä kokouksesta.",
+        "Vieras — Huomentapäivää! Syökö kala? mies aloitti keskustelun.",
+        "Kursori — No jaa, vielä ei ole tullut mitään, Kursori vastasi.",
+        "Hän olisi mieluummin ollut yksin rauhassa kuin jutellut tuntemattoman kanssa. Mies ei kuitenkaan näyttänyt lähtevän mihinkään.",
+        "Vieras — Vai ei ole vielä tullut. Tässäkö te aina kalastatte? Mistä ostatte välineenne? vieras kysyi.",
+        "Kursori — No vähän sieltä sun täältä ja tiedän aika monta paikkaa joissa kala syö, Kursori vastasi jo vähän kiusaantuneena.",
+        "Vieras — Mikä teidän paras kalapaikkanne on? Kertoisitko minullekin, jaetaan saalis! vieras jatkoi utelemistaan.",
+        "Nyt Kursori alkoi jo hermostua. Eihän kukaan kysele kalamiehen parhaita onkipaikkoja!",
+        "Kursori — Enpä taida kertoa. Pidän mieluummin omana tietonani, hän vastasi.",
+        "Samassa paikalle ilmestyi kolmaskin vene. Siinä istui mies, jolla oli valkoinen puku, ystävällinen ilme ja hattu joka suorastaan hohti valkoisena auringossa.",
+        "Valkohattuinen — Huomenta, hyvät herrat! Tarkastan kalastuslupanne, valkohattuinen sanoi.",
+        "Tässä vaiheessa kyselijä tarttui airoihin ja lähti vauhdilla soutamaan vastarannalle. Kursori kaivoi lupapaperit taskustaan ja sanoi:",
+        "Kursori — Tuolla miehellä ei tainnut olla ihan puhtaat jauhot pussissa. Hän yritti urkkia minulta parhaita saalispaikkoja, mutta en tietenkään kertonut.",
+        "Valkohattu — Toimitte aivan oikein, valkohattu vastasi.",
+        "Valkohattu — Parhaat kalastuspaikat kannattaa pitää omana tietonaan, aivan kuin tietokoneen salasanat ja puhelimen pin-koodi. Lupanne on kunnossa, hyvää päivänjatkoa!",
+        "Kursori — Näkemiin! Kursori vastasi tyytyväisenä.",
+      ],
     },
     {
       tehtNum: "19",
@@ -425,7 +524,8 @@ export const DogenBoxiData = () => {
         "Tietoturvatuotteiden kehitys: Valkohattuhakkerit myös kehittävät uusia tietoturvatuotteita ja -menetelmiä, jotka auttavat yrityksiä ja yksityishenkilöitä suojelemaan tärkeitä tietojaan.",
         "Eettinen toiminta: Toisin kuin mustahattuhakkerit, valkohattuhakkerit toimivat eettisesti ja laillisesti. Heillä on lupa etsiä ja korjata järjestelmien haavoittuvuuksia, ja he tekevät työtään suojellakseen ihmisiä ja organisaatioita kyberuhkilta.",
       ],
-      Teksti: "Valkohattuhakkerit ovat siis kuin digitaalisen maailman “hyviä ritareita”, jotka käyttävät tietotaitoaan meidän kaikkien turvallisuuden parantamiseen. Heidän työnsä on jatkuvaa ja vaatii paljon tietoa ja taitoa, mutta se on erittäin tärkeää kaikkien verkkoympäristössä toimivien turvallisuuden kannalta.",
+      Teksti:
+        "Valkohattuhakkerit ovat siis kuin digitaalisen maailman “hyviä ritareita”, jotka käyttävät tietotaitoaan meidän kaikkien turvallisuuden parantamiseen. Heidän työnsä on jatkuvaa ja vaatii paljon tietoa ja taitoa, mutta se on erittäin tärkeää kaikkien verkkoympäristössä toimivien turvallisuuden kannalta.",
       kysymys: "Mikä on valkohattuhakkerin päätehtävä?",
       vaihtoehdot: [
         "A) Luoda viruksia ja haittaohjelmia",
@@ -433,7 +533,7 @@ export const DogenBoxiData = () => {
         "C) Etsiä ja korjata tietoturva-aukkoja",
         "D) Mainostaa tietoturvatuotteita",
       ],
-      vastaus: "C) Etsiä ja korjata tietoturva-aukkoja"
+      vastaus: "C) Etsiä ja korjata tietoturva-aukkoja",
     },
     {
       tehtNum: "20",
@@ -496,15 +596,17 @@ export const DogenBoxiData = () => {
         "17. Uuden, erilaisen teoksen tekeminen toisen teoksen pohjalta on sallittua<br><br>Vapaasti muuntelemalla on kuitenkin lupa tehdä uusi teos ilman alkuperäisen tekijän suostumusta. On huomattava, että lopputuloksena täytyy syntyä uusi itsenäinen teos, joka ei ole samaistettavissa alkuperäiseen teokseen.",
         "18. Ideoiden varastaminen ja lainaaminen on sallittua<br><br>Tekijänoikeus ei suojaa teoksen tietosisältöä, ideoita eikä ajatuksia. Näitä voit hyödyntää kirjoittaessasi omaa tekstiä tai luodessasi muuta teosta.",
       ],
-      kysymys: "Miksi on tärkeää tarkistaa, onko sinulla lupa käyttää toisen ottamaa kuvaa?",
+      kysymys:
+        "Miksi on tärkeää tarkistaa, onko sinulla lupa käyttää toisen ottamaa kuvaa?",
       vaihtoehdot: [
         "A) Koska muuten kuva ei näy kunnolla",
         "B) Koska se on laitonta ja epäreilua alkuperäistä tekijää kohtaan",
         "C) Koska kuvat ovat aina ilmaisia",
         "D) Koska kuvat eivät ole tärkeitä",
       ],
-      vastaus: "B) Koska se on laitonta ja epäreilua alkuperäistä tekijää kohtaan",
-    }
+      vastaus:
+        "B) Koska se on laitonta ja epäreilua alkuperäistä tekijää kohtaan",
+    },
   ];
 
   return Tehtävät;

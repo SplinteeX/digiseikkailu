@@ -77,7 +77,7 @@ export const TehtäväPaketit = () => {
       Title: "Ohjelmointi",
       Time: "5min - 30 min",
       Link: "/tehtävät/ohjelmointi/1",
-      Back: "Miuku-Maukun tehtävissä vahvistetaan kiinnostavan luettavan löytämisenja luetun prosessoinnin taitoja. Tehtävien tavoitteena on tukealukijaksi kasvamista ja teksteistä nauttimista harjoittamalla uuden lukutaidon mukaisia teknologiarikasteisia tehtäviä luetusta.",
+      Back: "Ohjelmointipolulla on tavoitteena tutustua ohjelmoinnin perusteisiin ja ohjelmoinnilliseen ajatteluun. Tämän polun kautta voidaan pohtia tehtäviä, jotka edistävät ohjelmoinnillisen ajattelun taitojen kehittymistä.",
     },
   ];
   return {

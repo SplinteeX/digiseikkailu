@@ -38,25 +38,31 @@ export const AdventureMapComponent = ({ Data, url }) => {
               >
                 {ball.Kategoria === "Peli" && (
                   <img
-                    src={"/src/assets/Napit/peli.png"}
+                    src={`/src/assets/Napit/Peli-${ball.Väri}.png`}
                     alt={`Ball ${ball.number}`}
                   />
                 )}
                 {ball.Kategoria === "Tehtävä" && (
                   <img
-                    src={"/src/assets/Napit/Tehtävä.png"}
+                    src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
                     alt={`Ball ${ball.number}`}
                   />
                 )}
                 {ball.Kategoria === "Tietoteksti" && (
                   <img
-                    src={"/src/assets/Napit/Lukea.png"}
+                    src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
                     alt={`Ball ${ball.number}`}
                   />
                 )}
                 {ball.Kategoria === "Video" && (
                   <img
-                    src={"/src/assets/Napit/Video.png"}
+                    src={`/src/assets/Napit/Video-${ball.Väri}.png`}
+                    alt={`Ball ${ball.number}`}
+                  />
+                )}
+                {ball.Kategoria === "Tarina" && (
+                  <img
+                    src={`/src/assets/Napit/Tarina-${ball.Väri}.png`}
                     alt={`Ball ${ball.number}`}
                   />
                 )}

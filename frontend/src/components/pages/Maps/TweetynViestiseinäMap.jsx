@@ -6,7 +6,7 @@ export const TweetynviestiseinäMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Tweetyn Viestiseinä",
-          Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
+          Image: "/src/assets/Kartat/TweetynKartta.jpg",
           Balls: [
             {
               Väri: "Vihreä",
@@ -106,7 +106,7 @@ export const TweetynviestiseinäMap = () => {
             },
           ],
         }}
-        url="/tehtävät/dogenboxi"
+        url="/tehtävät/TweetynViestiseinä"
       />
     </>
   );
