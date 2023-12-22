@@ -33,6 +33,7 @@ import { HasanStudioMap } from "./components/pages/Maps/HasanStudioMap";
 import { TweetynviestiseinäMap } from "./components/pages/Maps/TweetynViestiseinäMap";
 import { KursorinUllakkoMap } from "./components/pages/Maps/KursorinUllakkoMap";
 import { SirynAlytaloMap } from "./components/pages/Maps/SirynAlytaloMap";
+import { OhjelmointiMap } from "./components/pages/Maps/ohjelmointiMap";
 
 function App() {
   const { user } = useAuthContext();
@@ -96,6 +97,7 @@ function App() {
             <Route path="/kartat/dogenboxi" element={<DogenboxiMap />} />
             <Route path="/kartat/hasanstudio" element={<HasanStudioMap />} />
             <Route path="/kartat/sirynalytalo" element={<SirynAlytaloMap />} />
+            <Route path="/kartat/ohjelmointi" element={<OhjelmointiMap />} />
             <Route
               path="/kartat/tweetynviestiseinä"
               element={<TweetynviestiseinäMap />}
