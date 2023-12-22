@@ -132,6 +132,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
           <h3 className="White-text">
             {Data.tehtNum}. {Data.tehtName}
           </h3>
+          {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
           {Data.puolTeksti && !Array.isArray(Data.puolTeksti) ? (
             <div className="TextImage">
               <p
@@ -261,7 +262,6 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ))}
             </>
           )}
-          {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
           {Data.peliTitle ? (
             <p className="White-text small-title">{Data.peliTitle}</p>
           ) : null}

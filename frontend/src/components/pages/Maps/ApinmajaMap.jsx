@@ -94,26 +94,41 @@ export const ApinmajaMap = () => {
               Väri: "Sininen",
               Kategoria: "Tietoteksti",
               number: "23",
-              x: 500,
-              y: 195,
+              x: 550,
+              y: 198,
             },
             {
               Väri: "Sininen",
-              Kategoria: "Tietoteksti",
+              Kategoria: "Tarina",
               number: "24",
+              x: 475,
+              y: 187,
+            },
+            {
+              Väri: "Sininen",
+              Kategoria: "Tehtävä",
+              number: "25",
               x: 344,
               y: 163,
             },
             {
               Väri: "Sininen",
+              Kategoria: "Tehtävä",
+              number: "26",
+              x: 450,
+              y: 128,
+            },
+
+            {
+              Väri: "Sininen",
               Kategoria: "Tietoteksti",
-              number: "25",
-              x: 490,
-              y: 120,
+              number: "27",
+              x: 550,
+              y: 115,
             },
           ],
         }}
-        url="/tehtävät/apinmaja" // Replace with your URL
+        url="/tehtävät/apinmaja"
       />
     </>
   );

@@ -124,6 +124,11 @@ export const HäsänStudioData = () => {
     },
     {
       tehtNum: "6",
+      tehtName: "TARINA",
+      Kategoria: "HäsänStudio",
+    },
+    {
+      tehtNum: "7",
       tehtName: "Mikä sinusta tulee isona",
       Kategoria: "HäsänStudio",
       SoundCloud:
@@ -151,7 +156,7 @@ export const HäsänStudioData = () => {
         "Seuraava tarina: https://digiadventurers.com/index.php/tarinat/osa-3/11-kursori-pelastaa-tilanteen/",
     },
     {
-      tehtNum: "7",
+      tehtNum: "8",
       tehtName: "Lempi tubettajat",
       Kategoria: "HäsänStudio",
       SoundCloud:
@@ -160,9 +165,9 @@ export const HäsänStudioData = () => {
       puolKuva: "/src/assets/HäsäImages/VideonKuvaus.webp",
       puolTeksti:
         "Keskustelkaa tubettajista, joita luokkanne oppilaat seuraavat. Voitte tehdä esittelyt suosikkitubettajistanne. Kootkaa ainakin seuraavat tiedot:",
-      Teksti: [
+      Teksti:
         "Etsikää tubettajan henkilötiedot (nimi, ikä, kansalaisuus, muuta kiinnostavaa). Minkälaisia aiheita hänellä on videoissaan (eläimiä, pelejä, matkoja…)? Kuinka paljon hänen videoillaan on katsojia ja kanavalla tilaajia? Mikä hänen videoissaan on parasta?",
-      ],
+
       kysymys: "Mitä “Omat lempitubettajat” -tehtävässä harjoitellaan?",
       vaihtoehdot: [
         "A) Videoiden tekemistä",
@@ -174,7 +179,7 @@ export const HäsänStudioData = () => {
         "B) Tubettajien henkilötietojen, aiheiden ja suosion analysointia.",
     },
     {
-      tehtNum: "8",
+      tehtNum: "9",
       tehtName: "Tubettajan tekstilajit",
       Kategoria: "HäsänStudio",
       Kuva: "/src/assets/HäsäImages/Erivideot.webp",
@@ -197,7 +202,7 @@ export const HäsänStudioData = () => {
       vastaus: "B) Huolellisesti suunnitellen",
     },
     {
-      tehtNum: "9",
+      tehtNum: "10",
       tehtName: "Tutustutaan vaikuttajamarkkinointiin",
       Kategoria: "HäsänStudio",
       Title: "Tunnista vaikuttajamarkkinointi",
@@ -219,12 +224,12 @@ export const HäsänStudioData = () => {
       vastaus: "B) Myydä yrityksen tuotteita tai kasvattaa bränditietoisuutta",
     },
     {
-      tehtNum: "10",
+      tehtNum: "11",
       tehtName: "",
       Kategoria: "HäsänStudio",
     },
     {
-      tehtNum: "11",
+      tehtNum: "12",
       tehtName: "Koulun ammattilaisten TVT:n käyttö",
       Kategoria: "HäsänStudio",
       Kuva: "/src/assets/HäsäImages/KoulunAmmattilaiset.webp",
