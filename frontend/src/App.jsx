@@ -32,6 +32,7 @@ import { OhjelmointiExercises } from "./components/pages/Exercises/OhjelmointiEx
 import { HasanStudioMap } from "./components/pages/Maps/HasanStudioMap";
 import { TweetynviestiseinäMap } from "./components/pages/Maps/TweetynViestiseinäMap";
 import { KursorinUllakkoMap } from "./components/pages/Maps/KursorinUllakkoMap";
+import { LaamanAitausMap } from "./components/pages/Maps/LaamanAitausMap";
 
 function App() {
   const { user } = useAuthContext();
@@ -102,6 +103,7 @@ function App() {
               path="/kartat/kursorinullakko"
               element={<KursorinUllakkoMap />}
             />
+            <Route path="/kartat/laamanaitaus" element={<LaamanAitausMap />} />
             <Route
               path="/kirjaudu"
               element={!user ? <Login /> : <Navigate to="/profile" />}
