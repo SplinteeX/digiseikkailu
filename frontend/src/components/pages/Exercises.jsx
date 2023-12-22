@@ -10,6 +10,9 @@ export const Exercises = () => {
     DogenBoxi,
     KursorinUllakko,
     SirynÄlytalo,
+    Laamanaitaus,
+    MiukuMauku,
+    Ohjelmointi,
   } = TehtäväPaketit();
 
   const [flippedIndex, setFlippedIndex] = useState(null);
@@ -36,6 +39,9 @@ export const Exercises = () => {
             DogenBoxi[0],
             KursorinUllakko[0],
             SirynÄlytalo[0],
+            Laamanaitaus[0],
+            MiukuMauku[0],
+            Ohjelmointi[0],
           ].map((exercise, index) => (
             <ExerciseCard
               key={index}

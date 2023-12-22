@@ -53,6 +53,33 @@ export const TehtäväPaketit = () => {
       Back: "Siryn tehtävien tavoitteena on kehittää oppilaan ymmärrystätyöelämästä teknologian alalla. Tehtävät perehdyttävät oppilaan ymmärrystä teknologia-avusteiseen oppimiseen, tekoälyn käsitteeseen ja robotiikan mahdollisuuksiin.",
     },
   ];
+  const Laamanaitaus = [
+    {
+      Image: "/games/Laaman-aitaus.webp",
+      Title: "Laaman aitaus",
+      Time: "5min - 30 min",
+      Link: "/tehtävät/laamanaitaus/1",
+      Back: "Laaman tehtävissä tavoitteena on vahvistaa omia tunnetaitoja sekäyleisiä empatiataitoja internetissä. Laaman tehtävissä pohditaan, miten teknologialla voi rikastaa taito- ja taideaineiden työtapoja.",
+    },
+  ];
+  const MiukuMauku = [
+    {
+      Image: "/games/Miuku-maukun-kirjasto.webp",
+      Title: "Miuku Maukun Kirjasto",
+      Time: "5min - 30 min",
+      Link: "/tehtävät/miukumauku/1",
+      Back: "Miuku-Maukun tehtävissä vahvistetaan kiinnostavan luettavan löytämisenja luetun prosessoinnin taitoja. Tehtävien tavoitteena on tukealukijaksi kasvamista ja teksteistä nauttimista harjoittamalla uuden lukutaidon mukaisia teknologiarikasteisia tehtäviä luetusta.",
+    },
+  ];
+  const Ohjelmointi = [
+    {
+      Image: "/games/Miuku-maukun-kirjasto.webp",
+      Title: "Ohjelmointi",
+      Time: "5min - 30 min",
+      Link: "/tehtävät/ohjelmointi/1",
+      Back: "Miuku-Maukun tehtävissä vahvistetaan kiinnostavan luettavan löytämisenja luetun prosessoinnin taitoja. Tehtävien tavoitteena on tukealukijaksi kasvamista ja teksteistä nauttimista harjoittamalla uuden lukutaidon mukaisia teknologiarikasteisia tehtäviä luetusta.",
+    },
+  ];
   return {
     Apinmaja,
     häsänStudio,
@@ -60,5 +87,8 @@ export const TehtäväPaketit = () => {
     DogenBoxi,
     KursorinUllakko,
     SirynÄlytalo,
+    Laamanaitaus,
+    MiukuMauku,
+    Ohjelmointi,
   };
 };
