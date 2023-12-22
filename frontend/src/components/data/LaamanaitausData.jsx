@@ -272,10 +272,56 @@ export const LaamanaitausData = () => {
       tehtNum: "10",
       tehtName: "Viestejä ja tunteita -tehtävä",
       Kategoria: "LaamanAitaus",
-      puolTeksti: "Millaisia tunteita Häsän saamat viestit voivat herättää?",
-      puolKuva: "",
+      Tekstit: [
+        "Millaisia tunteita Häsän saamat viestit voivat herättää?",
+        "Käykää kuvat yhdessä läpi luokassa ja näyttäkää tunnetila, joka vastaisi sinun tunnettasi viestin jälkeen. Keskustelkaa miksi mikäkin viesti aiheuttaa toisille erilaisia tunteita.",
+      ],
       Unity:
         "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=12",
+
+      peliTitle: "Kirjoittakaa vastineet Häsän saamiin viesteihin!",
+    },
+    {
+      tehtNum: "11",
+      tehtName: "Erilaiset tulkinnat",
+      Kategoria: "LaamanAitaus",
+      Teksti:
+        "Miten eri tavoilla voi tulkita viestejä?<br> Emojit eivät aina korvaa sanallista tunteidenilmaisua täysin. Niillä voi vain vahvistaa omaa tunneviestiä tilanteessa, jossa kasvokkain ei ole mahdollista jutella.<br><br> Miten eri tavoilla voit tulkita näitä sanallisia viestejä jos vaihdat emojia viestin perässä?<br><br> Valitse yksi viesti ja kirjoita kaikki omat tulkinnat (3 virkettä).<br><br> Malli – 1/4 VIESTI<br><br> Tämä tarkoittaa mielestäni, että olet minulle….<br><br> Tämä tarkoittaa taas, että ….<br><br> Tätä en oikein ymmärrä….",
+      Kuva: "/src/assets/LaamanImages/laamapaperi.webp",
+    },
+    {
+      tehtNum: "12",
+      tehtName: "Tunnistan vahvuuksiani",
+      Kategoria: "LaamanAitaus",
+      Teksti:
+        "Jokaisella meillä on erilaisia luonteenvahvuuksia. Erilaisuutta tarvitaan, jotta voimme oppia toisiltamme uutta ja kehittyä.",
+      peliTitle:
+        "Pohdi mitkä voisivat olla sinun vahvuuksiasi. Raahaa hyllylle vahvuuksiasi. Kerro niistä vieruskaverille, luokalle tai opettajalle.",
+      Unity:
+        "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=1",
+    },
+    {
+      tehtNum: "13",
+      tehtName: "Mitä on empatia?",
+      Kategoria: "LaamanAitaus",
+      puolKuvat: [
+        "/src/assets/LaamanImages/suunta1.webp",
+        "/src/assets/LaamanImages/suunta2.webp",
+        "/src/assets/LaamanImages/bändi.webp",
+      ],
+      puolTekstit: [
+        "Mitä on empatia?<br><br> Empatia tarkoittaa kykyä asettaa itsensä toisen asemaan ja ymmärtää toisen tunteita, kykyä ymmärtää toista.<br><br> Empaattinen ihminen ei pyri pönkittämään itseään puheilla, kirjoituksilla tai teoilla paremmaksi kuin, vaan näyttää että on samanarvoinen ja samalla tasolla kuin toinen.",
+        "Empaattisuutta on myötäeläminen. Hän pyrkii huomaamaan kun toiselle on tullut paha mieli.<br><br>Hän ymmärtää, että eri ihmisille tulee erilaisista asioista omanlaisiaan tunteita. Hän tietää, että toisen tunteet ovat yhtä tärkeitä ja oikeita kuin omatkin tunteet. Empaattinen ihminen ei mene mukaan toisen tunnetilaan, jos toinen ihminen on vaikka vihainen, vaan hän huomioi sanoillaan ja teoillaan toisen tunteen.",
+        "Havu, Paju ja Eko ovat Apin kavereita yläkoulusta. Heille tulee välillä riitoja, sillä vaikka he ovat hyviä kavereita, he haluavat välillä eri juttuja ja kompromissien tekeminen ja toisen huomioonottaminen on joskus vaikeaa. Tutki viestiketjuja. Yritä bongata ikävältä tuntuva viesti ja pohdi miten tilanteen olisi voinut hoitaa niin, että viestin kohteelle ei olisi tullut kurja olo. Kirjoita viestit ylös ja palauta opettajalle.",
+      ],
+      Teksti:
+        "Empaattinen ihminen antaa toisen olla rauhassa eikä lietso toisen pahaa mieltä. Empaattinen ihminen voi lohduttaa toista tai rauhoitella toista, tilanteen niin vaatiessa. Siksi sanotaankin, että empatia on myös tekoja. Empatian vastapari voisi olla välinpitämättömyys. Silloin kun ihminen on välinpitämätön, hän ei osaa tai halua ottaa toisia huomioon. Vaikka hän voisi auttaa, hän ei tee sitä. Joskus empatian vastapari on ymmärtämättömyys. Toinen ei välttämättä osaa ymmärtää miten loukkaa tai jättää toisen huomioimatta.",
+      Kuvat: [
+        "/src/assets/LaamanImages/puhelimet1.webp",
+        "/src/assets/LaamanImages/puhelimet2.webp",
+        "/src/assets/LaamanImages/puhelimet3.webp",
+        "/src/assets/LaamanImages/puhelimet4.webp",
+      ],
     },
   ];
   return Tehtävät;
