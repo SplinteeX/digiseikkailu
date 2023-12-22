@@ -1,11 +1,11 @@
 import { AdventureMapComponent } from "../../elements/AdventureMapComponent";
 
-export const TweetynviestiseinäMap = () => {
+export const KursorinUllakkoMap = () => {
   return (
     <>
       <AdventureMapComponent
         Data={{
-          Title: "Tweetyn Viestiseinä",
+          Title: "Kursorin Ullakko",
           Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
           Balls: [
             {

@@ -30,6 +30,8 @@ import { LaamanExercises } from "./components/pages/Exercises/LaamanExercises";
 import { MiukuMaukuExercises } from "./components/pages/Exercises/MiukuMaukuExercises";
 import { OhjelmointiExercises } from "./components/pages/Exercises/OhjelmointiExercises";
 import { HasanStudioMap } from "./components/pages/Maps/HasanStudioMap";
+import { TweetynviestiseinäMap } from "./components/pages/Maps/TweetynViestiseinäMap";
+import { KursorinUllakkoMap } from "./components/pages/Maps/KursorinUllakkoMap";
 
 function App() {
   const { user } = useAuthContext();
@@ -92,6 +94,14 @@ function App() {
             <Route path="/kartat/apinmaja" element={<ApinmajaMap />} />
             <Route path="/kartat/dogenboxi" element={<DogenboxiMap />} />
             <Route path="/kartat/hasanstudio" element={<HasanStudioMap />} />
+            <Route
+              path="/kartat/tweetynviestiseinä"
+              element={<TweetynviestiseinäMap />}
+            />
+            <Route
+              path="/kartat/kursorinullakko"
+              element={<KursorinUllakkoMap />}
+            />
             <Route
               path="/kirjaudu"
               element={!user ? <Login /> : <Navigate to="/profile" />}

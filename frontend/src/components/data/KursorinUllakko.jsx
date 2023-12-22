@@ -348,54 +348,6 @@ export const KursorinUllakkoData = () => {
       ],
       vastaus: "b) Yrittämistä ja uudelleen yrittämistä, vaikka epäonnistuisit",
     },
-    {
-      tehtNum: 12,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 13,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 14,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 15,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 16,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 17,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 18,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 19,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 20,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 21,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 22,
-      tehtName: "Kursorin Ullakko",
-    },
-    {
-      tehtNum: 23,
-      tehtName: "Kursorin Ullakko",
-    },
   ];
   return Tehtävät;
 };
