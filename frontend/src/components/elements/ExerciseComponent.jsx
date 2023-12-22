@@ -82,6 +82,8 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
         return "siryn-alytalo-style";
       case "MiukuMaukunKirjasto":
         return "miuku-maukun-kirjasto-style";
+      case "OhjelmointiPolku":
+        return "ohjelmointi-polku-style";
       default:
         return "";
     }

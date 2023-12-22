@@ -1,13 +1,13 @@
 import { ExerciseComponent } from "../../elements/ExerciseComponent";
-import { MiukumaukuData } from "../../data/MiukumaukuData";
+import { OhjelmointiData } from "../../data/OgjelmointiData";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-export const MiukuMaukuExercises = () => {
+export const OhjelmointiExercises = () => {
   const { index } = useParams();
   const navigate = useNavigate();
   const exerciseIndex = parseInt(index, 10) - 1;
-  const Tehtävät = MiukumaukuData();
+  const Tehtävät = OhjelmointiData();
 
   useEffect(() => {
     if (
@@ -32,7 +32,7 @@ export const MiukuMaukuExercises = () => {
       <ExerciseComponent
         Data={Tehtävät[exerciseIndex]}
         Tehtävät={Tehtävät}
-        url="miukumauku"
+        url="ohjelmointi"
       />
     </>
   );
