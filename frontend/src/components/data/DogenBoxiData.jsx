@@ -360,6 +360,54 @@ export const DogenBoxiData = () => {
       tehtNum: "16",
       tehtName: "Tehokasta tiedonhakua",
       Kategoria: "DogenBoxi",
+      Kuvat: [
+        "/src/assets/DogeImages/tehokastiedonhaku.webp",
+        "/src/assets/DogeImages/google.webp",
+        "/src/assets/DogeImages/tehokastagif.webp",
+      ],
+      Tekstit: [
+        "1. Pidä asiat yksinkertaisina<br><br>- Mitä tehdä: Aloita yksinkertaisilla hauilla, kuten “missä on lähin lentokenttä?”.<br><br>- Vinkki: Jos etsit jotain tiettyä paikkaa tai tuotetta, lisää hakusanaan sijainti. Esimerkiksi “leipomo Helsinki”.<br><br>2. Etsi tietoja puhumalla<br><br>- Mitä tehdä: Jos et halua kirjoittaa, käytä puhehakua. Voit tehdä tämän esimerkiksi klikkaamalla Google-sovelluksen mikrofonikuvaketta.<br><br>3. Valitse sanat oikein<br><br>- Mitä tehdä: Mieti, mitkä sanat löytyvät todennäköisimmin etsimältäsi sivulta. Esimerkiksi, käytä “päänsärky” sen sijaan, että kirjoittaisit “päähän sattuu”.<br><br>4. Älä huolehdi pikkuasioista<br><br>- Oikeinkirjoitus: Jos kirjoitat väärin, Google yleensä korjaa sen.<br><br>- Isot kirjaimet: Ei ole väliä, käytätkö isoja vai pieniä kirjaimia, esimerkiksi “New York Times” ja “new york times” tuottavat samat tulokset.<br><br>5. Löydä vastaukset nopeasti<br><br>- Sää: Kirjoita “sää” nähdäksesi sijaintisi sään tai lisää kaupungin nimi, esim. “sää Helsinki”.<br><br>- Sanakirja: Saat selityksen sanalle kirjoittamalla “define” sanan eteen.<br><br>- Laskelmat ja valuuttamuunnokset: Voit tehdä matemaattisia laskuja ja valuuttamuunnoksia suoraan hakukentässä.<br><br>- Urheilu: Näet urheilujoukkueen tiedot kirjoittamalla joukkueen nimen.<br><br>6. Opettele tehokasta tiedonhakua<br><br>- Lisävinkkejä: Voit saada lisää vinkkejä ja oppia tehokkaammasta tiedonhausta eri lähteistä.",
+        "Tekoälyn käyttö tiedonhaussa<br><br>- Chatbotit kuten Doge tai ChatGPT: Voit myös kysyä tietoja tekoälyltä, kuten Dogelta. Kirjoita vain kysymyksesi, ja minä etsin sinulle vastaukset!<br><br>Näillä vinkeillä tiedonhaku netistä on helpompaa ja nopeampaa. Ja jos et löydä etsimääsi, voit aina kysyä minulta apua!",
+        "Vinkit tiedonhakuun<br><br>Näillä vinkeillä ja vihjeillä opit löytämään tietoja helposti ja nopeasti.",
+      ],
+      buttonLink: "https://support.google.com/websearch/answer/2466433",
+      buttonText: "Välimerkit ja symbolit haussa",
+      /* Ei voi laitaa montaa nappia vielä */
+      kysymys: "Mikä seuraavista on tehokas tapa käyttää hakukoneita tiedon etsimiseen?",
+      vaihtoehdot: [
+        "A) Kirjoita pitkiä ja monimutkaisia lauseita.",
+        "B) Käytä avainsanoja, jotka todennäköisesti esiintyvät etsimilläsi sivustoilla.",
+        "C) Kirjoita kysymyksiä kokonaisina lauseina.",
+      ],
+      vastaus: "B) Käytä avainsanoja, jotka todennäköisesti esiintyvät etsimilläsi sivustoilla.",
+    },
+    {
+      tehtNum: "17",
+      tehtName: "Miten tunnistan luotettavan tiedon",
+      Kategoria: "DogenBoxi",
+      Kuva: "/src/assets/DogeImages/luotettavatieto.webp",
+      Tekstit: [
+        "Miten voit olla varma, että tieto, jota löydät, on luotettavaa. Tämä taito on nimeltään lähdekritiikki. Se auttaa sinua erottamaan toden taruista ja varmistamaan, että tiedät, mitä voit uskoa. Tässä muutamia vinkkejä, miten teet lähdekritiikkiä:",
+        "1. Onko sisältö totta vai tarua?<br><br>- Mieti, onko tieto järkeenkäypää. Joskus juttuja kirjoitetaan vain hauskuuttamaan tai säikyttämään ihmisiä.<br><br>2. Onko sisältö faktaa vai uskomusta?<br><br>- Faktoja ovat asiat, jotka voidaan todistaa todeksi. Uskomukset ovat sellaisia juttuja, joita jotkut ihmiset uskovat, mutta joita ei voi todistaa.<br><br>3. Kuka on sisällön takana?<br><br>- Jos tieto on asiantuntijalta tai luotettavalta organisaatiolta, se on todennäköisemmin luotettavaa. Asiantuntijat usein myös kertovat, mistä he ovat saaneet tietonsa.<br><br>4. Miksi sisältö on tehty?<br><br>- Onko se tehty opettamaan sinua, vai yrittääkö se myydä sinulle jotain? Jos tarkoituksena on myynti tai mainostus, tieto ei ehkä ole niin luotettavaa.<br><br>5. Milloin tieto on julkaistu?<br><br>- Jos tieto on tosi vanhaa, se ei ehkä enää pidä paikkaansa. Maailma muuttuu koko ajan!<br><br>Internet-lähteet<br><br>- Netissä kuka tahansa voi tehdä sivuja, joten on tärkeää katsoa, kuka sivun on tehnyt. Luotettavilla sivuilla kerrotaan, kuka on sivun takana ja milloin se on viimeksi päivitetty. Jos sivu näyttää olevan vain myyntiin tai mainostukseen, kannattaa olla varovainen sen tiedon kanssa.<br><br>Tekijänoikeudet<br><br>- Jos teet esitelmää tai jotain muuta, varmista, että saat käyttää siihen löytämääsi tietoa. Tekijänoikeudet suojelevat ihmisten luomaa materiaalia.<br><br>Nyt tiedät, miten voit selvittää, onko löytämäsi tieto luotettavaa. Muista, että on aina hyvä kysyä aikuisilta tai opettajilta apua, jos et ole varma jostakin asiasta. Onnea tiedonetsintään!",
+        "Tunnista luotettava tieto<br><br>Etsi ja yhdistä toisiinsa vastakohtaparit joihin luotettavan tiedon tutkija törmää.",
+      ],
+      Unity: "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=5",
+      kysymys: "Kun arvioit lähteen luotettavuutta, mikä seuraavista on tärkeää tarkistaa?",
+      vaihtoehdot: [
+        "A) Lähteen julkaisupäivä.",
+        "B) Lähteen värikkäät kuvat.",
+        "C) Kirjoittajan mielipiteet.",
+        "D) Kirjoittajan lempiväri.",
+      ],
+      vastaus: "A) Lähteen julkaisupäivä.",
+    },
+    {
+      tehtNum: "18",
+      tehtName: "Kummallinen kalastelija",
+      Kategoria: "DogenBoxi",
+      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/14-kummallinen-kalastelija?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/14-strange-fisherman?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      /* Tarina homma */
     },
     {
       tehtNum: "19",
@@ -392,8 +440,10 @@ export const DogenBoxiData = () => {
       tehtName: "Kuvahaun käyttö huijauksen selvityksessä",
       Kategoria: "DogenBoxi",
       Kuva: "/src/assets/DogeImages/suurennuslasi.webp",
-      /* lista listan sisällä */
-
+      Tekstit: [
+        "Se on itse asiassa aika helppoa! Seuraa näitä askelia:<br><br>Näin Tunnistat Kuvahuijauksen:",
+        "1. Valitse kuva:<br><br>- Löydä netistä uutiskuva, josta haluat tietää enemmän.<br><br>2. Kopioi kuvan osoite:<br><br>- Klikkaa kuvaa hiiren oikealla painikkeella.<br><br>- Valitse “Kopioi kuvan URL-osoite”. URL-osoite on kuin kuvan osoite netissä.<br><br>3. Mene Googlen kuvahakuun:<br><br>- Avaa nettiselain ja kirjoita osoitekenttään images.google.com.<br><br>- Etsi sivulta pieni kamera ja klikkaa sitä.<br><br>4. Liitä kuvan osoite:<br><br>- Etsi kohta, jossa lukee “Liitä kuvan URL-osoite”.<br><br>- Liitä kopioimasi osoite siihen.<br><br>5. Hae kuvaa:<br><br>- Klikkaa “Hae kuvan perusteella”.<br><br>6. Tutki tuloksia:<br><br>- Katso, millä sivuilla sama kuva on ollut ja milloin se on sinne laitettu.<br><br>Tärkeä Vinkki:<br><br>- Jos löydät kuvan, joka on julkaistu ensimmäisen kerran monta vuotta sitten, se ei voi olla oikea kuva uusista uutisista. Esimerkiksi, jos kuva on julkaistu vuonna 2010, se ei voi olla oikea kuva tapahtumasta, joka on tapahtunut vuonna 2018.<br><br>Näillä ohjeilla voit itse selvittää, onko uutiskuva totta vai keksittyä. On tosi hyvä olla utelias ja tarkistaa asiat itse, varsinkin jos kuva näyttää oudolta tai liian jännältä ollakseen totta!",
+      ],
       kysymys: "Mikä on ensimmäinen askel kuvahuijauksen selvittämisessä?",
       vaihtoehdot: [
         "A) Kirjoita kuvan nimi Googleen",
@@ -408,7 +458,9 @@ export const DogenBoxiData = () => {
       tehtName: "Millainen mainos sopii sinulle",
       Kategoria: "DogenBoxi",
       Kuva: "/src/assets/DogeImages/mainonta.webp",
-      /* lista listan sisällä */
+      Tekstit: [
+        "Millainen Kuluttaja Olet?<br><br>1. Kerro Itsestäsi:<br><br>- Mieti ikääsi, oletko tyttö vai poika, missä asut (kaupungissa, maalla…), keitä kuuluu perheeseesi, mitä harrastat ja mistä pidät.<br><br>- Mieti, miten paljon ja millä tavalla käytät mediaa, kuten televisiota, nettiä, pelejä tai lehtiä.<br><br>2. Mitä Sinulle Kannattaisi Mainostaa?:<br><br>- Ajattele, mitkä asiat tai tuotteet sopisivat sinulle. Esimerkiksi, jos pidät jalkapallosta, sinulle voitaisiin mainostaa jalkapallokenkiä tai -pelejä.<br><br>- Mieti myös, mitä sinä haluaisit nähdä mainoksessa. Mitkä asiat saavat sinut innostumaan?<br><br>3. Suunnittele Mainos:<br><br>- Valitse yksi tuote, joka kiinnostaa sinua.<br><br>- Mieti, minkälaiset värit, kuvat ja tekstit siinä olisi. Jos tuote on jalkapallokenkä, ehkä haluat nähdä kuvan suosikkipelaajastasi tai kengistä toiminnassa.<br><br>- Piirrä tai kuvaa mainos. Voit käyttää paperia ja kyniä tai tietokonetta, jos osaat.<br><br>Muista<br><br>- Tämä on hauska tapa oppia, miten mainokset tehdään ja miten ne yrittävät kiinnittää huomiosi. Kun teet oman mainoksen, opit myös miettimään, miksi jotkut mainokset vetoavat sinuun enemmän kuin toiset.<br><br>Onnea mainoksen suunnitteluun! Ole luova ja pidä hauskaa!",
+      ],
 
       kysymys: "Miksi mainokset ovat erilaisia eri ihmisille?",
       vaihtoehdot: [
@@ -423,6 +475,35 @@ export const DogenBoxiData = () => {
       tehtNum: "22",
       tehtName: "Opitaan tekijänoikeudet",
       Kategoria: "DogenBoxi",
+      Kuva: "/src/assets/DogeImages/Tekijänoikeuswebp.webp",
+      Tekstit: [
+        "1. Tarvitset aina julkaisuluvan / lisenssin<br><br>Kun laitat valokuvia, kuvia tai tekstejä omille kotisivuillesi, ne tulevat kaikkien nähtäville ja tarvitset niiden julkaisemiseen luvan.<br><br>Jos kuva tai teksti on lisensioitu sellaisella Creative Commons –lisenssillä, joka oikeuttaa aineiston vapaan käytön verkossa, voidaan kuvaa tai tekstiä käyttää cc-lisenssin ehtojen mukaisesti.",
+        "2. Merkitse tekijän tiedot<br><br>Jos käytät toisen kuvaa tai tekstiä, tulee sen yhteyteen aina merkitä tekijätiedot (tekijän nimi ja lähde, mistä olet kuvan tai tekstin ottanut).<br><br>- TEKIJÄN JA TEOKSEN NIMI<br><br>- MILTÄ SIVULTA OLET OTTANUT",
+        "3. Merkitse mistä lainasit tekstin<br><br>Toisen kirjoittamaa tekstiä lainata tarkoituksen edellyttämässä laajuudessa, kun tekijä- ja lähdetiedot on merkitty hyvän tavan mukaisesti. Siteerausoikeuden luonteesta johtuen sitä käytetään yleisesti tieteellisessä työssä, opetuksen yhteydessä ja myös arvosteltaessa toisten teoksia. Myös muussa käytössä siteeraaminen on mahdollista.<br><br>Siteerattaessa teosta on aina muistettava mainita sitaatin lähde eli yleensä tekijän nimi ja lähdeteos.",
+        "4. Tekijänoikeuksien voimassaolo<br><br>Tekijänoikeus on voimassa tekijän eliniän ja 70 vuotta hänen kuolinvuoden päättymisestä.",
+        "5. Tekijä saa määrätä missä omaa teosta saa käyttää<br><br>Tekijänoikeuslain mukaan kirjallisen tai taiteellisen teoksen tekijällä on yksinoikeus määrätä teoksensa käyttämisestä. Tekijän yksinoikeus kattaa kaikki tekniset tavat ja menetelmät, joilla teosta voidaan kopioida. Kopioiminen tai lataaminen verkosta on eräs tapa valmistaa teoksesta kappaleita. Tekijänoikeuslaki koskee kaikkia teoksia, ilmaisu- ja julkaisutavasta riippumatta. Tästä syystä internetissä olevat teokset ovat samalla tavoin tekijänoikeuden suojaamia kuin muutkin ja niiden käyttöön tarvitaan lupa.<br><br>Joissakin tapauksissa tekijä on voinut antaa luvan intenetissä vapaasti saatavilla olevien teostensa käyttöön luvan esimerkiksi Creative Commons lisenssillä. Tällöin teosta saa käyttää lisenssiehtojen mukaisesti.",
+        "6. Omaan käyttöön saa kopioida<br><br>Teoksista saa kopioida muutaman kappaleen omaa, yksityistä käyttöä varten.<br><br>Kouluissa tapahtuva kopiointi opetuskäyttöä varten ei ole lain tarkoittamaa yksityistä käyttöä, joten siihen tarvitaan lupa.<br><br>Teoksen kopioiminen ja lataaminen internetiin ei ole yksityistä käyttöä ja myös siihen tarvitaan lupa, jos esimerkiksi haluaa laittaa omille kotisivuilleen toisen ottaman kuvan tai tekemän piirroksen.",
+        "7. Julkiselle nettisivulle pitää olla julkaisuun tarvittava lupa tekijältä<br><br>Tallentaessasi tai kopioidessasi aineistoa esim. nettisivuillesi, valitset samalla kenelle julkaiset sen. Kun julkaiset aineistoa muille kuin perhepiirillesi, ei kyse ole enää tekijänoikeuslain tarkoittamasta yksityisestä käytöstä.<br><br>Tekijänoikeudellisesti valmistat teoksesta kappaleen ja saatat sen yleisön saataville, jotka molemmat kuuluvat tekijän yksinoikeuteen. Tämän vuoksi kopioimiseen ja julkaisemiseen tarvitaan oikeudenhaltijan lupa.<br><br>Jäljempänä olevat ohjeet koskevat tilanteita, joissa toisen tekemiä teoksia halutaan käyttää ja jakaa laajemmin kuin omassa perhepiirissä, esimerkiksi nettisivusi julkisella etusivulla tai opetusryhmälle.",
+        "8. Kopioston luvalla voi käyttää ja kopioida eri teoksia opetuskäytössä<br><br>Jos haluaa kopioida ja käyttää toisten tekemiä teoksia, tarvitaan siihen yleensä oikeudenhaltijan lupa. Joissakin tilanteissa teosten käyttö voi olla sallittua tekijänoikeuslain nojalla. Opetuskäytössä on mahdollista kopioida ja käyttää teoksia oppilaitoksille hankitulla Kopioston luvalla. Kopioston kopiointiluvista lisätietoa: https://www.kopiosto.fi/kopiosto/teosten-kayttajille/teosten-kayttoluvat/<br><br>Oikeudenhaltija on myös voinut sallia teoksensa tietynlaisen käytön (esim. ei-kaupallinen käyttö) jollakin avoimella lisenssillä kuten Creative Commons –lisenssillä.",
+        "9. Merkitse tekijän nimi ja lähde teoksen yhteyteen<br><br>Omalle nettisivulle voit kopioida toisen kirjoittaman tekstin, esimerkiksi laulun sanoituksen tai runon, jos saat siihen luvan oikeudenhaltijalta.",
+        "10. Teokseksi lasketaan itsenäinen ja omaperäinen teos – ei esim. yleinen ruokaresepti<br><br>Pelkkiä valmistusohjeita sisältävät reseptit jäävät pääsääntöisesti tekijänoikeussuojan ulkopuolelle, koska ne eivät ole tekijänoikeuslain edellyttämällä tavalla itsenäisiä ja omaperäisiä teoksia. Tekijänoikeus ei suojaa ruokaohjeen tietoja.<br><br>On kuitenkin huomattava, että resepti saattaa esiintyä esimerkiksi jonkun lehtiartikkelin, keittokirjan tai blogin yhteydessä, joka kokonaisuutena voi olla itsenäinen ja omaperäinen teos ja sen kopioimiseen tarvitaan lupa. Tässäkin tapauksessa itse ruokaohjeen sisältämät yksityiskohtaiset raaka-ainetiedot ja määrät eivät ole suojattuja ja niitä voi kopioida vapaasti.",
+        "11. Käytä kuvia lisenssillä<br><br>Kuvia ovat esimerkiksi erilaiset piirroskuvat, valokuvat ja sarjakuvat.<br><br>Pääsääntöisesti tarvitset piirroksen tai sarjakuvan tekijän tai valokuvaajan luvan tai jakamiseen oikeuttavan lisenssin, jotta voit kopioida omalle nettisivulle toisen ottaman tai tekemän kuvan tai esimerkiksi sarjakuvan.<br><br>Kopioston Digiluvalla opettaja tai opiskelija voi kopioida kuvia, kuten valokuvia, sarjakuvia tai piirroskuvia, ja jakaa niitä oman opetusryhmänsä kesken. Kopioston luvalla voi myös digitoida aineistoja, esimerkiksi skannata kuvan painetusta julkaisusta ja jakaa sen opetusryhmälle vaikka oppimisympäristön kautta. Kopioston luvalla ei saa jakaa kopioimaansa ja tallentamaansa aineistoa julkisesti.<br><br>Internetistä ja erilaisista kuvapankeista löytyy paljon kuvia, joiden käytön tekijä on sallinut Creative Commons –lisenssillä. Näiden osalta tulee noudattaa lisenssiehtoja ja kopioidun kuvan yhteyteen merkitä tekijän nimi ja maininta, millä cc-lisenssillä kuva oli lisensioitu.",
+        "12. Hauska profiilikuva sosiaalisessa mediassa on myös julkaisemista<br><br>Toisen tekemän piirros tai muun kuvan käyttämiseen vaikka profiilikuvana tarvitset oikeudenhaltijan luvan. Mikäli kuva on julkaistu internetissä cc-lisenssillä, joka sallii kuvan käytön haluamallasi tavalla, on kuvan käyttäminen mahdollista.<br><br>Sarjakuvahahmot ovat usein myös suojattuja tavaramerkkinä ja niiden käyttöä rajoittavat siis muutkin säännökset kuin tekijänoikeus.",
+        "13. Videoissa hyperlinkit ja upotus sallittuja mutta tallentaminen nettisivulle vaatii luvan<br><br>AV-aineistoja ovat kaikki liikkuva kuva kuten tv-ohjelmat, elokuvat, verkkovideot kuten YouTube videot.<br><br>Pääsääntöisesti tarvitset oikeudenhaltijan luvan, jotta voit tallentaa tiedostona toisen tekemän verkkovideon esimerkiksi omalle verkkosivullesi. Suorien hyperlinkkien tekeminen on sallittua, joten voit tehdä linkin esimerkiksi YouTube videoon. Jos YouTube-videon tai muun videon voi upottaa upotuskoodilla, on videon palveluun lähettänyt henkilö antanut tähän luvan palvelun käyttöehtojen kautta. Eli upottaminen ja linkittäminen videoaineistoon on täysin sallittua, kunhan itse video nyt näyttäisi olevan laillisesti verkkoon pantu.<br><br>Internetistä löytyy paljon verkkovideoita, joiden käytön oikeudenhaltija on sallinut Creative Commons –lisenssillä. Näiden osalta tulee noudattaa lisenssiehtoja ja kopioidun kuvan yhteyteen merkitä tekijän nimi ja maininta, millä cc-lisenssillä kuva oli lisensioitu.",
+        "14. Videoiden esittäminen opetuksessa vaatii luvan tekijältä jos tilaisuus on julkinen – yksityinen ei vaadi<br><br>Elokuvien ja videoiden esittämiseen opetuksessa tarvitaan erillinen lupa. Myös verkossa olevien videoiden, kuten YouTube videoiden esittämiseen opetuksessa tarvitaan pääsääntöisesti lupa jos tilaisuus on julkinen. Jos opetustilanne on luonteeltaan yksityistilaisuus (eli sinne pääsee vain rajattu ennalta nimiltä tunnettu joukko ihmisiä), videoiden esittäminen verkosta on sallittua.<br><br>Verkossa on kuitenkin useita videoita, joiden käyttö opetuksessa on voitu sallia esimerkiksi Creative Commons-lisenssillä.<br><br>On huomattava, että internetissä oleva aineisto on saatettu ladata verkkoon ilman oikeudenomistajan suostumusta. Laittomasti verkkoon ladatun sisällön esittäminen ei ole sallittua.",
+        "15. Linkittäminen pitää tehdä hyvän tavan mukaisesti<br><br>Hyperlinkittämisessä on kysymys siitä, että linkkiä klikkaamalla siirrytään suoraan toiselle internetsivulle. Linkittämistä voidaan pitää tekijänoikeudellisesti sallittuna, jos linkitys tapahtuu siten, että käyttäjä huomaa selkeästi siirtymisen toiselle sivustolle ja linkittäminen on tehty muutoinkin hyvän tavan mukaisesti.",
+        "16. Teoksen pieni muunteleminen vaatii tekijältä luvan<br><br>Oikeus muunnella teosta on tekijän yksinoikeuteen kuuluva oikeus. Tekijällä on oikeus määrätä teoksestaan muuttamattomana ja muutettuna, käännöksenä tai muunnelmana, toisessa kirjallisuus- tai taidelajissa tai toista tekotapaa käyttäen.<br><br>Muunnelma syntyy esimerkiksi, kun olemassa olevaan teokseen tehdään lisäyksiä, rajauksia tai muita muutoksia. Muunnelma on esimerkiksi sinfoniasta tehty uusi sovitus tai kirjallisen teoksen tiivistäminen tai kun kirjasta tehdään elokuva tai näytelmä. Muunnelman tekeminen edellyttää yleensä alkuperäisteoksen tekijän lupaa.<br><br>Lupaa ei kuitenkaan tarvita, jos alkuperäisteoksen suoja-aika – 70 vuotta alkuperäisen tekijän kuolinvuoden päättymisestä – on kulunut umpeen tai jos teos on julkaistu esimerkiksi sellaisella Creative Commons –lisenssillä, joka sallii muuntelun.",
+        "17. Uuden, erilaisen teoksen tekeminen toisen teoksen pohjalta on sallittua<br><br>Vapaasti muuntelemalla on kuitenkin lupa tehdä uusi teos ilman alkuperäisen tekijän suostumusta. On huomattava, että lopputuloksena täytyy syntyä uusi itsenäinen teos, joka ei ole samaistettavissa alkuperäiseen teokseen.",
+        "18. Ideoiden varastaminen ja lainaaminen on sallittua<br><br>Tekijänoikeus ei suojaa teoksen tietosisältöä, ideoita eikä ajatuksia. Näitä voit hyödyntää kirjoittaessasi omaa tekstiä tai luodessasi muuta teosta.",
+      ],
+      kysymys: "Miksi on tärkeää tarkistaa, onko sinulla lupa käyttää toisen ottamaa kuvaa?",
+      vaihtoehdot: [
+        "A) Koska muuten kuva ei näy kunnolla",
+        "B) Koska se on laitonta ja epäreilua alkuperäistä tekijää kohtaan",
+        "C) Koska kuvat ovat aina ilmaisia",
+        "D) Koska kuvat eivät ole tärkeitä",
+      ],
+      vastaus: "B) Koska se on laitonta ja epäreilua alkuperäistä tekijää kohtaan",
     }
   ];
 
