@@ -35,6 +35,7 @@ import { KursorinUllakkoMap } from "./components/pages/Maps/KursorinUllakkoMap";
 import { LaamanAitausMap } from "./components/pages/Maps/LaamanAitausMap";
 import { SirynAlytaloMap } from "./components/pages/Maps/SirynAlytaloMap";
 import { OhjelmointiMap } from "./components/pages/Maps/ohjelmointiMap";
+import { MiukumaukuMap } from "./components/pages/Maps/MiukumaukuMap";
 
 function App() {
   const { user } = useAuthContext();
@@ -103,6 +104,7 @@ function App() {
               path="/kartat/tweetynviestiseinä"
               element={<TweetynviestiseinäMap />}
             />
+            <Route path="/kartat/miukumauku" element={<MiukumaukuMap />} />
             <Route
               path="/kartat/kursorinullakko"
               element={<KursorinUllakkoMap />}
