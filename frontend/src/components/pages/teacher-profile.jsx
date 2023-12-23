@@ -11,7 +11,7 @@ export const Profile = () => {
   const { user, role } = useAuthContext();
   return (
     <div className="Profile-wrapper">
-      {role === "teacher" && (
+      {role.toLowerCase() === "teacher" && (
         <div className={`Teacher-profile-wrapper`}>
           <TeacherSection User={user} />
           <TeacherSectionMobile user={user} />

@@ -23,6 +23,17 @@ const studentSchema = new Schema({
     type: String,
     default: "Student",
   },
+  completedExercises: {
+    Apinmaja: [String],
+    DogenBoxi: [String],
+    HäsänStudio: [String],
+    KursorinUllakko: [String],
+    MiukuMaukunKirjasto: [String],
+    OhjelmointiPolku: [String],
+    TweetynViestiseinä: [String],
+    SirynÄlytalo: [String],
+    LaamanAitaus: [String],
+  },
 });
 studentSchema.statics.login = async function (studentData) {
   const { username, teacherid } = studentData;
