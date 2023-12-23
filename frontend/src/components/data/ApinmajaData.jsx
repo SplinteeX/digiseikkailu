@@ -432,6 +432,19 @@ export const ApinmajaData = () => {
     },
     {
       tehtNum: "19",
+      tehtName: "Opi tekstinkäsittelyn perusteet",
+      Kategoria: "Apinmaja",
+      Teksti:
+        "Miksi harjoitellaan tekstinkäsittelyä?<br><br>Tekstinkäsittelytaito on sitä, että osaat muokata tekstitiedostosta kauniin ja selkeän näköisen yhteisiä sääntöjä noudattamalla.<br><br>Omalla tietokoneella tehty työsi näyttää selkeältä ja teksti on oikealla tavalla aseteltu ja helppo lukea.<br><br>Tekstinkäsittelytaitoja tarvitaan koulussa mm. esitelmien ja raporttien tekemiseen.",
+      Kuvat: [
+        "/src/assets/ApinmajaImages/Välilyonti.webp",
+        "/src/assets/ApinmajaImages/Taito1.webp",
+        "/src/assets/ApinmajaImages/Taito2.webp",
+        "/src/assets/ApinmajaImages/Tavoitteet.webp",
+      ],
+    },
+    {
+      tehtNum: "20",
       tehtName: "Tekstin muokkaaminen",
       Kategoria: "Apinmaja",
       Kuva: "/src/assets/ApinmajaImages/TekstinKäsittely.webp",
@@ -459,7 +472,7 @@ export const ApinmajaData = () => {
         "B) Liikuttamalla hiiren osoitinta tekstin yli ja pitämällä hiiren ykköspainiketta alhaalla",
     },
     {
-      tehtNum: "20",
+      tehtNum: "21",
       tehtName: "Kirjoita tarina kuulemasi mukaan",
       Kategoria: "Apinmaja",
       Kuva: "/src/assets/ApinmajaImages/TarinanKirjoitus.webp",
@@ -478,7 +491,7 @@ export const ApinmajaData = () => {
       SoundCloud: "",
     },
     {
-      tehtNum: "21",
+      tehtNum: "22",
       tehtName: "Tiedostot",
       Kategoria: "Apinmaja",
       Kuvat: [
@@ -504,7 +517,7 @@ export const ApinmajaData = () => {
         "https://soundcloud.com/marjopihlis/tehtava-2-tekstinkasittely/s-k1zcX",
     },
     {
-      tehtNum: "22",
+      tehtNum: "23",
       tehtName: "Tiedostomuodot",
       Kategoria: "Apinmaja",
       youtube: "FXrM_YErETs",
@@ -525,7 +538,7 @@ export const ApinmajaData = () => {
       vastaus: "b) Parantaakseen tiedostojen löydettävyyttä",
     },
     {
-      tehtNum: "23",
+      tehtNum: "24",
       tehtName: "Tiedoston luominen ja talletus haluttuun sijaintiin",
       Kategoria: "Apinmaja",
       Tekstit: [
@@ -556,7 +569,7 @@ export const ApinmajaData = () => {
         "B) Luo tiedosto, etsi Tallenna-toiminto, paina Tallenna nimellä -painiketta, valitse sijainti ja nimeä tiedosto",
     },
     {
-      tehtNum: "24",
+      tehtNum: "25",
       tehtName: "Kutsukortti",
       Kategoria: "Apinmaja",
       SoundClouds: [
@@ -591,37 +604,6 @@ export const ApinmajaData = () => {
       ],
     },
     {
-      tehtNum: "25",
-      tehtName: "Tietokoneen laitteisto ja ohjelmisto",
-      Kategoria: "Apinmaja",
-      puolKuvat: [
-        "/src/assets/ApinmajaImages/TietokoneenTyöpöytä.webp",
-        "/src/assets/ApinmajaImages/Osoiterivi.webp",
-        "/src/assets/ApinmajaImages/GoogleOsoiterivi.webp",
-      ],
-      puolTekstit: [
-        "Tietokoneen työpöytä, Osoitinnuoli, Kansio, Selain, Roskakori, Windows “käynnistä”-nappi, Keskusyksikkö, Hiiri, Näppäimistö & Tietokoneen näyttö",
-        "Osoiterivi, Verkkosivun osoite www.digiseikkailu.com, Avattu verkkosivu & Digiseikkailun etusivu",
-        "Osoiterivi, Verkkosivun osoite www.google.com, Avattu verkkosivu – Googlen etusivu & Googlen hakukenttä",
-      ],
-      Tekstit: [
-        "Laitteisto (hardware) Laitteisto tarkoittaa ulkoisia osia, jotka näkyvät käyttäjälle. Laitteistoja voi olla esim. tietokonelaitteisto, stereolaitteisto, auton ohjauslaitteisto.",
-        "Ohjelmisto (software) Ohjelmisto on useista tietokoneohjelmista esim. peleistä, niiden käyttämistä tiedostoista muodostuva kokonaisuus joka toimii tietokoneen laitteiston sisällä.",
-      ],
-      kysymys: "Mikä seuraavista on esimerkki tietokoneen laitteistosta?",
-      vaihtoehdot: [
-        "A) Tietokoneohjelma",
-        "B) Tiedosto",
-        "C) Näppäimistö",
-        "D) Käyttöjärjestelmä",
-      ],
-      vastaus: "C) Näppäimistö",
-      Kuvat: [
-        "/src/assets/ApinmajaImages/Hardware.webp",
-        "/src/assets/ApinmajaImages/Hakukenttä.webp",
-      ],
-    },
-    {
       tehtName: "Kutsukortti Laaman syntymäpäiville",
       tehtNum: "26",
       Kategoria: "Apinmaja",
@@ -653,6 +635,105 @@ export const ApinmajaData = () => {
         "Mikä tekninen protokolla mahdollistaa tiedostojen siirtämisen palvelimelta toiselle?",
       vaihtoehdot: ["a) HTTP", "b) FTP", "c) WWW", "d) HTML"],
       vastaus: "b) FTP",
+    },
+    {
+      tehtNum: "28",
+      tehtName: "Tietokoneen laitteisto ja ohjelmisto",
+      Kategoria: "Apinmaja",
+      puolKuvat: [
+        "/src/assets/ApinmajaImages/TietokoneenTyöpöytä.webp",
+        "/src/assets/ApinmajaImages/Osoiterivi.webp",
+        "/src/assets/ApinmajaImages/GoogleOsoiterivi.webp",
+      ],
+      puolTekstit: [
+        "Tietokoneen työpöytä, Osoitinnuoli, Kansio, Selain, Roskakori, Windows “käynnistä”-nappi, Keskusyksikkö, Hiiri, Näppäimistö & Tietokoneen näyttö",
+        "Osoiterivi, Verkkosivun osoite www.digiseikkailu.com, Avattu verkkosivu & Digiseikkailun etusivu",
+        "Osoiterivi, Verkkosivun osoite www.google.com, Avattu verkkosivu – Googlen etusivu & Googlen hakukenttä",
+      ],
+      Tekstit: [
+        "Laitteisto (hardware) Laitteisto tarkoittaa ulkoisia osia, jotka näkyvät käyttäjälle. Laitteistoja voi olla esim. tietokonelaitteisto, stereolaitteisto, auton ohjauslaitteisto.",
+        "Ohjelmisto (software) Ohjelmisto on useista tietokoneohjelmista esim. peleistä, niiden käyttämistä tiedostoista muodostuva kokonaisuus joka toimii tietokoneen laitteiston sisällä.",
+      ],
+      kysymys: "Mikä seuraavista on esimerkki tietokoneen laitteistosta?",
+      vaihtoehdot: [
+        "A) Tietokoneohjelma",
+        "B) Tiedosto",
+        "C) Näppäimistö",
+        "D) Käyttöjärjestelmä",
+      ],
+      vastaus: "C) Näppäimistö",
+      Kuvat: [
+        "/src/assets/ApinmajaImages/Hardware.webp",
+        "/src/assets/ApinmajaImages/Hakukenttä.webp",
+      ],
+    },
+    {
+      tehtNum: "29",
+      tehtName: "Sisäiset komponentit",
+      Kategoria: "Apinmaja",
+      puolKuvat: [
+        "/src/assets/ApinmajaImages/Kursori.webp",
+        "/src/assets/ApinmajaImages/emolevy.webp",
+        "/src/assets/ApinmajaImages/massamuisti.webp",
+        "/src/assets/ApinmajaImages/aanikortti.webp",
+        "/src/assets/ApinmajaImages/ram.webp",
+        "/src/assets/ApinmajaImages/prosessori.webp",
+        "/src/assets/ApinmajaImages/verkkokortti.webp",
+        "/src/assets/ApinmajaImages/nayttis.webp",
+        "/src/assets/ApinmajaImages/virtalahde.webp",
+      ],
+      puolTekstit: [
+        "Täältä löytyvät tietokoneen sisuskalut, eli komponentit! Näitä minä tykkään tutkia ja keräillä. On mukava myös kasailla uusia tietokoneita vanhoista osista.",
+        "Emolevy<br><br>Emolevy on kuin tietokoneen sydän ja aivot yhdistettynä. Se on erityinen lauta, johon kiinnitetään kaikki muut tietokoneen osat, kuten muisti ja prosessori. Ajattele sitä kuin LEGO-palikkatauluna, johon liitetään eri LEGO-palikat. Emolevy pitää huolen siitä, että kaikki nämä osat voivat jutella keskenään ja tehdä tietokoneen toimimaan oikein. Vähän niin kuin se ohjaisi kaikkia tietokoneen palikoita tekemään yhteistyötä!",
+        "Kiintolevy / Kovalevy / Massamuisti<br<br>Kiintolevy on kuin tietokoneesi iso muistilaatikko, johon tallennetaan kaikki, kuten pelit ja kuvat. Vanhemmissa kiintolevyissä on pyöriviä osia, jotka tekevät niistä hitaampia. Uudemmat SSD-kiintolevyt ovat nopeampia eikä niissä ole liikkuvia osia. Ne toimivat samalla tavalla kuin puhelimen muistikortit. Kiintolevy pitää kaiken tallennetun tiedon tallessa, jopa kun tietokone on sammutettuna.",
+        "Äänikortti<br><br>Äänikortti on osa tietokonetta, joka mahdollistaa äänien kuulemisen ja luomisen, kuten musiikin tai pelien ääniefektit. Usein äänikortti on kiinni emolevyssä, mutta jos haluaa tehdä tietokoneella musiikkia tai tarvitsee parempaa äänenlaatua, voi hankkia erillisen, paremman äänikortin. Se on kuin tietokoneen korvat ja suu äänille!",
+        "Keskusmuisti / Käyttömuisti / RAM-muisti<br><br>Työmuisti eli RAM on kuin tietokoneen nopea muistilappu. Se pitää käynnissä olevien ohjelmien tiedot helposti saatavilla, jotta tietokone toimii nopeasti. Se on pienempi kuin kiintolevy eikä ole tarkoitettu tallentamaan tietoja pitkäksi aikaa. Kun sammutat tietokoneen, työmuisti tyhjenee. Mitä enemmän RAM-muistia on, sitä paremmin tietokone pystyy pyörittämään monimutkaisia ohjelmia, kuten pelejä.",
+        "Prosessori / Suoritin<br><br>Prosessori on tietokoneen aivot. Se käsittelee ohjelmien käskyjä ja tekee monimutkaisia laskuja nopeasti. Prosessorin suorituskyky vaikuttaa tietokoneen nopeuteen. Se käyttää konekieltä, joka koostuu ykkösistä ja nollista, ja laskentateho ilmoitetaan gigahertseinä (GHz). Nykyaikaisissa prosessoreissa voi olla useita ytimiä, jotka mahdollistavat monien laskutoimitusten tekemisen samanaikaisesti. Prosessori käyttää myös välimuistia, joka auttaa tekemään tiedonkäsittelyä nopeammin.",
+        "Verkkokortti<br><br>Verkkokortti, jota kutsutaan myös verkkosovittimeksi, on tietokoneen osa, joka yhdistää sen internettiin. Nykyään useimmissa emolevyissä on jo valmiiksi asennettu verkkokortti. Se tarkoittaa, että verkkoyhteys on osa tietokoneen “sydäntä”. Jos tietokoneessa ei ole valmiiksi asennettua verkkokorttia tai tarvitsee paremman yhteyden, voi ostaa ja asentaa erillisen verkkokortin. Verkkokortin avulla tietokone pystyy kommunikoimaan internetin kanssa ja pääsee käsiksi verkkoon.",
+        "Grafiikkaprosessori eli näytönohjain<br><br>Grafiikkaprosessori (GPU) on tietokoneen osa, joka käsittelee kuvia ja videoita. Se tekee pelien ja videoiden katsomisen sujuvaksi ja laadukkaaksi. GPU:t ovat yleensä todella tehokkaita, jopa tehokkaampia kuin tietokoneen tavallinen prosessori, erityisesti kuvien ja videoiden käsittelyssä..",
+        "Virtalähde<br><br>Virtalähde muuttaa virtajohdon kautta koneelle tulevan verkkovirran tietokoneen eri osille sopivaksi​",
+      ],
+      Teksti:
+        "Muita tietokoneen osia<br><br>Kotelo on runko, jonka sisälle tietokone kasataan. Koteloita on monen mallisia ja näköisiä.​",
+      kysymys: "Mikä on emolevyn rooli tietokoneessa?",
+      vaihtoehdot: [
+        "A) Tallentaa käyttäjän tiedostot",
+        "B) Muuntaa virtajohdon verkkovirran",
+        "C) Käsittelee äänen toistamista ja luomista",
+        "D) Yhdistää kaikki tietokoneen komponentit ja mahdollistaa niiden kommunikoinnin",
+      ],
+      vastaus:
+        "D) Yhdistää kaikki tietokoneen komponentit ja mahdollistaa niiden kommunikoinnin",
+    },
+    {
+      tehtNum: "30",
+      tehtName: "Tietokoneen osat ja laitteisto",
+      Kategoria: "Apinmaja",
+      puolTekstit: [
+        "Pöytätietokone<br><br>Pöytätietokone on tietokone, joka on suunniteltu käytettäväksi pöydällä. Pöytätietokone koostuu näytöstä, näppäimistöstä ja hiirestä. Pöytätietokoneen voi koota itse tai ostaa valmiina. Pöytätietokoneen voi myös rakentaa itse. Tällöin voi valita itse tietokoneen osat ja koota ne yhteen. Pöytätietokoneen voi myös ostaa valmiina. Valmiissa tietokoneessa on yleensä kaikki tarvittavat osat valmiina.",
+        "Hiiri<br><br>Hiirellä liikuttaessa tietokoneen näytöllä liikkuu osoitin, jonka avulla voit antaa tietokoneelle ohjeita. Voit siirtää osoitinta eri kohtiin näytöllä ja klikata kuvakkeita suorittaaksesi toimintoja, kuten avaamaan tiedostoja tai ohjelmia.",
+        "Kannettava tietokone<br><br>Kannettava tietokone on tietokone, joka on suunniteltu olemaan kannettava ja helppo kuljettaa. Se yhdistää kaikki työpöytätietokoneen keskeiset komponentit, kuten näppäimistön, hiiren, näytön ja prosessorin, yhteen kompaktiin laitteeseen. Kannettavat tietokoneet ovat erittäin suosittuja niiden joustavuuden ja liikkuvuuden vuoksi",
+        "Tasohiiri<br><br>Yleensä kannettavissa tietokoneissa käytettävässä tasohiiressä näytöllä näkyvää osoitinta liikutetaan tasohiiren osoitinlevyllä, joka taas välittää käyttäjän sormen liikkeet tietokoneelle.",
+        "Näyttö<br><br>Näyttö on tietokoneen osa, joka näyttää visuaalisesti, mitä tietokoneessa tapahtuu. Se koostuu pikseleistä, jotka ovat pieniä kuvapisteitä ruudulla. Näyttöjen resoluutio, kuten 1366 x 768, kertoo pikselien määrän leveyden ja korkeuden suhteen. Mitä suurempi resoluutio, sitä tarkempi ja selkeämpi on kuva näytöllä.",
+        "Keskusyksikkö<br><br>Keskusyksikkö viittaa tietokoneen pääkomponenttiin, joka sisältää tietokoneen prosessorin (CPU), muistin (RAM) ja muita tärkeitä komponentteja. Se on tietokoneen aivot, joka suorittaa ohjelmien komentoja ja käsittelee dataa. Keskusyksikkö on yleensä sijoitettu tietokoneen koteloon.",
+      ],
+      puolKuvat: [
+        "/src/assets/ApinmajaImages/poytatietokone.webp",
+        "/src/assets/ApinmajaImages/kannettavatietokone.webp",
+        "/src/assets/ApinmajaImages/hiiri.webp",
+        "/src/assets/ApinmajaImages/tasohiiri.webp",
+        "/src/assets/ApinmajaImages/naytto.webp",
+        "/src/assets/ApinmajaImages/keskusyksikko.webp",
+      ],
+      kysymys:
+        "Mitä komponenttia käytetään osoittimen liikuttamiseen tietokoneen näytöllä?",
+      vaihtoehdot: [
+        "A) Keskusmuisti",
+        "B) Hiiri",
+        "C) Keskusyksikkö",
+        "D) Näyttö",
+      ],
+      vastaus: "B) Hiiri",
     },
   ];
 
