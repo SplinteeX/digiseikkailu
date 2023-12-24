@@ -297,6 +297,7 @@
 @media screen and (max-width: 1000px) {
   .Exercise {
     padding: 20px;
+    width: 95%;
   }
   .Exercise .Unity-loader-div {
     display: none;
@@ -315,6 +316,12 @@
   .Exercise .Pallolista {
     width: 95%;
     padding: 2.5%;
+  }
+  .Exercise .Vaihtoehto {
+    width: 95%;
+  }
+  .Exercise h3 {
+    width: 95%;
   }
 }
 @media screen and (max-width: 700px) {

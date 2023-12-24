@@ -87,7 +87,7 @@ const getUser = async (req, res) => {
 async function saveCompletedExercise(req, res) {
   const { id, exerciseIdentifier, exerciseCategory } = req.body;
   try {
-    const user = await User.findById(id);
+    const user = (await User.findById(id)) || (await Student.findById(id));
     const completedExercises = user.completedExercises;
     console.log(completedExercises[exerciseCategory]);
     completedExercises[exerciseCategory].push(exerciseIdentifier);
