@@ -7,6 +7,7 @@ const {
   getUserById,
   getUser,
   saveCompletedExercise,
+  retrieveCompletedExercises,
 } = require("../Controllers/userController");
 const requireAuth = require("../middleware/requireAuth");
 
@@ -18,4 +19,5 @@ router.post("/getUser", getUser);
 router.get("/users", requireAuth, getUsers);
 router.post("/user", requireAuth, getUserById);
 router.post("/save-exercise", requireAuth, saveCompletedExercise);
+router.post("/retrieve-exercises", requireAuth, retrieveCompletedExercises);
 module.exports = router;

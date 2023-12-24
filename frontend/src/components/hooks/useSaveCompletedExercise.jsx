@@ -6,9 +6,6 @@ export const useSaveCompletedExercise = () => {
     exerciseCategory
   ) => {
     const Auth = Cookies.get("Authorization");
-    console.log(id);
-    console.log(exerciseIdentifier);
-    console.log(exerciseCategory);
     try {
       const response = await fetch(
         "http://localhost:8080/api/user/save-exercise",

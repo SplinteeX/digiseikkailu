@@ -64,20 +64,15 @@ const getUserById = async (req, res) => {
 };
 const getUser = async (req, res) => {
   const { authorization } = req.headers;
-  console.log(req.headers);
-  console.log(authorization);
   if (!authorization) {
     return res.status(401).json({ error: "Authorization token required" });
   }
   const token = authorization.split(" ")[1];
-  console.log(token);
 
   try {
     const { _id } = jwt.verify(token, process.env.JWT_SECRET);
-    console.log(_id);
     const user =
       (await User.findOne({ _id })) || (await Student.findOne({ _id }));
-    console.log(user);
     res.status(200).json({ user });
   } catch (error) {
     console.error("JWT Verification Error:", error);
@@ -89,10 +84,23 @@ async function saveCompletedExercise(req, res) {
   try {
     const user = (await User.findById(id)) || (await Student.findById(id));
     const completedExercises = user.completedExercises;
-    console.log(completedExercises[exerciseCategory]);
+
+    if (completedExercises[exerciseCategory].includes(exerciseIdentifier)) {
+      return res.status(400).json({ error: "Exercise already completed" });
+    }
     completedExercises[exerciseCategory].push(exerciseIdentifier);
-    user.save();
+    await user.save();
     res.status(200).json({ user });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+}
+async function retrieveCompletedExercises(req, res) {
+  const { id } = req.body;
+  try {
+    const user = (await User.findById(id)) || (await Student.findById(id));
+    const completedExercises = user.completedExercises;
+    res.status(200).json({ completedExercises });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -104,4 +112,5 @@ module.exports = {
   getUserById,
   getUser,
   saveCompletedExercise,
+  retrieveCompletedExercises,
 };

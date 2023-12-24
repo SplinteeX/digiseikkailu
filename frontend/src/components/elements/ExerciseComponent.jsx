@@ -10,24 +10,43 @@ import { PDFViewer } from "./PDFViewer";
 import CommonButton from "./CommonButton";
 import { useSaveCompletedExercise } from "../hooks/useSaveCompletedExercise";
 import { useAuthContext } from "../hooks/useAuthContext";
+import { useRetrieveExercises } from "../hooks/useRetrieveExercises";
 
 export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
   const [RightTask, setRightTask] = useState(Data.vastaus);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [completedExercise, setCompletedExercise] = useState(false);
+  const [loading, setLoading] = useState(null);
   const { SaveCompletedExercise } = useSaveCompletedExercise();
+  const { RetrieveExercises } = useRetrieveExercises();
   const { user } = useAuthContext();
-  const parsedUser = JSON.parse(user);
+
   const navigate = useNavigate();
+  const parsedUser = JSON.parse(user);
+  const fetchData = async (Data) => {
+    try {
+      const exercises = await RetrieveExercises(parsedUser._id);
+      const arrayContainsOne = exercises.completedExercises[
+        Data.Kategoria
+      ].some((item) => item === Data.tehtNum);
+      if (arrayContainsOne) {
+        setCompletedExercise(true);
+      } else {
+        setCompletedExercise(false);
+      }
+    } catch (error) {
+      console.error("Error parsing user or retrieving exercises:", error);
+    }
+  };
 
   useEffect(() => {
+    fetchData(Data);
     setRightTask(Data.vastaus);
   }, [Data]);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
-    console.log(tab);
   };
   const handleUnityLoad = () => {
     setLoading(false);
@@ -302,36 +321,52 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
       )}
       {activeTab === "Kysely" && Data.kysymys && (
         <>
-          <div className="Kysymys-title">
-            <h3 className="White-text">
-              {Data.tehtNum}. {Data.tehtName}
-            </h3>
-            <h3 className="White-text">{Data.kysymys}</h3>
-          </div>
-          {selectedAnswer === "correct" && (
-            <p className="White-text">Oikein!</p>
-          )}
-          {selectedAnswer === "wrong" && <p className="White-text">Väärin!</p>}
-          <div className="Kysymys-vaihtoehdot">
-            {Data.vaihtoehdot.map((vaihtoehto, index) => (
-              <div key={`vaihtoehto_${index}`} className={`Kysymys-vaihtoehto`}>
-                <p
-                  className={`Vaihtoehto ${
-                    selectedAnswer === "correct"
-                      ? "Correct-answer"
-                      : selectedAnswer === "wrong"
-                      ? "Wrong-answer"
-                      : ""
-                  }`}
-                  onClick={() => handleAnswerClick(vaihtoehto)}
-                >
-                  {vaihtoehto}
-                </p>
+          {!completedExercise ? (
+            <div className="Kysymys-title">
+              <h3 className="White-text">
+                {Data.tehtNum}. {Data.tehtName}
+              </h3>
+              <h3 className="White-text">{Data.kysymys}</h3>
+              {selectedAnswer === "correct" && (
+                <p className="White-text">Oikein!</p>
+              )}
+              {selectedAnswer === "wrong" && (
+                <p className="White-text">Väärin!</p>
+              )}
+
+              <div className="Kysymys-vaihtoehdot">
+                {Data.vaihtoehdot.map((vaihtoehto, index) => (
+                  <div
+                    key={`vaihtoehto_${index}`}
+                    className="Kysymys-vaihtoehto"
+                  >
+                    <p
+                      className={`Vaihtoehto ${
+                        selectedAnswer === "correct"
+                          ? "Correct-answer"
+                          : selectedAnswer === "wrong"
+                          ? "Wrong-answer"
+                          : ""
+                      }`}
+                      onClick={() => handleAnswerClick(vaihtoehto)}
+                    >
+                      {vaihtoehto}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ) : (
+            <>
+              <p className="White-text">
+                Onnea! Olet suorittanut tehtävän! Voit siirtyä seuraavaan
+                tehtävään!
+              </p>
+            </>
+          )}
         </>
       )}
+
       <div className="Control-buttons">
         <button
           onClick={() => handleNavigation("previous")}

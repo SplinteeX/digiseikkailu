@@ -223,6 +223,9 @@
 .Exercise .CommonButton img {
   display: none;
 }
+.Exercise .Oikea-vaihtoehto {
+  background-color: #00d7a3;
+}
 
 /* All different syles */
 .Apinmaja-style {
