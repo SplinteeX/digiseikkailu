@@ -84,10 +84,24 @@ const getUser = async (req, res) => {
     return;
   }
 };
+async function saveCompletedExercise(req, res) {
+  const { id, exerciseIdentifier, exerciseCategory } = req.body;
+  try {
+    const user = await User.findById(id);
+    const completedExercises = user.completedExercises;
+    console.log(completedExercises[exerciseCategory]);
+    completedExercises[exerciseCategory].push(exerciseIdentifier);
+    user.save();
+    res.status(200).json({ user });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+}
 module.exports = {
   loginUser,
   signupUser,
   getUsers,
   getUserById,
   getUser,
+  saveCompletedExercise,
 };

@@ -6,6 +6,7 @@ const {
   getUsers,
   getUserById,
   getUser,
+  saveCompletedExercise,
 } = require("../Controllers/userController");
 const requireAuth = require("../middleware/requireAuth");
 
@@ -16,4 +17,5 @@ router.post("/signup", signupUser);
 router.post("/getUser", getUser);
 router.get("/users", requireAuth, getUsers);
 router.post("/user", requireAuth, getUserById);
+router.post("/save-exercise", requireAuth, saveCompletedExercise);
 module.exports = router;

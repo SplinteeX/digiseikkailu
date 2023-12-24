@@ -8,12 +8,17 @@ import YoutubeVideo from "../elements/YoutubeVideo";
 import { SoundCloud } from "./soundCloud";
 import { PDFViewer } from "./PDFViewer";
 import CommonButton from "./CommonButton";
+import { useSaveCompletedExercise } from "../hooks/useSaveCompletedExercise";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
   const [RightTask, setRightTask] = useState(Data.vastaus);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [loading, setLoading] = useState(true);
+  const { SaveCompletedExercise } = useSaveCompletedExercise();
+  const { user } = useAuthContext();
+  const parsedUser = JSON.parse(user);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -55,6 +60,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
     if (!selectedAnswer) {
       if (clickedAnswer === RightTask) {
         setSelectedAnswer("correct");
+        SaveCompletedExercise(parsedUser._id, Data.tehtNum, Data.Kategoria);
       } else {
         setSelectedAnswer("wrong");
         setTimeout(() => {
