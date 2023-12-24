@@ -60,7 +60,10 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
     if (!selectedAnswer) {
       if (clickedAnswer === RightTask) {
         setSelectedAnswer("correct");
-        SaveCompletedExercise(parsedUser._id, Data.tehtNum, Data.Kategoria);
+        {
+          user &&
+            SaveCompletedExercise(parsedUser._id, Data.tehtNum, Data.Kategoria);
+        }
       } else {
         setSelectedAnswer("wrong");
         setTimeout(() => {
