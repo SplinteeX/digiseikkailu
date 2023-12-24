@@ -7,6 +7,7 @@ export const SirynAlytaloMap = () => {
         Data={{
           Title: "Siryn Alytalo",
           Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
+          Kategoria: "SirynÄlytalo",
           Balls: [
             {
               Väri: "Vihreä",

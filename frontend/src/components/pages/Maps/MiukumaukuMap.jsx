@@ -7,6 +7,7 @@ export const MiukumaukuMap = () => {
         Data={{
           Title: "Miukumauku",
           Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
+          Kategoria: "MiukuMaukunKirjasto",
           Balls: [
             {
               Väri: "Vihreä",

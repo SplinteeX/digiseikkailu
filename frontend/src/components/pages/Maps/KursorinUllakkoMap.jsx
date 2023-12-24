@@ -7,6 +7,7 @@ export const KursorinUllakkoMap = () => {
         Data={{
           Title: "Kursorin Ullakko",
           Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
+          Kategoria: "KursorinUllakko",
           Balls: [
             {
               Väri: "Vihreä",

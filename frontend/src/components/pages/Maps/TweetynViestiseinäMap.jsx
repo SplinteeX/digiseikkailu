@@ -7,6 +7,7 @@ export const TweetynviestiseinäMap = () => {
         Data={{
           Title: "Tweetyn Viestiseinä",
           Image: "/src/assets/Kartat/TweetynKartta.jpg",
+          Kategoria: "TweetynViestiseinä",
           Balls: [
             {
               Väri: "Vihreä",

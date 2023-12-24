@@ -7,6 +7,7 @@ export const ApinmajaMap = () => {
         Data={{
           Title: "Apinmaja",
           Image: "/src/assets/Kartat/ApinmajaKartta.jpg",
+          Kategoria: "Apinmaja",
           Balls: [
             {
               Väri: "Vihreä",

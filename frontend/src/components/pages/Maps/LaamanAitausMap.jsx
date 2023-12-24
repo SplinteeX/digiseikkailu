@@ -7,6 +7,7 @@ export const LaamanAitausMap = () => {
         Data={{
           Title: "Laaman aitaus",
           Image: "/src/assets/Kartat/LaamanKartta.jpg",
+          Kategoria: "LaamanAitaus",
           Balls: [
             {
               Väri: "Vihreä",
