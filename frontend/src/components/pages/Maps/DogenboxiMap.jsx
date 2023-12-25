@@ -7,7 +7,7 @@ export const DogenboxiMap = () => {
         Data={{
           Title: "Dogenboxi",
           Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
-          Kategoria: "Dogenboxi",
+          Kategoria: "DogenBoxi",
           Balls: [
             {
               Väri: "Rosa",

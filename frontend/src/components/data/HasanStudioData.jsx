@@ -98,7 +98,6 @@ export const HäsänStudioData = () => {
         "Voit suunnitella videon pääpointit message map -työkalulla.",
         "Esittele itsesi. Kerro mitä harrastat tai mitkä ovat lempijuttujasi tällä hetkellä, millaisia haaveita sinulla on tai mitkä ovat sinun erityistaitojasi. Palauta video opettajallesi ja voitte yhdessä pohtia mitä hyvää ja mitä kehitettävää siitä löytyy.",
       ],
-      smallTitle: "Tulosta message map -työkalu ( Oheisessa pdf tiedostossa )",
       Pdf: "https://drive.google.com/file/d/13OQEDP-xesFObyGiGhoXArLdmbUADNXP/preview",
     },
     {
@@ -107,7 +106,6 @@ export const HäsänStudioData = () => {
       Kategoria: "HäsänStudio",
       Title: "Keskustellaan videokulttuurista",
       Kuva: "/src/assets/HäsäImages/YoutubeVideoCulture.webp",
-      Title: "Pohditaan videokulttuuria",
       Tekstit: [
         "Tehkää lista parhaista vloggareista. Vertailkaa suosikkienne tyylejä (eli tubettajien tekstilajeja). Pohtikaa mitä kaikkea hyötyä Tubekulttuurista voi olla. Pohtikaa myös mitä negatiivisia puolia siihen voi liittyä. Pohtikaa näistä näkökulmista: Oppiminen, Aktiivisuus, Osallisuus, Terveys ( henkinen ja fyysinen hyvinvointi), ajankäyttö",
         "Harjoitelkaa väittelyä – YouTuben puolesta ja sitä vastaan. Tarkoitus on harjoitella perustelemista ja toisen ihmisen näkökantaan eläytymistä, oli itse mitä mieltä tahansa.",
@@ -131,15 +129,14 @@ export const HäsänStudioData = () => {
       tehtNum: "7",
       tehtName: "Mikä sinusta tulee isona",
       Kategoria: "HäsänStudio",
-      SoundCloud:
+      SoundClouds: [
         "https://soundcloud.com/digiseikkailu-oy/10-mikae-sinusta-tulee-isona?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-      SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/10-what-will-you-be-when-you?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      ],
       Title: "Tarinassa käsitellään",
       puolTeksti:
         "Lisää ammatteihin liittyviä tehtäviä löydät Häsän studiosta.",
       puolKuva: "/src/assets/HäsäImages/MikäSinustaTulee.webp",
-      Title: "10. Mikä sinusta tulee isona",
       Tekstit: [
         "Esitelmäpäivänä Appia jännitti. Hän oli tehnyt paljon töitä esityksensä eteen, etsinyt Siryn kirjastosta kaiken tiedon, mitä aiheesta oli saatavissa. Hän oli varma, että esitelmä oli hyvä, mutta silti koko luokan edessä esiintyminen jännitti.",
         "Esitelmän aiheena oli: Mikä sinusta tulee isona? Monella luokkakaverilla oli jo selvät suunnitelmat: Antonista tulisi insinööri, Mariasta tulisi lääkäri ja Niinasta kampaaja. Häsänkin toiveammatin Appi tiesi: Häsä aikoi näyttelijäksi tai videotuottajaksi. Appi halusi kuitenkin jotain muuta, ja siksi esitelmän tekoon oli mennyt niin paljon aikaa.",
@@ -150,10 +147,6 @@ export const HäsänStudioData = () => {
         "Mutta kaikkein kiinnostavin tulevaisuuden ammatti Apin mielestä oli pilviturvapalvelukonsultti. Se on ammatti, jota tarvitaan tulevaisuudessa todella paljon. Iso osa jokaisen ihmisen tiedoista on netissä, mutta tiedot eivät saa päätyä kenen tahansa nähtäviksi. Esimerkiksi pankki- tai terveystiedot ovat jokaisen henkilökohtaisia asioita, eivätkä niitä saa muut lukea. Pilviturvapalvelukonsultti tietää, miten tiedot pysyvät salassa. Se kuulostaa Apin mielestä tärkeältä ja jännittävältä työltä!",
         "Kun on Apin vuoro esiintyä, hän näyttää kaikille julisteen, jonka hän on askarrellut Siryn kirjastossa. Kun hän pääsee vauhtiin, jännitys unohtuu kokonaan. Apin esitys on menestys – kaikki kuuntelevat hiirenhiljaa. Lopuksi Appi saa mahtavat aplodit. Kaikki ovat sitä mieltä, että Apista tulee isona erinomainen turvapilvikonsulttipalvelu – vai mikä se nyt olikaan?",
       ],
-      Linkki:
-        "Edellinen tarina: https://digiadventurers.com/index.php/tarinat/osa-3/9-kadonneet-tilaajat/",
-      Linkki:
-        "Seuraava tarina: https://digiadventurers.com/index.php/tarinat/osa-3/11-kursori-pelastaa-tilanteen/",
     },
     {
       tehtNum: "8",
@@ -176,7 +169,7 @@ export const HäsänStudioData = () => {
         "D) Musiikin kuuntelua",
       ],
       vastaus:
-        "B) Tubettajien henkilötietojen, aiheiden ja suosion analysointia.",
+        "B) Tubettajien henkilötietojen, aiheiden ja suosion analysointia",
     },
     {
       tehtNum: "9",

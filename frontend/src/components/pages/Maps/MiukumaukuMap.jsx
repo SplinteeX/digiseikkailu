@@ -6,7 +6,7 @@ export const MiukumaukuMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Miukumauku",
-          Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
+          Image: "/src/assets/Kartat/MiukunMap.jpg",
           Kategoria: "MiukuMaukunKirjasto",
           Balls: [
             {

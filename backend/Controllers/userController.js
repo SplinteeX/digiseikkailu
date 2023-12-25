@@ -21,6 +21,7 @@ const loginUser = async (req, res) => {
       user: { firstname, lastname, email, userName, token, role, teacherid },
     });
   } catch (error) {
+    console.log(error);
     res.status(400).json({ error: error.message });
   }
 };
@@ -45,14 +46,7 @@ const signupUser = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
-const getUsers = async (req, res) => {
-  try {
-    const users = await User.find();
-    res.status(200).json({ users });
-  } catch (error) {
-    res.status(400).json({ error: error.message });
-  }
-};
+
 const getUserById = async (req, res) => {
   const { id } = req.body;
   try {
@@ -100,15 +94,16 @@ async function retrieveCompletedExercises(req, res) {
   try {
     const user = (await User.findById(id)) || (await Student.findById(id));
     const completedExercises = user.completedExercises;
+    console.log(completedExercises);
     res.status(200).json({ completedExercises });
   } catch (error) {
     res.status(400).json({ error: error.message });
+    console.log(error);
   }
 }
 module.exports = {
   loginUser,
   signupUser,
-  getUsers,
   getUserById,
   getUser,
   saveCompletedExercise,

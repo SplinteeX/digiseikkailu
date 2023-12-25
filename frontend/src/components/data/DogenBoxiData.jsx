@@ -47,10 +47,10 @@ export const DogenBoxiData = () => {
       tehtNum: "2",
       tehtName: "Liian hyvää ollaakseen totta",
       Kategoria: "DogenBoxi",
-      SoundCloud:
+      SoundClouds: [
         "https://soundcloud.com/digiseikkailu-oy/8-liian-hyvaeae-ollakseen?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-      SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/8-too-good-to-be-true?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      ],
       puolTeksti:
         "Tarinassa käsitellään tiedon luotettavuuden arviointia sekä tutustutaan oikeisiin uutisiin ja valeuutisiin",
       puolKuva: "/src/assets/DogeImages/jalkapallo.webp",
@@ -156,10 +156,10 @@ export const DogenBoxiData = () => {
       tehtNum: "6",
       tehtName: "Trollipostia Supersovellukselle",
       Kategoria: "DogenBoxi",
-      SoundCloud:
+      SoundClouds: [
         "https://soundcloud.com/digiseikkailu-oy/16-trollipostia?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-      SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/16-troill-mail-for-the-super?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      ],
       puolTeksti:
         "Tarinassa käsitellään: tutustutaan trollaamisen käsitteeseen, saadaan ohjeita, kuinka trollauksen voi pysäyttää omalta kohdaltaan, vahvistetaan nettikiusaamisen tunnistamisen taitoja sekä muistutetaan yhteisöllisestä ja rakentavasta viestinnästä mediassa.",
       puolKuva: "/src/assets/DogeImages/trollipostia.png",

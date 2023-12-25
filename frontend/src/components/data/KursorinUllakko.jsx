@@ -1,7 +1,7 @@
 export const KursorinUllakkoData = () => {
   const Tehtävät = [
     {
-      tehtNum: 1,
+      tehtNum: "1",
       tehtName: "Kursorin Ullakko",
       Kategoria: "KursorinUllakko",
       puolKuvat: [
@@ -50,7 +50,7 @@ export const KursorinUllakkoData = () => {
       vastaus: "C. Käyttää vain isoja kirjaimia ja värikkäitä fontteja.",
     },
     {
-      tehtNum: 2,
+      tehtNum: "2",
       tehtName: "Omat mediat pohdinnassa",
       Kategoria: "KursorinUllakko",
       Kuva: "/src/assets/KursorinImages/OmatMediatPohdinnassa.webp",
@@ -73,7 +73,7 @@ export const KursorinUllakkoData = () => {
       vastaus: "b) Ymmärtääkseen median vaikutuksen arkielämään",
     },
     {
-      tehtNum: 3,
+      tehtNum: "3",
       tehtName: "Pling, pling! - Tarina",
       Kategoria: "KursorinUllakko",
       SoundClouds: [
@@ -100,7 +100,7 @@ export const KursorinUllakkoData = () => {
       ],
     },
     {
-      tehtNum: 4,
+      tehtNum: "4",
       tehtName: "Ruutuaika",
       Kategoria: "KursorinUllakko",
       mp4: "/src/assets/KursorinImages/Ruutuaika-1.mp4",
@@ -133,7 +133,7 @@ export const KursorinUllakkoData = () => {
       ],
     },
     {
-      tehtNum: 5,
+      tehtNum: "5",
       tehtName: "Kursorin Ullakko",
       Kuva: "/src/assets/KursorinImages/Someriippuvuus.webp",
       Kategoria: "KursorinUllakko",
@@ -157,7 +157,7 @@ export const KursorinUllakkoData = () => {
       vastaus: "b) Jotta on aikaa myös muille tärkeille asioille elämässä",
     },
     {
-      tehtNum: 6,
+      tehtNum: "6",
       tehtName: "Kahden päivän haaste",
       Kategoria: "KursorinUllakko",
       SoundClouds: [
@@ -191,7 +191,7 @@ export const KursorinUllakkoData = () => {
       ],
     },
     {
-      tehtNum: 7,
+      tehtNum: "7",
       tehtName: "Päivä ilman älypuhelinta ja internettiä",
       Kategoria: "KursorinUllakko",
       Kuva: "/src/assets/KursorinImages/PäiväIlmanPuhelinta.webp",
@@ -221,7 +221,7 @@ export const KursorinUllakkoData = () => {
       vastaus: "c) Jotta ymmärrät paremmin, miten käytät aikaasi",
     },
     {
-      tehtNum: 8,
+      tehtNum: "8",
       tehtName: "Harjoitellaan rauhoittumista",
       Kategoria: "KursorinUllakko",
       Kuva: "/src/assets/KursorinImages/Rauhottumista.webp",
@@ -271,7 +271,7 @@ export const KursorinUllakkoData = () => {
         "b) Koska se auttaa keskittymään ja tuntemaan olosi onnellisemmaksi",
     },
     {
-      tehtNum: 9,
+      tehtNum: "9",
       Kategoria: "KursorinUllakko",
       tehtName: "Elämää ennenvanhaan - Kursori-papan urotyöt",
       puolKuva: "/src/assets/KursorinImages/PappaLaama.webp",
@@ -300,7 +300,7 @@ export const KursorinUllakkoData = () => {
       ],
     },
     {
-      tehtNum: 10,
+      tehtNum: "10",
       tehtName: "Kiitollisuus-harjoituksia",
       Kategoria: "KursorinUllakko",
       Kuva: "/src/assets/KursorinImages/KiitollisuusHarjoitus.webp",
@@ -326,7 +326,7 @@ export const KursorinUllakkoData = () => {
         "c) Se auttaa sinua muistamaan ja arvostamaan hyviä asioita elämässäsi",
     },
     {
-      tehtNum: 11,
+      tehtNum: "11",
       tehtName: "Sisukkuus-harjoituksia",
       Kategoria: "KursorinUllakko",
       Kuva: "/src/assets/KursorinImages/Sisukkuus.webp",

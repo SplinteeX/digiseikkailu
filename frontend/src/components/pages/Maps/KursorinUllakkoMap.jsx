@@ -6,7 +6,7 @@ export const KursorinUllakkoMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Kursorin Ullakko",
-          Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
+          Image: "/src/assets/Kartat/KursorinMap.jpg",
           Kategoria: "KursorinUllakko",
           Balls: [
             {

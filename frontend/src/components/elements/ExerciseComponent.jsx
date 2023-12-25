@@ -25,8 +25,11 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
   const navigate = useNavigate();
   const parsedUser = JSON.parse(user);
   const fetchData = async (Data) => {
+    if (!parsedUser) return;
     try {
       const exercises = await RetrieveExercises(parsedUser._id);
+      console.log(Data.Kategoria, exercises.completedExercises[Data.Kategoria]);
+      console.log(Data.tehtNum);
       const arrayContainsOne = exercises.completedExercises[
         Data.Kategoria
       ].some((item) => item === Data.tehtNum);

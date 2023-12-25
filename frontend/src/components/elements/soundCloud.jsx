@@ -4,7 +4,7 @@ export const SoundCloud = (url) => {
       <iframe
         width="100%"
         scrolling="no"
-        frameborder="no"
+        frameBorder="no"
         allow="autoplay"
         src={`https://w.soundcloud.com/player/?url=${url.url}`}
       ></iframe>

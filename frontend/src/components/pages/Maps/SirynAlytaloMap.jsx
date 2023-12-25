@@ -6,7 +6,7 @@ export const SirynAlytaloMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Siryn Alytalo",
-          Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
+          Image: "/src/assets/Kartat/SirynMap.jpg",
           Kategoria: "SirynÄlytalo",
           Balls: [
             {
