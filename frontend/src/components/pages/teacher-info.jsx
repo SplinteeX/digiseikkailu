@@ -1,9 +1,44 @@
 import "../css/teacherinfo.css";
-import CommonButton from "../elements/CommonButton";
-import ButtonText from "../elements/buttonText";
-import GameInfoWImg from "../data/GameInfoWImg";
-import info from "../data/info";
+import { Hahmot } from "../data/Hahmot";
+import { useState, useEffect } from "react";
 export const Teacherinfo = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [timer, setTimer] = useState(null);
+
+  const startTimer = () => {
+    const newTimer = setTimeout(() => {
+      const newIndex =
+        currentIndex === Hahmot.length - 1 ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+    }, 5000);
+    setTimer(newTimer);
+  };
+  const resetTimer = () => {
+    if (timer) {
+      clearTimeout(timer);
+      startTimer();
+    }
+  };
+  useEffect(() => {
+    startTimer();
+    return () => {
+      if (timer) {
+        clearTimeout(timer);
+      }
+    };
+  }, [currentIndex]);
+
+  const nextSlide = () => {
+    const newIndex = currentIndex === Hahmot.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+    resetTimer();
+  };
+
+  const prevSlide = () => {
+    const newIndex = currentIndex === 0 ? Hahmot.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+    resetTimer();
+  };
   const infoTexts = [
     {
       text: "Digiseikkailu on pelillinen ja tarinallinen oppimisympäristö tieto- ja viestintätekniikan (TVT), medialukutaitojen sekä empatiataitojen opettamiseen esi- sekä alakouluikäisille. Klikkaa haluamaasi ikäryhmää ja tutustu ikäryhmälle suunnattuihin tehtäviin. Iloista seikkailua!",
@@ -17,7 +52,7 @@ export const Teacherinfo = () => {
       text: "Digiseikkailu säästää opettajan työaikaa, tukee käytännön opetustyötä pedagogisesti valmiiksi mietittynä ratkaisuna ja mahdollistaa opetussuunnitelman mukaisen, tasalaatuisen kokonaisratkaisun kaikille opettajille.",
     },
     {
-      text: "Hauskaa, helppoa ja ohjaavaa oppimista 6-12-vuotiaille.",
+      text: "Hauskaa, helppoa ja ohjaavaa oppimista 6+ vuotiaille",
     },
     {
       text: "Voidaan myös integroida mihin tahansa oppiaineeseen osaksi ilmiöpohjaista oppimista.",
@@ -53,50 +88,29 @@ export const Teacherinfo = () => {
           <p>{infoTexts[1].text}</p>
         </strong>
       </div>
-      <div className="Level-buttons">
-        <CommonButton
-          text={"Tehtävät ja tavoitteet esikoulu"}
-          color={"#FEBA3E"}
-        />
-        <CommonButton
-          text={"Tehtävät ja tavoitteet 1-2 lk"}
-          color={"#B1DC94"}
-        />
-        <CommonButton
-          text={"Tehtävät ja tavoitteet 3-4 lk"}
-          color={"#EFC8FB"}
-        />
-        <CommonButton
-          text={"Tehtävät ja tavoitteet 5-6 lk"}
-          color={"#8AD5EF"}
-        />
-      </div>
-      <div className="Teacher-material">
-        <h3>Opettajan materiaali</h3>
-      </div>
-      <div className="teacher-buttons">
-        {info.map((data, index) => (
-          <ButtonText
-            key={index}
-            color={"#8AD4EE"}
-            text={data.text}
-            paragraph={data.paragraph}
-          />
-        ))}
-      </div>
-      <div className="Teacher-material">
-        <h3>Opettajan sivut tehtävämaailmoihin</h3>
-      </div>
-      <div className="teacher-buttons">
-        {GameInfoWImg.map((data, index) => (
-          <ButtonText
-            key={index}
-            img={data.img}
-            color={"#8AD4EE"}
-            text={data.text}
-            paragraph={data.paragraph}
-          />
-        ))}
+      <div className="Hahmot">
+        <h3>Hahmot</h3>
+        <div className="Hahmot-wrapper">
+          <button onClick={prevSlide}>Previous</button>
+          <div className="Hahmot-card">
+            <img src={Hahmot[currentIndex].kuva} alt="" />
+            <p>{Hahmot[currentIndex].kuvaus}</p>
+          </div>
+          <button onClick={nextSlide}>Next</button>
+        </div>
+        <div className="Buttons">
+          {Hahmot.map((hahmo, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                setCurrentIndex(index);
+              }}
+              className={currentIndex === index ? "active-button" : ""}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ export const HasanStudioMap = () => {
           Title: "Häsän Studio",
           Image: "/src/assets/Kartat/HäsänStudio.jpg",
           Kategoria: "HäsänStudio",
+          TextColor: "black",
           Balls: [
             {
               Väri: "Rosa",
@@ -86,13 +87,6 @@ export const HasanStudioMap = () => {
               number: "12",
               x: 350,
               y: 165,
-            },
-            {
-              Väri: "Sininen",
-              Kategoria: "Tehtävä",
-              number: "13",
-              x: 700,
-              y: 105,
             },
           ],
         }}

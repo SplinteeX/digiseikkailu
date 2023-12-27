@@ -135,7 +135,8 @@ export const ApinmajaData = () => {
       kysymys: "Mitä tulee tehdä “Maalaa ja lihavoi riimiparit” -tehtävässä?",
       vaihtoehdot: [
         "A) Etsi ja kirjoita uusia riimejä",
-        "B) Etsi tekstistä riimiparit, maalaa ne hiirellä ja lihavoi Ctrl + B -pikakomennolla C) Etsi ja poista riimiparit tekstistä",
+        "B) Etsi tekstistä riimiparit, maalaa ne hiirellä ja lihavoi Ctrl + B -pikakomennolla",
+        "C) Etsi ja poista riimiparit tekstistä",
         "D) Vain lihavoi tekstissä olevia riimejä",
       ],
       vastaus:
@@ -233,7 +234,8 @@ export const ApinmajaData = () => {
       kysymys:
         "Mitä “Auta hiirtä piiloutumaan Miuku-Maukulta” -tehtävässä harjoitellaan?",
       vaihtoehdot: [
-        "A) Kuvien piirtämistä B) Tekstin kirjoittamista",
+        "A) Kuvien piirtämistä",
+        "B) Tekstin kirjoittamista",
         "C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa ja kaksoisnapsautusta",
         "D) Äänien tunnistamista",
       ],
@@ -492,7 +494,7 @@ export const ApinmajaData = () => {
     },
     {
       tehtNum: "22",
-      tehtName: "Tiedostot",
+      tehtName: "Kurkistus tekstinkäsittelyyn",
       Kategoria: "Apinmaja",
       Kuvat: [
         "/src/assets/ApinmajaImages/DataKuva.webp",
@@ -513,8 +515,6 @@ export const ApinmajaData = () => {
         "D) Ohjelmoidaan tietokoneohjelmia",
       ],
       vastaus: "C) Kirjoitetaan siistiä ja helppolukuista tekstiä",
-      SoundCloud:
-        "https://soundcloud.com/marjopihlis/tehtava-2-tekstinkasittely/s-k1zcX",
     },
     {
       tehtNum: "23",

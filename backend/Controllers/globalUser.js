@@ -3,6 +3,7 @@ const Student = require("../Models/studentModel");
 const jwt = require("jsonwebtoken");
 const getUser = async (req, res) => {
   const { authorization } = req.headers;
+  console.log("Authorization: " + authorization);
   console.log(req.headers);
   console.log(authorization);
   if (!authorization) {

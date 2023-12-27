@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useRetrieveExercises } from "../hooks/useRetrieveExercises";
+import { ClipLoader } from "react-spinners";
 
 export const AdventureMapComponent = ({ Data, url }) => {
   const { user } = useAuthContext();
@@ -13,6 +14,7 @@ export const AdventureMapComponent = ({ Data, url }) => {
   const [completedExercises, setCompletedExercises] = useState([]);
 
   const [isDataFetched, setIsDataFetched] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,12 +25,12 @@ export const AdventureMapComponent = ({ Data, url }) => {
           setCompletedExercises(completed);
           setIsDataFetched(true);
           console.log("Completed exercises:", completed);
+          setIsLoading(false);
         }
       } catch (error) {
         console.error("Error parsing user or retrieving exercises:", error);
       }
     };
-
     fetchData();
   }, [parsedUser, Data.Kategoria, isDataFetched, RetrieveExercises]);
 
@@ -56,60 +58,81 @@ export const AdventureMapComponent = ({ Data, url }) => {
   return (
     <div className="Adventure-map">
       <div className="Map-section">
-        <h3>{Data.Title}</h3>
+        {Data.TextColor ? (
+          <h3 style={{ color: "black" }}>{Data.Title}</h3>
+        ) : (
+          <h3>{Data.Title}</h3>
+        )}
+
         <img src={Data.Image} alt="" className="map-image" />
-        {Data.Balls.map((ball, index) => (
-          <Link to={`${url}/${ball.number}`} key={index}>
-            <div
-              style={{
-                left: `${(ball.x / mapDimensions.width) * 100}%`,
-                top: `${(ball.y / mapDimensions.height) * 100}%`,
+        {isLoading ? (
+          <div className="loader">
+            <ClipLoader
+              color="#ffffff"
+              cssOverride={{
+                "border-width": "5px",
               }}
-              className={`ball`}
-            >
-              {isExerciseCompleted(ball.number) ? (
-                <img
-                  src={`/src/assets/Napit/success.png`}
-                  alt={`Completed Ball ${ball.number}`}
-                />
-              ) : (
-                <>
-                  {ball.Kategoria === "Peli" && (
+              size={40}
+              speedMultiplier={0.5}
+            />
+          </div>
+        ) : (
+          <div className="Balls">
+            {Data.Balls.map((ball, index) => (
+              <Link to={`${url}/${ball.number}`} key={index}>
+                <div
+                  style={{
+                    left: `${(ball.x / mapDimensions.width) * 100}%`,
+                    top: `${(ball.y / mapDimensions.height) * 100}%`,
+                  }}
+                  className={`ball`}
+                >
+                  {isExerciseCompleted(ball.number) ? (
                     <img
-                      src={`/src/assets/Napit/Peli-${ball.Väri}.png`}
-                      alt={`Ball ${ball.number}`}
+                      src={`/src/assets/Napit/success.png`}
+                      alt={`Completed Ball ${ball.number}`}
                     />
+                  ) : (
+                    <>
+                      {ball.Kategoria === "Peli" && (
+                        <img
+                          src={`/src/assets/Napit/Peli-${ball.Väri}.png`}
+                          alt={`Ball ${ball.number}`}
+                        />
+                      )}
+                      {ball.Kategoria === "Tehtävä" && (
+                        <img
+                          src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
+                          alt={`Ball ${ball.number}`}
+                        />
+                      )}
+                      {ball.Kategoria === "Tietoteksti" && (
+                        <img
+                          src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
+                          alt={`Ball ${ball.number}`}
+                        />
+                      )}
+                      {ball.Kategoria === "Video" && (
+                        <img
+                          src={`/src/assets/Napit/Video-${ball.Väri}.png`}
+                          alt={`Ball ${ball.number}`}
+                        />
+                      )}
+                      {ball.Kategoria === "Tarina" && (
+                        <img
+                          src={`/src/assets/Napit/Tarina-${ball.Väri}.png`}
+                          alt={`Ball ${ball.number}`}
+                        />
+                      )}
+                    </>
                   )}
-                  {ball.Kategoria === "Tehtävä" && (
-                    <img
-                      src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
-                      alt={`Ball ${ball.number}`}
-                    />
-                  )}
-                  {ball.Kategoria === "Tietoteksti" && (
-                    <img
-                      src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
-                      alt={`Ball ${ball.number}`}
-                    />
-                  )}
-                  {ball.Kategoria === "Video" && (
-                    <img
-                      src={`/src/assets/Napit/Video-${ball.Väri}.png`}
-                      alt={`Ball ${ball.number}`}
-                    />
-                  )}
-                  {ball.Kategoria === "Tarina" && (
-                    <img
-                      src={`/src/assets/Napit/Tarina-${ball.Väri}.png`}
-                      alt={`Ball ${ball.number}`}
-                    />
-                  )}
-                </>
-              )}
-              <p>{ball.number}.</p>
-            </div>
-          </Link>
-        ))}
+
+                  <p>{ball.number}.</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

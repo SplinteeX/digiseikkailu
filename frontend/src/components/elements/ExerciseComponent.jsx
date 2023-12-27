@@ -6,7 +6,6 @@ import TinyMCE from "./tinyMce";
 import { PulseLoader } from "react-spinners";
 import YoutubeVideo from "../elements/YoutubeVideo";
 import { SoundCloud } from "./soundCloud";
-import { PDFViewer } from "./PDFViewer";
 import CommonButton from "./CommonButton";
 import { useSaveCompletedExercise } from "../hooks/useSaveCompletedExercise";
 import { useAuthContext } from "../hooks/useAuthContext";
@@ -362,7 +361,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
           ) : (
             <>
               <p className="White-text">
-                Onnea! Olet suorittanut tehtävän! Voit siirtyä seuraavaan
+                Olet jo suorittanut tämän tehtävän. Voit siirtyä seuraavaan
                 tehtävään!
               </p>
             </>

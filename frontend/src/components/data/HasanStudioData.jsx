@@ -44,7 +44,7 @@ export const HäsänStudioData = () => {
       tehtName: "Kuvaajan muistilista",
       Kategoria: "HäsänStudio",
       Title: "Tehdään kuvaajan muistilista",
-      puolTekstit: [
+      Tekstit: [
         "Tehkää posteri luokan seinälle, jossa on kuvalliset ohjeet videokuvaajalle siitä mitä saa kuvata? missä saa kuvata? ja mitä saa julkaista?",
       ],
       Teksti:
@@ -122,8 +122,34 @@ export const HäsänStudioData = () => {
     },
     {
       tehtNum: "6",
-      tehtName: "TARINA",
+      tehtName: "Kadonneet tilaajat",
       Kategoria: "HäsänStudio",
+      SoundClouds: [
+        "https://soundcloud.com/digiseikkailu-oy/9-kadonneet-tilaajat",
+        "https://soundcloud.com/digiseikkailu-oy/9-lost-subscribers",
+      ],
+      puolKuva: "/src/assets/HäsäImages/Tilaajat.webp",
+      puolTeksti:
+        "Tarinassa käsitellään - videoiden ja Youtuben maailmaa, puhutaan tubettajista, kanavista ja seuraajista",
+      Tekstit: [
+        "Häsä tuijotti tietokoneen ruutua. Appi istui pöydän toisella puolella ja seurasi Häsän ilmeitä – ne kun vaihtuivat hämmästyneestä surullisen kautta riemastuneeseen.",
+        "Appi —  Mikä siellä on noin kiehtovaa? Appi kysyi Häsältä. ",
+        "Häsä —  Odota hetki, Häsä mutisi ja takoi näppäimistöä vimmatulla vauhdilla.",
+        "Appi kyllästyi odottamaan ja kiersi pöydän toiselle puolelle. Hän näki, että Häsä oli avannut oman Youtube-kanavansa. Hän luki katselijoiden jättämiä kommentteja ja vastaili niihin.",
+        "Appi —  Kannattaako noita kommentteja lukea? Eikös siitä tule vain paha mieli? Appi kysyi.",
+        "Viimeinkin Häsä malttoi nostaa katseensa ruudulta.",
+        "Häsä —  Suurin osa kommenteista on mukavia. Minusta on kiva saada palautetta videoista. Kehuista tulee tosi iloiseksi.",
+        "Appi —  Äsken kyllä näytit aika surulliselta, Appi väitti vastaan.",
+        "Häsä —  Aina välillä joku kirjoittaa jotain ilkeää ja silloin tulee paha mieli. Se kyllä harmittaa, Häsä myönsi.",
+        "Häsä —  Mutta vielä enemmän harmittaa se, että kanavani on menettänyt monta tilaajaa. Miten ihmeessä saisin uusia tilaajia, Häsä pohti.",
+        "Appi —  Miten muut tubettajat saavat uusia tilaajia?, Appi mietiskeli.",
+        "Häsä ja Appi istuivat hetken hipihiljaa ajatuksiinsa vaipuneina. Molemmat yrittivät löytää ratkaisua menetettyjen tilaajien ongelmaan.",
+        "Appi —  Nyt keksin!, Appi huudahti. Ruvetaan treenamaan laamaa agilitykisoihin ja tehdään siitä videosarja. Laamavideot ovat supersuosittuja Youtubessa. Saat varmasti monta uutta seuraajaa!",
+        "Häsä —  Loistoidea!, Häsä innostui.",
+        "Lapset ryntäsivät laaman aitaukselle, jossa laama oli juuri nauttimassa heinälounastaan. Kun se kuuli lasten idean, se näytti hämmentyneeltä.",
+        "Laama —  Agilityä? Onko se jotain syötävää? Laama kysyi heinänkorsi suupielessään.",
+        "Lapset katsoivat toisiaan epäluuloisina. Onnistuukohan tämä ollenkaan? Saammeko laaman hyppäämään esteiden yli? Tuovatko videot lisää tilaajia Häsän kanavalle?",
+      ],
     },
     {
       tehtNum: "7",
@@ -173,6 +199,29 @@ export const HäsänStudioData = () => {
     },
     {
       tehtNum: "9",
+      tehtName: "Yhteinen tavoite - matka Jupiteriin",
+      Kategoria: "HäsänStudio",
+      puolTeksti:
+        "Tarinassa käsitellään - Ryhmätyötaitojen merkitystäTyön jakamisen haasteitaIloa, joka syntyy kun keksitään yhdessä. Väärinymmärrykset kannattaa selvittää. Yhdessä voi saada enemmän aikaan kuin yksin",
+      puolKuva: "/src/assets/HäsäImages/häsäTarina.webp",
+      Tekstit: [
+        "Maanantai-iltapäivällä koulun kello soi ja oppilaat rynnistivät ulos ovesta. Koulupäivä oli ohi ja kaikilla oli kiire kotiin tai harrastuksiin. Häsä huomasi Apin ja juoksi tämän luokse.",
+        "Häsä alkoi heti puhua pulputtaa uuden videon suunnitelmista ja muusta hauskasta, mitä iltapäivällä voisi tapahtua. Appi vain ynähteli lyhyitä vastauksia. Lopulta Häsää alkoi ihmetyttää ystävänsä vaitonainen olemus.",
+        "-Mikä vikana, Appi? Etkö halua tulla kuvaamaan videota?",
+        "Appi — Haluan tietysti. Mieltäni vain painaa maantiedon ryhmätyö, jonka pitäisi olla valmis tällä viikolla. Tuntuu, että sen tekeminen jää yksin minun vastuulleni, Appi surkutteli.",
+        "Häsä - Eihän se mikään ryhmätyö ole, jos sinä teet sen yksin. Miksi muut ryhmäläiset eivät osallistu? Häsä ihmetteli.",
+        "Appi — No kun minä olen ryhmästä ainoa, joka osaa käyttää PowerPoint-ohjelmaa, Appi vastasi. Meidän aiheenamme on Jupiter-planeetta. Olen etsinyt siitä tietoa ja koonnut tärkeimmät asiat diaesitykseksi. Muut ryhmäläiset katsovat vain vierestä, kun minä käytän tietokonetta.",
+        "Häsä — Se ei kyllä käy, että yksi tekee kaiken työn ryhmätyössä. Jos kaverisi eivät osaa käyttää PowerPointia, he osaavat varmasti tehdä jotakin muuta, Häsä huomautti. Jokainen on taitava jossakin!",
+        "Appi -Se on kyllä totta. Jore on oikea velho tekemään green screen -videoita ja Pate on tosi taitava kuvankäsittelijä, Appi pohti. ",
+        "Samassa Appi tarttui puhelimeen ja soitti ryhmätyökavereilleen.",
+        "-Voidaanko tavata ja sopia, miten saamme aikaiseksi tosi hienon esitelmän? hän intoili. ",
+        "Appi - Minulla on idea! Esitelmään voisi liittää hienoja kuvakollaaseja avaruudesta ja planeetoista, erityisesti Jupiterista. Lisäksi voisimme tehdä vaikka pienen tieteiselokuvan, jossa matkustamme Jupiteriin. Se voitaisiin toteuttaa green screenin avulla. Oletteko mukana? Appi kysyi kavereiltaan.",
+        "Jore ja Pate innostuivat, niin hyvältä Apin suunnitelma kuulosti. Heitä oli itseäänkin harmittanut, kun he eivät voineet osallistua esitelmän tekoon. He olivat luulleet, että Appi haluaa tehdä kaiken itse.",
+        "Ryhmäläiset kokoontuivat vielä samana iltana Apin luokse ja tekivät suunnitelman esitelmän kokoamisesta. Jokaiselle löytyi mieluista ja hyödyllistä puuhaa. Itse asiassa pojista alkoi tuntua siltä, että esitelmästä tulisi huikean jännittävä. Kuin oikea avaruusmatka.",
+      ],
+    },
+    {
+      tehtNum: "10",
       tehtName: "Tubettajan tekstilajit",
       Kategoria: "HäsänStudio",
       Kuva: "/src/assets/HäsäImages/Erivideot.webp",
@@ -195,7 +244,7 @@ export const HäsänStudioData = () => {
       vastaus: "B) Huolellisesti suunnitellen",
     },
     {
-      tehtNum: "10",
+      tehtNum: "11",
       tehtName: "Tutustutaan vaikuttajamarkkinointiin",
       Kategoria: "HäsänStudio",
       Title: "Tunnista vaikuttajamarkkinointi",
@@ -215,11 +264,6 @@ export const HäsänStudioData = () => {
         "D) Tarjota ilmaista sisältöä",
       ],
       vastaus: "B) Myydä yrityksen tuotteita tai kasvattaa bränditietoisuutta",
-    },
-    {
-      tehtNum: "11",
-      tehtName: "",
-      Kategoria: "HäsänStudio",
     },
     {
       tehtNum: "12",

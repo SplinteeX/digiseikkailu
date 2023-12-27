@@ -16,6 +16,12 @@
   color: white;
   font-family: mulish;
 }
+.Adventure-map .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .Adventure-map .Map-section .ball {
   position: absolute;
