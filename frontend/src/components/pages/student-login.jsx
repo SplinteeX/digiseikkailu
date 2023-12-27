@@ -19,6 +19,7 @@ export const StudentLogin = () => {
     const loginSuccess = await studentLogin(user, teacherid);
     if (loginSuccess) {
       navigate("/");
+      window.location.reload();
     }
   };
   return (

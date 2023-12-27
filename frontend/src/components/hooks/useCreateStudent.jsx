@@ -10,6 +10,7 @@ export const useCreateStudent = () => {
     const Auth = Cookies.get("Authorization");
     const teacherid = User.teacherId;
     console.log(teacherid);
+    console.log(teacherid);
     console.log(User);
     setIsLoading(true);
     setError(null);

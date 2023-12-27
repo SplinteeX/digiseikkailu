@@ -10,7 +10,6 @@ export const useLogin = () => {
   const login = async (email, password) => {
     setIsLoading(true);
     setError(null);
-
     try {
       const response = await fetch("http://localhost:8080/api/user/login", {
         method: "POST",
@@ -22,6 +21,8 @@ export const useLogin = () => {
       if (!response.ok) {
         setIsLoading(false);
         setError(json.error);
+        console.log(json.error);
+        console.log(user);
       }
 
       if (response.ok) {

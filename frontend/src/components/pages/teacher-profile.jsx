@@ -17,7 +17,7 @@ export const Profile = () => {
           <TeacherSectionMobile user={user} />
         </div>
       )}
-      {role.toLowerCase() === "student" && (
+      {role === "Student" && (
         <>
           <StudentSection User={user} />
         </>

@@ -10,7 +10,7 @@ const createToken = (_id) => {
 
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
-
+  console.log(req.body);
   try {
     const user = await User.login(email, password);
     const role = user.role;
@@ -21,6 +21,7 @@ const loginUser = async (req, res) => {
       user: { firstname, lastname, email, userName, token, role, teacherid },
     });
   } catch (error) {
+    console.log(error);
     res.status(400).json({ error: error.message });
   }
 };
@@ -45,14 +46,7 @@ const signupUser = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
-const getUsers = async (req, res) => {
-  try {
-    const users = await User.find();
-    res.status(200).json({ users });
-  } catch (error) {
-    res.status(400).json({ error: error.message });
-  }
-};
+
 const getUserById = async (req, res) => {
   const { id } = req.body;
   try {
@@ -64,30 +58,54 @@ const getUserById = async (req, res) => {
 };
 const getUser = async (req, res) => {
   const { authorization } = req.headers;
-  console.log(req.headers);
-  console.log(authorization);
   if (!authorization) {
     return res.status(401).json({ error: "Authorization token required" });
   }
   const token = authorization.split(" ")[1];
-  console.log(token);
 
   try {
     const { _id } = jwt.verify(token, process.env.JWT_SECRET);
-    console.log(_id);
     const user =
       (await User.findOne({ _id })) || (await Student.findOne({ _id }));
-    console.log(user);
     res.status(200).json({ user });
   } catch (error) {
     console.error("JWT Verification Error:", error);
     return;
   }
 };
+async function saveCompletedExercise(req, res) {
+  const { id, exerciseIdentifier, exerciseCategory } = req.body;
+  try {
+    const user = (await User.findById(id)) || (await Student.findById(id));
+    const completedExercises = user.completedExercises;
+
+    if (completedExercises[exerciseCategory].includes(exerciseIdentifier)) {
+      return res.status(400).json({ error: "Exercise already completed" });
+    }
+    completedExercises[exerciseCategory].push(exerciseIdentifier);
+    await user.save();
+    res.status(200).json({ user });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+}
+async function retrieveCompletedExercises(req, res) {
+  const { id } = req.body;
+  try {
+    const user = (await User.findById(id)) || (await Student.findById(id));
+    const completedExercises = user.completedExercises;
+    console.log(completedExercises);
+    res.status(200).json({ completedExercises });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+    console.log(error);
+  }
+}
 module.exports = {
   loginUser,
   signupUser,
-  getUsers,
   getUserById,
   getUser,
+  saveCompletedExercise,
+  retrieveCompletedExercises,
 };

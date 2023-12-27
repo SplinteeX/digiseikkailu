@@ -25,7 +25,7 @@ const Navbar = () => {
     },
     {
       title: "Seikkailukartat",
-      path: "/",
+      path: "/tehtävät",
       cName: "nav-text",
     },
     {
