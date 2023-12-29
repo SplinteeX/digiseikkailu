@@ -1,21 +1,30 @@
-import CommonButton from "../elements/CommonButton";
-import YoutubeVideo from "../elements/YoutubeVideo";
 import MediaText from "../elements/mediaText";
+import { TehtäväPaketit } from "../data/TehtäväPaketit";
+import { ExerciseCard } from "../elements/ExerciseCard";
+import { useState } from "react";
 import "../css/home.css";
 
 const Home = () => {
-  const videoData = [
-    {
-      strong:
-        "Hyppää mukaan hauskojen ja mielenkiintoisten tehtävien pariin...",
-      light:
-        "Digiseikkailussa on yli 120 erilaista tehtävää ja 23 tehtäviä tukevaa tarinaa...",
-    },
-    {
-      light:
-        "Ninni kertoo videolla, miten hän on hyödyntänyt Digiseikkailua opetuksessaan ja mitä vinkkejä hän haluaisi jakaa muille opettajille...",
-    },
-  ];
+  const {
+    Apinmaja,
+    häsänStudio,
+    TweetynViestiseinä,
+    DogenBoxi,
+    KursorinUllakko,
+    SirynÄlytalo,
+    Laamanaitaus,
+    MiukuMauku,
+    Ohjelmointi,
+  } = TehtäväPaketit();
+  const [flippedIndex, setFlippedIndex] = useState(null);
+
+  const handleCardFlip = (index) => {
+    if (flippedIndex === index) {
+      setFlippedIndex(null);
+    } else {
+      setFlippedIndex(index);
+    }
+  };
 
   const mediaTextData = [
     {
@@ -32,30 +41,30 @@ const Home = () => {
 
   return (
     <div className="Home-wrapper">
-      <div className="First-video">
-        <YoutubeVideo
-          videoId="NjpfOif6O4E"
-          strong={videoData[0].strong}
-          light={videoData[0].light}
-          buttontext={"Lue lisää"}
-          width={"560px"}
-          height={"380px"}
-          color={"#79b7e2"}
-        />
-      </div>
-      <div className="Second-video">
-        <YoutubeVideo
-          videoId="lekkpIfJ-Ec"
-          width={"100%"}
-          height={"450px"}
-          color={"#79b7e2"}
-        />
-      </div>
-      <div className="home-page-classes">
-        <CommonButton text={"Esikoulu"} color={"#FEBA3E"} />
-        <CommonButton text={"Luokat 1-2"} color={"#B1DC94"} />
-        <CommonButton text={"Luokat 3-4"} color={"#EFC8FB"} />
-        <CommonButton text={"Luokat 5-6"} color={"#8AD5EF"} />
+      <div className="Exercise-cards">
+        <h2 className="Title">Tehtävä maailmat</h2>
+        <div className="Tehtävä-Paketit">
+          <div className="Kortit">
+            {[
+              Apinmaja[0],
+              häsänStudio[0],
+              TweetynViestiseinä[0],
+              DogenBoxi[0],
+              KursorinUllakko[0],
+              SirynÄlytalo[0],
+              Laamanaitaus[0],
+              MiukuMauku[0],
+              Ohjelmointi[0],
+            ].map((exercise, index) => (
+              <ExerciseCard
+                key={index}
+                Data={exercise}
+                Flipped={flippedIndex === index}
+                handleCardFlip={() => handleCardFlip(index)}
+              />
+            ))}
+          </div>
+        </div>
       </div>
       <div className="home-read-more">
         {mediaTextData.map((data, index) => (
