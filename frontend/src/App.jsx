@@ -36,6 +36,7 @@ import { LaamanAitausMap } from "./components/pages/Maps/LaamanAitausMap";
 import { SirynAlytaloMap } from "./components/pages/Maps/SirynAlytaloMap";
 import { OhjelmointiMap } from "./components/pages/Maps/ohjelmointiMap";
 import { MiukumaukuMap } from "./components/pages/Maps/MiukumaukuMap";
+import { Ostoskori } from "./components/pages/ostoskori";
 
 function App() {
   const { user } = useAuthContext();
@@ -121,6 +122,7 @@ function App() {
               path="/profile"
               element={<ProtectedRouter element={<Profile />} />}
             />
+            <Route path="/ostoskori" element={<Ostoskori />} />
             <Route path="/tietoa-meista" element={<AboutUs />} />
             <Route path="/404" element={<Page404 />} />
             <Route path="*" element={<Navigate to="/404" />} />

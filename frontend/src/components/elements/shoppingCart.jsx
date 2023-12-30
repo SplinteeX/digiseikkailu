@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../css/shoppingCart.css";
 import remove from "../../assets/remove-icon.png";
 import { useShoppingCart } from "../contexts/ShoppingCartContext";
+import { useNavigate } from "react-router-dom";
 
 const ShoppingCart = ({ Click }) => {
   const { cart, removeFromCart } = useShoppingCart();
   const [totalPrice, setTotalPrice] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     let sum = 0;
@@ -14,6 +16,11 @@ const ShoppingCart = ({ Click }) => {
     });
     setTotalPrice(parseFloat(sum.toFixed(2)));
   }, [cart]);
+
+  const handlePayment = () => {
+    Click();
+    navigate("/ostoskori", { state: { cartItems: cart } });
+  };
 
   return (
     <div className="Shopping-cart">
@@ -34,7 +41,9 @@ const ShoppingCart = ({ Click }) => {
             ))}
           </ul>
           <p className="Total-price">Välisumma: {totalPrice}€</p>
-          <button className="Pay">Siirry maksamaan!</button>
+          <button className="Pay" onClick={handlePayment}>
+            Siirry maksamaan!
+          </button>
         </div>
       )}
     </div>

@@ -56,7 +56,6 @@ export const Products = () => {
   return (
     <div className="Products">
       <div className="Add-to-cart">
-        <Toaster closeButton richColors />
         {activeButton === "Oppilaitos" && (
           <SimpleButton
             text={"9,90€ / kk. per oppilas"}
