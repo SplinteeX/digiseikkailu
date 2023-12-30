@@ -4,10 +4,13 @@ import "../css/Products.css";
 import { ProductsData } from "../data/ProductsData";
 import checkmark from "../../assets/check-mark.png";
 import x from "../../assets/x.png";
+import { useShoppingCart } from "../contexts/ShoppingCartContext";
+import { Toaster, toast } from "sonner";
 
 export const Products = () => {
   const { Oppilaitos, Yksityishenkilö, Kokeile } = ProductsData();
   const [activeButton, setActiveButton] = useState("Oppilaitos");
+  const { cart, addToCart } = useShoppingCart();
 
   const handleClick = (text) => setActiveButton(text);
 
@@ -21,6 +24,16 @@ export const Products = () => {
       ))}
     </div>
   );
+
+  const handleSpecialButton = (product) => {
+    addToCart({ title: product.title, price: product.price });
+  };
+
+  const buttons = [
+    { text: "Oppilaitos", data: Oppilaitos },
+    { text: "Yksityishenkilö", data: Yksityishenkilö },
+    { text: "Kokeile", data: Kokeile },
+  ];
 
   const renderProducts = (products, title) => (
     <>
@@ -40,19 +53,21 @@ export const Products = () => {
     </>
   );
 
-  const buttons = [
-    { text: "Oppilaitos", data: Oppilaitos },
-    { text: "Yksityishenkilö", data: Yksityishenkilö },
-    { text: "Kokeile", data: Kokeile },
-  ];
-
   return (
     <div className="Products">
       <div className="Add-to-cart">
+        <Toaster closeButton richColors />
         {activeButton === "Oppilaitos" && (
           <SimpleButton
             text={"9,90€ / kk. per oppilas"}
             active={activeButton}
+            onClick={() =>
+              addToCart({
+                title: "Oppilaitos",
+                price: "9,90",
+                type: "package",
+              })
+            }
           />
         )}
         {activeButton === "Yksityishenkilö" && (
@@ -60,10 +75,23 @@ export const Products = () => {
             text={"9,90€ / kk"}
             active={activeButton}
             style={"Normal"}
+            onClick={() =>
+              addToCart({
+                title: "Yksityishenkilö",
+                price: "9,90",
+                type: "package",
+              })
+            }
           />
         )}
         {activeButton === "Kokeile" && (
-          <SimpleButton text={"Kokeile nyt!"} active={activeButton} />
+          <SimpleButton
+            text={"Kokeile nyt!"}
+            active={activeButton}
+            onClick={() =>
+              addToCart({ title: "Kokeile", price: "0", type: "package" })
+            }
+          />
         )}
       </div>
       <header>

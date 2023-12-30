@@ -7,7 +7,7 @@ import SearchBar from "./elements/searchBar";
 import openMenu from "../../src/assets/menu.svg";
 import closeMenu from "../../src/assets/close-menu.svg";
 import bucket from "../../src/assets/bucket.svg";
-import { ShoppingCart } from "./elements/shoppingCart";
+import ShoppingCart from "./elements/shoppingCart";
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const location = useLocation();
@@ -97,7 +97,6 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`nav-menu-content ${sidebar ? "active" : ""}`}>
-          {/* This will show the menu when sidebar is true */}
           {navbarItems.map((item, index) => (
             <li key={index} className={item.cName}>
               <Link to={item.path}>
