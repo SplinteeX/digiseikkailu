@@ -33,6 +33,17 @@ const userSchema = new Schema({
     type: String,
     default: "Teacher",
   },
+  completedExercises: {
+    Apinmaja: [String],
+    DogenBoxi: [String],
+    HäsänStudio: [String],
+    KursorinUllakko: [String],
+    MiukuMaukunKirjasto: [String],
+    OhjelmointiPolku: [String],
+    TweetynViestiseinä: [String],
+    SirynÄlytalo: [String],
+    LaamanAitaus: [String],
+  },
 });
 userSchema.pre("save", function (next) {
   if (!this.teacherId) {
@@ -55,7 +66,7 @@ userSchema.statics.login = async function (email, password) {
   if (!match) {
     throw Error("Incorrect password");
   }
-
+  console.log(user);
   return user;
 };
 

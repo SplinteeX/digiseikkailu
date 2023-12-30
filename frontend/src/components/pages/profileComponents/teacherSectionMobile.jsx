@@ -88,7 +88,7 @@ export const TeacherSectionMobile = ({ user }) => {
             Last online: {new Date(selectedUser.lastonline).toLocaleString()}
           </div>
           <div>Username: {selectedUser.username}</div>
-          <div>TeacherId: {selectedUser.name}</div>
+          <div>TeacherId: {selectedUser.teacherid}</div>
           <button onClick={() => handleRemove(selectedUser)}>Remove</button>
         </div>
       ) : create ? (
