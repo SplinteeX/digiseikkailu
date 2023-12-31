@@ -1,0 +1,13 @@
+.suuntamerkki-right-side {
+  width: 80%;
+  text-align: center;
+}
+
+.suuntamerkki-upper img {
+  width: 100%;
+  height: auto;
+}
+
+.suuntamerkki-lower {
+  width: 100%;
+}
