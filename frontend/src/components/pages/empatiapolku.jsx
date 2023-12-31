@@ -4,6 +4,7 @@ import { EmpatiaData } from "../data/empatiaData";
 import SuuntaMerkki from "../elements/empatiapolku/suuntaMerkki";
 import suuntamerkkikuva from "../../assets/suuntamerkki.webp";
 import maisema from "../../assets/maisemakuva.webp";
+import { Link } from "react-router-dom";
 const vuoropuhelut = [
   {
     kuva: "/src//assets/Puhuja1.webp",
@@ -20,7 +21,12 @@ export const EmpatiaPolku = () => {
   return (
     <div className="empatiapolku">
       <h1>Empatiapolku</h1>
-      <h2>Oppimistavoitteet</h2>
+      <div className="buttons">
+        <button className="active">Tavoitteet</button>
+        <Link to="/empatiapolku/tehtävät">
+          <button>Tehtävät</button>
+        </Link>
+      </div>
       <div className="uppersection">
         <div className="oikeinmerkit">
           {EmpatiaData.map((item, index) => (

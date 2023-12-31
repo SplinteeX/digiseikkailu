@@ -37,6 +37,7 @@ import { SirynAlytaloMap } from "./components/pages/Maps/SirynAlytaloMap";
 import { OhjelmointiMap } from "./components/pages/Maps/ohjelmointiMap";
 import { MiukumaukuMap } from "./components/pages/Maps/MiukumaukuMap";
 import { EmpatiaPolku } from "./components/pages/empatiapolku";
+import { EmpatiapolkuTeht } from "./components/pages/EmpatiapolkuTeht";
 
 function App() {
   const { user } = useAuthContext();
@@ -123,6 +124,10 @@ function App() {
               element={<ProtectedRouter element={<Profile />} />}
             />
             <Route path="/empatiapolku" element={<EmpatiaPolku />}></Route>
+            <Route
+              path="/empatiapolku/tehtävät"
+              element={<EmpatiapolkuTeht />}
+            ></Route>
           </Routes>
         </div>
       </BrowserRouter>
