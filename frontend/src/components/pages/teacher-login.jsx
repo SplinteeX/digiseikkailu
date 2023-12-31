@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CommonButton from "../elements/commonButton";
+import CommonButton from "../elements/CommonButton";
 import FloatInput from "../elements/FloatInput";
 import { Link } from "react-router-dom";
 import "../css/teacherLogin.css";
@@ -17,6 +17,7 @@ export const TeacherLogin = () => {
     const loginSuccess = await login(email, password);
     if (loginSuccess) {
       navigate("/");
+      window.location.reload();
     }
   };
 

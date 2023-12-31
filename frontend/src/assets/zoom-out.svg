@@ -1,0 +1,15 @@
+<svg width="32" height="40" xmlns="http://www.w3.org/2000/svg">
+ <title>Zoom Out</title>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path fill="#ffffff" id="svg_2" d="m7,10.11628l-5,0a2,2 0 0 0 -2,2l0,5a1,1 0 0 0 2,0l0,-5l5,0a1,1 0 0 0 0,-2z"/>
+   <path fill="#ffffff" id="svg_3" d="m30,10.11628l-5,0a1,1 0 0 0 0,2l5,0l0,5a1,1 0 0 0 2,0l0,-5a2,2 0 0 0 -2,-2z"/>
+   <path fill="#ffffff" id="svg_4" d="m31,24.11628a1,1 0 0 0 -1,1l0,5l-5,0a1,1 0 0 0 0,2l5,0a2,2 0 0 0 2,-2l0,-5a1,1 0 0 0 -1,-1z"/>
+   <path fill="#ffffff" id="svg_5" d="m7,30.11628l-5,0l0,-5a1,1 0 0 0 -2,0l0,5a2,2 0 0 0 2,2l5,0a1,1 0 0 0 0,-2z"/>
+  </g>
+  <text id="svg_6" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" font-weight="bold" font-size="5px" fill="#000000" y="47" x="0">Created by ReivNick</text>
+  <text id="svg_7" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" font-weight="bold" font-size="5px" fill="#000000" y="52" x="0">from the Noun Project</text>
+ </g>
+</svg>

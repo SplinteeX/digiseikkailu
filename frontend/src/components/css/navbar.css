@@ -22,14 +22,16 @@ body {
 .nav-text a:hover {
   opacity: 80%;
 }
-
+.Navbar-wrapper {
+  width: 100vw;
+}
 /* Navbar */
 .Navbar {
   display: flex;
   align-items: center;
   background-color: #8ccbf3;
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 /* Navbar Links */

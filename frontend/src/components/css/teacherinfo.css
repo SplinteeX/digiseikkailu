@@ -27,117 +27,291 @@ li {
   flex-direction: column;
 }
 
-/* Level Buttons in Teacher Info */
-.Teacherinfo-wrapper > .Level-buttons {
+.Teacherinfo-wrapper .Slider-buttons {
+  width: 100%;
+  margin: 10px 0px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 5%;
-}
-
-/* Level Button Styling */
-.Teacherinfo-wrapper > .Level-buttons button {
-  height: 65px;
-  width: 20%;
-  font-size: 1em;
-  min-width: 150px;
-}
-
-/* Hide Images Inside Level Buttons */
-.Teacherinfo-wrapper > .Level-buttons img {
-  display: none;
-}
-
-/* Teacher Material Container (Maybe need later?) */
-.Teacher-material {
-  height: 65px;
-  display: flex;
-  margin: 5% 0%;
-  background-color: #beecff;
   align-items: center;
-  padding-left: 5%;
 }
-
-/* Teacher Material Text */
-.Teacher-material h3 {
-  margin: 0;
-  height: auto;
+.Teacherinfo-wrapper .Hahmot h3 {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
 }
-
-/* Button with Paragraph Container */
-.teacher-buttons > .Button-with-paragraph {
-  width: 47.5%;
+.Teacherinfo-wrapper .Slider .Control {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 0px;
+}
+.Teacherinfo-wrapper .Slider .Control:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Teacherinfo-wrapper .Slider {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: left;
+}
+.Teacherinfo-wrapper .Slider-buttons button {
+  margin: 0px 10px;
+  border: 0px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-family: mulish;
+  font-weight: bold;
+}
+.Teacherinfo-wrapper .Slider-buttons button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Teacherinfo-wrapper .active-button {
+  background-color: red;
+  color: #fff;
+}
+.Teacherinfo-wrapper .not-active {
+  background-color: #fff;
+  color: #000;
+}
+.Teacherinfo-wrapper .Slider-content {
+  width: 80%;
+  min-height: 700px;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0px 40px;
+}
+.Teacherinfo-wrapper .Slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Teacherinfo-wrapper .Slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Teacherinfo-wrapper .Slider-content p {
+  background-color: white;
+  padding: 30px 10px;
+  border-radius: 20px;
+  height: 100%;
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 200px;
+}
+.Teacherinfo-wrapper .Slider-content img {
+  width: 50%;
+  height: 400px;
+  border-radius: 20px;
+}
+/* Taitotasot */
+.Teacherinfo-wrapper .Taitotasot .Taitotaso-kortit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.Teacherinfo-wrapper .Taitotasot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti {
+  width: 28%;
+  height: 100px;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  text-align: center;
+  height: 250px;
+  padding: 20px;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti p {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Mulish;
+}
+.Teacherinfo-wrapper h3 {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+.Teacherinfo-wrapper .Kuvakkeet-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Teacherinfo-wrapper .Kuvake-kortti {
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  border-radius: 20px;
+  padding: 10px;
+  height: 250px;
+}
+.Teacherinfo-wrapper .Kuvakkeet-cards :hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+.Kuvake-kortti p {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 }
 
-/* Button with Paragraph Image Styling */
-.teacher-buttons > .Button-with-paragraph img {
-  object-fit: contain;
-  margin: 0 auto;
-  max-width: 100%;
-  height: 350px;
+/* Tavoitteet */
+.Teacherinfo-wrapper .Tavoitteet {
+  margin: 20px 0px;
 }
-
-/* Image Hover Effect */
-.teacher-buttons > .Button-with-paragraph img:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s;
+.Teacherinfo-wrapper .Section-slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+.Teacherinfo-wrapper .Section-slider .Titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 3%;
+}
+.Teacherinfo-wrapper .Section-slider .Titles h2 {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  height: 25%;
+  background-color: #faeddb;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  border-radius: 20px;
+}
+.Teacherinfo-wrapper .Section-slider .Titles .active {
+  background-color: lightgrey;
+}
+.Teacherinfo-wrapper .Section-slider .Titles h2:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Teacherinfo-wrapper .Section-slider .Content-section {
+  background-color: #faeddb;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+}
+.Teacherinfo-wrapper .Section-slider .Content-section ul {
+  margin-bottom: 50px;
+}
+.Teacherinfo-wrapper .Section-slider .Content-section li {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px;
+  padding: 10px;
+}
+.Teacherinfo-wrapper
+  .Section-slider
+  .Content-section
+  .NavigationButtons
+  button {
+  background-color: transparent;
+  border: 0px;
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px;
+}
+.Teacherinfo-wrapper
+  .Section-slider
+  .Content-section
+  .NavigationButtons
+  button:hover {
+  opacity: 80%;
   cursor: pointer;
 }
-
-/* Button within Button with Paragraph */
-.teacher-buttons > .Button-with-paragraph button {
-  width: 100%;
-  margin-bottom: 1em;
-}
-
-/* Hide Images Inside Buttons */
-.teacher-buttons > .Button-with-paragraph button img {
-  display: none;
-}
-
-/* Paragraph Styling in Button with Paragraph */
-.teacher-buttons > .Button-with-paragraph p {
-  width: 100%;
-  font-size: 1.2em;
-  margin-bottom: 1em;
-  font-family: "Comfortaa", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-}
-
-/* Teacher Buttons Container */
-.teacher-buttons {
+.Teacherinfo-wrapper .Section-slider .Content-section .NavigationButtons {
   display: flex;
-  flex-wrap: wrap;
-  gap: 5%;
-  margin-top: 2.5%;
-  justify-content: space-between;
+  justify-content: center;
+}
+.Teacherinfo-wrapper .Section-slider .Content-section .Current {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px;
+}
+.Teacherinfo-wrapper .Section-slider .Content-section .End-section {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Teacherinfo-wrapper .Section-slider .Content-section h3 {
+  text-align: left;
+  margin-left: 20px;
 }
 
 /* Responsive Styles for Screen Widths */
-@media screen and (max-width: 1100px) {
-  .teacher-buttons > .Button-with-paragraph img {
-    object-fit: contain;
-    transform: scale(1.5);
+@media screen and (max-width: 1200px) {
+  .Teacherinfo-wrapper .Slider-content {
+    width: 100%;
+  }
+  .Teacherinfo-wrapper .Slider-content img {
+    width: 75%;
+  }
+  .Teacherinfo-wrapper .Taitotasot .Kortti {
+    width: 50%;
   }
 }
-
-@media screen and (max-width: 1100px) {
-  .teacher-buttons > .Button-with-paragraph {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
+@media screen and (max-width: 1000px) {
+  .Teacherinfo-wrapper .Kuvake-kortti {
+    width: 40%;
   }
-
-  .teacher-buttons > .Button-with-paragraph img {
-    object-fit: contain;
-    transform: scale(1);
+  .Teacherinfo-wrapper .Tavoitteet .Section-slider {
+    flex-direction: column;
+  }
+  .Teacherinfo-wrapper .Tavoitteet .Section-slider .Titles {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .Teacherinfo-wrapper .Tavoitteet .Section-slider .Titles h2 {
+    width: 25%;
+    height: 50px;
+    min-width: 0%;
   }
 }
 
@@ -150,45 +324,48 @@ li {
     margin: 0% 5%;
   }
 }
+@media screen and (max-width: 800px) {
+  .Teacherinfo-wrapper .Slider .Control {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 650px) {
   .Teacherinfo-video video {
     width: 100%;
     height: 300px;
   }
-}
-
-@media screen and (max-width: 500px) {
-  .teacher-buttons > .Button-with-paragraph img {
-    object-fit: contain;
-    transform: scale(1.3);
+  .Teacherinfo-wrapper .Slider-content {
+    margin: 0px;
   }
-
-  .Teacherinfo-wrapper > .Level-buttons {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .Teacherinfo-wrapper > .Level-buttons button {
+  .Teacherinfo-wrapper .Slider-content img {
     width: 100%;
   }
-
-  .Teacherinfo-wrapper {
-    margin: 0% 2.5%;
+  .Teacherinfo-wrapper .Taitotasot .Kortti {
+    width: 75%;
   }
-
-  .Teacherinfo-wrapper p,
-  li {
-    font-size: 0.9em;
+  .Teacherinfo-wrapper .Tavoitteet .Section-slider .Titles {
+    flex-direction: column;
+    gap: 10px;
   }
-
-  .teacher-buttons > .Button-with-paragraph p {
-    font-size: 1.2em;
-    margin: 10% 0%;
+  .Teacherinfo-wrapper .Tavoitteet .Section-slider .Titles h2 {
+    width: 100%;
   }
-
-  .Teacher-material {
-    margin-top: 3em;
-    height: 75px;
+}
+@media screen and (max-width: 550px) {
+  .Teacherinfo-wrapper .Kuvake-kortti {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .Teacherinfo-wrapper .Slider-content img {
+    height: 300px;
+  }
+  .Teacherinfo-wrapper .Slider-buttons button {
+    margin: 0px;
+  }
+  .Teacherinfo-wrapper .Kortti {
+    font-weight: 16px;
+    text-align: center;
   }
 }

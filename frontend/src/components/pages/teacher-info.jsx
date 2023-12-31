@@ -1,9 +1,11 @@
 import "../css/teacherinfo.css";
-import CommonButton from "../elements/commonButton";
-import ButtonText from "../elements/buttonText";
-import GameInfoWImg from "../data/GameInfoWImg";
-import info from "../data/info";
+import { Hahmot } from "../data/Hahmot";
+import { Slider } from "../elements/Slider";
+import { useState } from "react";
+import { FancySectionSlider } from "../elements/FancySectionSlider";
+import { Tavoitteet } from "../data/Tavoitteet";
 export const Teacherinfo = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
   const infoTexts = [
     {
       text: "Digiseikkailu on pelillinen ja tarinallinen oppimisympäristö tieto- ja viestintätekniikan (TVT), medialukutaitojen sekä empatiataitojen opettamiseen esi- sekä alakouluikäisille. Klikkaa haluamaasi ikäryhmää ja tutustu ikäryhmälle suunnattuihin tehtäviin. Iloista seikkailua!",
@@ -17,7 +19,7 @@ export const Teacherinfo = () => {
       text: "Digiseikkailu säästää opettajan työaikaa, tukee käytännön opetustyötä pedagogisesti valmiiksi mietittynä ratkaisuna ja mahdollistaa opetussuunnitelman mukaisen, tasalaatuisen kokonaisratkaisun kaikille opettajille.",
     },
     {
-      text: "Hauskaa, helppoa ja ohjaavaa oppimista 6-12-vuotiaille.",
+      text: "Hauskaa, helppoa ja ohjaavaa oppimista 6+ vuotiaille",
     },
     {
       text: "Voidaan myös integroida mihin tahansa oppiaineeseen osaksi ilmiöpohjaista oppimista.",
@@ -26,6 +28,43 @@ export const Teacherinfo = () => {
       text: "Digiseikkailusta löydät kattavaa materiaalia opetuksen tueksi. ",
     },
   ];
+  const KuvakeData = [
+    {
+      Kuvake: [
+        "src/assets/Napit/Lukea-Vihreä.png",
+        "src/assets/Napit/Lukea-Sininen.png",
+        "src/assets/Napit/Lukea-Rosa.png",
+      ],
+      text: "Tämä kuvake on tarkoitettu tietotekstille ja tehtävälle",
+    },
+    {
+      Kuvake: [
+        "src/assets/Napit/Peli-Vihreä.png",
+        "src/assets/Napit/Peli-Sininen.png",
+        "src/assets/Napit/Peli-Rosa.png",
+      ],
+      text: "Tämä kuvake on tarkoitettu peleille",
+    },
+    {
+      Kuvake: [
+        "src/assets/Napit/Tarina-Vihreä.png",
+        "src/assets/Napit/Tarina-Sininen.png",
+        "src/assets/Napit/Tarina-Rosa.png",
+      ],
+      text: "Tämä kuvake on tarkoitettu tarinoille",
+    },
+    {
+      Kuvake: [
+        "src/assets/Napit/Video-Vihreä.png",
+        "src/assets/Napit/Video-Sininen.png",
+        "src/assets/Napit/Video-Rosa.png",
+      ],
+      text: "Tämä kuvake on tarkoitettu videoille",
+    },
+  ];
+  const handleClick = () => {
+    setCurrentIndex(currentIndex + 1 === 3 ? 0 : currentIndex + 1);
+  };
   return (
     <div className="Teacherinfo-wrapper">
       <div className="Teacherinfo-video">
@@ -53,50 +92,42 @@ export const Teacherinfo = () => {
           <p>{infoTexts[1].text}</p>
         </strong>
       </div>
-      <div className="Level-buttons">
-        <CommonButton
-          text={"Tehtävät ja tavoitteet esikoulu"}
-          color={"#FEBA3E"}
-        />
-        <CommonButton
-          text={"Tehtävät ja tavoitteet 1-2 lk"}
-          color={"#B1DC94"}
-        />
-        <CommonButton
-          text={"Tehtävät ja tavoitteet 3-4 lk"}
-          color={"#EFC8FB"}
-        />
-        <CommonButton
-          text={"Tehtävät ja tavoitteet 5-6 lk"}
-          color={"#8AD5EF"}
-        />
+      <div className="Taitotasot">
+        <h3>Värit</h3>
+        <div className="Taitotaso-kortit">
+          <div className="Kortti" style={{ backgroundColor: "#B3DD94" }}>
+            <p>Suositusikä 6+</p>
+          </div>
+          <div className="Kortti" style={{ backgroundColor: "#EDC9F9" }}>
+            <p>Suositusikä 9+ (3-4 luokka)</p>
+          </div>
+          <div className="Kortti" style={{ backgroundColor: "#89D3EE" }}>
+            <p>Suositusikä 11+ (5-6 luokka)</p>
+          </div>
+        </div>
       </div>
-      <div className="Teacher-material">
-        <h3>Opettajan materiaali</h3>
+      <div className="Hahmot">
+        <h3>Hahmot</h3>
+        <Slider data={Hahmot} />
       </div>
-      <div className="teacher-buttons">
-        {info.map((data, index) => (
-          <ButtonText
-            key={index}
-            color={"#8AD4EE"}
-            text={data.text}
-            paragraph={data.paragraph}
-          />
-        ))}
+      <div className="Kuvakkeet">
+        <h3>Kuvakkeet</h3>
+        <div className="Kuvakkeet-cards">
+          {KuvakeData.map((data, index) => (
+            <div
+              className="Kuvake-kortti"
+              key={index}
+              onClick={() => handleClick(index)}
+            >
+              <img src={data.Kuvake[currentIndex]} alt="Kuvake" />
+              <p>{data.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="Teacher-material">
-        <h3>Opettajan sivut tehtävämaailmoihin</h3>
-      </div>
-      <div className="teacher-buttons">
-        {GameInfoWImg.map((data, index) => (
-          <ButtonText
-            key={index}
-            img={data.img}
-            color={"#8AD4EE"}
-            text={data.text}
-            paragraph={data.paragraph}
-          />
-        ))}
+      <div className="Tavoitteet">
+        <h3>Tavoitteet</h3>
+        <FancySectionSlider data={Tavoitteet} />
       </div>
     </div>
   );

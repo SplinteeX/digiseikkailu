@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CommonButton from "../elements/commonButton";
+import CommonButton from "../elements/CommonButton";
 import { useNavigate } from "react-router-dom";
 import FloatInput from "../elements/FloatInput";
 import { Link } from "react-router-dom";
@@ -29,6 +29,7 @@ export const Register = () => {
     );
     if (signupSucess) {
       navigate("/");
+      window.location.reload();
     }
   };
   return (

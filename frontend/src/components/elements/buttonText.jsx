@@ -1,5 +1,4 @@
-import CommonButton from "./commonButton";
-
+import CommonButton from "./CommonButton";
 const ButtonText = ({ text, paragraph, color, img }) => {
   return (
     <div className="Button-with-paragraph">

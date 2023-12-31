@@ -10,7 +10,6 @@ export const useLogin = () => {
   const login = async (email, password) => {
     setIsLoading(true);
     setError(null);
-
     try {
       const response = await fetch("http://localhost:8080/api/user/login", {
         method: "POST",
@@ -22,15 +21,15 @@ export const useLogin = () => {
       if (!response.ok) {
         setIsLoading(false);
         setError(json.error);
+        console.log(json.error);
+        console.log(user);
       }
 
       if (response.ok) {
         const user = json.user;
-        console.log(user);
         const token = user.token;
         const twelveHoursFromNow = new Date();
         twelveHoursFromNow.setHours(twelveHoursFromNow.getHours() + 12);
-        console.log(user);
         cookie.set("Authorization", `Bearer ${token}`, {
           expires: twelveHoursFromNow,
         });

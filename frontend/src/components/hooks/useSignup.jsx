@@ -54,6 +54,7 @@ export const useSignup = () => {
           lastname: user.lastname,
           role: user.role,
           email: user.email,
+          teacherid: user.teacherid,
         }),
         {
           expires: twelveHoursFromNow,
