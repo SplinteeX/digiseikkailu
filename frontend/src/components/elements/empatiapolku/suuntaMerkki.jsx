@@ -1,4 +1,4 @@
-import "../css/suuntamerkki.css";
+import "../../css/suuntamerkki.css";
 const SuuntaMerkki = ({ kuva, teksti }) => {
   return (
     <div className="suuntamerkki-right-side">
@@ -6,7 +6,7 @@ const SuuntaMerkki = ({ kuva, teksti }) => {
         <img src={kuva} alt="Image Alt Text" />
       </div>
       <div className="suuntamerkki-lower">
-        <h2>{teksti}</h2>
+        <p>{teksti}</p>
       </div>
     </div>
   );
