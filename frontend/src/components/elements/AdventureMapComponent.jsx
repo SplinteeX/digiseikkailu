@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useRetrieveExercises } from "../hooks/useRetrieveExercises";
 import { ClipLoader } from "react-spinners";
+import { motion } from "framer-motion";
 
 export const AdventureMapComponent = ({ Data, url }) => {
   const { user } = useAuthContext();
@@ -52,6 +53,7 @@ export const AdventureMapComponent = ({ Data, url }) => {
       if (window.innerWidth <= 1000) {
         navigate("/tehtävät");
       }
+      setIsLoading(false); // Set isLoading to false after the map image is loaded
     };
   }, [Data.Image, navigate]);
 
@@ -80,7 +82,12 @@ export const AdventureMapComponent = ({ Data, url }) => {
           <div className="Balls">
             {Data.Balls.map((ball, index) => (
               <Link to={`${url}/${ball.number}`} key={index}>
-                <div
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.1, delay: 0 }}
                   style={{
                     left: `${(ball.x / mapDimensions.width) * 100}%`,
                     top: `${(ball.y / mapDimensions.height) * 100}%`,
@@ -128,7 +135,7 @@ export const AdventureMapComponent = ({ Data, url }) => {
                   )}
 
                   <p>{ball.number}.</p>
-                </div>
+                </motion.div>
               </Link>
             ))}
           </div>

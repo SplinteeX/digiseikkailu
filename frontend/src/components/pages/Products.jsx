@@ -8,7 +8,7 @@ import { useShoppingCart } from "../contexts/ShoppingCartContext";
 import { Toaster, toast } from "sonner";
 
 export const Products = () => {
-  const { Oppilaitos, Yksityishenkilö } = ProductsData();
+  const { Oppilaitos, Yksityishenkilö, Opettaja } = ProductsData();
   const [activeButton, setActiveButton] = useState("Opettaja");
   const { cart, addToCart } = useShoppingCart();
 
@@ -30,7 +30,7 @@ export const Products = () => {
   };
 
   const buttons = [
-    { text: "Opettaja", data: Oppilaitos },
+    { text: "Opettaja", data: Opettaja },
     { text: "Oppilaitos", data: Oppilaitos },
     { text: "Yksityishenkilö", data: Yksityishenkilö },
   ];
@@ -110,7 +110,7 @@ export const Products = () => {
       </header>
       <div className="Products-content">
         {activeButton === "Opettaja" &&
-          renderProducts(Oppilaitos, "Sisältää materiaalit opettajalle")}
+          renderProducts(Opettaja, "Sisältää materiaalit opettajalle")}
         {activeButton === "Oppilaitos" &&
           renderProducts(
             Oppilaitos,

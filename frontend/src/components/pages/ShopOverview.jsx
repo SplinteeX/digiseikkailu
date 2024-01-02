@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useShoppingCart } from "../contexts/ShoppingCartContext";
+import { motion } from "framer-motion";
 import "../css/ShopOverview.css";
 import Input from "../elements/input";
+
 export const ShopOverview = () => {
   const {
     cart,
@@ -30,6 +32,12 @@ export const ShopOverview = () => {
   const handlePaymentClick = () => {
     setHandlePaymentSection(!handlePaymentSection);
   };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="ShopOverview">
       {!handlePaymentSection ? (
@@ -37,7 +45,14 @@ export const ShopOverview = () => {
           <h2>Ostoskori</h2>
           <ul>
             {cart.map((item, index) => (
-              <div className="Item" key={index}>
+              <motion.div
+                className="Item"
+                key={index}
+                variants={itemVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
                 <li>
                   <p>
                     {item.title}{" "}
@@ -137,7 +152,7 @@ export const ShopOverview = () => {
                     </>
                   )}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </ul>
         </>

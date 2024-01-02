@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import "../css/shoppingCart.css";
 import remove from "../../assets/remove-icon.png";
 import { useShoppingCart } from "../contexts/ShoppingCartContext";
@@ -28,9 +29,13 @@ const ShoppingCart = ({ Click }) => {
 
   const truncateTitle = (title) => {
     if (title.length > 20) {
-      return title.substring(0, 16) + "...";
+      return title.substring(0, 16) + "..";
     }
     return title;
+  };
+
+  const handleRemove = (item) => {
+    removeFromCart(item);
   };
 
   return (
@@ -43,12 +48,17 @@ const ShoppingCart = ({ Click }) => {
         <div>
           <ul>
             {cart.map((item, index) => (
-              <li key={index}>
+              <motion.li
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
                 <p>
                   {truncateTitle(item.title)} {item.price}€
                 </p>
-                <button onClick={() => removeFromCart(item)}>Poista</button>
-              </li>
+                <button onClick={() => handleRemove(item)}>Poista</button>
+              </motion.li>
             ))}
           </ul>
           <p className="Total-price">

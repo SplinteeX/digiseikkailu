@@ -20,6 +20,27 @@ export const ProductsData = () => {
         "Seuranta, Diplomi, Tuki, Tehtävien suoritusmerkki, Chat, Opettajan paneeli, Oppilaan lisääminen",
     },
   ];
+  const Opettaja = [
+    {
+      title: "Digiseikkailu tarinat ja tehtävä vihko",
+      img: "images/tarinat-ja-tehtävät-työkirja-home.png",
+      description:
+        "Digiseikkailun tarina- ja tehtävävihkossa opitaan tieto- ja viestintäteknologian käsitteistöä sekä vahvistetaan lukemisen ja kuvittelemisen taitoa.",
+    },
+    {
+      title: "TVT-opetuksen taitopaketti",
+      img: "images/tvt-opetuksen-taitopaketti-home.png",
+      description:
+        "Paras konkreettinen tuki TVT-opetuksen perustaitojen vahvistamiseen",
+    },
+    {
+      title: "Opettajan ominaisuudet",
+      description:
+        "Opettajan ominaisuuksiin kuuluu kaikki + opettajan paneeli.",
+      ominaisuudet:
+        "Seuranta, Diplomi, Tuki, Tehtävien suoritusmerkki, Chat, Opettajan paneeli, Oppilaan lisääminen",
+    },
+  ];
   const Yksityishenkilö = [
     {
       title: "Digiseikkailu tarinat ja tehtävä vihko",
@@ -40,5 +61,5 @@ export const ProductsData = () => {
       notIncluded: "Opettajan paneeli, Oppilaan lisääminen",
     },
   ];
-  return { Oppilaitos, Yksityishenkilö };
+  return { Oppilaitos, Yksityishenkilö, Opettaja };
 };

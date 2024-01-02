@@ -64,6 +64,9 @@ const Home = () => {
                 Data={exercise}
                 Flipped={flippedIndex === index}
                 handleCardFlip={() => handleCardFlip(index)}
+                initialAnimation={{ opacity: 0, y: 50 }}
+                animateAnimation={{ opacity: 1, y: 0 }}
+                transitionAnimation={{ duration: 0.5, delay: index * 0.2 }}
               />
             ))}
           </div>
