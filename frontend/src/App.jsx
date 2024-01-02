@@ -36,7 +36,7 @@ import { LaamanAitausMap } from "./components/pages/Maps/LaamanAitausMap";
 import { SirynAlytaloMap } from "./components/pages/Maps/SirynAlytaloMap";
 import { OhjelmointiMap } from "./components/pages/Maps/ohjelmointiMap";
 import { MiukumaukuMap } from "./components/pages/Maps/MiukumaukuMap";
-import { Ostoskori } from "./components/pages/ostoskori";
+import { ShopOverview } from "./components/pages/ShopOverview";
 
 function App() {
   const { user } = useAuthContext();
@@ -93,7 +93,7 @@ function App() {
               element={<OhjelmointiExercises />}
             />
             <Route
-              path="/tehtävät/tuotteet/TVT-opetuksen-taitopaketti"
+              path="/tuotteet/TVT-opetuksen-taitopaketti"
               element={<TvtOpetuksenTaitoPaketti />}
             />
             <Route path="/kartat/apinmaja" element={<ApinmajaMap />} />
@@ -122,7 +122,7 @@ function App() {
               path="/profile"
               element={<ProtectedRouter element={<Profile />} />}
             />
-            <Route path="/ostoskori" element={<Ostoskori />} />
+            <Route path="/ostoskori" element={<ShopOverview />} />
             <Route path="/tietoa-meista" element={<AboutUs />} />
             <Route path="/404" element={<Page404 />} />
             <Route path="*" element={<Navigate to="/404" />} />

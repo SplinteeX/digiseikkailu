@@ -6,20 +6,31 @@ import { useNavigate } from "react-router-dom";
 
 const ShoppingCart = ({ Click }) => {
   const { cart, removeFromCart } = useShoppingCart();
-  const [totalPrice, setTotalPrice] = useState(0);
+  const [totalPrice, setTotalPrice] = useState("0.00");
   const navigate = useNavigate();
 
   useEffect(() => {
     let sum = 0;
     cart.forEach((item) => {
-      sum += parseFloat(item.price);
+      if (item.type === "subscription") {
+        sum += parseFloat(item.price) * item.quantity * item.months;
+      } else {
+        sum += parseFloat(item.price) * item.quantity;
+      }
     });
-    setTotalPrice(parseFloat(sum.toFixed(2)));
+    setTotalPrice(sum.toFixed(2));
   }, [cart]);
 
   const handlePayment = () => {
     Click();
     navigate("/ostoskori", { state: { cartItems: cart } });
+  };
+
+  const truncateTitle = (title) => {
+    if (title.length > 20) {
+      return title.substring(0, 16) + "...";
+    }
+    return title;
   };
 
   return (
@@ -34,13 +45,16 @@ const ShoppingCart = ({ Click }) => {
             {cart.map((item, index) => (
               <li key={index}>
                 <p>
-                  {item.title} {item.price}€
+                  {truncateTitle(item.title)} {item.price}€
                 </p>
                 <button onClick={() => removeFromCart(item)}>Poista</button>
               </li>
             ))}
           </ul>
-          <p className="Total-price">Välisumma: {totalPrice}€</p>
+          <p className="Total-price">
+            Välisumma: {parseFloat(totalPrice).toFixed(2)}€
+          </p>
+          <p className="alv">Sisältää 10% alvin</p>
           <button className="Pay" onClick={handlePayment}>
             Siirry maksamaan!
           </button>

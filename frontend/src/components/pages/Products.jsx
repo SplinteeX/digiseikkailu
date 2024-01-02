@@ -8,8 +8,8 @@ import { useShoppingCart } from "../contexts/ShoppingCartContext";
 import { Toaster, toast } from "sonner";
 
 export const Products = () => {
-  const { Oppilaitos, Yksityishenkilö, Kokeile } = ProductsData();
-  const [activeButton, setActiveButton] = useState("Oppilaitos");
+  const { Oppilaitos, Yksityishenkilö } = ProductsData();
+  const [activeButton, setActiveButton] = useState("Opettaja");
   const { cart, addToCart } = useShoppingCart();
 
   const handleClick = (text) => setActiveButton(text);
@@ -30,9 +30,9 @@ export const Products = () => {
   };
 
   const buttons = [
+    { text: "Opettaja", data: Oppilaitos },
     { text: "Oppilaitos", data: Oppilaitos },
     { text: "Yksityishenkilö", data: Yksityishenkilö },
-    { text: "Kokeile", data: Kokeile },
   ];
 
   const renderProducts = (products, title) => (
@@ -56,39 +56,44 @@ export const Products = () => {
   return (
     <div className="Products">
       <div className="Add-to-cart">
-        {activeButton === "Oppilaitos" && (
+        {activeButton === "Opettaja" && (
           <SimpleButton
-            text={"9,90€ / kk. per oppilas"}
+            text={"1.49€ / kk. per oppilas"}
             active={activeButton}
             onClick={() =>
               addToCart({
-                title: "Oppilaitos",
-                price: "9,90",
-                type: "package",
+                title: "Opettaja",
+                price: "1.49",
+                type: "subscription",
               })
             }
           />
         )}
         {activeButton === "Yksityishenkilö" && (
           <SimpleButton
-            text={"9,90€ / kk"}
+            text={"3,90€ / kk"}
             active={activeButton}
             style={"Normal"}
             onClick={() =>
               addToCart({
                 title: "Yksityishenkilö",
-                price: "9,90",
-                type: "package",
+                price: "3.90",
+                type: "subscription",
               })
             }
           />
         )}
-        {activeButton === "Kokeile" && (
+        {activeButton === "Oppilaitos" && (
           <SimpleButton
-            text={"Kokeile nyt!"}
+            text={"1.49€ / kk. per oppilas"}
             active={activeButton}
+            style={"Normal"}
             onClick={() =>
-              addToCart({ title: "Kokeile", price: "0", type: "package" })
+              addToCart({
+                title: "Oppilaitos",
+                price: "1.49",
+                type: "subscription",
+              })
             }
           />
         )}
@@ -104,6 +109,8 @@ export const Products = () => {
         ))}
       </header>
       <div className="Products-content">
+        {activeButton === "Opettaja" &&
+          renderProducts(Oppilaitos, "Sisältää materiaalit opettajalle")}
         {activeButton === "Oppilaitos" &&
           renderProducts(
             Oppilaitos,
