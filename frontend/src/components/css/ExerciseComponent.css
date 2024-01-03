@@ -226,6 +226,26 @@
 .Exercise .Oikea-vaihtoehto {
   background-color: #00d7a3;
 }
+.Exercise .Blue-text {
+  background-color: #cae0e9;
+  padding: 10px;
+  text-align: center;
+  font-family: mulish;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+}
+.empatia-polku-style {
+  background: linear-gradient(
+      180deg,
+      rgba(35, 133, 95, 0.85) 0%,
+      rgba(12, 133, 42, 0.5) 100%
+    ),
+    url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
 
 /* All different syles */
 .Apinmaja-style {

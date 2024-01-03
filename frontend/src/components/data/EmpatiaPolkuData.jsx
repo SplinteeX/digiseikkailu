@@ -3,15 +3,17 @@ export const EmpatiaPolkuData = () => {
     {
       tehtNum: "1",
       tehtName: "Peukkutehtävä 1",
-      Kuvat: ["/src/assets/peukkuohjeet.webp", "/src/assets/papukaija"],
-      Tekstit: [
-        "Tweetyn viestiseinä",
+      Kategoria: "EmpatiaPolku",
+      Kuvat: ["/src/assets/peukkuohjeet.webp"],
+      blueTitle: "Tweetyn viestiseinä",
+      blueInfo:
         "Tässä on Tweety. Se hallinnoi kaupungin viestiseinää ja on laajan lintuverkoston ylläpitäjä. Ylläpitäjän tehtäviin kuuluu viestien tarkkaileminen ja sääntöjen vastaisten viestien poistaminen.",
-      ],
+      blueImage: "/src/assets/papukaija.webp",
     },
     {
       tehtNum: "2",
       tehtName: "Tehtävä 2",
+      Kategoria: "EmpatiaPolku",
       videoUrl:
         "https://digiadventurers.com/wp-content/uploads/2019/10/720p-kopio.mov",
       Tekstit: [
@@ -25,6 +27,7 @@ export const EmpatiaPolkuData = () => {
     {
       tehtNum: "3",
       tehtName: "Tehtävä 3",
+      Kategoria: "EmpatiaPolku",
       Teksti: "Mitkä viestit sinä poistaisit seinältä?",
       postit: [
         "/src/assets/peukkuohjeet.webp/hämis.webp",
@@ -39,6 +42,7 @@ export const EmpatiaPolkuData = () => {
     {
       tehtNum: "4",
       tehtName: "Tehtävä 4",
+      Kategoria: "EmpatiaPolku",
       youtube: "VCqX0G-hQDo",
     },
   ];

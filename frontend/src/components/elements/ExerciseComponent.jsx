@@ -161,6 +161,21 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ></video>
             </div>
           )}
+          {Data.blueTitle && (
+            <>
+              <p className="Blue-text">{Data.blueTitle}</p>
+              {Data.blueInfo && <p className="White-text">{Data.blueInfo}</p>}
+              {Data.blueImage && (
+                <div className="Image-container">
+                  <img
+                    className="Full-image"
+                    src={Data.blueImage}
+                    alt="Blue image"
+                  />
+                </div>
+              )}
+            </>
+          )}
           {Data.postit && (
             <>
               {Data.postit.map((posti, index) => (
