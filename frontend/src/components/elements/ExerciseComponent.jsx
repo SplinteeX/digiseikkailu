@@ -170,6 +170,39 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ))}
             </>
           )}
+          {Data.puolvideo && (
+            <>
+              <div className="Video-container">
+                <p className="White-text">{Data.puolTeksti}</p>
+                <video
+                  className="Video"
+                  src={Data.puolvideo}
+                  width={"50%"}
+                  controls
+                  autoPlay
+                  muted
+                ></video>
+              </div>
+
+              {Data.puolTekstiVideo && (
+                <>
+                  <div className="Text-div">
+                    <p className="White-text">{Data.puolTekstiVideo}</p>
+                  </div>
+                  <div className="Image-container">
+                    <img
+                      className="image25"
+                      src={Data.puolKuvaVideo}
+                      alt="Image"
+                    />
+                  </div>
+                  <div className="Text-div">
+                    <p className="White-text">{Data.tehtäväTekstiVideo}</p>
+                  </div>
+                </>
+              )}
+            </>
+          )}
           <h3 className="White-text">
             {Data.tehtNum}. {Data.tehtName}
           </h3>

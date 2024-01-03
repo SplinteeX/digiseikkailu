@@ -43,10 +43,12 @@ export const EmpatiaPolku = () => {
         </div>
       </div>
       <div className="lowersection">
-        <img src={maisema} alt="" />
+        <img src={maisema} width="100%" alt="" />
         {vuoropuhelut.map((item, index) => (
           <div className="vuoropuhelu">
-            <img src={item.kuva} width={"100px"} height={"100px"} alt="" />
+            <div className="kuva">
+              <img src={item.kuva} width={"100px"} height={"100px"} alt="" />
+            </div>
             <p>{item.teksti}</p>
           </div>
         ))}

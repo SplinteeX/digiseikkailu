@@ -42,4 +42,5 @@ export const EmpatiaPolkuData = () => {
       youtube: "VCqX0G-hQDo",
     },
   ];
+  return Tehtävät;
 };
