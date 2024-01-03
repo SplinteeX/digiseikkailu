@@ -26,7 +26,7 @@ export const EmpatiaPolkuData = () => {
       tehtNum: "3",
       tehtName: "Tehtävä 3",
       Teksti: "Mitkä viestit sinä poistaisit seinältä?",
-      Kuvat: [
+      postit: [
         "/src/assets/peukkuohjeet.webp/hämis.webp",
         "/src/assets/peukkuohjeet.webp/1.webp",
         "/src/assets/peukkuohjeet.webp/2.webp",

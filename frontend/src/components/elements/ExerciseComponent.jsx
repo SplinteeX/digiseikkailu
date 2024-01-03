@@ -114,6 +114,8 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
         return "miuku-maukun-kirjasto-style";
       case "OhjelmointiPolku":
         return "ohjelmointi-polku-style";
+      case "EmpatiaPolku":
+        return "empatia-polku-style";
       default:
         return "";
     }
