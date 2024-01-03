@@ -23,7 +23,7 @@ export const EmpatiaPolku = () => {
       <h1>Empatiapolku</h1>
       <div className="buttons">
         <button className="active">Tavoitteet</button>
-        <Link to="/empatiapolku/tehtävät">
+        <Link to="/tehtävät/empatiapolku/1">
           <button>Tehtävät</button>
         </Link>
       </div>

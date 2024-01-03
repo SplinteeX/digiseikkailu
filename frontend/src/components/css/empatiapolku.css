@@ -98,26 +98,28 @@ h2 {
 @media screen and (max-width: 900px) {
   .empatiapolku .uppersection {
     flex-direction: column;
-    
   }
   .empatiapolku .rightside {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
   .empatiapolku .oikeinmerkit {
     width: 100%;
-
-}
-@media screen and (max-width: 650px) {
-}
-@media screen and (max-width: 500px) {
-}
-@media screen and (max-width: 400px) {
-  .empatiapolku .lowersection .vuoropuhelu .kuva{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  @media screen and (max-width: 650px) {
+  }
+  @media screen and (max-width: 500px) {
+  }
+  @media screen and (max-width: 400px) {
+    .empatiapolku .lowersection .vuoropuhelu .kuva {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .empatiapolku {
+      margin: 0% 5%;
+    }
   }
 }
