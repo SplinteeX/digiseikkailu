@@ -53,7 +53,7 @@ export const AdventureMapComponent = ({ Data, url }) => {
       if (window.innerWidth <= 1000) {
         navigate("/tehtävät");
       }
-      setIsLoading(false); // Set isLoading to false after the map image is loaded
+      setIsLoading(false);
     };
   }, [Data.Image, navigate]);
 

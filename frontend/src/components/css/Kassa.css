@@ -1,0 +1,64 @@
+.Kassa {
+  margin: 5% 15%;
+  display: flex;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  height: 64vh;
+  border-radius: 20px;
+}
+.Kassa .Right-side,
+.Left-side {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 0% 5%;
+}
+.Kassa .Right-side .Buttons {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 20%;
+}
+.Kassa .Right-side button {
+  text-align: center;
+  padding: 12.5px 0px;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: #8ccbf3;
+  color: white;
+  font-family: mulish;
+  font-weight: bold;
+  border: 3px;
+  padding: 10px;
+  width: 20%;
+}
+.Kassa .Right-side button:hover {
+  color: white;
+  cursor: pointer;
+}
+.Kassa .Right-side .Button-1 {
+  position: absolute;
+  left: 0;
+}
+.Kassa .Right-side .Button-2 {
+  position: absolute;
+  right: 0;
+}
+.Kassa .Right-side {
+  border-left: 3px solid black;
+}
+.Kassa .section p {
+  font-family: mulish;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.Kassa .section h2 {
+  font-family: mulish;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.Kassa .Right-side .Login input {
+  width: 95%;
+  height: 20px;
+  padding: 0% 2.5%;
+}
