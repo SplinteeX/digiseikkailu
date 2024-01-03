@@ -161,6 +161,14 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ></video>
             </div>
           )}
+          {Data.postit && (
+              {Data.postit.map((posti, index) => (
+                <div key={`posti_${index}`} className="Posti">
+                  <img className="Posti-image" src={posti} alt="Posti" />
+                </div>
+              ))}
+            )
+          }
           <h3 className="White-text">
             {Data.tehtNum}. {Data.tehtName}
           </h3>
