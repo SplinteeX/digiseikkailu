@@ -45,7 +45,7 @@ const ShoppingCart = ({ Click }) => {
       {cart.length === 0 ? (
         <p>Ostoskori on tyhjä!</p>
       ) : (
-        <div>
+        <div className="Content">
           <ul>
             {cart.map((item, index) => (
               <motion.li
