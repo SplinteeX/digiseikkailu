@@ -104,7 +104,12 @@ const TeacherSection = ({ User }) => {
             </div>
 
             {create && (
-              <div className="Create-student">
+              <motion.div
+                className="Create-student"
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <FloatInput
                   text={"Nimi"}
                   value={name}
@@ -126,7 +131,7 @@ const TeacherSection = ({ User }) => {
                   size={10}
                 />
                 <button onClick={handleCreateStudent}>Luo oppilas</button>
-              </div>
+              </motion.div>
             )}
           </div>
 

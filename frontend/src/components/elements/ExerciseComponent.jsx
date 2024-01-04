@@ -10,6 +10,7 @@ import CommonButton from "./CommonButton";
 import { useSaveCompletedExercise } from "../hooks/useSaveCompletedExercise";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useRetrieveExercises } from "../hooks/useRetrieveExercises";
+import { toast } from "sonner";
 
 export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
@@ -81,11 +82,13 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
     if (!selectedAnswer) {
       if (clickedAnswer === RightTask) {
         setSelectedAnswer("correct");
+        toast.success("Oikein!");
         {
           user &&
             SaveCompletedExercise(parsedUser._id, Data.tehtNum, Data.Kategoria);
         }
       } else {
+        toast.error("Väärin!");
         setSelectedAnswer("wrong");
         setTimeout(() => {
           setSelectedAnswer(null);
@@ -329,12 +332,6 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 {Data.tehtNum}. {Data.tehtName}
               </h3>
               <h3 className="White-text">{Data.kysymys}</h3>
-              {selectedAnswer === "correct" && (
-                <p className="White-text">Oikein!</p>
-              )}
-              {selectedAnswer === "wrong" && (
-                <p className="White-text">Väärin!</p>
-              )}
 
               <div className="Kysymys-vaihtoehdot">
                 {Data.vaihtoehdot.map((vaihtoehto, index) => (
