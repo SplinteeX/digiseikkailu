@@ -17,7 +17,6 @@ export const ExerciseCard = ({
       initial={initialAnimation}
       animate={animateAnimation}
       transition={transitionAnimation}
-      style={{ perspective: "500px" }}
     >
       {!Flipped && (
         <div className="Inner-section">
