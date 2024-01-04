@@ -1,6 +1,7 @@
 import { useState } from "react";
 import cookie from "js-cookie";
 import { useAuthContext } from "./useAuthContext";
+import { toast } from "sonner";
 
 export const useLogin = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -23,12 +24,12 @@ export const useLogin = () => {
       if (!response.ok) {
         setIsLoading(false);
         setError(json.error);
-        console.log(json.error);
-        console.log(user);
+        toast.error(json.error);
       }
 
       if (response.ok) {
         const user = json.user;
+        toast.success("Kirjautuminen onnistui!");
         const token = user.token;
         const twelveHoursFromNow = new Date();
         twelveHoursFromNow.setHours(twelveHoursFromNow.getHours() + 12);
