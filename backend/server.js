@@ -19,7 +19,7 @@ app.use("/api/user", userRoutes);
 app.use("/api/student", studentRoutes);
 app.use("/api/getUser", getUser);
 
-// Add a route for OpenAI
+// Route for OpenAI
 app.post("/api/openai", requireAuth, openaiController.handleOpenAIRequest);
 
 mongoose
