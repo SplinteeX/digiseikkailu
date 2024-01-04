@@ -16,14 +16,17 @@ export const useCreateStudent = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:8080/api/student/create", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: Auth,
-        },
-        body: JSON.stringify({ name, username, teacherid }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_REACT_APP_API_URL}/api/student/create`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: Auth,
+          },
+          body: JSON.stringify({ name, username, teacherid }),
+        }
+      );
       const json = await response.json();
       if (!response.ok) {
         setIsLoading(false);

@@ -12,11 +12,14 @@ export const useStudentLogin = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:8080/api/student/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, teacherid }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_REACT_APP_API_URL}/api/student/login`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, teacherid }),
+        }
+      );
       const json = await response.json();
 
       if (!response.ok) {

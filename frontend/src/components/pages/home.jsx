@@ -4,6 +4,7 @@ import { ExerciseCard } from "../elements/ExerciseCard";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/home.css";
+import "../css/Exercises.css";
 
 const Home = () => {
   const {

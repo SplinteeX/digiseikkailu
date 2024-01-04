@@ -2,12 +2,11 @@ import Cookies from "js-cookie";
 
 export const useDeleteStudent = () => {
   const deleteStudent = async (id) => {
-    console.log(id);
     try {
       const Auth = Cookies.get("Authorization");
 
       const response = await fetch(
-        `http://localhost:8080/api/student/delete/${id}`,
+        `${import.meta.env.VITE_REACT_APP_API_URL}/api/student/delete/${id}`,
         {
           method: "DELETE",
           headers: {
