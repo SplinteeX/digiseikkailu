@@ -148,6 +148,9 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ))}
             </>
           )}
+          <h3 className="White-text">
+            {Data.tehtNum}. {Data.tehtName}
+          </h3>
           {Data.mp4 && (
             <div className="Video-container">
               <p className="White-text">{Data.mp4Teksti}</p>
@@ -178,9 +181,10 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
           )}
           {Data.postit && (
             <>
+              <p className="White-text">{Data.postitTeksti}</p>
               {Data.postit.map((posti, index) => (
                 <div key={`posti_${index}`} className="Posti-div">
-                  <p className="White-text">{posti}</p>
+                  <img src={posti} alt={`Image_${index}`} />
                 </div>
               ))}
             </>
@@ -218,11 +222,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               )}
             </>
           )}
-          <h3 className="White-text">
-            {Data.tehtNum}. {Data.tehtName}
-          </h3>
           {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
-
           {Data.puolTeksti && !Array.isArray(Data.puolTeksti) ? (
             <div className="TextImage">
               <p
@@ -261,6 +261,18 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 )}
               </div>
             ))}
+          {Data.nappiTitle && <p className="White-text">{Data.nappiTitle}</p>}
+          {Data.kuvaTitle && <p className="White-text">{Data.kuvaTitle}</p>}
+          {Data.puhelimet && (
+            <div className="puhelimet">
+              {Data.puhelimet.map((puhelin, index) => (
+                <div className="Puhelin-div">
+                  <img src={puhelin} alt={`Image_${index}`} />
+                </div>
+              ))}
+            </div>
+          )}
+
           {Data.Kuva ? (
             <div className="Full-image-container">
               <img className="Full-image" src={Data.Kuva} alt="" />
@@ -279,6 +291,13 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </div>
             ))}
           {Data.smallTitle && <p className="White-text">{Data.smallTitle}</p>}
+          {Data.sininenNappi && (
+            <div className="Sininen-nappi">
+              <Link to={Data.buttonLink}>
+                <button className="Blue-button">{Data.sininenNappi}</button>
+              </Link>
+            </div>
+          )}
           {Data.Tekstit &&
             Array.isArray(Data.Tekstit) &&
             Data.Tekstit.map((text, index) => (
@@ -291,6 +310,31 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 />
               </div>
             ))}
+          {Data.tarinaNappi && (
+            <>
+              <div className="Text-div-yellow">
+                <p>TARINA</p>
+              </div>
+              <div className="Sininen-nappi">
+                <Link to={Data.buttonLink}>
+                  <button className="Blue-button">{Data.tarinaNappi}</button>
+                </Link>
+              </div>
+              <div className="siniKuva">
+                <img src={Data.tarinaKuva} alt="kuva" />
+              </div>
+            </>
+          )}
+          {Data.tarinaTeksti && (
+            <>
+              <div className="Text-div-yellow">
+                <p>TARINA</p>
+              </div>
+              <div className="Text-div">
+                <p className="Red-text">{Data.tarinaTeksti}</p>
+              </div>
+            </>
+          )}
           {Data.Teksti && (
             <div className="Text-div">
               <p
@@ -338,7 +382,6 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </ul>
             </div>
           )}
-
           {Data.palloListat && (
             <>
               {Data.palloListat.map((lista, listaIndex) => (

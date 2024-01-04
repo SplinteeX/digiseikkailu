@@ -246,6 +246,50 @@
   background-repeat: no-repeat;
   background-position: 50%;
 }
+.Exercise .Posti-div img {
+  background: transparent;
+}
+
+.Exercise .Red-text {
+  color: #c1331b;
+}
+.Exercise .Text-div-yellow {
+  background-color: yellow;
+  padding: 20px 10px 20px 10px;
+  width: 100%;
+  margin-top: 60px;
+}
+.Exercise .Text-div-yellow p {
+  font-size: larger;
+  font-weight: bolder;
+}
+.Exercise .Blue-button {
+  fill: #fff;
+  color: #fff;
+  background-color: #8ad4ee;
+  border-style: solid;
+  border-width: 0;
+  border-radius: 15px;
+  padding: 20px 119px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Exercise .Blue-button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.Exercise .puhelimet {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.Exercise .Puhelin-div img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+}
 
 /* All different syles */
 .Apinmaja-style {
@@ -412,5 +456,9 @@
   .Exercise .Text-div {
     width: 95%;
     padding: 2.5%;
+  }
+
+  .Exercise .puhelimet {
+    flex-direction: column;
   }
 }
