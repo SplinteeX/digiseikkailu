@@ -40,6 +40,26 @@ export const Kassa = () => {
         return (
           <div className="section">
             <h2>Laskutus</h2>
+            <div className="Names">
+              <Input text="Etunimi" />
+              <Input text="Sukunimi" />
+              <Input text="Yritys" />
+            </div>
+            <div className="Home">
+              <p>Katuosoite</p>
+              <div className="Inputs">
+                <Input placeholder="Kadunnimi ja talonnumero" />
+                <Input placeholder={"Huoneisto, yksikkö jne. (Valinnainen)"} />
+              </div>
+            </div>
+            <div className="Delivery">
+              <Input text="Postinumero" />
+              <Input text="Postitoimipaikka" />
+            </div>
+            <div className="Credentials">
+              <Input text="Puhelinnumero" />
+              <Input text="Sähköposti" />
+            </div>
           </div>
         );
       case 3:

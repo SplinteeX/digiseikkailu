@@ -62,3 +62,34 @@
   height: 20px;
   padding: 0% 2.5%;
 }
+.Kassa .Right-side .Names {
+  display: flex;
+  gap: 20px;
+}
+.Kassa .Right-side .Names input {
+  height: 20px;
+}
+.Kassa .Right-side .Home .Inputs {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+.Kassa .Right-side .Home div {
+  width: 50%;
+}
+.Kassa .Right-side .Home .Inputs input {
+  height: 20px;
+  width: 100%;
+}
+.Kassa .Right-side .Delivery {
+  display: flex;
+  gap: 20px;
+}
+.Kassa .Right-side .Delivery input {
+  height: 20px;
+  width: 100%;
+}
+.Kassa .Right-side .Delivery div {
+  width: 100%;
+}
