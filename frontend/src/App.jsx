@@ -23,7 +23,6 @@ import { TweetyExercises } from "./components/pages/Exercises/TweetyExercises";
 import { DogenBoxiExercises } from "./components/pages/Exercises/DogenBoxiExercises";
 import { KursorinUllakkoExercises } from "./components/pages/Exercises/KursorinUllakkoExercises";
 import { SirynÄlytaloExercise } from "./components/pages/Exercises/SirynÄlytaloExercises";
-import { Exercises } from "./components/pages/Exercises";
 import { ApinmajaMap } from "./components/pages/Maps/ApinmajaMap";
 import { DogenboxiMap } from "./components/pages/Maps/DogenboxiMap";
 import { LaamanExercises } from "./components/pages/Exercises/LaamanExercises";
@@ -54,7 +53,6 @@ function App() {
               path="/tuotteet/TarinatTyokirja"
               element={<TarinatTyokirja />}
             />
-            <Route path="/tehtävät" element={<Exercises />} />
             <Route
               path="/tehtävät/apinmaja/:index"
               element={<ApinmajaExercises />}

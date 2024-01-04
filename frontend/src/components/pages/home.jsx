@@ -3,6 +3,7 @@ import { TehtäväPaketit } from "../data/TehtäväPaketit";
 import { ExerciseCard } from "../elements/ExerciseCard";
 import { useState } from "react";
 import "../css/home.css";
+import "../css/Exercises.css";
 
 const Home = () => {
   const {

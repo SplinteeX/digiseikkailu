@@ -24,11 +24,6 @@ const Navbar = () => {
       cName: "nav-text",
     },
     {
-      title: "Seikkailukartat",
-      path: "/tehtävät",
-      cName: "nav-text",
-    },
-    {
       title: "Empatiapolku",
       path: "/",
       cName: "nav-text",
