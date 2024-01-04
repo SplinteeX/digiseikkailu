@@ -20,6 +20,27 @@ export const ProductsData = () => {
         "Seuranta, Diplomi, Tuki, Tehtävien suoritusmerkki, Chat, Opettajan paneeli, Oppilaan lisääminen",
     },
   ];
+  const Opettaja = [
+    {
+      title: "Digiseikkailu tarinat ja tehtävä vihko",
+      img: "images/tarinat-ja-tehtävät-työkirja-home.png",
+      description:
+        "Digiseikkailun tarina- ja tehtävävihkossa opitaan tieto- ja viestintäteknologian käsitteistöä sekä vahvistetaan lukemisen ja kuvittelemisen taitoa.",
+    },
+    {
+      title: "TVT-opetuksen taitopaketti",
+      img: "images/tvt-opetuksen-taitopaketti-home.png",
+      description:
+        "Paras konkreettinen tuki TVT-opetuksen perustaitojen vahvistamiseen",
+    },
+    {
+      title: "Opettajan ominaisuudet",
+      description:
+        "Opettajan ominaisuuksiin kuuluu kaikki + opettajan paneeli.",
+      ominaisuudet:
+        "Seuranta, Diplomi, Tuki, Tehtävien suoritusmerkki, Chat, Opettajan paneeli, Oppilaan lisääminen",
+    },
+  ];
   const Yksityishenkilö = [
     {
       title: "Digiseikkailu tarinat ja tehtävä vihko",
@@ -40,32 +61,5 @@ export const ProductsData = () => {
       notIncluded: "Opettajan paneeli, Oppilaan lisääminen",
     },
   ];
-  const Kokeile = [
-    {
-      title: "Mainokset",
-      img: "images/mainokset.png",
-      description: "Mainokset kuuluvat ilmaiseen digiseikkailu kokeiluun.",
-    },
-    {
-      title: "Digiseikkailu tarinat ja tehtävä vihko",
-      img: "images/tarinat-ja-tehtävät-työkirja-home.png",
-      description:
-        "Digiseikkailun tarina- ja tehtävävihkossa opitaan tieto- ja viestintäteknologian käsitteistöä sekä vahvistetaan lukemisen ja kuvittelemisen taitoa.",
-    },
-    {
-      title: "TVT-opetuksen taitopaketti",
-      img: "images/tvt-opetuksen-taitopaketti-home.png",
-      description:
-        "Paras konkreettinen tuki TVT-opetuksen perustaitojen vahvistamiseen",
-    },
-    {
-      title: "Kokeilujakson ominaisuudet",
-      description:
-        "Kokeilujakson ominaisuudet ovat niukemmat kuin ostetun version.",
-      ominaisuudet: "Chat",
-      notIncluded:
-        "Seuranta, Diplomi, Tuki, Tehtävien suoritusmerkki, Opettajan paneeli, Oppilaan lisääminen",
-    },
-  ];
-  return { Oppilaitos, Yksityishenkilö, Kokeile };
+  return { Oppilaitos, Yksityishenkilö, Opettaja };
 };

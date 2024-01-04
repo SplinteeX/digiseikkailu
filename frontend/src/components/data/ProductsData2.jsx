@@ -37,6 +37,7 @@ export const ProductsData2 = () => {
         </>
       ),
       language: "Suomi, English, Swedish",
+      price: "9.99",
     },
   ];
   const TvtOpetuksenTaitoPaketti = [
@@ -95,6 +96,7 @@ export const ProductsData2 = () => {
         </>
       ),
       language: "Suomi, English, Swedish",
+      price: "9.99",
     },
   ];
   return { TarinatJaTehtavat, TvtOpetuksenTaitoPaketti };
