@@ -18,17 +18,20 @@ export const useSignup = () => {
       setIsLoading(false);
       return setError("Passwords do not match");
     }
-    const response = await fetch("http://localhost:8080/api/user/signup", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        firstname,
-        lastname,
-        email,
-        password,
-        userName,
-      }),
-    });
+    const response = await fetch(
+      `${import.meta.env.VITE_REACT_APP_API_URL}/api/user/signup`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstname,
+          lastname,
+          email,
+          password,
+          userName,
+        }),
+      }
+    );
     const json = await response.json();
 
     if (!response.ok) {

@@ -15,14 +15,17 @@ export const useOpenAi = () => {
         return "Please enter text!";
       }
 
-      const response = await fetch(`http://localhost:8080/api/openai`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `${Auth}`,
-        },
-        body: JSON.stringify({ message }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_REACT_APP_API_URL}/api/openai`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `${Auth}`,
+          },
+          body: JSON.stringify({ message }),
+        }
+      );
       if (response.status === 401) {
         setIsLoading(false);
         return "Chatbotin käyttäminen edellyttää kirjautumista. Kirjaudu sisään sivun oikeasta yläkulmasta.";
