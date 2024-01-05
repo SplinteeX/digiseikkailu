@@ -59,7 +59,7 @@ export const ShopOverview = () => {
               <div className="Control-section">
                 {item.title === "Opettaja" ||
                   (item.title === "Oppilaitos" && (
-                    <>
+                    <div className="Control">
                       <button
                         onClick={() => incrementCartItemQuantity(item.id)}
                       >
@@ -76,10 +76,10 @@ export const ShopOverview = () => {
                       >
                         -
                       </button>
-                    </>
+                    </div>
                   ))}
                 {item.title === "Oppilaitos" && (
-                  <>
+                  <div className="Control">
                     <button onClick={() => incrementCartItemTeachers(item.id)}>
                       +
                     </button>
@@ -90,10 +90,10 @@ export const ShopOverview = () => {
                     <button onClick={() => decrementCartItemTeachers(item.id)}>
                       -
                     </button>
-                  </>
+                  </div>
                 )}
                 {item.title === "Opettaja" && (
-                  <>
+                  <div className="Control">
                     <button onClick={() => incrementCartItemQuantity(item.id)}>
                       +
                     </button>
@@ -106,10 +106,10 @@ export const ShopOverview = () => {
                     <button onClick={() => decrementCartItemQuantity(item.id)}>
                       -
                     </button>
-                  </>
+                  </div>
                 )}
                 {item.type === "Product" && (
-                  <>
+                  <div className="Control">
                     <button onClick={() => incrementCartItemQuantity(item.id)}>
                       +
                     </button>
@@ -117,10 +117,10 @@ export const ShopOverview = () => {
                     <button onClick={() => decrementCartItemQuantity(item.id)}>
                       -
                     </button>
-                  </>
+                  </div>
                 )}
                 {item.type === "subscription" && (
-                  <>
+                  <div className="Control">
                     <button onClick={() => incrementCartItemMonths(item.id)}>
                       +
                     </button>
@@ -131,7 +131,7 @@ export const ShopOverview = () => {
                     <button onClick={() => decrementCartItemMonths(item.id)}>
                       -
                     </button>
-                  </>
+                  </div>
                 )}
               </div>
             </motion.div>

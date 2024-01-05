@@ -44,6 +44,10 @@
   font-size: 1rem;
   font-weight: bold;
 }
+.ShopOverview .Item .Control-section .Control {
+  display: flex;
+  gap: 5px;
+}
 .ShopOverview .Bottom-section {
   display: flex;
   position: relative;
@@ -77,4 +81,50 @@
   height: 600px;
   min-width: 500px;
   border-radius: 20px;
+}
+@media screen and (max-width: 1400px) {
+  .ShopOverview .Item {
+    flex-direction: column;
+  }
+
+  .ShopOverview .Item .Control-section {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    right: auto;
+    gap: initial;
+  }
+  .ShopOverview ul {
+    border-top: 2px solid #e0e0e0;
+  }
+}
+@media screen and (max-width: 770px) {
+  .ShopOverview .Item .Control-section {
+    flex-direction: column;
+  }
+  .ShopOverview .Item .Control-section .Control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ShopOverview .Item .Control-section button {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .ShopOverview .Bottom-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ShopOverview .Bottom-section button {
+    position: relative;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ShopOverview {
+    margin: 0% 5%;
+  }
 }
