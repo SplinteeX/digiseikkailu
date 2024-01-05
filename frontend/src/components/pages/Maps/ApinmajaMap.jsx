@@ -6,7 +6,7 @@ export const ApinmajaMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Apinmaja",
-          Image: "/src/assets/Kartat/ApinmajaKartta.jpg",
+          Image: "/Kartat/ApinmajaKartta.jpg",
           Kategoria: "Apinmaja",
           Balls: [
             {

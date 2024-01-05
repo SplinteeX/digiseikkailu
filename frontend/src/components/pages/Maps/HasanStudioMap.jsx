@@ -6,7 +6,7 @@ export const HasanStudioMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Häsän Studio",
-          Image: "/src/assets/Kartat/HäsänStudio.jpg",
+          Image: "/Kartat/Häsänstudio.jpg",
           Kategoria: "HäsänStudio",
           TextColor: "black",
           Balls: [

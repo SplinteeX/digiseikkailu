@@ -6,7 +6,7 @@ export const TweetynviestiseinäMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Tweetyn Viestiseinä",
-          Image: "/src/assets/Kartat/TweetynKartta.jpg",
+          Image: "/Kartat/TweetynKartta.jpg",
           Kategoria: "TweetynViestiseinä",
           Balls: [
             {
