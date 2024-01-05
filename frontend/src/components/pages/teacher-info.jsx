@@ -31,33 +31,33 @@ export const Teacherinfo = () => {
   const KuvakeData = [
     {
       Kuvake: [
-        "src/assets/Napit/Lukea-Vihreä.png",
-        "src/assets/Napit/Lukea-Sininen.png",
-        "src/assets/Napit/Lukea-Rosa.png",
+        "/Napit/Lukea-Vihreä.png",
+        "/Napit/Lukea-Sininen.png",
+        "/Napit/Lukea-Rosa.png",
       ],
       text: "Tämä kuvake on tarkoitettu tietotekstille ja tehtävälle",
     },
     {
       Kuvake: [
-        "src/assets/Napit/Peli-Vihreä.png",
-        "src/assets/Napit/Peli-Sininen.png",
-        "src/assets/Napit/Peli-Rosa.png",
+        "/Napit/Peli-Vihreä.png",
+        "/Napit/Peli-Sininen.png",
+        "/Napit/Peli-Rosa.png",
       ],
       text: "Tämä kuvake on tarkoitettu peleille",
     },
     {
       Kuvake: [
-        "src/assets/Napit/Tarina-Vihreä.png",
-        "src/assets/Napit/Tarina-Sininen.png",
-        "src/assets/Napit/Tarina-Rosa.png",
+        "/Napit/Tarina-Vihreä.png",
+        "/Napit/Tarina-Sininen.png",
+        "/Napit/Tarina-Rosa.png",
       ],
       text: "Tämä kuvake on tarkoitettu tarinoille",
     },
     {
       Kuvake: [
-        "src/assets/Napit/Video-Vihreä.png",
-        "src/assets/Napit/Video-Sininen.png",
-        "src/assets/Napit/Video-Rosa.png",
+        "/Napit/Video-Vihreä.png",
+        "/Napit/Video-Sininen.png",
+        "/Napit/Video-Rosa.png",
       ],
       text: "Tämä kuvake on tarkoitettu videoille",
     },
