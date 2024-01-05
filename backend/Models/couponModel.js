@@ -10,6 +10,10 @@ const couponSchema = new Schema({
     required: true,
     unique: true,
   },
+  amount: {
+    type: String,
+    default: "percentage",
+  },
   used: {
     type: Boolean,
     default: false,

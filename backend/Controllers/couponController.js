@@ -1,15 +1,16 @@
 const Coupon = require("../Models/couponModel");
 
 const createCoupon = async (req, res) => {
-  const { uses, coupon } = req.body;
+  const { uses, coupon, amount } = req.body;
   try {
-    if (!uses || !coupon) {
+    if (!uses || !coupon || !amount) {
       throw new Error("Täytä kaikki kentät!");
     }
 
     const newCoupon = await Coupon.create({
       uses,
       coupon,
+      amount,
     });
 
     res.status(201).json({ newCoupon });
@@ -26,8 +27,7 @@ const useCoupon = async (req, res) => {
 
     const updatedCoupon = await Coupon.findOneAndUpdate(
       { coupon, uses: { $gt: 0 } },
-      { $inc: { uses: -1 } },
-      { new: true }
+      { $inc: { uses: -1 } }
     );
 
     if (!updatedCoupon) {
@@ -40,7 +40,7 @@ const useCoupon = async (req, res) => {
       throw new Error("Kuponki on jo käytetty!");
     }
 
-    res.status(201).json({ usedCoupon: updatedCoupon });
+    res.status(201).json({ Coupon: updatedCoupon.amount });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
