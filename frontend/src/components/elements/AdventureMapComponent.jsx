@@ -96,38 +96,38 @@ export const AdventureMapComponent = ({ Data, url }) => {
                 >
                   {isExerciseCompleted(ball.number) ? (
                     <img
-                      src={`/src/assets/Napit/success.png`}
+                      src={`/Napit/success.png`}
                       alt={`Completed Ball ${ball.number}`}
                     />
                   ) : (
                     <>
                       {ball.Kategoria === "Peli" && (
                         <img
-                          src={`/src/assets/Napit/Peli-${ball.Väri}.png`}
+                          src={`/Napit/Peli-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}
                       {ball.Kategoria === "Tehtävä" && (
                         <img
-                          src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
+                          src={`/Napit/Lukea-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}
                       {ball.Kategoria === "Tietoteksti" && (
                         <img
-                          src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
+                          src={`/Napit/Lukea-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}
                       {ball.Kategoria === "Video" && (
                         <img
-                          src={`/src/assets/Napit/Video-${ball.Väri}.png`}
+                          src={`/Napit/Video-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}
                       {ball.Kategoria === "Tarina" && (
                         <img
-                          src={`/src/assets/Napit/Tarina-${ball.Väri}.png`}
+                          src={`/Napit/Tarina-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}

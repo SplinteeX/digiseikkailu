@@ -8,7 +8,7 @@ export const MiukumaukuData = () => {
         "https://soundcloud.com/digiseikkailu-oy/6-mahdoton-kotitehtaevae",
         "https://soundcloud.com/digiseikkailu-oy/6-impossible-homework",
       ],
-      puolKuva: "/src/assets/MiukumaukuImages/Miukumauku1.webp",
+      puolKuva: "/MiukumaukuImages/Miukumauku1.webp",
       puolTeksti:
         "Tarinassa käsitellään<br><br>digilaitteiden hyötyjä ja haittoja, internetin ja laitteiden järkevää käyttöä ja harjoitellaan tietotekstien käyttöä opiskelussa.",
       Tekstit: [
@@ -34,7 +34,7 @@ export const MiukumaukuData = () => {
       tehtNum: "2",
       tehtName: "Lukemisen hyödyt -tietoboksi",
       Kategoria: "MiukuMaukunKirjasto",
-      Kuva: "/src/assets/MiukumaukuImages/LukemisenHyödyt.webp",
+      Kuva: "/MiukumaukuImages/LukemisenHyödyt.webp",
       numeroLista: [
         "Lukeminen kehittää kaveritaitoja. Lukemisen avulla opit empatiaa eli osaat asettaa itsesi toisen asemaan.",
         "Lukeminen kasvattaa sanavarastoasi. Kun luet, opit paljon uusia sanoja.",
@@ -56,7 +56,7 @@ export const MiukumaukuData = () => {
       tehtNum: "3",
       tehtName: "Lukemisen hyödyt -tietoboksi",
       Kategoria: "MiukuMaukunKirjasto",
-      Kuva: "/src/assets/MiukumaukuImages/Fretti.webp",
+      Kuva: "/MiukumaukuImages/Fretti.webp",
       Teksti:
         "Valitse itsellesi luettavaa niin, että kirjat sopivat jonkin alla olevan otsikon alle. Kirjoita valitsemasi kirjan ja sen kirjoittajan nimi kohdan viereen. Kohtia ei tarvitse suorittaa numerojärjestyksessä. Saatko kaikki kymmenen kirjaa luettua?",
       numeroLista: [
