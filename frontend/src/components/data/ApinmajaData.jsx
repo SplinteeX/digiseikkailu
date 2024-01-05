@@ -5,7 +5,7 @@ export const ApinmajaData = () => {
       tehtName: "Tutustu tietokonehiireen",
       Kategoria: "Apinmaja",
       kysyms: "Mitä “Hiiripiiri” -tehtävässä opitaan?",
-      Kuvat: ["/src/assets/ApinmajaImages/HiirenTaitokortti.webp"],
+      Kuvat: ["/ApinmajaImages/HiirenTaitokortti.webp"],
       puolKuvat: [
         "/ApinmajaImages/Ykköspainike.webp",
         "/ApinmajaImages/Kakkospainike.webp",
@@ -664,7 +664,7 @@ export const ApinmajaData = () => {
       vastaus: "C) Näppäimistö",
       Kuvat: [
         "/ApinmajaImages/Hardware.webp",
-        "/src/assets/ApinmajaImages/Hakukenttä.webp",
+        "/ApinmajaImages/Hakukenttä.webp",
       ],
     },
     {
