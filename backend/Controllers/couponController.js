@@ -1,4 +1,5 @@
 const Coupon = require("../Models/couponModel");
+
 const createCoupon = async (req, res) => {
   const { uses, coupon } = req.body;
   try {
@@ -20,16 +21,26 @@ const useCoupon = async (req, res) => {
   const { coupon } = req.body;
   try {
     if (!coupon) {
-      throw new Error("Väärä kuponkikoodi!");
+      throw new Error("Täytä kaikki kentät!");
     }
 
-    const coupon = await Coupon.findOne({ coupon });
-    if (!coupon) {
-      throw Error("Incorrect coupon");
+    const updatedCoupon = await Coupon.findOneAndUpdate(
+      { coupon, uses: { $gt: 0 } },
+      { $inc: { uses: -1 } },
+      { new: true }
+    );
+
+    if (!updatedCoupon) {
+      throw new Error("Kuponkia ei löytynyt tai sitä ei voi käyttää!");
     }
 
-    const coupon_id = coupon._id;
-    console.log(coupon_id);
+    if (updatedCoupon.uses === 0) {
+      updatedCoupon.used = true;
+      await updatedCoupon.save();
+      throw new Error("Kuponki on jo käytetty!");
+    }
+
+    res.status(201).json({ usedCoupon: updatedCoupon });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }

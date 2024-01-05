@@ -10,6 +10,6 @@ const requireAuth = require("../middleware/requireAuth");
 
 router.post("/create", createCoupon);
 router.get("/coupon/:id", getCoupon);
-router.post("/use", useCoupon);
+router.put("/use", useCoupon);
 
 module.exports = router;
