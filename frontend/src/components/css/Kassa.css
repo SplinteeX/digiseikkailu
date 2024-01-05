@@ -159,3 +159,69 @@ input {
 .Kassa .Left-side .Current-image img {
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  .Kassa {
+    margin: 5% 5%;
+  }
+  @media screen and (max-width: 1000px) {
+    .Kassa .Left-side {
+      width: 40%;
+    }
+    .Kassa .Right-side {
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .Kassa .Left-side {
+      display: none;
+    }
+    .Kassa .Right-side {
+      width: 93%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .Kassa .Names {
+      flex-direction: column;
+    }
+    .Kassa .Right-side .Names div {
+      width: 98%;
+    }
+    .Kassa {
+      height: 100%;
+    }
+    .Kassa .Right-side .Buttons {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 50px;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 50px;
+    }
+    .Kassa .Right-side .Button-2 {
+      position: relative;
+      width: 95%;
+      height: 50px;
+      margin-top: 0px;
+    }
+    .Kassa .Right-side .Button-1 {
+      position: relative;
+      width: 95%;
+      height: 50px;
+      margin-top: 0px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .Kassa .Right-side .Home .Inputs,
+  .Kassa .Right-side .Delivery,
+  .Kassa .Right-side .Credentials {
+    flex-direction: column;
+  }
+  .Kassa .Right-side .Home .Inputs div,
+  .Kassa .Right-side .Delivery div,
+  .Kassa .Right-side .Credentials div {
+    width: 98%;
+  }
+}

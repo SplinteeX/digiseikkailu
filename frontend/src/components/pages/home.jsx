@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <div className="Home-wrapper">
       <div className="Exercise-cards">
-        <h2 className="Title">Tehtävä maailmat</h2>
+        <h2 className="Title">Tehtävämaailmat</h2>
         <div className="Tehtävä-Paketit">
           <div className="Kortit">
             {[
