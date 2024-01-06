@@ -23,8 +23,6 @@ async function generateResponse(userMessage) {
       max_tokens: 500,
     });
 
-    console.log(chatCompletion);
-
     if (chatCompletion) {
       return chatCompletion.choices[0].message.content;
     } else {

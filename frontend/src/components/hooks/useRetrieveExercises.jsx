@@ -4,7 +4,9 @@ export const useRetrieveExercises = () => {
     const Auth = Cookies.get("Authorization");
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_REACT_APP_API_URL}/api/user/retrieve-exercises`,
+        `${
+          import.meta.env.VITE_REACT_APP_API_URL
+        }/api/exercises/retrieve-exercises`,
         {
           method: "POST",
           headers: {
