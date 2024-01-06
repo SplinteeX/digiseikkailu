@@ -149,9 +149,10 @@ export const ShopOverview = () => {
         </ul>
         <div className="Bottom-section">
           <p className="Total">
-            {isCoupon
+            {/* {isCoupon
               ? `Summa: ${totalPrice}€ \u00A0 ${coupon}% ale kuponki!`
-              : `Summa: ${totalPrice}€`}
+              : `Summa: ${totalPrice}€`} */}
+            Summa: {totalPrice}€
           </p>
           <Link to={"/kassa"}>
             <button>Siirry Maksamaan!</button>
