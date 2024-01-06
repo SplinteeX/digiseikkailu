@@ -29,7 +29,7 @@
   flex-wrap: wrap;
   margin: 4% 20%;
   justify-content: space-evenly;
-  gap: 4%;
+  gap: 20px;
 }
 .Information-wrapper .Boxes .Section {
   display: flex;
@@ -60,6 +60,13 @@
   align-items: center;
   margin: 2.5%;
 }
+.Information-wrapper .Completed-exercises {
+  display: flex;
+  margin: 2.5%;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .Information-wrapper .Exercises-done {
   display: flex;
   align-items: center;
@@ -73,8 +80,13 @@
 .Information-wrapper .Exercises div {
   width: 100%;
 }
-.Information-wrapper .Student-exercise h4,
-p {
+.Information-wrapper .Student-exercise h4 {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 20px 0px;
+}
+.Information-wrapper .Student-exercise p {
   text-align: center;
   width: 100%;
   margin: 0px;

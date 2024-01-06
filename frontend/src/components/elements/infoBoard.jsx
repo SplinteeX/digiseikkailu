@@ -62,15 +62,13 @@ export const InfoBoard = ({ onClose, data }) => {
           ([category, exercises]) => (
             <div key={category} className="Student-exercise">
               <h4>{category}</h4>
-              {exercises.length > 0 ? (
-                exercises.map((exercise, index) => (
-                  <div className="Completed-exercise" key={index}>
-                    <p>{exercise}</p>
-                  </div>
-                ))
-              ) : (
-                <p>Ei tehtäviä tehty!</p>
-              )}
+              <div className="Completed-exercises">
+                {exercises.length > 0 ? (
+                  exercises.map((exercise, index) => <p>{exercise}</p>)
+                ) : (
+                  <p>Ei tehtäviä tehty!</p>
+                )}
+              </div>
             </div>
           )
         )}
