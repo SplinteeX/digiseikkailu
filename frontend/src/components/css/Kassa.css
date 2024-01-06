@@ -2,7 +2,7 @@
   margin: 5% 15%;
   display: flex;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  height: 64vh;
+  min-height: 64vh;
   border-radius: 20px;
 }
 
@@ -10,8 +10,8 @@
 .Kassa .Left-side {
   position: relative;
   width: 50%;
-  height: 100%;
   padding: 0% 2.5%;
+  padding-bottom: 50px;
 }
 .Kassa .Left-side {
   display: flex;
@@ -20,10 +20,10 @@
 }
 
 .Kassa .Right-side .Buttons {
-  position: absolute;
-  bottom: 0;
-  width: 90%;
-  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .Kassa .Right-side button {
@@ -46,14 +46,10 @@
 }
 
 .Kassa .Right-side .Button-1 {
-  position: absolute;
-  left: 0;
   bottom: 10px;
 }
 
 .Kassa .Right-side .Button-2 {
-  position: absolute;
-  right: 0;
   bottom: 10px;
 }
 
