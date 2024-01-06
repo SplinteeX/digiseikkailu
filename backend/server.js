@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const userRoutes = require("./Routes/userRoutes");
 const studentRoutes = require("./Routes/studentRoutes");
+const couponRoutes = require("./Routes/couponRoutes");
 const openaiController = require("./Controllers/openAiController");
 const exerciseRouter = require("./Routes/exerciseRoutes");
 const individualRoutes = require("./Routes/IndividualUserRoutes");
@@ -20,6 +21,7 @@ app.use(cors());
 app.use("/api/user", userRoutes);
 app.use("/api/student", studentRoutes);
 app.use("/api/getUser", getUser);
+app.use("/api/coupon", couponRoutes);
 app.use("/api/exercises", exerciseRouter);
 app.use("/api/individual", individualRoutes);
 

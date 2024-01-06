@@ -15,7 +15,14 @@ export const ShopOverview = () => {
     decrementCartItemTeachers,
   } = useShoppingCart();
   const [totalPrice, setTotalPrice] = useState("0.00");
-
+  const [coupon, setCoupon] = useState(null);
+  const isCoupon = () => {
+    if (localStorage.getItem("coupon") != null) {
+      setCoupon(localStorage.getItem("coupon"));
+      return true;
+    }
+    return false;
+  };
   useEffect(() => {
     let sum = 0;
     cart.forEach((item) => {
@@ -25,6 +32,9 @@ export const ShopOverview = () => {
         sum += parseFloat(item.price) * item.quantity;
       }
     });
+    if (isCoupon()) {
+      sum = (sum * localStorage.getItem("coupon")) / 100;
+    }
     setTotalPrice(sum.toFixed(2));
   }, [cart]);
 
@@ -138,7 +148,11 @@ export const ShopOverview = () => {
           ))}
         </ul>
         <div className="Bottom-section">
-          <p className="Total">Summa: {totalPrice}€</p>
+          <p className="Total">
+            {isCoupon
+              ? `Summa: ${totalPrice}€ \u00A0 ${coupon}% ale kuponki!`
+              : `Summa: ${totalPrice}€`}
+          </p>
           <Link to={"/kassa"}>
             <button>Siirry Maksamaan!</button>
           </Link>

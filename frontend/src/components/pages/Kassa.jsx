@@ -5,6 +5,7 @@ import { useShoppingCart } from "../contexts/ShoppingCartContext";
 import { AnimatedSlider } from "../elements/animatedSlider";
 import { useLogin } from "../hooks/useLogin";
 import { useAuthContext } from "../hooks/useAuthContext";
+import { useCoupon } from "../hooks/useCoupon";
 
 export const Kassa = () => {
   const [currentSection, setCurrentSection] = useState(1);
@@ -25,9 +26,14 @@ export const Kassa = () => {
   const [city, setCity] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const cart = useShoppingCart();
+  const cartContext = useShoppingCart();
   const shoppingCart = cart.cart;
   const { user, role } = useAuthContext();
   const { login, error } = useLogin();
+
+  //* Coupon:
+  const [couponCode, setCoupon] = useState("");
+  const { coupon, CouponError } = useCoupon();
 
   const handleLogin = async () => {
     const loginSuccess = await login(emailLogin, passwordLogin);
@@ -35,6 +41,12 @@ export const Kassa = () => {
       window.location.reload();
       setCurrentSection(2);
       setLoggingSkipped(false);
+    }
+  };
+  const handleCoupon = async () => {
+    const couponSuccess = await coupon(couponCode);
+    if (localStorage.getItem("coupon") === null && couponSuccess) {
+      localStorage.setItem("coupon", couponSuccess.Coupon);
     }
   };
 
@@ -201,13 +213,18 @@ export const Kassa = () => {
         return (
           <div className="section">
             <h2>Tilaus</h2>
-            <div className="Kuponki">
+            {/* <div className="Kuponki">
               <p>Jos sinulla on kuponkikoodi, kirjoita se nyt alle.</p>
               <div className="Lower">
-                <Input placeholder="Kuponkikoodi" />
-                <button>Käytä</button>
+                <Input
+                  placeholder="Kuponkikoodi"
+                  Input={couponCode}
+                  onChange={(e) => setCoupon(e.target.value)}
+                />
+                <button onClick={handleCoupon}>Käytä</button>
               </div>
-            </div>
+            </div> */}
+
             <div className="Tilauksesi">
               <h3>Tilauksesi</h3>
               {shoppingCart.map((item) => (
