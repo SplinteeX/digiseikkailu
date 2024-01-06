@@ -75,11 +75,7 @@ export const Products = () => {
             active={activeButton}
             style={"Normal"}
             onClick={() =>
-              addToCart({
-                title: "Yksityishenkilö",
-                price: "3.90",
-                type: "subscription",
-              })
+              toast.error("Tämä ominaisuus ei ole vielä saatavilla.")
             }
           />
         )}
@@ -89,11 +85,7 @@ export const Products = () => {
             active={activeButton}
             style={"Normal"}
             onClick={() =>
-              addToCart({
-                title: "Oppilaitos",
-                price: "1.49",
-                type: "subscription",
-              })
+              toast.error("Tämä ominaisuus ei ole vielä saatavilla.")
             }
           />
         )}

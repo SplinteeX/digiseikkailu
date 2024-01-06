@@ -8,7 +8,7 @@ export const useSaveCompletedExercise = () => {
     const Auth = Cookies.get("Authorization");
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_REACT_APP_API_URL}/api/user/save-exercise`,
+        `${import.meta.env.VITE_REACT_APP_API_URL}/api/exercises/save-exercise`,
         {
           method: "POST",
           headers: {
