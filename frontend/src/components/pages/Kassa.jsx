@@ -213,7 +213,7 @@ export const Kassa = () => {
         return (
           <div className="section">
             <h2>Tilaus</h2>
-            <div className="Kuponki">
+            {/* <div className="Kuponki">
               <p>Jos sinulla on kuponkikoodi, kirjoita se nyt alle.</p>
               <div className="Lower">
                 <Input
@@ -223,7 +223,8 @@ export const Kassa = () => {
                 />
                 <button onClick={handleCoupon}>Käytä</button>
               </div>
-            </div>
+            </div> */}
+
             <div className="Tilauksesi">
               <h3>Tilauksesi</h3>
               {shoppingCart.map((item) => (
