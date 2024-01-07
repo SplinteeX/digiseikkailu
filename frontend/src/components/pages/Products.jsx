@@ -60,13 +60,13 @@ export const Products = () => {
           <SimpleButton
             text={"1.49€ / kk. per oppilas"}
             active={activeButton}
-            onClick={() =>
+            /* onClick={() =>
               addToCart({
                 title: "Opettaja",
                 price: "1.49",
                 type: "subscription",
               })
-            }
+            } */
           />
         )}
         {activeButton === "Yksityishenkilö" && (
@@ -84,9 +84,9 @@ export const Products = () => {
             text={"1.49€ / kk. per oppilas"}
             active={activeButton}
             style={"Normal"}
-            onClick={() =>
-              toast.error("Tämä ominaisuus ei ole vielä saatavilla.")
-            }
+            /* onClick={() =>
+            toast.error("Tämä ominaisuus ei ole vielä saatavilla.")
+            } */
           />
         )}
       </div>
@@ -95,11 +95,15 @@ export const Products = () => {
           <SimpleButton
             key={index}
             text={button.text}
-            onClick={() => handleClick(button.text)}
+            // onClick={() => handleClick(button.text)}
             active={activeButton === button.text}
           />
         ))}
       </header>
+      {/* Coming soon */}
+      <div className="Coming-soon">
+        <h1>Sivulle tehdään parhaillaan muutoksia ja lisäyksiä.</h1>
+      </div>
       <div className="Products-content">
         {activeButton === "Opettaja" &&
           renderProducts(Opettaja, "Sisältää materiaalit opettajalle")}
