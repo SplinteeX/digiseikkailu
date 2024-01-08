@@ -88,7 +88,7 @@ const Home = () => {
       <div className="home-empatia-polku">
         <MediaText
           title={
-            "Digiseikkailun Empatiapolku is a free educational resource for schools to strengthen empathy skills and online behavior."
+            "Digiseikkailun Empatiapolku on ilmaista opetusmateriaalia kouluille empatiataitojen ja verkossa käyttäytymisen vahvistamiseksi."
           }
           image={"/images/home-empatia-polku.png"}
         />
