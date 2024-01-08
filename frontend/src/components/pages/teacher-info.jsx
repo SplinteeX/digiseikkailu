@@ -110,7 +110,7 @@ export const Teacherinfo = () => {
       <div className="nappiContainer">
         <div className="nappiLinkki">
           <Link to="https://docs.google.com/document/d/1wgRrbO9PZtgW9f-TS4Y24K6ocznrptJqDbken90ddjs/edit?usp=sharing">
-            <button className="nappi">tehtävät ja tavoitteet</button>
+            <button className="nappi">Tehtävät ja tavoitteet</button>
           </Link>
         </div>
       </div>
