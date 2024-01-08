@@ -128,7 +128,7 @@ export const ApinmajaMap = () => {
             },
             {
               Väri: "Sininen",
-              Kategoria: "Peli",
+              Kategoria: "Tietoteksti",
               number: "28",
               x: 425,
               y: 134,
