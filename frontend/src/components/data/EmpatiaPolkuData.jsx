@@ -196,8 +196,7 @@ export const EmpatiaPolkuData = () => {
       tehtNum: "18",
       tehtName: "Tehtävä 18",
       Kategoria: "EmpatiaPolku",
-      puolvideo:
-        "https://digiadventurers.com/wp-content/uploads/2019/10/720p.mov",
+      puolvideo: "",
       puolTeksti: "Tutki viestittelyä.\nMistä asiasta Kursori on huolissaan?",
       Tekstit: [
         "Appi — Kiitos Kursori, olet supervaari, Appi kiitti saadessaan puhelimen.",
@@ -206,8 +205,8 @@ export const EmpatiaPolkuData = () => {
         "Häsä — Älä sinä huoli tästä enempää, Kursori, me selvitämme samalla tämänkin, Häsä sanoi Kursorille päättäväinen ilme kasvoillaan.",
       ],
       TarinaKuvat: [
-        "src/assets/vihainenpappa.webp",
-        "src/assets/kursori2.webp",
+        "/src/assets/vihainenpappa.webp",
+        "/src/assets/ovelakissa.webp",
       ],
       TarinaOtsikot: ["Osa 1", "Osa 2"],
       TarinaTekstit: ["Huono-onninen videotähti", "Huono-onninen videotähti"],

@@ -345,10 +345,23 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </div>
             </>
           )}
-          Data.TarinaKuvat && (<p className="Text-div-yellow">TARINA</p>
-          <img className="tarina-kuvat">{Data.TarinaKuvat}</img>
-          <p className="Text-div">{Data.TarinaOtsikot}</p>
-          <p className="Text-div">{Data.TarinaTekstit}</p>)
+          {Data.TarinaKuvat && (
+            <>
+              <p className="Text-div-yellow">TARINA</p>
+              {Data.TarinaKuvat.map((kuva, index) => (
+                <div className="Tarina-Image-container" key={`image_${index}`}>
+                  <img
+                    className="Full-image"
+                    src={kuva}
+                    alt={`Image ${index}`}
+                  />
+                </div>
+              ))}
+              <p className="Text-div-tarina">{Data.TarinaOtsikot}</p>
+              <p className="Text-div-tarinaT">{Data.TarinaTekstit}</p>
+            </>
+          )}
+
           {Data.Teksti && (
             <div className="Text-div">
               <p

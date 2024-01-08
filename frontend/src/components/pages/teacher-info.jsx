@@ -4,6 +4,7 @@ import { Slider } from "../elements/Slider";
 import { useState } from "react";
 import { FancySectionSlider } from "../elements/FancySectionSlider";
 import { Tavoitteet } from "../data/Tavoitteet";
+import { Link } from "react-router-dom";
 export const Teacherinfo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const infoTexts = [
@@ -106,6 +107,14 @@ export const Teacherinfo = () => {
           </div>
         </div>
       </div>
+      <div className="nappiContainer">
+        <div className="nappiLinkki">
+          <Link to="https://docs.google.com/document/d/1wgRrbO9PZtgW9f-TS4Y24K6ocznrptJqDbken90ddjs/edit?usp=sharing">
+            <button className="nappi">tehtävät ja tavoitteet</button>
+          </Link>
+        </div>
+      </div>
+
       <div className="Hahmot">
         <h3>Hahmot</h3>
         <Slider data={Hahmot} />
