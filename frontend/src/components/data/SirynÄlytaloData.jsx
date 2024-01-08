@@ -98,7 +98,7 @@ export const SirynÄlytaloData = () => {
       tehtName: "Siryn ihmeellinen koti - Tarina",
       Kategoria: "SirynÄlytalo",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/7-siryn-ihmeellinen-koti",
+        "https://soundcloud.com/digiseikkailu-oy/siryn-talo-5-siryn-ihmeellinen-koti-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/7-sirys-wonderful-home",
       ],
       puolKuva: "/src/assets/SirynImages/SirynIhmeellinenKoti.webp",

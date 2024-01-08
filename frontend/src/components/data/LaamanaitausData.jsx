@@ -32,6 +32,8 @@ export const LaamanaitausData = () => {
       Kategoria: "LaamanAitaus",
       tehtNum: "2",
       tehtName: "Tunteet",
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-2-tunne-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       Kuva: "/src/assets/LaamanImages/tunteet.webp",
       Teksti:
         " Ilo (Joy)\n\n -Selitys: Ilo on onnellinen tunne, jonka saat, kun jotain hauskaa tai mukavaa tapahtuu. -Kysymys: Milloin viimeksi tunsit iloa? Mikä sai sinut tuntemaan niin? -Kuva: Iloinen hahmo hyppää ilosta.\n\n Luottamus (Trust)\n\n -Selitys: Luottamus on tunne, joka tulee, kun uskot jonkun pitävän lupauksensa ja huolehtivan sinusta. -Kysymys: Keneen luotat eniten? Miksi luotat häneen tai häneen? -Kuva: Hahmo näyttää peukkua merkiksi luottamuksesta.\n\n Pelko (Fear)\n\n -Selitys: Pelko on jännittynyt tunne, kun olet huolissasi siitä, että jotain pahaa voi tapahtua. -Kysymys: Mikä pelottaa sinua? Mitä teet, kun tunnet olosi pelokkaaksi? -Kuva: Hahmo piiloutuu käsiensä taakse, kuvastaen pelkoa.\n\n Yllätys (Surprise)\n\n -Selitys: Yllätys on tunne, kun jotain odottamatonta tapahtuu. -Kysymys: Kerro jokin kerta, kun jokin yllätti sinut. Oliko se hyvä vai huono yllätys? -Kuva: Hahmolla on suuret, hämmästyneet silmät, edustaen yllätystä.\n\n Surullisuus (Sadness)\n\n -Selitys: Suru on alakuloinen tunne, jonka saat, kun jokin ikävä tapahtuu tai menetät jotain tärkeää. -Kysymys: Milloin tunsit olosi surulliseksi viimeksi? Mitä teit, jotta tunsit olosi paremmaksi? -Kuva: Hahmo vuodattaa kyyneleen, ilmentäen surua.\n\n Inho (Disgust)\n\n -Selitys: Inho on tunne, jonka saat, kun kohtaat jotain todella epämiellyttävää tai vastenmielistä. -Kysymys: Onko jokin asia, jonka inhoat? Miksi se tuntuu sinusta inhottavalta? -Kuva: Hahmo tekee ilmeen, joka kuvastaa inhon tunnetta.\n\n Viha (Anger)\n\n -Selitys: Viha on tunne, joka tulee, kun olet todella ärsyyntynyt tai kun joku tekee sinulle väärin. -Kysymys: Milloin tunsit vihaa? Miten käsittelet vihaa, kun se tulee? -Kuva: Hahmo näyttää vihaiselta, kurtistaen kulmiaan.\n\n Odotus (Anticipation)\n\n -Selitys: Odotus on tunne, kun odotat jotain innolla, esimerkiksi syntymäpäivääsi tai retkeä. -Kysymys: Onko jotain, mitä odotat innolla juuri nyt? Miksi odotat sitä? -Kuva: Hahmo katsoo kelloa, odottaen jotain.",
@@ -169,7 +171,7 @@ export const LaamanaitausData = () => {
       tehtName: "Huono-onninen videotähti (osa 2)",
       Kategoria: "LaamanAitaus",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/18-huono-onninen-videotaehti",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-7-huono-onninen-videotahti-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/18-unlucky-video-star-part-2",
       ],
       puolTeksti:
@@ -206,7 +208,7 @@ export const LaamanaitausData = () => {
       tehtName: "Ongelma matkalla juhliin",
       Kategoria: "LaamanAitaus",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/3-ongelma-matkalla-juhliin",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-8-ongelma-matkalla-juhliin-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/3-the-problem-on-the-way-to",
       ],
       puolKuva: "/src/assets/LaamanImages/kysymysmerkki.webp",
@@ -238,7 +240,7 @@ export const LaamanaitausData = () => {
       tehtName: "Juhlat voivat alkaa",
       Kategoria: "LaamanAitaus",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/4-juhlat-voivat-alkaa",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-9-juhlat-voivat-alkaa-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/4-the-party-can-begin",
       ],
       puolTeksti:

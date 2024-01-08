@@ -5,7 +5,7 @@ export const OhjelmointiData = () => {
       tehtName: "Käskyjä kummallisilla kielillä",
       Kategoria: "OhjelmointiPolku",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/23-kaskyja-kummallisilla-kielilla",
+        "https://soundcloud.com/digiseikkailu-oy/ohjelmointipolku-1-kaskyja-kummallisilla-kielilla-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/23-commands-in-strange-languages",
       ],
       Tekstit: [

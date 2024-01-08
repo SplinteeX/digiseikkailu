@@ -368,8 +368,10 @@ export const TweetynData = () => {
       tehtNum: "10",
       tehtName: "Epäilyttävä ehdotus",
       Kategoria: "TweetynViestiseinä",
-      SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/13-epaeilyttaevae-ehdotus",
+      SoundClouds: [
+        "https://soundcloud.com/digiseikkailu-oy/tweetyn-viestiseina-10?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/hasas-studio-10-suspicious-proposal-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      ],
       puolKuva: "/src/assets/TweetyImages/vierasviesti.webp",
       Tekstit: [
         "Lisää tähän aiheeseen liittyviä tehtäviä löydät Tweetyn viestiseinästä.",
@@ -566,8 +568,8 @@ export const TweetynData = () => {
       tehtName: "Eväinä keksejä",
       Kategoria: "TweetynViestiseinä",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/12-evaeinae-keksejae",
-        "https://soundcloud.com/digiseikkailu-oy/12-cookies-for-snacks",
+        "https://soundcloud.com/digiseikkailu-oy/tweetyn-viestiseina-18-evaina-kekseja-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/tweetys-message-wall-18-snack-biscuits-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       puolTeksti:
         "Tarinassa käsitellään \n\n-tietoturvaa internetissä \n-käsitteet eväste (cookie), IP-osoite, selain \n-urkinta ja tietojen kalastelu \n-ponnahdusmainokset",

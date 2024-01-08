@@ -574,7 +574,7 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       SoundClouds: [
         "https://soundcloud.com/digiseikkailu-oy/2-kutsukortti",
-        "https://soundcloud.com/digiseikkailu-oy/2-invitation-card",
+        "https://soundcloud.com/digiseikkailu-oy/apis-hut-25-invitation-card-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       puolKuva: "/src/assets/ApinmajaImages/Kutsukortti.png",
       puolTeksti:

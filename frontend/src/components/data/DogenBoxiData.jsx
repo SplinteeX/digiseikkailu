@@ -48,8 +48,8 @@ export const DogenBoxiData = () => {
       tehtName: "Liian hyvää ollaakseen totta",
       Kategoria: "DogenBoxi",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/8-liian-hyvaeae-ollakseen?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        "https://soundcloud.com/digiseikkailu-oy/8-too-good-to-be-true?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/dogen-boxi-2-liian-hyvaa-ollakseen-totta-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/doges-box-2-too-good-to-be-true-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       puolTeksti:
         "Tarinassa käsitellään tiedon luotettavuuden arviointia sekä tutustutaan oikeisiin uutisiin ja valeuutisiin",
@@ -157,8 +157,8 @@ export const DogenBoxiData = () => {
       tehtName: "Trollipostia Supersovellukselle",
       Kategoria: "DogenBoxi",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/16-trollipostia?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        "https://soundcloud.com/digiseikkailu-oy/16-troill-mail-for-the-super?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/dogen-boxi-6trollipostia-supersovellukselle-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/doges-box-6-troll-mail-for-the-super-app-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       puolTeksti:
         "Tarinassa käsitellään: tutustutaan trollaamisen käsitteeseen, saadaan ohjeita, kuinka trollauksen voi pysäyttää omalta kohdaltaan, vahvistetaan nettikiusaamisen tunnistamisen taitoja sekä muistutetaan yhteisöllisestä ja rakentavasta viestinnästä mediassa.",
@@ -482,8 +482,8 @@ export const DogenBoxiData = () => {
       tehtName: "Kummallinen kalastelija",
       Kategoria: "DogenBoxi",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/14-kummallinen-kalastelija?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        "https://soundcloud.com/digiseikkailu-oy/14-strange-fisherman?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/dogen-boxi-18-kummallinen-kalastelija-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/doges-box-18-strange-fisherman-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       Tekstit: [
         "Kesäsunnuntaisin Kursori-pappaa oli turha etsiä kotoa tai pihapiiristä. Hän oli silloin rakkaimman harrastuksensa parissa. Kursorin ovessa oli iso kyltti, jossa luki englanniksi “Gone fishing” eli “Kalastamassa”.",

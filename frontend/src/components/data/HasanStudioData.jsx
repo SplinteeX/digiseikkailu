@@ -125,8 +125,8 @@ export const HäsänStudioData = () => {
       tehtName: "Kadonneet tilaajat",
       Kategoria: "HäsänStudio",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/9-kadonneet-tilaajat",
-        "https://soundcloud.com/digiseikkailu-oy/9-lost-subscribers",
+        "https://soundcloud.com/digiseikkailu-oy/hasan-studio-6-kadonneet-tilaajat-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharingt",
+        "https://soundcloud.com/digiseikkailu-oy/hasas-studio-9-lost-subscribers-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       puolKuva: "/src/assets/HäsäImages/Tilaajat.webp",
       puolTeksti:
@@ -156,8 +156,8 @@ export const HäsänStudioData = () => {
       tehtName: "Mikä sinusta tulee isona",
       Kategoria: "HäsänStudio",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/10-mikae-sinusta-tulee-isona?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        "https://soundcloud.com/digiseikkailu-oy/10-what-will-you-be-when-you?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/hasan-studio-7-mika-sinusta-tulee-isona-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/hasas-studio-7-which-makes-you-big-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       Title: "Tarinassa käsitellään",
       puolTeksti:
@@ -201,6 +201,10 @@ export const HäsänStudioData = () => {
       tehtNum: "9",
       tehtName: "Yhteinen tavoite - matka Jupiteriin",
       Kategoria: "HäsänStudio",
+      SoundClouds: [
+        "https://soundcloud.com/digiseikkailu-oy/9-yhteinen-tavoite-matka-jupiteriin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/hasas-studio-9-a-common-goal-a-trip-to-jupiter-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      ],
       puolTeksti:
         "Tarinassa käsitellään - Ryhmätyötaitojen merkitystäTyön jakamisen haasteitaIloa, joka syntyy kun keksitään yhdessä. Väärinymmärrykset kannattaa selvittää. Yhdessä voi saada enemmän aikaan kuin yksin",
       puolKuva: "/src/assets/HäsäImages/häsäTarina.webp",

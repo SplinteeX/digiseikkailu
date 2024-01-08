@@ -5,7 +5,7 @@ export const MiukumaukuData = () => {
       tehtName: "Mahdoton kotitehtävä",
       Kategoria: "MiukuMaukunKirjasto",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/6-mahdoton-kotitehtaevae",
+        "https://soundcloud.com/digiseikkailu-oy/miukumaukun-kirjasto-1mahdoton-kotitehtava-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/6-impossible-homework",
       ],
       puolKuva: "/src/assets/MiukumaukuImages/Miukumauku1.webp",
