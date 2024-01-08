@@ -272,7 +272,6 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ))}
             </div>
           )}
-
           {Data.Kuva ? (
             <div className="Full-image-container">
               <img className="Full-image" src={Data.Kuva} alt="" />
@@ -297,6 +296,17 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 <button className="Blue-button">{Data.sininenNappi}</button>
               </Link>
             </div>
+          )}
+          {Data.PeukkuKuva && (
+            <>
+              <div className="Text-div">
+                <img src={Data.PeukkuKuva} alt="kuva" />
+                <p>PEUKKUTEHTÄVÄ</p>
+              </div>
+              <div className="Image-container">
+                <img className="image25" src={Data.peukkuKuva} alt="Image" />
+              </div>
+            </>
           )}
           {Data.Tekstit &&
             Array.isArray(Data.Tekstit) &&
@@ -335,6 +345,10 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </div>
             </>
           )}
+          Data.TarinaKuvat && (<p className="Text-div-yellow">TARINA</p>
+          <img className="tarina-kuvat">{Data.TarinaKuvat}</img>
+          <p className="Text-div">{Data.TarinaOtsikot}</p>
+          <p className="Text-div">{Data.TarinaTekstit}</p>)
           {Data.Teksti && (
             <div className="Text-div">
               <p
