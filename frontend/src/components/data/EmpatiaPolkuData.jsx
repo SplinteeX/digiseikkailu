@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const EmpatiaPolkuData = () => {
   const Tehtävät = [
     {
@@ -70,6 +72,7 @@ export const EmpatiaPolkuData = () => {
         "Doge - Niin tai näin, minä otan nämä viestilaput nyt tutkintaan, Doge sanoo ja pujahtaa uutistoimistoa muistuttavaan koirankoppiinsa.",
       ],
       tarinaTeksti: "Juhlat voivat alkaa",
+      juhlaTarinaKuva: "/src/assets/juhlakuva.webp",
     },
     {
       tehtNum: "7",
@@ -196,13 +199,16 @@ export const EmpatiaPolkuData = () => {
       tehtNum: "18",
       tehtName: "Tehtävä 18",
       Kategoria: "EmpatiaPolku",
-      puolvideo: "",
+      puolvideo: "https://digiadventurers.com/mov/720p-kopio.mov",
       puolTeksti: "Tutki viestittelyä.\nMistä asiasta Kursori on huolissaan?",
       Tekstit: [
         "Appi — Kiitos Kursori, olet supervaari, Appi kiitti saadessaan puhelimen.",
         "Kursori — Eipä kestä. Mukavasti aika kuluu näitä korjaillessa. Voisitteko te puolestanne helppiä minua. Katsokaas kun tuossa pihakadulla kuulin ihmeellistä kikatusta, kun kävin torilla muorille kukkia ostamassa. Siellä nuoret höpisivät jostain “Karjuva Kursori -videosta”. Että olen kuulemma tubetähti, Kursori kuulosti huolestuneelta.",
         "Appi — Hmm.. kuulostaa erikoiselta. Eihän kenenkään pitäisi olla tubetähti siitä itse tietämättä tai sitä haluamatta, Appi parahti.",
         "Häsä — Älä sinä huoli tästä enempää, Kursori, me selvitämme samalla tämänkin, Häsä sanoi Kursorille päättäväinen ilme kasvoillaan.",
+        "Kursori — En minä oikeastaan haluaisi esiintyä videolla. Se ei ole ollenkaan minun tyyppistäni musiikkia. Sitä paitsi karjaisin vähän turhan kiukkuisesti Miuku-Maukulle, en ollut oikeasti niin vihainen kuin videosta voisi luulla, Kursori harmitteli.",
+        "Appi — Bändin jäsenet valitsivat oikein. Kenenkään ei kuulu olla YouTube-tähti ilman omaa lupaa.",
+        "Häsä — Empatia tarkoittaa kykyä ymmärtää mitä toinen ihminen kokee tämän näkökulmasta, eli itsensä asettamista toisen henkilön asemaan. Havu, Paju ja Eko olivat rohkeita kun pyysivät anteeksi ja poistivat videon.",
       ],
       TarinaKuvat: [
         "/src/assets/vihainenpappa.webp",
@@ -210,6 +216,8 @@ export const EmpatiaPolkuData = () => {
       ],
       TarinaOtsikot: ["Osa 1", "Osa 2"],
       TarinaTekstit: ["Huono-onninen videotähti", "Huono-onninen videotähti"],
+      peliKuva: "/src/assets/laamapelit.webp",
+      loppuTeksti: <Link to="/tietoa-opettajalle">Tietoa opettajille</Link>,
     },
   ];
   return Tehtävät;

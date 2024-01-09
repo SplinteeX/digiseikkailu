@@ -369,6 +369,11 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </div>
             </>
           )}
+          {Data.juhlaTarinaKuva && (
+            <div>
+              <img src={Data.juhlaTarinaKuva} alt="kuva" />
+            </div>
+          )}
 
           {Data.Teksti && (
             <div className="Text-div">
@@ -387,6 +392,19 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                   <li key={`numero_${index}`}>{numero}</li>
                 ))}
               </ol>
+            </div>
+          )}
+          {Data.peliKuva && (
+            <div className="peliKuva">
+              <img src={Data.peliKuva} alt="kuva" />
+            </div>
+          )}
+          {Data.loppuTeksti && (
+            <div className="Text-div-loppu">
+              <p className="White-text">
+                Tutustu lisää Digiseikkailun tarinoihin, tehtäviin ja peleihin
+                {Data.loppuTeksti} osiossa.
+              </p>
             </div>
           )}
           {Data.numeroListat && (
