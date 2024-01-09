@@ -4,7 +4,7 @@ export const SirynÄlytaloData = () => {
       tehtNum: 1,
       tehtName: "Mikä on robotti?",
       Kategoria: "SirynÄlytalo",
-      Kuva: "/src/assets/SirynImages/Robotti.webp",
+      Kuva: "/SirynImages/Robotti.webp",
       Tekstit: [
         "Sana robotti tulee tšekin kielen sanasta robota, joka tarkoittaa (pakko)työtä, alun perin maaorjien taksvärkkiä. Sana robotti on vakiintunut merkitsemään mekaanista laitetta. Termi androidi tarkoittaa ihmisen näköistä keinotekoista oliota ja kyborgi oliota, jossa on sekä orgaanisia että mekaanisia osia.",
         "Termiä robotiikka käytti ensimmäisenä tieteiskirjailija Isaac Asimov vuonna 1942. Asimov kirjoitti paljon roboteista, ja muotoili kirjoissaan ns. Robotiikan lait:",
@@ -27,7 +27,7 @@ export const SirynÄlytaloData = () => {
     {
       tehtNum: 2,
       tehtName: "Mihin robotteja käytetään",
-      Kuva: "/src/assets/SirynImages/Robotti.webp",
+      Kuva: "/SirynImages/Robotti.webp",
       Kategoria: "SirynÄlytalo",
       Tekstit: [
         "Robotit teollisuudessa<br><br>Useimmat robotit työskentelevät tehtaissa. Ne auttavat tekemään asioita, jotka voivat olla liian tylsiä, likaisia tai vaarallisia ihmisille. Ne voivat esimerkiksi maalata autoja tai koota osia yhteen.",
@@ -53,7 +53,7 @@ export const SirynÄlytaloData = () => {
       tehtNum: 3,
       tehtName: "Tunteet ja robotti",
       Kategoria: "SirynÄlytalo",
-      Kuva: "/src/assets/SirynImages/KaksiRobottia.webp",
+      Kuva: "/SirynImages/KaksiRobottia.webp",
       smallTitle: "Robotti toimii tasaisesti",
       Tekstit: [
         "Ihmisellä on peilisolut ja niiden ansiosta ihmisen tunnetila vaikuttaa vuorovaikutustilanteessa toiseenkin ihmiseen. Peilisolut ovat hermosoluja, joiden tehtävä on jäljitellä mitä toinen ihminen tai olento tekee tai tuntee. Peilisolut reagoivat kasvojen erilaisiin liikkeisiin ja välittävät tunnetietoa aivoihin.",
@@ -74,7 +74,7 @@ export const SirynÄlytaloData = () => {
       tehtNum: 4,
       tehtName: "Suunnitellaan robotti",
       Kategoria: "SirynÄlytalo",
-      Kuva: "/src/assets/SirynImages/SuunnitteleRobotti.webp",
+      Kuva: "/SirynImages/SuunnitteleRobotti.webp",
       smallTitle: "Suunnitellaan ja testataan robottia",
       Tekstit: [
         "1. Pohtikaa ensin kirjoittaen, missä arkipäivän pulmassa olisi hyötyä robotista. Mikä asia hoituisi helpommin ja nopeammin robotin avulla?",
@@ -101,7 +101,7 @@ export const SirynÄlytaloData = () => {
         "https://soundcloud.com/digiseikkailu-oy/7-siryn-ihmeellinen-koti",
         "https://soundcloud.com/digiseikkailu-oy/7-sirys-wonderful-home",
       ],
-      puolKuva: "/src/assets/SirynImages/SirynIhmeellinenKoti.webp",
+      puolKuva: "/SirynImages/SirynIhmeellinenKoti.webp",
       puolTeksti:
         "Tarinassa käsitellään<br><br>Arkielämää helpottavaa tekniikkaa ja tulevaisuuden teknisiä ratkaisuja tekoälyä hyödyntäen tekoälyä ja robotteja sekä niiden käyttöä eri tilanteissa",
       Tekstit: [
@@ -134,7 +134,7 @@ export const SirynÄlytaloData = () => {
       tehtNum: 6,
       tehtName: "Älytalo",
       Kategoria: "SirynÄlytalo",
-      Kuva: "/src/assets/SirynImages/Älytalo.webp",
+      Kuva: "/SirynImages/Älytalo.webp",
       smallTitle:
         "Siryn talossa hyödynnetään uusiutuvaa energiaa sekä robotiikkaa. ",
       Tekstit: [
@@ -158,7 +158,7 @@ export const SirynÄlytaloData = () => {
       tehtNum: 7,
       tehtName: "Mediarobotti",
       Kategoria: "SirynÄlytalo",
-      Kuva: "/src/assets/SirynImages/Mediarobotti.webp",
+      Kuva: "/SirynImages/Mediarobotti.webp",
       smallTitle: "Media vetoaa tunteisiin",
       Tekstit: [
         "Media hyödyntää ihmisten tunteita. Tarinat kirjoitetaan siten, että ihminen samaistuu uutisten henkilöihin ja jää seuraamaan julkaistuja tapahtumia. Kiinnostavat ilmiöt eivät aina ole niitä, jotka auttaisivat ihmisiä oppimaan maailmasta, vaan sellaisia, jotka herättävät huomiota tunnetasolla.",

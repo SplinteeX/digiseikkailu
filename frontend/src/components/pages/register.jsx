@@ -83,10 +83,6 @@ export const Register = () => {
               ) : (
                 <PulseLoader color={"#8CCBF3"} loading={isLoading} size={10} />
               )}
-              {error && <div className="error">{error}</div>}
-              <Link to={"/kirjaudu"}>
-                <CommonButton text={"Kirjaudu"}></CommonButton>
-              </Link>
               <Link to={"/kirjaudu"}>
                 <CommonButton text={"Palaa"}></CommonButton>
               </Link>

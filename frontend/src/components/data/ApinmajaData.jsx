@@ -5,15 +5,15 @@ export const ApinmajaData = () => {
       tehtName: "Tutustu tietokonehiireen",
       Kategoria: "Apinmaja",
       kysyms: "Mitä “Hiiripiiri” -tehtävässä opitaan?",
-      Kuvat: ["/src/assets/ApinmajaImages/HiirenTaitokortti.webp"],
+      Kuvat: ["/ApinmajaImages/HiirenTaitokortti.webp"],
       puolKuvat: [
-        "/src/assets/ApinmajaImages/Ykköspainike.webp",
-        "/src/assets/ApinmajaImages/Kakkospainike.webp",
-        "/src/assets/ApinmajaImages/Keskipainike.webp",
-        "/src/assets/ApinmajaImages/Alempikeskipainike.webp",
-        "/src/assets/ApinmajaImages/Ykkösklikkaus.webp",
-        "/src/assets/ApinmajaImages/Kakkosklikkaus.webp",
-        "/src/assets/ApinmajaImages/Maalaaminen.webp",
+        "/ApinmajaImages/Ykköspainike.webp",
+        "/ApinmajaImages/Kakkospainike.webp",
+        "/ApinmajaImages/Keskipainike.webp",
+        "/ApinmajaImages/Alempikeskipainike.webp",
+        "/ApinmajaImages/Ykkösklikkaus.webp",
+        "/ApinmajaImages/Kakkosklikkaus.webp",
+        "/ApinmajaImages/Maalaaminen.webp",
       ],
       puolTekstit: [
         "Ykköspainike, vasen painike.",
@@ -42,7 +42,7 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       puolTeksti:
         "Miuku-Mauku jahtaa jälleen Pointteri-hiirtä. Hiiri on kuitenkin nopeampi ja vie kissan mitä ihmeellisimpiin seikkailuihin matkallaan.",
-      puolKuva: "/src/assets/ApinmajaImages/kissahiiri.webp",
+      puolKuva: "/ApinmajaImages/kissahiiri.webp",
       peliTitle: "Pelaa täällä!",
       Unity:
         "https://digiadventurers.com/unity-games/prod/hiiripiiri/index.html",
@@ -63,7 +63,7 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       Teksti:
         "Harjoittele klikkaamaan kaksoisnapsautuksella numeroita järjestyksessä. Mikä kuva ilmestyy ruudulle? Mitä tietoturvaan liittyviä huomioita voit tehdä kuvasta?",
-      Kuva: "/src/assets/ApinmajaImages/tietokonevärikäs.webp",
+      Kuva: "/ApinmajaImages/tietokonevärikäs.webp",
       peliTitle: "Aloita tehtävä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli1/index.html",
       kysymys: "Mitä “Napsuttele numerot” -tehtävässä harjoitellaan?",
@@ -84,7 +84,7 @@ export const ApinmajaData = () => {
       Teksti:
         "Seuraa viivaa hiiren osoittimella. Paina hiiren ykköspainiketta kun maalaat viivaa. Pyri tekemään mahdollisimman tarkasti.",
       Kategoria: "Apinmaja",
-      Kuva: "/src/assets/ApinmajaImages/tietokoneJaPeli.webp",
+      Kuva: "/ApinmajaImages/tietokoneJaPeli.webp",
       peliTitle: "Aloita tehtävä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli2/index.html",
       kysymys: "Mitä tulee tehdä “Seuraa viivaa” -tehtävässä?",
@@ -108,7 +108,7 @@ export const ApinmajaData = () => {
         "Seuraa viivaa hiiren osoittimella. Paina hiiren ykköspainiketta kun maalaat viivaa. Pyri tekemään mahdollisimman tarkasti.",
         "Etsi tekstistä nimet. Maalaa nimen kirjaimet hiirellä. Nimen tausta muuttuu siniseksi. Paina nyt pikakomentoa Ctrl + B Komennolla saat lihavoitua sanan. Siirry seuraavaan nimeen. Kuinka monta nimeä tarinasta löysit?",
       ],
-      Kuva: "/src/assets/ApinmajaImages/näppäimistö.webp",
+      Kuva: "/ApinmajaImages/näppäimistö.webp",
       peliTitle: "Harjoittele täällä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli3/index.html",
       kysyms: "Miten teksti lihavoidaan tässä tehtävässä?",
@@ -129,8 +129,8 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       puolTeksti:
         "Etsi tekstistä riimiparit. Maalaa riimin kirjaimet hiirellä. Riimin tausta muuttuu siniseksi. Nyt tee taas lihavointi painamalla Ctrl + B pikakomentoa.",
-      Kuva: "/src/assets/ApinmajaImages/tietokoneVärikäs2.webp",
-      puolKuva: "/src/assets/ApinmajaImages/DogenluuMaalattu.webp",
+      Kuva: "/ApinmajaImages/tietokoneVärikäs2.webp",
+      puolKuva: "/ApinmajaImages/DogenluuMaalattu.webp",
       Unity: "https://digiadventurers.com/unity-games/prod/peli4/index.html",
       kysymys: "Mitä tulee tehdä “Maalaa ja lihavoi riimiparit” -tehtävässä?",
       vaihtoehdot: [
@@ -151,7 +151,7 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       Teksti:
         "Siirrä hiirellä herkut oikeisiin ruokakuppeihin Dogelle ja Miuku-Maukulle. Jotkut ruuista sopivat molemmille. Silloin voit valita kummalle ruuan annat.",
-      Kuva: "/src/assets/ApinmajaImages/tietokonekoirat.webp",
+      Kuva: "/ApinmajaImages/tietokonekoirat.webp",
       peliTitle: "Pelaa täällä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli5/index.html",
       kysymykset: [
@@ -176,7 +176,7 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       Teksti:
         "Harjoitellaan kopioi – leikkaa – liitä -toimintoja. Osaatko päätellä, mitkä sanat pitää poistaa ja minkä salaisen viestin Miuku-Mauku lähettää Dogelle. Maalaa ylimääräinen sana hiirellä. Leikkaa tai kopioi sana pikakomennolla. Liitä sanat yksi kerrallaan viestilappuun.",
-      Kuva: "/src/assets/ApinmajaImages/tietokoneCtrl+c.webp",
+      Kuva: "/ApinmajaImages/tietokoneCtrl+c.webp",
       smallTitle: "Pikakomennot",
       Tekstit: ["Ctrl + C", "Ctrl + X", "Ctrl + V"],
       peliTitle: "Harjoittele täällä!",
@@ -198,7 +198,7 @@ export const ApinmajaData = () => {
       tehtName: "Hiiritehtävä 7",
       smallTitle: "Hillo-Hämppiksen kaksoisnapautushippa",
       Kategoria: "Apinmaja",
-      Kuva: "/src/assets/ApinmajaImages/hiiriIkkuna.webp",
+      Kuva: "/ApinmajaImages/hiiriIkkuna.webp",
       peliTitle: "Pelaa täällä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli7/index.html",
       Text: "Hillo-hämppis vipeltää nopeasti karkuun ja innostuu hippaleikeistä, varsinkin Kursorin vanhoissa ja pölyisissä pitsiverhoissa! Yritä saada Hillo kiinni! Siitä on hauskaa testata nopeuttasi!",
@@ -226,7 +226,7 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       Teksti:
         "Miuku-Mauku jahtaa Pointteria pihalla. Auta Pointteri seuraavaan piilopaikkaan ennen kuin Miuku-Mauku saa sen kiinni.  Hiiri liikkuu sinne, minne kohtaan teet kaksoisnapsautuksen hiirellä.",
-      Kuva: "/src/assets/ApinmajaImages/isoKissaHiiri.webp",
+      Kuva: "/ApinmajaImages/isoKissaHiiri.webp",
       peliTitle: "Pelaa täällä!",
       Unity: "https://digiadventurers.com/unity-games/prod/peli8/index.html",
       peliteksti:
@@ -252,8 +252,8 @@ export const ApinmajaData = () => {
       Teksti:
         "Tutustu Erilaisia hiiriä -osuuteen. Tutustutaan tietokonehiirien muotoiluun ja pohditaan niiden käytettävyyteen liittyviä seikkoja kuten nappien paikkoja, muotoja, värejä ja toiminnallisuuksia. Suunnittele ja piirrä tietokonehiiri omiin tarpeisiin. Minkälainen design olisi sinua miellyttävä? Kerro mitä toimintoja löytyy hiirestäsi oikean painikkeen ja vasemman painikkeen alta.",
       Kuvat: [
-        "/src/assets/ApinmajaImages/värihiiri.webp",
-        "/src/assets/ApinmajaImages/pelikuva.webp",
+        "/ApinmajaImages/värihiiri.webp",
+        "/ApinmajaImages/pelikuva.webp",
       ],
       Text: "Muistele millaisia tietokonehiiriä olet käyttänyt. Kerro hiiristä, joita olet käyttänyt.",
       pieniKuva: "",
@@ -280,8 +280,8 @@ export const ApinmajaData = () => {
       title: "Tutustu tietokoneen näppäimistöön",
       Kategoria: "Apinmaja",
       Kuvat: [
-        "/src/assets/ApinmajaImages/Näppäimistö2.webp",
-        "/src/assets/ApinmajaImages/NäppäimistöKuva.webp",
+        "/ApinmajaImages/Näppäimistö2.webp",
+        "/ApinmajaImages/NäppäimistöKuva.webp",
       ],
       smallTitle: "Kokeile näppäimistöä",
       TinyMCE: "Aloita tästä!",
@@ -303,12 +303,12 @@ export const ApinmajaData = () => {
       tehtNum: "13",
       tehtName: "Yhdistä ja kirjoita tavut",
       Kategoria: "Apinmaja",
-      puolKuva: "/src/assets/ApinmajaImages/Taitokortti.webp",
+      puolKuva: "/ApinmajaImages/Taitokortti.webp",
       puolTeksti:
         "Harjoitellaan kirjoittamista kahdella kädellä. Lue tavut. Mitä metsän eläimiä saat tavuja yhdistämällä?Kirjoita näppäimistöllä eläimet ja keksi lisää metsän eläimiä niin monta kuin pystyt. Kirjoita sanasi kirjoituspohjalle.",
       Kuvat: [
-        "/src/assets/ApinmajaImages/NäppäimistöKirjoitus.webp",
-        "/src/assets/ApinmajaImages/yhdistatavut.webp",
+        "/ApinmajaImages/NäppäimistöKirjoitus.webp",
+        "/ApinmajaImages/yhdistatavut.webp",
       ],
       smallTitle: "Kokeile näppäimistöä",
       peliteksti: "Kirjoita täällä!",
@@ -344,10 +344,10 @@ export const ApinmajaData = () => {
       tehtNum: "15",
       tehtName: "Raahaa näppäimet paikoilleen",
       Kategoria: "Apinmaja",
-      Kuva: "/src/assets/ApinmajaImages/LäppäriNäppäimistö.webp",
+      Kuva: "/ApinmajaImages/LäppäriNäppäimistö.webp",
       puolTeksti:
         "Raahaa näppäimet paikoilleen! Tee tehtävä monta kertaa. Harjoittele samalla näppäinten nimiä. Opiskele näppäimistä Tutustu näppäimistöön -osiossa.",
-      puolKuva: "/src/assets/ApinmajaImages/Taitokortti.webp",
+      puolKuva: "/ApinmajaImages/Taitokortti.webp",
       kysymys: "Mitä “Näppäinmuistipeli” -tehtävässä harjoitellaan?",
       peliTitle: "Tee tehtävä täällä!",
       vaihtoehdot: [
@@ -364,7 +364,7 @@ export const ApinmajaData = () => {
       tehtNum: "16",
       tehtName: "Perustaitoja näppiksellä",
       Kategoria: "Apinmaja",
-      Kuva: "/src/assets/ApinmajaImages/Näppäintaidot.webp",
+      Kuva: "/ApinmajaImages/Näppäintaidot.webp",
 
       kysymys: "Mitä “Näppäinmuistipeli” -tehtävässä harjoitellaan?",
       peliTitle: "Tee tehtävä täällä!",
@@ -392,10 +392,10 @@ export const ApinmajaData = () => {
       tehtNum: "17",
       tehtName: "Näppäinkomennot haltuun",
       Kategoria: "Apinmaja",
-      Kuva: "/src/assets/ApinmajaImages/TietokoneKuva.webp",
+      Kuva: "/ApinmajaImages/TietokoneKuva.webp",
       puolTeksti:
         "Harjoitellaan pikakomentoja. Tee raahaustehtävä, jossa harjoitellaan perus pikakomentoja tietokoneella työskennellessä. Pikakomennot näppäimistöllä kannattaa harjoitella, sillä ne nopeuttavat työtäsi. Pohdi ja kirjoita, miten voit käyttää oppimiasi pikatoimintoja kun kirjoitat esim. tarinaa tietokoneella.",
-      puolKuva: "/src/assets/ApinmajaImages/TaitokorttiPikanäppäimet.webp",
+      puolKuva: "/ApinmajaImages/TaitokorttiPikanäppäimet.webp",
       kysymys: "Mitä “Näppäinmuistipeli” -tehtävässä harjoitellaan?",
       peliTitle: "Tee tehtävä täällä!",
 
@@ -413,10 +413,10 @@ export const ApinmajaData = () => {
       tehtNum: "18",
       tehtName: "Laamapeli",
       Kategoria: "Apinmaja",
-      Kuva: "/src/assets/ApinmajaImages/laamaescape.webp",
+      Kuva: "/ApinmajaImages/laamaescape.webp",
       Teksti:
         "Miuku-Mauku leikki Kursorin purkamien näppäimistöjen näppäimillä ja hävitti ne puutarhaan. Auta Laamaa etsimään Kursori-papan kadottamat näppäimet. Saat näppäimen kerättyä sitä koskemalla ja painamalla kyseistä näppäintä samaan aikaan näppäimistöltä. Varo kiukkuista Kurttu-tätiä ja hänen kastelukannuaan.",
-      puolKuva: "/src/assets/ApinmajaImages/TaitokorttiPikanäppäimet.webp",
+      puolKuva: "/ApinmajaImages/TaitokorttiPikanäppäimet.webp",
       kysymys: "Mitä “Näppäinmuistipeli” -tehtävässä harjoitellaan?",
       youtube: "l1pSm1zw23g",
       peliTitle: "Tee tehtävä täällä!",
@@ -437,19 +437,19 @@ export const ApinmajaData = () => {
       tehtName: "Opi tekstinkäsittelyn perusteet",
       Kategoria: "Apinmaja",
       Teksti:
-        "Miksi harjoitellaan tekstinkäsittelyä?<br><br>Tekstinkäsittelytaito on sitä, että osaat muokata tekstitiedostosta kauniin ja selkeän näköisen yhteisiä sääntöjä noudattamalla.<br><br>Omalla tietokoneella tehty työsi näyttää selkeältä ja teksti on oikealla tavalla aseteltu ja helppo lukea.<br><br>Tekstinkäsittelytaitoja tarvitaan koulussa mm. esitelmien ja raporttien tekemiseen.",
+        "Miksi harjoitellaan tekstinkäsittelyä?\n\nTekstinkäsittelytaito on sitä, että osaat muokata tekstitiedostosta kauniin ja selkeän näköisen yhteisiä sääntöjä noudattamalla.\n\nOmalla tietokoneella tehty työsi näyttää selkeältä ja teksti on oikealla tavalla aseteltu ja helppo lukea.\n\nTekstinkäsittelytaitoja tarvitaan koulussa mm. esitelmien ja raporttien tekemiseen.",
       Kuvat: [
-        "/src/assets/ApinmajaImages/Välilyonti.webp",
-        "/src/assets/ApinmajaImages/Taito1.webp",
-        "/src/assets/ApinmajaImages/Taito2.webp",
-        "/src/assets/ApinmajaImages/Tavoitteet.webp",
+        "/ApinmajaImages/Välilyonti.webp",
+        "/ApinmajaImages/Taito1.webp",
+        "/ApinmajaImages/Taito2.webp",
+        "/ApinmajaImages/Tavoitteet.webp",
       ],
     },
     {
       tehtNum: "20",
       tehtName: "Tekstin muokkaaminen",
       Kategoria: "Apinmaja",
-      Kuva: "/src/assets/ApinmajaImages/TekstinKäsittely.webp",
+      Kuva: "/ApinmajaImages/TekstinKäsittely.webp",
       Tekstit: [
         "Mitä mahtaa tarkoittaa tekstin maalaaminen, lihavointi, kursivointi ja alleviivaus? Ota selvää.",
         "Tekstin valitseminen (=maalaaminen) Ennen tekstin muotoilua, siirtoa tai kopiointia täytyy valita tekstialue. Valitun tekstin tausta muuttuu siniseksi tai harmaaksi. Sen takia puhutaan usein alueen “maalaamisesta”.",
@@ -461,7 +461,7 @@ export const ApinmajaData = () => {
         "Vapauta hiiren painike, kun siirrettävä alue näkyy maalattuna.",
       ],
       TinyMCE:
-        "Taas oli maanantai ja uusi kouluviikko. Appi heräsi aikaisin. Talvella Apin luokka kävi liikuntatunnilla aina luistelemassa tai hiihtämässä. Tammikuu oli luistelukuukausi, helmikuussa hiihdettäisiin. Hiihtäminen oli ehdottomasti Apin suosikkilaji. Lauantaina ja sunnuntaina hän oli hiihtänyt pitkän lenkin Häsän kanssa. Mutta tänään pitäisi muistaa ottaa luistimet mukaan kouluun! <br><br> Doge ei välittänyt talviurheilusta. Talvella se pisti nenänsä ulos ovesta vain nopeasti – kesän lämpimät säät olivat enemmän sen mieleen. Keskiviikkona se oli tosin luvannut lähteä Laaman kanssa lenkille. “Pitää muistaa lämmin toppatakki!”, se ajatteli. <br><br> Appi lähti kouluun reppu selässään ja luistimet kainalossa. Pihalla oli hiljaista. Tweety oli lentänyt syksyllä lokakuussa etelään ja palaisi vasta keväällä takaisin. Kaikilla oli sitä jo kova ikävä. Maaliskuuhun oli vielä pitkä aika. Toisaalta aika kului nopeasti, pian olisi taas pitkä loma. Koko kesäkuu ja heinäkuu ihanaa vapaa-aikaa! Silloin olisi koko porukka taas koolla.",
+        "Taas oli maanantai ja uusi kouluviikko. Appi heräsi aikaisin. Talvella Apin luokka kävi liikuntatunnilla aina luistelemassa tai hiihtämässä. Tammikuu oli luistelukuukausi, helmikuussa hiihdettäisiin. Hiihtäminen oli ehdottomasti Apin suosikkilaji. Lauantaina ja sunnuntaina hän oli hiihtänyt pitkän lenkin Häsän kanssa. Mutta tänään pitäisi muistaa ottaa luistimet mukaan kouluun! \n\n Doge ei välittänyt talviurheilusta. Talvella se pisti nenänsä ulos ovesta vain nopeasti – kesän lämpimät säät olivat enemmän sen mieleen. Keskiviikkona se oli tosin luvannut lähteä Laaman kanssa lenkille. “Pitää muistaa lämmin toppatakki!”, se ajatteli. \n\n Appi lähti kouluun reppu selässään ja luistimet kainalossa. Pihalla oli hiljaista. Tweety oli lentänyt syksyllä lokakuussa etelään ja palaisi vasta keväällä takaisin. Kaikilla oli sitä jo kova ikävä. Maaliskuuhun oli vielä pitkä aika. Toisaalta aika kului nopeasti, pian olisi taas pitkä loma. Koko kesäkuu ja heinäkuu ihanaa vapaa-aikaa! Silloin olisi koko porukka taas koolla.",
       kysymys:
         "Miten tekstin maalaaminen (valitseminen) tehdään tietokoneella?",
       vaihtoehdot: [
@@ -477,7 +477,7 @@ export const ApinmajaData = () => {
       tehtNum: "21",
       tehtName: "Kirjoita tarina kuulemasi mukaan",
       Kategoria: "Apinmaja",
-      Kuva: "/src/assets/ApinmajaImages/TarinanKirjoitus.webp",
+      Kuva: "/ApinmajaImages/TarinanKirjoitus.webp",
       Teksti:
         "Kuuntele Jenni-open lukema tarina ja kirjoita alle teksti ohjeen mukaan.",
       TinyMCE: "Poista tämä teksti ja kirjoita vastauksesi tähän.",
@@ -497,9 +497,9 @@ export const ApinmajaData = () => {
       tehtName: "Kurkistus tekstinkäsittelyyn",
       Kategoria: "Apinmaja",
       Kuvat: [
-        "/src/assets/ApinmajaImages/DataKuva.webp",
-        "/src/assets/ApinmajaImages/Käsitteet.webp",
-        "/src/assets/ApinmajaImages/TekstinMuokkaamisenPerustoiminnot.webp",
+        "/ApinmajaImages/DataKuva.webp",
+        "/ApinmajaImages/Käsitteet.webp",
+        "/ApinmajaImages/TekstinMuokkaamisenPerustoiminnot.webp",
       ],
       Tekstit: [
         "Tekstinkäsittelyohjelman avulla voit tehdä omia kirjoituksia, jotka ovat jo valmiiksi siistejä ja helposti luettavia. Kun harjoittelet eri näppäinten toiminnot, kirjoittamisesta tulee helppoa ja opit näppäilemään nopeasti.",
@@ -526,7 +526,7 @@ export const ApinmajaData = () => {
       ],
       Teksti:
         "Tiedostoja tallennetaan eri muodoissa. On esim. videotiedostoja, musiikkitiedostoja, tekstitiedostoja ja kuvatiedostoja. Saman aihepiirin tiedostot kannattaa tallentaa omaan kansioonsa.",
-      puolKuvat: ["/src/assets/tiedostomuodot4.png.webp"],
+      puolKuvat: ["/tiedostomuodot4.png.webp"],
       smallTitle: "Erilaisia tiedostomuotoja",
       kysyms: "Minkä tyyppisiä tiedostomuotoja voi olla?",
       vaihtoehdot: [
@@ -554,9 +554,9 @@ export const ApinmajaData = () => {
         "Tallenna haluamaasi sijaintiin (kansioon, työpöydälle, pilvipalveluun).",
       ],
       Kuvat: [
-        "/src/assets/ApinmajaImages/TallennaNimellä.webp",
-        "/src/assets/ApinmajaImages/TallennusSijainti.webp",
-        "/src/assets/ApinmajaImages/Työpöytä.webp",
+        "/ApinmajaImages/TallennaNimellä.webp",
+        "/ApinmajaImages/TallennusSijainti.webp",
+        "/ApinmajaImages/Työpöytä.webp",
       ],
       kysyms: "Miten tiedoston tallennusprosessi tyypillisesti etenee?",
       vaihtoehdot: [
@@ -576,7 +576,7 @@ export const ApinmajaData = () => {
         "https://soundcloud.com/digiseikkailu-oy/2-kutsukortti",
         "https://soundcloud.com/digiseikkailu-oy/2-invitation-card",
       ],
-      puolKuva: "/src/assets/ApinmajaImages/Kutsukortti.png",
+      puolKuva: "/ApinmajaImages/Kutsukortti.png",
       puolTeksti:
         "Tarinassa käsitellään\n\nnäppäintaitoja tekstinkäsittelyohjelman käyttämistä",
       Tekstit: [
@@ -607,9 +607,9 @@ export const ApinmajaData = () => {
       tehtName: "Kutsukortti Laaman syntymäpäiville",
       tehtNum: "26",
       Kategoria: "Apinmaja",
-      Kuva: "/src/assets/ApinmajaImages/Laama-kutsukortti.webp",
+      Kuva: "/ApinmajaImages/Laama-kutsukortti.webp",
       Teksti:
-        "Laama on tehnyt kutsukortin syntymäpäiville.<br><br>Selvitä seuraavat asiat.",
+        "Laama on tehnyt kutsukortin syntymäpäiville.\n\nSelvitä seuraavat asiat.",
       numeroLista: [
         "Missä juhlat pidetään?",
         "Mihin aikaan Laama haluaa että vieraat ovat paikalla?",
@@ -619,7 +619,7 @@ export const ApinmajaData = () => {
     {
       tehtNum: "27",
       tehtName: "Mikä on internet",
-      Kuva: "/src/assets/ApinmajaImages/pappa.webp",
+      Kuva: "/ApinmajaImages/pappa.webp",
       Kategoria: "Apinmaja",
       Tekstit: [
         "Nykyisin on vaikea kuvitella elämää ilman Internettiä.",
@@ -641,9 +641,9 @@ export const ApinmajaData = () => {
       tehtName: "Tietokoneen laitteisto ja ohjelmisto",
       Kategoria: "Apinmaja",
       puolKuvat: [
-        "/src/assets/ApinmajaImages/TietokoneenTyöpöytä.webp",
-        "/src/assets/ApinmajaImages/Osoiterivi.webp",
-        "/src/assets/ApinmajaImages/GoogleOsoiterivi.webp",
+        "/ApinmajaImages/TietokoneenTyöpöytä.webp",
+        "/ApinmajaImages/Osoiterivi.webp",
+        "/ApinmajaImages/GoogleOsoiterivi.webp",
       ],
       puolTekstit: [
         "Tietokoneen työpöytä, Osoitinnuoli, Kansio, Selain, Roskakori, Windows “käynnistä”-nappi, Keskusyksikkö, Hiiri, Näppäimistö & Tietokoneen näyttö",
@@ -663,8 +663,8 @@ export const ApinmajaData = () => {
       ],
       vastaus: "C) Näppäimistö",
       Kuvat: [
-        "/src/assets/ApinmajaImages/Hardware.webp",
-        "/src/assets/ApinmajaImages/Hakukenttä.webp",
+        "/ApinmajaImages/Hardware.webp",
+        "/ApinmajaImages/Hakukenttä.webp",
       ],
     },
     {
@@ -672,29 +672,29 @@ export const ApinmajaData = () => {
       tehtName: "Sisäiset komponentit",
       Kategoria: "Apinmaja",
       puolKuvat: [
-        "/src/assets/ApinmajaImages/Kursori.webp",
-        "/src/assets/ApinmajaImages/emolevy.webp",
-        "/src/assets/ApinmajaImages/massamuisti.webp",
-        "/src/assets/ApinmajaImages/aanikortti.webp",
-        "/src/assets/ApinmajaImages/ram.webp",
-        "/src/assets/ApinmajaImages/prosessori.webp",
-        "/src/assets/ApinmajaImages/verkkokortti.webp",
-        "/src/assets/ApinmajaImages/nayttis.webp",
-        "/src/assets/ApinmajaImages/virtalahde.webp",
+        "/ApinmajaImages/Kursori.webp",
+        "/ApinmajaImages/emolevy.webp",
+        "/ApinmajaImages/massamuisti.webp",
+        "/ApinmajaImages/aanikortti.webp",
+        "/ApinmajaImages/ram.webp",
+        "/ApinmajaImages/prosessori.webp",
+        "/ApinmajaImages/verkkokortti.webp",
+        "/ApinmajaImages/nayttis.webp",
+        "/ApinmajaImages/virtalahde.webp",
       ],
       puolTekstit: [
         "Täältä löytyvät tietokoneen sisuskalut, eli komponentit! Näitä minä tykkään tutkia ja keräillä. On mukava myös kasailla uusia tietokoneita vanhoista osista.",
-        "Emolevy<br><br>Emolevy on kuin tietokoneen sydän ja aivot yhdistettynä. Se on erityinen lauta, johon kiinnitetään kaikki muut tietokoneen osat, kuten muisti ja prosessori. Ajattele sitä kuin LEGO-palikkatauluna, johon liitetään eri LEGO-palikat. Emolevy pitää huolen siitä, että kaikki nämä osat voivat jutella keskenään ja tehdä tietokoneen toimimaan oikein. Vähän niin kuin se ohjaisi kaikkia tietokoneen palikoita tekemään yhteistyötä!",
-        "Kiintolevy / Kovalevy / Massamuisti<br<br>Kiintolevy on kuin tietokoneesi iso muistilaatikko, johon tallennetaan kaikki, kuten pelit ja kuvat. Vanhemmissa kiintolevyissä on pyöriviä osia, jotka tekevät niistä hitaampia. Uudemmat SSD-kiintolevyt ovat nopeampia eikä niissä ole liikkuvia osia. Ne toimivat samalla tavalla kuin puhelimen muistikortit. Kiintolevy pitää kaiken tallennetun tiedon tallessa, jopa kun tietokone on sammutettuna.",
-        "Äänikortti<br><br>Äänikortti on osa tietokonetta, joka mahdollistaa äänien kuulemisen ja luomisen, kuten musiikin tai pelien ääniefektit. Usein äänikortti on kiinni emolevyssä, mutta jos haluaa tehdä tietokoneella musiikkia tai tarvitsee parempaa äänenlaatua, voi hankkia erillisen, paremman äänikortin. Se on kuin tietokoneen korvat ja suu äänille!",
-        "Keskusmuisti / Käyttömuisti / RAM-muisti<br><br>Työmuisti eli RAM on kuin tietokoneen nopea muistilappu. Se pitää käynnissä olevien ohjelmien tiedot helposti saatavilla, jotta tietokone toimii nopeasti. Se on pienempi kuin kiintolevy eikä ole tarkoitettu tallentamaan tietoja pitkäksi aikaa. Kun sammutat tietokoneen, työmuisti tyhjenee. Mitä enemmän RAM-muistia on, sitä paremmin tietokone pystyy pyörittämään monimutkaisia ohjelmia, kuten pelejä.",
-        "Prosessori / Suoritin<br><br>Prosessori on tietokoneen aivot. Se käsittelee ohjelmien käskyjä ja tekee monimutkaisia laskuja nopeasti. Prosessorin suorituskyky vaikuttaa tietokoneen nopeuteen. Se käyttää konekieltä, joka koostuu ykkösistä ja nollista, ja laskentateho ilmoitetaan gigahertseinä (GHz). Nykyaikaisissa prosessoreissa voi olla useita ytimiä, jotka mahdollistavat monien laskutoimitusten tekemisen samanaikaisesti. Prosessori käyttää myös välimuistia, joka auttaa tekemään tiedonkäsittelyä nopeammin.",
-        "Verkkokortti<br><br>Verkkokortti, jota kutsutaan myös verkkosovittimeksi, on tietokoneen osa, joka yhdistää sen internettiin. Nykyään useimmissa emolevyissä on jo valmiiksi asennettu verkkokortti. Se tarkoittaa, että verkkoyhteys on osa tietokoneen “sydäntä”. Jos tietokoneessa ei ole valmiiksi asennettua verkkokorttia tai tarvitsee paremman yhteyden, voi ostaa ja asentaa erillisen verkkokortin. Verkkokortin avulla tietokone pystyy kommunikoimaan internetin kanssa ja pääsee käsiksi verkkoon.",
-        "Grafiikkaprosessori eli näytönohjain<br><br>Grafiikkaprosessori (GPU) on tietokoneen osa, joka käsittelee kuvia ja videoita. Se tekee pelien ja videoiden katsomisen sujuvaksi ja laadukkaaksi. GPU:t ovat yleensä todella tehokkaita, jopa tehokkaampia kuin tietokoneen tavallinen prosessori, erityisesti kuvien ja videoiden käsittelyssä..",
-        "Virtalähde<br><br>Virtalähde muuttaa virtajohdon kautta koneelle tulevan verkkovirran tietokoneen eri osille sopivaksi​",
+        "Emolevy\n\nEmolevy on kuin tietokoneen sydän ja aivot yhdistettynä. Se on erityinen lauta, johon kiinnitetään kaikki muut tietokoneen osat, kuten muisti ja prosessori. Ajattele sitä kuin LEGO-palikkatauluna, johon liitetään eri LEGO-palikat. Emolevy pitää huolen siitä, että kaikki nämä osat voivat jutella keskenään ja tehdä tietokoneen toimimaan oikein. Vähän niin kuin se ohjaisi kaikkia tietokoneen palikoita tekemään yhteistyötä!",
+        "Kiintolevy / Kovalevy / Massamuisti<br\nKiintolevy on kuin tietokoneesi iso muistilaatikko, johon tallennetaan kaikki, kuten pelit ja kuvat. Vanhemmissa kiintolevyissä on pyöriviä osia, jotka tekevät niistä hitaampia. Uudemmat SSD-kiintolevyt ovat nopeampia eikä niissä ole liikkuvia osia. Ne toimivat samalla tavalla kuin puhelimen muistikortit. Kiintolevy pitää kaiken tallennetun tiedon tallessa, jopa kun tietokone on sammutettuna.",
+        "Äänikortti\n\nÄänikortti on osa tietokonetta, joka mahdollistaa äänien kuulemisen ja luomisen, kuten musiikin tai pelien ääniefektit. Usein äänikortti on kiinni emolevyssä, mutta jos haluaa tehdä tietokoneella musiikkia tai tarvitsee parempaa äänenlaatua, voi hankkia erillisen, paremman äänikortin. Se on kuin tietokoneen korvat ja suu äänille!",
+        "Keskusmuisti / Käyttömuisti / RAM-muisti\n\nTyömuisti eli RAM on kuin tietokoneen nopea muistilappu. Se pitää käynnissä olevien ohjelmien tiedot helposti saatavilla, jotta tietokone toimii nopeasti. Se on pienempi kuin kiintolevy eikä ole tarkoitettu tallentamaan tietoja pitkäksi aikaa. Kun sammutat tietokoneen, työmuisti tyhjenee. Mitä enemmän RAM-muistia on, sitä paremmin tietokone pystyy pyörittämään monimutkaisia ohjelmia, kuten pelejä.",
+        "Prosessori / Suoritin\n\nProsessori on tietokoneen aivot. Se käsittelee ohjelmien käskyjä ja tekee monimutkaisia laskuja nopeasti. Prosessorin suorituskyky vaikuttaa tietokoneen nopeuteen. Se käyttää konekieltä, joka koostuu ykkösistä ja nollista, ja laskentateho ilmoitetaan gigahertseinä (GHz). Nykyaikaisissa prosessoreissa voi olla useita ytimiä, jotka mahdollistavat monien laskutoimitusten tekemisen samanaikaisesti. Prosessori käyttää myös välimuistia, joka auttaa tekemään tiedonkäsittelyä nopeammin.",
+        "Verkkokortti\n\nVerkkokortti, jota kutsutaan myös verkkosovittimeksi, on tietokoneen osa, joka yhdistää sen internettiin. Nykyään useimmissa emolevyissä on jo valmiiksi asennettu verkkokortti. Se tarkoittaa, että verkkoyhteys on osa tietokoneen “sydäntä”. Jos tietokoneessa ei ole valmiiksi asennettua verkkokorttia tai tarvitsee paremman yhteyden, voi ostaa ja asentaa erillisen verkkokortin. Verkkokortin avulla tietokone pystyy kommunikoimaan internetin kanssa ja pääsee käsiksi verkkoon.",
+        "Grafiikkaprosessori eli näytönohjain\n\nGrafiikkaprosessori (GPU) on tietokoneen osa, joka käsittelee kuvia ja videoita. Se tekee pelien ja videoiden katsomisen sujuvaksi ja laadukkaaksi. GPU:t ovat yleensä todella tehokkaita, jopa tehokkaampia kuin tietokoneen tavallinen prosessori, erityisesti kuvien ja videoiden käsittelyssä..",
+        "Virtalähde\n\nVirtalähde muuttaa virtajohdon kautta koneelle tulevan verkkovirran tietokoneen eri osille sopivaksi​",
       ],
       Teksti:
-        "Muita tietokoneen osia<br><br>Kotelo on runko, jonka sisälle tietokone kasataan. Koteloita on monen mallisia ja näköisiä.​",
+        "Muita tietokoneen osia\n\nKotelo on runko, jonka sisälle tietokone kasataan. Koteloita on monen mallisia ja näköisiä.​",
       kysymys: "Mikä on emolevyn rooli tietokoneessa?",
       vaihtoehdot: [
         "A) Tallentaa käyttäjän tiedostot",
@@ -710,20 +710,20 @@ export const ApinmajaData = () => {
       tehtName: "Tietokoneen osat ja laitteisto",
       Kategoria: "Apinmaja",
       puolTekstit: [
-        "Pöytätietokone<br><br>Pöytätietokone on tietokone, joka on suunniteltu käytettäväksi pöydällä. Pöytätietokone koostuu näytöstä, näppäimistöstä ja hiirestä. Pöytätietokoneen voi koota itse tai ostaa valmiina. Pöytätietokoneen voi myös rakentaa itse. Tällöin voi valita itse tietokoneen osat ja koota ne yhteen. Pöytätietokoneen voi myös ostaa valmiina. Valmiissa tietokoneessa on yleensä kaikki tarvittavat osat valmiina.",
-        "Hiiri<br><br>Hiirellä liikuttaessa tietokoneen näytöllä liikkuu osoitin, jonka avulla voit antaa tietokoneelle ohjeita. Voit siirtää osoitinta eri kohtiin näytöllä ja klikata kuvakkeita suorittaaksesi toimintoja, kuten avaamaan tiedostoja tai ohjelmia.",
-        "Kannettava tietokone<br><br>Kannettava tietokone on tietokone, joka on suunniteltu olemaan kannettava ja helppo kuljettaa. Se yhdistää kaikki työpöytätietokoneen keskeiset komponentit, kuten näppäimistön, hiiren, näytön ja prosessorin, yhteen kompaktiin laitteeseen. Kannettavat tietokoneet ovat erittäin suosittuja niiden joustavuuden ja liikkuvuuden vuoksi",
-        "Tasohiiri<br><br>Yleensä kannettavissa tietokoneissa käytettävässä tasohiiressä näytöllä näkyvää osoitinta liikutetaan tasohiiren osoitinlevyllä, joka taas välittää käyttäjän sormen liikkeet tietokoneelle.",
-        "Näyttö<br><br>Näyttö on tietokoneen osa, joka näyttää visuaalisesti, mitä tietokoneessa tapahtuu. Se koostuu pikseleistä, jotka ovat pieniä kuvapisteitä ruudulla. Näyttöjen resoluutio, kuten 1366 x 768, kertoo pikselien määrän leveyden ja korkeuden suhteen. Mitä suurempi resoluutio, sitä tarkempi ja selkeämpi on kuva näytöllä.",
-        "Keskusyksikkö<br><br>Keskusyksikkö viittaa tietokoneen pääkomponenttiin, joka sisältää tietokoneen prosessorin (CPU), muistin (RAM) ja muita tärkeitä komponentteja. Se on tietokoneen aivot, joka suorittaa ohjelmien komentoja ja käsittelee dataa. Keskusyksikkö on yleensä sijoitettu tietokoneen koteloon.",
+        "Pöytätietokone\n\nPöytätietokone on tietokone, joka on suunniteltu käytettäväksi pöydällä. Pöytätietokone koostuu näytöstä, näppäimistöstä ja hiirestä. Pöytätietokoneen voi koota itse tai ostaa valmiina. Pöytätietokoneen voi myös rakentaa itse. Tällöin voi valita itse tietokoneen osat ja koota ne yhteen. Pöytätietokoneen voi myös ostaa valmiina. Valmiissa tietokoneessa on yleensä kaikki tarvittavat osat valmiina.",
+        "Hiiri\n\nHiirellä liikuttaessa tietokoneen näytöllä liikkuu osoitin, jonka avulla voit antaa tietokoneelle ohjeita. Voit siirtää osoitinta eri kohtiin näytöllä ja klikata kuvakkeita suorittaaksesi toimintoja, kuten avaamaan tiedostoja tai ohjelmia.",
+        "Kannettava tietokone\n\nKannettava tietokone on tietokone, joka on suunniteltu olemaan kannettava ja helppo kuljettaa. Se yhdistää kaikki työpöytätietokoneen keskeiset komponentit, kuten näppäimistön, hiiren, näytön ja prosessorin, yhteen kompaktiin laitteeseen. Kannettavat tietokoneet ovat erittäin suosittuja niiden joustavuuden ja liikkuvuuden vuoksi",
+        "Tasohiiri\n\nYleensä kannettavissa tietokoneissa käytettävässä tasohiiressä näytöllä näkyvää osoitinta liikutetaan tasohiiren osoitinlevyllä, joka taas välittää käyttäjän sormen liikkeet tietokoneelle.",
+        "Näyttö\n\nNäyttö on tietokoneen osa, joka näyttää visuaalisesti, mitä tietokoneessa tapahtuu. Se koostuu pikseleistä, jotka ovat pieniä kuvapisteitä ruudulla. Näyttöjen resoluutio, kuten 1366 x 768, kertoo pikselien määrän leveyden ja korkeuden suhteen. Mitä suurempi resoluutio, sitä tarkempi ja selkeämpi on kuva näytöllä.",
+        "Keskusyksikkö\n\nKeskusyksikkö viittaa tietokoneen pääkomponenttiin, joka sisältää tietokoneen prosessorin (CPU), muistin (RAM) ja muita tärkeitä komponentteja. Se on tietokoneen aivot, joka suorittaa ohjelmien komentoja ja käsittelee dataa. Keskusyksikkö on yleensä sijoitettu tietokoneen koteloon.",
       ],
       puolKuvat: [
-        "/src/assets/ApinmajaImages/poytatietokone.webp",
-        "/src/assets/ApinmajaImages/kannettavatietokone.webp",
-        "/src/assets/ApinmajaImages/hiiri.webp",
-        "/src/assets/ApinmajaImages/tasohiiri.webp",
-        "/src/assets/ApinmajaImages/naytto.webp",
-        "/src/assets/ApinmajaImages/keskusyksikko.webp",
+        "/ApinmajaImages/poytatietokone.webp",
+        "/ApinmajaImages/kannettavatietokone.webp",
+        "/ApinmajaImages/hiiri.webp",
+        "/ApinmajaImages/tasohiiri.webp",
+        "/ApinmajaImages/naytto.webp",
+        "/ApinmajaImages/keskusyksikko.webp",
       ],
       kysymys:
         "Mitä komponenttia käytetään osoittimen liikuttamiseen tietokoneen näytöllä?",

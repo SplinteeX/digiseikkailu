@@ -8,7 +8,7 @@ export const LaamanaitausData = () => {
         "https://soundcloud.com/digiseikkailu-oy/19-tunnetaitoja-kuka",
         "https://soundcloud.com/digiseikkailu-oy/19-emotional-skills-who-would",
       ],
-      puolKuva: "/src/assets/LaamanImages/laamajatyttö.webp",
+      puolKuva: "/LaamanImages/laamajatyttö.webp",
       puolTeksti:
         "Tarinassa käsitellään<br><br> -Tunteiden jakaminen puhumalla kannattaa<br> -Viesteillä voi vaikuttaa toisen mielialaan<br> -Oikeat kaverit tukevat ja lohduttavat harmin hetkellä<br> -Jokainen joskus erehtyy tai epäonnistuu",
       Tekstit: [
@@ -32,7 +32,7 @@ export const LaamanaitausData = () => {
       Kategoria: "LaamanAitaus",
       tehtNum: "2",
       tehtName: "Tunteet",
-      Kuva: "/src/assets/LaamanImages/tunteet.webp",
+      Kuva: "/LaamanImages/tunteet.webp",
       Teksti:
         " Ilo (Joy)<br><br> -Selitys: Ilo on onnellinen tunne, jonka saat, kun jotain hauskaa tai mukavaa tapahtuu. -Kysymys: Milloin viimeksi tunsit iloa? Mikä sai sinut tuntemaan niin? -Kuva: Iloinen hahmo hyppää ilosta.<br><br> Luottamus (Trust)<br><br> -Selitys: Luottamus on tunne, joka tulee, kun uskot jonkun pitävän lupauksensa ja huolehtivan sinusta. -Kysymys: Keneen luotat eniten? Miksi luotat häneen tai häneen? -Kuva: Hahmo näyttää peukkua merkiksi luottamuksesta.<br><br> Pelko (Fear)<br><br> -Selitys: Pelko on jännittynyt tunne, kun olet huolissasi siitä, että jotain pahaa voi tapahtua. -Kysymys: Mikä pelottaa sinua? Mitä teet, kun tunnet olosi pelokkaaksi? -Kuva: Hahmo piiloutuu käsiensä taakse, kuvastaen pelkoa.<br><br> Yllätys (Surprise)<br><br> -Selitys: Yllätys on tunne, kun jotain odottamatonta tapahtuu. -Kysymys: Kerro jokin kerta, kun jokin yllätti sinut. Oliko se hyvä vai huono yllätys? -Kuva: Hahmolla on suuret, hämmästyneet silmät, edustaen yllätystä.<br><br> Surullisuus (Sadness)<br><br> -Selitys: Suru on alakuloinen tunne, jonka saat, kun jokin ikävä tapahtuu tai menetät jotain tärkeää. -Kysymys: Milloin tunsit olosi surulliseksi viimeksi? Mitä teit, jotta tunsit olosi paremmaksi? -Kuva: Hahmo vuodattaa kyyneleen, ilmentäen surua.<br><br> Inho (Disgust)<br><br> -Selitys: Inho on tunne, jonka saat, kun kohtaat jotain todella epämiellyttävää tai vastenmielistä. -Kysymys: Onko jokin asia, jonka inhoat? Miksi se tuntuu sinusta inhottavalta? -Kuva: Hahmo tekee ilmeen, joka kuvastaa inhon tunnetta.<br><br> Viha (Anger)<br><br> -Selitys: Viha on tunne, joka tulee, kun olet todella ärsyyntynyt tai kun joku tekee sinulle väärin. -Kysymys: Milloin tunsit vihaa? Miten käsittelet vihaa, kun se tulee? -Kuva: Hahmo näyttää vihaiselta, kurtistaen kulmiaan.<br><br> Odotus (Anticipation)<br><br> -Selitys: Odotus on tunne, kun odotat jotain innolla, esimerkiksi syntymäpäivääsi tai retkeä. -Kysymys: Onko jotain, mitä odotat innolla juuri nyt? Miksi odotat sitä? -Kuva: Hahmo katsoo kelloa, odottaen jotain.",
       buttonText: "Tehtävälomake",
@@ -45,7 +45,7 @@ export const LaamanaitausData = () => {
       Kategoria: "LaamanAitaus",
       Teksti:
         "Mitä Siry tunsi ja sanoi koulupäivän aikana?<br><br>Keksikää Sirylle kommentti eri tunnetiloihin. <br><br>Muistathan aina, että opettajalla on myös tunteet, aivan kuten sinullakin. <br><br>Miltä opettajasta tuntuu kun hän näyttää tältä? <br><br>Mitä luokassa voisi silloin tapahtua? <br><br>Keksikää ja kirjoittakaa yhdessä!",
-      Kuva: "/src/assets/LaamanImages/arvaa_tunne.webp",
+      Kuva: "/LaamanImages/arvaa_tunne.webp",
       buttonText: "Tunteita",
       buttonLink:
         "https://docs.google.com/document/d/17WXUt8-cwBcLHs0THnYmb7AxS8T9NsBFZqheZpq1QwU/edit",
@@ -102,7 +102,7 @@ export const LaamanaitausData = () => {
       ],
       puolTeksti:
         "Tarinassa käsitellään <br><br>-tutustutaan trollaamisen käsitteeseen, <br>-saadaan ohjeita, kuinka trollauksen voi pysäyttää omalta kohdaltaan, <br>-vahvistetaan nettikiusaamisen tunnistamisen taitoja <br>-sekä muistutetaan yhteisöllisestä ja rakentavasta viestinnästä medi <br>",
-      puolKuva: "/src/assets/LaamanImages/trollipostia.png",
+      puolKuva: "/LaamanImages/trollipostia.png",
       Tekstit: [
         "Appi - Voi himpuran himpura. Taas täällä on näitä, Appi päivitteli Häsälle katsoessaan Supersovelluksen palautteita.",
         "Appi - Kuuntele nyt tätäkin: ”Tosi omaperäistä! Ette sitten mitään kiinnostavampaa osanneet tehdä?! Tällaista sovellusta ei tarvita missään.”",
@@ -136,7 +136,7 @@ export const LaamanaitausData = () => {
       ],
       puolTeksti:
         "Tarinassa käsitellään<br><br> empatiataitoja netissä<br> miten toisesta ihmisestä kuvattua tai nauhoitettua materiaalia voi tai ei voi käyttää<br> Lisää tämän tyyppisiä tehtäviä löydät Tweetyn viestiseinältä ja Laaman aitauksesta.",
-      puolKuva: "/src/assets/LaamanImages/vihanepappa.webp",
+      puolKuva: "/LaamanImages/vihanepappa.webp",
       Tekstit: [
         "Kursori-pappa istui tietokoneen ääressä ja tuijotti ruutua kulmat kurtussa. Hänellä oli tärkeä projekti kesken: hän kirjoitti muistelmiaan. Teoksen nimeksi tulisi Koodaripapan urotyöt ja se kertoisi Kursorin seikkailuista koodaamisen tyrskyisillä merillä. Miuku-Mauku istui ikkunalaudalla, heilutti häntäänsä ja katseli Kursorin tietokonetta ovela katse vihreissä silmissään.",
         "Välillä Kursorin oli pakko pitää tauko. Hän meni keittiöön ja haki kupillisen kahvia. Kun hän palasi työpöytänsä ääreen, Miuku-Mauku vilahti ovesta ulos epäilyttävän nopeasti. Kursori istui koneen ääreen ja nosti kätensä näppäimistölle. Tai se oli hänen tarkoituksensa, sillä kauhistuksekseen hän huomasi, että näppäimet olivat kadonneet kuin tuhka tuuleen.",
@@ -162,7 +162,7 @@ export const LaamanaitausData = () => {
       Kategoria: "LaamanAitaus",
       Teksti:
         "Tunnista tunne ja keksi kannustus<br><br> Harjoitellaan eläytymään toisen tunnetilaan ja tukemaan häntä eteenpäin vaikeassa tilanteessa. <br>Appi tekee tietokoneprojektia. <br>Hänellä on haasteita eikä kaikki aina suju kuten hän oli ajatellut. <br>Tunnistatko missä kuvassa Appi on surullinen tai pettynyt? <br>Miten voisit kannustaa Appia tai kaveriasi kun hän on pettynyt?",
-      Kuva: "/src/assets/LaamanImages/Apintunteet.webp",
+      Kuva: "/LaamanImages/Apintunteet.webp",
     },
     {
       tehtNum: "7",
@@ -174,7 +174,7 @@ export const LaamanaitausData = () => {
       ],
       puolTeksti:
         "Tarinassa käsitellään:<br><br>-empatiataitoja netissä <br>-miten toisesta ihmisestä kuvattua tai nauhoitettua materiaalia voi tai ei voi käyttää",
-      puolKuva: "/src/assets/LaamanImages/vihanepappa.webp",
+      puolKuva: "/LaamanImages/vihanepappa.webp",
       Tekstit: [
         "Koulun piha oli aamulla täynnä oppilaita, kun Häsä kurvasi paikalle pyörällään. Hänen luokkakaverinsa olivat piirissä ja juttelivat kiihtyneeseen äänensävyyn jostakin.",
         "Häsän ystävät - Oletko jo nähnyt Ekon, Havun & Pajun uuden videon? Se on superhauska, Häsän ystävät intoilivat.",
@@ -209,7 +209,7 @@ export const LaamanaitausData = () => {
         "https://soundcloud.com/digiseikkailu-oy/3-ongelma-matkalla-juhliin",
         "https://soundcloud.com/digiseikkailu-oy/3-the-problem-on-the-way-to",
       ],
-      puolKuva: "/src/assets/LaamanImages/kysymysmerkki.webp",
+      puolKuva: "/LaamanImages/kysymysmerkki.webp",
       puolTeksti:
         "Tarinassa käsitellään<br><br> -viestien kirjoittamista<br> -hyvää somekaveruutta<br><br> Aiheeseen liittyviä tehtäviä löydät Laaman aitauksesta ja Tweetyn viestiseinältä.",
       Tekstit: [
@@ -243,7 +243,7 @@ export const LaamanaitausData = () => {
       ],
       puolTeksti:
         "Tarinassa käsitellään<br><br> -millaisia tunteita viestintä netissä, sekä<br> -nettisisällöt voivat aiheuttaa.",
-      puolKuva: "/src/assets/LaamanImages/juhlat.webp",
+      puolKuva: "/LaamanImages/juhlat.webp",
       Tekstit: [
         "Laama seisoi keskellä aitausta pahvikruunu päässään. Se hymyili onnellisena. Juhlissa oli koko naapuruston porukka: Häsä isänsä kanssa, Kursori-pappa, Appi ja Doge sekä Siry-täti ja Miuku-Mauku. Myös Tweety-lintu lenteli aitauksessa juhlarusetti kaulassaan.",
         "Laama - Tervetuloa, rakkaat ystävät! Ihanaa, että pääsitte paikalle. Olen uusi asukas täällä ja haluan kovasti tutustua teihin kaikkiin. Häsä on leiponut maukkaita kakkuja, maistakaahan! Itse suosittelen erityisesti heinäkakkua.",
@@ -287,7 +287,7 @@ export const LaamanaitausData = () => {
       Kategoria: "LaamanAitaus",
       Teksti:
         "Miten eri tavoilla voi tulkita viestejä?<br> Emojit eivät aina korvaa sanallista tunteidenilmaisua täysin. Niillä voi vain vahvistaa omaa tunneviestiä tilanteessa, jossa kasvokkain ei ole mahdollista jutella.<br><br> Miten eri tavoilla voit tulkita näitä sanallisia viestejä jos vaihdat emojia viestin perässä?<br><br> Valitse yksi viesti ja kirjoita kaikki omat tulkinnat (3 virkettä).<br><br> Malli – 1/4 VIESTI<br><br> Tämä tarkoittaa mielestäni, että olet minulle….<br><br> Tämä tarkoittaa taas, että ….<br><br> Tätä en oikein ymmärrä….",
-      Kuva: "/src/assets/LaamanImages/laamapaperi.webp",
+      Kuva: "/LaamanImages/laamapaperi.webp",
     },
     {
       tehtNum: "12",
@@ -305,9 +305,9 @@ export const LaamanaitausData = () => {
       tehtName: "Mitä on empatia?",
       Kategoria: "LaamanAitaus",
       puolKuvat: [
-        "/src/assets/LaamanImages/suunta1.webp",
-        "/src/assets/LaamanImages/suunta2.webp",
-        "/src/assets/LaamanImages/bändi.webp",
+        "/LaamanImages/suunta1.webp",
+        "/LaamanImages/suunta2.webp",
+        "/LaamanImages/bändi.webp",
       ],
       puolTekstit: [
         "Mitä on empatia?<br><br> Empatia tarkoittaa kykyä asettaa itsensä toisen asemaan ja ymmärtää toisen tunteita, kykyä ymmärtää toista.<br><br> Empaattinen ihminen ei pyri pönkittämään itseään puheilla, kirjoituksilla tai teoilla paremmaksi kuin, vaan näyttää että on samanarvoinen ja samalla tasolla kuin toinen.",
@@ -317,10 +317,10 @@ export const LaamanaitausData = () => {
       Teksti:
         "Empaattinen ihminen antaa toisen olla rauhassa eikä lietso toisen pahaa mieltä. Empaattinen ihminen voi lohduttaa toista tai rauhoitella toista, tilanteen niin vaatiessa. Siksi sanotaankin, että empatia on myös tekoja. Empatian vastapari voisi olla välinpitämättömyys. Silloin kun ihminen on välinpitämätön, hän ei osaa tai halua ottaa toisia huomioon. Vaikka hän voisi auttaa, hän ei tee sitä. Joskus empatian vastapari on ymmärtämättömyys. Toinen ei välttämättä osaa ymmärtää miten loukkaa tai jättää toisen huomioimatta.",
       Kuvat: [
-        "/src/assets/LaamanImages/puhelimet1.webp",
-        "/src/assets/LaamanImages/puhelimet2.webp",
-        "/src/assets/LaamanImages/puhelimet3.webp",
-        "/src/assets/LaamanImages/puhelimet4.webp",
+        "/LaamanImages/puhelimet1.webp",
+        "/LaamanImages/puhelimet2.webp",
+        "/LaamanImages/puhelimet3.webp",
+        "/LaamanImages/puhelimet4.webp",
       ],
     },
   ];

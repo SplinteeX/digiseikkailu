@@ -1,16 +1,26 @@
-import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "../css/exerciseCard.css";
 import { Link } from "react-router-dom";
 
-export const ExerciseCard = ({ Data, Flipped, handleCardFlip }) => {
+export const ExerciseCard = ({
+  Data,
+  Flipped,
+  handleCardFlip,
+  initialAnimation,
+  animateAnimation,
+  transitionAnimation,
+}) => {
   return (
-    <div
+    <motion.div
       className={`Exercise-card ${Flipped ? "is-flipped" : ""}`}
       onClick={handleCardFlip}
+      initial={initialAnimation}
+      animate={animateAnimation}
+      transition={transitionAnimation}
     >
       {!Flipped && (
         <div className="Inner-section">
-          <div className="Card-front">
+          <motion.div className="Card-front" transition={{ duration: 0.5 }}>
             <img src={Data.Image} alt="" />
             <div className="Text-section">
               <h3>{Data.Title}</h3>
@@ -19,14 +29,19 @@ export const ExerciseCard = ({ Data, Flipped, handleCardFlip }) => {
                 <button className="Aloita-nappi">Aloita</button>
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       )}
       {Flipped && (
-        <div className="Card-back">
+        <motion.div
+          initial={{ rotateY: 90 }}
+          animate={{ rotateY: 0 }}
+          transition={{ duration: 0.5 }}
+          className="Card-back"
+        >
           <p>{Data.Back}</p>
-        </div>
+        </motion.div>
       )}
-    </div>
+    </motion.div>
   );
 };

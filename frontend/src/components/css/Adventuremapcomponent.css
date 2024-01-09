@@ -15,6 +15,7 @@
   font-size: 40px;
   color: white;
   font-family: mulish;
+  opacity: 80%;
 }
 .Adventure-map .loader {
   position: absolute;
