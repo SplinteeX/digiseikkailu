@@ -5,7 +5,7 @@ export const TehtäväPaketit = () => {
       Title: "Apin maja",
       Time: "5min - 30 min",
       Link: "/kartat/apinmaja",
-      Back: "Apin tehtävissä tavoitteena on tutustua tietokoneeseen, sen laitteistoon, yleisimpiin ohjelmistoihin (esim. kirjoitusohjelma) ja niidensanastoon ja toimintoihin. Tavoitteena tässä kokonaisuudessa on auttaa luomaan yhteistä kieltä ja käsitteitä TVT-opetukselle.",
+      Back: "Apin majassa opit: tietokonehiiren ja näppäimistön käyttöä, sähköpostin ja hakukoneen käyttöä, kirjoitusohjelman perusteet, tekemään teksti- ja kuvatiedostoja, käyttämään tietokonetta ja laitteistoa, tallentamaan ja löytämään työsi",
     },
   ];
   const häsänStudio = [
@@ -14,7 +14,7 @@ export const TehtäväPaketit = () => {
       Title: "Häsän studio",
       Time: "5min - 30 min",
       Link: "/kartat/hasanstudio",
-      Back: "Häsän tehtävien tavoitteena on kehittää tiedostavampaa suhdetta mediaan. Tehtävissä pohditaankuvaamista ja kuvaamisen kulttuuria osana nuorten arkea, opiskelua ja markkinoita. Tehtävissä rakennetaan ymmärrystä siitä, että jokainen mediankäyttäjä onsisällöntuottaja julkaisuillaan ja kuluttaja kulutustottumuksillaan.",
+      Back: "Häsän studiossa opit: miten suunnitellaan video, miten nettimainokset toimivat, mitä saa kuvata ja julkaista, mitä hyötyä on kuvanlukutaidosta, mikä on sisällöntuottaja, fomo tai microinfluencer",
     },
   ];
   const TweetynViestiseinä = [
@@ -23,7 +23,7 @@ export const TehtäväPaketit = () => {
       Title: "Tweetyn viestiseinä",
       Time: "5min - 30 min",
       Link: "/kartat/tweetynviestiseinä",
-      Back: "Tweetyn tehtävissä tavoitteena on vahvistaa empatiataitoja netissä. Kokonaisuus valmistaa kohti hyvää turvataitojen ja viestintätapojen hallintaa. Jaksossa opitaan tunnistamaan, millainen vaikutus itse luomillasi sisällöillä on yhteishengellemediassa.",
+      Back: "Tweetyn kanssa opit: turvataitoja median käytössä, tunnistamaan vihapuhetta, ystävällistä ja asiallista viestittelyä, ideoimaan omia vaikutusmahdollisuuksiasi, rakentamaan hyvää yhteishenkeä viesteilläsi",
     },
   ];
   const DogenBoxi = [
@@ -32,7 +32,7 @@ export const TehtäväPaketit = () => {
       Title: "Dogen boxi",
       Time: "5min - 30 min",
       Link: "/kartat/dogenboxi",
-      Back: "Dogen tehtävissä tavoitteena on oppia etsimään tietoa eri lähteistäja löytää tapoja tarkastella tietoa kriittisesti. Tehtävät vahvistavat kuvanlukutaitoa ja mediakriittisyyttä sekä ohjaavat pohtimaan ja tunnistamaan median vaikutusta ajatteluumme.",
+      Back: "Dogen kanssa opit: tunnistamaan kuvahuijauksia, lukemaan erilaisia kuvia mediasta, arvioimaan uutisten luotettavuutta, etsimään tehokkaasti tietoa, mitä ovat trollit ja fleimit, tunnistamaan mainonnan keinot",
     },
   ];
   const KursorinUllakko = [
@@ -41,7 +41,7 @@ export const TehtäväPaketit = () => {
       Title: "Kursorin ullakko",
       Time: "5min - 30 min",
       Link: "/kartat/kursorinullakko",
-      Back: "Kursorin tehtävissä tavoitteena on vahvistaa itsestä huolehtimisen taitoja ja tasapainoisen arjen valintoja, joihin oppilas voi itse vaikuttaa. Tehtävissä harjoitellaan kohteliasta käytöstä teknologian parissa ja syyn ja seurauksen ymmärtämistä omissa teknologian ulutustottumuksissa. Historiatehtävät auttavat ymmärtämään medialaitteiden kehityskaarta ja jatkumoa.",
+      Back: "Kursorin kanssa opit: mitkä ovat sinun medioitasi, pohtimaan miksi käytät medioitasi, tunnistamaan nettiriippuvuuden oireita, millainen on hyvä päivärytmi, keinoja rauhoittumiseen ja rentoutumiseen, medialaitteiden ja sosiaalisen median historiaa",
     },
   ];
   const SirynÄlytalo = [
@@ -50,7 +50,7 @@ export const TehtäväPaketit = () => {
       Title: "Siryn älytalo",
       Time: "5min - 30 min",
       Link: "/kartat/sirynalytalo",
-      Back: "Siryn tehtävien tavoitteena on kehittää oppilaan ymmärrystätyöelämästä teknologian alalla. Tehtävät perehdyttävät oppilaan ymmärrystä teknologia-avusteiseen oppimiseen, tekoälyn käsitteeseen ja robotiikan mahdollisuuksiin.",
+      Back: "Siryn kanssa opit: mitä on tekoäly ja koneoppiminen, minkälaisia tehtäviä roboteilla on jo maailmassa, eri aloilla ja koulussa, minkälaista on asua älytalossa, miten botit ja tekoäly vaikuttavat arjessa, minkälaista tietoa älytalon tai robotin pitää kerätä jotta se voi palvella omistajaansa",
     },
   ];
   const Laamanaitaus = [
@@ -59,7 +59,7 @@ export const TehtäväPaketit = () => {
       Title: "Laaman aitaus",
       Time: "5min - 30 min",
       Link: "/kartat/laamanaitaus",
-      Back: "Laaman tehtävissä tavoitteena on vahvistaa omia tunnetaitoja sekäyleisiä empatiataitoja internetissä. Laaman tehtävissä pohditaan, miten teknologialla voi rikastaa taito- ja taideaineiden työtapoja.",
+      Back: "Laaman kanssa opit: luovia tapoja käyttää teknologiaa taito- ja taideaineissa, taiteen vaikutuksesta tunteisiin, tunnetaitojen perusteita, oman musiikin tekemistä tabletilla ja tietokoneella, tunnistamaan toisten ilmeitä ja ilmaisemaan omia tunteita, puhelimen hyödyllistä käyttöä esim. liikunnan lisääjänä",
     },
   ];
   const MiukuMauku = [
@@ -68,7 +68,7 @@ export const TehtäväPaketit = () => {
       Title: "Miuku Maukun Kirjasto",
       Time: "5min - 30 min",
       Link: "/kartat/miukumauku",
-      Back: "Miuku-Maukun tehtävissä vahvistetaan kiinnostavan luettavan löytämisenja luetun prosessoinnin taitoja. Tehtävien tavoitteena on tukealukijaksi kasvamista ja teksteistä nauttimista harjoittamalla uuden lukutaidon mukaisia teknologiarikasteisia tehtäviä luetusta.",
+      Back: "Miuku-Maukun kanssa opit: toimimaan lukupiirissä, miten kirjaesitelmistä voi saada jännittäviä ja hauskoja, pohtimaan millaisista kirjoista sinä pidät, mitä tieteellisesti todistettuja hyötyjä lukemisesta on",
     },
   ];
   const Ohjelmointi = [
@@ -77,7 +77,7 @@ export const TehtäväPaketit = () => {
       Title: "Ohjelmointi",
       Time: "5min - 30 min",
       Link: "/kartat/ohjelmointi",
-      Back: "Ohjelmointipolulla on tavoitteena tutustua ohjelmoinnin perusteisiin ja ohjelmoinnilliseen ajatteluun. Tämän polun kautta voidaan pohtia tehtäviä, jotka edistävät ohjelmoinnillisen ajattelun taitojen kehittymistä.",
+      Back: "",
     },
   ];
   return {
