@@ -298,17 +298,33 @@
 .Exercise .Tarina-Image-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  gap: 40px;
+  align-items: center;
+  text-align: center;
 }
 
 .Exercise .Tarina-Image-container img {
-  max-width: 100%;
-  height: auto;
-  margin-right: 10px;
+  width: 50%;
+  border-radius: 20px;
+}
+.Exercise .Otsikot {
   display: flex;
   flex-direction: row;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
+}
+.Exercise .tarinaTekstit {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
 }
 
 /* All different syles */
