@@ -327,6 +327,23 @@
   margin: 20px 0px;
 }
 
+.Exercise .Otsikot .White-text-nappi {
+  padding: 50px;
+  background-color: #8ad4ee;
+  border-radius: 40px;
+  color: white;
+}
+
+.Exercise .Otsikot .White-text-nappi:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+.Exercise .Otsikot .White-text-nappi p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
 /* All different syles */
 .Apinmaja-style {
   background: linear-gradient(

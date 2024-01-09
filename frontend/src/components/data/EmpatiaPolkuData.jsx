@@ -214,10 +214,16 @@ export const EmpatiaPolkuData = () => {
         "/src/assets/vihainenpappa.webp",
         "/src/assets/ovelakissa.webp",
       ],
-      TarinaOtsikot: ["Osa 1", "Osa 2"],
-      TarinaTekstit: ["Huono-onninen videotähti", "Huono-onninen videotähti"],
-      peliKuva: "/src/assets/laamapelit.webp",
-      loppuTeksti: <Link to="/tietoa-opettajalle">Tietoa opettajille</Link>,
+      TarinaOtsikot: [
+        <Link to="/tehtävät/laamanaitaus/5">
+          Huono-onninen videotähti Osa 1
+        </Link>,
+        <Link to="/tehtävät/laamanaitaus/7">
+          Huono-onninen videotähti Osa 2
+        </Link>,
+      ],
+      TarinaTekstit: ["", ""],
+      loppuTeksti: <Link to="/tietoa-opettajalle"> Tietoa opettajille</Link>,
     },
   ];
   return Tehtävät;

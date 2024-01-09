@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/ExerciseComponent.css";
+import "../css/trolliKommentoimassa.css";
 import { useNavigate } from "react-router-dom";
 import TinyMCE from "./tinyMce";
 import { PulseLoader } from "react-spinners";
@@ -116,6 +117,9 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
         return "ohjelmointi-polku-style";
       case "EmpatiaPolku":
         return "empatia-polku-style";
+      case "TrolliKommentoimassa":
+        return "trolli-kommentoimassa-style";
+
       default:
         return "";
     }
@@ -359,7 +363,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </div>
               <div className="Otsikot">
                 {Data.TarinaOtsikot.map((otsikko, index) => (
-                  <p className="White-text">{otsikko}</p>
+                  <p className="White-text-nappi">{otsikko}</p>
                 ))}
               </div>
               <div className="tarinaTekstit">
@@ -402,7 +406,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
           {Data.loppuTeksti && (
             <div className="Text-div-loppu">
               <p className="White-text">
-                Tutustu lisää Digiseikkailun tarinoihin, tehtäviin ja peleihin
+                Tutustu lisää Digiseikkailun tarinoihin, tehtäviin ja peleihin{" "}
                 {Data.loppuTeksti} osiossa.
               </p>
             </div>
