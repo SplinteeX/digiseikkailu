@@ -54,7 +54,6 @@ body {
 /* Basket Icon Hover Effect */
 .Basket:hover {
   opacity: 80%;
-  cursor: pointer;
 }
 
 /* User Icon Hover Effect */

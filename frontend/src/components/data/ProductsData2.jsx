@@ -2,7 +2,7 @@ export const ProductsData2 = () => {
   const TarinatJaTehtavat = [
     {
       title: "Tarinat ja tehtävät -työkirja",
-      img: "/images/tarinat-ja-tehtävät-työkirja-home.png",
+      img: "../../../public/images/tarinat-ja-tehtävät-työkirja-home.png",
       smallDescription:
         "Paras konkreettinen tuki TVT-opetuksen perustaitojen vahvistamiseen! Paketti sisältää mm. tekstinkäsittelytehtäviin suunnatut kuvakortit eri näppäimistä ja taitokortit tekstinkäsittelyn tärkeimmistä taidoista. Materiaalipaketti on suunniteltu tukemaan opettajaa ja luokkaa TVT-taitojen haltuunotossa.",
       description: (
@@ -37,13 +37,12 @@ export const ProductsData2 = () => {
         </>
       ),
       language: "Suomi, English, Swedish",
-      price: "9.99",
     },
   ];
   const TvtOpetuksenTaitoPaketti = [
     {
       title: "TVT-opetuksen taitopaketti",
-      img: "/images/tvt-opetuksen-taitopaketti-home.png",
+      img: "../../../public/images/tvt-opetuksen-taitopaketti-home.png",
       smallDescription:
         "Paras konkreettinen tuki TVT-opetuksen perustaitojen vahvistamiseen! Paketti sisältää kuvakortit eri näppäimistä tekstinkäsittelytehtäviin sekä taitokortit tekstinkäsittelyn olennaisimpiin taitoihin. Materiaalipaketti on suunniteltu tukemaan opettajia ja oppilaita TVT-taitojen kehittämisessä.",
       description: (
@@ -96,7 +95,6 @@ export const ProductsData2 = () => {
         </>
       ),
       language: "Suomi, English, Swedish",
-      price: "9.99",
     },
   ];
   return { TarinatJaTehtavat, TvtOpetuksenTaitoPaketti };

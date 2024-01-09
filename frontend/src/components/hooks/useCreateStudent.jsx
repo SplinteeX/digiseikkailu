@@ -1,7 +1,6 @@
 import Cookies from "js-cookie";
 import { useState } from "react";
 import { useAuthContext } from "../hooks/useAuthContext";
-import { toast } from "sonner";
 export const useCreateStudent = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -10,6 +9,9 @@ export const useCreateStudent = () => {
     const User = JSON.parse(user);
     const Auth = Cookies.get("Authorization");
     const teacherid = User.teacherId;
+    console.log(teacherid);
+    console.log(teacherid);
+    console.log(User);
     setIsLoading(true);
     setError(null);
 
@@ -31,7 +33,7 @@ export const useCreateStudent = () => {
         setError(json.error);
       }
       if (response.ok) {
-        toast.success("Opiskelija lisätty!");
+        console.log("Student created");
       }
     } catch (error) {
       throw error;

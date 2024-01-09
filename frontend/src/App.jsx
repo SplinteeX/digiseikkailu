@@ -35,8 +35,6 @@ import { LaamanAitausMap } from "./components/pages/Maps/LaamanAitausMap";
 import { SirynAlytaloMap } from "./components/pages/Maps/SirynAlytaloMap";
 import { OhjelmointiMap } from "./components/pages/Maps/ohjelmointiMap";
 import { MiukumaukuMap } from "./components/pages/Maps/MiukumaukuMap";
-import { ShopOverview } from "./components/pages/ShopOverview";
-import { Kassa } from "./components/pages/Kassa";
 import { EmpatiaPolku } from "./components/pages/empatiapolku";
 import { EmpatiaPolkuExercises } from "./components/pages/Exercises/EmpatiaPolku";
 import { TrolliKommentoimassaData } from "./components/data/trolliKommentoimassaData";
@@ -99,7 +97,7 @@ function App() {
               element={<OhjelmointiExercises />}
             />
             <Route
-              path="/tuotteet/TVT-opetuksen-taitopaketti"
+              path="/tehtävät/tuotteet/TVT-opetuksen-taitopaketti"
               element={<TvtOpetuksenTaitoPaketti />}
             />
             <Route path="/kartat/apinmaja" element={<ApinmajaMap />} />
@@ -128,9 +126,11 @@ function App() {
               path="/profile"
               element={<ProtectedRouter element={<Profile />} />}
             />
-            <Route path="/tietoa-meista" element={<AboutUs />} />
-            <Route path="/404" element={<Page404 />} />
-            <Route path="*" element={<Navigate to="/404" />} />
+            <Route path="/empatiapolku" element={<EmpatiaPolku />}></Route>
+            <Route
+              path="/tehtävät/empatiapolku/:index"
+              element={<EmpatiaPolkuExercises />}
+            ></Route>
           </Routes>
         </div>
       </BrowserRouter>

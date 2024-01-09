@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useRetrieveExercises } from "../hooks/useRetrieveExercises";
 import { ClipLoader } from "react-spinners";
-import { motion } from "framer-motion";
 
 export const AdventureMapComponent = ({ Data, url }) => {
   const { user } = useAuthContext();
@@ -53,7 +52,6 @@ export const AdventureMapComponent = ({ Data, url }) => {
       if (window.innerWidth <= 1000) {
         navigate("/tehtävät");
       }
-      setIsLoading(false);
     };
   }, [Data.Image, navigate]);
 
@@ -82,12 +80,7 @@ export const AdventureMapComponent = ({ Data, url }) => {
           <div className="Balls">
             {Data.Balls.map((ball, index) => (
               <Link to={`${url}/${ball.number}`} key={index}>
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.1, delay: 0 }}
+                <div
                   style={{
                     left: `${(ball.x / mapDimensions.width) * 100}%`,
                     top: `${(ball.y / mapDimensions.height) * 100}%`,
@@ -96,38 +89,38 @@ export const AdventureMapComponent = ({ Data, url }) => {
                 >
                   {isExerciseCompleted(ball.number) ? (
                     <img
-                      src={`/Napit/success.png`}
+                      src={`/src/assets/Napit/success.png`}
                       alt={`Completed Ball ${ball.number}`}
                     />
                   ) : (
                     <>
                       {ball.Kategoria === "Peli" && (
                         <img
-                          src={`/Napit/Peli-${ball.Väri}.png`}
+                          src={`/src/assets/Napit/Peli-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}
                       {ball.Kategoria === "Tehtävä" && (
                         <img
-                          src={`/Napit/Lukea-${ball.Väri}.png`}
+                          src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}
                       {ball.Kategoria === "Tietoteksti" && (
                         <img
-                          src={`/Napit/Lukea-${ball.Väri}.png`}
+                          src={`/src/assets/Napit/Lukea-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}
                       {ball.Kategoria === "Video" && (
                         <img
-                          src={`/Napit/Video-${ball.Väri}.png`}
+                          src={`/src/assets/Napit/Video-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}
                       {ball.Kategoria === "Tarina" && (
                         <img
-                          src={`/Napit/Tarina-${ball.Väri}.png`}
+                          src={`/src/assets/Napit/Tarina-${ball.Väri}.png`}
                           alt={`Ball ${ball.number}`}
                         />
                       )}
@@ -135,7 +128,7 @@ export const AdventureMapComponent = ({ Data, url }) => {
                   )}
 
                   <p>{ball.number}.</p>
-                </motion.div>
+                </div>
               </Link>
             ))}
           </div>

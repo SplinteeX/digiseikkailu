@@ -1,7 +1,6 @@
 import { useState } from "react";
 import cookie from "js-cookie";
 import { useAuthContext } from "./useAuthContext";
-import { toast } from "sonner";
 
 export const useStudentLogin = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -26,12 +25,10 @@ export const useStudentLogin = () => {
       if (!response.ok) {
         setIsLoading(false);
         setError(json.error);
-        toast.error(json.error);
       }
 
       if (response.ok) {
         const student = json.student;
-        toast.success("Kirjautuminen onnistui!");
         console.log(json);
         const token = student.token;
         const twelveHoursFromNow = new Date();
