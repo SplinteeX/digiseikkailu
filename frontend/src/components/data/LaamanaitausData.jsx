@@ -133,7 +133,7 @@ export const LaamanaitausData = () => {
       tehtName: "Huono-onninen videotähti (osa 1)",
       Kategoria: "LaamanAitaus",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/17-huono-onninen-videotaehti",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-7-huono-onninen-videotahti-osa-1-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/17-unlucky-video-star-part-1",
       ],
       puolTeksti:
