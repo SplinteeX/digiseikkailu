@@ -78,7 +78,7 @@ export const MiukumaukuData = () => {
       Kategoria: "MiukuMaukunKirjasto",
       youtube: "lUNkWFPV00I",
       Tekstit: [
-        "1. Esivalmistelus\n2. Valitaan ryhmät opettajan avulla.<br>3. Sovitaan yhdessä luettava kirja.<br>4. Sovitaan puheenjohtaja eri kerroille.<br>5. Sovitaan luettava pätkä ja aika jolloin tavataan.",
+        "1. Esivalmistelus<br>2. Valitaan ryhmät opettajan avulla.<br>3. Sovitaan yhdessä luettava kirja.<br>4. Sovitaan puheenjohtaja eri kerroille.<br>5. Sovitaan luettava pätkä ja aika jolloin tavataan.",
         "Lukupiirissä innostutaan lukemaan ja keskustelemaan yhdessä lukuryhmän kanssa. Lukupiiritapaamisissa luetusta tekstistä keskustellaan ja tehdään tehtäviä tableteilla ja tietokoneilla.",
         "1. Tapaaminen",
         "Puheenjohtaja valitsee yhden seuraavista tehtävistä:",
