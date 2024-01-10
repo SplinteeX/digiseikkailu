@@ -4,19 +4,16 @@ import fs from "fs";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  preview: {
-    host: "65.21.156.172",
-    port: 443,
-  },
   server: {
     https: {
       key: fs.readFileSync(
-        "/etc/letsencrypt/live/digiadventures.com/privkey.pem"
+        "/etc/letsencrypt/live/digiadventurers.com/privkey.pem"
       ),
       cert: fs.readFileSync(
-        "/etc/letsencrypt/live/digiadventures.com/fullchain.pem"
+        "/etc/letsencrypt/live/digiadventurers.com/fullchain.pem"
       ),
     },
+
+    plugins: [react()],
   },
-  plugins: [react()],
 });
