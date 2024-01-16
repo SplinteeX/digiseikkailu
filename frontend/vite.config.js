@@ -13,7 +13,6 @@ export default defineConfig({
         "/etc/letsencrypt/live/digiadventurers.com/fullchain.pem"
       ),
     },
-
-    plugins: [react()],
   },
+  plugins: [react()],
 });
