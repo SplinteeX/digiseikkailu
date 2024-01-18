@@ -5,22 +5,22 @@ export const KursorinUllakkoData = () => {
       tehtName: "Kursorin Ullakko",
       Kategoria: "KursorinUllakko",
       puolKuvat: [
-        "/src/assets/KursorinImages/Ruokailu.webp",
-        "/src/assets/KursorinImages/PöydässäTekstailu.webp",
-        "/src/assets/KursorinImages/KaiuttimenKäyttö.webp",
-        "/src/assets/KursorinImages/Sähköpostit.webp",
-        "/src/assets/KursorinImages/KatsoHenkilöä.webp",
-        "/src/assets/KursorinImages/IsotKirjaimet.webp",
-        "/src/assets/KursorinImages/PuhelinPiiloon.webp",
-        "/src/assets/KursorinImages/Vastaa.webp",
-        "/src/assets/KursorinImages/Lyhyet.webp",
-        "/src/assets/KursorinImages/PidäÄänettömällä.webp",
-        "/src/assets/KursorinImages/PuhelinKävellessä.png.webp",
-        "/src/assets/KursorinImages/Musiikki.webp",
-        "/src/assets/KursorinImages/Puhelut.webp",
-        "/src/assets/KursorinImages/ÄläHäiritse.webp",
-        "/src/assets/KursorinImages/Vältä.webp",
-        "/src/assets/KursorinImages/Pidä.webp",
+        "/KursorinImages/Ruokailu.webp",
+        "/KursorinImages/PöydässäTekstailu.webp",
+        "/KursorinImages/KaiuttimenKäyttö.webp",
+        "/KursorinImages/Sähköpostit.webp",
+        "/KursorinImages/KatsoHenkilöä.webp",
+        "/KursorinImages/IsotKirjaimet.webp",
+        "/KursorinImages/PuhelinPiiloon.webp",
+        "/KursorinImages/Vastaa.webp",
+        "/KursorinImages/Lyhyet.webp",
+        "/KursorinImages/PidäÄänettömällä.webp",
+        "/KursorinImages/PuhelinKävellessä.png.webp",
+        "/KursorinImages/Musiikki.webp",
+        "/KursorinImages/Puhelut.webp",
+        "/KursorinImages/ÄläHäiritse.webp",
+        "/KursorinImages/Vältä.webp",
+        "/KursorinImages/Pidä.webp",
       ],
       puolTekstit: [
         "Ruokailu\n\nKaikki esineet, jotka eivät liity ruokaan tai kattaukseen tulisi pitää poissa pöydältä: avaimet, pikkulaukut, aurinkolasit, ja ennen kaikkea puhelimet.",
@@ -53,7 +53,7 @@ export const KursorinUllakkoData = () => {
       tehtNum: "2",
       tehtName: "Omat mediat pohdinnassa",
       Kategoria: "KursorinUllakko",
-      Kuva: "/src/assets/KursorinImages/OmatMediatPohdinnassa.webp",
+      Kuva: " /KursorinImages/OmatMediatPohdinnassa.webp",
       Tekstit: [
         "Mitä kaikkea media tarkoittaa? Joukkotiedotusvälineenä median historiallisina vaiheina voidaan nähdä huhu, julkiset kuulutukset, julkiset kokoontumiset, kirjapainotaito.  Nykymedia tarkoittaa lehtiä, elokuvia, radiota, televisiota, satelliittitelevisiota ja monen edellisten yhdentymisenä, internettiä. Mitä tarkoittaa sinun mediasi?",
         "1. Listaa karttaan kaikki median muodot mitä käytät.\n\nNetti – mitä teet netissä? radio – mitä kuuntelet? tv – mitä katsot? sanomalehdet – mitä lehtiä luet?",
@@ -82,7 +82,7 @@ export const KursorinUllakkoData = () => {
       ],
       puolTeksti:
         "Tarinassa käsitellään puhelimen kohteliasta käyttöä sosiaalisissa tilanteissa. Viriketulvan rajoittamista ja nettiriippuvuutta.",
-      puolKuva: "/src/assets/KursorinImages/Tarina.webp",
+      puolKuva: " /KursorinImages/Tarina.webp",
       Tekstit: [
         "Laaman uusi agilityvideo oli valmis. Tällä kertaa videosta tulisi parempi ja se voitaisiin julkaista hyvillä mielin. Häsä ja Appi olivat vieneet Laaman agilityradalle ja opettaneet sille muutaman tempun. Se oli oppinut ne jotenkuten, vähän hitaasti ja vaivalloisesti, mutta ruokapalkkio oli toiminut hyvänä kannustajana.",
         "Videon viimeistely oli tehty huolella. Appi oli kuvannut Laaman temppuja puhelimellaan ja Häsä oli kertonut videolla, miten agilityharrastus toimii. Kotona Häsä ja Appi olivat vieneet kuvatut otokset videoeditoriin ja muokanneet niistä tosi mielenkiintoisen videon. Siihen oli lisätty taustamusiikkia, otsikoita ja siirtymiä. Myös äänenlaatua ja värejä oli paranneltu. Kun video oli valmis, Häsä latasi sen Youtubeen.",
@@ -103,7 +103,7 @@ export const KursorinUllakkoData = () => {
       tehtNum: "4",
       tehtName: "Ruutuaika",
       Kategoria: "KursorinUllakko",
-      mp4: "/src/assets/KursorinImages/Ruutuaika-1.mp4",
+      mp4: "/KursorinImages/Ruutuaika-1.mp4",
       mp4Teksti:
         "Pysähdytään videon avulla pohtimaan yhdessä, milloin olisi hyvä laittaa puhelin pois ja keskittyä muihin asioihin.",
       Tekstit: [
@@ -135,7 +135,7 @@ export const KursorinUllakkoData = () => {
     {
       tehtNum: "5",
       tehtName: "Kursorin Ullakko",
-      Kuva: "/src/assets/KursorinImages/Someriippuvuus.webp",
+      Kuva: "/KursorinImages/Someriippuvuus.webp",
       Kategoria: "KursorinUllakko",
       Tekstit: [
         "Someriippuvuudella voidaan tarkoittaa sitä, että ihminen viettää aikaa somessa niin paljon, että toiminta muuttuu yksilölle ja ympäristölle haitalliseksi, esim. aiheuttaa kolareita liikenteessä tai saa ihmisen ahdistumaan median sisällöistä Some tulee sanasta sosiaalinen media ja usein sosiaalisesta mediasta puhuttaessa keskitytään yhteisöpalveluihin kuten Facebookiin, Instagramiin, Snapchattiin tai muihin paljon käytettyihin sovelluksiin Someriippuvuudeksi voidaan lukea, että yksilö tekee päivityksiä jatkuvasti eikä pysty olemaan päivittämättä. Toinen someriippuvuuden muoto on se, että selailee somea kykenemättä lopettamaan. Somessa voi tehdä monenlaisia asioita, jotka voivat olla aktivoivia kuten juuri päivitysten tekeminen, tai passiivisempia kuten toisten toiminnan seuraaminen.”",
@@ -164,7 +164,7 @@ export const KursorinUllakkoData = () => {
         "https://soundcloud.com/digiseikkailu-oy/kursorin-ullakko-6-kahden-paivan-haaste-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/5-a-two-day-challenge",
       ],
-      puolKuva: "/src/assets/KursorinImages/KahdenPäivänHaaste.webp",
+      puolKuva: "/KursorinImages/KahdenPäivänHaaste.webp",
       puolTeksti:
         "Tarinassa käsitellään\n\ndigi- ja medialaitteiden historiaa ja pohditaan, millaista elämä olisi ilman digilaitteita. Voiko ilman digilaitteita selvitä?",
       Tekstit: [
@@ -194,7 +194,7 @@ export const KursorinUllakkoData = () => {
       tehtNum: "7",
       tehtName: "Päivä ilman älypuhelinta ja internettiä",
       Kategoria: "KursorinUllakko",
-      Kuva: "/src/assets/KursorinImages/PäiväIlmanPuhelinta.webp",
+      Kuva: "/KursorinImages/PäiväIlmanPuhelinta.webp",
       Tekstit: [
         "Kahden päivän haaste\n\nMillaista oli aika ennen älypuhelimia?",
         "Kirjoita haasteestasi päiväkirjaa ja kerro koulussa, miten pärjäsit ja mitä uutta kenties koit ja huomasit.",
@@ -224,7 +224,7 @@ export const KursorinUllakkoData = () => {
       tehtNum: "8",
       tehtName: "Harjoitellaan rauhoittumista",
       Kategoria: "KursorinUllakko",
-      Kuva: "/src/assets/KursorinImages/Rauhottumista.webp",
+      Kuva: "/KursorinImages/Rauhottumista.webp",
       Tekstit: [
         "Joskus, kun on paljon menoa ja tekemistä, mieli voi tuntua jännittyneeltä ja kireältä. Se on vähän niin kuin olisit koko ajan juoksukilpailussa. Rauhoittuminen auttaa sinua olemaan rauhallisempi ja tuntemaan olosi paremmaksi sekä onnellisemmaksi.",
         "Nämä harjoitukset auttavat sinua olemaan rauhallisempi ja tuntemaan olosi paremmaksi. Voit tehdä niitä aina, kun tunnet olosi levottomaksi tai tarvitset hetken hengähtää.",
@@ -274,9 +274,11 @@ export const KursorinUllakkoData = () => {
       tehtNum: "9",
       Kategoria: "KursorinUllakko",
       tehtName: "Elämää ennenvanhaan - Kursori-papan urotyöt",
+
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/kursorin-ullakko-9-elamaa-ennenvanhaan-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       puolKuva: "/src/assets/KursorinImages/PappaLaama.webp",
+
       puolTeksti:
         "Millaista elämä on ollut ennen internettiä.\nMissä järjestyksessä teknologisia laitteita on tullut suomalaisten käyttöön\nAinoastaan älylaitteilla ei kannata täyttää koko elämää",
       Tekstit: [
@@ -305,7 +307,7 @@ export const KursorinUllakkoData = () => {
       tehtNum: "10",
       tehtName: "Kiitollisuus-harjoituksia",
       Kategoria: "KursorinUllakko",
-      Kuva: "/src/assets/KursorinImages/KiitollisuusHarjoitus.webp",
+      Kuva: "/KursorinImages/KiitollisuusHarjoitus.webp",
       smallTitle: "Harjoitellaan kiitollisuutta",
       Tekstit: [
         "1. Kolme hyvää asiaa ja huippukohta\n\nMietitään päivästä kolme hyvää asiaa. Toinen kiitollisuuden ajattelun herättäjä, on päivän huippukohta. “Mikä oli päivän paras hetki?” tai ”Mikä asia sujui tänään hyvin?”. Kuitenkin jos päivässä on ollut suuria, vaivaavia huolia, niin ne on myös hyvä käsitellä.",
@@ -331,7 +333,7 @@ export const KursorinUllakkoData = () => {
       tehtNum: "11",
       tehtName: "Sisukkuus-harjoituksia",
       Kategoria: "KursorinUllakko",
-      Kuva: "/src/assets/KursorinImages/Sisukkuus.webp",
+      Kuva: "/KursorinImages/Sisukkuus.webp",
       Tekstit: [
         "1. Mikä on sinun sisumoottorisi?\n\nMieti, mikä auttaa sinua jaksamaan, kun alkaa tuntua vaikealta. Se voi olla lempimusiikkisi, ajatus siitä, että selviät haasteesta, tai vaikka hauska elokuva.",
         "2. Sisukkaiden tarinoiden etsiminen\n\nEtsi tarinoita ihmisistä, jotka ovat olleet tosi sisukkaita. Voit löytää niitä kirjoista, lehdistä tai netistä. Kerro sitten kavereillesi, mikä tarinassa inspiroi sinua.",

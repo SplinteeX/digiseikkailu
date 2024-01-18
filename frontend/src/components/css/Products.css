@@ -1,6 +1,10 @@
 .Products {
   position: relative;
   padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .Products header {
   display: flex;
@@ -14,6 +18,25 @@
   position: absolute;
   top: 35px;
   left: 15px;
+}
+/* Coming soon */
+
+.Products .Coming-soon {
+  width: 50%;
+  display: flex;
+  position: absolute;
+  background-color: white;
+  z-index: 20;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px 0px rgba(104, 88, 46, 0.2);
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  top: 100px;
+}
+.Products .Coming-soon h1 {
+  font-family: mulish;
 }
 .Products .Add-to-cart button {
   background-color: #000;
@@ -91,11 +114,34 @@
   margin: 20px 0px;
 }
 
+/* For coming soon */
+.Products .Add-to-cart,
+.Products header,
+.Products .Products-content {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
+  opacity: 0.2;
+  filter: blur(2px);
+}
+
 @media screen and (max-width: 1050px) {
   .Products .Add-to-cart {
     position: static;
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Products .Coming-soon {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .Products .Coming-soon {
+    min-width: 0;
   }
 }
 @media screen and (max-width: 500px) {
@@ -107,5 +153,10 @@
   }
   .Products-box {
     width: 88%;
+  }
+  .Products .Add-to-cart,
+  .Products header,
+  .Products .Products-content {
+    display: none;
   }
 }

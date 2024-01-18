@@ -10,7 +10,7 @@ export const TweetynData = () => {
       ],
       pieniTitle: "Katsokaa yhdessä Kiva somekaveri-video.",
       Kategoria: "TweetynViestiseinä",
-      Kuvat: ["/src/assets/TweetyImages/somekuva.webp"],
+      Kuvat: ["/TweetyImages/somekuva.webp"],
       numeroLista: [
         "Kommentoi viestejä/päivityksiä!",
         "Oon oottanut tätä päivää niin paljon! Pääsen viimeinkin trampoliinipuistoon!",
@@ -54,11 +54,8 @@ export const TweetynData = () => {
         "Tehkää nettikiusaamisen vastainen posteri koulun seinälle, joissa kerrotaan",
       ],
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/internetSafety.webp",
-      pieniKuva: [
-        "/src/assets/TweetyImages/gymkuva.webp",
-        "/src/assets/TweetyImages/tiikerit.webp",
-      ],
+      Kuva: "/TweetyImages/internetSafety.webp",
+      pieniKuva: ["/TweetyImages/gymkuva.webp", "/TweetyImages/tiikerit.webp"],
       Tekstit: [
         "Pilkkaavat tai uhkaavat viestit",
         "Juoruilu, huhujen levittäminen, mustamaalaus",
@@ -142,9 +139,9 @@ export const TweetynData = () => {
       pieniTitle: "Katsokaa yhdessä Kiva somekaveri-video.",
       Kategoria: "TweetynViestiseinä",
       Kuvat: [
-        "/src/assets/TweetyImages/moottorisahakissa.webp",
-        "/src/assets/TweetyImages/whatsapp.webp",
-        "/src/assets/TweetyImages/pöllö.webp",
+        "/TweetyImages/moottorisahakissa.webp",
+        "/TweetyImages/whatsapp.webp",
+        "/TweetyImages/pöllö.webp",
       ],
       Tekstit: [
         "Keskustelupalstalla väitellään: Tweety on törmännyt pihan ilmoitustaululla ja someverkostossa väittelijään. Väittelijä on pihan Miuku-Mauku -kissa. Miukulla on suuri tarve kaataa pihan vanhin puu. Se on kuitenkin Tweetylle ja muille linnuille tärkeä kokoontumispaikka. Tweetyä häiritsee, että Miuku-Mauku unohtaa kunnollisen väittelyn säännöt ja saattaa sihautella solvauksia lintuverkoston toiminnasta. Nyt Tweety on pyytänyt pöllöä kasaamaan somekanavalleen väittelyohjeet",
@@ -182,7 +179,7 @@ export const TweetynData = () => {
       tehtName: "Millainen on hyvä viesti?",
       title: "Millainen on hyvä viesti?",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/tipu.webp",
+      Kuva: "/TweetyImages/tipu.webp",
       Tekstit: [
         "Hyvä viesti on kirjoitettu oikein ja se on ystävällinen, helppo lukea ja ytimekäs.",
         "Alla on erilaisia viestejä. Laita viestit järjestykseen sen mukaan, mikä niistä on helpoin ymmärtää. Miksi joitakin viestejä on vaikeampi ymmärtää?",
@@ -236,9 +233,9 @@ export const TweetynData = () => {
       title: ["Sometekstien tulkitseminen", "Tehtävä – tulkitse someteksti"],
       Kategoria: "TweetynViestiseinä",
       Kuvat: [
-        "/src/assets/TweetyImages/selfie.webp",
-        "/src/assets/TweetyImages/yoga.webp",
-        "/src/assets/TweetyImages/joulupukki.webp",
+        "/TweetyImages/selfie.webp",
+        "/TweetyImages/yoga.webp",
+        "/TweetyImages/joulupukki.webp",
       ],
       Tekstit: [
         "Sosiaalisen median teksteillä on aina julkaisija, ne eivät ilmesty internetiin tyhjästä. Mieti ja selvitä, kuka on tuottanut sisällön. Miksi se on julkaistu? Voivatko eri ihmiset tulkita julkaisua eri tavoilla? Minkälaisia reaktioita – tykkäyksiä, kommentteja – julkaisija toivoo saavansa? Millaisia tunteita julkaisu sinussa saa aikaan? Kaikkea ei mahdu kuvaan tai tekstiin. Onko jotain jätetty pois tai rajattu kuvan ulkopuolelle? Mieti, miten rajaus vaikuttaa sisältöön.",
@@ -266,7 +263,7 @@ export const TweetynData = () => {
       tehtName: "Sometekstien julkaiseminen",
       title: "Sometekstien julkaiseminen",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/randomkirjaimia.webp",
+      Kuva: "/TweetyImages/randomkirjaimia.webp",
       Tekstit: [
         "Harjoitelkaa oman somejulkaisun tekoa vastaamalla ensin seuraaviin kysymyksiin:",
       ],
@@ -293,9 +290,9 @@ export const TweetynData = () => {
       tehtName: "Tunnista ja pysäytä vihapuhe",
       Kategoria: "TweetynViestiseinä",
       Kuvat: [
-        "/src/assets/TweetyImages/vihapuhe.webp",
-        "/src/assets/TweetyImages/ääliöorava.webp",
-        "/src/assets/TweetyImages/vihanezombi.webp",
+        "/TweetyImages/vihapuhe.webp",
+        "/TweetyImages/ääliöorava.webp",
+        "/TweetyImages/vihanezombi.webp",
       ],
       Tekstit: [
         "Vihapuhe on syrjintää. Vihapuhe on kiusaamista ja toisen ominaisuuksista pahan puhumista. Vihapuhetta esiintyy eniten netissä. Yhdenvertaisuuslaissa ja tasa-arvolaissa on kielletty syrjintä ja muuten yleisesti haitallinen ilmaisu. Rangaistava vihapuhe kohdistuu yhden ihmisen tai ihmisryhmän ominaisuuteen.",
@@ -348,7 +345,7 @@ export const TweetynData = () => {
       tehtNum: "9",
       tehtName: "Kehupuhe",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/kommentti.webp",
+      Kuva: "/TweetyImages/kommentti.webp",
       Tekstit: [
         "Vihapuheen vastakohta on kehupuhe. Sitä voit käyttää niin paljon kuin haluat, se ei aiheuta pahaa mieltä eikä harmistusta. Kehupuhe rakentaa myös positiivista keskustelukulttuuria netissä.",
         "Tehkää ensin listaus tubettajista, joita luokkanne oppilaat seuraavat. Valitkaa pienissä ryhmissä listasta yksi tubettaja, mieluiten sellainen, jota ette tunne hyvin entuudestaan. Katsokaa yksi tubettajan video ja miettikää, mitä positiivisia kommentteja voisitte kirjoittaa videosta. Palauttakaa kommentit opettajalle. Voitte myös kirjoittaa ne suoraan videon kommentteihin, jos teillä on Youtube-tunnukset. Tubettajalle tulee varmasti hyvä mieli!",
@@ -368,11 +365,13 @@ export const TweetynData = () => {
       tehtNum: "10",
       tehtName: "Epäilyttävä ehdotus",
       Kategoria: "TweetynViestiseinä",
+
       SoundClouds: [
         "https://soundcloud.com/digiseikkailu-oy/tweetyn-viestiseina-10?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/hasas-studio-10-suspicious-proposal-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       puolKuva: "/src/assets/TweetyImages/vierasviesti.webp",
+
       Tekstit: [
         "Lisää tähän aiheeseen liittyviä tehtäviä löydät Tweetyn viestiseinästä.",
         "Häsä ja Appi istuivat green screen -kankaan edessä. He olivat ottamassa mainoskuvia ja -videoita Supersovelluksen markkinointia varten. Supersovellus oli nimittäin valmis, kiitos Kursorin koodausavun. Green screenin avulla heistä otettiin kuvia kaikissa eri paikoissa, joissa sovellusta voitaisiin käyttää: koululuokassa, skeittipuistossa, kirjastossa, kauppakeskuksessa. Jotta kaikki saisivat tietää tästä mahtavasta sovelluksesta, sitä piti mainostaa. Muutenhan sovellus jäisi vain Häsän ja Apin omaksi iloksi. Kuvista ja videoista tuli tosi hienoja. Häsä oli lainannnut äidin huulipunaa ja Apilla oli uusi, komea nahkatakki. He näyttivät ihan elokuvatähdiltä. Häsä julkaisi mainosvideot Youtube-kanavallaan ja he loivat Instagramiin Supersovellukselle oman tilin. Kommentteja ja tykkäyksiä alkoikin tulla välittömästi. Häsä ilahtui kovasti.",
@@ -424,7 +423,7 @@ export const TweetynData = () => {
           "Muista, että aikuinen syyllistyy rikokseen, jos hän pyytää lapselta tai nuorelta esim. vähäpukeisia kuvia, kirjoittaa tai puhuu sopimattomia.",
         ],
       ],
-      Kuva: "/src/assets/TweetyImages/tietokoneVärikäs2.webp",
+      Kuva: "/TweetyImages/tietokoneVärikäs2.webp",
       kysymys: "Mitä tulisi tehdä, jos kohtaat nettiahdistelua?",
       vaihtoehdot: [
         "a) Vastata ahdistelijaan ja jatkaa keskustelua",
@@ -439,9 +438,9 @@ export const TweetynData = () => {
       tehtName: "Ahdistavat viestit ja nettiahdistelu",
       Kategoria: "TweetynViestiseinä",
       Kuvat: [
-        "/src/assets/TweetyImages/Miettimis.webp",
-        "/src/assets/TweetyImages/tyttöpoikatietokone.webp",
-        "/src/assets/TweetyImages/poliisitietokone.webp",
+        "/TweetyImages/Miettimis.webp",
+        "/TweetyImages/tyttöpoikatietokone.webp",
+        "/TweetyImages/poliisitietokone.webp",
       ],
       Tekstit: [
         "Kun käytät nettiä, saatat vahingossa nähdä kuvia ja videoita, joita ei ole tarkoitettu lapsille. Sellaisista kuvista voi tulla paha mieli ja ikävä olo. Kuvissa ehkä satutetaan toisia tai ollaan alasti. Ne ovat usein lavastettuja ja näyteltyjä eli ne eivät ole totta, mutta silti niistä voi jäädä ahdistunut tunne.",
@@ -506,7 +505,7 @@ export const TweetynData = () => {
       tehtNum: "14",
       tehtName: "Tulkitaan emojeita",
       Kategoria: "TweetynViestiseinä",
-      puolKuva: "/src/assets/TweetyImages/tulk-emojeita.webp",
+      puolKuva: "/TweetyImages/tulk-emojeita.webp",
       puolTeksti:
         "1. Mitä asioita hymiöillä ja emojeilla ilmaistaan? Mitäköhän Tweety on tarkoittanut, kun hän on lähettänyt seuraavat viestit kavereilleen? 2. Kun olet selvittänyt Tweetyn viestit, on sinun vuorosi keksiä pieni viesti kaverille ja kirjoittaa se pelkästään emojeilla. Osaakohan kaveri selvittää arvoituksen?",
       Teksti:
@@ -528,7 +527,7 @@ export const TweetynData = () => {
         "Tietoturva tarkoittaa sinua koskevien asioiden pitämistä itsellä. Itselle tärkeitä asioita ovat mm. salasanat sähköposteihin, oma osoite ja puhelinnumero, pankkitunnukset, henkilöturvatunnus..",
         "Seikkailut Somekylässä \n\nSomekylässä asui viisi ystävystä: Appi, Doge, Häsä, Laama ja Tweety. Tämä pieni, värikäs kylä internetin sydämessä oli täynnä jännittäviä sovelluksia ja verkkoportaaleja. Yhdessä ystävykset oppivat kyberturvallisuuden tärkeät opetukset. Salasanat ja Apin oivallus Appi, innokas mobiilisovellusten ystävä, huomasi eräänä päivänä, että hänen suosikkisovelluksensa oli kaapattu. Hän oli käyttänyt liian yksinkertaista salasanaa. Doge, joka oli aina valpas tietoturvan suhteen, selitti, että vahva salasana on kuin salattu avain. Yhdessä he loivat uuden, monimutkaisen salasanan, jossa oli sekä kirjaimia, numeroita että erikoismerkkejä – aivan kuin salainen koodi!Henkilökohtaiset tiedot ja Häsän varovaisuus Kun Häsä, sosiaalisen median mestari, sai pyynnön jakaa henkilökohtaisia tietojaan uudessa, hienossa sovelluksessa, hän muisti, kuinka tärkeää on pitää nämä tiedot salassa. Henkilökohtaiset tiedot olivat kuin kultainen aarre, jota ei pidä koskaan jakaa kevyesti. Häsä päätti olla jakamatta tietojaan ja keskusteli asiasta Laaman kanssa, joka oli viisas ja harkitseva.Turvallinen selailu ja Laaman neuvo Eräänä päivänä Laama, joka rakasti tutkia uusia nettisivuja, törmäsi sivustoon, joka näytti houkuttelevalta mutta hieman epäilyttävältä. Hän tiesi, että turvallisessa selailussa on tärkeää välttää epäilyttäviä sivustoja. Laama päätti olla tutkimatta sivustoa ja keskusteli siitä sen sijaan Tweety kanssa, joka oli aina tietoinen netin vaaroista.Sähköpostien ja viestien turvallisuus ja Tweety Tweety, viestinnän asiantuntija, sai outoja sähköpostiviestejä, jotka lupasivat hänelle ilmaisia pelejä ja lahjoja. Hän tiesi heti, että nämä viestit saattoivat olla huijauksia. Hän päätti olla avaamatta niitä ja kertoi asiasta välittömästi aikuisille. Tweety jakoi tämän kokemuksen ystävilleen, jotta hekin osaisivat olla varuillaan vastaavissa tilanteissa.Näiden seikkailujen myötä Appi, Doge, Häsä, Laama ja Tweety oppivat, että tietoturva oli kuin seikkailu, jossa jokainen askel piti ottaa huolellisesti. Heistä tuli viisaampia ja varovaisempia netin käyttäjiä ja he jakoivat oppimansa tiedot koko Somekylän kanssa, jotta kaikki pysyisivät turvassa digitaalisessa maailmassa.",
       ],
-      Kuva: "/src/assets/TweetyImages/karttajuttu.webp",
+      Kuva: "/TweetyImages/karttajuttu.webp",
       kysymys: "Miksi vahva salasana on tärkeä?",
       vaihtoehdot: [
         "a) Se tekee sovelluksista nopeampia.",
@@ -542,14 +541,16 @@ export const TweetynData = () => {
       tehtName: "Roskapostien suodattaminen",
       Kategoria: "TweetynViestiseinä",
       Teksti:
+
         "Roskapostisuodatin \n\nMitä mahtaa olla roskaposti? Nimensä mukaisesti se tarkoittaa viestejä, joiden kohdalla voi suoraan painaa delete-näppäintä. Joskus roskapostit voivat olla jopa haitallisia – ne saattavat sisältää haittaohjelmia eli viruksia. Seuraavassa tehtävässä harjoitellaan tunnistamaan roskapostit. “Avaa” oheinen sähköpostikansio. Lue sinne tulleet sähköpostit. Valitse jokaisen viestin kohdalla, säilytätkö viestin vai joutaako se roskapostikansioon.",
       Kuva: "/src/assets/TweetyImages/suodatin.webp",
+
     },
     {
       tehtNum: "17",
       tehtName: "Tietojenkalastelu ja verkkourkinta",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/Hakkeri.webp",
+      Kuva: "/TweetyImages/Hakkeri.webp",
       Tekstit: [
         "Verkkourkinta eli tietojenkalastelu (myös engl. phishing, suomeksi käytössä termi kalastelu) on tietotekniikassa rikollista toimintaa, jolla pyritään saamaan haltuun luottamuksellisia tietoja, kuten\n\n-henkilötietoja tai\n\n-tilitietoja\n\n-esiintymällä tiedon saantiin oikeutettuna tahona.",
         "Haluttua tietoa ovat erityisesti salasana- tai luottokorttitiedot, joita käyttämällä hyökkääjä voi päästä huomattaviin taloudellisiin voittoihin; jo muutama huijaukseen langennut uhri voi tehdä rikollisesta toiminnasta kannattavaa. Urkinta tapahtuu yleensä sähköposti- tai pikaviestin muodossa. Huijausviesti pyrkii näyttämään mahdollisimman aidolta ja luotettavan tahon lähettämältä. Tietämättömiä auttaa huijaamaan sähköpostiviestien aukkoisuus ulkomuodoltaan. Viesti, jonka lähettäjäksi ilmoitetaan support@yritys.fi, ei ole välttämättä millään tavalla sidoksissa yritys.fi-palvelimeen. Otsikkotiedoista yleensä on nähtävissä se miltä palvelimelta viesti on peräisin. Eräät sähköpostipalvelut, kuten Gmailin selainversio, huomauttavat asiakkaalle viestin tullessa eri palvelimelta kuin lähettäjäosoitteessa on ilmoitettu.",
@@ -572,8 +573,10 @@ export const TweetynData = () => {
         "https://soundcloud.com/digiseikkailu-oy/tweetys-message-wall-18-snack-biscuits-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       puolTeksti:
+
         "Tarinassa käsitellään \n\n-tietoturvaa internetissä \n-käsitteet eväste (cookie), IP-osoite, selain \n-urkinta ja tietojen kalastelu \n-ponnahdusmainokset",
       puolKuva: "/src/assets/TweetyImages/ostokset.webp",
+
       Tekstit: [
         "Siry-täti oli ollut koko viikon matkoilla. Perjantaina hän palasi Suomeen suuresta digikonferenssista. Se pidettiin Kööpenhaminassa vain parin tunnin lentomatkan päässä Helsingistä. Häsä ja Appi olivat hoitaneet Miuku-Maukua Siryn poissaollessa. Häsän isä oli tuonut lapset Siryä vastaan Helsinki-Vantaan lentoasemalle. Siry saapui vastaanottoaulaan tyylikkäänä kuten aina. Kotimatkalla he päättivät piipahtaa kaupassa.",
         "Häsä - Siry, mikä sen kokouksen aiheena oli? kysyi Häsä.",
@@ -603,7 +606,7 @@ export const TweetynData = () => {
       tehtNum: "19",
       tehtName: "Digitaalinen jalanjälki",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/jalka.webp",
+      Kuva: "/TweetyImages/jalka.webp",
       Tekstit: [
         "Etsitään tietoja itsestä \n\n-Mitä tietoja uskot löytäväsi? \n\n-Kuinka tietoisesti pyrit vaikuttamaan omaan digijalanjälkeesi?",
         "Etsitään kaverin digijalanjälki \n\nKootaan parin kanssa toisistanne niin paljon tietoa mitä löydätte, esim. Googlesta. Kerätkää löydökset esimerkiksi A3-kokoiselle paperille ajatuskarttaan. Tietoja löytyy googlettamalla ja mielikuvitusta käyttäen. \n\n-Millainen kuva parista muodostui digitaalisen jalanjäljen peruusteella? Tässä voi esimerkiksi piirtää kuvan tai kirjoittaa lyhyen esittelyteksti parista digitaalisen jalanjäljen perusteella. \n\n-Miltä oma digitaalinen jalanjälki vaikutti? Yllättikö joku? Miksi?",
@@ -624,7 +627,7 @@ export const TweetynData = () => {
       tehtNum: "20",
       tehtName: "Parannusehdotus",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/luokka.webp",
+      Kuva: "/TweetyImages/luokka.webp",
       Tekstit: [
         "Haluatko parantaa jotain asiaa koulussasi, maailmassa tai vaikkapa toisen ihmisen tekemässä kuvassa, kirjoituksessa tai YouTube-videossa? Jokaisella ihmisellä on vaikuttamismahdollisuus. Vaikuttaa kannattaa yrittää niin, ettei hauku toisia. Perustelemalla parannusehdotuksen, saa paljon viisaammin ja nopeammin muutosta aikaan. Jokaisessa koulussakin on oma oppilaskunta. Oppilaskunnalle jokainen oppilas voi toimittaa omia vaikuttamisehdotuksiaan. Ne voivat olla parannuksia tai yhteisöä kehittäviä ideoita, esim. liikuntaväline, evästauko, liikunta- tai peliviikko tms.",
         "Kirjoita ideasi. \n\nesim. “Koulun pihalle pitää hankkia koripallokoreja.” \n\nKerro mihin ongelmaan se tuo ratkaisun. \n\nesim. “Koululaiset innostuvat koriksesta. Se kehittää kuntoa, ryhmätyötaitoja ja hyvää yhteishenkeä.” \n\nPerustele miksi se on parempi kuin aiemmat ratkaisut. \n\nesim. “Koripalloa voi pelata syksyisin ja keväisin. Se on edullinen laji.” \n\nSeuraa kaveriesi kommentteja. \n\nJos idea on toteuttamiskelpoinen, neuvotelkaa opettajanne kanssa jos tarvitsette apua. \n\nSinä voit vaikuttaa ystävällisellä, viisalla ja rakentavalla tavalla!",
@@ -642,7 +645,7 @@ export const TweetynData = () => {
       tehtNum: "21",
       tehtName: "Mielipidekirjoitus",
       Kategoria: "TweetynViestiseinä",
-      puolKuva: "/src/assets/TweetyImages/mielipide.webp",
+      puolKuva: "/TweetyImages/mielipide.webp",
       puolTeksti:
         "Perjantait vapaaksi koulusta! Enemmän läksyä matematiikasta! Kaikille ilmainen harrastus!",
       Teksti:
@@ -662,7 +665,7 @@ export const TweetynData = () => {
       tehtNum: "22",
       tehtName: "Markku-rehtorin sähköposti",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/Markku.webp",
+      Kuva: "/TweetyImages/Markku.webp",
       Tekstit: [
         "Sähköpostia tarvitset esimerkiksi koulutehtävien palauttamiseen. Sähköpostia käytetään myös usein myös silloin, jos haluat ilmoittautua harrastuksiin tai leireille. Hyvässä sähköpostiviestissä on kerrottu aihekentässä, miksi viesti on lähetetty. Viesti alkaa aina tervehdyksellä ja päättyy lähettäjän nimeen. Teksti on kirjoitettu oikein. Muista isot alkukirjaimet ja pisteet tai muut lopetusmerkit. Lue alla oleva sähköposti ja vastaa kysymyksiin.",
         "Lähettäjä: Markku-ope\n\n Vastaanottaja: 2A-luokka\n\n Aihe: Urheilupäivä\n\n Hei kaikki!\n\n Koulussamme järjestetään ensi tiistaina urheilupäivä. Meidän luokkamme tehtävä on keksiä hauskoja pieniä kilpailuja koulun pihalle. Mieti kotona, minkälaisen kilpailun sinä voisit järjestää parin kanssa. Kilpailut voivat olla esimerkiksi hyppynaruviesti tai pallon heittäminen ämpäriin. Odotan jokaiselta oppilaalta omaa ehdotusta. Sovitaan kilpailupisteistä ja niiden järjestäjistä perjantaina.\n\n Terveisin Markku-ope",
@@ -680,7 +683,7 @@ export const TweetynData = () => {
       tehtNum: "23",
       tehtName: "Sähköposti-ilmoitus",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/sähköposti.webp",
+      Kuva: "/TweetyImages/sähköposti.webp",
       Tekstit: [
         "Leirille ilmoittautuminen sähköpostilla\n\n Sähköpostia tarvitset esimerkiksi koulutehtävien palauttamiseen. Sähköpostia käytetään myös usein myös silloin, jos haluat ilmoittautua harrastuksiin tai leireille. Hyvässä sähköpostiviestissä on kerrottu aihekentässä, miksi viesti on lähetetty. Viesti alkaa aina tervehdyksellä ja päättyy lähettäjän nimeen. Teksti on kirjoitettu oikein. Muista isot alkukirjaimet ja pisteet tai muut lopetusmerkit. Näet alla olevan kiinnostavan leirimainoksen koulun ilmoitustaululla. Kirjoita sähköposti, jossa ilmoittaudut mukaan leirille.",
         "Videoleiri 9-13-vuotiaille\n\n Tule mukaan harjoittelemaan videoiden kuvaamista ja julkaisemista! Aiheita ovat mm. eläimet, urheilu, skeittaus, luonto tai jokin muu sinua kiinnostava aihe. Leiri pidetään Kuvapajan kurssikeskuksessa 3.-7.6. Leirillä yövytään kurssikeskuksen mökeissä. Majoitus ja ruokailu kuuluvat hintaan. Ilmoittautumiset sähköpostilla osoitteeseen videoleiri@kuvapaja.fi. Kerro viestissä nimesi ja ikäsi. Kerro myös, kuinka paljon sinulla on kokemusta videoiden tekemisestä ja mistä aiheesta olisit kiinnostunut. Muista kertoa myös yhteystietosi (puhelinnumero ja sähköpostiosoite). Ruokailua varten tarvitsemme tiedon mahdollisista allergioista tai erikoisruokavaliosta. Tervetuloa leirille!",
@@ -700,7 +703,7 @@ export const TweetynData = () => {
       tehtNum: "24",
       tehtName: "Myynti-ilmoituksen teko",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/src/assets/TweetyImages/Laama.webp",
+      Kuva: "/TweetyImages/Laama.webp",
       palloLista: [
         "Kuvaus:",
         "Ikä: 5-vuotias",
