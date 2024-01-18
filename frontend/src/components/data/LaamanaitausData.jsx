@@ -10,9 +10,9 @@ export const LaamanaitausData = () => {
       ],
       puolKuva: "/LaamanImages/laamajatyttö.webp",
       puolTeksti:
-        "Tarinassa käsitellään<br><br> -Tunteiden jakaminen puhumalla kannattaa<br> -Viesteillä voi vaikuttaa toisen mielialaan<br> -Oikeat kaverit tukevat ja lohduttavat harmin hetkellä<br> -Jokainen joskus erehtyy tai epäonnistuu",
+        "Tarinassa käsitellään\n\n -Tunteiden jakaminen puhumalla kannattaa\n-Viesteillä voi vaikuttaa toisen mielialaan\n-Oikeat kaverit tukevat ja lohduttavat harmin hetkellä\n-Jokainen joskus erehtyy tai epäonnistuu",
       Tekstit: [
-        "Laama mökötti aitauksessaan. Se mutusteli heinää ja näytti surkealta. Välillä sen silmäkulmassa kimmelsi kyynel. Samassa Tweety lennähti aidalle istumaan ja sirkutti:  -Näytät kurjalta, Laama. Onko sinulla paha mieli?<br> Laama ei vastannut mitään eikä ollut huomaavinaan Tweetyä. Se käänsi linnulle selkänsä ja jatkoi märehtimistä.<br> -Laama, minulla olisi hauska ehdotus. Mutta en halua, että olet pahalla mielellä. Kertoisitko ensin, mikä mieltäsi painaa?<br> Laama pysäytti jauhamisen hetkeksi ja kääntyi. Se oli kahden vaiheilla: pitäisikö jatkaa mököttämistä vai kertoisiko Tweetylle surkeasti menneestä kisasta?<br> Lopulta se aloitti:",
+        "Laama mökötti aitauksessaan. Se mutusteli heinää ja näytti surkealta. Välillä sen silmäkulmassa kimmelsi kyynel. Samassa Tweety lennähti aidalle istumaan ja sirkutti:  -Näytät kurjalta, Laama. Onko sinulla paha mieli?\nLaama ei vastannut mitään eikä ollut huomaavinaan Tweetyä. Se käänsi linnulle selkänsä ja jatkoi märehtimistä.\n-Laama, minulla olisi hauska ehdotus. Mutta en halua, että olet pahalla mielellä. Kertoisitko ensin, mikä mieltäsi painaa?\nLaama pysäytti jauhamisen hetkeksi ja kääntyi. Se oli kahden vaiheilla: pitäisikö jatkaa mököttämistä vai kertoisiko Tweetylle surkeasti menneestä kisasta?\nLopulta se aloitti:",
         "Laama - Minua harmittaa niin vietävästi se, että eiliset agility-kisat menivät ihan penkin alle. Erehdyin temppuradan reitistä ja hyppäsin esteitä väärään suuntaan. Kaiken lisäksi juutuin kiinni ahtaaseen tunneliin ja minut piti vetää sieltä ulos. Nolottaa ja hävettää.",
         "Kun Laama oli päässyt vauhtiin, juttua riitti:",
         "Laama - Häsä on varmaan minulle vihainen, kun töppäilin sillä tavalla. En ole nähnyt häntä koko aamuna. Luulen, että hän ei halua enää olla minun kanssani, Laama niiskutti. -Sitä paitsi kuulin, että Häsä oli saanut ilkkuvia viestejä ja kommentteja. Kaikki sanovat, että kilpaurani on nyt ohi.",
@@ -32,9 +32,13 @@ export const LaamanaitausData = () => {
       Kategoria: "LaamanAitaus",
       tehtNum: "2",
       tehtName: "Tunteet",
-      Kuva: "/LaamanImages/tunteet.webp",
+
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-2-tunne-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      Kuva: "/src/assets/LaamanImages/tunteet.webp",
+
       Teksti:
-        " Ilo (Joy)<br><br> -Selitys: Ilo on onnellinen tunne, jonka saat, kun jotain hauskaa tai mukavaa tapahtuu. -Kysymys: Milloin viimeksi tunsit iloa? Mikä sai sinut tuntemaan niin? -Kuva: Iloinen hahmo hyppää ilosta.<br><br> Luottamus (Trust)<br><br> -Selitys: Luottamus on tunne, joka tulee, kun uskot jonkun pitävän lupauksensa ja huolehtivan sinusta. -Kysymys: Keneen luotat eniten? Miksi luotat häneen tai häneen? -Kuva: Hahmo näyttää peukkua merkiksi luottamuksesta.<br><br> Pelko (Fear)<br><br> -Selitys: Pelko on jännittynyt tunne, kun olet huolissasi siitä, että jotain pahaa voi tapahtua. -Kysymys: Mikä pelottaa sinua? Mitä teet, kun tunnet olosi pelokkaaksi? -Kuva: Hahmo piiloutuu käsiensä taakse, kuvastaen pelkoa.<br><br> Yllätys (Surprise)<br><br> -Selitys: Yllätys on tunne, kun jotain odottamatonta tapahtuu. -Kysymys: Kerro jokin kerta, kun jokin yllätti sinut. Oliko se hyvä vai huono yllätys? -Kuva: Hahmolla on suuret, hämmästyneet silmät, edustaen yllätystä.<br><br> Surullisuus (Sadness)<br><br> -Selitys: Suru on alakuloinen tunne, jonka saat, kun jokin ikävä tapahtuu tai menetät jotain tärkeää. -Kysymys: Milloin tunsit olosi surulliseksi viimeksi? Mitä teit, jotta tunsit olosi paremmaksi? -Kuva: Hahmo vuodattaa kyyneleen, ilmentäen surua.<br><br> Inho (Disgust)<br><br> -Selitys: Inho on tunne, jonka saat, kun kohtaat jotain todella epämiellyttävää tai vastenmielistä. -Kysymys: Onko jokin asia, jonka inhoat? Miksi se tuntuu sinusta inhottavalta? -Kuva: Hahmo tekee ilmeen, joka kuvastaa inhon tunnetta.<br><br> Viha (Anger)<br><br> -Selitys: Viha on tunne, joka tulee, kun olet todella ärsyyntynyt tai kun joku tekee sinulle väärin. -Kysymys: Milloin tunsit vihaa? Miten käsittelet vihaa, kun se tulee? -Kuva: Hahmo näyttää vihaiselta, kurtistaen kulmiaan.<br><br> Odotus (Anticipation)<br><br> -Selitys: Odotus on tunne, kun odotat jotain innolla, esimerkiksi syntymäpäivääsi tai retkeä. -Kysymys: Onko jotain, mitä odotat innolla juuri nyt? Miksi odotat sitä? -Kuva: Hahmo katsoo kelloa, odottaen jotain.",
+        " Ilo (Joy)\n\n -Selitys: Ilo on onnellinen tunne, jonka saat, kun jotain hauskaa tai mukavaa tapahtuu. -Kysymys: Milloin viimeksi tunsit iloa? Mikä sai sinut tuntemaan niin? -Kuva: Iloinen hahmo hyppää ilosta.\n\n Luottamus (Trust)\n\n -Selitys: Luottamus on tunne, joka tulee, kun uskot jonkun pitävän lupauksensa ja huolehtivan sinusta. -Kysymys: Keneen luotat eniten? Miksi luotat häneen tai häneen? -Kuva: Hahmo näyttää peukkua merkiksi luottamuksesta.\n\n Pelko (Fear)\n\n -Selitys: Pelko on jännittynyt tunne, kun olet huolissasi siitä, että jotain pahaa voi tapahtua. -Kysymys: Mikä pelottaa sinua? Mitä teet, kun tunnet olosi pelokkaaksi? -Kuva: Hahmo piiloutuu käsiensä taakse, kuvastaen pelkoa.\n\n Yllätys (Surprise)\n\n -Selitys: Yllätys on tunne, kun jotain odottamatonta tapahtuu. -Kysymys: Kerro jokin kerta, kun jokin yllätti sinut. Oliko se hyvä vai huono yllätys? -Kuva: Hahmolla on suuret, hämmästyneet silmät, edustaen yllätystä.\n\n Surullisuus (Sadness)\n\n -Selitys: Suru on alakuloinen tunne, jonka saat, kun jokin ikävä tapahtuu tai menetät jotain tärkeää. -Kysymys: Milloin tunsit olosi surulliseksi viimeksi? Mitä teit, jotta tunsit olosi paremmaksi? -Kuva: Hahmo vuodattaa kyyneleen, ilmentäen surua.\n\n Inho (Disgust)\n\n -Selitys: Inho on tunne, jonka saat, kun kohtaat jotain todella epämiellyttävää tai vastenmielistä. -Kysymys: Onko jokin asia, jonka inhoat? Miksi se tuntuu sinusta inhottavalta? -Kuva: Hahmo tekee ilmeen, joka kuvastaa inhon tunnetta.\n\n Viha (Anger)\n\n -Selitys: Viha on tunne, joka tulee, kun olet todella ärsyyntynyt tai kun joku tekee sinulle väärin. -Kysymys: Milloin tunsit vihaa? Miten käsittelet vihaa, kun se tulee? -Kuva: Hahmo näyttää vihaiselta, kurtistaen kulmiaan.\n\n Odotus (Anticipation)\n\n -Selitys: Odotus on tunne, kun odotat jotain innolla, esimerkiksi syntymäpäivääsi tai retkeä. -Kysymys: Onko jotain, mitä odotat innolla juuri nyt? Miksi odotat sitä? -Kuva: Hahmo katsoo kelloa, odottaen jotain.",
       buttonText: "Tehtävälomake",
       buttonLink:
         "https://drive.google.com/file/d/19n1jUC3rkd_OMpiQvHXzee6We8WvnXJy/view",
@@ -44,8 +48,10 @@ export const LaamanaitausData = () => {
       tehtName: "Arvaa tunne",
       Kategoria: "LaamanAitaus",
       Teksti:
-        "Mitä Siry tunsi ja sanoi koulupäivän aikana?<br><br>Keksikää Sirylle kommentti eri tunnetiloihin. <br><br>Muistathan aina, että opettajalla on myös tunteet, aivan kuten sinullakin. <br><br>Miltä opettajasta tuntuu kun hän näyttää tältä? <br><br>Mitä luokassa voisi silloin tapahtua? <br><br>Keksikää ja kirjoittakaa yhdessä!",
-      Kuva: "/LaamanImages/arvaa_tunne.webp",
+
+        "Mitä Siry tunsi ja sanoi koulupäivän aikana?\n\nKeksikää Sirylle kommentti eri tunnetiloihin. \n\nMuistathan aina, että opettajalla on myös tunteet, aivan kuten sinullakin. \n\nMiltä opettajasta tuntuu kun hän näyttää tältä? \n\nMitä luokassa voisi silloin tapahtua? \n\nKeksikää ja kirjoittakaa yhdessä!",
+      Kuva: "/src/assets/LaamanImages/arvaa_tunne.webp",
+
       buttonText: "Tunteita",
       buttonLink:
         "https://docs.google.com/document/d/17WXUt8-cwBcLHs0THnYmb7AxS8T9NsBFZqheZpq1QwU/edit",
@@ -101,8 +107,10 @@ export const LaamanaitausData = () => {
         "https://soundcloud.com/digiseikkailu-oy/16-troill-mail-for-the-super",
       ],
       puolTeksti:
-        "Tarinassa käsitellään <br><br>-tutustutaan trollaamisen käsitteeseen, <br>-saadaan ohjeita, kuinka trollauksen voi pysäyttää omalta kohdaltaan, <br>-vahvistetaan nettikiusaamisen tunnistamisen taitoja <br>-sekä muistutetaan yhteisöllisestä ja rakentavasta viestinnästä medi <br>",
-      puolKuva: "/LaamanImages/trollipostia.png",
+
+        "Tarinassa käsitellään \n\n-tutustutaan trollaamisen käsitteeseen, \nsaadaan ohjeita, kuinka trollauksen voi pysäyttää omalta kohdaltaan, \nvahvistetaan nettikiusaamisen tunnistamisen taitoja \nsekä muistutetaan yhteisöllisestä ja rakentavasta viestinnästä medi \n",
+      puolKuva: "/src/assets/LaamanImages/trollipostia.png",
+
       Tekstit: [
         "Appi - Voi himpuran himpura. Taas täällä on näitä, Appi päivitteli Häsälle katsoessaan Supersovelluksen palautteita.",
         "Appi - Kuuntele nyt tätäkin: ”Tosi omaperäistä! Ette sitten mitään kiinnostavampaa osanneet tehdä?! Tällaista sovellusta ei tarvita missään.”",
@@ -131,12 +139,14 @@ export const LaamanaitausData = () => {
       tehtName: "Huono-onninen videotähti (osa 1)",
       Kategoria: "LaamanAitaus",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/17-huono-onninen-videotaehti",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-7-huono-onninen-videotahti-osa-1-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/17-unlucky-video-star-part-1",
       ],
       puolTeksti:
-        "Tarinassa käsitellään<br><br> empatiataitoja netissä<br> miten toisesta ihmisestä kuvattua tai nauhoitettua materiaalia voi tai ei voi käyttää<br> Lisää tämän tyyppisiä tehtäviä löydät Tweetyn viestiseinältä ja Laaman aitauksesta.",
-      puolKuva: "/LaamanImages/vihanepappa.webp",
+
+        "Tarinassa käsitellään\n\n empatiataitoja netissä\nmiten toisesta ihmisestä kuvattua tai nauhoitettua materiaalia voi tai ei voi käyttää\nLisää tämän tyyppisiä tehtäviä löydät Tweetyn viestiseinältä ja Laaman aitauksesta.",
+      puolKuva: "/src/assets/LaamanImages/vihanepappa.webp",
+
       Tekstit: [
         "Kursori-pappa istui tietokoneen ääressä ja tuijotti ruutua kulmat kurtussa. Hänellä oli tärkeä projekti kesken: hän kirjoitti muistelmiaan. Teoksen nimeksi tulisi Koodaripapan urotyöt ja se kertoisi Kursorin seikkailuista koodaamisen tyrskyisillä merillä. Miuku-Mauku istui ikkunalaudalla, heilutti häntäänsä ja katseli Kursorin tietokonetta ovela katse vihreissä silmissään.",
         "Välillä Kursorin oli pakko pitää tauko. Hän meni keittiöön ja haki kupillisen kahvia. Kun hän palasi työpöytänsä ääreen, Miuku-Mauku vilahti ovesta ulos epäilyttävän nopeasti. Kursori istui koneen ääreen ja nosti kätensä näppäimistölle. Tai se oli hänen tarkoituksensa, sillä kauhistuksekseen hän huomasi, että näppäimet olivat kadonneet kuin tuhka tuuleen.",
@@ -161,20 +171,24 @@ export const LaamanaitausData = () => {
       tehtName: "Kannusta Appia",
       Kategoria: "LaamanAitaus",
       Teksti:
-        "Tunnista tunne ja keksi kannustus<br><br> Harjoitellaan eläytymään toisen tunnetilaan ja tukemaan häntä eteenpäin vaikeassa tilanteessa. <br>Appi tekee tietokoneprojektia. <br>Hänellä on haasteita eikä kaikki aina suju kuten hän oli ajatellut. <br>Tunnistatko missä kuvassa Appi on surullinen tai pettynyt? <br>Miten voisit kannustaa Appia tai kaveriasi kun hän on pettynyt?",
-      Kuva: "/LaamanImages/Apintunteet.webp",
+
+        "Tunnista tunne ja keksi kannustus\n\n Harjoitellaan eläytymään toisen tunnetilaan ja tukemaan häntä eteenpäin vaikeassa tilanteessa. \nppi tekee tietokoneprojektia. \nänellä on haasteita eikä kaikki aina suju kuten hän oli ajatellut. \nunnistatko missä kuvassa Appi on surullinen tai pettynyt? \niten voisit kannustaa Appia tai kaveriasi kun hän on pettynyt?",
+      Kuva: "/src/assets/LaamanImages/Apintunteet.webp",
+
     },
     {
       tehtNum: "7",
       tehtName: "Huono-onninen videotähti (osa 2)",
       Kategoria: "LaamanAitaus",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/18-huono-onninen-videotaehti",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-7-huono-onninen-videotahti-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/18-unlucky-video-star-part-2",
       ],
       puolTeksti:
-        "Tarinassa käsitellään:<br><br>-empatiataitoja netissä <br>-miten toisesta ihmisestä kuvattua tai nauhoitettua materiaalia voi tai ei voi käyttää",
-      puolKuva: "/LaamanImages/vihanepappa.webp",
+
+        "Tarinassa käsitellään:\n\n-empatiataitoja netissä \nmiten toisesta ihmisestä kuvattua tai nauhoitettua materiaalia voi tai ei voi käyttää",
+      puolKuva: "/src/assets/LaamanImages/vihanepappa.webp",
+
       Tekstit: [
         "Koulun piha oli aamulla täynnä oppilaita, kun Häsä kurvasi paikalle pyörällään. Hänen luokkakaverinsa olivat piirissä ja juttelivat kiihtyneeseen äänensävyyn jostakin.",
         "Häsän ystävät - Oletko jo nähnyt Ekon, Havun & Pajun uuden videon? Se on superhauska, Häsän ystävät intoilivat.",
@@ -206,12 +220,12 @@ export const LaamanaitausData = () => {
       tehtName: "Ongelma matkalla juhliin",
       Kategoria: "LaamanAitaus",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/3-ongelma-matkalla-juhliin",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-8-ongelma-matkalla-juhliin-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/3-the-problem-on-the-way-to",
       ],
       puolKuva: "/LaamanImages/kysymysmerkki.webp",
       puolTeksti:
-        "Tarinassa käsitellään<br><br> -viestien kirjoittamista<br> -hyvää somekaveruutta<br><br> Aiheeseen liittyviä tehtäviä löydät Laaman aitauksesta ja Tweetyn viestiseinältä.",
+        "Tarinassa käsitellään\n\n -viestien kirjoittamista\n-hyvää somekaveruutta\n\n Aiheeseen liittyviä tehtäviä löydät Laaman aitauksesta ja Tweetyn viestiseinältä.",
       Tekstit: [
         "Oli aikainen lauantaiaamu. Laaman juhlat olisivat tänään.",
         "Appi tuli Dogen kanssa ulos. He olivat lähdössä aamulenkille.",
@@ -238,12 +252,14 @@ export const LaamanaitausData = () => {
       tehtName: "Juhlat voivat alkaa",
       Kategoria: "LaamanAitaus",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/4-juhlat-voivat-alkaa",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-9-juhlat-voivat-alkaa-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/4-the-party-can-begin",
       ],
       puolTeksti:
-        "Tarinassa käsitellään<br><br> -millaisia tunteita viestintä netissä, sekä<br> -nettisisällöt voivat aiheuttaa.",
-      puolKuva: "/LaamanImages/juhlat.webp",
+
+        "Tarinassa käsitellään\n\n -millaisia tunteita viestintä netissä, sekä\n-nettisisällöt voivat aiheuttaa.",
+      puolKuva: "/src/assets/LaamanImages/juhlat.webp",
+
       Tekstit: [
         "Laama seisoi keskellä aitausta pahvikruunu päässään. Se hymyili onnellisena. Juhlissa oli koko naapuruston porukka: Häsä isänsä kanssa, Kursori-pappa, Appi ja Doge sekä Siry-täti ja Miuku-Mauku. Myös Tweety-lintu lenteli aitauksessa juhlarusetti kaulassaan.",
         "Laama - Tervetuloa, rakkaat ystävät! Ihanaa, että pääsitte paikalle. Olen uusi asukas täällä ja haluan kovasti tutustua teihin kaikkiin. Häsä on leiponut maukkaita kakkuja, maistakaahan! Itse suosittelen erityisesti heinäkakkua.",
@@ -286,8 +302,10 @@ export const LaamanaitausData = () => {
       tehtName: "Erilaiset tulkinnat",
       Kategoria: "LaamanAitaus",
       Teksti:
-        "Miten eri tavoilla voi tulkita viestejä?<br> Emojit eivät aina korvaa sanallista tunteidenilmaisua täysin. Niillä voi vain vahvistaa omaa tunneviestiä tilanteessa, jossa kasvokkain ei ole mahdollista jutella.<br><br> Miten eri tavoilla voit tulkita näitä sanallisia viestejä jos vaihdat emojia viestin perässä?<br><br> Valitse yksi viesti ja kirjoita kaikki omat tulkinnat (3 virkettä).<br><br> Malli – 1/4 VIESTI<br><br> Tämä tarkoittaa mielestäni, että olet minulle….<br><br> Tämä tarkoittaa taas, että ….<br><br> Tätä en oikein ymmärrä….",
-      Kuva: "/LaamanImages/laamapaperi.webp",
+
+        "Miten eri tavoilla voi tulkita viestejä?\nEmojit eivät aina korvaa sanallista tunteidenilmaisua täysin. Niillä voi vain vahvistaa omaa tunneviestiä tilanteessa, jossa kasvokkain ei ole mahdollista jutella.\n\n Miten eri tavoilla voit tulkita näitä sanallisia viestejä jos vaihdat emojia viestin perässä?\n\n Valitse yksi viesti ja kirjoita kaikki omat tulkinnat (3 virkettä).\n\n Malli – 1/4 VIESTI\n\n Tämä tarkoittaa mielestäni, että olet minulle….\n\n Tämä tarkoittaa taas, että ….\n\n Tätä en oikein ymmärrä….",
+      Kuva: "/src/assets/LaamanImages/laamapaperi.webp",
+
     },
     {
       tehtNum: "12",
@@ -310,8 +328,8 @@ export const LaamanaitausData = () => {
         "/LaamanImages/bändi.webp",
       ],
       puolTekstit: [
-        "Mitä on empatia?<br><br> Empatia tarkoittaa kykyä asettaa itsensä toisen asemaan ja ymmärtää toisen tunteita, kykyä ymmärtää toista.<br><br> Empaattinen ihminen ei pyri pönkittämään itseään puheilla, kirjoituksilla tai teoilla paremmaksi kuin, vaan näyttää että on samanarvoinen ja samalla tasolla kuin toinen.",
-        "Empaattisuutta on myötäeläminen. Hän pyrkii huomaamaan kun toiselle on tullut paha mieli.<br><br>Hän ymmärtää, että eri ihmisille tulee erilaisista asioista omanlaisiaan tunteita. Hän tietää, että toisen tunteet ovat yhtä tärkeitä ja oikeita kuin omatkin tunteet. Empaattinen ihminen ei mene mukaan toisen tunnetilaan, jos toinen ihminen on vaikka vihainen, vaan hän huomioi sanoillaan ja teoillaan toisen tunteen.",
+        "Mitä on empatia?\n\n Empatia tarkoittaa kykyä asettaa itsensä toisen asemaan ja ymmärtää toisen tunteita, kykyä ymmärtää toista.\n\n Empaattinen ihminen ei pyri pönkittämään itseään puheilla, kirjoituksilla tai teoilla paremmaksi kuin, vaan näyttää että on samanarvoinen ja samalla tasolla kuin toinen.",
+        "Empaattisuutta on myötäeläminen. Hän pyrkii huomaamaan kun toiselle on tullut paha mieli.\n\nHän ymmärtää, että eri ihmisille tulee erilaisista asioista omanlaisiaan tunteita. Hän tietää, että toisen tunteet ovat yhtä tärkeitä ja oikeita kuin omatkin tunteet. Empaattinen ihminen ei mene mukaan toisen tunnetilaan, jos toinen ihminen on vaikka vihainen, vaan hän huomioi sanoillaan ja teoillaan toisen tunteen.",
         "Havu, Paju ja Eko ovat Apin kavereita yläkoulusta. Heille tulee välillä riitoja, sillä vaikka he ovat hyviä kavereita, he haluavat välillä eri juttuja ja kompromissien tekeminen ja toisen huomioonottaminen on joskus vaikeaa. Tutki viestiketjuja. Yritä bongata ikävältä tuntuva viesti ja pohdi miten tilanteen olisi voinut hoitaa niin, että viestin kohteelle ei olisi tullut kurja olo. Kirjoita viestit ylös ja palauta opettajalle.",
       ],
       Teksti:

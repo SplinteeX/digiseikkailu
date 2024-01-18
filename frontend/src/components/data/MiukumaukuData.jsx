@@ -5,12 +5,12 @@ export const MiukumaukuData = () => {
       tehtName: "Mahdoton kotitehtävä",
       Kategoria: "MiukuMaukunKirjasto",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/6-mahdoton-kotitehtaevae",
+        "https://soundcloud.com/digiseikkailu-oy/miukumaukun-kirjasto-1mahdoton-kotitehtava-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/6-impossible-homework",
       ],
       puolKuva: "/MiukumaukuImages/Miukumauku1.webp",
       puolTeksti:
-        "Tarinassa käsitellään<br><br>digilaitteiden hyötyjä ja haittoja, internetin ja laitteiden järkevää käyttöä ja harjoitellaan tietotekstien käyttöä opiskelussa.",
+        "Tarinassa käsitellään\n\ndigilaitteiden hyötyjä ja haittoja, internetin ja laitteiden järkevää käyttöä ja harjoitellaan tietotekstien käyttöä opiskelussa.",
       Tekstit: [
         "Appi pyöräili koulusta kotiin. Aina välillä hän kokeili taskuaan ja etsi puhelinta varmistaakseen, oliko kukaan soittanut tai lähettänyt viestejä. Sitten hän muisti, että puhelin oli edelleen Kursorilla korjattavana.",
         "Appi — Onpa hankalaa elää ilman puhelinta, Appi puhisi harmissaan.",
@@ -78,7 +78,9 @@ export const MiukumaukuData = () => {
       Kategoria: "MiukuMaukunKirjasto",
       youtube: "lUNkWFPV00I",
       Tekstit: [
-        "1. Esivalmistelus\n2. Valitaan ryhmät opettajan avulla.<br>3. Sovitaan yhdessä luettava kirja.<br>4. Sovitaan puheenjohtaja eri kerroille.<br>5. Sovitaan luettava pätkä ja aika jolloin tavataan.",
+
+        "1. Esivalmistelus\n2. Valitaan ryhmät opettajan avulla.\n3. Sovitaan yhdessä luettava kirja.\n4. Sovitaan puheenjohtaja eri kerroille.\n5. Sovitaan luettava pätkä ja aika jolloin tavataan.",
+
         "Lukupiirissä innostutaan lukemaan ja keskustelemaan yhdessä lukuryhmän kanssa. Lukupiiritapaamisissa luetusta tekstistä keskustellaan ja tehdään tehtäviä tableteilla ja tietokoneilla.",
         "1. Tapaaminen",
         "Puheenjohtaja valitsee yhden seuraavista tehtävistä:",
@@ -118,8 +120,8 @@ export const MiukumaukuData = () => {
         "Sopikaa lopuksi seuraavaan tapaamiseen luettava sivumäärä.",
         "7. tapaaminen",
         "Ryhmä valitsee toisen alla olevista vaihtoehdoista. Molemmissa tehtävissä toteutukseen käytetään BookCreator-sovellusta.",
-        "7.1 Kirjaesittely<br><br>Tehkää BookCreator-ohjelmalla lukemallenne kirjalle uudet kannet (etukansi ja takakansi) sekä niiden väliin yhden aukeaman mittainen esittely kirjasta ja kirjailijasta. Etukanteen tulee kirjan nimi, kirjailijan nimi ja tarinaan liittyvä kuva. Takakanteen tulee lyhyt kuvaus kirjan juonesta ja aiheesta. Keskiaukeamalla voitte kertoa enemmän kirjan henkilöhahmoista, tapahtumapaikasta, juonesta ja kirjan kirjoittajasta. Kertokaa myös, kenelle suosittelisitte kirjaa. Tekstin oheen voi lisätä piirroksia, kuvia ja videoita.",
-        "7.2 Oma kirja tai tarina<br><br>Miettikää ensin, mikä lukemanne kirjan aihe ja sanoma. Tehkää sitten oma tarina samasta aiheesta. Älkää kuitenkaan tehkö uudelleen jo lukemaanne kirjaa, vaan käyttäkää mielikuvitusta ja luokaa omat hahmot ja oma tarina. Kirjaan voi tekstin oheen lisätä piirroksia, kuvia ja videoita.",
+        "7.1 Kirjaesittely\n\nTehkää BookCreator-ohjelmalla lukemallenne kirjalle uudet kannet (etukansi ja takakansi) sekä niiden väliin yhden aukeaman mittainen esittely kirjasta ja kirjailijasta. Etukanteen tulee kirjan nimi, kirjailijan nimi ja tarinaan liittyvä kuva. Takakanteen tulee lyhyt kuvaus kirjan juonesta ja aiheesta. Keskiaukeamalla voitte kertoa enemmän kirjan henkilöhahmoista, tapahtumapaikasta, juonesta ja kirjan kirjoittajasta. Kertokaa myös, kenelle suosittelisitte kirjaa. Tekstin oheen voi lisätä piirroksia, kuvia ja videoita.",
+        "7.2 Oma kirja tai tarina\n\nMiettikää ensin, mikä lukemanne kirjan aihe ja sanoma. Tehkää sitten oma tarina samasta aiheesta. Älkää kuitenkaan tehkö uudelleen jo lukemaanne kirjaa, vaan käyttäkää mielikuvitusta ja luokaa omat hahmot ja oma tarina. Kirjaan voi tekstin oheen lisätä piirroksia, kuvia ja videoita.",
       ],
     },
     {

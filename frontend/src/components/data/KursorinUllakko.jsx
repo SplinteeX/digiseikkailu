@@ -77,7 +77,7 @@ export const KursorinUllakkoData = () => {
       tehtName: "Pling, pling! - Tarina",
       Kategoria: "KursorinUllakko",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/17-pling-pling",
+        "https://soundcloud.com/digiseikkailu-oy/kursorin-ullakko-3-bling-bling-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/17-pling-pling-eng",
       ],
       puolTeksti:
@@ -161,7 +161,7 @@ export const KursorinUllakkoData = () => {
       tehtName: "Kahden päivän haaste",
       Kategoria: "KursorinUllakko",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/5-kahden-paeivaen-haaste",
+        "https://soundcloud.com/digiseikkailu-oy/kursorin-ullakko-6-kahden-paivan-haaste-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/5-a-two-day-challenge",
       ],
       puolKuva: "/KursorinImages/KahdenPäivänHaaste.webp",
@@ -274,7 +274,11 @@ export const KursorinUllakkoData = () => {
       tehtNum: "9",
       Kategoria: "KursorinUllakko",
       tehtName: "Elämää ennenvanhaan - Kursori-papan urotyöt",
-      puolKuva: "/KursorinImages/PappaLaama.webp",
+
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/kursorin-ullakko-9-elamaa-ennenvanhaan-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      puolKuva: "/src/assets/KursorinImages/PappaLaama.webp",
+
       puolTeksti:
         "Millaista elämä on ollut ennen internettiä.\nMissä järjestyksessä teknologisia laitteita on tullut suomalaisten käyttöön\nAinoastaan älylaitteilla ei kannata täyttää koko elämää",
       Tekstit: [

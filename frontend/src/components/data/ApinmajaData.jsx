@@ -574,7 +574,7 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       SoundClouds: [
         "https://soundcloud.com/digiseikkailu-oy/2-kutsukortti",
-        "https://soundcloud.com/digiseikkailu-oy/2-invitation-card",
+        "https://soundcloud.com/digiseikkailu-oy/apis-hut-25-invitation-card-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       puolKuva: "/ApinmajaImages/Kutsukortti.png",
       puolTeksti:
@@ -685,7 +685,9 @@ export const ApinmajaData = () => {
       puolTekstit: [
         "Täältä löytyvät tietokoneen sisuskalut, eli komponentit! Näitä minä tykkään tutkia ja keräillä. On mukava myös kasailla uusia tietokoneita vanhoista osista.",
         "Emolevy\n\nEmolevy on kuin tietokoneen sydän ja aivot yhdistettynä. Se on erityinen lauta, johon kiinnitetään kaikki muut tietokoneen osat, kuten muisti ja prosessori. Ajattele sitä kuin LEGO-palikkatauluna, johon liitetään eri LEGO-palikat. Emolevy pitää huolen siitä, että kaikki nämä osat voivat jutella keskenään ja tehdä tietokoneen toimimaan oikein. Vähän niin kuin se ohjaisi kaikkia tietokoneen palikoita tekemään yhteistyötä!",
-        "Kiintolevy / Kovalevy / Massamuisti<br\nKiintolevy on kuin tietokoneesi iso muistilaatikko, johon tallennetaan kaikki, kuten pelit ja kuvat. Vanhemmissa kiintolevyissä on pyöriviä osia, jotka tekevät niistä hitaampia. Uudemmat SSD-kiintolevyt ovat nopeampia eikä niissä ole liikkuvia osia. Ne toimivat samalla tavalla kuin puhelimen muistikortit. Kiintolevy pitää kaiken tallennetun tiedon tallessa, jopa kun tietokone on sammutettuna.",
+
+        "Kiintolevy / Kovalevy / Massamuisti\n\nKiintolevy on kuin tietokoneesi iso muistilaatikko, johon tallennetaan kaikki, kuten pelit ja kuvat. Vanhemmissa kiintolevyissä on pyöriviä osia, jotka tekevät niistä hitaampia. Uudemmat SSD-kiintolevyt ovat nopeampia eikä niissä ole liikkuvia osia. Ne toimivat samalla tavalla kuin puhelimen muistikortit. Kiintolevy pitää kaiken tallennetun tiedon tallessa, jopa kun tietokone on sammutettuna.",
+
         "Äänikortti\n\nÄänikortti on osa tietokonetta, joka mahdollistaa äänien kuulemisen ja luomisen, kuten musiikin tai pelien ääniefektit. Usein äänikortti on kiinni emolevyssä, mutta jos haluaa tehdä tietokoneella musiikkia tai tarvitsee parempaa äänenlaatua, voi hankkia erillisen, paremman äänikortin. Se on kuin tietokoneen korvat ja suu äänille!",
         "Keskusmuisti / Käyttömuisti / RAM-muisti\n\nTyömuisti eli RAM on kuin tietokoneen nopea muistilappu. Se pitää käynnissä olevien ohjelmien tiedot helposti saatavilla, jotta tietokone toimii nopeasti. Se on pienempi kuin kiintolevy eikä ole tarkoitettu tallentamaan tietoja pitkäksi aikaa. Kun sammutat tietokoneen, työmuisti tyhjenee. Mitä enemmän RAM-muistia on, sitä paremmin tietokone pystyy pyörittämään monimutkaisia ohjelmia, kuten pelejä.",
         "Prosessori / Suoritin\n\nProsessori on tietokoneen aivot. Se käsittelee ohjelmien käskyjä ja tekee monimutkaisia laskuja nopeasti. Prosessorin suorituskyky vaikuttaa tietokoneen nopeuteen. Se käyttää konekieltä, joka koostuu ykkösistä ja nollista, ja laskentateho ilmoitetaan gigahertseinä (GHz). Nykyaikaisissa prosessoreissa voi olla useita ytimiä, jotka mahdollistavat monien laskutoimitusten tekemisen samanaikaisesti. Prosessori käyttää myös välimuistia, joka auttaa tekemään tiedonkäsittelyä nopeammin.",
