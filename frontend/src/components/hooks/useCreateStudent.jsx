@@ -1,6 +1,7 @@
 import Cookies from "js-cookie";
 import { useState } from "react";
 import { useAuthContext } from "../hooks/useAuthContext";
+import { toast } from "sonner";
 export const useCreateStudent = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -9,28 +10,28 @@ export const useCreateStudent = () => {
     const User = JSON.parse(user);
     const Auth = Cookies.get("Authorization");
     const teacherid = User.teacherId;
-    console.log(teacherid);
-    console.log(teacherid);
-    console.log(User);
     setIsLoading(true);
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:8080/api/student/create", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: Auth,
-        },
-        body: JSON.stringify({ name, username, teacherid }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_REACT_APP_API_URL}/api/student/create`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: Auth,
+          },
+          body: JSON.stringify({ name, username, teacherid }),
+        }
+      );
       const json = await response.json();
       if (!response.ok) {
         setIsLoading(false);
         setError(json.error);
       }
       if (response.ok) {
-        console.log("Student created");
+        toast.success("Opiskelija lisätty!");
       }
     } catch (error) {
       throw error;

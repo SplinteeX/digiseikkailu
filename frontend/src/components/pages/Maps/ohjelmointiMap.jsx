@@ -6,7 +6,7 @@ export const OhjelmointiMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Ohjelmointi",
-          Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
+          Image: "/Kartat/DogenboxiKartta.jpg",
           Kategoria: "OhjelmointiPolku",
           Balls: [
             {
