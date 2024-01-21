@@ -172,9 +172,6 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ></video>
             </div>
           )}
-          <h3 className="White-text">
-            {Data.tehtNum}. {Data.tehtName}
-          </h3>
           {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
           {Data.blueTitle && (
             <>

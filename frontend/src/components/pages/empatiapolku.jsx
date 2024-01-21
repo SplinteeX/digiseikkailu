@@ -2,8 +2,8 @@ import "../css/empatiapolku.css";
 import Oikeinmerkki from "../elements/empatiapolku/Listatekstit";
 import { EmpatiaData } from "../data/empatiaData.jsx";
 import SuuntaMerkki from "../elements/empatiapolku/suuntaMerkki";
-import suuntamerkkikuva from "/assets/suuntamerkki.webp";
-import maisema from "../../assets/maisemakuva.webp";
+import suuntamerkkikuva from "/empatiapolku/suuntamerkki.webp";
+import maisema from "/empatiapolku/maisemakuva.webp";
 import { Link } from "react-router-dom";
 const vuoropuhelut = [
   {
