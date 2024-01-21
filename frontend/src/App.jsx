@@ -37,6 +37,9 @@ import { OhjelmointiMap } from "./components/pages/Maps/ohjelmointiMap";
 import { MiukumaukuMap } from "./components/pages/Maps/MiukumaukuMap";
 import { ShopOverview } from "./components/pages/ShopOverview";
 import { Kassa } from "./components/pages/Kassa";
+import { TrolliKommentoimassaData } from "./components/data/trolliKommentoimassaData";
+import { EmpatiaPolkuExercises } from "./components/pages/Exercises/EmpatiaPolku";
+import { EmpatiaPolku } from "./components/pages/empatiapolku";
 
 function App() {
   const { user } = useAuthContext();
@@ -51,6 +54,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/tietoa-opettajalle" element={<Teacherinfo />} />
             <Route path="/tuotteet" element={<Products />} />
+            <Route
+              path="/empatiapolku/trolli-kommentoimassa"
+              element={<TrolliKommentoimassaData />}
+            />
             <Route
               path="/tuotteet/TarinatTyokirja"
               element={<TarinatTyokirja />}
@@ -126,6 +133,11 @@ function App() {
             <Route path="/tietoa-meista" element={<AboutUs />} />
             <Route path="/404" element={<Page404 />} />
             <Route path="*" element={<Navigate to="/404" />} />
+            <Route path="/empatiapolku" element={<EmpatiaPolku />}></Route>
+            <Route
+              path="/tehtävät/empatiapolku/:index"
+              element={<EmpatiaPolkuExercises />}
+            ></Route>
           </Routes>
         </div>
       </BrowserRouter>
