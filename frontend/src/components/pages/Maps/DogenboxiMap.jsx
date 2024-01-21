@@ -6,7 +6,7 @@ export const DogenboxiMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Dogenboxi",
-          Image: "/src/assets/Kartat/DogenboxiKartta.jpg",
+          Image: "/Kartat/DogenboxiKartta.jpg",
           Kategoria: "DogenBoxi",
           Text: "black",
           Balls: [

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import cookie from "js-cookie";
 import { useAuthContext } from "./useAuthContext";
+import { toast } from "sonner";
 export const useSignup = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -37,9 +38,10 @@ export const useSignup = () => {
     if (!response.ok) {
       setIsLoading(false);
       setError(json.error);
+      toast.error(json.error);
     }
     if (response.ok) {
-      console.log(json);
+      toast.success("Rekisteröityminen onnistui!");
       const user = json.user;
       const token = user.token;
       setError(null);

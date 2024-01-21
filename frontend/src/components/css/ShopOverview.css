@@ -1,0 +1,130 @@
+.ShopOverview {
+  margin: 0% 25%;
+}
+.ShopOverview h2 {
+  text-align: center;
+  font-family: mulish;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.ShopOverview li {
+  list-style-type: none;
+  font-family: mulish;
+  font-size: 1.2rem;
+}
+.ShopOverview ul {
+  padding-left: 0px;
+}
+.ShopOverview .Total {
+  display: flex;
+  justify-content: space-between;
+  font-family: mulish;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.ShopOverview .Item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #e0e0e0;
+}
+.ShopOverview .Item .Control-section {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  gap: 20px;
+}
+.ShopOverview .Item .Control-section button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.ShopOverview .Item .Control-section p {
+  font-family: mulish;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.ShopOverview .Item .Control-section .Control {
+  display: flex;
+  gap: 5px;
+}
+.ShopOverview .Bottom-section {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.ShopOverview .Bottom-section button {
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  padding: 12.5px 0px;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: #8ccbf3;
+  color: white;
+  font-family: mulish;
+  font-weight: bold;
+  border: 3px;
+  padding: 10px;
+}
+.ShopOverview .Bottom-section button:hover {
+  color: white;
+  cursor: pointer;
+}
+.ShopOverview .PaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10% 0%;
+  height: 600px;
+  min-width: 500px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1400px) {
+  .ShopOverview .Item {
+    flex-direction: column;
+  }
+
+  .ShopOverview .Item .Control-section {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    right: auto;
+    gap: initial;
+  }
+  .ShopOverview ul {
+    border-top: 2px solid #e0e0e0;
+  }
+}
+@media screen and (max-width: 770px) {
+  .ShopOverview .Item .Control-section {
+    flex-direction: column;
+  }
+  .ShopOverview .Item .Control-section .Control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ShopOverview .Item .Control-section button {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .ShopOverview .Bottom-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ShopOverview .Bottom-section button {
+    position: relative;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ShopOverview {
+    margin: 0% 5%;
+  }
+}

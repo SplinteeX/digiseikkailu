@@ -1,6 +1,20 @@
+import React from "react";
 import "../css/product.css";
 import { Dropdown } from "./dropdown";
+import { useShoppingCart } from "../contexts/ShoppingCartContext";
+
 export const Product = ({ Data, Text }) => {
+  const { addToCart } = useShoppingCart();
+
+  const handleAddToCart = () => {
+    const item = {
+      title: Data.title,
+      price: Data.price,
+      type: "Product",
+    };
+    addToCart(item);
+  };
+
   return (
     <div className="Product">
       <h2>{Data.title}</h2>
@@ -17,7 +31,7 @@ export const Product = ({ Data, Text }) => {
       </div>
       <div className="Dropdown-bottom">
         <Dropdown Text={Text} Data={Data.language} />
-        <button>Lisää ostoskoriin</button>
+        <button onClick={handleAddToCart}>Lisää ostoskoriin</button>
       </div>
     </div>
   );
