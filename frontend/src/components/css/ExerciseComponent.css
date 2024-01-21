@@ -226,6 +226,123 @@
 .Exercise .Oikea-vaihtoehto {
   background-color: #00d7a3;
 }
+.Exercise .Blue-text {
+  background-color: #cae0e9;
+  padding: 10px;
+  text-align: center;
+  font-family: mulish;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+}
+.empatia-polku-style {
+  background: linear-gradient(
+      180deg,
+      rgba(35, 133, 95, 0.85) 0%,
+      rgba(12, 133, 42, 0.5) 100%
+    ),
+    url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.Exercise .Posti-div img {
+  background: transparent;
+}
+
+.Exercise .Red-text {
+  color: #c1331b;
+}
+.Exercise .Text-div-yellow {
+  background-color: yellow;
+  padding: 20px 10px 20px 10px;
+  width: 100%;
+  margin-top: 60px;
+}
+.Exercise .Text-div-yellow p {
+  font-size: larger;
+  font-weight: bolder;
+}
+.Exercise .Blue-button {
+  fill: #fff;
+  color: #fff;
+  background-color: #8ad4ee;
+  border-style: solid;
+  border-width: 0;
+  border-radius: 15px;
+  padding: 20px 119px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Exercise .Blue-button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.Exercise .puhelimet {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.Exercise .Puhelin-div img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+.Exercise .image25 {
+  width: 100%;
+}
+
+.Exercise .Tarina-Image-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+.Exercise .Tarina-Image-container img {
+  width: 50%;
+  border-radius: 20px;
+}
+.Exercise .Otsikot {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
+}
+.Exercise .tarinaTekstit {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.Exercise .Otsikot .White-text-nappi {
+  padding: 50px;
+  background-color: #8ad4ee;
+  border-radius: 40px;
+  color: white;
+}
+
+.Exercise .Otsikot .White-text-nappi:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+.Exercise .Otsikot .White-text-nappi p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
 
 /* All different syles */
 .Apinmaja-style {
@@ -392,5 +509,9 @@
   .Exercise .Text-div {
     width: 95%;
     padding: 2.5%;
+  }
+
+  .Exercise .puhelimet {
+    flex-direction: column;
   }
 }

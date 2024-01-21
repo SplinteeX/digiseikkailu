@@ -5,7 +5,7 @@ export const HäsänStudioData = () => {
       tehtName: "Some Julkaisijan tietonurkka",
       Kategoria: "HäsänStudio",
       Title: "Tubettajan tietonurkka",
-      Kuva: "/HäsäImages/TubettajanTietonurkka.webp",
+      Kuva: "/src/assets/HäsäImages/TubettajanTietonurkka.webp",
       puolTekstit: [
         "Tubettajat: Luo sisältöä YouTubeen ja muihin sosiaalisen median alustoihin. Aihealueet vaihtelevat peleistä, teknologiasta, kauneuteen ja matkustamiseen. Kehittää taitoja, jotka ovat tärkeitä digitalisoituvassa maailmassa.",
         "Tiktok: Sosiaalisen median sovellus, jolla voi luoda ja jakaa lyhytvideoita ja tehdä suoria lähetyksiä. Videoita voi selata palvelussa pyyhkäisemällä ylöspäin. Kirjautuneena palveluun voit seurata mielenkiintoisia tiktokkaajia ja tykätä videoista sekä lähettää viestejä. Tiktokkaaja Tekee lyhyitä, viihdyttäviä videoita ja suoria lähetyksiä TikTokissa.",
@@ -15,12 +15,12 @@ export const HäsänStudioData = () => {
         "Snapchat: Snapchat on ikaviestipalvelu, jota käytetään erityisesti kuvien ja lyhyiden videoiden nopeaan ja helppoon jakamiseen. Kuvia ja videoita eli snäppejä (snap) voi palvelussa muokata reaaliaikaisesti erilaisilla hauskoilla efekteillä ja filttereillä, kuten kasvokuvien päälle lisätävillä animoinneilla, sekä teksteillä ja piirroksilla.",
       ],
       puolKuvat: [
-        "/HäsäImages/Tubettaja.webp",
-        "/HäsäImages/Tiktok.webp",
-        "/HäsäImages/Tilaaja.webp",
-        "/HäsäImages/Vloggari.webp",
-        "/HäsäImages/Podcastaaja.webp",
-        "/HäsäImages/Snapchat.webp",
+        "/src/assets/HäsäImages/Tubettaja.webp",
+        "/src/assets/HäsäImages/Tiktok.webp",
+        "/src/assets/HäsäImages/Tilaaja.webp",
+        "/src/assets/HäsäImages/Vloggari.webp",
+        "/src/assets/HäsäImages/Podcastaaja.webp",
+        "/src/assets/HäsäImages/Snapchat.webp",
       ],
       Tekstit: [
         "Riskit ja vastuut:",
@@ -105,7 +105,7 @@ export const HäsänStudioData = () => {
       tehtName: "Keskustellaan videokulttuurista",
       Kategoria: "HäsänStudio",
       Title: "Keskustellaan videokulttuurista",
-      Kuva: "/HäsäImages/YoutubeVideoCulture.webp",
+      Kuva: "/src/assets/HäsäImages/YoutubeVideoCulture.webp",
       Tekstit: [
         "Tehkää lista parhaista vloggareista. Vertailkaa suosikkienne tyylejä (eli tubettajien tekstilajeja). Pohtikaa mitä kaikkea hyötyä Tubekulttuurista voi olla. Pohtikaa myös mitä negatiivisia puolia siihen voi liittyä. Pohtikaa näistä näkökulmista: Oppiminen, Aktiivisuus, Osallisuus, Terveys ( henkinen ja fyysinen hyvinvointi), ajankäyttö",
         "Harjoitelkaa väittelyä – YouTuben puolesta ja sitä vastaan. Tarkoitus on harjoitella perustelemista ja toisen ihmisen näkökantaan eläytymistä, oli itse mitä mieltä tahansa.",
@@ -128,7 +128,7 @@ export const HäsänStudioData = () => {
         "https://soundcloud.com/digiseikkailu-oy/hasan-studio-6-kadonneet-tilaajat-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharingt",
         "https://soundcloud.com/digiseikkailu-oy/hasas-studio-9-lost-subscribers-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
-      puolKuva: "/HäsäImages/Tilaajat.webp",
+      puolKuva: "/src/assets/HäsäImages/Tilaajat.webp",
       puolTeksti:
         "Tarinassa käsitellään - videoiden ja Youtuben maailmaa, puhutaan tubettajista, kanavista ja seuraajista",
       Tekstit: [
@@ -162,7 +162,7 @@ export const HäsänStudioData = () => {
       Title: "Tarinassa käsitellään",
       puolTeksti:
         "Lisää ammatteihin liittyviä tehtäviä löydät Häsän studiosta.",
-      puolKuva: "/HäsäImages/MikäSinustaTulee.webp",
+      puolKuva: "/src/assets/HäsäImages/MikäSinustaTulee.webp",
       Tekstit: [
         "Esitelmäpäivänä Appia jännitti. Hän oli tehnyt paljon töitä esityksensä eteen, etsinyt Siryn kirjastosta kaiken tiedon, mitä aiheesta oli saatavissa. Hän oli varma, että esitelmä oli hyvä, mutta silti koko luokan edessä esiintyminen jännitti.",
         "Esitelmän aiheena oli: Mikä sinusta tulee isona? Monella luokkakaverilla oli jo selvät suunnitelmat: Antonista tulisi insinööri, Mariasta tulisi lääkäri ja Niinasta kampaaja. Häsänkin toiveammatin Appi tiesi: Häsä aikoi näyttelijäksi tai videotuottajaksi. Appi halusi kuitenkin jotain muuta, ja siksi esitelmän tekoon oli mennyt niin paljon aikaa.",
@@ -181,7 +181,7 @@ export const HäsänStudioData = () => {
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/haesaenstudio-6?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       Title: "Omat lempitubettajat",
-      puolKuva: "/HäsäImages/VideonKuvaus.webp",
+      puolKuva: "/src/assets/HäsäImages/VideonKuvaus.webp",
       puolTeksti:
         "Keskustelkaa tubettajista, joita luokkanne oppilaat seuraavat. Voitte tehdä esittelyt suosikkitubettajistanne. Kootkaa ainakin seuraavat tiedot:",
       Teksti:
@@ -207,7 +207,7 @@ export const HäsänStudioData = () => {
       ],
       puolTeksti:
         "Tarinassa käsitellään - Ryhmätyötaitojen merkitystäTyön jakamisen haasteitaIloa, joka syntyy kun keksitään yhdessä. Väärinymmärrykset kannattaa selvittää. Yhdessä voi saada enemmän aikaan kuin yksin",
-      puolKuva: "/HäsäImages/häsäTarina.webp",
+      puolKuva: "/src/assets/HäsäImages/häsäTarina.webp",
       Tekstit: [
         "Maanantai-iltapäivällä koulun kello soi ja oppilaat rynnistivät ulos ovesta. Koulupäivä oli ohi ja kaikilla oli kiire kotiin tai harrastuksiin. Häsä huomasi Apin ja juoksi tämän luokse.",
         "Häsä alkoi heti puhua pulputtaa uuden videon suunnitelmista ja muusta hauskasta, mitä iltapäivällä voisi tapahtua. Appi vain ynähteli lyhyitä vastauksia. Lopulta Häsää alkoi ihmetyttää ystävänsä vaitonainen olemus.",
@@ -228,7 +228,7 @@ export const HäsänStudioData = () => {
       tehtNum: "10",
       tehtName: "Tubettajan tekstilajit",
       Kategoria: "HäsänStudio",
-      Kuva: "/HäsäImages/Erivideot.webp",
+      Kuva: "/src/assets/HäsäImages/Erivideot.webp",
 
       Tekstit: [
         "Tutkitaan tubettajan tekstilajeja Tutustu ensin tubettajan tekstilajeihin. Mitä näistä tekstilajeista olet nähnyt nettiä selaillessasi?",
@@ -252,7 +252,7 @@ export const HäsänStudioData = () => {
       tehtName: "Tutustutaan vaikuttajamarkkinointiin",
       Kategoria: "HäsänStudio",
       Title: "Tunnista vaikuttajamarkkinointi",
-      Kuva: "/HäsäImages/VaikuttajaMarkkinointi.webp",
+      Kuva: "/src/assets/HäsäImages/VaikuttajaMarkkinointi.webp",
       Tekstit: [
         "Vaikuttajamarkkinoinnilla tarkoitetaan yritysten ja sosiaalisen median vaikuttajien välistä ´yhteistyötä, jonka tavoitteena on myydä yrityksen tuotteita tai kasvattaa tietoisuutta yrityksen brändistä, eli tuotemerkistä.",
         "Kaupallinen yhteistyö voi syntyä esimerkiksi siten, että yritys ja vaikuttaja tekevät sopimuksen yrityksen tuotteiden mainostamisesta omissa julkaisuissaan. Silloin sosiaalisen median vaikuttaja sisällyttää tuotteet omaan arkeensa ja kertoo niistä. Tällaista kutsutaan vaikuttajamarkkinoinniksi. Sosiaalisen median julkaisija on siis vaikuttaja ja hänen seuraajansa ovat mahdollisesti tuotteen kuluttajia. Julkaisuun voi siis tulla video, kuvajulkaisu tai blogikirjoitus tuotteen käytöstä.",
@@ -273,7 +273,7 @@ export const HäsänStudioData = () => {
       tehtNum: "12",
       tehtName: "Koulun ammattilaisten TVT:n käyttö",
       Kategoria: "HäsänStudio",
-      Kuva: "/HäsäImages/KoulunAmmattilaiset.webp",
+      Kuva: "/src/assets/HäsäImages/KoulunAmmattilaiset.webp",
       Tekstit: [
         "Haastattele koulun väkeä, opettajia, kouluisäntää, rehtoria (yhdessä koko ryhmän kanssa). Ota selvää millaisia tvt- ja sometaitoja kukin ammattiryhmä tarvitsee.",
         "Raportoi mitä sait selville haastatteluissa!",

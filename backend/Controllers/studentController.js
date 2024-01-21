@@ -7,6 +7,7 @@ const createToken = (_id) => {
 };
 const createStudent = async (req, res) => {
   const { name, username, teacherid } = req.body;
+  console.log(teacherid);
   try {
     if (!name || !username) {
       throw new Error("Täytä kaikki kentät!");
@@ -41,11 +42,13 @@ const loginStudent = async (req, res) => {
 
 const getStudents = async (req, res) => {
   const { teacherid } = req.body;
+  console.log(teacherid);
   try {
     const rawstudents = await Student.find();
     const students = rawstudents.filter(
       (student) => student.teacherid === teacherid
     );
+    console.log(rawstudents);
     res.status(200).json({ students });
   } catch (error) {
     res.status(400).json({ error: error.message });
