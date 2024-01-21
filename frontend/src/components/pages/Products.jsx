@@ -4,10 +4,13 @@ import "../css/Products.css";
 import { ProductsData } from "../data/ProductsData";
 import checkmark from "../../assets/check-mark.png";
 import x from "../../assets/x.png";
+import { useShoppingCart } from "../contexts/ShoppingCartContext";
+import { Toaster, toast } from "sonner";
 
 export const Products = () => {
-  const { Oppilaitos, Yksityishenkilö, Kokeile } = ProductsData();
-  const [activeButton, setActiveButton] = useState("Oppilaitos");
+  const { Oppilaitos, Yksityishenkilö, Opettaja } = ProductsData();
+  const [activeButton, setActiveButton] = useState("Opettaja");
+  const { cart, addToCart } = useShoppingCart();
 
   const handleClick = (text) => setActiveButton(text);
 
@@ -21,6 +24,16 @@ export const Products = () => {
       ))}
     </div>
   );
+
+  const handleSpecialButton = (product) => {
+    addToCart({ title: product.title, price: product.price });
+  };
+
+  const buttons = [
+    { text: "Opettaja", data: Opettaja },
+    { text: "Oppilaitos", data: Oppilaitos },
+    { text: "Yksityishenkilö", data: Yksityishenkilö },
+  ];
 
   const renderProducts = (products, title) => (
     <>
@@ -40,30 +53,41 @@ export const Products = () => {
     </>
   );
 
-  const buttons = [
-    { text: "Oppilaitos", data: Oppilaitos },
-    { text: "Yksityishenkilö", data: Yksityishenkilö },
-    { text: "Kokeile", data: Kokeile },
-  ];
-
   return (
     <div className="Products">
       <div className="Add-to-cart">
-        {activeButton === "Oppilaitos" && (
+        {activeButton === "Opettaja" && (
           <SimpleButton
-            text={"9,90€ / kk. per oppilas"}
+            text={"1.49€ / kk. per oppilas"}
             active={activeButton}
+            /* onClick={() =>
+              addToCart({
+                title: "Opettaja",
+                price: "1.49",
+                type: "subscription",
+              })
+            } */
           />
         )}
         {activeButton === "Yksityishenkilö" && (
           <SimpleButton
-            text={"9,90€ / kk"}
+            text={"3,90€ / kk"}
             active={activeButton}
             style={"Normal"}
+            onClick={() =>
+              toast.error("Tämä ominaisuus ei ole vielä saatavilla.")
+            }
           />
         )}
-        {activeButton === "Kokeile" && (
-          <SimpleButton text={"Kokeile nyt!"} active={activeButton} />
+        {activeButton === "Oppilaitos" && (
+          <SimpleButton
+            text={"1.49€ / kk. per oppilas"}
+            active={activeButton}
+            style={"Normal"}
+            /* onClick={() =>
+            toast.error("Tämä ominaisuus ei ole vielä saatavilla.")
+            } */
+          />
         )}
       </div>
       <header>
@@ -71,12 +95,18 @@ export const Products = () => {
           <SimpleButton
             key={index}
             text={button.text}
-            onClick={() => handleClick(button.text)}
+            // onClick={() => handleClick(button.text)}
             active={activeButton === button.text}
           />
         ))}
       </header>
+      {/* Coming soon */}
+      <div className="Coming-soon">
+        <h1>Sivulle tehdään parhaillaan muutoksia ja lisäyksiä.</h1>
+      </div>
       <div className="Products-content">
+        {activeButton === "Opettaja" &&
+          renderProducts(Opettaja, "Sisältää materiaalit opettajalle")}
         {activeButton === "Oppilaitos" &&
           renderProducts(
             Oppilaitos,

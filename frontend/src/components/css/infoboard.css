@@ -1,8 +1,7 @@
-.Infoboard-wrapper {
+.Information-wrapper {
   position: absolute;
   background-color: white;
   width: 80%;
-  height: 80%;
   top: 17.5%;
   left: 10%;
   z-index: 1;
@@ -11,86 +10,97 @@
   border: 3px solid rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
-.Infoboard-wrapper img {
+.Information-wrapper img {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 25px;
+  right: 25px;
   cursor: pointer;
 }
-.Infoboard-wrapper h3 {
-  text-align: center;
-  opacity: 80%;
-}
-.Infoboard-wrapper .Student-title-boxes .Title {
-  width: 20%;
-  height: 100px;
-  border-radius: 8px;
-  border: 1px solid #ececec;
-  background: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 5px 4px 3px #ccd7ff;
-  flex-direction: column;
-}
-.Infoboard-wrapper .Student-title-boxes .Title p {
-  margin: 5px;
-  color: rgba(0, 0, 0, 1);
-  text-align: center;
-  font-family: Open Sans;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 1000;
-}
-.Infoboard-wrapper .Information-wrapper {
-  display: flex;
-  box-shadow: 0px 5px 4px 3px #ccd7ff;
-  margin: 2.5%;
-  width: 95%;
-  flex-direction: column;
-  padding: 20px 0px;
-  border-radius: 8px;
-}
-.Infoboard-wrapper .Student-title-boxes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2% 2.5%;
-}
-.Infoboard-wrapper .Information-wrapper .Boxes .Box {
-  width: 20%;
-  height: 100px;
-  box-shadow: 0px 5px 4px 3px #ccd7ff;
-  border-radius: 8px;
-  border: 1px solid #ececec;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.Infoboard-wrapper .Information-wrapper .Boxes .Box p {
+
+.Information-wrapper .Boxes .Box p {
   text-align: center;
   margin: 5px;
 }
-.Infoboard-wrapper .Information-wrapper .Boxes {
+.Information-wrapper .Boxes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 2.5%;
-  justify-content: space-between;
+  margin: 4% 20%;
+  justify-content: space-evenly;
+  gap: 20px;
 }
-.Infoboard-wrapper .Information-wrapper .Divider-text {
+.Information-wrapper .Boxes .Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  border-radius: 20px;
+}
+.Information-wrapper .Boxes .Section p {
+  margin: 5px;
+}
+.Information-wrapper .Divider-text {
   color: rgba(0, 0, 0, 0.6);
-  text-align: left;
+  text-align: center;
   font-family: Open Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 0%;
   margin: 2.5%;
+}
+.Information-wrapper .Exercises {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5%;
+}
+.Information-wrapper .Completed-exercises {
+  display: flex;
+  margin: 2.5%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Information-wrapper .Exercises-done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Information-wrapper .Exercises-done h4 {
+  width: 100%;
+  text-align: center;
+}
+.Information-wrapper .Exercises div {
+  width: 100%;
+}
+.Information-wrapper .Student-exercise h4 {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 20px 0px;
+}
+.Information-wrapper .Student-exercise p {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 20px 0px;
+}
+.Information-wrapper .Student-exercise h4 {
+  font-family: mulish;
+  font-size: 20px;
+  margin: 0px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px 0px;
+}
+.Information-wrapper .Student-exercise p {
+  margin-top: 0px;
 }
