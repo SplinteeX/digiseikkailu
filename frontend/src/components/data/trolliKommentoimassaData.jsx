@@ -18,28 +18,34 @@ export const TrolliKommentoimassaData = () => {
     "ei perustele asiallisesti mielipidettään",
     "levittää huonoa yhteishenkeä netissä",
   ];
-  return (
-    <div className="trollkomm">
-      <div className="normiTekstit">
-        {Tekstit.map((Teksti, index) => (
-          <p key={index}>{Teksti}</p>
-        ))}
-      </div>
 
-      <div className="tuntomerkit">
-        <p className="Otsikko">Valeuutisen tuntomerkit ovat se, että</p>
-        <div className="merkit">
-          {Tuntomerkit1.map((Teksti, index) => (
-            <p key={index}>• {Teksti}</p>
+  return (
+    <>
+      <div className="trollkomm">
+        <div className="normiTekstit">
+          {Tekstit.map((Teksti, index) => (
+            <p key={index}>{Teksti}</p>
           ))}
         </div>
-        <p className="Otsikko">Trollauksen tuntomerkit:</p>
-        <div className="merkit">
-          {Tuntomerkit2.map((Teksti, index) => (
-            <p key={index}>• {Teksti}</p>
-          ))}
+        <div className="trolliKuva">
+          <img src="/src/assets/trollikuva.webp" alt="trolli" />
+        </div>
+
+        <div className="tuntomerkit">
+          <p className="Otsikko">Valeuutisen tuntomerkit ovat se, että</p>
+          <div className="merkit">
+            {Tuntomerkit1.map((Teksti, index) => (
+              <p key={index}>• {Teksti}</p>
+            ))}
+          </div>
+          <p className="Otsikko">Trollauksen tuntomerkit:</p>
+          <div className="merkit">
+            {Tuntomerkit2.map((Teksti, index) => (
+              <p key={index}>• {Teksti}</p>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

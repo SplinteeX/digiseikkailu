@@ -4,6 +4,7 @@ import { Slider } from "../elements/Slider";
 import { useState } from "react";
 import { FancySectionSlider } from "../elements/FancySectionSlider";
 import { Tavoitteet } from "../data/Tavoitteet";
+import { Link } from "react-router-dom";
 export const Teacherinfo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const infoTexts = [
@@ -95,17 +96,31 @@ export const Teacherinfo = () => {
       <div className="Taitotasot">
         <h3>Värit</h3>
         <div className="Taitotaso-kortit">
-          <div className="Kortti" style={{ backgroundColor: "#B3DD94" }}>
-            <p>Suositusikä 6+</p>
+          <div className="Kortti1" style={{ backgroundColor: "#B3DD94" }}>
+            <Link to="https://docs.google.com/document/d/1wgRrbO9PZtgW9f-TS4Y24K6ocznrptJqDbken90ddjs/edit?usp=sharing">
+              <button>Suositusikä 6+</button>
+            </Link>
           </div>
-          <div className="Kortti" style={{ backgroundColor: "#EDC9F9" }}>
-            <p>Suositusikä 9+ (3-4 luokka)</p>
+          <div className="Kortti2" style={{ backgroundColor: "#EDC9F9" }}>
+            <Link to="https://docs.google.com/document/d/1wgRrbO9PZtgW9f-TS4Y24K6ocznrptJqDbken90ddjs/edit?usp=sharing">
+              <button>Suositusikä 9+ (3-4 luokka)</button>
+            </Link>
           </div>
-          <div className="Kortti" style={{ backgroundColor: "#89D3EE" }}>
-            <p>Suositusikä 11+ (5-6 luokka)</p>
+          <div className="Kortti3" style={{ backgroundColor: "#89D3EE" }}>
+            <Link to="https://docs.google.com/document/d/1wgRrbO9PZtgW9f-TS4Y24K6ocznrptJqDbken90ddjs/edit?usp=sharing">
+              <button>Suositusikä 11+ (5-6 luokka)</button>
+            </Link>
           </div>
         </div>
       </div>
+      <div className="nappiContainer">
+        <div className="nappiLinkki">
+          <Link to="https://docs.google.com/document/d/1wgRrbO9PZtgW9f-TS4Y24K6ocznrptJqDbken90ddjs/edit?usp=sharing">
+            <button className="nappi">Tehtävät ja tavoitteet</button>
+          </Link>
+        </div>
+      </div>
+
       <div className="Hahmot">
         <h3>Hahmot</h3>
         <Slider data={Hahmot} />

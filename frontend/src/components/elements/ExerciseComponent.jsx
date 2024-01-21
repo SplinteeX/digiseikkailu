@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/ExerciseComponent.css";
+import "../css/trolliKommentoimassa.css";
 import { useNavigate } from "react-router-dom";
 import TinyMCE from "./tinyMce";
 import { PulseLoader } from "react-spinners";
@@ -116,6 +117,9 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
         return "ohjelmointi-polku-style";
       case "EmpatiaPolku":
         return "empatia-polku-style";
+      case "TrolliKommentoimassa":
+        return "trolli-kommentoimassa-style";
+
       default:
         return "";
     }
@@ -345,10 +349,36 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </div>
             </>
           )}
-          Data.TarinaKuvat && (<p className="Text-div-yellow">TARINA</p>
-          <img className="tarina-kuvat">{Data.TarinaKuvat}</img>
-          <p className="Text-div">{Data.TarinaOtsikot}</p>
-          <p className="Text-div">{Data.TarinaTekstit}</p>)
+          {Data.TarinaKuvat && (
+            <>
+              <p className="Text-div-yellow">TARINA</p>
+              <div className="Tarina-Image-container">
+                {Data.TarinaKuvat.map((kuva, index) => (
+                  <img
+                    className="Full-image"
+                    src={kuva}
+                    alt={`Image ${index}`}
+                  />
+                ))}
+              </div>
+              <div className="Otsikot">
+                {Data.TarinaOtsikot.map((otsikko, index) => (
+                  <p className="White-text-nappi">{otsikko}</p>
+                ))}
+              </div>
+              <div className="tarinaTekstit">
+                {Data.TarinaTekstit.map((teksti, index) => (
+                  <p className="White-text">{teksti}</p>
+                ))}
+              </div>
+            </>
+          )}
+          {Data.juhlaTarinaKuva && (
+            <div>
+              <img src={Data.juhlaTarinaKuva} alt="kuva" />
+            </div>
+          )}
+
           {Data.Teksti && (
             <div className="Text-div">
               <p
@@ -366,6 +396,19 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                   <li key={`numero_${index}`}>{numero}</li>
                 ))}
               </ol>
+            </div>
+          )}
+          {Data.peliKuva && (
+            <div className="peliKuva">
+              <img src={Data.peliKuva} alt="kuva" />
+            </div>
+          )}
+          {Data.loppuTeksti && (
+            <div className="Text-div-loppu">
+              <p className="White-text">
+                Tutustu lisää Digiseikkailun tarinoihin, tehtäviin ja peleihin{" "}
+                {Data.loppuTeksti} osiossa.
+              </p>
             </div>
           )}
           {Data.numeroListat && (

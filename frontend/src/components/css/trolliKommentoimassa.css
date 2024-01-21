@@ -20,3 +20,19 @@
   margin-top: 40px;
   font-weight: bold;
 }
+
+.trollkomm .trolliKuva img {
+  width: 25%;
+}
+
+.trollkomm {
+  text-align: center;
+}
+
+.trolli-kommentoimassa-style {
+  background-color: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
