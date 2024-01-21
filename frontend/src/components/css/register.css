@@ -1,6 +1,7 @@
 /* Register Login Content */
 .Register .Login-content {
   gap: 30px;
+  height: 600px;
   padding-bottom: 10%;
   width: 350px;
 }

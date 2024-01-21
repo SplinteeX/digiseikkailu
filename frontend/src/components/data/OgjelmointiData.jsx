@@ -23,7 +23,7 @@ export const OhjelmointiData = () => {
         "Appi - Ensin sinun pitää harjoitella jotain ohjelmointikieltä, Appi muistutti.",
         "Appi - Mutta ihan ensimmäiseksi viedään Doge ulos. Sitten autan sinua niiden lauseiden kanssa. Vai mitä virkkeitä ne olivat. Mennään!",
       ],
-      Kuva: "/ohjelmointiImages/puu.webp",
+      Kuva: "/src/assets/ohjelmointiImages/puu.webp",
     },
     {
       tehtNum: "2",
@@ -31,8 +31,8 @@ export const OhjelmointiData = () => {
       Kategoria: "OhjelmointiPolku",
       mp4: "https://digiadventurers.com/wp-content/uploads/2019/12/Ohelmointi.mp4",
       Kuvat: [
-        "/ohjelmointiImages/voitoppia.webp",
-        "/ohjelmointiImages/tekstit.webp",
+        "/src/assets/ohjelmointiImages/voitoppia.webp",
+        "/src/assets/ohjelmointiImages/tekstit.webp",
       ],
     },
     {
@@ -43,7 +43,7 @@ export const OhjelmointiData = () => {
         "Alapuolella näet erilaisia kuvia. Yritä pohtia:\n\n Mitkä ovat tietokoneita?\n\n Mitkä eivät ole tietokoneita?\n\n Keskustelkaa koko luokka/pari/ryhmä yhdessä ja perustelkaa vastauksenne.\n\n puhelin / kamera / hissi / aurinko / henkilövaaka / mikroaaltouuni / kassakone / viherkasvi / sakset / vessanpönttö / korvanapit / sadepilvi / peliohjain…",
         "Mistä voin tietää onko joku asia tietokone vai ei?\n\n Jotta asiaa voi sanoa tietokoneeksi, siihen pitäisi kuulua:\n\n ohjelmisto (“softa”, engl. software) on piilossa laitteen sisällä\n\n laitteisto (“rauta”, engl. hardware) on ulkokuori\n\n Tässä tehtävässä voit miettiä asiaa yksinkertaisesti. Pohdi, onko kuvan asiassa ulkokuoren lisäksi sisällä jokin ohjelmisto, johon on sisällytetty erilaisia käskyjä laitteelle. Onko joku ihminen ohjelmoinut laitteeseen tai asiaan ohjeet?\n\n Jos kyseessä on laite, jonka sisällä on ohjelmisto, voit luokitella sen tässä tehtävässä tietokoneeksi.",
       ],
-      Kuva: "/ohjelmointiImages/asioita.webp",
+      Kuva: "/src/assets/ohjelmointiImages/asioita.webp",
       kysymys:
         "Mitkä seuraavista ovat tietokoneita tehtävän määritelmän mukaan?",
       vaihtoehdot: [
@@ -58,7 +58,7 @@ export const OhjelmointiData = () => {
       tehtNum: "4",
       tehtName: "Softaa ja rautaa",
       Kategoria: "OhjelmointiPolku",
-      Kuva: "/ohjelmointiImages/hardware.webp",
+      Kuva: "/src/assets/ohjelmointiImages/hardware.webp",
       docs: "blob:https://drive.google.com/416b9040-f094-450b-9b71-b407d7e896db",
       docsText: "Tulostettava lomake",
       Teksti:
@@ -66,7 +66,7 @@ export const OhjelmointiData = () => {
       puolTeksti:
         "- hiiri\n\n - peliohjain\n\n - chatti\n\n - tekstitiedosto\n\n - tulostin\n\n - osoitin\n\n - puhelin\n\n - nettipeli\n\n",
 
-      puolKuva: "/ohjelmointiImages/jotain.webp",
+      puolKuva: "/src/assets/ohjelmointiImages/jotain.webp",
       kysymys: "Mitä tarkoitetaan ohjelmistolla (“softalla”) tietokoneessa?",
       vaihtoehdot: [
         "A. Tietokoneen ulkokuorta.",
@@ -85,7 +85,7 @@ export const OhjelmointiData = () => {
       ],
       docs: "blob:https://drive.google.com/53d9356d-4eee-4908-9e63-d3bd84786f13",
       docsText: "Tulostettava lomake",
-      Kuva: "/ohjelmointiImages/lista.webp",
+      Kuva: "/src/assets/ohjelmointiImages/lista.webp",
       kysymys: "Mitä tarkoitetaan, kun sanotaan, että laite toimii “koodilla”?",
       vaihtoehdot: [
         "A. Se toimii manuaalisesti.",
@@ -99,7 +99,7 @@ export const OhjelmointiData = () => {
       tehtNum: "6",
       tehtName: "Värikoodiviittaus",
       Kategoria: "OhjelmointiPolku",
-      Kuva: "/ohjelmointiImages/lego.webp",
+      Kuva: "/src/assets/ohjelmointiImages/lego.webp",
       Teksti:
         "Viittaamalla kerrot, että haluat kertoa jotain. Viittaus ei kuitenkaan kerro, mitä haluat sanoa. Viittaaminen sinänsä on jo algoritmi. Viittauksesta seuraa puheenvuoro.\n\n Vaihtakaa viittausalgoritmi multilink-algoritmiin (muutkin palikat käyvät). Oppilaan tehtävä on siirtää viittauksen sijaan pulpetin etureunaan palikka, joka vastaa hänen tahtoaan.\n\n Esimerkiksi jos oppilas haluaa kertoa oikean vastauksen, hän siirtää pulpetin etureunaan pinkin palikan.\n\n Pinkki palikka = Haluan vastata\n\n Keltainen palikka = Haluan kysyä jotain\n\n Vihreä palikka = Olen samaa mieltä\n\n Punainen palikka = Olen eri mieltä",
     },
@@ -138,12 +138,12 @@ export const OhjelmointiData = () => {
         "pysähdy =",
       ],
       puolKuvat: [
-        "/ohjelmointiImages/megafoni.webp",
-        "/ohjelmointiImages/clap.webp",
-        "/ohjelmointiImages/pow.webp",
-        "/ohjelmointiImages/puff.webp",
-        "/ohjelmointiImages/oops.webp",
-        "/ohjelmointiImages/bang.webp",
+        "/src/assets/ohjelmointiImages/megafoni.webp",
+        "/src/assets/ohjelmointiImages/clap.webp",
+        "/src/assets/ohjelmointiImages/pow.webp",
+        "/src/assets/ohjelmointiImages/puff.webp",
+        "/src/assets/ohjelmointiImages/oops.webp",
+        "/src/assets/ohjelmointiImages/bang.webp",
       ],
       Teksti: "Äänet toimivat nyt algoritmeinä",
     },
@@ -152,9 +152,9 @@ export const OhjelmointiData = () => {
       tehtName: "Lue tarina Dogen herkkuleivän valmistuksesta.",
       Kategoria: "OhjelmointiPolku",
       Kuvat: [
-        "/ohjelmointiImages/saisiolla.webp",
-        "/ohjelmointiImages/burgeri.webp",
-        "/ohjelmointiImages/digiway.webp",
+        "/src/assets/ohjelmointiImages/saisiolla.webp",
+        "/src/assets/ohjelmointiImages/burgeri.webp",
+        "/src/assets/ohjelmointiImages/digiway.webp",
       ],
       Tekstit: [
         "1.\n\n 2.\n\n 3.\n\n 4.\n\n 5. ….",

@@ -47,6 +47,7 @@ export const TeacherLogin = () => {
             ) : (
               <PulseLoader color={"#8CCBF3"} loading={isLoading} size={10} />
             )}
+            {error && <div className="error">{error}</div>}
             <a href="">Unohtuiko salasana?</a>
             <Link to={"/kirjaudu"}>
               <CommonButton text={"Palaa"}></CommonButton>

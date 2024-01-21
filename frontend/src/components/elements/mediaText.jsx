@@ -1,16 +1,10 @@
-import { Link } from "react-router-dom";
-
-const MediaText = ({ title, image, text, buttonLabel, url }) => {
+const MediaText = ({ title, image, text, buttonLabel }) => {
   return (
     <div className="mediaText">
       {title && <h3>{title}</h3>}
       <div className="image-container">
         {image && <img src={image} alt="" />}
-        {buttonLabel && (
-          <Link to={url}>
-            <button>{buttonLabel}</button>
-          </Link>
-        )}
+        {buttonLabel && <button>{buttonLabel}</button>}
       </div>
       {text && <p>{text}</p>}
     </div>
