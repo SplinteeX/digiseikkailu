@@ -6,7 +6,7 @@
   font-family: "Roboto", sans-serif;
   width: 100vw;
   background: url("/images/taivas.jpg");
-  min-height: 84vh;
+  height: 84vh;
 }
 
 /* Login Wrapper Heading */
@@ -30,11 +30,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 5%;
   padding-top: 10%;
   max-width: 350px;
   background-color: #79efe9;
-  padding-bottom: 20px;
 }
 
 /* Hide Image Inside Button */
@@ -65,7 +64,6 @@
   font-weight: 600;
   opacity: 60%;
   text-align: center;
-  margin: 20px 125px;
 }
 
 /* Remove Text Decoration from Links */

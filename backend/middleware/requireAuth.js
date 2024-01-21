@@ -1,7 +1,5 @@
 const jwt = require("jsonwebtoken");
 const User = require("../Models/userModel");
-const Student = require("../Models/studentModel");
-const individual = require("../Models/individualUserModel");
 
 const requireAuth = async (req, res, next) => {
   const { authorization } = req.headers;
@@ -12,10 +10,7 @@ const requireAuth = async (req, res, next) => {
 
   try {
     const { _id } = jwt.verify(token, process.env.JWT_SECRET);
-    req.user =
-      (await User.findOne({ _id }).select("_id")) ||
-      (await Student.findOne({ _id }).select("_id")) ||
-      (await individual.findOne({ _id }).select("_id"));
+    req.user = await User.findOne({ _id }).select("_id");
     next();
   } catch (error) {
     console.error("JWT Verification Error:", error);

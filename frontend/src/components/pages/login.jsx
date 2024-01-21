@@ -14,7 +14,9 @@ export const Login = () => {
           <Link to={"/kirjaudu/opettaja"}>
             <CommonButton text={"Opettaja"}></CommonButton>
           </Link>
-          <p className="No-account">Ei vielä tiliä?</p>
+          <p className="No-account">
+            Ei vielä tiliä? Liity nyt 3-kuukauden ilmaiseen kokeiluun!
+          </p>
           <Link to={"/rekisteröidy"}>
             <CommonButton text={"Rekisteröidy"}></CommonButton>
           </Link>

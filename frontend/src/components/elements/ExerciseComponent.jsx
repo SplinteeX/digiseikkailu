@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/ExerciseComponent.css";
+import "../css/trolliKommentoimassa.css";
 import { useNavigate } from "react-router-dom";
 import TinyMCE from "./tinyMce";
 import { PulseLoader } from "react-spinners";
@@ -10,7 +11,7 @@ import CommonButton from "./CommonButton";
 import { useSaveCompletedExercise } from "../hooks/useSaveCompletedExercise";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useRetrieveExercises } from "../hooks/useRetrieveExercises";
-import { toast } from "sonner";
+
 export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
   const [RightTask, setRightTask] = useState(Data.vastaus);
@@ -81,13 +82,11 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
     if (!selectedAnswer) {
       if (clickedAnswer === RightTask) {
         setSelectedAnswer("correct");
-        toast.success("Oikein!");
         {
           user &&
             SaveCompletedExercise(parsedUser._id, Data.tehtNum, Data.Kategoria);
         }
       } else {
-        toast.error("Väärin!");
         setSelectedAnswer("wrong");
         setTimeout(() => {
           setSelectedAnswer(null);
@@ -116,6 +115,11 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
         return "miuku-maukun-kirjasto-style";
       case "OhjelmointiPolku":
         return "ohjelmointi-polku-style";
+      case "EmpatiaPolku":
+        return "empatia-polku-style";
+      case "TrolliKommentoimassa":
+        return "trolli-kommentoimassa-style";
+
       default:
         return "";
     }
@@ -148,6 +152,9 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ))}
             </>
           )}
+          <h3 className="White-text">
+            {Data.tehtNum}. {Data.tehtName}
+          </h3>
           {Data.mp4 && (
             <div className="Video-container">
               <p className="White-text">{Data.mp4Teksti}</p>
@@ -161,21 +168,73 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ></video>
             </div>
           )}
-          <h3 className="White-text">
-            {Data.tehtNum}. {Data.tehtName}
-          </h3>
-          {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
+          {Data.blueTitle && (
+            <>
+              <p className="Blue-text">{Data.blueTitle}</p>
+              {Data.blueInfo && <p className="White-text">{Data.blueInfo}</p>}
+              {Data.blueImage && (
+                <div className="Image-container">
+                  <img
+                    className="Full-image"
+                    src={Data.blueImage}
+                    alt="Blue image"
+                  />
+                </div>
+              )}
+            </>
+          )}
+          {Data.postit && (
+            <>
+              <p className="White-text">{Data.postitTeksti}</p>
+              {Data.postit.map((posti, index) => (
+                <div key={`posti_${index}`} className="Posti-div">
+                  <img src={posti} alt={`Image_${index}`} />
+                </div>
+              ))}
+            </>
+          )}
+          {Data.puolvideo && (
+            <>
+              <div className="Video-container">
+                <p className="White-text">{Data.puolTeksti}</p>
+                <video
+                  className="Video"
+                  src={Data.puolvideo}
+                  width={"50%"}
+                  controls
+                  autoPlay
+                  muted
+                ></video>
+              </div>
 
+              {Data.puolTekstiVideo && (
+                <>
+                  <div className="Text-div">
+                    <p className="White-text">{Data.puolTekstiVideo}</p>
+                  </div>
+                  <div className="Image-container">
+                    <img
+                      className="image25"
+                      src={Data.puolKuvaVideo}
+                      alt="Image"
+                    />
+                  </div>
+                  <div className="Text-div">
+                    <p className="White-text">{Data.tehtäväTekstiVideo}</p>
+                  </div>
+                </>
+              )}
+            </>
+          )}
+          {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
           {Data.puolTeksti && !Array.isArray(Data.puolTeksti) ? (
             <div className="TextImage">
-              <p className="text50">
-                {Data.puolTeksti.split("\n").map((text, index) => (
-                  <React.Fragment key={index}>
-                    {text}
-                    {index !== Data.puolTeksti.split("\n").length - 1 && <br />}
-                  </React.Fragment>
-                ))}
-              </p>
+              <p
+                className="text50"
+                dangerouslySetInnerHTML={{
+                  __html: Data.puolTeksti.replace(/\n/g, "<br>"),
+                }}
+              />
               {Data.puolKuva && (
                 <div className="Image-container">
                   <img className="image50" src={Data.puolKuva} alt="Image" />
@@ -188,14 +247,12 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
             Data.puolTekstit.map((text, index) => (
               <div key={`text_${index}`} className="TextImages">
                 <div className="Text-50-container">
-                  <p className="text50s">
-                    {text.split("\n").map((line, index) => (
-                      <React.Fragment key={index}>
-                        {line}
-                        {index !== text.split("\n").length - 1 && <br />}
-                      </React.Fragment>
-                    ))}
-                  </p>
+                  <p
+                    className="text50s"
+                    dangerouslySetInnerHTML={{
+                      __html: text.replace(/\n/g, "<br>"),
+                    }}
+                  />
                 </div>
                 {Data.puolKuvat && Data.puolKuvat.length > index && (
                   <div className="Image-container">
@@ -208,6 +265,17 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 )}
               </div>
             ))}
+          {Data.nappiTitle && <p className="White-text">{Data.nappiTitle}</p>}
+          {Data.kuvaTitle && <p className="White-text">{Data.kuvaTitle}</p>}
+          {Data.puhelimet && (
+            <div className="puhelimet">
+              {Data.puhelimet.map((puhelin, index) => (
+                <div className="Puhelin-div">
+                  <img src={puhelin} alt={`Image_${index}`} />
+                </div>
+              ))}
+            </div>
+          )}
           {Data.Kuva ? (
             <div className="Full-image-container">
               <img className="Full-image" src={Data.Kuva} alt="" />
@@ -226,30 +294,99 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </div>
             ))}
           {Data.smallTitle && <p className="White-text">{Data.smallTitle}</p>}
+          {Data.sininenNappi && (
+            <div className="Sininen-nappi">
+              <Link to={Data.buttonLink}>
+                <button className="Blue-button">{Data.sininenNappi}</button>
+              </Link>
+            </div>
+          )}
+          {Data.PeukkuKuva && (
+            <>
+              <div className="Text-div">
+                <img src={Data.PeukkuKuva} alt="kuva" />
+                <p>PEUKKUTEHTÄVÄ</p>
+              </div>
+              <div className="Image-container">
+                <img className="image25" src={Data.peukkuKuva} alt="Image" />
+              </div>
+            </>
+          )}
           {Data.Tekstit &&
             Array.isArray(Data.Tekstit) &&
             Data.Tekstit.map((text, index) => (
               <div key={`text_${index}`} className="Text-div">
-                <p className="Text">
-                  {text.split("\n").map((line, index) => (
-                    <React.Fragment key={index}>
-                      {line}
-                      {index !== text.split("\n").length - 1 && <br />}
-                    </React.Fragment>
-                  ))}
-                </p>
+                <p
+                  className="Text"
+                  dangerouslySetInnerHTML={{
+                    __html: text.replace(/\n/g, "<br>"),
+                  }}
+                />
               </div>
             ))}
+          {Data.tarinaNappi && (
+            <>
+              <div className="Text-div-yellow">
+                <p>TARINA</p>
+              </div>
+              <div className="Sininen-nappi">
+                <Link to={Data.buttonLink}>
+                  <button className="Blue-button">{Data.tarinaNappi}</button>
+                </Link>
+              </div>
+              <div className="siniKuva">
+                <img src={Data.tarinaKuva} alt="kuva" />
+              </div>
+            </>
+          )}
+          {Data.tarinaTeksti && (
+            <>
+              <div className="Text-div-yellow">
+                <p>TARINA</p>
+              </div>
+              <div className="Text-div">
+                <p className="Red-text">{Data.tarinaTeksti}</p>
+              </div>
+            </>
+          )}
+          {Data.TarinaKuvat && (
+            <>
+              <p className="Text-div-yellow">TARINA</p>
+              <div className="Tarina-Image-container">
+                {Data.TarinaKuvat.map((kuva, index) => (
+                  <img
+                    className="Full-image"
+                    src={kuva}
+                    alt={`Image ${index}`}
+                  />
+                ))}
+              </div>
+              <div className="Otsikot">
+                {Data.TarinaOtsikot.map((otsikko, index) => (
+                  <p className="White-text-nappi">{otsikko}</p>
+                ))}
+              </div>
+              <div className="tarinaTekstit">
+                {Data.TarinaTekstit.map((teksti, index) => (
+                  <p className="White-text">{teksti}</p>
+                ))}
+              </div>
+            </>
+          )}
+          {Data.juhlaTarinaKuva && (
+            <div>
+              <img src={Data.juhlaTarinaKuva} alt="kuva" />
+            </div>
+          )}
+
           {Data.Teksti && (
             <div className="Text-div">
-              <p className="Text" style={{}}>
-                {Data.Teksti.split("\n").map((text, index) => (
-                  <React.Fragment key={index}>
-                    {text}
-                    <br />
-                  </React.Fragment>
-                ))}
-              </p>
+              <p
+                className="Text"
+                dangerouslySetInnerHTML={{
+                  __html: Data.Teksti.replace(/\n/g, "<br>"),
+                }}
+              />
             </div>
           )}
           {Data.numeroLista && (
@@ -259,6 +396,19 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                   <li key={`numero_${index}`}>{numero}</li>
                 ))}
               </ol>
+            </div>
+          )}
+          {Data.peliKuva && (
+            <div className="peliKuva">
+              <img src={Data.peliKuva} alt="kuva" />
+            </div>
+          )}
+          {Data.loppuTeksti && (
+            <div className="Text-div-loppu">
+              <p className="White-text">
+                Tutustu lisää Digiseikkailun tarinoihin, tehtäviin ja peleihin{" "}
+                {Data.loppuTeksti} osiossa.
+              </p>
             </div>
           )}
           {Data.numeroListat && (
@@ -289,7 +439,6 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </ul>
             </div>
           )}
-
           {Data.palloListat && (
             <>
               {Data.palloListat.map((lista, listaIndex) => (
@@ -339,6 +488,12 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 {Data.tehtNum}. {Data.tehtName}
               </h3>
               <h3 className="White-text">{Data.kysymys}</h3>
+              {selectedAnswer === "correct" && (
+                <p className="White-text">Oikein!</p>
+              )}
+              {selectedAnswer === "wrong" && (
+                <p className="White-text">Väärin!</p>
+              )}
 
               <div className="Kysymys-vaihtoehdot">
                 {Data.vaihtoehdot.map((vaihtoehto, index) => (

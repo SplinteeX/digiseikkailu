@@ -17,7 +17,7 @@ const YoutubeVideo = ({
           width={width}
           height={height}
           src={`https://www.youtube.com/embed/${videoId}`}
-          frameBorder="0"
+          frameBorder="0" 
           allow="autoplay; encrypted-media"
           allowFullScreen
         ></iframe>

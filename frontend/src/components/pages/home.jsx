@@ -2,7 +2,6 @@ import MediaText from "../elements/mediaText";
 import { TehtäväPaketit } from "../data/TehtäväPaketit";
 import { ExerciseCard } from "../elements/ExerciseCard";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "../css/home.css";
 import "../css/Exercises.css";
 
@@ -33,20 +32,18 @@ const Home = () => {
       title: "Näppäintaidot haltuun TVT-opetuksen taitopaketilla",
       Image: "/images/tvt-opetuksen-taitopaketti-home.png",
       text: "Näppäintaitokortit ovat loistava apu TVT-opetuksen perustaitojen vahvistamisessa!...",
-      url: "/tuotteet/TVT-opetuksen-taitopaketti",
     },
     {
       title: "Tarinat ja tehtävät -työkirja",
       Image: "/images/tarinat-ja-tehtävät-työkirja-home.png",
       text: "Tarinat ja tehtävät -työkirja tarjoaa mielenkiintoisia ja hauskoja tapoja oppia tieto- ja viestintäteknologian käsitteitä sekä vahvistaa lukemisen ja kuvittelemisen taitoja...",
-      url: "/tuotteet/TarinatTyokirja",
     },
   ];
 
   return (
     <div className="Home-wrapper">
       <div className="Exercise-cards">
-        <h2 className="Title">Tehtävämaailmat</h2>
+        <h2 className="Title">Tehtävä maailmat</h2>
         <div className="Tehtävä-Paketit">
           <div className="Kortit">
             {[
@@ -65,9 +62,6 @@ const Home = () => {
                 Data={exercise}
                 Flipped={flippedIndex === index}
                 handleCardFlip={() => handleCardFlip(index)}
-                initialAnimation={{ opacity: 0, y: 50 }}
-                animateAnimation={{ opacity: 1, y: 0 }}
-                transitionAnimation={{ duration: 0.5, delay: index * 0.2 }}
               />
             ))}
           </div>
@@ -81,14 +75,13 @@ const Home = () => {
             image={data.Image}
             text={data.text}
             buttonLabel={"Lue lisää"}
-            url={data.url}
           />
         ))}
       </div>
       <div className="home-empatia-polku">
         <MediaText
           title={
-            "Digiseikkailun Empatiapolku on ilmaista opetusmateriaalia kouluille empatiataitojen ja verkossa käyttäytymisen vahvistamiseksi."
+            "Digiseikkailun Empatiapolku is a free educational resource for schools to strengthen empathy skills and online behavior."
           }
           image={"/images/home-empatia-polku.png"}
         />

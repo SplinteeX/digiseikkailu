@@ -190,41 +190,39 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  justify-content: center;
+  gap: 20px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   animation: slideIn 0.5s ease-in-out;
+  align-items: center;
 }
 
 /* Field Holder Styles */
 .Create-student .field-holder {
   width: 100%;
-  border-bottom: 0px;
 }
 .Create-student .field-holder form {
   width: 100%;
 }
 .Create-student .field-holder input {
   width: 100%;
-  border-bottom: 3px solid black;
-  padding: 10px 0px;
 }
 .Create-student .field-holder label {
-  top: 10px;
-  font-family: mulish;
+  top: 0px;
 }
 .Create-student .field-holder :not(:placeholder-shown) + label {
-  top: -10px;
+  top: -15px;
   font-size: 0.9em;
 }
 .Create-student .field-holder :focus + label {
-  top: -10px;
+  top: -15px;
   left: 0;
   font-size: 0.9em;
-  background-color: white;
 }
 
 /* Button Styles for Create Student */
 .Create-student button {
+  width: 90%;
   height: 40px;
   margin: 1% 1%;
   border: none;

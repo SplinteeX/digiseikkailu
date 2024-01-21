@@ -1,5 +1,4 @@
 import Cookies from "js-cookie";
-import { toast } from "sonner";
 
 export const useDeleteStudent = () => {
   const deleteStudent = async (id) => {
@@ -22,7 +21,8 @@ export const useDeleteStudent = () => {
       if (!response.ok) {
         throw new Error(json.message);
       }
-      toast.success("Opiskelija poistettu!");
+
+      console.log("Student deleted successfully");
     } catch (error) {
       throw error;
     }

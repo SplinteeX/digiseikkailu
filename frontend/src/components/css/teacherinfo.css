@@ -126,7 +126,7 @@ li {
   justify-content: center;
   align-items: space-between;
 }
-.Teacherinfo-wrapper .Taitotasot .Kortti {
+.Teacherinfo-wrapper .Taitotasot .Kortti1 {
   width: 28%;
   height: 100px;
   border-radius: 20px;
@@ -139,11 +139,75 @@ li {
   height: 250px;
   padding: 20px;
 }
-.Teacherinfo-wrapper .Taitotasot .Kortti p {
+.Teacherinfo-wrapper .Taitotasot .Kortti1:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti1 button {
   margin: 0px;
   font-size: 20px;
   font-weight: bold;
   font-family: Mulish;
+  background-color: #b3dd94;
+  border: 0px;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti1 button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti2 {
+  width: 28%;
+  height: 100px;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  text-align: center;
+  height: 250px;
+  padding: 20px;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti2:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti2 button {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Mulish;
+  background-color: #edc9f9;
+  border: 0px;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti3 {
+  width: 28%;
+  height: 100px;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  text-align: center;
+  height: 250px;
+  padding: 20px;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti3 button {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Mulish;
+  background-color: #89d3ee;
+  border: 0px;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti3:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Teacherinfo-wrapper .Taitotasot .Kortti3 button:hover {
+  cursor: pointer;
+  opacity: 80%;
 }
 .Teacherinfo-wrapper h3 {
   font-family: Mulish;
@@ -279,6 +343,44 @@ li {
 .Teacherinfo-wrapper .Section-slider .Content-section h3 {
   text-align: left;
   margin-left: 20px;
+}
+
+.Teacherinfo-wrapper .nappiLinkki {
+  background-color: #8ad4ee;
+  padding: 10px;
+  border-radius: 10px;
+  width: 15%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.Teacherinfo-wrapper .nappiLinkki:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Teacherinfo-wrapper .nappiLinkki button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+.Teacherinfo-wrapper .nappiLinkki button {
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #8ad4ee;
+  border: 0px;
+  font-family: Mulish;
+  font-size: 20px;
+}
+.Teacherinfo-wrapper .nappiContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
 }
 
 /* Responsive Styles for Screen Widths */

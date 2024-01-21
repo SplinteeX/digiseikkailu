@@ -5,7 +5,10 @@ export const DogenBoxiData = () => {
       tehtName: "Harjoitellaan uutisten rakennetta",
       Kategoria: "DogenBoxi",
       smallTitle: "Kirjoita oma uutinen!",
-      Kuvat: ["/DogeImages/uutisankkuri.webp", "/DogeImages/lokki.webp"],
+      Kuvat: [
+        "/src/assets/DogeImages/uutisankkuri.webp",
+        "/src/assets/DogeImages/lokki.webp",
+      ],
       Tekstit: [
         "Mieti aihe ja noudata ohjeita.",
         "Lisää uutiskuva itse kuvaamalla tai poimi sopiva ja luvallinen kuva netistä.",
@@ -50,7 +53,7 @@ export const DogenBoxiData = () => {
       ],
       puolTeksti:
         "Tarinassa käsitellään tiedon luotettavuuden arviointia sekä tutustutaan oikeisiin uutisiin ja valeuutisiin",
-      puolKuva: "/DogeImages/jalkapallo.webp",
+      puolKuva: "/src/assets/DogeImages/jalkapallo.webp",
       Tekstit: [
         "Viikko oli ollut pitkä ja raskas. Apilla oli ollut paljon koulutöitä ja Häsän kanssa oli kuvattu uusia videoita Häsän Youtube-kanavalle. Esitelmäkin oli tullut valmiiksi, vielä piti harjoitella se esityskuntoon.",
         "Viikonloppuna olisi kiva nukkua myöhään, mutta Doge heräsi aina aikaisin ja herätti Apin. Sen oli päästävä aamulenkille.",
@@ -76,7 +79,10 @@ export const DogenBoxiData = () => {
       tehtNum: "3",
       tehtName: "Tunnistetaan valeuutinen",
       Kategoria: "DogenBoxi",
-      Kuvat: ["/DogeImages/lentävänorsu.webp", "/DogeImages/valeuutinen.webp"],
+      Kuvat: [
+        "/src/assets/DogeImages/lentävänorsu.webp",
+        "/src/assets/DogeImages/valeuutinen.webp",
+      ],
       Tekstit: [
         "Kuuluisa lentävä elefantti nähty Helsingin yllä – asiantuntijat hämmennyksissä! Helsinki, 1. huhtikuuta 2025",
         "Tänään Helsingin taivaalla tapahtui jotain uskomatonta, kun lentävä elefantti ilmestyi pilvien joukkoon! Satojen ihmisten silminnäkijäkertomukset ovat vahvistaneet tämän hämmästyttävän ilmiön, joka on herättänyt ihmetystä ja riemua ympäri kaupunkia.",
@@ -156,7 +162,7 @@ export const DogenBoxiData = () => {
       ],
       puolTeksti:
         "Tarinassa käsitellään: tutustutaan trollaamisen käsitteeseen, saadaan ohjeita, kuinka trollauksen voi pysäyttää omalta kohdaltaan, vahvistetaan nettikiusaamisen tunnistamisen taitoja sekä muistutetaan yhteisöllisestä ja rakentavasta viestinnästä mediassa.",
-      puolKuva: "/DogeImages/trollipostia.png",
+      puolKuva: "/src/assets/DogeImages/trollipostia.png",
       Tekstit: [
         "Appi — Voi himpuran himpura. Taas täällä on näitä, Appi päivitteli Häsälle katsoessaan Supersovelluksen palautteita.",
         "Appi — Kuuntele nyt tätäkin: ”Tosi omaperäistä! Ette sitten mitään kiinnostavampaa osanneet tehdä?! Tällaista sovellusta ei tarvita missään.”",
@@ -184,7 +190,10 @@ export const DogenBoxiData = () => {
       tehtNum: "7",
       tehtName: "Trolli, provo ja fleimaus",
       Kategoria: "DogenBoxi",
-      Kuvat: ["/DogeImages/trollinpoyta.webp", "/DogeImages/noitapata.webp"],
+      Kuvat: [
+        "/src/assets/DogeImages/trollinpoyta.webp",
+        "/src/assets/DogeImages/noitapata.webp",
+      ],
       Tekstit: [
         "Trolli on internet-slangisana, jolla tarkoitetaan viestiä tai henkilöä, jonka tarkoitus on ärsyttää ihmisiä, aiheuttaa ristiriitoja, lisätä turhien viestien kirjoittamista ja saada vastaukseksi fleimejä.",
         "Fleimit taas ovat kiihkeitä tai muuten tunteellisia vastauksia tai ennalta-arvattavia viestejä.",
@@ -210,7 +219,10 @@ export const DogenBoxiData = () => {
       tehtNum: "8",
       tehtName: "Rakennetaan oma uutisstudio",
       Kategoria: "DogenBoxi",
-      Kuvat: ["/DogeImages/uutis.webp", "/DogeImages/uutislähetys.webp"],
+      Kuvat: [
+        "/src/assets/DogeImages/uutis.webp",
+        "/src/assets/DogeImages/uutislähetys.webp",
+      ],
       numeroListat: [
         [
           "Ryhmä kokoaa yhdessä kaksi oikeaa uutista ajankohtaisista asioista, omaa koulua tai kaupunkia koskevista aiheista sekä yhden uutisen ajankohtaisista urheiluun liittyvistä aiheista.",
@@ -256,8 +268,8 @@ export const DogenBoxiData = () => {
       tehtName: "Herätetään uutiskuva henkiin",
       Kategoria: "DogenBoxi",
       Kuvat: [
-        "/DogeImages/uutiskuvaeloon.webp",
-        "/DogeImages/sarjakuvakuva.webp",
+        "/src/assets/DogeImages/uutiskuvaeloon.webp",
+        "/src/assets/DogeImages/sarjakuvakuva.webp",
       ],
       Tekstit: [
         "Etsikää luokkaanne kiinnostavia uutisia jostakin verkkolehdestä (esimerkiksi Lasten uutiset). Aloittakaa tutkimalla uutisen kuvaa.",
@@ -286,9 +298,9 @@ export const DogenBoxiData = () => {
       tehtName: "Meemi",
       Kategoria: "DogenBoxi",
       Kuvat: [
-        "/DogeImages/meemi1.webp",
-        "/DogeImages/meemi2.webp",
-        "/DogeImages/meemi3.webp",
+        "/src/assets/DogeImages/meemi1.webp",
+        "/src/assets/DogeImages/meemi2.webp",
+        "/src/assets/DogeImages/meemi3.webp",
       ],
       Tekstit: [
         "Meemi on internetilmiö\n\n- Meemi voi olla joko kuva jossa on siihen sopivia hauskoja tekstejä, kotivideo, pieni animaationpätkä (GIF)..\n\n- Meemi viittaa johonkin internetissä leviävään asiaan, joka saavuttaa suuren suosion ja leviää nopeasti verkossa\n\n- Jotkut ilmiöistä ovat lyhytikäisiä, toiset pysyvät suosiossa vuosikausia\n\n- Vähäpätöisiltä vaikuttavat asiat, kuten kotitekoiset videoleikkeet, ovat voineet nousta internetissä hyvin suosituiksi\n\n- Internetilmiöt ovat usein ihmisiä, kuvankäsittelyohjelmilla tehtyjä kuvia, flash-animaatioita tai musiikkivideoita\n\n- Periaatteessa kuitenkin mikä tahansa asia voi nousta suosituksi internetilmiöksi",
@@ -311,7 +323,7 @@ export const DogenBoxiData = () => {
       tehtNum: "12",
       tehtName: "Varjot Trollitehtaassa",
       Kategoria: "DogenBoxi",
-      Kuva: "/DogeImages/trollitehdas.webp",
+      Kuva: "/src/assets/DogeImages/trollitehdas.webp",
       Tekstit: [
         "Kaukana digitaalisen maailman syrjäisessä kolkassa sijaitsi paikka nimeltään Trollitehdas. Tämä paikka ei ollut iloinen tai värikäs; se oli täynnä varjoja ja salaisuuksia.\n\nTehdasta johti Päätrolli, vakava hahmo, jolla oli suuret silmälasit ja joka piti aina tiukasti kiinni säännöistä. “Meidän työmme on tärkeää,” hän sanoi. “Meidän on luotava tarinoita, jotka saavat ihmiset miettimään ja kyseenalaistama\n\nTrollitehtaassa oli erilaisia osastoja. Yhdessä osastossa kirjoitettiin valeuutisia. Nämä eivät olleet hassuja tai kevyitä tarinoita; ne olivat vakavia ja usein harhaanjohtavia. “On tärkeää, että ihmiset uskovat meitä,” sanoi yksi kirjoittaja. “Se antaa meille valtaa ja vaikutusvaltaa.”\n\nToisessa osastossa oli kommenttien kirjoittajia, jotka levittivät epävarmuutta ja pelkoa. Heidän tarkoituksensa oli saada ihmiset riitelemään ja epäilemään toisiaan. “Kun ihmiset eivät luota toisiinsa, he ovat heikompia,” he sanoivat.\n\nKolmannessa osastossa oli kuvahuijausten tekijöitä. Heidän työnsä oli luoda kuvia, jotka näyttivät todellisilta, mutta jotka olivat täysin keksittyjä. “Meidän kuvamme saavat ihmiset kyseenalaistamaan, mikä on totta ja mikä ei,” he selittivät.\n\nEräänä päivänä yksi nuori trolli, nimeltään Miina, alkoi kyseenalaistaa tehtaan toimintaa. “Miksi meidän täytyy levittää näitä valheita?” hän kysyi Päätrollilta. “Eikö totuus ole tärkeämpää?”\n\nPäätrolli katsoi Miinaa pitkään ja vakavasti. “Meidän työmme on vaikuttaa ihmisten ajatteluun,” hän sanoi. “Mutta sinun kysymyksesi on tärkeä. Meidän on aina muistettava vastuumme ja seuraukset siitä, mitä levitämme maailmaan.”\n\nMiinan kysymykset saivat muutkin trollit miettimään. He alkoivat ymmärtää, että heidän tekonsa vaikuttivat ihmisten elämään, ja että valheilla oli seurauksensa. Vähitellen Trollitehdas muuttui: se ei enää keskittynyt valeuutisiin, vaan alkoi tuottaa tarinoita, jotka auttoivat ihmisiä ymmärtämään maailmaa paremmin.\n\nJa niin Trollitehdas muuttui paikasta, joka levitti varjoja ja epävarmuutta, paikaksi, joka kertoi totuutta ja iloa.",
         "Etsi syyt trollitehtaan toimintaan\n\nTutustu allaolevaan tekstiin trollien toiminnasta.\n\nRaahaa trollien syyt tehdä valeuutisia roskakoriin.\n\nRaahaa oikeiden uutisten syyt Dogen suurennuslasiin.",
@@ -331,7 +343,7 @@ export const DogenBoxiData = () => {
       tehtNum: "13",
       tehtName: "Lallu Lihaskimppu ja kuvahuijaus",
       Kategoria: "DogenBoxi",
-      Kuva: "/DogeImages/HäsäJaAppi.webp",
+      Kuva: "/src/assets/DogeImages/HäsäJaAppi.webp",
       Tekstit: [
         "Häsä ja Appi ihastelevat Zulk-elokuvaa televisiosta.",
         "Häsä & Appi — Miten joku voi olla noin lihaksikas? Ja miten tuokin näyttelijä voi olla noin kaunis? lapset pohtivat. — Tekiköhän Lallu Lihaskimppu kaikki stuntit itse?",
@@ -363,7 +375,7 @@ export const DogenBoxiData = () => {
       tehtNum: "14",
       tehtName: "Harjoitellaan kuvanlukua",
       Kategoria: "DogenBoxi",
-      Kuva: "/DogeImages/Luokkahuone.webp",
+      Kuva: "/src/assets/DogeImages/Luokkahuone.webp",
       Tekstit: [
         "Tämä kuva esittää eloisaa ja opettavaista tilannetta, jossa lapset aktiivisesti osallistuvat kuvien analysointiin. Lapset istuvat pöydän ympärillä ja keskustelevat monenlaisista valokuvista ja maalauksista, jotka on levitetty heidän eteensä. He osoittavat kuvia, keskustelevat niiden merkityksistä ja symboleista, ja jotkut lapset kirjoittavat muistiinpanoja. Toiset taas näyttävät tarkkailevan kuvia mietteliäästi. Luokkahuone on kirkas ja eläväinen, seinillä on julisteita visuaalisesta lukutaidosta ja kuvien ymmärtämisestä. Kuva on tyyliltään sarjakuvamainen, mukaansatempaava ja sopii nuorelle yleisölle.",
         "Tämä kuva korostaa lasten keskinäistä yhteistyötä ja kommunikaatiota, heidän osallistumistaan ja aktiivista oppimista. Se myös heijastaa kouluympäristön tärkeää roolia visuaalisen lukutaidon ja kriittisen ajattelun kehittämisessä.",
@@ -395,7 +407,10 @@ export const DogenBoxiData = () => {
       tehtNum: "15",
       tehtName: "Tunnistanko mainoksen",
       Kategoria: "DogenBoxi",
-      Kuvat: ["/DogeImages/dogekokis.webp", "/DogeImages/mainostaulu.webp"],
+      Kuvat: [
+        "/src/assets/DogeImages/dogekokis.webp",
+        "/src/assets/DogeImages/mainostaulu.webp",
+      ],
       Tekstit: [
         "Mikä on mainos?",
         "Mainos kertoo tavaroista tai palveluista, joita halutaan myydä. Mainoksen tarkoitus on saada ihmiset ostamaan mainostettavaa asiaa, esimerkiksi puhelimia, vaatteita tai hampurilaisia.\n\nMainos pyrkii kiinnittämään kuluttajan huomion. Mainostajat miettivät tarkasti, minkälaisia värejä, kuvia ja ihmisiä mainoksissa käytetään. Mainostajat suunnittelevat mainokset juuri tietylle kohderyhmälle ja valitsevat heitä kiinnostavia asioita mainokseen.\n\nJoskus mainosta voi olla vaikea erottaa mainokseksi. Kannattaa muistaa, että mainos ei ole faktatietoa, vaan sen tarkoitus on vaikuttaa kuluttajien ajatteluun ja saada ihmiset ostamaan tuotteita. Siksi on oltava tarkkana, kun seuraa mediaa. Mainosta ei pidä sekoittaa tietoon.",
@@ -418,9 +433,9 @@ export const DogenBoxiData = () => {
       tehtName: "Tehokasta tiedonhakua",
       Kategoria: "DogenBoxi",
       Kuvat: [
-        "/DogeImages/tehokastiedonhaku.webp",
-        "/DogeImages/google.webp",
-        "/DogeImages/tehokastagif.webp",
+        "/src/assets/DogeImages/tehokastiedonhaku.webp",
+        "/src/assets/DogeImages/google.webp",
+        "/src/assets/DogeImages/tehokastagif.webp",
       ],
       Tekstit: [
         "1. Pidä asiat yksinkertaisina\n\n- Mitä tehdä: Aloita yksinkertaisilla hauilla, kuten “missä on lähin lentokenttä?”.\n\n- Vinkki: Jos etsit jotain tiettyä paikkaa tai tuotetta, lisää hakusanaan sijainti. Esimerkiksi “leipomo Helsinki”.\n\n2. Etsi tietoja puhumalla\n\n- Mitä tehdä: Jos et halua kirjoittaa, käytä puhehakua. Voit tehdä tämän esimerkiksi klikkaamalla Google-sovelluksen mikrofonikuvaketta.\n\n3. Valitse sanat oikein\n\n- Mitä tehdä: Mieti, mitkä sanat löytyvät todennäköisimmin etsimältäsi sivulta. Esimerkiksi, käytä “päänsärky” sen sijaan, että kirjoittaisit “päähän sattuu”.\n\n4. Älä huolehdi pikkuasioista\n\n- Oikeinkirjoitus: Jos kirjoitat väärin, Google yleensä korjaa sen.\n\n- Isot kirjaimet: Ei ole väliä, käytätkö isoja vai pieniä kirjaimia, esimerkiksi “New York Times” ja “new york times” tuottavat samat tulokset.\n\n5. Löydä vastaukset nopeasti\n\n- Sää: Kirjoita “sää” nähdäksesi sijaintisi sään tai lisää kaupungin nimi, esim. “sää Helsinki”.\n\n- Sanakirja: Saat selityksen sanalle kirjoittamalla “define” sanan eteen.\n\n- Laskelmat ja valuuttamuunnokset: Voit tehdä matemaattisia laskuja ja valuuttamuunnoksia suoraan hakukentässä.\n\n- Urheilu: Näet urheilujoukkueen tiedot kirjoittamalla joukkueen nimen.\n\n6. Opettele tehokasta tiedonhakua\n\n- Lisävinkkejä: Voit saada lisää vinkkejä ja oppia tehokkaammasta tiedonhausta eri lähteistä.",
@@ -444,7 +459,7 @@ export const DogenBoxiData = () => {
       tehtNum: "17",
       tehtName: "Miten tunnistan luotettavan tiedon",
       Kategoria: "DogenBoxi",
-      Kuva: "/DogeImages/luotettavatieto.webp",
+      Kuva: "/src/assets/DogeImages/luotettavatieto.webp",
       Tekstit: [
         "Miten voit olla varma, että tieto, jota löydät, on luotettavaa. Tämä taito on nimeltään lähdekritiikki. Se auttaa sinua erottamaan toden taruista ja varmistamaan, että tiedät, mitä voit uskoa. Tässä muutamia vinkkejä, miten teet lähdekritiikkiä:",
         "1. Onko sisältö totta vai tarua?\n\n- Mieti, onko tieto järkeenkäypää. Joskus juttuja kirjoitetaan vain hauskuuttamaan tai säikyttämään ihmisiä.\n\n2. Onko sisältö faktaa vai uskomusta?\n\n- Faktoja ovat asiat, jotka voidaan todistaa todeksi. Uskomukset ovat sellaisia juttuja, joita jotkut ihmiset uskovat, mutta joita ei voi todistaa.\n\n3. Kuka on sisällön takana?\n\n- Jos tieto on asiantuntijalta tai luotettavalta organisaatiolta, se on todennäköisemmin luotettavaa. Asiantuntijat usein myös kertovat, mistä he ovat saaneet tietonsa.\n\n4. Miksi sisältö on tehty?\n\n- Onko se tehty opettamaan sinua, vai yrittääkö se myydä sinulle jotain? Jos tarkoituksena on myynti tai mainostus, tieto ei ehkä ole niin luotettavaa.\n\n5. Milloin tieto on julkaistu?\n\n- Jos tieto on tosi vanhaa, se ei ehkä enää pidä paikkaansa. Maailma muuttuu koko ajan!\n\nInternet-lähteet\n\n- Netissä kuka tahansa voi tehdä sivuja, joten on tärkeää katsoa, kuka sivun on tehnyt. Luotettavilla sivuilla kerrotaan, kuka on sivun takana ja milloin se on viimeksi päivitetty. Jos sivu näyttää olevan vain myyntiin tai mainostukseen, kannattaa olla varovainen sen tiedon kanssa.\n\nTekijänoikeudet\n\n- Jos teet esitelmää tai jotain muuta, varmista, että saat käyttää siihen löytämääsi tietoa. Tekijänoikeudet suojelevat ihmisten luomaa materiaalia.\n\nNyt tiedät, miten voit selvittää, onko löytämäsi tieto luotettavaa. Muista, että on aina hyvä kysyä aikuisilta tai opettajilta apua, jos et ole varma jostakin asiasta. Onnea tiedonetsintään!",
@@ -497,7 +512,7 @@ export const DogenBoxiData = () => {
       tehtNum: "19",
       tehtName: "Mitä ihmettä tekee valkohattuhakkeri",
       Kategoria: "DogenBoxi",
-      Kuva: "/DogeImages/valkohattuhakkeri.webp",
+      Kuva: "/src/assets/DogeImages/valkohattuhakkeri.webp",
       Tekstit: [
         "Valkohattuhakkerit ovat todellakin kyberturvallisuuden ammattilaisia, joiden työ on ehdottoman tärkeää nykypäivän digitaalisessa maailmassa. Heidän tehtävänsä on auttaa suojelemaan tietoja ja järjestelmiä mahdollisilta kyberuhkilta. Katsotaanpa tarkemmin, mitä he tekevät:",
         "Valkohattuhakkerit",
@@ -524,7 +539,7 @@ export const DogenBoxiData = () => {
       tehtNum: "20",
       tehtName: "Kuvahaun käyttö huijauksen selvityksessä",
       Kategoria: "DogenBoxi",
-      Kuva: "/DogeImages/suurennuslasi.webp",
+      Kuva: "/src/assets/DogeImages/suurennuslasi.webp",
       Tekstit: [
         "Se on itse asiassa aika helppoa! Seuraa näitä askelia:\n\nNäin Tunnistat Kuvahuijauksen:",
         "1. Valitse kuva:\n\n- Löydä netistä uutiskuva, josta haluat tietää enemmän.\n\n2. Kopioi kuvan osoite:\n\n- Klikkaa kuvaa hiiren oikealla painikkeella.\n\n- Valitse “Kopioi kuvan URL-osoite”. URL-osoite on kuin kuvan osoite netissä.\n\n3. Mene Googlen kuvahakuun:\n\n- Avaa nettiselain ja kirjoita osoitekenttään images.google.com.\n\n- Etsi sivulta pieni kamera ja klikkaa sitä.\n\n4. Liitä kuvan osoite:\n\n- Etsi kohta, jossa lukee “Liitä kuvan URL-osoite”.\n\n- Liitä kopioimasi osoite siihen.\n\n5. Hae kuvaa:\n\n- Klikkaa “Hae kuvan perusteella”.\n\n6. Tutki tuloksia:\n\n- Katso, millä sivuilla sama kuva on ollut ja milloin se on sinne laitettu.\n\nTärkeä Vinkki:\n\n- Jos löydät kuvan, joka on julkaistu ensimmäisen kerran monta vuotta sitten, se ei voi olla oikea kuva uusista uutisista. Esimerkiksi, jos kuva on julkaistu vuonna 2010, se ei voi olla oikea kuva tapahtumasta, joka on tapahtunut vuonna 2018.\n\nNäillä ohjeilla voit itse selvittää, onko uutiskuva totta vai keksittyä. On tosi hyvä olla utelias ja tarkistaa asiat itse, varsinkin jos kuva näyttää oudolta tai liian jännältä ollakseen totta!",
@@ -542,7 +557,7 @@ export const DogenBoxiData = () => {
       tehtNum: "21",
       tehtName: "Millainen mainos sopii sinulle",
       Kategoria: "DogenBoxi",
-      Kuva: "/DogeImages/mainonta.webp",
+      Kuva: "/src/assets/DogeImages/mainonta.webp",
       Tekstit: [
         "Millainen Kuluttaja Olet?\n\n1. Kerro Itsestäsi:\n\n- Mieti ikääsi, oletko tyttö vai poika, missä asut (kaupungissa, maalla…), keitä kuuluu perheeseesi, mitä harrastat ja mistä pidät.\n\n- Mieti, miten paljon ja millä tavalla käytät mediaa, kuten televisiota, nettiä, pelejä tai lehtiä.\n\n2. Mitä Sinulle Kannattaisi Mainostaa?:\n\n- Ajattele, mitkä asiat tai tuotteet sopisivat sinulle. Esimerkiksi, jos pidät jalkapallosta, sinulle voitaisiin mainostaa jalkapallokenkiä tai -pelejä.\n\n- Mieti myös, mitä sinä haluaisit nähdä mainoksessa. Mitkä asiat saavat sinut innostumaan?\n\n3. Suunnittele Mainos:\n\n- Valitse yksi tuote, joka kiinnostaa sinua.\n\n- Mieti, minkälaiset värit, kuvat ja tekstit siinä olisi. Jos tuote on jalkapallokenkä, ehkä haluat nähdä kuvan suosikkipelaajastasi tai kengistä toiminnassa.\n\n- Piirrä tai kuvaa mainos. Voit käyttää paperia ja kyniä tai tietokonetta, jos osaat.\n\nMuista\n\n- Tämä on hauska tapa oppia, miten mainokset tehdään ja miten ne yrittävät kiinnittää huomiosi. Kun teet oman mainoksen, opit myös miettimään, miksi jotkut mainokset vetoavat sinuun enemmän kuin toiset.\n\nOnnea mainoksen suunnitteluun! Ole luova ja pidä hauskaa!",
       ],
@@ -560,7 +575,7 @@ export const DogenBoxiData = () => {
       tehtNum: "22",
       tehtName: "Opitaan tekijänoikeudet",
       Kategoria: "DogenBoxi",
-      Kuva: "/DogeImages/Tekijänoikeuswebp.webp",
+      Kuva: "/src/assets/DogeImages/Tekijänoikeuswebp.webp",
       Tekstit: [
         "1. Tarvitset aina julkaisuluvan / lisenssin\n\nKun laitat valokuvia, kuvia tai tekstejä omille kotisivuillesi, ne tulevat kaikkien nähtäville ja tarvitset niiden julkaisemiseen luvan.\n\nJos kuva tai teksti on lisensioitu sellaisella Creative Commons –lisenssillä, joka oikeuttaa aineiston vapaan käytön verkossa, voidaan kuvaa tai tekstiä käyttää cc-lisenssin ehtojen mukaisesti.",
         "2. Merkitse tekijän tiedot\n\nJos käytät toisen kuvaa tai tekstiä, tulee sen yhteyteen aina merkitä tekijätiedot (tekijän nimi ja lähde, mistä olet kuvan tai tekstin ottanut).\n\n- TEKIJÄN JA TEOKSEN NIMI\n\n- MILTÄ SIVULTA OLET OTTANUT",
