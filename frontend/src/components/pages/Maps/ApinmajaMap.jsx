@@ -6,7 +6,7 @@ export const ApinmajaMap = () => {
       <AdventureMapComponent
         Data={{
           Title: "Apinmaja",
-          Image: "/src/assets/Kartat/ApinmajaKartta.jpg",
+          Image: "/Kartat/ApinmajaKartta.jpg",
           Kategoria: "Apinmaja",
           Balls: [
             {
@@ -50,18 +50,18 @@ export const ApinmajaMap = () => {
               y: 382,
             },
             {
-              Väri: "Vihreä",
-              Kategoria: "Peli",
-              number: "18",
-              x: 730,
-              y: 300,
-            },
-            {
               Väri: "Rosa",
               Kategoria: "Tehtävä",
               number: "17",
               x: 500,
               y: 326,
+            },
+            {
+              Väri: "Vihreä",
+              Kategoria: "Peli",
+              number: "18",
+              x: 730,
+              y: 300,
             },
             {
               Väri: "Rosa",
@@ -128,7 +128,7 @@ export const ApinmajaMap = () => {
             },
             {
               Väri: "Sininen",
-              Kategoria: "Tietoteksti",
+              Kategoria: "Peli",
               number: "28",
               x: 425,
               y: 134,
