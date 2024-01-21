@@ -1,13 +1,13 @@
 import Cookies from "js-cookie";
-import { toast } from "sonner";
 
 export const useDeleteStudent = () => {
   const deleteStudent = async (id) => {
+    console.log(id);
     try {
       const Auth = Cookies.get("Authorization");
 
       const response = await fetch(
-        `${import.meta.env.VITE_REACT_APP_API_URL}/api/student/delete/${id}`,
+        `http://localhost:8080/api/student/delete/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -22,7 +22,8 @@ export const useDeleteStudent = () => {
       if (!response.ok) {
         throw new Error(json.message);
       }
-      toast.success("Opiskelija poistettu!");
+
+      console.log("Student deleted successfully");
     } catch (error) {
       throw error;
     }

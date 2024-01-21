@@ -26,77 +26,42 @@ li {
   margin-top: 1%;
   flex-direction: column;
 }
-
-.Teacherinfo-wrapper .Slider-buttons {
+.Teacherinfo-wrapper .Hahmot-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.Teacherinfo-wrapper .Buttons {
   width: 100%;
   margin: 10px 0px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.Teacherinfo-wrapper .Hahmot h3 {
-  font-family: Mulish;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-}
-.Teacherinfo-wrapper .Slider .Control {
-  width: 25px;
-  height: 25px;
-  background-color: transparent;
-  border: 0px;
-}
-.Teacherinfo-wrapper .Slider .Control:hover {
-  cursor: pointer;
-  opacity: 80%;
-}
-.Teacherinfo-wrapper .Slider {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.Teacherinfo-wrapper .Slider-buttons button {
+.Teacherinfo-wrapper .Buttons button {
   margin: 0px 10px;
   border: 0px;
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  font-family: mulish;
-  font-weight: bold;
 }
-.Teacherinfo-wrapper .Slider-buttons button:hover {
+.Teacherinfo-wrapper .Buttons button:hover {
   cursor: pointer;
   opacity: 80%;
 }
-.Teacherinfo-wrapper .active-button {
+.active-button {
   background-color: red;
   color: #fff;
 }
-.Teacherinfo-wrapper .not-active {
-  background-color: #fff;
-  color: #000;
-}
-.Teacherinfo-wrapper .Slider-content {
-  width: 80%;
+.Teacherinfo-wrapper .Hahmot-card {
+  width: 50%;
   min-height: 700px;
   background-color: antiquewhite;
   padding: 10px;
   border-radius: 20px;
   margin: 0px 40px;
 }
-.Teacherinfo-wrapper .Slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.Teacherinfo-wrapper .Slider {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.Teacherinfo-wrapper .Slider-content p {
+.Teacherinfo-wrapper .Hahmot-card p {
   background-color: white;
   padding: 30px 10px;
   border-radius: 20px;
@@ -104,216 +69,19 @@ li {
   font-family: Mulish;
   font-weight: bold;
   font-size: 20px;
-  min-height: 200px;
 }
-.Teacherinfo-wrapper .Slider-content img {
-  width: 50%;
+.Teacherinfo-wrapper .Hahmot h3 {
+  text-align: center;
+  font-family: Mulish;
+  font-weight: bold;
+}
+.Teacherinfo-wrapper .Hahmot-wrapper img {
+  width: 100%;
   height: 400px;
   border-radius: 20px;
 }
-/* Taitotasot */
-.Teacherinfo-wrapper .Taitotasot .Taitotaso-kortit {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.Teacherinfo-wrapper .Taitotasot {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: space-between;
-}
-.Teacherinfo-wrapper .Taitotasot .Kortti {
-  width: 28%;
-  height: 100px;
-  border-radius: 20px;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0px;
-  text-align: center;
-  height: 250px;
-  padding: 20px;
-}
-.Teacherinfo-wrapper .Taitotasot .Kortti p {
-  margin: 0px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Mulish;
-}
-.Teacherinfo-wrapper h3 {
-  font-family: Mulish;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-}
-.Teacherinfo-wrapper .Kuvakkeet-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.Teacherinfo-wrapper .Kuvake-kortti {
-  background-color: #faebd7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  border-radius: 20px;
-  padding: 10px;
-  height: 250px;
-}
-.Teacherinfo-wrapper .Kuvakkeet-cards :hover {
-  cursor: pointer;
-  opacity: 90%;
-}
-.Kuvake-kortti p {
-  font-family: Mulish;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-}
-
-/* Tavoitteet */
-.Teacherinfo-wrapper .Tavoitteet {
-  margin: 20px 0px;
-}
-.Teacherinfo-wrapper .Section-slider {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 10px;
-}
-.Teacherinfo-wrapper .Section-slider .Titles {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 3%;
-}
-.Teacherinfo-wrapper .Section-slider .Titles h2 {
-  font-family: Mulish;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-  height: 25%;
-  background-color: #faeddb;
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 200px;
-  border-radius: 20px;
-}
-.Teacherinfo-wrapper .Section-slider .Titles .active {
-  background-color: lightgrey;
-}
-.Teacherinfo-wrapper .Section-slider .Titles h2:hover {
-  cursor: pointer;
-  opacity: 80%;
-}
-.Teacherinfo-wrapper .Section-slider .Content-section {
-  background-color: #faeddb;
-  border-radius: 20px;
-  width: 100%;
-  min-height: 600px;
-  position: relative;
-}
-.Teacherinfo-wrapper .Section-slider .Content-section ul {
-  margin-bottom: 50px;
-}
-.Teacherinfo-wrapper .Section-slider .Content-section li {
-  font-family: Mulish;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0px;
-  padding: 10px;
-}
-.Teacherinfo-wrapper
-  .Section-slider
-  .Content-section
-  .NavigationButtons
-  button {
-  background-color: transparent;
-  border: 0px;
-  font-family: Mulish;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0px;
-}
-.Teacherinfo-wrapper
-  .Section-slider
-  .Content-section
-  .NavigationButtons
-  button:hover {
-  opacity: 80%;
-  cursor: pointer;
-}
-.Teacherinfo-wrapper .Section-slider .Content-section .NavigationButtons {
-  display: flex;
-  justify-content: center;
-}
-.Teacherinfo-wrapper .Section-slider .Content-section .Current {
-  font-family: Mulish;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  margin: 0px;
-}
-.Teacherinfo-wrapper .Section-slider .Content-section .End-section {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.Teacherinfo-wrapper .Section-slider .Content-section h3 {
-  text-align: left;
-  margin-left: 20px;
-}
 
 /* Responsive Styles for Screen Widths */
-@media screen and (max-width: 1200px) {
-  .Teacherinfo-wrapper .Slider-content {
-    width: 100%;
-  }
-  .Teacherinfo-wrapper .Slider-content img {
-    width: 75%;
-  }
-  .Teacherinfo-wrapper .Taitotasot .Kortti {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .Teacherinfo-wrapper .Kuvake-kortti {
-    width: 40%;
-  }
-  .Teacherinfo-wrapper .Tavoitteet .Section-slider {
-    flex-direction: column;
-  }
-  .Teacherinfo-wrapper .Tavoitteet .Section-slider .Titles {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-    width: 100%;
-    overflow-x: scroll;
-  }
-  .Teacherinfo-wrapper .Tavoitteet .Section-slider .Titles h2 {
-    width: 25%;
-    height: 50px;
-    min-width: 0%;
-  }
-}
 
 @media screen and (max-width: 850px) {
   .Teacherinfo-wrapper > .Level-buttons button {
@@ -324,48 +92,10 @@ li {
     margin: 0% 5%;
   }
 }
-@media screen and (max-width: 800px) {
-  .Teacherinfo-wrapper .Slider .Control {
-    display: none;
-  }
-}
 
 @media screen and (max-width: 650px) {
   .Teacherinfo-video video {
     width: 100%;
     height: 300px;
-  }
-  .Teacherinfo-wrapper .Slider-content {
-    margin: 0px;
-  }
-  .Teacherinfo-wrapper .Slider-content img {
-    width: 100%;
-  }
-  .Teacherinfo-wrapper .Taitotasot .Kortti {
-    width: 75%;
-  }
-  .Teacherinfo-wrapper .Tavoitteet .Section-slider .Titles {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .Teacherinfo-wrapper .Tavoitteet .Section-slider .Titles h2 {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .Teacherinfo-wrapper .Kuvake-kortti {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 450px) {
-  .Teacherinfo-wrapper .Slider-content img {
-    height: 300px;
-  }
-  .Teacherinfo-wrapper .Slider-buttons button {
-    margin: 0px;
-  }
-  .Teacherinfo-wrapper .Kortti {
-    font-weight: 16px;
-    text-align: center;
   }
 }

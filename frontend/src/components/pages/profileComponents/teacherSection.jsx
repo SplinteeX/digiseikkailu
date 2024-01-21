@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import PulseLoader from "react-spinners/PulseLoader";
 import FloatInput from "../../elements/FloatInput";
 import SearchBar from "../../elements/searchBar";
@@ -104,12 +103,7 @@ const TeacherSection = ({ User }) => {
             </div>
 
             {create && (
-              <motion.div
-                className="Create-student"
-                initial={{ opacity: 0, y: 25 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-              >
+              <div className="Create-student">
                 <FloatInput
                   text={"Nimi"}
                   value={name}
@@ -131,7 +125,7 @@ const TeacherSection = ({ User }) => {
                   size={10}
                 />
                 <button onClick={handleCreateStudent}>Luo oppilas</button>
-              </motion.div>
+              </div>
             )}
           </div>
 
@@ -162,13 +156,7 @@ const TeacherSection = ({ User }) => {
               <div className="error">{getStudentsError}</div>
             ) : (
               filteredStudents.map((data, index) => (
-                <motion.div
-                  className={`Student ${data.active}`}
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
+                <div className={`Student ${data.active}`} key={index}>
                   <div className="Student-info">
                     <h3 onClick={() => handleStudentDetails(data)}>
                       {data.name}
@@ -192,7 +180,7 @@ const TeacherSection = ({ User }) => {
                       />
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))
             )}
             ;

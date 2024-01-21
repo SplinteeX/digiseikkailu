@@ -1,11 +1,44 @@
 import "../css/teacherinfo.css";
 import { Hahmot } from "../data/Hahmot";
-import { Slider } from "../elements/Slider";
-import { useState } from "react";
-import { FancySectionSlider } from "../elements/FancySectionSlider";
-import { Tavoitteet } from "../data/Tavoitteet";
+import { useState, useEffect } from "react";
 export const Teacherinfo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [timer, setTimer] = useState(null);
+
+  const startTimer = () => {
+    const newTimer = setTimeout(() => {
+      const newIndex =
+        currentIndex === Hahmot.length - 1 ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+    }, 5000);
+    setTimer(newTimer);
+  };
+  const resetTimer = () => {
+    if (timer) {
+      clearTimeout(timer);
+      startTimer();
+    }
+  };
+  useEffect(() => {
+    startTimer();
+    return () => {
+      if (timer) {
+        clearTimeout(timer);
+      }
+    };
+  }, [currentIndex]);
+
+  const nextSlide = () => {
+    const newIndex = currentIndex === Hahmot.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+    resetTimer();
+  };
+
+  const prevSlide = () => {
+    const newIndex = currentIndex === 0 ? Hahmot.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+    resetTimer();
+  };
   const infoTexts = [
     {
       text: "Digiseikkailu on pelillinen ja tarinallinen oppimisympäristö tieto- ja viestintätekniikan (TVT), medialukutaitojen sekä empatiataitojen opettamiseen esi- sekä alakouluikäisille. Klikkaa haluamaasi ikäryhmää ja tutustu ikäryhmälle suunnattuihin tehtäviin. Iloista seikkailua!",
@@ -28,43 +61,6 @@ export const Teacherinfo = () => {
       text: "Digiseikkailusta löydät kattavaa materiaalia opetuksen tueksi. ",
     },
   ];
-  const KuvakeData = [
-    {
-      Kuvake: [
-        "/Napit/Lukea-Vihreä.png",
-        "/Napit/Lukea-Sininen.png",
-        "/Napit/Lukea-Rosa.png",
-      ],
-      text: "Tämä kuvake on tarkoitettu tietotekstille ja tehtävälle",
-    },
-    {
-      Kuvake: [
-        "/Napit/Peli-Vihreä.png",
-        "/Napit/Peli-Sininen.png",
-        "/Napit/Peli-Rosa.png",
-      ],
-      text: "Tämä kuvake on tarkoitettu peleille",
-    },
-    {
-      Kuvake: [
-        "/Napit/Tarina-Vihreä.png",
-        "/Napit/Tarina-Sininen.png",
-        "/Napit/Tarina-Rosa.png",
-      ],
-      text: "Tämä kuvake on tarkoitettu tarinoille",
-    },
-    {
-      Kuvake: [
-        "/Napit/Video-Vihreä.png",
-        "/Napit/Video-Sininen.png",
-        "/Napit/Video-Rosa.png",
-      ],
-      text: "Tämä kuvake on tarkoitettu videoille",
-    },
-  ];
-  const handleClick = () => {
-    setCurrentIndex(currentIndex + 1 === 3 ? 0 : currentIndex + 1);
-  };
   return (
     <div className="Teacherinfo-wrapper">
       <div className="Teacherinfo-video">
@@ -92,42 +88,29 @@ export const Teacherinfo = () => {
           <p>{infoTexts[1].text}</p>
         </strong>
       </div>
-      <div className="Taitotasot">
-        <h3>Värit</h3>
-        <div className="Taitotaso-kortit">
-          <div className="Kortti" style={{ backgroundColor: "#B3DD94" }}>
-            <p>Suositusikä 6+</p>
-          </div>
-          <div className="Kortti" style={{ backgroundColor: "#EDC9F9" }}>
-            <p>Suositusikä 9+ (3-4 luokka)</p>
-          </div>
-          <div className="Kortti" style={{ backgroundColor: "#89D3EE" }}>
-            <p>Suositusikä 11+ (5-6 luokka)</p>
-          </div>
-        </div>
-      </div>
       <div className="Hahmot">
         <h3>Hahmot</h3>
-        <Slider data={Hahmot} />
-      </div>
-      <div className="Kuvakkeet">
-        <h3>Kuvakkeet</h3>
-        <div className="Kuvakkeet-cards">
-          {KuvakeData.map((data, index) => (
-            <div
-              className="Kuvake-kortti"
+        <div className="Hahmot-wrapper">
+          <button onClick={prevSlide}>Previous</button>
+          <div className="Hahmot-card">
+            <img src={Hahmot[currentIndex].kuva} alt="" />
+            <p>{Hahmot[currentIndex].kuvaus}</p>
+          </div>
+          <button onClick={nextSlide}>Next</button>
+        </div>
+        <div className="Buttons">
+          {Hahmot.map((hahmo, index) => (
+            <button
               key={index}
-              onClick={() => handleClick(index)}
+              onClick={() => {
+                setCurrentIndex(index);
+              }}
+              className={currentIndex === index ? "active-button" : ""}
             >
-              <img src={data.Kuvake[currentIndex]} alt="Kuvake" />
-              <p>{data.text}</p>
-            </div>
+              {index + 1}
+            </button>
           ))}
         </div>
-      </div>
-      <div className="Tavoitteet">
-        <h3>Tavoitteet</h3>
-        <FancySectionSlider data={Tavoitteet} />
       </div>
     </div>
   );

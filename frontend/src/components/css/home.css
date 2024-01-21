@@ -3,9 +3,45 @@ body {
   overflow-x: hidden;
 }
 
+/* Video Text */
+.video-text p {
+  font-size: 1.375em;
+  opacity: 0.7;
+  font-family: "Tahoma", sans-serif;
+  font-style: normal;
+}
+
 /* Home Wrapper */
 .Home-wrapper {
   margin: 2.5% 12.5%;
+}
+
+/* First Video Text */
+.First-video .video-text {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5em;
+}
+
+/* Second Video */
+.Second-video {
+  margin: 2.5% auto 0;
+  text-align: center;
+  width: 95%;
+  text-align: left;
+}
+
+/* Button in Second Video */
+.Second-video button {
+  margin: 0 auto;
+}
+
+/* Home Page Classes */
+.home-page-classes {
+  display: flex;
+  margin: 2.5% auto 0;
+  justify-content: center;
+  gap: 2.5em;
 }
 
 /* Home Read More */
@@ -79,9 +115,7 @@ body {
   width: 90%;
 }
 
-.Home-wrapper .Exercise-cards {
-  padding: 0px;
-}
+/* Media Queries */
 
 /* Adjust Home Wrapper Margin for Smaller Screens */
 @media screen and (max-width: 1500px) {
@@ -92,6 +126,12 @@ body {
 
 /* Adjust Video Text Layout for Smaller Screens */
 @media screen and (max-width: 1100px) {
+  .First-video .video-text {
+    flex-direction: column;
+  }
+  .First-video .video-text iframe {
+    width: 100%;
+  }
   .home-empatia-polku h3 {
     width: 100%;
   }
@@ -99,6 +139,9 @@ body {
 
 /* Adjust Layout for Smaller Screens */
 @media screen and (max-width: 900px) {
+  .home-page-classes {
+    flex-wrap: wrap;
+  }
   .home-read-more {
     flex-direction: column;
   }
@@ -107,6 +150,13 @@ body {
   }
   .home-read-more > .mediaText > .image-container button {
     right: 42px;
+  }
+}
+
+/* Adjust Font Size for Smaller Screens */
+@media screen and (max-width: 700px) {
+  .video-text p {
+    font-size: 1.125em;
   }
 }
 

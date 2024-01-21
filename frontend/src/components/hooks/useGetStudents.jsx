@@ -10,7 +10,7 @@ export const useGetStudents = () => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_REACT_APP_API_URL}/api/student/students`,
+        "http://localhost:8080/api/student/students",
         {
           method: "POST",
           headers: {

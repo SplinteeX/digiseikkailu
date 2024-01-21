@@ -2,10 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const userRoutes = require("./Routes/userRoutes");
 const studentRoutes = require("./Routes/studentRoutes");
-const couponRoutes = require("./Routes/couponRoutes");
 const openaiController = require("./Controllers/openAiController");
-const exerciseRouter = require("./Routes/exerciseRoutes");
-const individualRoutes = require("./Routes/IndividualUserRoutes");
 const requireAuth = require("./middleware/requireAuth");
 const cors = require("cors");
 require("dotenv").config();
@@ -21,11 +18,8 @@ app.use(cors());
 app.use("/api/user", userRoutes);
 app.use("/api/student", studentRoutes);
 app.use("/api/getUser", getUser);
-app.use("/api/coupon", couponRoutes);
-app.use("/api/exercises", exerciseRouter);
-app.use("/api/individual", individualRoutes);
 
-// Route for OpenAI
+// Add a route for OpenAI
 app.post("/api/openai", requireAuth, openaiController.handleOpenAIRequest);
 
 mongoose

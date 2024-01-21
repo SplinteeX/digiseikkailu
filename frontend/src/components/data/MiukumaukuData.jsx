@@ -8,7 +8,7 @@ export const MiukumaukuData = () => {
         "https://soundcloud.com/digiseikkailu-oy/miukumaukun-kirjasto-1mahdoton-kotitehtava-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/6-impossible-homework",
       ],
-      puolKuva: "/MiukumaukuImages/Miukumauku1.webp",
+      puolKuva: "/src/assets/MiukumaukuImages/Miukumauku1.webp",
       puolTeksti:
         "Tarinassa käsitellään\n\ndigilaitteiden hyötyjä ja haittoja, internetin ja laitteiden järkevää käyttöä ja harjoitellaan tietotekstien käyttöä opiskelussa.",
       Tekstit: [
@@ -34,7 +34,7 @@ export const MiukumaukuData = () => {
       tehtNum: "2",
       tehtName: "Lukemisen hyödyt -tietoboksi",
       Kategoria: "MiukuMaukunKirjasto",
-      Kuva: "/MiukumaukuImages/LukemisenHyödyt.webp",
+      Kuva: "/src/assets/MiukumaukuImages/LukemisenHyödyt.webp",
       numeroLista: [
         "Lukeminen kehittää kaveritaitoja. Lukemisen avulla opit empatiaa eli osaat asettaa itsesi toisen asemaan.",
         "Lukeminen kasvattaa sanavarastoasi. Kun luet, opit paljon uusia sanoja.",
@@ -56,7 +56,7 @@ export const MiukumaukuData = () => {
       tehtNum: "3",
       tehtName: "Lukemisen hyödyt -tietoboksi",
       Kategoria: "MiukuMaukunKirjasto",
-      Kuva: "/MiukumaukuImages/Fretti.webp",
+      Kuva: "/src/assets/MiukumaukuImages/Fretti.webp",
       Teksti:
         "Valitse itsellesi luettavaa niin, että kirjat sopivat jonkin alla olevan otsikon alle. Kirjoita valitsemasi kirjan ja sen kirjoittajan nimi kohdan viereen. Kohtia ei tarvitse suorittaa numerojärjestyksessä. Saatko kaikki kymmenen kirjaa luettua?",
       numeroLista: [
@@ -78,9 +78,7 @@ export const MiukumaukuData = () => {
       Kategoria: "MiukuMaukunKirjasto",
       youtube: "lUNkWFPV00I",
       Tekstit: [
-
         "1. Esivalmistelus\n2. Valitaan ryhmät opettajan avulla.\n3. Sovitaan yhdessä luettava kirja.\n4. Sovitaan puheenjohtaja eri kerroille.\n5. Sovitaan luettava pätkä ja aika jolloin tavataan.",
-
         "Lukupiirissä innostutaan lukemaan ja keskustelemaan yhdessä lukuryhmän kanssa. Lukupiiritapaamisissa luetusta tekstistä keskustellaan ja tehdään tehtäviä tableteilla ja tietokoneilla.",
         "1. Tapaaminen",
         "Puheenjohtaja valitsee yhden seuraavista tehtävistä:",

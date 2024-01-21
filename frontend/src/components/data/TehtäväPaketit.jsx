@@ -5,9 +5,7 @@ export const TehtäväPaketit = () => {
       Title: "Apin maja",
       Time: "5min - 30 min",
       Link: "/kartat/apinmaja",
-
       Back: "Apin majassa opit: tietokonehiiren ja näppäimistön käyttöä, sähköpostin ja hakukoneen käyttöä, kirjoitusohjelman perusteet, tekemään teksti- ja kuvatiedostoja, käyttämään tietokonetta ja laitteistoa, tallentamaan ja löytämään työsi",
-
     },
   ];
   const häsänStudio = [
@@ -16,9 +14,7 @@ export const TehtäväPaketit = () => {
       Title: "Häsän studio",
       Time: "5min - 30 min",
       Link: "/kartat/hasanstudio",
-
       Back: "Häsän studiossa opit: miten suunnitellaan video, miten nettimainokset toimivat, mitä saa kuvata ja julkaista, mitä hyötyä on kuvanlukutaidosta, mikä on sisällöntuottaja, fomo tai microinfluencer",
-
     },
   ];
   const TweetynViestiseinä = [
@@ -27,9 +23,7 @@ export const TehtäväPaketit = () => {
       Title: "Tweetyn viestiseinä",
       Time: "5min - 30 min",
       Link: "/kartat/tweetynviestiseinä",
-
       Back: "Tweetyn kanssa opit: turvataitoja median käytössä, tunnistamaan vihapuhetta, ystävällistä ja asiallista viestittelyä, ideoimaan omia vaikutusmahdollisuuksiasi, rakentamaan hyvää yhteishenkeä viesteilläsi",
-
     },
   ];
   const DogenBoxi = [
@@ -38,9 +32,7 @@ export const TehtäväPaketit = () => {
       Title: "Dogen boxi",
       Time: "5min - 30 min",
       Link: "/kartat/dogenboxi",
-
       Back: "Dogen kanssa opit: tunnistamaan kuvahuijauksia, lukemaan erilaisia kuvia mediasta, arvioimaan uutisten luotettavuutta, etsimään tehokkaasti tietoa, mitä ovat trollit ja fleimit, tunnistamaan mainonnan keinot",
-
     },
   ];
   const KursorinUllakko = [
@@ -49,9 +41,7 @@ export const TehtäväPaketit = () => {
       Title: "Kursorin ullakko",
       Time: "5min - 30 min",
       Link: "/kartat/kursorinullakko",
-
       Back: "Kursorin kanssa opit: mitkä ovat sinun medioitasi, pohtimaan miksi käytät medioitasi, tunnistamaan nettiriippuvuuden oireita, millainen on hyvä päivärytmi, keinoja rauhoittumiseen ja rentoutumiseen, medialaitteiden ja sosiaalisen median historiaa",
-
     },
   ];
   const SirynÄlytalo = [
@@ -60,9 +50,7 @@ export const TehtäväPaketit = () => {
       Title: "Siryn älytalo",
       Time: "5min - 30 min",
       Link: "/kartat/sirynalytalo",
-
       Back: "Siryn kanssa opit: mitä on tekoäly ja koneoppiminen, minkälaisia tehtäviä roboteilla on jo maailmassa, eri aloilla ja koulussa, minkälaista on asua älytalossa, miten botit ja tekoäly vaikuttavat arjessa, minkälaista tietoa älytalon tai robotin pitää kerätä jotta se voi palvella omistajaansa",
-
     },
   ];
   const Laamanaitaus = [
@@ -71,9 +59,7 @@ export const TehtäväPaketit = () => {
       Title: "Laaman aitaus",
       Time: "5min - 30 min",
       Link: "/kartat/laamanaitaus",
-
       Back: "Laaman kanssa opit: luovia tapoja käyttää teknologiaa taito- ja taideaineissa, taiteen vaikutuksesta tunteisiin, tunnetaitojen perusteita, oman musiikin tekemistä tabletilla ja tietokoneella, tunnistamaan toisten ilmeitä ja ilmaisemaan omia tunteita, puhelimen hyödyllistä käyttöä esim. liikunnan lisääjänä",
-
     },
   ];
   const MiukuMauku = [
@@ -82,9 +68,7 @@ export const TehtäväPaketit = () => {
       Title: "Miuku Maukun Kirjasto",
       Time: "5min - 30 min",
       Link: "/kartat/miukumauku",
-
       Back: "Miuku-Maukun kanssa opit: toimimaan lukupiirissä, miten kirjaesitelmistä voi saada jännittäviä ja hauskoja, pohtimaan millaisista kirjoista sinä pidät, mitä tieteellisesti todistettuja hyötyjä lukemisesta on",
-
     },
   ];
   const Ohjelmointi = [

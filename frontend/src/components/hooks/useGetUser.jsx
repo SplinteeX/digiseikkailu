@@ -2,16 +2,13 @@ import cookie from "js-cookie";
 export const useGetUser = () => {
   const GetUser = async () => {
     try {
-      const response = await fetch(
-        `${import.meta.env.VITE_REACT_APP_API_URL}/api/getUser`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `${cookie.get("Authorization")}`,
-          },
-        }
-      );
+      const response = await fetch("http://localhost:8080/api/getUser", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `${cookie.get("Authorization")}`,
+        },
+      });
       const json = await response.json();
       return json;
     } catch (error) {

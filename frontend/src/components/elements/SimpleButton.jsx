@@ -1,7 +1,4 @@
-import React from "react";
-import { motion } from "framer-motion";
-
-export const SimpleButton = ({ text, active, onClick }) => {
+export const SimpleButton = ({ text, active, onClick, style }) => {
   const buttonStyles = {
     backgroundColor: "#70B2FF",
     color: "white",
@@ -24,22 +21,13 @@ export const SimpleButton = ({ text, active, onClick }) => {
     backgroundColor: active ? "#70B2FF" : "#D9D9D9",
     color: active ? "white" : "black",
   };
-
-  const buttonVariants = {
-    initial: { scale: 0.8 },
-    animate: { scale: 1 },
-  };
-
   return (
-    <motion.button
+    <button
       style={{ ...activeStyles }}
-      className={`className="Simple-button" ${active ? "active" : ""}`}
+      className="Simple-button"
       onClick={onClick}
-      variants={buttonVariants}
-      initial="initial"
-      animate="animate"
     >
       {text}
-    </motion.button>
+    </button>
   );
 };

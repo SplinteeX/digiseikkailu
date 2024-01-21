@@ -10,7 +10,7 @@ import CommonButton from "./CommonButton";
 import { useSaveCompletedExercise } from "../hooks/useSaveCompletedExercise";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useRetrieveExercises } from "../hooks/useRetrieveExercises";
-import { toast } from "sonner";
+
 export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
   const [activeTab, setActiveTab] = useState("Tehtävä");
   const [RightTask, setRightTask] = useState(Data.vastaus);
@@ -81,13 +81,11 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
     if (!selectedAnswer) {
       if (clickedAnswer === RightTask) {
         setSelectedAnswer("correct");
-        toast.success("Oikein!");
         {
           user &&
             SaveCompletedExercise(parsedUser._id, Data.tehtNum, Data.Kategoria);
         }
       } else {
-        toast.error("Väärin!");
         setSelectedAnswer("wrong");
         setTimeout(() => {
           setSelectedAnswer(null);
@@ -168,14 +166,12 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
 
           {Data.puolTeksti && !Array.isArray(Data.puolTeksti) ? (
             <div className="TextImage">
-              <p className="text50">
-                {Data.puolTeksti.split("\n").map((text, index) => (
-                  <React.Fragment key={index}>
-                    {text}
-                    {index !== Data.puolTeksti.split("\n").length - 1 && <br />}
-                  </React.Fragment>
-                ))}
-              </p>
+              <p
+                className="text50"
+                dangerouslySetInnerHTML={{
+                  __html: Data.puolTeksti.replace(/\n/g, "<br>"),
+                }}
+              />
               {Data.puolKuva && (
                 <div className="Image-container">
                   <img className="image50" src={Data.puolKuva} alt="Image" />
@@ -188,14 +184,12 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
             Data.puolTekstit.map((text, index) => (
               <div key={`text_${index}`} className="TextImages">
                 <div className="Text-50-container">
-                  <p className="text50s">
-                    {text.split("\n").map((line, index) => (
-                      <React.Fragment key={index}>
-                        {line}
-                        {index !== text.split("\n").length - 1 && <br />}
-                      </React.Fragment>
-                    ))}
-                  </p>
+                  <p
+                    className="text50s"
+                    dangerouslySetInnerHTML={{
+                      __html: text.replace(/\n/g, "<br>"),
+                    }}
+                  />
                 </div>
                 {Data.puolKuvat && Data.puolKuvat.length > index && (
                   <div className="Image-container">
@@ -230,26 +224,22 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
             Array.isArray(Data.Tekstit) &&
             Data.Tekstit.map((text, index) => (
               <div key={`text_${index}`} className="Text-div">
-                <p className="Text">
-                  {text.split("\n").map((line, index) => (
-                    <React.Fragment key={index}>
-                      {line}
-                      {index !== text.split("\n").length - 1 && <br />}
-                    </React.Fragment>
-                  ))}
-                </p>
+                <p
+                  className="Text"
+                  dangerouslySetInnerHTML={{
+                    __html: text.replace(/\n/g, "<br>"),
+                  }}
+                />
               </div>
             ))}
           {Data.Teksti && (
             <div className="Text-div">
-              <p className="Text" style={{}}>
-                {Data.Teksti.split("\n").map((text, index) => (
-                  <React.Fragment key={index}>
-                    {text}
-                    <br />
-                  </React.Fragment>
-                ))}
-              </p>
+              <p
+                className="Text"
+                dangerouslySetInnerHTML={{
+                  __html: Data.Teksti.replace(/\n/g, "<br>"),
+                }}
+              />
             </div>
           )}
           {Data.numeroLista && (
@@ -339,6 +329,12 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 {Data.tehtNum}. {Data.tehtName}
               </h3>
               <h3 className="White-text">{Data.kysymys}</h3>
+              {selectedAnswer === "correct" && (
+                <p className="White-text">Oikein!</p>
+              )}
+              {selectedAnswer === "wrong" && (
+                <p className="White-text">Väärin!</p>
+              )}
 
               <div className="Kysymys-vaihtoehdot">
                 {Data.vaihtoehdot.map((vaihtoehto, index) => (
