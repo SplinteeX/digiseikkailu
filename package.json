@@ -1,0 +1,14 @@
+{
+  "name": "digiseikkailu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.2"
+  }
+}
