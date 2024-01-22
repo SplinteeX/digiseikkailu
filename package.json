@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^6.0.2"
+  },
+  "devDependencies": {
+    "vite": "^2.0.0",
+    "nodemon": "^2.0.15"
   }
 }
