@@ -7,7 +7,7 @@ import TinyMCE from "./tinyMce";
 import { PulseLoader } from "react-spinners";
 import YoutubeVideo from "../elements/YoutubeVideo";
 import { SoundCloud } from "./soundCloud";
-import CommonButton from "./CommonButton";
+import CommonButton from "./commonButton";
 import { useSaveCompletedExercise } from "../hooks/useSaveCompletedExercise";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useRetrieveExercises } from "../hooks/useRetrieveExercises";
