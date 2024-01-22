@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import CommonButton from "../elements/CommonButton";
+import CommonButton from "../elements/commonButton";
 import { useNavigate } from "react-router-dom";
-import FloatInput from "../elements/FloatInput";
+import FloatInput from "../elements/floatInput";
 import { Link } from "react-router-dom";
 import "../css/register.css";
 import PulseLoader from "react-spinners/PulseLoader";
