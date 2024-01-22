@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CommonButton from "../elements/CommonButton";
+import CommonButton from "../elements/commonButton";
 import FloatInput from "../elements/FloatInput";
 import { Link } from "react-router-dom";
 import "../css/teacherLogin.css";
