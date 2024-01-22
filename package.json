@@ -2,8 +2,8 @@
   "name": "digiseikkailu",
   "version": "1.0.0",
   "scripts": {
-    "install-all": "cd frontend && npm install",
-    "start": "cd frontend && npm start",
+    "install-all": "cd frontend && npm install && cd ../backend && npm install",
+    "start": "cd backend && npm start",
     "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
   "engines": {
