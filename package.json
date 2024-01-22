@@ -4,7 +4,7 @@
   "scripts": {
     "install-all": "cd frontend && npm install",
     "start": "cd frontend && npm start",
-    "heroku-postbuild": "cd frontend && npm install && npm run build && npm run preview --host"
+    "heroku-postbuild": "cd frontend && npm install && npm run build && npm run preview -- --host"
   },
   "engines": {
     "node": "20.10.0",
