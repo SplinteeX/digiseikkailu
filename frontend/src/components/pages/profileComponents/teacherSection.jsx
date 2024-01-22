@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import PulseLoader from "react-spinners/PulseLoader";
-import FloatInput from "../../elements/FloatInput";
+import FloatInput from "../../elements/floatInput";
 import SearchBar from "../../elements/searchBar";
 import { useCreateStudent } from "../../hooks/useCreateStudent";
 import { useGetStudents } from "../../hooks/useGetStudents";
