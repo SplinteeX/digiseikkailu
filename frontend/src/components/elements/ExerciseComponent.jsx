@@ -302,6 +302,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 />
               </div>
             ))}
+
           {Data.smallTitle && <p className="White-text">{Data.smallTitle}</p>}
           {Data.sininenNappi && (
             <div className="Sininen-nappi">
@@ -335,6 +336,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
                 </p>
               </div>
             ))}
+
           {Data.tarinaNappi && (
             <>
               <div className="Text-div-yellow">
@@ -402,6 +404,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               </p>
             </div>
           )}
+          {Data.ApinSoundCloud && <SoundCloud url={Data.ApinSoundCloud} />}
           {Data.numeroLista && (
             <div className="Numerolista">
               <ol>
