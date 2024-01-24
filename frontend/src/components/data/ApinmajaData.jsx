@@ -490,7 +490,8 @@ export const ApinmajaData = () => {
         "D) Keksi ja kirjoita tarina ilman apuja.",
       ],
       vastaus: "B) Kuuntele ja kirjoita kuulemasi tarina.",
-      SoundCloud: "",
+      SoundCloud:
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-21-kirjoittaminen-fin?si=b5c51095de604a509e72cab7ef3c9e00&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "22",

@@ -1,4 +1,4 @@
-import oikeinmerkki from "/empatiapolku/Oikeinmerkki.webp";
+import oikeinmerkki from "../../../../public/empatiapolku/Oikeinmerkki.webp";
 import "../../css/empatiapolku.css";
 
 const Oikeinmerkki = ({ teksti }) => {
