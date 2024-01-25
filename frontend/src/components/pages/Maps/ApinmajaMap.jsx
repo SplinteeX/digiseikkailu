@@ -28,14 +28,14 @@ export const ApinmajaMap = () => {
             { Väri: "Vihreä", Kategoria: "Peli", number: "10", x: 550, y: 500 },
             {
               Väri: "Vihreä",
-              Kategoria: "Tehtävä",
+              Kategoria: "Peli",
               number: "12",
               x: 930,
               y: 465,
             },
             {
               Väri: "Vihreä",
-              Kategoria: "Tehtävä",
+              Kategoria: "Peli",
               number: "13",
               x: 915,
               y: 415,
@@ -51,7 +51,7 @@ export const ApinmajaMap = () => {
             },
             {
               Väri: "Rosa",
-              Kategoria: "Tehtävä",
+              Kategoria: "Peli",
               number: "17",
               x: 500,
               y: 326,
@@ -128,7 +128,7 @@ export const ApinmajaMap = () => {
             },
             {
               Väri: "Sininen",
-              Kategoria: "Peli",
+              Kategoria: "Tehtävä",
               number: "28",
               x: 425,
               y: 134,

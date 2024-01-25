@@ -85,14 +85,14 @@ export const DogenboxiMap = () => {
               y: 405,
             },
             {
-              Väri: "Rosa",
+              Väri: "Vihreä",
               Kategoria: "Tietoteksti",
               number: "15",
               x: 590,
               y: 395,
             },
             {
-              Väri: "Vihreä",
+              Väri: "Rosa",
               Kategoria: "Tietoteksti",
               number: "16",
               x: 500,
