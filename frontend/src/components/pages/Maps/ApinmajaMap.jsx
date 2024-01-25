@@ -24,8 +24,8 @@ export const ApinmajaMap = () => {
             { Väri: "Vihreä", Kategoria: "Peli", number: "7", x: 930, y: 605 },
             { Väri: "Vihreä", Kategoria: "Peli", number: "8", x: 730, y: 590 },
             { Väri: "Vihreä", Kategoria: "Peli", number: "9", x: 430, y: 555 },
-            { Väri: "Vihreä", Kategoria: "Peli", number: "11", x: 760, y: 480 },
             { Väri: "Vihreä", Kategoria: "Peli", number: "10", x: 550, y: 500 },
+            { Väri: "Vihreä", Kategoria: "Peli", number: "11", x: 760, y: 480 },
             {
               Väri: "Vihreä",
               Kategoria: "Peli",

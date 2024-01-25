@@ -479,7 +479,7 @@ export const ApinmajaData = () => {
       Kategoria: "Apinmaja",
       Kuva: "/ApinmajaImages/TarinanKirjoitus.webp",
       Teksti:
-        "Kuuntele Jenni-open lukema tarina ja kirjoita alle teksti ohjeen mukaan.",
+        "Kuuntele Markku-open lukema tarina ja kirjoita alle teksti ohjeen mukaan.",
       TinyMCE: "Poista tämä teksti ja kirjoita vastauksesi tähän.",
       kysyms:
         "Mikä seuraavista kuvaa parhaiten tehtävää “Kirjoita tarina kuulemasi mukaan?,",
@@ -490,7 +490,7 @@ export const ApinmajaData = () => {
         "D) Keksi ja kirjoita tarina ilman apuja.",
       ],
       vastaus: "B) Kuuntele ja kirjoita kuulemasi tarina.",
-      SoundCloud:
+      ApinSoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/apinmaja-21-kirjoittaminen-fin?si=b5c51095de604a509e72cab7ef3c9e00&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {

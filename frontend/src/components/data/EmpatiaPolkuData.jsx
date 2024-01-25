@@ -6,11 +6,11 @@ export const EmpatiaPolkuData = () => {
       tehtNum: "1",
       tehtName: "Peukkutehtävä 1",
       Kategoria: "EmpatiaPolku",
-      Kuvat: ["/src/assets/peukkuohjeet.webp"],
+      Kuvat: ["/public/empatiapolku/peukkuohjeet.webp"],
       blueTitle: "Tweetyn viestiseinä",
       blueInfo:
         "Tässä on Tweety. Se hallinnoi kaupungin viestiseinää ja on laajan lintuverkoston ylläpitäjä. Ylläpitäjän tehtäviin kuuluu viestien tarkkaileminen ja sääntöjen vastaisten viestien poistaminen.",
-      blueImage: "/src/assets/papukaija.webp",
+      blueImage: "/public/empatiapolku/papukaija.webp",
     },
     {
       tehtNum: "2",
@@ -32,13 +32,13 @@ export const EmpatiaPolkuData = () => {
       Kategoria: "EmpatiaPolku",
       postitTeksti: "Mitkä viestit sinä poistaisit seinältä?",
       postit: [
-        "/src/assets/hämis.png",
-        "/src/assets/1.png",
-        "/src/assets/2.png",
-        "/src/assets/3.png",
-        "/src/assets/4.png",
-        "/src/assets/5.png",
-        "/src/assets/6.png",
+        "/public/empatiapolku/hämis.png",
+        "/public/empatiapolku/1.png",
+        "/public/empatiapolku/2.png",
+        "/public/empatiapolku/3.png",
+        "/public/empatiapolku/4.png",
+        "/public/empatiapolku/5.png",
+        "/public/empatiapolku/6.png",
       ],
     },
     {
@@ -62,7 +62,7 @@ export const EmpatiaPolkuData = () => {
       blueTitle: "Dogen boxi – Tehtävä 6",
       blueInfo:
         "Doge on Somen kaupungin tarkin uutistentutkija. Se etsii kuvia sukulaisistaan, joita on esiintynyt paljon meemeissä lähivuosina. Samalla se on oppinut erottamaan valeuutiset oikeista, ammattilaisten tekemistä uutisista. Se tietää myös miten erilaisiin viesteihin tulisi suhtautua.",
-      blueImage: "/src/assets/dogekuva.webp",
+      blueImage: "/public/empatiapolku/dogekuva.webp",
       Tekstit: [
         "Appi - Doge, osaatko auttaa meitä? Katso tätä viestiä. Luultavasti sama kirjoittaja kirjoittaa tällaisia Tweetyn viestiseinälle, Appi aloittaa.",
         "Doge - Hmm… Viesti on anonyymi. Eli nimetön. En usko, että kenelläkään olisi rohkeutta omalla nimellään näin hmm.. erikoisia juttuja kirjoitella, Doge pohtii ääneen.",
@@ -72,7 +72,7 @@ export const EmpatiaPolkuData = () => {
         "Doge - Niin tai näin, minä otan nämä viestilaput nyt tutkintaan, Doge sanoo ja pujahtaa uutistoimistoa muistuttavaan koirankoppiinsa.",
       ],
       tarinaTeksti: "Juhlat voivat alkaa",
-      juhlaTarinaKuva: "/src/assets/juhlakuva.webp",
+      juhlaTarinaKuva: "/public/empatiapolku/juhlat.webp",
     },
     {
       tehtNum: "7",
@@ -80,7 +80,7 @@ export const EmpatiaPolkuData = () => {
       Kategoria: "EmpatiaPolku",
       youtube: "PuzagnhDiek",
       nappiTitle: "Sananvapaus tuo vastuuta!",
-      Kuvat: ["/src/assets/Ilkeekissa.webp"],
+      Kuvat: ["/public/empatiapolku/Ilkeekissa.webp"],
       sininenNappi: "Mitä on vihapuhe?",
       buttonLink: "/tehtävät/tweetynviestiseinä/8",
     },
@@ -88,7 +88,7 @@ export const EmpatiaPolkuData = () => {
       tehtNum: "8",
       tehtName: "Tehtävä 8",
       Kategoria: "EmpatiaPolku",
-      Kuvat: ["/src/assets/frendit.webp"],
+      Kuvat: ["/public/empatiapolku/frendit.webp"],
       sininenNappi: "Kehupuhe",
       buttonLink: "/tehtävät/tweetynviestiseinä/9",
     },
@@ -99,7 +99,7 @@ export const EmpatiaPolkuData = () => {
       blueTitle: "Laaman aitaus – Tehtävä 11",
       blueInfo:
         "Seuraavaksi kaverukset lähtivät Häsän pihalle. Siellä odotti Häsän lemmikki, Laama. Se on tunteikas ja herkkä otus ja erittäin innostunut uudesta puhelimestaan.",
-      blueImage: "/src/assets/empatialaama.webp",
+      blueImage: "/public/empatiapolku/empatialaama.webp",
       Tekstit: [
         "Laama - Katso! Paljon hassuja palloja! Laama hirnui.",
         "Appi - Ne ovat emojeita, Appi naurahti. Niillä voi ilmaista erilaisia tunteita, sehän sopii sinulle hyvin! Kokeile!",
@@ -109,7 +109,10 @@ export const EmpatiaPolkuData = () => {
         "Laama - Mutta ymmärtävätkö kaikki mitä minä tarkoitan? Laama jäi pohtimaan, kun Appi ja Häsä jatkoivat matkaa puhelimet nenässä kiinni.",
       ],
       kuvaTitle: "PEUKKUTEHTÄVÄ",
-      Kuvat: ["/src/assets/peukut.webp", "/src/assets/peukkuohjeet2.webp"],
+      Kuvat: [
+        "/public/empatiapolku/peukut.webp",
+        "/public/empatiapolku/peukkuohjeet2.webp",
+      ],
     },
     {
       tehtNum: "10",
@@ -117,10 +120,10 @@ export const EmpatiaPolkuData = () => {
       Kategoria: "EmpatiaPolku",
       kuvaTitle: "Miten viestin tunnelma muuttuu kun vaihdat emojia?",
       puhelimet: [
-        "/src/assets/puhelin1.webp",
-        "/src/assets/puhelin2.webp",
-        "/src/assets/puhelin3.webp",
-        "/src/assets/puhelin4.webp",
+        "/public/empatiapolku/puhelin1.webp",
+        "/public/empatiapolku/puhelin2.webp",
+        "/public/empatiapolku/puhelin3.webp",
+        "/public/empatiapolku/puhelin4.webp",
       ],
     },
     {
@@ -129,7 +132,7 @@ export const EmpatiaPolkuData = () => {
       blueTitle: "Häsän studio – Tehtävä 11",
       blueInfo:
         "Häsän huoneessa on erilaisia videokuvaamiseen liittyviä tavaroita, kuten vakain, kolmijalka ja kuvausvalo. Häsän äiti on alkanut kutsua sitä leikillään Häsän Studioksi. Viimein Häsä ja Appi pääsivät Häsän kotiin tekemään läksyjä. Tehtävien jälkeen Häsä selaili YouTube-kanavansa kommentteja.",
-      blueImage: "/src/assets/nettisurffaus.webp",
+      blueImage: "/public/empatiapolku/nettisurffaus.webp",
     },
     {
       tehtNum: "12",
@@ -150,13 +153,13 @@ export const EmpatiaPolkuData = () => {
       ],
       tarinaNappi: "Trollipostia SuperSovellukselle",
       buttonLink: "/tehtävät/dogenboxi/6",
-      tarinaKuva: "/src/assets/trolliposti.webp",
+      tarinaKuva: "/public/empatiapolku/trolliposti.webp",
     },
     {
       tehtNum: "13",
       tehtName: "Tehtävä 13",
       Kategoria: "EmpatiaPolku",
-      Kuvat: ["/src/assets/noita.webp"],
+      Kuvat: ["/public/empatiapolku/noita.webp"],
       sininenNappi: "Trolli, provo ja fleimaus",
       buttonLink: "/tehtävät/dogenboxi/7",
     },
@@ -164,7 +167,7 @@ export const EmpatiaPolkuData = () => {
       tehtNum: "14",
       tehtName: "Tehtävä 14",
       Kategoria: "EmpatiaPolku",
-      Kuvat: ["/src/assets/zombi2.webp"],
+      Kuvat: ["/public/empatiapolku/zombi2.webp"],
       sininenNappi: "Trolli kommentoimassa",
       buttonLink: "/empatiapolku/trolli-kommentoimassa",
     },
@@ -172,7 +175,7 @@ export const EmpatiaPolkuData = () => {
       tehtNum: "15",
       tehtName: "Tehtävä 15",
       Kategoria: "EmpatiaPolku",
-      Kuvat: ["/src/assets/ilmoitustaulu.webp"],
+      Kuvat: ["/public/empatiapolku/ilmoitustaulu.webp"],
       sininenNappi: "Mielipidekirjoitus",
       buttonLink: "/tehtävät/tweetynviestiseinä/21",
     },
@@ -180,11 +183,11 @@ export const EmpatiaPolkuData = () => {
       tehtNum: "16",
       tehtName: "Tehtävä 16",
       Kategoria: "EmpatiaPolku",
-      Kuvat: ["/src/assets/muistio.webp"],
+      Kuvat: ["/public/empatiapolku/muistio.webp"],
       sininenNappi: "Parannusehdotus",
       buttonLink: "/tehtävät/tweetynviestiseinä/20",
-      PeukkuKuva: "/src/assets/peukut.webp",
-      peukkuKuva: "/src/assets/peukkuOhjeet3.webp",
+      PeukkuKuva: "/public/empatiapolku/peukut.webp",
+      peukkuKuva: "/public/empatiapolku/peukkuOhjeet3.webp",
     },
     {
       tehtNum: "17",
@@ -193,7 +196,7 @@ export const EmpatiaPolkuData = () => {
       blueTitle: "Kursorin ullakko – Tehtävä 17",
       blueInfo:
         "Taitava Kursori-pappa Häsän naapurista oli korjannut Apin rikkimenneen puhelimenlasin.\n Häsä ja Appi kävivät hakemassa puhelimen takaisin ja vaihtoivat kuulumisia Kursorin kanssa.",
-      blueImage: "/src/assets/kursorikuva.webp",
+      blueImage: "/public/empatiapolku/kursorikuva.webp",
     },
     {
       tehtNum: "18",
@@ -211,8 +214,8 @@ export const EmpatiaPolkuData = () => {
         "Häsä — Empatia tarkoittaa kykyä ymmärtää mitä toinen ihminen kokee tämän näkökulmasta, eli itsensä asettamista toisen henkilön asemaan. Havu, Paju ja Eko olivat rohkeita kun pyysivät anteeksi ja poistivat videon.",
       ],
       TarinaKuvat: [
-        "/src/assets/vihainenpappa.webp",
-        "/src/assets/ovelakissa.webp",
+        "/public/empatiapolku/vihainenpappa.webp",
+        "/public/empatiapolku/ovelakissa.webp",
       ],
       TarinaOtsikot: [
         <Link to="/tehtävät/laamanaitaus/5">
