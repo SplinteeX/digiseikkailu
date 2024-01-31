@@ -5,7 +5,7 @@ export const LaamanaitausData = () => {
       tehtNum: "1",
       tehtName: "Tunnetaitoja - Kuka lohduttaisi Laamaa?",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/19-tunnetaitoja-kuka",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-2-tunne-fin?in=digiseikkailu-oy/sets/laaman-aitaus-tehtaevaet&si=97170b3a167643eab16b8fe707992f48&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/19-emotional-skills-who-would",
       ],
       puolKuva: "/LaamanImages/laamajatyttö.webp",
@@ -33,7 +33,7 @@ export const LaamanaitausData = () => {
       tehtNum: "2",
       tehtName: "Tunteet",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-2-tunne-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-2-tunteet-fin?in=digiseikkailu-oy/sets/laaman-aitaus-tehtaevaet&si=d23c3fc2e013499dbddfdc33709f3042&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       Kuva: "/public/LaamanImages/tunteetsuomi.jpg",
       Teksti:
         " Ilo (Joy)\n\n -Selitys: Ilo on onnellinen tunne, jonka saat, kun jotain hauskaa tai mukavaa tapahtuu. -Kysymys: Milloin viimeksi tunsit iloa? Mikä sai sinut tuntemaan niin? -Kuva: Iloinen hahmo hyppää ilosta.\n\n Luottamus (Trust)\n\n -Selitys: Luottamus on tunne, joka tulee, kun uskot jonkun pitävän lupauksensa ja huolehtivan sinusta. -Kysymys: Keneen luotat eniten? Miksi luotat häneen tai häneen? -Kuva: Hahmo näyttää peukkua merkiksi luottamuksesta.\n\n Pelko (Fear)\n\n -Selitys: Pelko on jännittynyt tunne, kun olet huolissasi siitä, että jotain pahaa voi tapahtua. -Kysymys: Mikä pelottaa sinua? Mitä teet, kun tunnet olosi pelokkaaksi? -Kuva: Hahmo piiloutuu käsiensä taakse, kuvastaen pelkoa.\n\n Yllätys (Surprise)\n\n -Selitys: Yllätys on tunne, kun jotain odottamatonta tapahtuu. -Kysymys: Kerro jokin kerta, kun jokin yllätti sinut. Oliko se hyvä vai huono yllätys? -Kuva: Hahmolla on suuret, hämmästyneet silmät, edustaen yllätystä.\n\n Surullisuus (Sadness)\n\n -Selitys: Suru on alakuloinen tunne, jonka saat, kun jokin ikävä tapahtuu tai menetät jotain tärkeää. -Kysymys: Milloin tunsit olosi surulliseksi viimeksi? Mitä teit, jotta tunsit olosi paremmaksi? -Kuva: Hahmo vuodattaa kyyneleen, ilmentäen surua.\n\n Inho (Disgust)\n\n -Selitys: Inho on tunne, jonka saat, kun kohtaat jotain todella epämiellyttävää tai vastenmielistä. -Kysymys: Onko jokin asia, jonka inhoat? Miksi se tuntuu sinusta inhottavalta? -Kuva: Hahmo tekee ilmeen, joka kuvastaa inhon tunnetta.\n\n Viha (Anger)\n\n -Selitys: Viha on tunne, joka tulee, kun olet todella ärsyyntynyt tai kun joku tekee sinulle väärin. -Kysymys: Milloin tunsit vihaa? Miten käsittelet vihaa, kun se tulee? -Kuva: Hahmo näyttää vihaiselta, kurtistaen kulmiaan.\n\n Odotus (Anticipation)\n\n -Selitys: Odotus on tunne, kun odotat jotain innolla, esimerkiksi syntymäpäivääsi tai retkeä. -Kysymys: Onko jotain, mitä odotat innolla juuri nyt? Miksi odotat sitä? -Kuva: Hahmo katsoo kelloa, odottaen jotain.",
@@ -103,7 +103,7 @@ export const LaamanaitausData = () => {
       tehtName: "Trollipostia Supersovellukselle",
       Kategoria: "LaamanAitaus",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/16-trollipostia",
+        "https://soundcloud.com/digiseikkailu-oy/laaman-aitaus-4-trollipostia-supersovellukselle-fin?in=digiseikkailu-oy/sets/laaman-aitaus-tehtaevaet&si=312f23ac84804602a15da001fdab5cee&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/16-troill-mail-for-the-super",
       ],
       puolTeksti:

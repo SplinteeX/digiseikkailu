@@ -90,7 +90,7 @@ export const HäsänStudioData = () => {
       tehtName: "Tehdään oma video",
       Kategoria: "HäsänStudio",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/haesaenstudio-1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/hasan-studio-1-tehdaan-oma-video-fin?in=digiseikkailu-oy/sets/haesaenstudio-tehtaevaet&si=62ae6f32579a44c9b328f5d57647e177&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       Title: "Tehdään oma video",
       smallTitle: "Videoblogi kännykällä!",
       Tekstit: [
@@ -179,7 +179,7 @@ export const HäsänStudioData = () => {
       tehtName: "Lempi tubettajat",
       Kategoria: "HäsänStudio",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/haesaenstudio-6?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/digiseikkailu-oy/hasan-studio-8-omat-lempi-tubettajat-fin?in=digiseikkailu-oy/sets/haesaenstudio-tehtaevaet&si=6dbc909d20f9431a852b42ec88180866&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       Title: "Omat lempitubettajat",
       puolKuva: "/HäsäImages/VideonKuvaus.webp",
       puolTeksti:

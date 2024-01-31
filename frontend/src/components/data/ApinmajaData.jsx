@@ -54,7 +54,7 @@ export const ApinmajaData = () => {
         "D) Matemaattisia taitoja",
       ],
       vastaus: "B) Havannointia ja hiiren käyttöä",
-      SoundCloud: "soundcloud.com/digiseikkailu-oy/apinmaja-2",
+      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/2-hiiripiiri-peli?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=ae7e0792a08f474f933df3352dbe2410&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "3",
@@ -75,7 +75,7 @@ export const ApinmajaData = () => {
       ],
       vastaus: "C) Hiiren kaksoisnapsautuksen käyttöä numeroiden valitsemiseen",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-1",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtava-1-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=d7ad3634600d42e5b1ab0af25e60a36e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "4",
@@ -97,7 +97,7 @@ export const ApinmajaData = () => {
       vastaus:
         "B) Seuraa viivaa hiiren osoittimella ja paina hiiren ykköspainiketta viivaa maalatessa",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-2",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-4-hiiritehtava-2-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=feea5b59be63420aa3088519cfc361f7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "5",
@@ -120,7 +120,7 @@ export const ApinmajaData = () => {
       ],
       vastaus: "C) Käyttämällä Ctrl + B",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-3",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-5-hiiritehtava-3fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=84215322dab94c5fb04705264e18a21e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "6",
@@ -142,7 +142,7 @@ export const ApinmajaData = () => {
       vastaus:
         "B) Etsi tekstistä riimiparit, maalaa ne hiirellä ja lihavoi Ctrl + B -pikakomennolla",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-4",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-6-hiiritehtava-4-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=4b835fd4f6a94090a5f2724a2eb6c3b9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "7",
@@ -167,7 +167,7 @@ export const ApinmajaData = () => {
       vastaus:
         "A) Siirrä herkut oikeisiin ruokakuppeihin pitämällä hiiren painiketta pohjassa",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-5",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-7-hiiritehtava-5-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=7ce60e2e58a94ac9b69b48a311e229d8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "8",
@@ -191,7 +191,7 @@ export const ApinmajaData = () => {
       ],
       vastaus: "B) Kopioi, leikkaa ja liitä -toimintoja pikakomentojen avulla",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-6",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-8-hiiritehtava-6-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=eaefbe57b3d7446e91f7eba151741e32&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "9",
@@ -217,7 +217,7 @@ export const ApinmajaData = () => {
       vastaus:
         "C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa sekä kaksoisnapsautusta",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-7",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-9-hiiritehtava-7-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=8558041e2710465994920098c94ce9f1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "10",
@@ -242,7 +242,7 @@ export const ApinmajaData = () => {
       vastaus:
         "C) Nopeutta ja koordinaatiokykyä hiirellä toimimisessa ja kaksoisnapsautusta",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-8",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-10-hiiritehtava-8-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=b98da487eca94e1fbbcbf2c9958daff3&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "11",
@@ -272,7 +272,7 @@ export const ApinmajaData = () => {
       ],
       vastaus: "C) Tietokonehiirten muotoilua ja toiminnallisuutta",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-11-hiiritehtava-10-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=6ed1ed9601fb426099aadede87b3e1c5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "12",
@@ -296,8 +296,6 @@ export const ApinmajaData = () => {
       ],
       vastaus:
         "B) Se tulee näppäimistön ensimmäisen rivin kuuden ensimmäisen kirjaimen mukaan",
-      SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
     },
     {
       tehtNum: "13",
@@ -322,7 +320,7 @@ export const ApinmajaData = () => {
       ],
       vastaus: "B) Kirjainten painamista ja sanojen muodostamista tavuista",
       SoundCloud:
-        "https://soundcloud.com/digiseikkailu-oy/apinmaja-3-hiiritehtaevae-10",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-13-yhdista-ja-kirjoita-tavut-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=61402c7943294197824a21544745356a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "14",
@@ -359,6 +357,8 @@ export const ApinmajaData = () => {
       vastaus: "C) Näppäinten nimiä ja sijainteja näppäimistöllä",
       Unity:
         "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=13",
+      SoundCloud:
+      "https://soundcloud.com/digiseikkailu-oy/apinmaja-15-raahaa-nappaimet-paikoilleen-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=b6ac482705cc42d0a1777d6ff0fa79c9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "16",
@@ -408,6 +408,8 @@ export const ApinmajaData = () => {
       vastaus: "C) Pikakomentojen käyttöä tietokoneella",
       Unity:
         "https://digiadventurers.com/wp-admin/admin-ajax.php?action=h5p_embed&id=3",
+      SoundCloud:
+      "https://soundcloud.com/digiseikkailu-oy/apinmaja-17-nappainkomennot-haltuun-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=70bfdb99d7dd4d8d95faac3eb80f994a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "18",
@@ -430,7 +432,7 @@ export const ApinmajaData = () => {
       vastaus: "B) Näppäinten keräämistä ja näppäimistön käyttöä",
       Unity:
         "https://i.simmer.io/@Digiseikkailu/~b7b732f3-9ece-e52f-f69e-3e6337179b52",
-      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/apinmaja-7",
+      SoundCloud: "https://soundcloud.com/digiseikkailu-oy/apinmaja-18-laamapeli-fin?in=digiseikkailu-oy/sets/apinmajan-tehtaevaet&si=d19d8ed750e4408ea8d5c02318b74d78&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
     {
       tehtNum: "19",
@@ -574,7 +576,7 @@ export const ApinmajaData = () => {
       tehtName: "Kutsukortti",
       Kategoria: "Apinmaja",
       SoundClouds: [
-        "https://soundcloud.com/digiseikkailu-oy/2-kutsukortti",
+        "https://soundcloud.com/digiseikkailu-oy/apinmaja-25-kutsukortti-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&si=9eb832045739454c872574452cd67e34&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         "https://soundcloud.com/digiseikkailu-oy/apis-hut-25-invitation-card-eng?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       ],
       puolKuva: "/ApinmajaImages/Kutsukortti.png",
