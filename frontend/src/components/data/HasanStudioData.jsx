@@ -207,7 +207,7 @@ export const HäsänStudioData = () => {
       ],
       puolTeksti:
         "Tarinassa käsitellään - Ryhmätyötaitojen merkitystäTyön jakamisen haasteitaIloa, joka syntyy kun keksitään yhdessä. Väärinymmärrykset kannattaa selvittää. Yhdessä voi saada enemmän aikaan kuin yksin",
-      puolKuva: "/HäsäImages/häsäTarina.webp",
+      puolKuva: "/HäsäImages/häsätarina.webp",
       Tekstit: [
         "Maanantai-iltapäivällä koulun kello soi ja oppilaat rynnistivät ulos ovesta. Koulupäivä oli ohi ja kaikilla oli kiire kotiin tai harrastuksiin. Häsä huomasi Apin ja juoksi tämän luokse.",
         "Häsä alkoi heti puhua pulputtaa uuden videon suunnitelmista ja muusta hauskasta, mitä iltapäivällä voisi tapahtua. Appi vain ynähteli lyhyitä vastauksia. Lopulta Häsää alkoi ihmetyttää ystävänsä vaitonainen olemus.",

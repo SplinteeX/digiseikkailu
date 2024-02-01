@@ -277,7 +277,7 @@ export const KursorinUllakkoData = () => {
 
       SoundCloud:
         "https://soundcloud.com/digiseikkailu-oy/kursorin-ullakko-9-elamaa-ennenvanhaan-fin?in=digiseikkailu-oy/sets/digiseikkailu-uudet-tarinat&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-      puolKuva: "/src/assets/KursorinImages/PappaLaama.webp",
+      puolKuva: "/KursorinImages/PappaLaama.webp",
 
       puolTeksti:
         "Millaista elämä on ollut ennen internettiä.\nMissä järjestyksessä teknologisia laitteita on tullut suomalaisten käyttöön\nAinoastaan älylaitteilla ei kannata täyttää koko elämää",

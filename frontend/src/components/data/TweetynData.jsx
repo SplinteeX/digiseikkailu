@@ -541,16 +541,15 @@ export const TweetynData = () => {
       tehtName: "Roskapostien suodattaminen",
       Kategoria: "TweetynViestiseinä",
       Teksti:
-
         "Roskapostisuodatin \n\nMitä mahtaa olla roskaposti? Nimensä mukaisesti se tarkoittaa viestejä, joiden kohdalla voi suoraan painaa delete-näppäintä. Joskus roskapostit voivat olla jopa haitallisia – ne saattavat sisältää haittaohjelmia eli viruksia. Seuraavassa tehtävässä harjoitellaan tunnistamaan roskapostit. “Avaa” oheinen sähköpostikansio. Lue sinne tulleet sähköpostit. Valitse jokaisen viestin kohdalla, säilytätkö viestin vai joutaako se roskapostikansioon.",
-      Kuva: "/src/assets/TweetyImages/suodatin.webp",
+      Kuva: "/TweetyImages/suodatin.webp",
 
     },
     {
       tehtNum: "17",
       tehtName: "Tietojenkalastelu ja verkkourkinta",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/TweetyImages/Hakkeri.webp",
+      Kuva: "/TweetyImages/hakkeri.webp",
       Tekstit: [
         "Verkkourkinta eli tietojenkalastelu (myös engl. phishing, suomeksi käytössä termi kalastelu) on tietotekniikassa rikollista toimintaa, jolla pyritään saamaan haltuun luottamuksellisia tietoja, kuten\n\n-henkilötietoja tai\n\n-tilitietoja\n\n-esiintymällä tiedon saantiin oikeutettuna tahona.",
         "Haluttua tietoa ovat erityisesti salasana- tai luottokorttitiedot, joita käyttämällä hyökkääjä voi päästä huomattaviin taloudellisiin voittoihin; jo muutama huijaukseen langennut uhri voi tehdä rikollisesta toiminnasta kannattavaa. Urkinta tapahtuu yleensä sähköposti- tai pikaviestin muodossa. Huijausviesti pyrkii näyttämään mahdollisimman aidolta ja luotettavan tahon lähettämältä. Tietämättömiä auttaa huijaamaan sähköpostiviestien aukkoisuus ulkomuodoltaan. Viesti, jonka lähettäjäksi ilmoitetaan support@yritys.fi, ei ole välttämättä millään tavalla sidoksissa yritys.fi-palvelimeen. Otsikkotiedoista yleensä on nähtävissä se miltä palvelimelta viesti on peräisin. Eräät sähköpostipalvelut, kuten Gmailin selainversio, huomauttavat asiakkaalle viestin tullessa eri palvelimelta kuin lähettäjäosoitteessa on ilmoitettu.",
@@ -575,7 +574,7 @@ export const TweetynData = () => {
       puolTeksti:
 
         "Tarinassa käsitellään \n\n-tietoturvaa internetissä \n-käsitteet eväste (cookie), IP-osoite, selain \n-urkinta ja tietojen kalastelu \n-ponnahdusmainokset",
-      puolKuva: "/src/assets/TweetyImages/ostokset.webp",
+      puolKuva: "/TweetyImages/ostokset.webp",
 
       Tekstit: [
         "Siry-täti oli ollut koko viikon matkoilla. Perjantaina hän palasi Suomeen suuresta digikonferenssista. Se pidettiin Kööpenhaminassa vain parin tunnin lentomatkan päässä Helsingistä. Häsä ja Appi olivat hoitaneet Miuku-Maukua Siryn poissaollessa. Häsän isä oli tuonut lapset Siryä vastaan Helsinki-Vantaan lentoasemalle. Siry saapui vastaanottoaulaan tyylikkäänä kuten aina. Kotimatkalla he päättivät piipahtaa kaupassa.",
@@ -703,7 +702,7 @@ export const TweetynData = () => {
       tehtNum: "24",
       tehtName: "Myynti-ilmoituksen teko",
       Kategoria: "TweetynViestiseinä",
-      Kuva: "/TweetyImages/Laama.webp",
+      Kuva: "/TweetyImages/laama.webp",
       palloLista: [
         "Kuvaus:",
         "Ikä: 5-vuotias",
