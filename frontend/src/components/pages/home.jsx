@@ -7,6 +7,7 @@ import "../css/home.css";
 import "../css/Exercises.css";
 
 const Home = () => {
+  const { t } = useTranslation();
   const {
     Apinmaja,
     häsänStudio,
