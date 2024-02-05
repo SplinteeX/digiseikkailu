@@ -29,7 +29,7 @@ const Navbar = () => {
     },
     {
       title: "Empatiapolku",
-      path: "/",
+      path: "/empatiapolku",
       cName: "nav-text",
     },
     {

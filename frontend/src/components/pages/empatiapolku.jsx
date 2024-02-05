@@ -7,12 +7,12 @@ import maisema from "/empatiapolku/maisemakuva.webp";
 import { Link } from "react-router-dom";
 const vuoropuhelut = [
   {
-    kuva: "/src//assets/Puhuja1.webp",
+    kuva: "/public/empatiapolku/Puhuja1.webp",
     teksti:
       "— Moi! Olen Häsä. Tässä on paras kaverini Appi. Tämä on Somen kaupunki!",
   },
   {
-    kuva: "/src/assets/Puhuja2.webp",
+    kuva: "/public/empatiapolku/Puhuja2.webp",
     teksti:
       "— Tule, näytämme sinulle vähän paikkoja ja asukkaita. Tapaat Tweetyn, Dogen, Laaman, Miuku-Maukun ja Kursorin.",
   },
@@ -54,7 +54,7 @@ export const EmpatiaPolku = () => {
         ))}
         <div className="Hämis">
           <img
-            src="/src/assets/hämis.webp"
+            src="/public/empatiapolku/hamis.png"
             width={"200px"}
             height={"150px"}
             alt=""
