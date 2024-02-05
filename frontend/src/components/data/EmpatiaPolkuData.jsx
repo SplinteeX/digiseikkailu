@@ -32,7 +32,7 @@ export const EmpatiaPolkuData = () => {
       Kategoria: "EmpatiaPolku",
       postitTeksti: "Mitkä viestit sinä poistaisit seinältä?",
       postit: [
-        "/public/empatiapolku/hämis.png",
+        "/public/empatiapolku/hamis.png",
         "/public/empatiapolku/1.png",
         "/public/empatiapolku/2.png",
         "/public/empatiapolku/3.png",

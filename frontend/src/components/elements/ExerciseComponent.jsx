@@ -172,7 +172,7 @@ export const ExerciseComponent = ({ Data, Tehtävät, url }) => {
               ></video>
             </div>
           )}
-          {Data.youtube && <YoutubeVideo videoId={Data.youtube} />}
+
           {Data.blueTitle && (
             <>
               <p className="Blue-text">{Data.blueTitle}</p>
