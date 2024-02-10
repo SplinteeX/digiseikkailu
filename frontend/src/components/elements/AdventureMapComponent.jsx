@@ -51,7 +51,8 @@ export const AdventureMapComponent = ({ Data, url }) => {
         height: mapImage.naturalHeight,
       });
       if (window.innerWidth <= 1000) {
-        navigate("/tehtävät");
+        navigate(Data.exercise);
+        scroll(0, 0);
       }
       setIsLoading(false);
     };

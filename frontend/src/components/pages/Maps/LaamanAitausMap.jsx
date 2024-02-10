@@ -8,6 +8,7 @@ export const LaamanAitausMap = () => {
           Title: "Laaman aitaus",
           Image: "/Kartat/LaamanKartta.jpg",
           Kategoria: "LaamanAitaus",
+          exercise: "/tehtävät/laamanaitaus/1",
           Balls: [
             {
               Väri: "Vihreä",

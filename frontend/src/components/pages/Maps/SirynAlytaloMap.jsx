@@ -8,6 +8,7 @@ export const SirynAlytaloMap = () => {
           Title: "Siryn Alytalo",
           Image: "/Kartat/SirynMap.jpg",
           Kategoria: "SirynÄlytalo",
+          exercise: "/tehtävät/sirynalytalo/1",
           Balls: [
             {
               Väri: "Vihreä",

@@ -7,6 +7,7 @@ export const ApinmajaMap = () => {
         Data={{
           Title: "Apinmaja",
           Image: "/Kartat/ApinmajaKartta.jpg",
+          exercise: "/tehtävät/apinmaja/1",
           Kategoria: "Apinmaja",
           Balls: [
             {

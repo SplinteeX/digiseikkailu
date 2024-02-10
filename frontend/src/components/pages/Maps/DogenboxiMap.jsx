@@ -7,6 +7,7 @@ export const DogenboxiMap = () => {
         Data={{
           Title: "Dogenboxi",
           Image: "/Kartat/DogenboxiKartta.jpg",
+          exercise: "/tehtävät/dogenboxi/1",
           Kategoria: "DogenBoxi",
           Text: "black",
           Balls: [

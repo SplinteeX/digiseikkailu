@@ -8,6 +8,7 @@ export const OhjelmointiMap = () => {
           Title: "Ohjelmointi",
           Image: "/Kartat/DogenboxiKartta.jpg",
           Kategoria: "OhjelmointiPolku",
+          exercise: "/tehtävät/ohjelmointi/1",
           Balls: [
             {
               Väri: "Vihreä",

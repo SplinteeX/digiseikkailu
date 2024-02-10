@@ -45,8 +45,8 @@
 .Adventure-map .Map-section .ball img {
   position: absolute;
   left: -9px;
-  width: 95px;
-  height: 95px;
+  width: 60px;
+  height: 60px;
 }
 .Adventure-map .Map-section .ball:hover {
   cursor: pointer;

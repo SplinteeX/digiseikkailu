@@ -7,6 +7,7 @@ export const HasanStudioMap = () => {
         Data={{
           Title: "Häsän Studio",
           Image: "/Kartat/Häsänstudio.jpg",
+          exercise: "/tehtävät/häsänstudio/1",
           Kategoria: "HäsänStudio",
           TextColor: "black",
           Balls: [

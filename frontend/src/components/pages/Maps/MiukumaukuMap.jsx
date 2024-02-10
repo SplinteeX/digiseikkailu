@@ -8,6 +8,7 @@ export const MiukumaukuMap = () => {
           Title: "Miukumauku",
           Image: "/Kartat/MiukunMap.jpg",
           Kategoria: "MiukuMaukunKirjasto",
+          exercise: "/tehtävät/miukumauku/1",
           Balls: [
             {
               Väri: "Vihreä",

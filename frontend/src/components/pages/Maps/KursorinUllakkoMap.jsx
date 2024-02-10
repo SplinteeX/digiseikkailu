@@ -8,6 +8,7 @@ export const KursorinUllakkoMap = () => {
           Title: "Kursorin Ullakko",
           Image: "/Kartat/KursorinMap.jpg",
           Kategoria: "KursorinUllakko",
+          exercise: "/tehtävät/kursorinullakko/1",
           Balls: [
             {
               Väri: "Vihreä",
