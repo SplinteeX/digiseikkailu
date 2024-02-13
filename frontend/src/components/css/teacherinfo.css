@@ -127,7 +127,7 @@ li {
   align-items: space-between;
 }
 .Teacherinfo-wrapper .Taitotasot .Kortti {
-  width: 28%;
+  width: 100%;
   height: 100px;
   border-radius: 20px;
   color: black;
@@ -138,12 +138,16 @@ li {
   text-align: center;
   height: 250px;
   padding: 20px;
+  text-decoration: none;
 }
-.Teacherinfo-wrapper .Taitotasot .Kortti p {
+.Teacherinfo-wrapper .Taitotasot .Kortti button {
   margin: 0px;
   font-size: 20px;
   font-weight: bold;
   font-family: Mulish;
+  background-color: transparent;
+  border: 0px;
+  text-decoration: none;
 }
 .Teacherinfo-wrapper h3 {
   font-family: Mulish;

@@ -4,6 +4,7 @@ import { Slider } from "../elements/Slider";
 import { useState } from "react";
 import { FancySectionSlider } from "../elements/FancySectionSlider";
 import { Tavoitteet } from "../data/Tavoitteet";
+import { Link } from "react-router-dom";
 export const Teacherinfo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const infoTexts = [
@@ -95,15 +96,21 @@ export const Teacherinfo = () => {
       <div className="Taitotasot">
         <h3>Värit</h3>
         <div className="Taitotaso-kortit">
-          <div className="Kortti" style={{ backgroundColor: "#B3DD94" }}>
-            <p>Suositusikä 6+</p>
-          </div>
-          <div className="Kortti" style={{ backgroundColor: "#EDC9F9" }}>
-            <p>Suositusikä 9+ (3-4 luokka)</p>
-          </div>
-          <div className="Kortti" style={{ backgroundColor: "#89D3EE" }}>
-            <p>Suositusikä 11+ (5-6 luokka)</p>
-          </div>
+          <Link to="https://docs.google.com/document/d/1ayC3qYQqduXiMs684F2ztTCR378HQI_kjfXmX2q7ap4/edit">
+            <div className="Kortti" style={{ backgroundColor: "#B3DD94" }}>
+              <button>Suositusikä 6+ (1-2 luokka)</button>
+            </div>
+          </Link>
+          <Link to="https://docs.google.com/document/d/1ayC3qYQqduXiMs684F2ztTCR378HQI_kjfXmX2q7ap4/edit">
+            <div className="Kortti" style={{ backgroundColor: "#EDC9F9" }}>
+              <button>Suositusikä 9+ (3-4 luokka)</button>
+            </div>
+          </Link>
+          <Link to="https://docs.google.com/document/d/1ayC3qYQqduXiMs684F2ztTCR378HQI_kjfXmX2q7ap4/edit">
+            <div className="Kortti" style={{ backgroundColor: "#89D3EE" }}>
+              <button>Suositusikä 11+ (5-6 luokka)</button>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="Hahmot">
